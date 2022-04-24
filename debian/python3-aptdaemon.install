@@ -1,0 +1,17 @@
+usr/lib/python3*/*-packages/aptdaemon/__init__.py
+usr/lib/python3*/*-packages/aptdaemon/client.py
+usr/lib/python3*/*-packages/aptdaemon/config.py
+usr/lib/python3*/*-packages/aptdaemon/console.py
+usr/lib/python3*/*-packages/aptdaemon/core.py
+usr/lib/python3*/*-packages/aptdaemon/crash.py
+usr/lib/python3*/*-packages/aptdaemon/debconf.py
+usr/lib/python3*/*-packages/aptdaemon/enums.py
+usr/lib/python3*/*-packages/aptdaemon/errors.py
+usr/lib/python3*/*-packages/aptdaemon/logger.py
+usr/lib/python3*/*-packages/aptdaemon/loop.py
+usr/lib/python3*/*-packages/aptdaemon/lock.py
+usr/lib/python3*/*-packages/aptdaemon/networking.py
+usr/lib/python3*/*-packages/aptdaemon/policykit1.py
+usr/lib/python3*/*-packages/aptdaemon/progress.py
+usr/lib/python3*/*-packages/aptdaemon/utils.py
+usr/lib/python3*/*-packages/aptdaemon/worker/*.py

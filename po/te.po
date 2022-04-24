@@ -1,0 +1,1420 @@
+# Telugu translation for aptdaemon
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the aptdaemon package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: aptdaemon\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-21 15:36+0200\n"
+"PO-Revision-Date: 2011-03-28 03:43+0000\n"
+"Last-Translator: Praveen Illa <mail2ipn@gmail.com>\n"
+"Language-Team: Telugu <te@li.org>\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-03-09 23:28+0000\n"
+"X-Generator: Launchpad (build 16523)\n"
+
+#: ../data/org.debian.apt.policy.in.h:1
+msgid "List keys of trusted vendors"
+msgstr "నమ్మదగిన అమ్మకందారు యొక్క కీలను జాబితాగాచూపు"
+
+#: ../data/org.debian.apt.policy.in.h:2
+msgid "To view the list of trusted keys, you need to authenticate."
+msgstr "విశ్వసించిన 'కీ'ల జాబితాను చూచుటకు, మీరు ధృవీకరించవలసిఉంటుంది."
+
+#: ../data/org.debian.apt.policy.in.h:3 ../aptdaemon/console.py:619
+msgid "Remove downloaded package files"
+msgstr "డౌన్‌లోడ్ చేసిన ప్యాకేజీ ఫైళ్ళను తొలగించు"
+
+#: ../data/org.debian.apt.policy.in.h:4
+msgid "To clean downloaded package files, you need to authenticate."
+msgstr "డౌన్‌లోడ్‌చేయబడిన ప్యాకేజీ ఫైళ్లను శుభ్రంచేయుటకు మీరు ధృవీకరించవలసిఉంటుంది."
+
+#: ../data/org.debian.apt.policy.in.h:5
+msgid "Change software configuration"
+msgstr "సాఫ్ట్‍వేర్ స్వరూపణాన్ని మార్చు"
+
+#: ../data/org.debian.apt.policy.in.h:6
+msgid "To change software settings, you need to authenticate."
+msgstr "సాఫ్ట్‍వేర్ అమరికలను మార్చుటకు మీరు ధృవీకరించవలసిఉంటుంది."
+
+#: ../data/org.debian.apt.policy.in.h:7
+msgid "Change software repository"
+msgstr "సాఫ్ట్‍వేర్ భాండాగారాన్ని మార్చు"
+
+#: ../data/org.debian.apt.policy.in.h:8
+msgid "To change software repository settings, you need to authenticate."
+msgstr "సాఫ్ట్‍వేర్ భాండాగార అమరికలను మార్చుటకు మీరు ధృవీకరించవలసిఉంటుంది."
+
+#: ../data/org.debian.apt.policy.in.h:9
+msgid "Install package file"
+msgstr "ప్యాకేజీ ఫైల్‌ని స్థాపించు"
+
+#: ../data/org.debian.apt.policy.in.h:10
+msgid "To install this package, you need to authenticate."
+msgstr "ఈ ప్యాకేజీని స్థాపించుటకు, మీరు ధృవీకరించవలసి ఉంటుంది."
+
+#: ../data/org.debian.apt.policy.in.h:11
+msgid "Update package information"
+msgstr "ప్యాకేజీ సమాచారాన్ని నవీకరించు"
+
+#: ../data/org.debian.apt.policy.in.h:12
+msgid "To update the software catalog, you need to authenticate."
+msgstr "సాఫ్ట్‍వేర్ జాబితాను నవీకరించుటకు మీరు ధృవీకరించవలసిఉంటుంది."
+
+#: ../data/org.debian.apt.policy.in.h:13
+msgid "Install or remove packages"
+msgstr "ప్యాకేజీలను స్థాపించు లేదా తొలగించు"
+
+#: ../data/org.debian.apt.policy.in.h:14
+msgid "To install or remove software, you need to authenticate."
+msgstr "సాఫ్ట్‍వేర్ స్థాపించుటకు లేదా తొలగించుటకు, మీరు ధృవీకరించవలసిఉంటుంది."
+
+#. This priviledge will be requested when installing a package
+#. from a high trusted repository that can be explicitely whitelisted.
+#.
+#. The defaults for this action are the same as
+#. "org.debian.apt.install-or-remove-packages".
+#.
+#. The admin can override them to e.g. allow passwordless installs for
+#. leightweight applications like unity-webapps or for packages
+#. comming from high trust repositories (like internal repositories)
+#.
+#: ../data/org.debian.apt.policy.in.h:25
+msgid "Install software from a high-trust whitelisted repository."
+msgstr ""
+
+#: ../data/org.debian.apt.policy.in.h:26
+msgid "To install software, you need to authenticate."
+msgstr ""
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#.
+#. The client has to authenticate for this privilege before calling
+#. the aptdaemon methods.
+#: ../data/org.debian.apt.policy.in.h:32
+msgid "Add a new repository and install packages from it"
+msgstr "ఒక కొత్త భాండాగారాన్ని జతచేసి దానినుండి ప్యాకేజీలను స్థాపించు"
+
+#: ../data/org.debian.apt.policy.in.h:33
+msgid "To install software from a new source, you need to authenticate."
+msgstr "ఒక కొత్త మూలాధారం నుండి సాఫ్ట్‍వేర్ స్థాపించుటకు, మీరు ధృవీకరించవలసివుంటుంది."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#.
+#. The client has to authenticate for this privilege before calling
+#. the aptdaemon methods.
+#.
+#. The only difference to install-packages-from-new-repo is the wording
+#. of the message. It is required by Ubuntu's Software-Center.
+#: ../data/org.debian.apt.policy.in.h:42
+msgid "Add a new repository of purchased software and install packages from it"
+msgstr "కొనుగోలుచేసిన సాఫ్ట్‍వేర్ యొక్క కొత్త భాండాగారాన్ని జతచేసి దానినుండి ప్యాకేజీలను స్థాపించు"
+
+#: ../data/org.debian.apt.policy.in.h:43
+msgid "To install purchased software, you need to authenticate."
+msgstr "కొన్న సాఫ్ట్‍వేర్ స్థాపించుటకు, మీరు ధృవీకరించవలసి ఉంటుంది."
+
+#: ../data/org.debian.apt.policy.in.h:44
+msgid "Upgrade packages"
+msgstr "ప్యాకేజీలను ఉన్నతీకరించు"
+
+#: ../data/org.debian.apt.policy.in.h:45
+msgid "To install updated software, you need to authenticate."
+msgstr "నవీకరించబడిన సాఫ్ట్‍వేర్ స్థాపించుటకు, మీరు ధృవీకరించవలసిఉంటుంది."
+
+#: ../data/org.debian.apt.policy.in.h:46
+msgid "Cancel the task of another user"
+msgstr "ఇంకొక వాడుకరి యొక్క కార్యాన్ని రద్దుచేయి"
+
+#: ../data/org.debian.apt.policy.in.h:47
+msgid "To cancel someone else's software changes, you need to authenticate."
+msgstr "వేరేఇతర సాఫ్ట్‍వేర్ మార్పులను రద్దుచయుటకు మీరు ధృవీకరించవలసిఉంటుంది."
+
+#: ../data/org.debian.apt.policy.in.h:48
+msgid "Set a proxy for software downloads"
+msgstr "సాఫ్ట్‍వేర్ డౌన్‌లోడ్‌లకు ఒక ప్రోక్సీని అమర్చు"
+
+#: ../data/org.debian.apt.policy.in.h:49
+msgid ""
+"To use a proxy server for downloading software, you need to authenticate."
+msgstr "ప్రోక్సీ సేవిక వాడి సాఫ్ట్‍వేర్ డౌన్‌లోడ్‌చేయుటకు, మీరు ధృవీకరణ చేయవలసిఉంటుంది."
+
+#: ../aptdaemon/console.py:215
+msgid "ERROR"
+msgstr "దోషం"
+
+#: ../aptdaemon/console.py:249
+#, python-format
+msgid "Downloaded %(cur)sB of %(total)sB at %(rate)sB/s"
+msgstr ""
+
+#: ../aptdaemon/console.py:255
+#, python-format
+msgid "Downloaded %(cur)sB of %(total)sB"
+msgstr ""
+
+#: ../aptdaemon/console.py:385 ../aptdaemon/console.py:390
+msgid "ERROR:"
+msgstr "దోషం:"
+
+#: ../aptdaemon/console.py:386
+msgid "You are not allowed to perform this action."
+msgstr "ఈ చర్యను చేయుటకు మీకు అనుమతి లేదు"
+
+#: ../aptdaemon/console.py:409 ../aptdaemon/console.py:537
+msgid "Queuing"
+msgstr "వరుసలోచేరుస్తోంది"
+
+#: ../aptdaemon/console.py:417 ../aptdaemon/enums.py:527
+msgid "Resolving dependencies"
+msgstr "ఆధారితత్వాలను పరిష్కరిస్తోంది"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:459
+#, python-format
+msgid "The following NEW package will be installed (%(count)s):"
+msgid_plural "The following NEW packages will be installed (%(count)s):"
+msgstr[0] "కిందపేర్కొన్న కొత్త ప్యాకేజీ స్థాపించబడుతుంది (%(count)s):"
+msgstr[1] "కిందపేర్కొన్న కొత్త ప్యాకేజీలు స్థాపించబడతాయి (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:467
+#, python-format
+msgid "The following package will be upgraded (%(count)s):"
+msgid_plural "The following packages will be upgraded (%(count)s):"
+msgstr[0] "కిందపేర్కొన్న ప్యాకేజీ ఉన్నతీకరించబడతుంది (%(count)s):"
+msgstr[1] "కిందపేర్కొన్న ప్యాకేజీలు ఉన్నతీకరించబడతాయి (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:475
+#, python-format
+msgid "The following package will be REMOVED (%(count)s):"
+msgid_plural "The following packages will be REMOVED (%(count)s):"
+msgstr[0] "కిందపేర్కొన్న ప్యాకేజీ తొలగించబడుతుంది (%(count)s):"
+msgstr[1] "కిందపేర్కొన్న ప్యాకేజీలు తొలగించబడతాయి (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:484
+#, python-format
+msgid "The following package will be DOWNGRADED (%(count)s):"
+msgid_plural "The following packages will be DOWNGRADED (%(count)s):"
+msgstr[0] "కిందపేర్కొన్న ప్యాకేజీ డౌన్‌గ్రేడ్‌చేయబడుతుంది (%(count)s):"
+msgstr[1] "కిందపేర్కొన్న ప్యాకేజీలు డౌన్‌గ్రేడ్‌చేయబడుతాయి (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:492
+#, python-format
+msgid "The following package will be reinstalled (%(count)s):"
+msgid_plural "The following packages will be reinstalled (%(count)s):"
+msgstr[0] "కిందపేర్కొన్న ప్యాకేజీ పునఃస్థాపించబడుతుంది (%(count)s):"
+msgstr[1] "కిందపేర్కొన్న ప్యాకేజీలు పునఃస్థాపించబడతాయి (%(count)s):"
+
+#: ../aptdaemon/console.py:499
+#, python-format
+msgid "The following package has been kept back (%(count)s):"
+msgid_plural "The following packages have been kept back (%(count)s):"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../aptdaemon/console.py:507
+#, python-format
+msgid "Need to get %sB of archives."
+msgstr "%sB ఆర్చీవ్‌లను పొందవలసిఉంది."
+
+#: ../aptdaemon/console.py:510
+#, python-format
+msgid "After this operation, %sB of additional disk space will be used."
+msgstr "ఈ ఆపరేషన్ తరువాత, %sB డిస్కు స్థలం అదనంగా వినియోగించబడుతుంది."
+
+#: ../aptdaemon/console.py:514
+#, python-format
+msgid "After this operation, %sB of additional disk space will be freed."
+msgstr "ఈ ఆపరేషన్ తరువాత, %sB డిస్కు స్థలం అదనంగా ఖాళీ అవుతుంది."
+
+#: ../aptdaemon/console.py:522 ../aptdaemon/console.py:524
+msgid "Do you want to continue [Y/n]?"
+msgstr "మీరు కొనసాగాలనుకుంటున్నారా [Y/n]?"
+
+#: ../aptdaemon/console.py:545
+msgid ""
+"To operate on more than one package put the package names in quotation "
+"marks:\n"
+"aptdcon --install \"foo bar\""
+msgstr ""
+
+#: ../aptdaemon/console.py:551
+msgid "Refresh the cache"
+msgstr "క్యాచీని తాజాపరుచు"
+
+#: ../aptdaemon/console.py:554
+msgid ""
+"Try to resolve broken dependencies. Potentially dangerous operation since it "
+"could try to remove many packages."
+msgstr ""
+
+#: ../aptdaemon/console.py:559
+msgid "Try to finish a previous incompleted installation"
+msgstr "ఇంతకుముందు అసంపూర్ణ స్థాపనను పూర్తిచేయుటకు ప్రయత్నించండి"
+
+#: ../aptdaemon/console.py:563 ../aptdaemon/console.py:576
+msgid "Install the given packages"
+msgstr "ఇవ్వబడిన ప్యాకేజీలను స్థాపించు"
+
+#: ../aptdaemon/console.py:566
+msgid "Reinstall the given packages"
+msgstr "ఇవ్వబడిన ప్యాకేజీలను మళ్ళీ స్థాపించు"
+
+#: ../aptdaemon/console.py:569
+msgid "Remove the given packages"
+msgstr "ఇవ్వబడిన ప్యాకేజీలను తొలగించు"
+
+#: ../aptdaemon/console.py:572
+msgid "Remove the given packages including configuration files"
+msgstr ""
+
+#: ../aptdaemon/console.py:579
+msgid "Downgrade the given packages"
+msgstr ""
+
+#: ../aptdaemon/console.py:582
+msgid "Deprecated: Please use --safe-upgrade"
+msgstr ""
+
+#: ../aptdaemon/console.py:586
+msgid "Upgrade the system in a safe way"
+msgstr "సురక్షిత మార్గంలో వ్యవస్థను ఉన్నతీకరించు"
+
+#: ../aptdaemon/console.py:589
+msgid "Upgrade the system, possibly installing and removing packages"
+msgstr "సాధ్యమైనంతవరకూ ప్యాకేజీలను స్థాపించడం మరియు తొలగించడం ద్వారా వ్యవస్థను ఉన్నతీకరించు"
+
+#: ../aptdaemon/console.py:593
+msgid "Add the vendor to the trusted ones"
+msgstr ""
+
+#: ../aptdaemon/console.py:596
+msgid "Add the vendor keyid (also needs --keyserver)"
+msgstr ""
+
+#: ../aptdaemon/console.py:600
+msgid "Use the given keyserver for looking up keys"
+msgstr ""
+
+#: ../aptdaemon/console.py:604
+msgid "Add new repository from the given deb-line"
+msgstr "ఇవ్వబడిన deb-line నుంచి కొత్త భాండాగారాన్ని జతచేయండి"
+
+#: ../aptdaemon/console.py:608
+msgid ""
+"Specify an alternative sources.list.d file to which repositories should be "
+"added."
+msgstr ""
+
+#: ../aptdaemon/console.py:612
+msgid "List trusted vendor keys"
+msgstr "విశ్వసించదగిన అమ్మకందారు 'కీ'లు జాబితాగాచూపు"
+
+#: ../aptdaemon/console.py:615
+msgid "Remove the trusted key of the given fingerprint"
+msgstr ""
+
+#: ../aptdaemon/console.py:622
+msgid ""
+"Reconfigure installed packages. Optionally the minimum priority of questions "
+"can be specified"
+msgstr ""
+
+#: ../aptdaemon/console.py:627
+msgid "The minimum debconf priority of question to be displayed"
+msgstr ""
+
+#: ../aptdaemon/console.py:631
+msgid "Do not attach to the apt terminal"
+msgstr ""
+
+#: ../aptdaemon/console.py:635
+msgid "Allow packages from unauthenticated sources"
+msgstr "ధృవీకరించబడని మూలాధారాల నుండి ప్యాకేజీలను అనుమతించు"
+
+#: ../aptdaemon/console.py:639
+msgid ""
+"Show additional information about the packages. Currently only the version "
+"number"
+msgstr "ప్యాకేజీల గురించిన అదనపు సమాచారాన్ని చూపించు. ప్రస్తుతం వెర్షన్ సంఖ్య మాత్రమే"
+
+#: ../aptdaemon/console.py:647 ../aptdaemon/enums.py:532
+msgid "Waiting for authentication"
+msgstr "ధృవీకరణ కోసం నిరీక్షిస్తోంది"
+
+#: ../aptdaemon/core.py:2135
+msgid "Do not shutdown the daemon because of inactivity"
+msgstr ""
+
+#: ../aptdaemon/core.py:2140
+msgid "Do not load any plugins"
+msgstr ""
+
+#: ../aptdaemon/core.py:2144
+msgid "Show internal processing information"
+msgstr "అంతర్గతంగా జరుగుతున్న ప్రక్రియ సమాచారాన్ని చూపించు"
+
+#: ../aptdaemon/core.py:2149
+msgid "Quit and replace an already running daemon"
+msgstr ""
+
+#: ../aptdaemon/core.py:2154
+msgid "Listen on the DBus session bus (Only required for testing"
+msgstr ""
+
+#: ../aptdaemon/core.py:2158
+msgid "Perform operations in the given chroot"
+msgstr "ఇవ్వబడిన chroot లో ఆపరేషన్‌లను చేయి"
+
+#: ../aptdaemon/core.py:2163
+msgid "Store profile stats in the specified file"
+msgstr ""
+
+#: ../aptdaemon/core.py:2168
+msgid "Do not make any changes to the system (Only of use to developers)"
+msgstr ""
+
+#: ../aptdaemon/enums.py:337
+msgid "Installed file"
+msgstr "స్థాపించబడిన ఫైల్"
+
+#: ../aptdaemon/enums.py:338
+msgid "Installed packages"
+msgstr "స్థాపించబడిన ప్యాకేజిలు"
+
+#: ../aptdaemon/enums.py:339
+msgid "Added key from file"
+msgstr "ఫైలు నుంచి కీ జతచేయబడింది"
+
+#: ../aptdaemon/enums.py:340
+msgid "Updated cache"
+msgstr "క్యాచీ నవీకరించబడింది"
+
+#: ../aptdaemon/enums.py:341
+msgid "Search done"
+msgstr ""
+
+#: ../aptdaemon/enums.py:342
+msgid "Removed trusted key"
+msgstr "నమ్మదగిన కీ తొలగించబడింది"
+
+#: ../aptdaemon/enums.py:343
+msgid "Removed packages"
+msgstr "తొలగించబడిన ప్యాకేజీలు"
+
+#: ../aptdaemon/enums.py:344
+msgid "Updated packages"
+msgstr "నవీకరించబడిన ప్యాకేజీలు"
+
+#: ../aptdaemon/enums.py:345
+msgid "Upgraded system"
+msgstr "ఉన్నతీకరించబడిన వ్యవస్థ"
+
+#: ../aptdaemon/enums.py:346
+msgid "Applied changes"
+msgstr "మార్పులు అనువర్తించబడినవి"
+
+#: ../aptdaemon/enums.py:347
+msgid "Repaired incomplete installation"
+msgstr "అసంపూర్ణ స్థాపన బాగుచేయబడింది"
+
+#: ../aptdaemon/enums.py:348
+msgid "Repaired broken dependencies"
+msgstr "విరిగిన ఆధారితత్వాలు బాగుచేయబడినవి"
+
+#: ../aptdaemon/enums.py:349
+msgid "Added software source"
+msgstr "సాఫ్ట్‍వేర్ మూలాధారం జతచేయడింది"
+
+#: ../aptdaemon/enums.py:350
+msgid "Enabled component of the distribution"
+msgstr ""
+
+#: ../aptdaemon/enums.py:351
+msgid "Removed downloaded package files"
+msgstr "డౌన్‌లోడ్‌చేసిన ప్యాకేజీ ఫైళ్ళు తొలగించబడ్డాయి"
+
+#: ../aptdaemon/enums.py:352
+msgid "Reconfigured installed packages"
+msgstr "స్థాపించబడిన ప్యాకేజీలు పునఃస్వరూపించబడ్డాయి"
+
+#: ../aptdaemon/enums.py:356
+msgid "Successful"
+msgstr "విజయవంతమైంది"
+
+#: ../aptdaemon/enums.py:357
+msgid "Canceled"
+msgstr "రద్దుచేయబడింది"
+
+#: ../aptdaemon/enums.py:358 ../aptdaemon/enums.py:569
+msgid "Failed"
+msgstr "విఫలమైంది"
+
+#: ../aptdaemon/enums.py:361
+msgid "Installing file"
+msgstr "ఫైలును స్థాపిస్తోంది"
+
+#: ../aptdaemon/enums.py:362
+msgid "Installing packages"
+msgstr "ప్యాకేజీలు స్థాపించబడుతున్నాయి"
+
+#: ../aptdaemon/enums.py:363
+msgid "Adding key from file"
+msgstr "ఫైల్ నుండి కీ జతచేస్తోంది"
+
+#: ../aptdaemon/enums.py:364
+msgid "Updating cache"
+msgstr "క్యాచీని నవీకరిస్తోంది"
+
+#: ../aptdaemon/enums.py:365
+msgid "Removing trusted key"
+msgstr "నమ్మదగిన కీ తొలగించబడుతోంది"
+
+#: ../aptdaemon/enums.py:366
+msgid "Removing packages"
+msgstr "ప్యాకేజీలను తొలగిస్తోంది"
+
+#: ../aptdaemon/enums.py:367
+msgid "Updating packages"
+msgstr "ప్యాకేజీలను నవీకరిస్తోంది"
+
+#: ../aptdaemon/enums.py:368
+msgid "Upgrading system"
+msgstr "వ్యవస్థను ఉన్నతీకరిస్తోంది"
+
+#: ../aptdaemon/enums.py:369 ../aptdaemon/enums.py:528
+msgid "Applying changes"
+msgstr "మార్పులను అనువర్తిస్తోంది"
+
+#: ../aptdaemon/enums.py:370
+msgid "Repairing incomplete installation"
+msgstr "అసంపూర్ణ స్థాపనను బాగుచేస్తోంది"
+
+#: ../aptdaemon/enums.py:371
+msgid "Repairing installed software"
+msgstr ""
+
+#: ../aptdaemon/enums.py:372
+msgid "Adding software source"
+msgstr "సాఫ్ట్‍వేర్ మూలాధారం జతచేయబడుతోంది"
+
+#: ../aptdaemon/enums.py:373
+msgid "Enabling component of the distribution"
+msgstr ""
+
+#: ../aptdaemon/enums.py:374
+msgid "Removing downloaded package files"
+msgstr "డౌన్‌లోడుచేసిన ప్యాకేజీ ఫైళ్ళను తొలగిస్తోంది"
+
+#: ../aptdaemon/enums.py:375
+msgid "Reconfiguring installed packages"
+msgstr "స్థాపించబడిన ప్యాకేజీలు పునఃస్వరూపించబడుతోన్నాయి"
+
+#: ../aptdaemon/enums.py:376 ../aptdaemon/enums.py:517
+msgid "Searching"
+msgstr ""
+
+#: ../aptdaemon/enums.py:380
+msgid "Installation of the package file failed"
+msgstr "ప్యాకేజీ ఫైల్ యొక్క స్థాపన విఫలమైంది"
+
+#: ../aptdaemon/enums.py:381
+msgid "Installation of software failed"
+msgstr "సాఫ్ట్‍వేర్ స్థాపన విఫలమైంది"
+
+#: ../aptdaemon/enums.py:382
+msgid "Adding the key to the list of trusted software vendors failed"
+msgstr ""
+
+#: ../aptdaemon/enums.py:384
+msgid "Refreshing the software list failed"
+msgstr "సాఫ్ట్‍వేర్ జాబితాను తాజాపరుచుటలో విఫలమైంది"
+
+#: ../aptdaemon/enums.py:385
+msgid "Removing the vendor from the list of trusted ones failed"
+msgstr ""
+
+#: ../aptdaemon/enums.py:387
+msgid "Removing software failed"
+msgstr "సాఫ్ట్‍వేర్‌ను తొలగించుటలో విఫలమైంది"
+
+#: ../aptdaemon/enums.py:388
+msgid "Updating software failed"
+msgstr "సాఫ్ట్‍వేర్‌ను నవీకరించుటలో విఫలమైంది"
+
+#: ../aptdaemon/enums.py:389
+msgid "Upgrading the system failed"
+msgstr "వ్యవస్థను ఉన్నతీకరించుటలో విఫలమైనది"
+
+#: ../aptdaemon/enums.py:390
+msgid "Applying software changes failed"
+msgstr "సాఫ్ట్‍వేర్ మార్పులు అనువర్తించుటలో విఫలమైంది"
+
+#: ../aptdaemon/enums.py:391
+msgid "Repairing incomplete installation failed"
+msgstr "అసంపూర్ణ స్థాపనను బాగుచేయుటలో విఫలమయింది"
+
+#: ../aptdaemon/enums.py:393
+msgid "Repairing broken dependencies failed"
+msgstr "విరిగిన ఆధారితత్వాలను బాగుచేయుటలే విఫలమైంది"
+
+#: ../aptdaemon/enums.py:394
+msgid "Adding software source failed"
+msgstr "సాఫ్ట్‍వేర్ మూలాధారం జతచేయుటలో విఫలమైనది"
+
+#: ../aptdaemon/enums.py:395
+msgid "Enabling component of the distribution failed"
+msgstr ""
+
+#: ../aptdaemon/enums.py:397 ../aptdaemon/enums.py:398
+msgid "Removing downloaded package files failed"
+msgstr "డౌన్‌లోడుచేసిన ప్యాకేజీ ఫైళ్ళను తొలగించుటలో విఫలమైంది"
+
+#: ../aptdaemon/enums.py:399
+msgid "Search failed"
+msgstr ""
+
+#: ../aptdaemon/enums.py:400
+msgid "Adding license key"
+msgstr ""
+
+#: ../aptdaemon/enums.py:404 ../aptdaemon/enums.py:405
+msgid "Check your Internet connection."
+msgstr "మీ అంతర్జాల అనుసంధానాన్ని సరిచూడండి."
+
+#: ../aptdaemon/enums.py:406
+msgid ""
+"Check if you are using third party repositories. If so disable them, since "
+"they are a common source of problems.\n"
+"Furthermore run the following command in a Terminal: apt-get install -f"
+msgstr ""
+
+#: ../aptdaemon/enums.py:411
+msgid "The selected file may not be a GPG key file or it might be corrupt."
+msgstr ""
+
+#: ../aptdaemon/enums.py:413
+msgid ""
+"The selected key couldn't be removed. Check that you provided a valid "
+"fingerprint."
+msgstr ""
+
+#: ../aptdaemon/enums.py:415
+msgid ""
+"Check if you are currently running another software management tool, e.g. "
+"Synaptic or aptitude. Only one tool is allowed to make changes at a time."
+msgstr ""
+
+#: ../aptdaemon/enums.py:418
+msgid ""
+"This is a serious problem. Try again later. If this problem appears again, "
+"please report an error to the developers."
+msgstr ""
+
+#: ../aptdaemon/enums.py:421
+msgid ""
+"Check the spelling of the package name, and that the appropriate repository "
+"is enabled."
+msgstr ""
+
+#: ../aptdaemon/enums.py:423
+msgid "There isn't any need for an update."
+msgstr ""
+
+#: ../aptdaemon/enums.py:424
+msgid "There isn't any need for an installation"
+msgstr ""
+
+#: ../aptdaemon/enums.py:426
+msgid "There isn't any need for a removal."
+msgstr "తొలగించడానికి అక్కడ ఏదీ లేదు."
+
+#: ../aptdaemon/enums.py:427
+msgid ""
+"You requested to remove a package which is an essential part of your system."
+msgstr ""
+
+#: ../aptdaemon/enums.py:430
+msgid ""
+"The connection to the daemon was lost. Most likely the background daemon "
+"crashed."
+msgstr ""
+
+#: ../aptdaemon/enums.py:432
+msgid "The installation or removal of a software package failed."
+msgstr ""
+
+#: ../aptdaemon/enums.py:434
+msgid "The requested feature is not supported."
+msgstr ""
+
+#: ../aptdaemon/enums.py:435
+msgid ""
+"There seems to be a programming error in aptdaemon, the software that allows "
+"you to install/remove software and to perform other package management "
+"related tasks."
+msgstr ""
+
+#: ../aptdaemon/enums.py:439
+msgid ""
+"This error could be caused by required additional software packages which "
+"are missing or not installable. Furthermore there could be a conflict "
+"between software packages which are not allowed to be installed at the same "
+"time."
+msgstr ""
+
+#: ../aptdaemon/enums.py:445
+msgid "This requires installing packages from unauthenticated sources."
+msgstr ""
+
+#: ../aptdaemon/enums.py:447
+msgid ""
+"The installation could have failed because of an error in the corresponding "
+"software package or it was cancelled in an unfriendly way. You have to "
+"repair this before you can install or remove any further software."
+msgstr ""
+
+#: ../aptdaemon/enums.py:453
+msgid ""
+"Please copy the file to your local computer and check the file permissions."
+msgstr ""
+
+#: ../aptdaemon/enums.py:456
+msgid ""
+"The installation of a package which violates the quality standards isn't "
+"allowed. This could cause serious problems on your computer. Please contact "
+"the person or organisation who provided this package file and include the "
+"details beneath."
+msgstr ""
+
+#: ../aptdaemon/enums.py:463
+msgid ""
+"The downloaded license key which is required to run this piece of software "
+"is not valid or could not be installed correctly.\n"
+"See the details for more information."
+msgstr ""
+
+#: ../aptdaemon/enums.py:469
+msgid "All available upgrades have already been installed."
+msgstr ""
+
+#: ../aptdaemon/enums.py:471
+msgid ""
+"The license key which allows you to use this piece of software could not be "
+"downloaded. Please check your network connection."
+msgstr ""
+
+#: ../aptdaemon/enums.py:475
+#, fuzzy
+msgid "You don't have the required privileges to perform this action."
+msgstr "ఈ చర్యను చేయుటకు మీకు అనుమతి లేదు"
+
+#: ../aptdaemon/enums.py:477
+msgid ""
+"You either provided a wrong password or cancelled the authorization.\n"
+"Furthermore there could also be a technical reason for this error if you "
+"haven't seen a password dialog: your desktop environment doesn't provide a "
+"PolicyKit session agent."
+msgstr ""
+
+#: ../aptdaemon/enums.py:485
+msgid "Failed to download package files"
+msgstr "ప్యాకేజీ ఫైళ్ళను డౌన్‌లోడుచేయుటలో విఫలమైంది"
+
+#: ../aptdaemon/enums.py:486
+msgid "Failed to download repository information"
+msgstr "భాండాగార సమాచారాన్ని డౌన్‌లోడ్‌చేయుటలో విఫలమైంది"
+
+#: ../aptdaemon/enums.py:488
+msgid "Package dependencies cannot be resolved"
+msgstr ""
+
+#: ../aptdaemon/enums.py:489
+msgid "The package system is broken"
+msgstr "ప్యాకేజీ వ్యవస్థ విరిగినది"
+
+#: ../aptdaemon/enums.py:490
+msgid "Key was not installed"
+msgstr "కీ స్థాపించబడలేదు"
+
+#: ../aptdaemon/enums.py:491
+msgid "Key was not removed"
+msgstr "కీ తొలగించబడలేదు"
+
+#: ../aptdaemon/enums.py:492
+msgid "Failed to lock the package manager"
+msgstr "ప్యాకేజీ నిర్వాహకిని లాక్‌చేయుటలో విఫలంచెందినది"
+
+#: ../aptdaemon/enums.py:493
+msgid "Failed to load the package list"
+msgstr "ప్యాకేజీ జాబితా లోడ్ చేయుటలో విఫలమైంది"
+
+#: ../aptdaemon/enums.py:494
+msgid "Package does not exist"
+msgstr "ప్యాకేజీ ఉనికిలోలేదు"
+
+#: ../aptdaemon/enums.py:495
+msgid "Package is already up to date"
+msgstr ""
+
+#: ../aptdaemon/enums.py:496
+msgid "Package is already installed"
+msgstr "ప్యాకేజీ ఇదివరకే స్థాపించడింది"
+
+#: ../aptdaemon/enums.py:497
+msgid "Package isn't installed"
+msgstr "ప్యాకేజీ స్థాపించబడలేదు"
+
+#: ../aptdaemon/enums.py:498
+msgid "Failed to remove essential system package"
+msgstr "ముఖ్యమైన వ్యవస్థ ప్యాకేజీని తొలగించుటలో విఫలమయ్యింది"
+
+#: ../aptdaemon/enums.py:500
+msgid "Task cannot be monitored or controlled"
+msgstr ""
+
+#: ../aptdaemon/enums.py:501
+msgid "Package operation failed"
+msgstr "ప్యాకేజీ ఆపరేషన్ విఫలమైంది"
+
+#: ../aptdaemon/enums.py:502
+msgid "Requires installation of untrusted packages"
+msgstr ""
+
+#: ../aptdaemon/enums.py:504
+msgid "Previous installation hasn't been completed"
+msgstr ""
+
+#: ../aptdaemon/enums.py:505
+msgid "The package is of bad quality"
+msgstr "ప్యాకేజీ చెత్త గుణాలను కలిగిఉంది"
+
+#: ../aptdaemon/enums.py:506
+msgid "Package file could not be opened"
+msgstr "ప్యాకేజీ ఫైల్ తెరువలేము"
+
+#: ../aptdaemon/enums.py:507
+msgid "Not supported feature"
+msgstr ""
+
+#: ../aptdaemon/enums.py:508
+msgid "Failed to download the license key"
+msgstr ""
+
+#: ../aptdaemon/enums.py:509
+msgid "Failed to install the license key"
+msgstr ""
+
+#: ../aptdaemon/enums.py:510
+msgid "The system is already up to date"
+msgstr ""
+
+#: ../aptdaemon/enums.py:511
+msgid "You could not be authorized"
+msgstr ""
+
+#: ../aptdaemon/enums.py:512
+msgid "You are not allowed to perform this action"
+msgstr ""
+
+#: ../aptdaemon/enums.py:513
+msgid "An unhandlable error occured"
+msgstr "ఒక వ్యవహరించలేని దోషం సంభవించింది"
+
+#: ../aptdaemon/enums.py:516
+msgid "Waiting for service to start"
+msgstr ""
+
+#: ../aptdaemon/enums.py:518
+msgid "Waiting"
+msgstr "నిరీక్షిస్తోంది"
+
+#: ../aptdaemon/enums.py:519
+msgid "Waiting for required medium"
+msgstr "అవసరమైన మాధ్యమం కోసం నిరీక్షిస్తోంది"
+
+#: ../aptdaemon/enums.py:520
+msgid "Waiting for other software managers to quit"
+msgstr "నిష్క్రమించడానికి ఇతర సాఫ్ట్‍వేర్ నిర్వాహకి కోసం నిరీక్షిస్తోంది"
+
+#: ../aptdaemon/enums.py:521
+msgid "Waiting for configuration file prompt"
+msgstr ""
+
+#: ../aptdaemon/enums.py:523
+msgid "Running task"
+msgstr "నడుస్తున్న కార్యం"
+
+#: ../aptdaemon/enums.py:524
+msgid "Downloading"
+msgstr "డౌన్‌లోడ్‌చేస్తోంది"
+
+#: ../aptdaemon/enums.py:525
+msgid "Querying software sources"
+msgstr ""
+
+#: ../aptdaemon/enums.py:526
+msgid "Cleaning up"
+msgstr "శుభ్రపరుస్తోంది"
+
+#: ../aptdaemon/enums.py:529
+msgid "Finished"
+msgstr "పూర్తయింది"
+
+#: ../aptdaemon/enums.py:530
+msgid "Cancelling"
+msgstr "రద్దుచేస్తోంది"
+
+#: ../aptdaemon/enums.py:531
+msgid "Loading software list"
+msgstr "సాఫ్ట్‍వేర్ జాబితాను నింపుతోంది"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:536
+#, python-format
+msgid "Installing %s"
+msgstr "%s స్థాపించబడుతోంది"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:538
+#, python-format
+msgid "Configuring %s"
+msgstr "%s స్వరూపించబడుతోంది"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:540
+#, python-format
+msgid "Removing %s"
+msgstr "%s తొలగించబడుతోంది"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:542
+#, python-format
+msgid "Completely removing %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:544
+#, python-format
+msgid "Noting disappearance of %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:546
+#, python-format
+msgid "Running post-installation trigger %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:548
+#, python-format
+msgid "Upgrading %s"
+msgstr "%s ఉన్నతీకరించబడుతోంది"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:550
+#, python-format
+msgid "Unpacking %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:552
+#, python-format
+msgid "Preparing installation of %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:554
+#, python-format
+msgid "Preparing configuration of %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:556
+#, python-format
+msgid "Preparing removal of %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:558
+#, python-format
+msgid "Preparing complete removal of %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:560
+#, python-format
+msgid "Installed %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:562
+#, python-format
+msgid "Completely removed %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:564
+#, python-format
+msgid "Removed %s"
+msgstr ""
+
+#: ../aptdaemon/enums.py:567
+msgid "Done"
+msgstr "అయినది"
+
+#: ../aptdaemon/enums.py:568
+msgid "Authentication failed"
+msgstr "ధృవీకరణ విఫలమైంది"
+
+#: ../aptdaemon/enums.py:570
+msgid "Fetching"
+msgstr "తెచ్చుచున్నది"
+
+#: ../aptdaemon/enums.py:571
+msgid "Idle"
+msgstr "వాడుక లేని"
+
+#: ../aptdaemon/enums.py:572
+msgid "Network isn't available"
+msgstr "నెట్‌వర్కు అందుబాటులోలేదు"
+
+#: ../aptdaemon/enums.py:704
+#, python-format
+msgid "Processing %s"
+msgstr ""
+
+#: ../aptdaemon/gtk3widgets.py:306
+#, python-format
+msgid "Downloaded %sB of %sB at %sB/s"
+msgstr ""
+
+#: ../aptdaemon/gtk3widgets.py:311 ../aptdaemon/gtk3widgets.py:510
+#, python-format
+msgid "Downloaded %sB of %sB"
+msgstr ""
+
+#: ../aptdaemon/gtk3widgets.py:323
+msgid "Details"
+msgstr "వివరాలు"
+
+#: ../aptdaemon/gtk3widgets.py:474
+msgid "File"
+msgstr "ఫైల్"
+
+#. TRANSLATORS: header of the progress download column
+#: ../aptdaemon/gtk3widgets.py:479
+msgid "%"
+msgstr "%"
+
+#: ../aptdaemon/gtk3widgets.py:515
+#, python-format
+msgid "Downloaded %sB"
+msgstr "%sB డౌన్‌లోడ్అయినది"
+
+#: ../aptdaemon/gtk3widgets.py:518
+msgid "Downloaded"
+msgstr "డౌన్‌లోడ్అయినది"
+
+#. TRANSLATORS: %s represents the name of a CD or DVD
+#: ../aptdaemon/gtk3widgets.py:853
+#, python-format
+msgid "CD/DVD '%s' is required"
+msgstr "CD/DVD '%s' అవసరం"
+
+#. TRANSLATORS: %s is the name of the CD/DVD drive
+#: ../aptdaemon/gtk3widgets.py:855
+#, python-format
+msgid ""
+"Please insert the above CD/DVD into the drive '%s' to install software "
+"packages from it."
+msgstr ""
+
+#: ../aptdaemon/gtk3widgets.py:859 ../aptdaemon/gtk3widgets.py:880
+msgid "C_ontinue"
+msgstr "కొనసాగించు (_o)"
+
+#: ../aptdaemon/gtk3widgets.py:931
+msgid "Install"
+msgstr "స్థాపించు"
+
+#: ../aptdaemon/gtk3widgets.py:932
+msgid "Reinstall"
+msgstr "మరల స్థాపించు"
+
+#: ../aptdaemon/gtk3widgets.py:933
+msgid "Remove"
+msgstr "తొలగించు"
+
+#: ../aptdaemon/gtk3widgets.py:934
+msgid "Purge"
+msgstr ""
+
+#: ../aptdaemon/gtk3widgets.py:935
+msgid "Upgrade"
+msgstr "ఉన్నతీకరించు"
+
+#: ../aptdaemon/gtk3widgets.py:936
+msgid "Downgrade"
+msgstr "డౌన్‌గ్రేడ్"
+
+#: ../aptdaemon/gtk3widgets.py:937
+msgid "Skip upgrade"
+msgstr "ఉన్నతీకరణ దాటవేయి"
+
+#. If there is only one type of changes (e.g. only installs) expand the
+#. tree
+#. FIXME: adapt the title and message accordingly
+#. FIXME: Should we have different modes? Only show dependencies, only
+#. initial packages or both?
+#: ../aptdaemon/gtk3widgets.py:948
+msgid "Please take a look at the list of changes below."
+msgstr ""
+
+#: ../aptdaemon/gtk3widgets.py:956
+msgid "Additional software has to be installed"
+msgstr "అదనపు సాఫ్ట్‍వేర్‌ను స్థాపించాలి"
+
+#: ../aptdaemon/gtk3widgets.py:958
+msgid "Additional software has to be re-installed"
+msgstr "అదనపు సాఫ్ట్‍వేర్‌ను పునఃస్థాపించాలి"
+
+#: ../aptdaemon/gtk3widgets.py:960
+msgid "Additional software has to be removed"
+msgstr "అదనపు సాఫ్ట్‍వేర్‌ను తొలగించాలి"
+
+#: ../aptdaemon/gtk3widgets.py:962
+msgid "Additional software has to be purged"
+msgstr ""
+
+#: ../aptdaemon/gtk3widgets.py:964
+msgid "Additional software has to be upgraded"
+msgstr "అదనపు సాఫ్ట్‍వేర్‌ను ఉన్నతీకరించాలి"
+
+#: ../aptdaemon/gtk3widgets.py:966
+msgid "Additional software has to be downgraded"
+msgstr ""
+
+#: ../aptdaemon/gtk3widgets.py:968
+msgid "Updates will be skipped"
+msgstr "నవీకరణలు దాటవేయబడతాయి"
+
+#: ../aptdaemon/gtk3widgets.py:976
+msgid "Additional changes are required"
+msgstr "అదనపు మార్పులు అవసరం"
+
+#: ../aptdaemon/gtk3widgets.py:981
+#, python-format
+msgid "%sB will be downloaded in total."
+msgstr ""
+
+#: ../aptdaemon/gtk3widgets.py:985
+#, python-format
+msgid "%sB of disk space will be freed."
+msgstr ""
+
+#: ../aptdaemon/gtk3widgets.py:989
+#, python-format
+msgid "%sB more disk space will be used."
+msgstr ""
+
+#. TRANSLATORS: %s is a file path
+#: ../aptdaemon/gtk3widgets.py:1061
+#, python-format
+msgid ""
+"Replace your changes in '%s' with a later version of the configuration file?"
+msgstr ""
+
+#: ../aptdaemon/gtk3widgets.py:1063
+msgid ""
+"If you don't know why the file is there already, it is usually safe to "
+"replace it."
+msgstr ""
+
+#: ../aptdaemon/gtk3widgets.py:1072
+msgid "_Changes"
+msgstr "మార్పులు (_C)"
+
+#: ../aptdaemon/gtk3widgets.py:1075
+msgid "_Keep"
+msgstr "ఉంచు(_K)"
+
+#: ../aptdaemon/gtk3widgets.py:1076
+msgid "_Replace"
+msgstr "పునఃస్థాపించు (_R)"
+
+#: ../aptdaemon/gtk3widgets.py:1179
+msgid "_Details"
+msgstr "వివరాలు (_D)"
+
+#. TRANSLATORS: %s is the name of a package manager
+#: ../aptdaemon/lock.py:182
+#, python-format
+msgid "Waiting for %s to exit"
+msgstr ""
+
+#. TRANSLATORS: %s is a list of package names
+#: ../aptdaemon/progress.py:169
+#, python-format
+msgid "Downloading %(files)s"
+msgid_plural "Downloading %(files)s"
+msgstr[0] "%(files)s డౌన్‌లోడ్‌చేస్తోంది"
+msgstr[1] "%(files)s డౌన్‌లోడ్‌చేస్తోంది"
+
+#. TRANSLATORS: the string is used as a fallback if we cannot
+#. get the URI of a local repository
+#: ../aptdaemon/progress.py:281 ../aptdaemon/progress.py:320
+msgid "local repository"
+msgstr ""
+
+#. TRANSLATORS: %s is a list of repository names
+#: ../aptdaemon/progress.py:284
+#, python-format
+msgid "Downloading from %s"
+msgid_plural "Downloading from %s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:324
+#, python-format
+msgid "Structure of %s"
+msgstr ""
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:327
+#, python-format
+msgid "Description of %s"
+msgstr ""
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:330
+#, python-format
+msgid "Description signature of %s"
+msgstr ""
+
+#: ../aptdaemon/progress.py:335
+#, python-format
+msgid "Available packages from %s"
+msgstr ""
+
+#: ../aptdaemon/progress.py:339
+#, python-format
+msgid "Available sources from %s"
+msgstr ""
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:342
+#, python-format
+msgid "Available translations from %s"
+msgstr ""
+
+#: ../aptdaemon/progress.py:359
+#, python-format
+msgid "Translations for %s (%s) from %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a language. The second one is
+#. the name of the repository
+#: ../aptdaemon/progress.py:363
+#, python-format
+msgid "Translations for %s from %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
+#. The second one is the name of the repository
+#: ../aptdaemon/progress.py:368
+#, python-format
+msgid "Translations (%s) from %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:374 ../aptdaemon/worker/aptworker.py:671
+#: ../aptdaemon/worker/aptworker.py:748 ../aptdaemon/worker/aptworker.py:791
+#, python-format
+msgid "Package %s isn't available"
+msgstr "%s ప్యాకేజీ అందుబాటులోలేదు"
+
+#: ../aptdaemon/worker/aptworker.py:379 ../aptdaemon/worker/aptworker.py:675
+#: ../aptdaemon/worker/aptworker.py:752 ../aptdaemon/worker/aptworker.py:795
+#, python-format
+msgid "Package %s isn't installed"
+msgstr "%s ప్యాకేజీ స్థాపించబడలేదు"
+
+#: ../aptdaemon/worker/aptworker.py:383
+#, python-format
+msgid "The version %s of %s isn't installed"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:398
+#, python-format
+msgid "Package %s is already installed"
+msgstr "%s ప్యాకేజీ ఇదివరకే స్థాపించబడింది"
+
+#: ../aptdaemon/worker/aptworker.py:407 ../aptdaemon/worker/aptworker.py:821
+#, python-format
+msgid "The version %s of %s isn't available."
+msgstr ""
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptdaemon/worker/aptworker.py:565
+#, python-format
+msgid "The keyserver URL is invalid: %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptdaemon/worker/aptworker.py:571
+#, python-format
+msgid "Invalid protocol of the server: %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the id of a GnuPG key
+#. e.g. E08ADE95
+#: ../aptdaemon/worker/aptworker.py:579 ../aptdaemon/worker/aptworker.py:623
+#, python-format
+msgid "Invalid key id: %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:587
+#, python-format
+msgid ""
+"Failed to download and install the key %s from %s:\n"
+"%s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:604
+#, python-format
+msgid "Key file %s couldn't be installed: %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:628
+#, python-format
+msgid "Key with fingerprint %s couldn't be removed: %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:679
+#, python-format
+msgid "Package %s cannot be removed."
+msgstr "%s ప్యాకేజీని తొలగించుట సాధ్యపడదు"
+
+#: ../aptdaemon/worker/aptworker.py:683
+#, python-format
+msgid "The version %s of %s is not installed"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:763
+#, python-format
+msgid "The former version %s of %s is already installed"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:768 ../aptdaemon/worker/aptworker.py:814
+#, python-format
+msgid "The version %s of %s is already installed"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:775
+#, python-format
+msgid "The version %s of %s isn't available"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:779
+#, python-format
+msgid "You need to specify a version to downgrade %s to"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:807
+#, python-format
+msgid "The later version %s of %s is already installed"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:838
+#, python-format
+msgid "The package %s isn't available in the %s release."
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1026
+#, python-format
+msgid "Package %s cannot be removed"
+msgstr "%s ప్యాకేజీని తొలగించుట సాధ్యపడదు"
+
+#: ../aptdaemon/worker/aptworker.py:1123
+msgid ""
+"The package doesn't provide a valid Installed-Size control field. See Debian "
+"Policy 5.6.20."
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1265
+msgid "The license key is empty"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1281
+msgid "The license key is not allowed to contain executable code."
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1290
+#, python-format
+msgid "The license key path %s is invalid"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1294
+#, python-format
+msgid "The license key already exists: %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1299
+#, python-format
+msgid ""
+"The location of the license key is unsecure since it contains symbolic "
+"links. The path %s maps to %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1307
+#, python-format
+msgid "The directory where to install the key to doesn't exist yet: %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1318
+#, python-format
+msgid "Failed to write key file to: %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1353
+msgid "The following packages have unmet dependencies:"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1406
+msgid "but it is a virtual package"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1409
+msgid "but it is not installed"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1411
+msgid "but it is not going to be installed"
+msgstr ""
+
+#. TRANSLATORS: %s is a version number
+#: ../aptdaemon/worker/aptworker.py:1415
+#, python-format
+msgid "but %s is installed"
+msgstr ""
+
+#. TRANSLATORS: %s is a version number
+#: ../aptdaemon/worker/aptworker.py:1419
+#, python-format
+msgid "but %s is to be installed"
+msgstr ""

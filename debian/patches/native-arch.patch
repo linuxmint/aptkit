@@ -1,0 +1,17 @@
+Description: Fix NATIVE_ARCH not being defined
+Author: Justin McPherson <justin.mcpherson@canonical.com>
+Forwarded: https://code.launchpad.net/~justinmcp/aptdaemon/1352654/+merge/243354
+
+Index: b/aptdaemon/pkcompat.py
+===================================================================
+--- a/aptdaemon/pkcompat.py
++++ b/aptdaemon/pkcompat.py
+@@ -392,7 +392,7 @@
+             distro, version, _codename = platform.dist()
+             self._distro_id = "%s;%s;%s" % (distro or "unknown",
+                                             version or "unknown",
+-                                            NATIVE_ARCH)
++                                            self.queue.worker.NATIVE_ARCH)
+         return self._distro_id
+ 
+     def _on_network_state_changed(self, mon, state):

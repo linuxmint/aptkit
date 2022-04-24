@@ -1,0 +1,136 @@
+Source: aptdaemon
+Section: admin
+Priority: extra
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Julian Andres Klode <jak@debian.org>
+Build-Depends: debhelper (>= 7.3),
+               debconf-i18n,
+               dbus,
+               dh-python,
+               dh-translations,
+               python3-all,
+               python3-setuptools,
+               python3-distutils-extra,
+               python3-nose,
+               gir1.2-glib-2.0,
+               gir1.2-gtk-3.0,
+               gir1.2-packagekitglib-1.0 (>= 0.8.9),
+               gir1.2-vte-2.91,
+               python3-apt (>= 0.8.5~ubuntu1),
+               python3-defer (>= 1.0.6),
+               python3-dbus,
+               python3-gi,
+               python3-mock,
+               python3-pkg-resources,
+               iso-codes,
+               pep8,
+               xauth,
+               xvfb
+Standards-Version: 3.9.6
+Homepage: https://launchpad.net/aptdaemon
+XS-Original-Vcs-Bzr: nosmart+http://bzr.debian.org/bzr/apt/aptdaemon/debian-sid
+XS-Original-Vcs-Browser: http://bzr.debian.org/loggerhead/apt/aptdaemon/debian-sid
+X-Python3-Version: >= 3.2
+XS-Testsuite: autopkgtest
+
+Package: aptdaemon
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         gir1.2-glib-2.0,
+         python3-aptdaemon (= ${binary:Version}),
+         python3-gi,
+         policykit-1,
+Breaks: software-center (<< 1.1.21), python3-aptdaemon.pkcompat
+Replaces: python3-aptdaemon.pkcompat
+Description: transaction based package management service
+ Aptdaemon allows normal users to perform package management tasks, e.g. 
+ refreshing the cache, upgrading the system, installing or removing software 
+ packages.
+ .
+ Currently it comes with the following main features:
+ .
+  - Programming language independent D-Bus interface, which allows one to
+    write clients in several languages
+  - Runs only if required (D-Bus activation)
+  - Fine grained privilege management using PolicyKit, e.g. allowing all
+    desktop user to query for updates without entering a password
+  - Support for media changes during installation from DVD/CDROM
+  - Support for debconf (Debian's package configuration system)
+  - Support for attaching a terminal to the underlying dpkg call
+ .
+ This package contains the aptd script and all the data files required to run
+ the daemon. Moreover it contains the aptdcon script, which is a command
+ line client for aptdaemon. The API is not stable yet.
+
+Package: python3-aptdaemon
+Architecture: all
+Section: python
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         aptdaemon,
+         gir1.2-glib-2.0,
+         gir1.2-packagekitglib-1.0 (>= 1.1.1),
+         python3-apt (>= 0.8.5~ubuntu1),
+         python3-defer (>= 1.0.6),
+         python3-dbus,
+         python3-gi,
+         python3-pkg-resources,
+         iso-codes,
+Description: Python 3 module for the server and client of aptdaemon
+ Aptdaemon is a transaction based package management service. It allows 
+ normal users to perform package management tasks, e.g. refreshing the 
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides the Python 3 modules required to run aptdaemon
+ and to implement a client. The API is not stable yet.
+
+Package: python3-aptdaemon.test
+Architecture: all
+Section: python
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3-aptdaemon (= ${binary:Version}),
+Breaks: python-aptdaemon.test
+Replaces: python-aptdaemon.test
+Description: Test environment for aptdaemon clients
+ Aptdaemon is a transaction based package management daemon. It allows 
+ normal users to perform package management tasks, e.g. refreshing the 
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides the aptdaemon.test module and several helper
+ scripts and a test repository to write unittests for aptdaemon
+ clients.
+
+Package: aptdaemon-data
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: python-aptdaemon-gtk (<= 0.41+bzr580-0ubuntu1)
+Description: data files for clients
+ Aptdaemon is a transaction based package management daemon. It allows 
+ normal users to perform package management tasks, e.g. refreshing the 
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides common data files (e.g. icons) for aptdaemon
+ clients.
+ 
+Package: python3-aptdaemon.gtk3widgets
+Architecture: all
+Section: python
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3-aptdaemon (= ${binary:Version}),
+         python3-gi,
+         gir1.2-gtk-3.0,
+         gir1.2-vte-2.91,
+         aptdaemon-data
+Conflicts: python-aptdaemon-gtk (<< 0.41+bzr582-0ubuntu1)
+Replaces: python-aptdaemon-gtk (<< 0.41+bzr582-0ubuntu1)
+Description: Python 3 GTK+ 3 widgets to run an aptdaemon client
+ Aptdaemon is a transaction based package management daemon. It allows 
+ normal users to perform package management tasks, e.g. refreshing the 
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides the Python 3 GTK+ 3 widgets to implement a fully
+ working graphical client. The widgets can be used to initiate, to
+ monitor and to control a transaction. The API is not stable yet.

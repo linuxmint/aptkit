@@ -1,0 +1,1468 @@
+# Norwegian Bokmal translation for aptdaemon
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the aptdaemon package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: aptdaemon\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-21 15:36+0200\n"
+"PO-Revision-Date: 2012-02-26 20:26+0000\n"
+"Last-Translator: Mathias Bynke <Unknown>\n"
+"Language-Team: Norwegian Bokmal <nb@li.org>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-03-09 23:28+0000\n"
+"X-Generator: Launchpad (build 16523)\n"
+
+#: ../data/org.debian.apt.policy.in.h:1
+msgid "List keys of trusted vendors"
+msgstr "Vis godkjente utgivere"
+
+#: ../data/org.debian.apt.policy.in.h:2
+msgid "To view the list of trusted keys, you need to authenticate."
+msgstr "Du må autentisere deg for å vise godkjente nøkler."
+
+#: ../data/org.debian.apt.policy.in.h:3 ../aptdaemon/console.py:619
+msgid "Remove downloaded package files"
+msgstr "Fjern nedlastede pakkefiler"
+
+#: ../data/org.debian.apt.policy.in.h:4
+msgid "To clean downloaded package files, you need to authenticate."
+msgstr "Du må autentisere deg for å rydde opp i nedlastede pakkefiler."
+
+#: ../data/org.debian.apt.policy.in.h:5
+msgid "Change software configuration"
+msgstr "Endre programvareoppsett"
+
+#: ../data/org.debian.apt.policy.in.h:6
+msgid "To change software settings, you need to authenticate."
+msgstr "Du må autentisere deg for å endre programvareinnstillinger."
+
+#: ../data/org.debian.apt.policy.in.h:7
+msgid "Change software repository"
+msgstr "Endre programvarearkiv"
+
+#: ../data/org.debian.apt.policy.in.h:8
+msgid "To change software repository settings, you need to authenticate."
+msgstr ""
+"Du må autentisere deg for å endre innstillinger for programvarearkiver."
+
+#: ../data/org.debian.apt.policy.in.h:9
+msgid "Install package file"
+msgstr "Installer pakkefil"
+
+#: ../data/org.debian.apt.policy.in.h:10
+msgid "To install this package, you need to authenticate."
+msgstr "For å installere denne pakken må du autentisere deg."
+
+#: ../data/org.debian.apt.policy.in.h:11
+msgid "Update package information"
+msgstr "Oppdater pakkeinformasjon"
+
+#: ../data/org.debian.apt.policy.in.h:12
+msgid "To update the software catalog, you need to authenticate."
+msgstr "Du må autentisere deg for å oppdatere programvarekatalogen."
+
+#: ../data/org.debian.apt.policy.in.h:13
+msgid "Install or remove packages"
+msgstr "Installer eller fjern pakker"
+
+#: ../data/org.debian.apt.policy.in.h:14
+msgid "To install or remove software, you need to authenticate."
+msgstr "For å installere eller fjerne programvare må du autentisere deg."
+
+#. This priviledge will be requested when installing a package
+#. from a high trusted repository that can be explicitely whitelisted.
+#.
+#. The defaults for this action are the same as
+#. "org.debian.apt.install-or-remove-packages".
+#.
+#. The admin can override them to e.g. allow passwordless installs for
+#. leightweight applications like unity-webapps or for packages
+#. comming from high trust repositories (like internal repositories)
+#.
+#: ../data/org.debian.apt.policy.in.h:25
+msgid "Install software from a high-trust whitelisted repository."
+msgstr ""
+
+#: ../data/org.debian.apt.policy.in.h:26
+msgid "To install software, you need to authenticate."
+msgstr ""
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#.
+#. The client has to authenticate for this privilege before calling
+#. the aptdaemon methods.
+#: ../data/org.debian.apt.policy.in.h:32
+msgid "Add a new repository and install packages from it"
+msgstr "Legg til et nytt pakkearkiv og installer pakker fra det"
+
+#: ../data/org.debian.apt.policy.in.h:33
+msgid "To install software from a new source, you need to authenticate."
+msgstr "Du må autentisere deg for å installere fra en ny kilde."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#.
+#. The client has to authenticate for this privilege before calling
+#. the aptdaemon methods.
+#.
+#. The only difference to install-packages-from-new-repo is the wording
+#. of the message. It is required by Ubuntu's Software-Center.
+#: ../data/org.debian.apt.policy.in.h:42
+msgid "Add a new repository of purchased software and install packages from it"
+msgstr ""
+"Legg til et nytt pakkearkiv for kjøpt programvare og installer pakker fra det"
+
+#: ../data/org.debian.apt.policy.in.h:43
+msgid "To install purchased software, you need to authenticate."
+msgstr "Du må autentisere deg for å installere kjøpt programvare."
+
+#: ../data/org.debian.apt.policy.in.h:44
+msgid "Upgrade packages"
+msgstr "Oppgrader pakker"
+
+#: ../data/org.debian.apt.policy.in.h:45
+msgid "To install updated software, you need to authenticate."
+msgstr "Du må autentisere deg for å installere den oppdaterte programvaren"
+
+#: ../data/org.debian.apt.policy.in.h:46
+msgid "Cancel the task of another user"
+msgstr "Avbryte en annen brukers oppgaver"
+
+#: ../data/org.debian.apt.policy.in.h:47
+msgid "To cancel someone else's software changes, you need to authenticate."
+msgstr "Du må autentisere deg for å avbryte andres programvareendringer."
+
+#: ../data/org.debian.apt.policy.in.h:48
+msgid "Set a proxy for software downloads"
+msgstr "Velg en proxy-tjener til programvarenedlastinger"
+
+#: ../data/org.debian.apt.policy.in.h:49
+msgid ""
+"To use a proxy server for downloading software, you need to authenticate."
+msgstr ""
+"For å bruke en proxytjener til å laste ned programvare må du autentisere deg."
+
+#: ../aptdaemon/console.py:215
+msgid "ERROR"
+msgstr "FEIL"
+
+#: ../aptdaemon/console.py:249
+#, fuzzy, python-format
+msgid "Downloaded %(cur)sB of %(total)sB at %(rate)sB/s"
+msgstr "Lastet ned %sB av %sB fra %sB/s"
+
+#: ../aptdaemon/console.py:255
+#, fuzzy, python-format
+msgid "Downloaded %(cur)sB of %(total)sB"
+msgstr "Lastet ned %sB av %sB"
+
+#: ../aptdaemon/console.py:385 ../aptdaemon/console.py:390
+msgid "ERROR:"
+msgstr "FEIL:"
+
+#: ../aptdaemon/console.py:386
+msgid "You are not allowed to perform this action."
+msgstr "Du har ikke tilgang til å utføre denne handlingen."
+
+#: ../aptdaemon/console.py:409 ../aptdaemon/console.py:537
+msgid "Queuing"
+msgstr "Legger i kø"
+
+#: ../aptdaemon/console.py:417 ../aptdaemon/enums.py:527
+msgid "Resolving dependencies"
+msgstr "Løser avhengigheter"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:459
+#, python-format
+msgid "The following NEW package will be installed (%(count)s):"
+msgid_plural "The following NEW packages will be installed (%(count)s):"
+msgstr[0] "Følgende NY pakke vil installeres (%(count)s):"
+msgstr[1] "Følgende NYE pakker vil installeres (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:467
+#, python-format
+msgid "The following package will be upgraded (%(count)s):"
+msgid_plural "The following packages will be upgraded (%(count)s):"
+msgstr[0] "Følgende pakke vil oppgraderes (%(count)s):"
+msgstr[1] "Følgende pakker vil oppgraderes (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:475
+#, python-format
+msgid "The following package will be REMOVED (%(count)s):"
+msgid_plural "The following packages will be REMOVED (%(count)s):"
+msgstr[0] "Følgende pakke vil FJERNES (%(count)s):"
+msgstr[1] "Følgende pakker vil FJERNES (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:484
+#, python-format
+msgid "The following package will be DOWNGRADED (%(count)s):"
+msgid_plural "The following packages will be DOWNGRADED (%(count)s):"
+msgstr[0] "Følgende pakke vil NEDGRADERES (%(count)s):"
+msgstr[1] "Følgende pakker vil NEDGRADERES (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:492
+#, python-format
+msgid "The following package will be reinstalled (%(count)s):"
+msgid_plural "The following packages will be reinstalled (%(count)s):"
+msgstr[0] "Følgende pakke vil bli installert på nytt (%(count)s):"
+msgstr[1] "Følgende pakker vil bli installert på nytt (%(count)s):"
+
+#: ../aptdaemon/console.py:499
+#, python-format
+msgid "The following package has been kept back (%(count)s):"
+msgid_plural "The following packages have been kept back (%(count)s):"
+msgstr[0] "Følgende pakke holdes tilbake (%(count)s):"
+msgstr[1] "Følgende pakker holdes tilbake (%(count)s):"
+
+#: ../aptdaemon/console.py:507
+#, python-format
+msgid "Need to get %sB of archives."
+msgstr "Må hente %sB arkiver."
+
+#: ../aptdaemon/console.py:510
+#, python-format
+msgid "After this operation, %sB of additional disk space will be used."
+msgstr "Etter denne operasjonen vil %sB ekstra diskplass brukes."
+
+#: ../aptdaemon/console.py:514
+#, python-format
+msgid "After this operation, %sB of additional disk space will be freed."
+msgstr "Etter denne operasjonen vil %sB ekstra diskplass bli frigjort."
+
+#: ../aptdaemon/console.py:522 ../aptdaemon/console.py:524
+msgid "Do you want to continue [Y/n]?"
+msgstr "Ønsker du å fortsette [J/n]?"
+
+#: ../aptdaemon/console.py:545
+msgid ""
+"To operate on more than one package put the package names in quotation "
+"marks:\n"
+"aptdcon --install \"foo bar\""
+msgstr ""
+"Sett pakkenavn i anførselstegn for å betjene mer enn én pakke:\n"
+"aptdcon --install \"foo bar\""
+
+#: ../aptdaemon/console.py:551
+msgid "Refresh the cache"
+msgstr "Oppdater bufferen"
+
+#: ../aptdaemon/console.py:554
+msgid ""
+"Try to resolve broken dependencies. Potentially dangerous operation since it "
+"could try to remove many packages."
+msgstr ""
+"Forsøk å løse problemer med ødelagte avhengigheter. Dette er en potensielt "
+"skadelig operasjon da den kan forsøke å fjerne mange pakker."
+
+#: ../aptdaemon/console.py:559
+msgid "Try to finish a previous incompleted installation"
+msgstr "Forsøker å fullføre en tidligere ufullstendig installasjon"
+
+#: ../aptdaemon/console.py:563 ../aptdaemon/console.py:576
+msgid "Install the given packages"
+msgstr "Installer de angitte pakkene"
+
+#: ../aptdaemon/console.py:566
+msgid "Reinstall the given packages"
+msgstr "Installer de angitte pakkene på nytt"
+
+#: ../aptdaemon/console.py:569
+msgid "Remove the given packages"
+msgstr "Fjern angitte pakker"
+
+#: ../aptdaemon/console.py:572
+msgid "Remove the given packages including configuration files"
+msgstr "Fjern angitte pakker og tilhørende oppsettsfiler"
+
+#: ../aptdaemon/console.py:579
+msgid "Downgrade the given packages"
+msgstr "Nedgrader angitte pakker"
+
+#: ../aptdaemon/console.py:582
+msgid "Deprecated: Please use --safe-upgrade"
+msgstr "Utgått: vennlist bruk --safe-upgrade"
+
+#: ../aptdaemon/console.py:586
+msgid "Upgrade the system in a safe way"
+msgstr "Oppgrader systemet på en trygg måte"
+
+#: ../aptdaemon/console.py:589
+msgid "Upgrade the system, possibly installing and removing packages"
+msgstr ""
+"Oppgrader systemet, installasjon og fjerning av pakker vil sannsynligvis "
+"forekomme"
+
+#: ../aptdaemon/console.py:593
+msgid "Add the vendor to the trusted ones"
+msgstr "Legg leverandøren til godkjente"
+
+#: ../aptdaemon/console.py:596
+msgid "Add the vendor keyid (also needs --keyserver)"
+msgstr "Legg til leverandørens nøkkel-id (behøver også --keyserver)"
+
+#: ../aptdaemon/console.py:600
+msgid "Use the given keyserver for looking up keys"
+msgstr "Bruk gitt nøkkeltjener til å lete opp nøkler"
+
+#: ../aptdaemon/console.py:604
+msgid "Add new repository from the given deb-line"
+msgstr "Legg til ny pakkearkiv fra den gitt deb-linjen"
+
+#: ../aptdaemon/console.py:608
+msgid ""
+"Specify an alternative sources.list.d file to which repositories should be "
+"added."
+msgstr ""
+"Angi en alternativ sources.list.d-fil hvor pakkearkeivene skal legges til."
+
+#: ../aptdaemon/console.py:612
+msgid "List trusted vendor keys"
+msgstr "Vise godkjente utgivernøkler"
+
+#: ../aptdaemon/console.py:615
+msgid "Remove the trusted key of the given fingerprint"
+msgstr "Fjern fingeravtrykkets godkjente nøkkel"
+
+#: ../aptdaemon/console.py:622
+msgid ""
+"Reconfigure installed packages. Optionally the minimum priority of questions "
+"can be specified"
+msgstr ""
+"Sett opp installerte pakker på nytt. Alternativt kan et minimum av spørsmål "
+"angis"
+
+#: ../aptdaemon/console.py:627
+msgid "The minimum debconf priority of question to be displayed"
+msgstr ""
+
+#: ../aptdaemon/console.py:631
+msgid "Do not attach to the apt terminal"
+msgstr "Ikke inkluder apt-terminalen"
+
+#: ../aptdaemon/console.py:635
+msgid "Allow packages from unauthenticated sources"
+msgstr "Tillat pakker fra uautentiserte kilder"
+
+#: ../aptdaemon/console.py:639
+msgid ""
+"Show additional information about the packages. Currently only the version "
+"number"
+msgstr ""
+"Vis detaljert informasjon om pakkene. For øyeblikket kun versjonsnummer"
+
+#: ../aptdaemon/console.py:647 ../aptdaemon/enums.py:532
+msgid "Waiting for authentication"
+msgstr "Venter på autentisering"
+
+#: ../aptdaemon/core.py:2135
+msgid "Do not shutdown the daemon because of inactivity"
+msgstr "Ikke avslutt daemon ved inaktivitet"
+
+#: ../aptdaemon/core.py:2140
+msgid "Do not load any plugins"
+msgstr "Ikke last noen programtillegg"
+
+#: ../aptdaemon/core.py:2144
+msgid "Show internal processing information"
+msgstr "Vis informasjon om interne prosesser"
+
+#: ../aptdaemon/core.py:2149
+msgid "Quit and replace an already running daemon"
+msgstr "Avslutt og erstatt en kjørende daemon"
+
+#: ../aptdaemon/core.py:2154
+msgid "Listen on the DBus session bus (Only required for testing"
+msgstr ""
+
+#: ../aptdaemon/core.py:2158
+msgid "Perform operations in the given chroot"
+msgstr "Utfør operasjoner i angitt chroot"
+
+#: ../aptdaemon/core.py:2163
+msgid "Store profile stats in the specified file"
+msgstr "Lagre profilstatistikk i angitt fil"
+
+#: ../aptdaemon/core.py:2168
+msgid "Do not make any changes to the system (Only of use to developers)"
+msgstr "Ikke gjør noen endringer på systemet (til bruk for utviklere)"
+
+#: ../aptdaemon/enums.py:337
+msgid "Installed file"
+msgstr "Installert fil"
+
+#: ../aptdaemon/enums.py:338
+msgid "Installed packages"
+msgstr "Installerte pakker"
+
+#: ../aptdaemon/enums.py:339
+msgid "Added key from file"
+msgstr "La til nøkkel fra fil"
+
+#: ../aptdaemon/enums.py:340
+msgid "Updated cache"
+msgstr "Mellomlager oppdatert"
+
+#: ../aptdaemon/enums.py:341
+msgid "Search done"
+msgstr "Søket er utført"
+
+#: ../aptdaemon/enums.py:342
+msgid "Removed trusted key"
+msgstr "Fjernet sikker nøkkel"
+
+#: ../aptdaemon/enums.py:343
+msgid "Removed packages"
+msgstr "Fjernede pakker"
+
+#: ../aptdaemon/enums.py:344
+msgid "Updated packages"
+msgstr "Oppdaterte pakker"
+
+#: ../aptdaemon/enums.py:345
+msgid "Upgraded system"
+msgstr "Oppgradert system"
+
+#: ../aptdaemon/enums.py:346
+msgid "Applied changes"
+msgstr "Endringer utført"
+
+#: ../aptdaemon/enums.py:347
+msgid "Repaired incomplete installation"
+msgstr "Reparer ufullstendige installasjoner"
+
+#: ../aptdaemon/enums.py:348
+msgid "Repaired broken dependencies"
+msgstr "Reparer ødelagte avhengigheter"
+
+#: ../aptdaemon/enums.py:349
+msgid "Added software source"
+msgstr "La til programvarekilde"
+
+#: ../aptdaemon/enums.py:350
+msgid "Enabled component of the distribution"
+msgstr "Aktivert distribusjonskomponent"
+
+#: ../aptdaemon/enums.py:351
+msgid "Removed downloaded package files"
+msgstr "Fjernet nedlastede pakkefiler"
+
+#: ../aptdaemon/enums.py:352
+msgid "Reconfigured installed packages"
+msgstr "Satt opp installerte pakker på nytt"
+
+#: ../aptdaemon/enums.py:356
+msgid "Successful"
+msgstr "Vellykket"
+
+#: ../aptdaemon/enums.py:357
+msgid "Canceled"
+msgstr "Avbrutt"
+
+#: ../aptdaemon/enums.py:358 ../aptdaemon/enums.py:569
+msgid "Failed"
+msgstr "Mislyktes"
+
+#: ../aptdaemon/enums.py:361
+msgid "Installing file"
+msgstr "Installerer fil"
+
+#: ../aptdaemon/enums.py:362
+msgid "Installing packages"
+msgstr "Installerer pakker"
+
+#: ../aptdaemon/enums.py:363
+msgid "Adding key from file"
+msgstr "Legger til nøkkel fra fil"
+
+#: ../aptdaemon/enums.py:364
+msgid "Updating cache"
+msgstr "Oppdaterer mellomlager"
+
+#: ../aptdaemon/enums.py:365
+msgid "Removing trusted key"
+msgstr "Fjerner sikker nøkkel"
+
+#: ../aptdaemon/enums.py:366
+msgid "Removing packages"
+msgstr "Fjerner pakker"
+
+#: ../aptdaemon/enums.py:367
+msgid "Updating packages"
+msgstr "Oppdaterer pakker"
+
+#: ../aptdaemon/enums.py:368
+msgid "Upgrading system"
+msgstr "Oppgraderer system"
+
+#: ../aptdaemon/enums.py:369 ../aptdaemon/enums.py:528
+msgid "Applying changes"
+msgstr "Utfører endringer"
+
+#: ../aptdaemon/enums.py:370
+msgid "Repairing incomplete installation"
+msgstr "Reparerer ufullstendig installasjon"
+
+#: ../aptdaemon/enums.py:371
+msgid "Repairing installed software"
+msgstr "Reparerer installert programvare"
+
+#: ../aptdaemon/enums.py:372
+msgid "Adding software source"
+msgstr "Legge til programvarekilde"
+
+#: ../aptdaemon/enums.py:373
+msgid "Enabling component of the distribution"
+msgstr "Aktiverer distribusjonskomponent"
+
+#: ../aptdaemon/enums.py:374
+msgid "Removing downloaded package files"
+msgstr "Fjerner nedlastede pakkefiler"
+
+#: ../aptdaemon/enums.py:375
+msgid "Reconfiguring installed packages"
+msgstr "Setter opp installerte pakker på nytt"
+
+#: ../aptdaemon/enums.py:376 ../aptdaemon/enums.py:517
+msgid "Searching"
+msgstr "Søker"
+
+#: ../aptdaemon/enums.py:380
+msgid "Installation of the package file failed"
+msgstr "Installasjon av pakkefil mislyktes"
+
+#: ../aptdaemon/enums.py:381
+msgid "Installation of software failed"
+msgstr "Installasjon av programvare mislyktes"
+
+#: ../aptdaemon/enums.py:382
+msgid "Adding the key to the list of trusted software vendors failed"
+msgstr ""
+
+#: ../aptdaemon/enums.py:384
+msgid "Refreshing the software list failed"
+msgstr "Mislyktes oppdatering av programvarelisten"
+
+#: ../aptdaemon/enums.py:385
+msgid "Removing the vendor from the list of trusted ones failed"
+msgstr "Mislyktes fjerning av klarert leverandør fra listen"
+
+#: ../aptdaemon/enums.py:387
+msgid "Removing software failed"
+msgstr "Fjerning av programvare mislyktes"
+
+#: ../aptdaemon/enums.py:388
+msgid "Updating software failed"
+msgstr "Oppdatering av programvare mislyktes"
+
+#: ../aptdaemon/enums.py:389
+msgid "Upgrading the system failed"
+msgstr "Oppgradering av systemet mislyktes"
+
+#: ../aptdaemon/enums.py:390
+msgid "Applying software changes failed"
+msgstr "Bruk av programvareendringer mislyktes"
+
+#: ../aptdaemon/enums.py:391
+msgid "Repairing incomplete installation failed"
+msgstr "Mislyktes reparerering av ufullstendig installasjon"
+
+#: ../aptdaemon/enums.py:393
+msgid "Repairing broken dependencies failed"
+msgstr "Mislyktes reparerering av manglende avhengigheter"
+
+#: ../aptdaemon/enums.py:394
+msgid "Adding software source failed"
+msgstr "Mislyktes å legge til programvarekilde"
+
+#: ../aptdaemon/enums.py:395
+msgid "Enabling component of the distribution failed"
+msgstr "Mislyktes å aktivere distribusjonskomponent"
+
+#: ../aptdaemon/enums.py:397 ../aptdaemon/enums.py:398
+msgid "Removing downloaded package files failed"
+msgstr "Fjerning av nedlastede pakkefiler mislyktes"
+
+#: ../aptdaemon/enums.py:399
+msgid "Search failed"
+msgstr "Søk feilet"
+
+#: ../aptdaemon/enums.py:400
+msgid "Adding license key"
+msgstr "Legger til lisensnøkkel"
+
+#: ../aptdaemon/enums.py:404 ../aptdaemon/enums.py:405
+msgid "Check your Internet connection."
+msgstr "Undersøk internettforbindelsen din."
+
+#: ../aptdaemon/enums.py:406
+msgid ""
+"Check if you are using third party repositories. If so disable them, since "
+"they are a common source of problems.\n"
+"Furthermore run the following command in a Terminal: apt-get install -f"
+msgstr ""
+"Undersøk om du benytter noen tredjeparts pakkearkiver. Disse er ofte en "
+"kilde til problemer - og du må kanskje deaktivere dem.\n"
+"I tillegg bør du kjøre følgende kommando i terminalen: apt-get install -f"
+
+#: ../aptdaemon/enums.py:411
+msgid "The selected file may not be a GPG key file or it might be corrupt."
+msgstr "Den valgte filen er ikke en GPG-fil, eller er skadet."
+
+#: ../aptdaemon/enums.py:413
+msgid ""
+"The selected key couldn't be removed. Check that you provided a valid "
+"fingerprint."
+msgstr ""
+"Den valgte nøkkelen kan ikke fjernes. Kontroller at du oppgir et gyldig "
+"fingeravtrykk."
+
+#: ../aptdaemon/enums.py:415
+msgid ""
+"Check if you are currently running another software management tool, e.g. "
+"Synaptic or aptitude. Only one tool is allowed to make changes at a time."
+msgstr ""
+"Kontroller om du kjører et annet programvareverktøy, som Synaptic eller "
+"aptitude. Kun ett verktøy kan gjøre endringer om gangen."
+
+#: ../aptdaemon/enums.py:418
+msgid ""
+"This is a serious problem. Try again later. If this problem appears again, "
+"please report an error to the developers."
+msgstr ""
+"Dette er et alvorlig problem. Prøv igjen senere. Om problemet vedvarer, "
+"vennligst send feilmelding til utviklerene."
+
+#: ../aptdaemon/enums.py:421
+msgid ""
+"Check the spelling of the package name, and that the appropriate repository "
+"is enabled."
+msgstr ""
+"Kontroller staving av pakkenavnet og at det riktige programvarearkivet er "
+"aktivert."
+
+#: ../aptdaemon/enums.py:423
+msgid "There isn't any need for an update."
+msgstr "Det behøves ingen oppdatering."
+
+#: ../aptdaemon/enums.py:424
+msgid "There isn't any need for an installation"
+msgstr "Det behøves ingen installasjon"
+
+#: ../aptdaemon/enums.py:426
+msgid "There isn't any need for a removal."
+msgstr "Ingen fjerning behøves."
+
+#: ../aptdaemon/enums.py:427
+msgid ""
+"You requested to remove a package which is an essential part of your system."
+msgstr "Du har bedt om fjerning av en pakke som er viktig for systemet."
+
+#: ../aptdaemon/enums.py:430
+msgid ""
+"The connection to the daemon was lost. Most likely the background daemon "
+"crashed."
+msgstr ""
+"Mistet forbindelsen til daemon. Sannsynligvis kræsjet bakgrunns-daemonen."
+
+#: ../aptdaemon/enums.py:432
+msgid "The installation or removal of a software package failed."
+msgstr "Installasjon/fjerning av programvarepakke mislyktes."
+
+#: ../aptdaemon/enums.py:434
+msgid "The requested feature is not supported."
+msgstr "Den etterspurte funksjonen er ikke støttet."
+
+#: ../aptdaemon/enums.py:435
+msgid ""
+"There seems to be a programming error in aptdaemon, the software that allows "
+"you to install/remove software and to perform other package management "
+"related tasks."
+msgstr ""
+
+#: ../aptdaemon/enums.py:439
+msgid ""
+"This error could be caused by required additional software packages which "
+"are missing or not installable. Furthermore there could be a conflict "
+"between software packages which are not allowed to be installed at the same "
+"time."
+msgstr ""
+"Denne feilen kan skyldes tilleggsprogramvare som mangler eller ikke kan "
+"installeres. Den kan også være en konflikt mellom programvarepakker som ikke "
+"kan være installert samtidig."
+
+#: ../aptdaemon/enums.py:445
+msgid "This requires installing packages from unauthenticated sources."
+msgstr ""
+
+#: ../aptdaemon/enums.py:447
+msgid ""
+"The installation could have failed because of an error in the corresponding "
+"software package or it was cancelled in an unfriendly way. You have to "
+"repair this before you can install or remove any further software."
+msgstr ""
+"Installasjonen kan ha mislyktes på grunn av en feil i den tilsvarende "
+"programvarepakken, eller at den ble avbrutt på en brutal måte. Du må fikse "
+"dette før du kan installere eller fjerne flere programmer."
+
+#: ../aptdaemon/enums.py:453
+msgid ""
+"Please copy the file to your local computer and check the file permissions."
+msgstr "Vennligst kopier filen til datamaskinen og kontroller filrettighetene."
+
+#: ../aptdaemon/enums.py:456
+msgid ""
+"The installation of a package which violates the quality standards isn't "
+"allowed. This could cause serious problems on your computer. Please contact "
+"the person or organisation who provided this package file and include the "
+"details beneath."
+msgstr ""
+"Det er ikke tillatt å installere en pakke som bryter med "
+"kvalitetsstandardene. Dette kan føre til alvorlige problemer på "
+"datamaskinen. Vennligst ta kontakt med de som har gitt ut denne pakkefilen, "
+"og legg ved detaljene under."
+
+#: ../aptdaemon/enums.py:463
+msgid ""
+"The downloaded license key which is required to run this piece of software "
+"is not valid or could not be installed correctly.\n"
+"See the details for more information."
+msgstr ""
+
+#: ../aptdaemon/enums.py:469
+msgid "All available upgrades have already been installed."
+msgstr "Alle tilgjengelige oppgraderinger har allerede blitt installert."
+
+#: ../aptdaemon/enums.py:471
+msgid ""
+"The license key which allows you to use this piece of software could not be "
+"downloaded. Please check your network connection."
+msgstr ""
+"Klarte ikke laste ned lisensnøkkelen som lar deg bruke dette programmet. "
+"Kontroller nettverkstilkoblingen din."
+
+#: ../aptdaemon/enums.py:475
+#, fuzzy
+msgid "You don't have the required privileges to perform this action."
+msgstr "Du har ikke tilgang til å utføre denne handlingen."
+
+#: ../aptdaemon/enums.py:477
+msgid ""
+"You either provided a wrong password or cancelled the authorization.\n"
+"Furthermore there could also be a technical reason for this error if you "
+"haven't seen a password dialog: your desktop environment doesn't provide a "
+"PolicyKit session agent."
+msgstr ""
+
+#: ../aptdaemon/enums.py:485
+msgid "Failed to download package files"
+msgstr "Nedlasting av pakkefiler mislyktes"
+
+#: ../aptdaemon/enums.py:486
+msgid "Failed to download repository information"
+msgstr "Nedlasting av pakkearkiv-informasjon mislyktes"
+
+#: ../aptdaemon/enums.py:488
+msgid "Package dependencies cannot be resolved"
+msgstr "Pakkeavhengigheter kunne ikke løses"
+
+#: ../aptdaemon/enums.py:489
+msgid "The package system is broken"
+msgstr "Pakkesystemet er ødelagt"
+
+#: ../aptdaemon/enums.py:490
+msgid "Key was not installed"
+msgstr "Nøkkel ble ikke installert"
+
+#: ../aptdaemon/enums.py:491
+msgid "Key was not removed"
+msgstr "Nøkkel ble ikke fjernet"
+
+#: ../aptdaemon/enums.py:492
+msgid "Failed to lock the package manager"
+msgstr "Låsing av pakkebehandleren mislyktes"
+
+#: ../aptdaemon/enums.py:493
+msgid "Failed to load the package list"
+msgstr "Lasting av pakkelisten mislyktes"
+
+#: ../aptdaemon/enums.py:494
+msgid "Package does not exist"
+msgstr "Pakken eksisterer ikke"
+
+#: ../aptdaemon/enums.py:495
+msgid "Package is already up to date"
+msgstr "Pakken er allerede oppdatert."
+
+#: ../aptdaemon/enums.py:496
+msgid "Package is already installed"
+msgstr "Pakken er allerede installert"
+
+#: ../aptdaemon/enums.py:497
+msgid "Package isn't installed"
+msgstr "Pakken er ikke installert"
+
+#: ../aptdaemon/enums.py:498
+msgid "Failed to remove essential system package"
+msgstr "Fjerning av betydningsfull systempakke mislyktes"
+
+#: ../aptdaemon/enums.py:500
+msgid "Task cannot be monitored or controlled"
+msgstr "Oppgaven kan ikke overvåkes eller kontrolleres"
+
+#: ../aptdaemon/enums.py:501
+msgid "Package operation failed"
+msgstr "Pakkeoperasjon mislyktes"
+
+#: ../aptdaemon/enums.py:502
+msgid "Requires installation of untrusted packages"
+msgstr "Krever installasjon av usikre pakker"
+
+#: ../aptdaemon/enums.py:504
+msgid "Previous installation hasn't been completed"
+msgstr "Tidligere installasjon har ikke blitt fullført"
+
+#: ../aptdaemon/enums.py:505
+msgid "The package is of bad quality"
+msgstr "Pakken er i dårlig forfatning"
+
+#: ../aptdaemon/enums.py:506
+msgid "Package file could not be opened"
+msgstr "Pakkefilen kunne ikke åpnes"
+
+#: ../aptdaemon/enums.py:507
+msgid "Not supported feature"
+msgstr ""
+
+#: ../aptdaemon/enums.py:508
+msgid "Failed to download the license key"
+msgstr "Klarte ikke laste ned lisensnøkkelen"
+
+#: ../aptdaemon/enums.py:509
+msgid "Failed to install the license key"
+msgstr "Klarte ikke installere lisensnøkkelen"
+
+#: ../aptdaemon/enums.py:510
+msgid "The system is already up to date"
+msgstr "Systemet er allerede oppdatert"
+
+#: ../aptdaemon/enums.py:511
+msgid "You could not be authorized"
+msgstr ""
+
+#: ../aptdaemon/enums.py:512
+msgid "You are not allowed to perform this action"
+msgstr ""
+
+#: ../aptdaemon/enums.py:513
+msgid "An unhandlable error occured"
+msgstr "En uhåndterbar feil oppsto"
+
+#: ../aptdaemon/enums.py:516
+msgid "Waiting for service to start"
+msgstr "Venter på at tjeneste skal starte"
+
+#: ../aptdaemon/enums.py:518
+msgid "Waiting"
+msgstr "Venter"
+
+#: ../aptdaemon/enums.py:519
+msgid "Waiting for required medium"
+msgstr "Venter på påkrevd medie"
+
+#: ../aptdaemon/enums.py:520
+msgid "Waiting for other software managers to quit"
+msgstr "Venter på at annen programvarebehandler skal avsluttes"
+
+#: ../aptdaemon/enums.py:521
+msgid "Waiting for configuration file prompt"
+msgstr "Venter på dialog for oppsettsfil"
+
+#: ../aptdaemon/enums.py:523
+msgid "Running task"
+msgstr "Kjører oppgave"
+
+#: ../aptdaemon/enums.py:524
+msgid "Downloading"
+msgstr "Laster ned"
+
+#: ../aptdaemon/enums.py:525
+msgid "Querying software sources"
+msgstr "Spør programvarekilder"
+
+#: ../aptdaemon/enums.py:526
+msgid "Cleaning up"
+msgstr "Rydder opp"
+
+#: ../aptdaemon/enums.py:529
+msgid "Finished"
+msgstr "Fullført"
+
+#: ../aptdaemon/enums.py:530
+msgid "Cancelling"
+msgstr "Avbryter"
+
+#: ../aptdaemon/enums.py:531
+msgid "Loading software list"
+msgstr "Laster pakkeliste"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:536
+#, python-format
+msgid "Installing %s"
+msgstr "Installerer %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:538
+#, python-format
+msgid "Configuring %s"
+msgstr "Setter opp %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:540
+#, python-format
+msgid "Removing %s"
+msgstr "Fjerner %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:542
+#, python-format
+msgid "Completely removing %s"
+msgstr "Fjerner %s fullstendig"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:544
+#, python-format
+msgid "Noting disappearance of %s"
+msgstr "Legger merke til at %s forsvinner"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:546
+#, python-format
+msgid "Running post-installation trigger %s"
+msgstr "Kjører etter-installasjonsutløser %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:548
+#, python-format
+msgid "Upgrading %s"
+msgstr "Oppgraderer %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:550
+#, python-format
+msgid "Unpacking %s"
+msgstr "Pakker ut %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:552
+#, python-format
+msgid "Preparing installation of %s"
+msgstr "Forbereder installasjonen av %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:554
+#, python-format
+msgid "Preparing configuration of %s"
+msgstr "Forbereder konfigureringen av %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:556
+#, python-format
+msgid "Preparing removal of %s"
+msgstr "Forbereder fjerning av %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:558
+#, python-format
+msgid "Preparing complete removal of %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:560
+#, python-format
+msgid "Installed %s"
+msgstr "%s har blitt installert"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:562
+#, python-format
+msgid "Completely removed %s"
+msgstr "%s er fullstendig fjernet"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:564
+#, python-format
+msgid "Removed %s"
+msgstr "Fjernet %s"
+
+#: ../aptdaemon/enums.py:567
+msgid "Done"
+msgstr "Fullført"
+
+#: ../aptdaemon/enums.py:568
+msgid "Authentication failed"
+msgstr "Autentisering mislyktes"
+
+#: ../aptdaemon/enums.py:570
+msgid "Fetching"
+msgstr "Henter"
+
+#: ../aptdaemon/enums.py:571
+msgid "Idle"
+msgstr "Klar"
+
+#: ../aptdaemon/enums.py:572
+msgid "Network isn't available"
+msgstr "Nettverk ikke tilgjengelig"
+
+#: ../aptdaemon/enums.py:704
+#, python-format
+msgid "Processing %s"
+msgstr "Behandler %s"
+
+#: ../aptdaemon/gtk3widgets.py:306
+#, python-format
+msgid "Downloaded %sB of %sB at %sB/s"
+msgstr "Lastet ned %sB av %sB fra %sB/s"
+
+#: ../aptdaemon/gtk3widgets.py:311 ../aptdaemon/gtk3widgets.py:510
+#, python-format
+msgid "Downloaded %sB of %sB"
+msgstr "Lastet ned %sB av %sB"
+
+#: ../aptdaemon/gtk3widgets.py:323
+msgid "Details"
+msgstr "Detaljer"
+
+#: ../aptdaemon/gtk3widgets.py:474
+msgid "File"
+msgstr "Fil"
+
+#. TRANSLATORS: header of the progress download column
+#: ../aptdaemon/gtk3widgets.py:479
+msgid "%"
+msgstr "%"
+
+#: ../aptdaemon/gtk3widgets.py:515
+#, python-format
+msgid "Downloaded %sB"
+msgstr "Lastet ned %sB"
+
+#: ../aptdaemon/gtk3widgets.py:518
+msgid "Downloaded"
+msgstr "Lastet ned"
+
+#. TRANSLATORS: %s represents the name of a CD or DVD
+#: ../aptdaemon/gtk3widgets.py:853
+#, python-format
+msgid "CD/DVD '%s' is required"
+msgstr "Behøver CD/DVD '%s'"
+
+#. TRANSLATORS: %s is the name of the CD/DVD drive
+#: ../aptdaemon/gtk3widgets.py:855
+#, python-format
+msgid ""
+"Please insert the above CD/DVD into the drive '%s' to install software "
+"packages from it."
+msgstr ""
+"Vennligst sett inn angitt CD/DVD i '%s' for å installere programvare fra den."
+
+#: ../aptdaemon/gtk3widgets.py:859 ../aptdaemon/gtk3widgets.py:880
+msgid "C_ontinue"
+msgstr "F_ortsett"
+
+#: ../aptdaemon/gtk3widgets.py:931
+msgid "Install"
+msgstr "Installer"
+
+#: ../aptdaemon/gtk3widgets.py:932
+msgid "Reinstall"
+msgstr "Installer på nytt"
+
+#: ../aptdaemon/gtk3widgets.py:933
+msgid "Remove"
+msgstr "Fjern"
+
+#: ../aptdaemon/gtk3widgets.py:934
+msgid "Purge"
+msgstr "Slett"
+
+#: ../aptdaemon/gtk3widgets.py:935
+msgid "Upgrade"
+msgstr "Oppgrader"
+
+#: ../aptdaemon/gtk3widgets.py:936
+msgid "Downgrade"
+msgstr "Nedgrader"
+
+#: ../aptdaemon/gtk3widgets.py:937
+msgid "Skip upgrade"
+msgstr "Hopp over oppgradering"
+
+#. If there is only one type of changes (e.g. only installs) expand the
+#. tree
+#. FIXME: adapt the title and message accordingly
+#. FIXME: Should we have different modes? Only show dependencies, only
+#. initial packages or both?
+#: ../aptdaemon/gtk3widgets.py:948
+msgid "Please take a look at the list of changes below."
+msgstr "Vennligst se over listen over endringer nedenfor."
+
+#: ../aptdaemon/gtk3widgets.py:956
+msgid "Additional software has to be installed"
+msgstr "Andre programvarer må installeres i tillegg"
+
+#: ../aptdaemon/gtk3widgets.py:958
+msgid "Additional software has to be re-installed"
+msgstr "Tilleggsprogramvare må installeres på nytt"
+
+#: ../aptdaemon/gtk3widgets.py:960
+msgid "Additional software has to be removed"
+msgstr "Tilleggsprogramvare må fjernes"
+
+#: ../aptdaemon/gtk3widgets.py:962
+msgid "Additional software has to be purged"
+msgstr "Tilleggsprogramvare må fjernes"
+
+#: ../aptdaemon/gtk3widgets.py:964
+msgid "Additional software has to be upgraded"
+msgstr "Tilleggsprogramvare må oppgraderes"
+
+#: ../aptdaemon/gtk3widgets.py:966
+msgid "Additional software has to be downgraded"
+msgstr "Tilleggsprogramvare må nedgraderes"
+
+#: ../aptdaemon/gtk3widgets.py:968
+msgid "Updates will be skipped"
+msgstr "Hopper over oppdateringer"
+
+#: ../aptdaemon/gtk3widgets.py:976
+msgid "Additional changes are required"
+msgstr "Det må gjøres andre endringer i tillegg"
+
+#: ../aptdaemon/gtk3widgets.py:981
+#, python-format
+msgid "%sB will be downloaded in total."
+msgstr "%sB vil lastes ned totalt."
+
+#: ../aptdaemon/gtk3widgets.py:985
+#, python-format
+msgid "%sB of disk space will be freed."
+msgstr "%sB diskplass vil bli frigjort."
+
+#: ../aptdaemon/gtk3widgets.py:989
+#, python-format
+msgid "%sB more disk space will be used."
+msgstr "%sB mer diskplass vil brukes."
+
+#. TRANSLATORS: %s is a file path
+#: ../aptdaemon/gtk3widgets.py:1061
+#, python-format
+msgid ""
+"Replace your changes in '%s' with a later version of the configuration file?"
+msgstr ""
+"Erstatt endringene i '%s' med en senere versjon av konfigurasjonsfilen?"
+
+#: ../aptdaemon/gtk3widgets.py:1063
+msgid ""
+"If you don't know why the file is there already, it is usually safe to "
+"replace it."
+msgstr ""
+"Det går vanligvis fint å erstatte den hvis du ikke helt vet hvorfor filen i "
+"utgangspunktet er der."
+
+#: ../aptdaemon/gtk3widgets.py:1072
+msgid "_Changes"
+msgstr "_Endringer"
+
+#: ../aptdaemon/gtk3widgets.py:1075
+msgid "_Keep"
+msgstr "_Behold"
+
+#: ../aptdaemon/gtk3widgets.py:1076
+msgid "_Replace"
+msgstr "_Erstatt"
+
+#: ../aptdaemon/gtk3widgets.py:1179
+msgid "_Details"
+msgstr "_Detaljer"
+
+#. TRANSLATORS: %s is the name of a package manager
+#: ../aptdaemon/lock.py:182
+#, python-format
+msgid "Waiting for %s to exit"
+msgstr "Venter på at %s avslutter"
+
+#. TRANSLATORS: %s is a list of package names
+#: ../aptdaemon/progress.py:169
+#, python-format
+msgid "Downloading %(files)s"
+msgid_plural "Downloading %(files)s"
+msgstr[0] "Laster ned %(files)s"
+msgstr[1] "Laster ned %(files)s"
+
+#. TRANSLATORS: the string is used as a fallback if we cannot
+#. get the URI of a local repository
+#: ../aptdaemon/progress.py:281 ../aptdaemon/progress.py:320
+msgid "local repository"
+msgstr ""
+
+#. TRANSLATORS: %s is a list of repository names
+#: ../aptdaemon/progress.py:284
+#, python-format
+msgid "Downloading from %s"
+msgid_plural "Downloading from %s"
+msgstr[0] "Laster ned fra %s"
+msgstr[1] "Laster ned fra %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:324
+#, python-format
+msgid "Structure of %s"
+msgstr ""
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:327
+#, python-format
+msgid "Description of %s"
+msgstr "Beskrivelse av %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:330
+#, python-format
+msgid "Description signature of %s"
+msgstr ""
+
+#: ../aptdaemon/progress.py:335
+#, python-format
+msgid "Available packages from %s"
+msgstr "Tilgjengelige pakker fra %s"
+
+#: ../aptdaemon/progress.py:339
+#, python-format
+msgid "Available sources from %s"
+msgstr "Tilgjengelige kilder fra %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:342
+#, python-format
+msgid "Available translations from %s"
+msgstr "Tilgjengelige oversettelser fra %s"
+
+#: ../aptdaemon/progress.py:359
+#, python-format
+msgid "Translations for %s (%s) from %s"
+msgstr "Oversettelser på %s (%s) fra %s"
+
+#. TRANSLATORS: %s is the name of a language. The second one is
+#. the name of the repository
+#: ../aptdaemon/progress.py:363
+#, python-format
+msgid "Translations for %s from %s"
+msgstr "Oversettelser på %s fra %s"
+
+#. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
+#. The second one is the name of the repository
+#: ../aptdaemon/progress.py:368
+#, python-format
+msgid "Translations (%s) from %s"
+msgstr "Oversettelser (%s) fra %s"
+
+#: ../aptdaemon/worker/aptworker.py:374 ../aptdaemon/worker/aptworker.py:671
+#: ../aptdaemon/worker/aptworker.py:748 ../aptdaemon/worker/aptworker.py:791
+#, python-format
+msgid "Package %s isn't available"
+msgstr "Pakke %s er ikke tilgjengelig"
+
+#: ../aptdaemon/worker/aptworker.py:379 ../aptdaemon/worker/aptworker.py:675
+#: ../aptdaemon/worker/aptworker.py:752 ../aptdaemon/worker/aptworker.py:795
+#, python-format
+msgid "Package %s isn't installed"
+msgstr "Pakke %s er ikke installert"
+
+#: ../aptdaemon/worker/aptworker.py:383
+#, python-format
+msgid "The version %s of %s isn't installed"
+msgstr "Versjon %s av %s er ikke installert"
+
+#: ../aptdaemon/worker/aptworker.py:398
+#, python-format
+msgid "Package %s is already installed"
+msgstr "Pakke %s er allerede installert"
+
+#: ../aptdaemon/worker/aptworker.py:407 ../aptdaemon/worker/aptworker.py:821
+#, python-format
+msgid "The version %s of %s isn't available."
+msgstr "Versjon %s av %s er ikke tilgjengelig."
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptdaemon/worker/aptworker.py:565
+#, python-format
+msgid "The keyserver URL is invalid: %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptdaemon/worker/aptworker.py:571
+#, python-format
+msgid "Invalid protocol of the server: %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the id of a GnuPG key
+#. e.g. E08ADE95
+#: ../aptdaemon/worker/aptworker.py:579 ../aptdaemon/worker/aptworker.py:623
+#, python-format
+msgid "Invalid key id: %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:587
+#, python-format
+msgid ""
+"Failed to download and install the key %s from %s:\n"
+"%s"
+msgstr ""
+"Mislyktes nedlasting og installasjon av nøkkel %s fra %s:\n"
+"%s"
+
+#: ../aptdaemon/worker/aptworker.py:604
+#, python-format
+msgid "Key file %s couldn't be installed: %s"
+msgstr "Nøkkelfil %s kunne ikke installeres: %s"
+
+#: ../aptdaemon/worker/aptworker.py:628
+#, python-format
+msgid "Key with fingerprint %s couldn't be removed: %s"
+msgstr "Nøkkel med fingeravtrykk %s kunne ikke fjernes: %s"
+
+#: ../aptdaemon/worker/aptworker.py:679
+#, python-format
+msgid "Package %s cannot be removed."
+msgstr "Pakken %s kan ikke fjernes."
+
+#: ../aptdaemon/worker/aptworker.py:683
+#, python-format
+msgid "The version %s of %s is not installed"
+msgstr "Versjon %s av %s er ikke installert"
+
+#: ../aptdaemon/worker/aptworker.py:763
+#, python-format
+msgid "The former version %s of %s is already installed"
+msgstr "Tidligere versjon %s av %s er allerede installert"
+
+#: ../aptdaemon/worker/aptworker.py:768 ../aptdaemon/worker/aptworker.py:814
+#, python-format
+msgid "The version %s of %s is already installed"
+msgstr "Versjon %s av %s er allerede installert"
+
+#: ../aptdaemon/worker/aptworker.py:775
+#, python-format
+msgid "The version %s of %s isn't available"
+msgstr "Versjon %s av %s er ikke tilgjengelig"
+
+#: ../aptdaemon/worker/aptworker.py:779
+#, python-format
+msgid "You need to specify a version to downgrade %s to"
+msgstr "Du må angi en versjon som %s skal nedgraderes til"
+
+#: ../aptdaemon/worker/aptworker.py:807
+#, python-format
+msgid "The later version %s of %s is already installed"
+msgstr "Den nyere versjonen %s av %s er allerede installert"
+
+#: ../aptdaemon/worker/aptworker.py:838
+#, python-format
+msgid "The package %s isn't available in the %s release."
+msgstr "Pakken %s er ikke tilgjengelig i %s-utgivelsen."
+
+#: ../aptdaemon/worker/aptworker.py:1026
+#, python-format
+msgid "Package %s cannot be removed"
+msgstr "Pakke %s kan ikke fjernes"
+
+#: ../aptdaemon/worker/aptworker.py:1123
+msgid ""
+"The package doesn't provide a valid Installed-Size control field. See Debian "
+"Policy 5.6.20."
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1265
+msgid "The license key is empty"
+msgstr "Lisensnøkkelen er tom"
+
+#: ../aptdaemon/worker/aptworker.py:1281
+msgid "The license key is not allowed to contain executable code."
+msgstr "Lisenskoden kan ikke inneholde kjørbar kode."
+
+#: ../aptdaemon/worker/aptworker.py:1290
+#, python-format
+msgid "The license key path %s is invalid"
+msgstr "Lisensnøkkelens sti %s er ugyldig"
+
+#: ../aptdaemon/worker/aptworker.py:1294
+#, python-format
+msgid "The license key already exists: %s"
+msgstr "Lisensnøkkelen eksisterer allerede: %s"
+
+#: ../aptdaemon/worker/aptworker.py:1299
+#, python-format
+msgid ""
+"The location of the license key is unsecure since it contains symbolic "
+"links. The path %s maps to %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1307
+#, python-format
+msgid "The directory where to install the key to doesn't exist yet: %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1318
+#, python-format
+msgid "Failed to write key file to: %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1353
+msgid "The following packages have unmet dependencies:"
+msgstr "Følgende pakker har krav som ikke er oppfylt:"
+
+#: ../aptdaemon/worker/aptworker.py:1406
+msgid "but it is a virtual package"
+msgstr "men er en virtuell pakke"
+
+#: ../aptdaemon/worker/aptworker.py:1409
+msgid "but it is not installed"
+msgstr "men er ikke installert"
+
+#: ../aptdaemon/worker/aptworker.py:1411
+msgid "but it is not going to be installed"
+msgstr "men vil ikke bli installert"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptdaemon/worker/aptworker.py:1415
+#, python-format
+msgid "but %s is installed"
+msgstr "men %s er installert"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptdaemon/worker/aptworker.py:1419
+#, python-format
+msgid "but %s is to be installed"
+msgstr "men %s skal installeres"
+
+#~ msgid "Adding the key to the list of trused software vendors failed"
+#~ msgstr ""
+#~ "Klarte ikke å legge til nøkkelen i listen over betrodde "
+#~ "programvareutgivere"

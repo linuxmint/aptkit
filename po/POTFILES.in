@@ -1,0 +1,10 @@
+[encoding: UTF-8]
+data/org.debian.apt.policy.in
+aptdaemon/console.py
+aptdaemon/core.py
+aptdaemon/enums.py
+aptdaemon/gtk3widgets.py
+aptdaemon/lock.py
+aptdaemon/progress.py
+aptdaemon/worker/aptworker.py
+aptdaemon/worker/pkworker.py

@@ -1,0 +1,363 @@
+=== modified file 'aptdaemon/core.py'
+Index: aptdaemon-1.1.1+bzr982/aptdaemon/core.py
+===================================================================
+--- aptdaemon-1.1.1+bzr982.orig/aptdaemon/core.py	2015-06-11 09:18:21.910695506 -0400
++++ aptdaemon-1.1.1+bzr982/aptdaemon/core.py	2015-06-11 09:18:21.906695457 -0400
+@@ -324,7 +324,7 @@
+                            "DebconfSocket", "MetaData", "Locale",
+                            "RemoveObsoleteDepends")
+ 
+-    def __init__(self, tid, role, queue, pid, uid, cmdline, sender,
++    def __init__(self, tid, role, queue, pid, uid, gid, cmdline, sender,
+                  connect=True, bus=None, packages=None, kwargs=None):
+         """Initialize a new Transaction instance.
+ 
+@@ -360,6 +360,7 @@
+             kwargs = {}
+         self.queue = queue
+         self.uid = uid
++        self.gid = gid
+         self.locale = dbus.String("")
+         self.allow_unauthenticated = dbus.Boolean(False)
+         self.remove_obsoleted_depends = dbus.Boolean(False)
+@@ -1521,11 +1522,12 @@
+     @inline_callbacks
+     def _create_trans(self, role, sender, packages=None, kwargs=None):
+         """Helper method which returns the tid of a new transaction."""
+-        pid, uid, cmdline = (
++        pid, uid, gid, cmdline = (
+             yield policykit1.get_proc_info_from_dbus_name(sender, self.bus))
+         tid = uuid.uuid4().hex
+-        trans = Transaction(tid, role, self.queue, pid, uid, cmdline, sender,
+-                            packages=packages, kwargs=kwargs, bus=self.bus)
++        trans = Transaction(
++            tid, role, self.queue, pid, uid, gid, cmdline, sender,
++            packages=packages, kwargs=kwargs, bus=self.bus)
+         self.queue.limbo[trans.tid] = trans
+         return_value(trans.tid)
+ 
+Index: aptdaemon-1.1.1+bzr982/aptdaemon/pkcompat.py
+===================================================================
+--- aptdaemon-1.1.1+bzr982.orig/aptdaemon/pkcompat.py	2015-06-11 09:18:21.910695506 -0400
++++ aptdaemon-1.1.1+bzr982/aptdaemon/pkcompat.py	2015-06-11 09:18:21.910695506 -0400
+@@ -334,9 +334,10 @@
+ 
+     @inline_callbacks
+     def _create_transaction(self, sender):
+-        pid, uid, cmdline = yield policykit1.get_proc_info_from_dbus_name(
++        pid, uid, gid, cmdline = yield policykit1.get_proc_info_from_dbus_name(
+             sender, self.bus)
+-        pktrans = PackageKitTransaction(pid, uid, cmdline, self.queue, sender)
++        pktrans = PackageKitTransaction(
++            pid, uid, gid, cmdline, self.queue, sender)
+         return_value(pktrans.tid)
+ 
+     # pylint: disable-msg=C0103,C0322
+@@ -468,7 +469,7 @@
+     def __init__(self, pktrans, role, queue, connect=True,
+                  bus=None, packages=None, kwargs=None):
+         core.Transaction.__init__(self, pktrans.tid[1:], role, queue,
+-                                  pktrans.pid, pktrans.uid,
++                                  pktrans.pid, pktrans.uid, pktrans.gid,
+                                   pktrans.cmdline, pktrans.sender,
+                                   connect, bus, packages, kwargs)
+         self.pktrans = pktrans
+@@ -626,7 +627,7 @@
+ 
+     """Provides a PackageKit transaction object."""
+ 
+-    def __init__(self, pid, uid, cmdline, queue, sender,
++    def __init__(self, pid, uid, gid, cmdline, queue, sender,
+                  connect=True, bus=None):
+         pklog.info("Initializing PackageKit transaction")
+         bus_name = None
+@@ -652,6 +653,7 @@
+         self._status = pk.StatusEnum.SETUP
+         self._last_package = ""
+         self.uid = dbus.UInt32(uid)
++        self.gid = dbus.UInt32(gid)
+         self.pid = pid
+         self.cmdline = cmdline
+         self.role = pk.RoleEnum.UNKNOWN
+Index: aptdaemon-1.1.1+bzr982/aptdaemon/policykit1.py
+===================================================================
+--- aptdaemon-1.1.1+bzr982.orig/aptdaemon/policykit1.py	2015-06-11 09:18:21.910695506 -0400
++++ aptdaemon-1.1.1+bzr982/aptdaemon/policykit1.py	2015-06-11 09:18:21.910695506 -0400
+@@ -161,12 +161,15 @@
+         bus = dbus.SystemBus()
+     pid = yield get_pid_from_dbus_name(dbus_name, bus)
+     with open("/proc/%s/status" % pid) as proc:
+-        values = [v for v in proc.readlines() if v.startswith("Uid:")]
++        lines = proc.readlines()
++        uid_values = [v for v in lines if v.startswith("Uid:")]
++        gid_values = [v for v in lines if v.startswith("Gid:")]
+     # instead of ", encoding='utf8'" we use the "rb"/decode() here for
+     # py2 compatibility
+     with open("/proc/%s/cmdline" % pid, "rb") as cmdline_file:
+         cmdline = cmdline_file.read().decode("utf-8")
+-    uid = int(values[0].split()[1])
+-    return_value((pid, uid, cmdline))
++    uid = int(uid_values[0].split()[1])
++    gid = int(gid_values[0].split()[1])
++    return_value((pid, uid, gid, cmdline))
+ 
+ # vim:ts=4:sw=4:et
+Index: aptdaemon-1.1.1+bzr982/aptdaemon/progress.py
+===================================================================
+--- aptdaemon-1.1.1+bzr982.orig/aptdaemon/progress.py	2015-06-11 09:18:21.910695506 -0400
++++ aptdaemon-1.1.1+bzr982/aptdaemon/progress.py	2015-06-11 09:18:21.910695506 -0400
+@@ -628,6 +628,11 @@
+ 
+     def _child(self, path):
+         # Avoid running lintian as root
++        try:
++            os.setgroups([self.transaction.gid])
++        except OSError:
++            pass
++        os.setgid(self.transaction.gid)
+         os.setuid(self.transaction.uid)
+ 
+         if platform.dist()[1] == "debian":
+Index: aptdaemon-1.1.1+bzr982/aptdaemon/worker/aptworker.py
+===================================================================
+--- aptdaemon-1.1.1+bzr982.orig/aptdaemon/worker/aptworker.py	2015-06-11 09:18:21.910695506 -0400
++++ aptdaemon-1.1.1+bzr982/aptdaemon/worker/aptworker.py	2015-06-11 09:18:21.910695506 -0400
+@@ -91,6 +91,25 @@
+ """
+ 
+ 
++@contextlib.contextmanager
++def set_euid_egid(uid, gid):
++    # no need to drop privs
++    if os.getuid() != 0 and os.getgid() != 0:
++        yield
++        return
++    # temporary drop privs
++    os.setegid(gid)
++    old_groups = os.getgroups()
++    os.setgroups([gid])
++    os.seteuid(uid)
++    try:
++        yield
++    finally:
++        os.seteuid(os.getuid())
++        os.setegid(os.getgid())
++        os.setgroups(old_groups)
++
++
+ def trans_only_installs_pkgs_from_high_trust_repos(trans,
+                                                    whitelist=set()):
+     """Return True if this transaction only touches packages in the
+@@ -1199,8 +1218,16 @@
+ 
+         :returns: An apt.debfile.Debfile instance.
+         """
+-        if not os.path.isfile(path):
+-            raise TransactionFailed(ERROR_UNREADABLE_PACKAGE_FILE, path)
++        # This code runs as root for simulate and simulate requires no
++        # authentication - so we need to ensure we do not leak information
++        # about files here (LP: #1449587, CVE-2015-1323)
++        #
++        # Note that the actual lintian run is also droping privs (real,
++        # not just seteuid)
++        with set_euid_egid(trans.uid, trans.gid):
++            if not os.path.isfile(path):
++                raise TransactionFailed(ERROR_UNREADABLE_PACKAGE_FILE, path)
++
+         if not force and os.path.isfile("/usr/bin/lintian"):
+             with DaemonLintianProgress(trans) as progress:
+                 progress.run(path)
+Index: aptdaemon-1.1.1+bzr982/tests/test_high_trust_repository_whitelist.py
+===================================================================
+--- aptdaemon-1.1.1+bzr982.orig/tests/test_high_trust_repository_whitelist.py	2015-06-11 09:18:21.910695506 -0400
++++ aptdaemon-1.1.1+bzr982/tests/test_high_trust_repository_whitelist.py	2015-06-11 09:18:21.910695506 -0400
+@@ -115,7 +115,7 @@
+             ("Ubuntu", "", "silly.*"))
+         # a high-trust whitelisted pkg and a non-whitelisted one
+         trans = Transaction(None, enums.ROLE_INSTALL_PACKAGES, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             packages=[["silly-base", "other-pkg"], [], [], [],
+                                       [], []])
+@@ -127,7 +127,7 @@
+                 trans, self.worker._high_trust_repositories))
+         # whitelisted only
+         trans = Transaction(None, enums.ROLE_INSTALL_PACKAGES, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             packages=[["silly-base"], [], [], [], [], []])
+         self.worker.simulate(trans)
+Index: aptdaemon-1.1.1+bzr982/tests/test_worker.py
+===================================================================
+--- aptdaemon-1.1.1+bzr982.orig/tests/test_worker.py	2015-06-11 09:18:21.910695506 -0400
++++ aptdaemon-1.1.1+bzr982/tests/test_worker.py	2015-06-11 09:18:21.910695506 -0400
+@@ -77,7 +77,8 @@
+         self.chroot.add_repository("/does/not/exist", copy_list=False)
+         # Only update the repository from the working snippet
+         trans = Transaction(None, enums.ROLE_UPDATE_CACHE,
+-                            self.queue, os.getpid(), os.getuid(), sys.argv[0],
++                            self.queue, os.getpid(), os.getuid(),
++                            os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             kwargs={"sources_list": "test.list"})
+         self.worker.simulate(trans)
+@@ -99,7 +100,7 @@
+                                                  "silly-base_0.1-0_all.deb"))
+         # Install the package
+         trans = Transaction(None, enums.ROLE_UPGRADE_SYSTEM,
+-                            self.queue, os.getpid(),
++                            self.queue, os.getpid(), os.getgid(),
+                             os.getuid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             kwargs={"safe_mode": False})
+@@ -130,7 +131,7 @@
+         self.chroot.add_test_repository(copy_sig=False)
+         # Install the package
+         trans = Transaction(None, enums.ROLE_INSTALL_PACKAGES, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             packages=[["silly-base"], [], [], [], [], []])
+         self.worker.simulate(trans)
+@@ -144,7 +145,7 @@
+ 
+         # Allow installation of unauthenticated packages
+         trans = Transaction(None, enums.ROLE_INSTALL_PACKAGES, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             packages=[["silly-base"], [], [], [], [], []])
+         trans.allow_unauthenticated = True
+@@ -164,7 +165,7 @@
+         self.chroot.add_test_repository()
+         # Install the package
+         trans = Transaction(None, enums.ROLE_INSTALL_PACKAGES, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             packages=[["silly-depend-base"], [], [], [],
+                                       [], []])
+@@ -193,7 +194,7 @@
+ Architecture: all
+ Auto-Installed: 1""")
+         trans = Transaction(None, enums.ROLE_REMOVE_PACKAGES, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             packages=[[], [], ["silly-depend-base"], [],
+                                       [], []])
+@@ -219,7 +220,7 @@
+                     "silly-depend-base_0.1-0_all.deb"]:
+             self.chroot.install_debfile(os.path.join(REPO_PATH, pkg))
+         trans = Transaction(None, enums.ROLE_REMOVE_PACKAGES, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             packages=[[], [], ["silly-base"], [], [], []])
+         self.worker.simulate(trans)
+@@ -240,7 +241,7 @@
+             pass
+         # Don't allow to remove essential packages
+         trans = Transaction(None, enums.ROLE_REMOVE_PACKAGES, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             packages=[[], [], ["silly-essential"], [], [], []])
+         self.worker.run(trans)
+@@ -263,7 +264,7 @@
+ Architecture: all
+ Auto-Installed: 1""")
+         trans = Transaction(None, enums.ROLE_COMMIT_PACKAGES, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             packages=[[], [], [], [],
+                                       ["silly-base=0.1-0update1"], []])
+@@ -283,7 +284,7 @@
+         pkg = os.path.join(REPO_PATH, "silly-base_0.1-0update1_all.deb")
+         self.chroot.install_debfile(pkg)
+         trans = Transaction(None, enums.ROLE_COMMIT_PACKAGES, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             packages=[[], [], [], [], [],
+                                       ["silly-base=0.1-0"]])
+@@ -301,7 +302,7 @@
+         for pkg in ["silly-base_0.1-0_all.deb", "silly-config_0.1-0_all.deb"]:
+             self.chroot.install_debfile(os.path.join(REPO_PATH, pkg))
+         trans = Transaction(None, enums.ROLE_REMOVE_PACKAGES, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             packages=[[], [], [], ["silly-config"], [], []])
+         self.worker.run(trans)
+@@ -324,7 +325,7 @@
+         pkg = os.path.join(REPO_PATH,
+                            "silly-depend-base-lintian-broken_0.1-0_all.deb")
+         trans = Transaction(None, enums.ROLE_INSTALL_FILE, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             kwargs={"path": os.path.join(REPO_PATH, pkg),
+                                     "force": False})
+@@ -359,7 +360,7 @@
+         self.chroot.install_debfile(os.path.join(REPO_PATH, pkg_base))
+         pkg = os.path.join(REPO_PATH, "silly-bully_0.1-0_all.deb")
+         trans = Transaction(None, enums.ROLE_INSTALL_FILE, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             kwargs={"path": os.path.join(REPO_PATH, pkg),
+                                     "force": True})
+@@ -379,7 +380,7 @@
+         """
+         pkg = os.path.join(REPO_PATH, "silly-base_0.1-0_all.deb")
+         trans = Transaction(None, enums.ROLE_INSTALL_FILE, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+                             kwargs={"path": os.path.join(REPO_PATH, pkg),
+                                     "force": True})
+@@ -400,7 +401,7 @@
+         for pkg in ["silly-base_0.1-0_all.deb", "silly-broken_0.1-0_all.deb"]:
+             self.chroot.install_debfile(os.path.join(REPO_PATH, pkg), True)
+         trans = Transaction(None, enums.ROLE_FIX_BROKEN_DEPENDS, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False)
+         self.worker.simulate(trans)
+         self.loop.run()
+@@ -420,7 +421,7 @@
+         """
+         self.chroot.add_test_repository()
+         trans = Transaction(None, enums.ROLE_COMMIT_PACKAGES, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test",
+                             packages=[["silly-broken"], [], [], [], [], []],
+                             connect=False)
+@@ -459,7 +460,7 @@
+ 
+         self.chroot.add_test_repository()
+         trans = Transaction(None, enums.ROLE_ADD_LICENSE_KEY, self.queue,
+-                            os.getpid(), os.getuid(), sys.argv[0],
++                            os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test",
+                             kwargs={"pkg_name": "silly-license",
+                                     "json_token": "lalelu",
+Index: aptdaemon-1.1.1+bzr982/tests/_test_py2_string_handling.py
+===================================================================
+--- aptdaemon-1.1.1+bzr982.orig/tests/_test_py2_string_handling.py	2012-12-29 18:40:46.000000000 -0500
++++ aptdaemon-1.1.1+bzr982/tests/_test_py2_string_handling.py	2015-06-11 09:47:02.608070571 -0400
+@@ -49,7 +49,8 @@
+         self.start_dbus_daemon()
+         self.dbus = dbus.bus.BusConnection(self.dbus_address)
+         self.trans = Transaction(None, "role-test", None,
+-                                 os.getpid(), os.getuid(), sys.argv[0],
++                                 os.getpid(), os.getuid(), os.getgid(),
++                                 sys.argv[0],
+                                  "org.debian.apt.test", bus=self.dbus)
+ 
+     def test(self):

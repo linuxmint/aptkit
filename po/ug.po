@@ -1,0 +1,1474 @@
+# Uyghur translation for aptdaemon
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the aptdaemon package.
+# Gheyret T.Kenji <gheyret@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: aptdaemon\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-21 15:36+0200\n"
+"PO-Revision-Date: 2012-10-09 23:47+0000\n"
+"Last-Translator: Gheyret T.Kenji <Unknown>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2013-03-09 23:28+0000\n"
+"X-Generator: Launchpad (build 16523)\n"
+
+#: ../data/org.debian.apt.policy.in.h:1
+msgid "List keys of trusted vendors"
+msgstr "ئىشەنچلىك vendor لارنىڭ ئاچقۇچلىرىنى كۆرسىتىش"
+
+#: ../data/org.debian.apt.policy.in.h:2
+msgid "To view the list of trusted keys, you need to authenticate."
+msgstr "ئىشەنچلىك ئاچقۇچلارنى كۆرۈش ئۈچۈن سالاھىيەت دەلىللەش زۆرۈردۇر"
+
+#: ../data/org.debian.apt.policy.in.h:3 ../aptdaemon/console.py:619
+msgid "Remove downloaded package files"
+msgstr "چۈشۈرگەن بوغچا ھۆججەتلىرىنى ئۆچۈر"
+
+#: ../data/org.debian.apt.policy.in.h:4
+msgid "To clean downloaded package files, you need to authenticate."
+msgstr ""
+"چۈشۈرگەن بوغچا ھۆججەتلىرىنى تازىلاش ئۈچۈن، سالاھىيىتىڭىزنى تەكشۈرۈش زۆرۈر."
+
+#: ../data/org.debian.apt.policy.in.h:5
+msgid "Change software configuration"
+msgstr "يۇمشاق دېتال سەپلىمىسىنى ئۆزگەرت"
+
+#: ../data/org.debian.apt.policy.in.h:6
+msgid "To change software settings, you need to authenticate."
+msgstr ""
+"يۇمشاق دېتال سەپلىمىسىنى ئۆزگەرتىش ئۈچۈن، سالاھىيىتىڭىزنى تەكشۈرۈش زۆرۈر."
+
+#: ../data/org.debian.apt.policy.in.h:7
+msgid "Change software repository"
+msgstr "يۇمشاق دېتال خەزىنىسىنى ئۆزگەرتىش"
+
+#: ../data/org.debian.apt.policy.in.h:8
+msgid "To change software repository settings, you need to authenticate."
+msgstr "يۇمشاق دېتال خەزىنە تەڭشىكىنى ئۆزگەرتىش ئۈچۈن دەلىللەش زۆرۈردۇر"
+
+#: ../data/org.debian.apt.policy.in.h:9
+msgid "Install package file"
+msgstr "بوغچا ھۆججىتىنى ئورنىتىش"
+
+#: ../data/org.debian.apt.policy.in.h:10
+msgid "To install this package, you need to authenticate."
+msgstr "بۇ بوغچىنى ئورنىتىش ئۈچۈن دەلىللەش زۆرۈردۇر"
+
+#: ../data/org.debian.apt.policy.in.h:11
+msgid "Update package information"
+msgstr "بوغچىغا مۇناسىۋەتلىك ئۇچۇرلارنى يېڭىلاش"
+
+#: ../data/org.debian.apt.policy.in.h:12
+msgid "To update the software catalog, you need to authenticate."
+msgstr "يۇمشاق دېتال كاتالوگىنى يېڭىلاش ئۈچۈن دەلىللەش زۆرۈردۇر"
+
+#: ../data/org.debian.apt.policy.in.h:13
+msgid "Install or remove packages"
+msgstr "بوغچىلارنى ئورنىتىش ياكى ئۆچۈرۈش"
+
+#: ../data/org.debian.apt.policy.in.h:14
+msgid "To install or remove software, you need to authenticate."
+msgstr "يۇمشاق دېتال ئورنىتىش ياكى ئۆچۈرۈش ئۈچۈن دەلىللەش زۆرۈردۇر."
+
+#. This priviledge will be requested when installing a package
+#. from a high trusted repository that can be explicitely whitelisted.
+#.
+#. The defaults for this action are the same as
+#. "org.debian.apt.install-or-remove-packages".
+#.
+#. The admin can override them to e.g. allow passwordless installs for
+#. leightweight applications like unity-webapps or for packages
+#. comming from high trust repositories (like internal repositories)
+#.
+#: ../data/org.debian.apt.policy.in.h:25
+msgid "Install software from a high-trust whitelisted repository."
+msgstr ""
+"ئاق تىزىمدىكى، يۇقىرى ئىشەنچلىك خەزىنىلەردىن يۇمشاق دېتاللارنى ئورناتسۇن."
+
+#: ../data/org.debian.apt.policy.in.h:26
+msgid "To install software, you need to authenticate."
+msgstr "يۇمشاق دېتالنى ئورنىتىش ئۈچۈن كىملىك دەلىللەش زۆرۈردۇر."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#.
+#. The client has to authenticate for this privilege before calling
+#. the aptdaemon methods.
+#: ../data/org.debian.apt.policy.in.h:32
+msgid "Add a new repository and install packages from it"
+msgstr "يېڭى خەزىنە قوشۇپ بوغچىلارنى ئۇنىڭدىن ئورنىتىش"
+
+#: ../data/org.debian.apt.policy.in.h:33
+msgid "To install software from a new source, you need to authenticate."
+msgstr "يېڭى مەنبەدىن يۇمشاق دېتال ئورنىتىش ئۈچۈن دەلىللەش زۆرۈردۇر"
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#.
+#. The client has to authenticate for this privilege before calling
+#. the aptdaemon methods.
+#.
+#. The only difference to install-packages-from-new-repo is the wording
+#. of the message. It is required by Ubuntu's Software-Center.
+#: ../data/org.debian.apt.policy.in.h:42
+msgid "Add a new repository of purchased software and install packages from it"
+msgstr "سېتىۋالغان يۇمشاق دېتالنىڭ خەزىنىسى قوشۇپ بوغچىلارنى ئۇنىڭدىن ئورنىتىش"
+
+#: ../data/org.debian.apt.policy.in.h:43
+msgid "To install purchased software, you need to authenticate."
+msgstr "يۇمشاق دېتال سېتىۋېلىش ئۈچۈن دەلىللەش زۆرۈردۇر."
+
+#: ../data/org.debian.apt.policy.in.h:44
+msgid "Upgrade packages"
+msgstr "بوغچىلارنى يۈكسەلدۈرۈش"
+
+#: ../data/org.debian.apt.policy.in.h:45
+msgid "To install updated software, you need to authenticate."
+msgstr "يېڭىلانغان يۇمشاق دېتالنى ئورنىتىش ئۈچۈن دەلىللەش زۆرۈردۇر"
+
+#: ../data/org.debian.apt.policy.in.h:46
+msgid "Cancel the task of another user"
+msgstr ""
+"باشقا ئىشلەتكۈچىنىڭ ۋەزىپىسىنى(ئىجرا قىلىۋاتقان پروگراممىسىنى) ئەمەلدىن "
+"قالدۇرۇش"
+
+#: ../data/org.debian.apt.policy.in.h:47
+msgid "To cancel someone else's software changes, you need to authenticate."
+msgstr ""
+"باشقىلار ئېلىپ يۇمشاق دېتال ئۆزگەرتىشلىرىنى ئەمەلدىن قالدۇرۇش ئۈچۈن دەلىللەش "
+"زۆرۈردۇر"
+
+#: ../data/org.debian.apt.policy.in.h:48
+msgid "Set a proxy for software downloads"
+msgstr "يۇمشاق دېتال چۈشۈرۈشتە ئىشلىتىدىغان ۋاكالەتچىنى بېكىتىش"
+
+#: ../data/org.debian.apt.policy.in.h:49
+msgid ""
+"To use a proxy server for downloading software, you need to authenticate."
+msgstr ""
+"يۇمشاق دېتال چۈشۈرۈشتە ئىشلىتىلىدىغان ۋاكالەتچى مۇلازىمېتىرنى ئىشلىتىش ئۈچۈن "
+"دەلىللەش زۆرۈردۇر"
+
+#: ../aptdaemon/console.py:215
+msgid "ERROR"
+msgstr "ERROR"
+
+#: ../aptdaemon/console.py:249
+#, fuzzy, python-format
+msgid "Downloaded %(cur)sB of %(total)sB at %(rate)sB/s"
+msgstr "چۈشۈرۈلگىنى %sB / %sB، تېزلىكى %sB/s"
+
+#: ../aptdaemon/console.py:255
+#, fuzzy, python-format
+msgid "Downloaded %(cur)sB of %(total)sB"
+msgstr "چۈشۈرۈلگىنى %sB / %sB"
+
+#: ../aptdaemon/console.py:385 ../aptdaemon/console.py:390
+msgid "ERROR:"
+msgstr "ERROR:"
+
+#: ../aptdaemon/console.py:386
+msgid "You are not allowed to perform this action."
+msgstr "سىزنىڭ بۇ مەشغۇلاتنى قىلىش ھوقۇقىڭىز يوق."
+
+#: ../aptdaemon/console.py:409 ../aptdaemon/console.py:537
+msgid "Queuing"
+msgstr "رەتكە تىزىلىش"
+
+#: ../aptdaemon/console.py:417 ../aptdaemon/enums.py:527
+msgid "Resolving dependencies"
+msgstr "بېقىندىلىق مۇناسىۋەتنى ھەل قىلىۋاتىدۇ"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:459
+#, python-format
+msgid "The following NEW package will be installed (%(count)s):"
+msgid_plural "The following NEW packages will be installed (%(count)s):"
+msgstr[0] "تۆۋەندىكى (%(count)s) دانە يېڭى بوغچىلار ئورنىتىلىدۇ:"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:467
+#, python-format
+msgid "The following package will be upgraded (%(count)s):"
+msgid_plural "The following packages will be upgraded (%(count)s):"
+msgstr[0] "تۆۋەندىكى (%(count)s) دانە بوغچىنىڭ نەشرى يۇقىرىلىتىلىدۇ:"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:475
+#, python-format
+msgid "The following package will be REMOVED (%(count)s):"
+msgid_plural "The following packages will be REMOVED (%(count)s):"
+msgstr[0] "تۆۋەندىكى (%(count)s) دانە بوغچا ئۆچۈرۈلىدۇ:"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:484
+#, python-format
+msgid "The following package will be DOWNGRADED (%(count)s):"
+msgid_plural "The following packages will be DOWNGRADED (%(count)s):"
+msgstr[0] "تۆۋەندىكى (%(count)s) دانە بوغچىنىڭ نەشرى تۆۋەنلىتىلىدۇ:"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:492
+#, python-format
+msgid "The following package will be reinstalled (%(count)s):"
+msgid_plural "The following packages will be reinstalled (%(count)s):"
+msgstr[0] "تۆۋەندىكى (%(count)s) دانە بوغچا قايتا ئورنىتىلىدۇ:"
+
+#: ../aptdaemon/console.py:499
+#, python-format
+msgid "The following package has been kept back (%(count)s):"
+msgid_plural "The following packages have been kept back (%(count)s):"
+msgstr[0] "تۆۋەندىكى بوغچىلار ساقلاپ قېلىندى(%(count)s):"
+
+#: ../aptdaemon/console.py:507
+#, python-format
+msgid "Need to get %sB of archives."
+msgstr "ئارخىپتىن %sB ئوقۇش زۆرۈر."
+
+#: ../aptdaemon/console.py:510
+#, python-format
+msgid "After this operation, %sB of additional disk space will be used."
+msgstr "بۇ مەشغۇلات تاماملانسا، %sB دىسكا بوشلۇقى ئىشلىتىلىدۇ."
+
+#: ../aptdaemon/console.py:514
+#, python-format
+msgid "After this operation, %sB of additional disk space will be freed."
+msgstr "بۇ مەشغۇلات تاماملانسا، %sB دىسكا بوشلۇقى بىكارلىنىدۇ."
+
+#: ../aptdaemon/console.py:522 ../aptdaemon/console.py:524
+msgid "Do you want to continue [Y/n]?"
+msgstr "داۋاملاشتۇرامسىز[Y/n]؟"
+
+#: ../aptdaemon/console.py:545
+msgid ""
+"To operate on more than one package put the package names in quotation "
+"marks:\n"
+"aptdcon --install \"foo bar\""
+msgstr ""
+"بىر ياكى بىر قانچە بوغچىغا مەشغۇلات قىلماقچى بولسىڭىز، بوغچا ئاتلىرىنى "
+"تىرناق ئىچىگە ئېلىڭ:\n"
+"aptdcon --install \"boghcha ati\""
+
+#: ../aptdaemon/console.py:551
+msgid "Refresh the cache"
+msgstr "غەملەكنى يېڭىلا"
+
+#: ../aptdaemon/console.py:554
+msgid ""
+"Try to resolve broken dependencies. Potentially dangerous operation since it "
+"could try to remove many packages."
+msgstr ""
+"بۇزۇلغان بېقىنىشچانلىقنى ھەل قىلىشنى سىناپ كۆرۈڭ. بۇ مەشغۇلات خەتەرلىك، "
+"چۈنكى ئۇ نۇرغۇن بوغچىلارنى ئۆچۈرۈش ئېھتىماللىقى بار."
+
+#: ../aptdaemon/console.py:559
+msgid "Try to finish a previous incompleted installation"
+msgstr "ئالدىنقى قېتىملىق چالا ئورنىتىشنى تاماملاشنى سىناپ كۆرۈڭ."
+
+#: ../aptdaemon/console.py:563 ../aptdaemon/console.py:576
+msgid "Install the given packages"
+msgstr "بېرىلگەن بوغچىلارنى ئورنىتىش"
+
+#: ../aptdaemon/console.py:566
+msgid "Reinstall the given packages"
+msgstr "بېرىلگەن بوغچىلارنى قايتا ئورنىتىش"
+
+#: ../aptdaemon/console.py:569
+msgid "Remove the given packages"
+msgstr "بېرىلگەن بوغچىلارنى ئۆچۈرۈش"
+
+#: ../aptdaemon/console.py:572
+msgid "Remove the given packages including configuration files"
+msgstr "بېرىلگەن بوغچىلارنى تەڭشەك ھۆججەتلىرى بىلەن قوشۇپ ئۆچۈرۈش"
+
+#: ../aptdaemon/console.py:579
+msgid "Downgrade the given packages"
+msgstr "بېرىلگەن بوغچىلارنىڭ نەشرىنى تۆۋەنلىتىدۇ"
+
+#: ../aptdaemon/console.py:582
+msgid "Deprecated: Please use --safe-upgrade"
+msgstr "چەكلەنگەن: --safe-upgrade نى ئىشلىتىڭ"
+
+#: ../aptdaemon/console.py:586
+msgid "Upgrade the system in a safe way"
+msgstr "سىستېمىنى بىخەتەر يۈكسەلدۈرىدۇ"
+
+#: ../aptdaemon/console.py:589
+msgid "Upgrade the system, possibly installing and removing packages"
+msgstr "سىستېمىنى يۈكسەلدۈرىدۇ، بەلكىم بوغچىلارنى ئورنىتىدۇ ياكى ئۆچۈرىدۇ"
+
+#: ../aptdaemon/console.py:593
+msgid "Add the vendor to the trusted ones"
+msgstr "vendor نى ئىشەنچلىك قاتارىغا قوش"
+
+#: ../aptdaemon/console.py:596
+msgid "Add the vendor keyid (also needs --keyserver)"
+msgstr "vendor keyid نى قوشۇڭ(--keyserver مۇ زۆرۈردۇر)"
+
+#: ../aptdaemon/console.py:600
+msgid "Use the given keyserver for looking up keys"
+msgstr "ئاچقۇچلارنى ئىزدەپ تېپىش ئۈچۈن بېرىلگەن keyserver نى ئىشلىتىڭ"
+
+#: ../aptdaemon/console.py:604
+msgid "Add new repository from the given deb-line"
+msgstr "بېرىلگەن deb-line نى ئارقىلىق يېڭى خەزىنە قوشۇش"
+
+#: ../aptdaemon/console.py:608
+msgid ""
+"Specify an alternative sources.list.d file to which repositories should be "
+"added."
+msgstr "خەزىنە قوشىدىغان باشقا بىر sources.list.d ھۆججىتىنى كۆرسىتىڭ"
+
+#: ../aptdaemon/console.py:612
+msgid "List trusted vendor keys"
+msgstr "ئىشەنچلىك vendor ئاچقۇچلىرىنى كۆرسىتىش"
+
+#: ../aptdaemon/console.py:615
+msgid "Remove the trusted key of the given fingerprint"
+msgstr "بېرىلگەن fingerprint نىڭ ئىشەنچلىك ئاچقۇچىنى ئۆچۈرۈش"
+
+#: ../aptdaemon/console.py:622
+msgid ""
+"Reconfigure installed packages. Optionally the minimum priority of questions "
+"can be specified"
+msgstr ""
+"ئورنىتىلىپ بولغان بوغچىلارنى قايتا سەپلەيدۇ. تاللانما ئارقىلىق سوئالنىڭ "
+"ئالدىنلىقىنى ئەڭ كىچىككە تەڭشەشكە بولىدۇ"
+
+#: ../aptdaemon/console.py:627
+msgid "The minimum debconf priority of question to be displayed"
+msgstr "debconf نىڭ ئالدىنقى ئەڭ تۆۋەن بولغان سوئالنىلا كۆرسىتىدۇ"
+
+#: ../aptdaemon/console.py:631
+msgid "Do not attach to the apt terminal"
+msgstr "apt تېرمىنالغا باغلانما"
+
+#: ../aptdaemon/console.py:635
+msgid "Allow packages from unauthenticated sources"
+msgstr "دەلىللەنمىگەن مەنبەدىكى بوغچىلارنى ئىشلەتسۇن"
+
+#: ../aptdaemon/console.py:639
+msgid ""
+"Show additional information about the packages. Currently only the version "
+"number"
+msgstr ""
+"بۇ بوغچا ھەققىدىكى قوشۇمچە ھۆججەتلەرنى كۆرسىتىدۇ. نۆۋەتتە نەشر نومۇرىلا "
+"كۆرسىتىلگەن."
+
+#: ../aptdaemon/console.py:647 ../aptdaemon/enums.py:532
+msgid "Waiting for authentication"
+msgstr "دەلىللەشنى ساقلاۋاتىدۇ"
+
+#: ../aptdaemon/core.py:2135
+msgid "Do not shutdown the daemon because of inactivity"
+msgstr "پاسسىپ بولغانلىقى ئۈچۈن مۇئەككەلنى تاقىما"
+
+#: ../aptdaemon/core.py:2140
+msgid "Do not load any plugins"
+msgstr "ھېچقانداق قىستۇرمىنى ئوقۇمىسۇن"
+
+#: ../aptdaemon/core.py:2144
+msgid "Show internal processing information"
+msgstr "ئىچكى processing ئۇچۇرلىرىنى كۆرسىتىش"
+
+#: ../aptdaemon/core.py:2149
+msgid "Quit and replace an already running daemon"
+msgstr "ئىجرا بولۇۋاتقان مۇئەككەلنى توختات ۋە ئالماشتۇر"
+
+#: ../aptdaemon/core.py:2154
+msgid "Listen on the DBus session bus (Only required for testing"
+msgstr "DBus ئەڭگىمە باش لىنىيىسىدە تىڭشا (سىناقتىلا زۆرۈر بولىدۇ"
+
+#: ../aptdaemon/core.py:2158
+msgid "Perform operations in the given chroot"
+msgstr "بېرىلگەن chroot مۇھىتىدا مەشغۇلات قىلىدۇ"
+
+#: ../aptdaemon/core.py:2163
+msgid "Store profile stats in the specified file"
+msgstr "profile stats نى بەلگىلەنگەن ھۆججەتكە ساقلاش"
+
+#: ../aptdaemon/core.py:2168
+msgid "Do not make any changes to the system (Only of use to developers)"
+msgstr "سىستېمىغا قول تەگكۈزمە(ئىجادىيەتچىلەر ئۈچۈنلا)"
+
+#: ../aptdaemon/enums.py:337
+msgid "Installed file"
+msgstr "ئورنىتىلغان ھۆججەت"
+
+#: ../aptdaemon/enums.py:338
+msgid "Installed packages"
+msgstr "ئورنىتىلغان بوغچىلار"
+
+#: ../aptdaemon/enums.py:339
+msgid "Added key from file"
+msgstr "ھۆججەتتىن قوشۇلغان ئاچقۇچ"
+
+#: ../aptdaemon/enums.py:340
+msgid "Updated cache"
+msgstr "يېڭىلانغان غەملەك"
+
+#: ../aptdaemon/enums.py:341
+msgid "Search done"
+msgstr "ئىزدەش تامام"
+
+#: ../aptdaemon/enums.py:342
+msgid "Removed trusted key"
+msgstr "ئۆچۈرۈلگەن ئىشەنچلىك ئاچقۇچ"
+
+#: ../aptdaemon/enums.py:343
+msgid "Removed packages"
+msgstr "ئۆچۈرۈلگەن بوغچىلار"
+
+#: ../aptdaemon/enums.py:344
+msgid "Updated packages"
+msgstr "يېڭىلانغان بوغچىلار"
+
+#: ../aptdaemon/enums.py:345
+msgid "Upgraded system"
+msgstr "يۈكسەلدۈرۈلگەن سىستېما"
+
+#: ../aptdaemon/enums.py:346
+msgid "Applied changes"
+msgstr "قوللىنىلغان ئۆزگەرتىشلەر"
+
+#: ../aptdaemon/enums.py:347
+msgid "Repaired incomplete installation"
+msgstr "رېمونت قىلىنغان چالا ئورناتما"
+
+#: ../aptdaemon/enums.py:348
+msgid "Repaired broken dependencies"
+msgstr "رېمونت قىلىنغان بۇزۇلغان بېقىنىشچانلىقلار"
+
+#: ../aptdaemon/enums.py:349
+msgid "Added software source"
+msgstr "قوشۇلغان يۇمشاق دېتال مەنبەسى"
+
+#: ../aptdaemon/enums.py:350
+msgid "Enabled component of the distribution"
+msgstr "تارقىتىلمىنىڭ ئىناۋەتلىك قىلىنغان بۆلەكلىرى."
+
+#: ../aptdaemon/enums.py:351
+msgid "Removed downloaded package files"
+msgstr "ئۆچۈرۈلگەن چۈشۈرگەن بوغچا ھۆججەتلىرى"
+
+#: ../aptdaemon/enums.py:352
+msgid "Reconfigured installed packages"
+msgstr "قايتا سەپلەنگەن ئورنىتىلغان بوغچىلار"
+
+#: ../aptdaemon/enums.py:356
+msgid "Successful"
+msgstr "غەلىبىلىك تاماملاندى"
+
+#: ../aptdaemon/enums.py:357
+msgid "Canceled"
+msgstr "قالدۇرۇۋېتىلدى"
+
+#: ../aptdaemon/enums.py:358 ../aptdaemon/enums.py:569
+msgid "Failed"
+msgstr "مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:361
+msgid "Installing file"
+msgstr "ھۆججەت ئورنىتىۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:362
+msgid "Installing packages"
+msgstr "بوغچىلارنى ئورنىتىۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:363
+msgid "Adding key from file"
+msgstr "ھۆججەتتىن ئاچقۇچ قوشۇۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:364
+msgid "Updating cache"
+msgstr "غەملەكنى يېڭىلاۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:365
+msgid "Removing trusted key"
+msgstr "ئىشەنچلىك ئاچقۇچنى ئۆچۈرۈۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:366
+msgid "Removing packages"
+msgstr "بوغچىلار ئۆچۈرۈۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:367
+msgid "Updating packages"
+msgstr "بوغچىلار يېڭىلاۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:368
+msgid "Upgrading system"
+msgstr "سىستېمىنى يۈكسەلدۈرۈۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:369 ../aptdaemon/enums.py:528
+msgid "Applying changes"
+msgstr "ئۆزگەرتىشلەرنى قوللىنىۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:370
+msgid "Repairing incomplete installation"
+msgstr "چالا ئورناتمىلارنى تۈزىتىۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:371
+msgid "Repairing installed software"
+msgstr "ئورنىتىلغان يۇمشاق دېتالنى ئوڭشاۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:372
+msgid "Adding software source"
+msgstr "يۇمشاق دېتال مەنبەسىنى قوشۇۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:373
+msgid "Enabling component of the distribution"
+msgstr "distribution نىڭ component نى ئىناۋەتلىك قىلىۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:374
+msgid "Removing downloaded package files"
+msgstr "چۈشۈرگەن بوغچا ھۆججەتلىرى ئۆچۈرۈۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:375
+msgid "Reconfiguring installed packages"
+msgstr "ئورنىتىلغان بوغچىلارنى قايتا سەپلەۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:376 ../aptdaemon/enums.py:517
+msgid "Searching"
+msgstr "ئىزدەۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:380
+msgid "Installation of the package file failed"
+msgstr "بوغچا ھۆججىتىنى ئورنىتىش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:381
+msgid "Installation of software failed"
+msgstr "يۇمشاق دېتال ئورنىتىش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:382
+msgid "Adding the key to the list of trusted software vendors failed"
+msgstr ""
+
+#: ../aptdaemon/enums.py:384
+msgid "Refreshing the software list failed"
+msgstr "يۇمشاق دېتال تىزىمىنى يېڭىلاش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:385
+msgid "Removing the vendor from the list of trusted ones failed"
+msgstr "vendors نى ئىشەنچلىك تىزىمىدىن ئۆچۈرۈش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:387
+msgid "Removing software failed"
+msgstr "يۇمشاق دېتالنى ئۆچۈرۈش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:388
+msgid "Updating software failed"
+msgstr "يۇمشاق دېتالنى يېڭىلاش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:389
+msgid "Upgrading the system failed"
+msgstr "سىستېمىنى يۈكسەلدۈرۈش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:390
+msgid "Applying software changes failed"
+msgstr "يۇمشاق دېتال ئۆزگەرتىشلىرىنى قوللىنىش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:391
+msgid "Repairing incomplete installation failed"
+msgstr "چالا ئورناتمىلارنى رېمونت قىلىش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:393
+msgid "Repairing broken dependencies failed"
+msgstr "بۇزۇلغان بېقىنىشچانلىقنى رېمونت قىلىش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:394
+msgid "Adding software source failed"
+msgstr "يۇمشاق دېتال مەنبەسىنى قوشۇش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:395
+msgid "Enabling component of the distribution failed"
+msgstr "distribution نىڭ component نى ئىناۋەتلىك قىلىش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:397 ../aptdaemon/enums.py:398
+msgid "Removing downloaded package files failed"
+msgstr "چۈشۈرگەن بوغچا ھۆججەتلىرى ئۆچۈرۈۋاتقاندا مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:399
+msgid "Search failed"
+msgstr "ئىزدەش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:400
+msgid "Adding license key"
+msgstr "ئىجازەتنامە ئاچقۇچىنى قوشۇۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:404 ../aptdaemon/enums.py:405
+msgid "Check your Internet connection."
+msgstr "ئىنتېرنېت باغلىنىشنى تەكشۈرۈڭ."
+
+#: ../aptdaemon/enums.py:406
+msgid ""
+"Check if you are using third party repositories. If so disable them, since "
+"they are a common source of problems.\n"
+"Furthermore run the following command in a Terminal: apt-get install -f"
+msgstr ""
+"باشقا بىر يۇمشاق دېتال خەزىنىسىنى ئىشلىتىۋاتامسىز؟ شۇنداق بولسا ئۇنى "
+"ئېتىۋېتىڭ، چۈنكى ئۇ نۇرغۇن مەسىلىلەرنىڭ سەۋەبكارىدۇر. ئۇنىڭدىن كېيىن "
+"تېرمىنالدا: apt-get install -f دېگەن بۇيرۇقنى ئىجرا قىلىڭ."
+
+#: ../aptdaemon/enums.py:411
+msgid "The selected file may not be a GPG key file or it might be corrupt."
+msgstr "تاللانغان ھۆججەت GPG ئاچقۇچ ھۆججىتى ئەمەس ياكى بۇزۇلغان."
+
+#: ../aptdaemon/enums.py:413
+msgid ""
+"The selected key couldn't be removed. Check that you provided a valid "
+"fingerprint."
+msgstr ""
+"تاللانغان ئاچقۇچنى ئۆچۈرگىلى بولمىدى. ئىناۋەتلىك fingerprint بېرىلگەنمۇ "
+"تەكشۈرۈڭ"
+
+#: ../aptdaemon/enums.py:415
+msgid ""
+"Check if you are currently running another software management tool, e.g. "
+"Synaptic or aptitude. Only one tool is allowed to make changes at a time."
+msgstr ""
+"باشقا بىر يۇمشاق دېتال باشقۇرۇش قورالى(Synaptic ياكى aptitude) "
+"ئىشلىتىۋاتامسىز؟ ئادەتتە پەقەت بىرىنىلا ئىشلىتىپ مەشغۇلات قىلغىلى بولىدۇ."
+
+#: ../aptdaemon/enums.py:418
+msgid ""
+"This is a serious problem. Try again later. If this problem appears again, "
+"please report an error to the developers."
+msgstr ""
+"بۇ ناھايىتى ئېغىر مەسىلە. كېيىن يەنە سىناپ كۆرۈڭ. ئەگەر يەنە تەكرارلانسا، "
+"ئىجادىيەتچىگە مەلۇم قىلىڭ."
+
+#: ../aptdaemon/enums.py:421
+msgid ""
+"Check the spelling of the package name, and that the appropriate repository "
+"is enabled."
+msgstr "بوغا ئاتى توغرىمۇ، مۇناسىۋەتلىك خەزىنىنى ئىشلەتكىلى بولامدۇ تەكشۈرۈڭ."
+
+#: ../aptdaemon/enums.py:423
+msgid "There isn't any need for an update."
+msgstr "يېڭىلاشنىڭ زۆرۈرىيىتى يوق."
+
+#: ../aptdaemon/enums.py:424
+msgid "There isn't any need for an installation"
+msgstr "ئورنىتىشنىڭ زۆرۈرىيىتى يوق."
+
+#: ../aptdaemon/enums.py:426
+msgid "There isn't any need for a removal."
+msgstr "ئۆچۈرۈشنىڭ زۆرۈرىيىتى يوق."
+
+#: ../aptdaemon/enums.py:427
+msgid ""
+"You requested to remove a package which is an essential part of your system."
+msgstr "سىستېمىنىڭ ئاساسلىق بولىقىنى ئۆچۈرمەكچى بولدىڭىز."
+
+#: ../aptdaemon/enums.py:430
+msgid ""
+"The connection to the daemon was lost. Most likely the background daemon "
+"crashed."
+msgstr ""
+"Demon بىلەن بولغان باغلىنىش ئۈزۈلدى. ئارقا تەرەپ مۇئەككەلى توختاپ قالغاندەك "
+"قىلىدۇ"
+
+#: ../aptdaemon/enums.py:432
+msgid "The installation or removal of a software package failed."
+msgstr "يۇمشاق دېتال بولىقىنى ئورنىتىش ياكى ئۆچۈرۈش مەغلۇپ بولدى."
+
+#: ../aptdaemon/enums.py:434
+msgid "The requested feature is not supported."
+msgstr "تەلەپ قىلغان ئىقتىدارىنى قوللىمايدۇ."
+
+#: ../aptdaemon/enums.py:435
+msgid ""
+"There seems to be a programming error in aptdaemon, the software that allows "
+"you to install/remove software and to perform other package management "
+"related tasks."
+msgstr ""
+"پروگراممىنى ئورنىتىش/چىقىرىۋېتىش ۋە باشقا بوغچا باشقۇرۇشقا مۇناسىۋەتلىك "
+"ئىشلارنى قىلىدىغان aptdaemon پروگراممىسىدا خاتالىق باردەك قىلىدۇ."
+
+#: ../aptdaemon/enums.py:439
+msgid ""
+"This error could be caused by required additional software packages which "
+"are missing or not installable. Furthermore there could be a conflict "
+"between software packages which are not allowed to be installed at the same "
+"time."
+msgstr ""
+"بۇ خاتالىق، زۆرۈر قوشۇمچە يۇمشاق دېتال بوغچىسىنىڭ يوقلۇقى ياكى ئۇنى "
+"ئورناتقىلى بولماسلىقى سەۋەبىدىن كېلىپ چىققان. يەنە كېلىپ بىرگە ئورناتقىلى "
+"بولمايدىغان يۇمشاق دېتال بوغچىسى(چىقىشالمايدىغان) ئارىسىدا توقۇنۇش كېلىپ "
+"چىققان ئېھتىماللىقمۇ بار."
+
+#: ../aptdaemon/enums.py:445
+msgid "This requires installing packages from unauthenticated sources."
+msgstr ""
+"بۇنىڭ ئۈچۈن كىملىكى دەلىللەنمىگەن مەنبەلەردىن بوغچىلارنى ئورنىتىش زۆرۈر."
+
+#: ../aptdaemon/enums.py:447
+msgid ""
+"The installation could have failed because of an error in the corresponding "
+"software package or it was cancelled in an unfriendly way. You have to "
+"repair this before you can install or remove any further software."
+msgstr ""
+"بۇ خاتالىق ماس يۇمشاق دېتال بولىقىدا خاتالىق بولغاچقا ياكى ئۇنىڭ نورمال "
+"ئاخىرلاشتۇرۇلمىغانلىقىدىن كېلىپ چىقىدۇ. باشقا بوغچىلارنى ئورنىتىش ياكى "
+"ئۆچۈرۈشتىن ئاۋۋال بۇ خاتالىقنى تۈزىتىڭ."
+
+#: ../aptdaemon/enums.py:453
+msgid ""
+"Please copy the file to your local computer and check the file permissions."
+msgstr "ھۆججەتنى كومپيۇتېرىڭىزغا كۆچۈرۈپ ئۇنىڭ ئىمتىيازلىرىنى تەكشۈرۈڭ."
+
+#: ../aptdaemon/enums.py:456
+msgid ""
+"The installation of a package which violates the quality standards isn't "
+"allowed. This could cause serious problems on your computer. Please contact "
+"the person or organisation who provided this package file and include the "
+"details beneath."
+msgstr ""
+"سۈپەتكە كاپالەتلىك قىلىنمىغان بۇزۇق بوغچىلارنى ئورنىتىشقا يول قويۇلمايدۇ. "
+"بۇلارنىڭ كومپيۇتېرغا ئېغىر زىيانلارنى سېلىش ئېھتىماللىقى بار. شۇڭا مۇشۇ "
+"بوغچىنى ياسىغان ئادەم ياكى ئورۇن بىلەن ئالاقە قىلىپ كۆرۈڭ."
+
+#: ../aptdaemon/enums.py:463
+msgid ""
+"The downloaded license key which is required to run this piece of software "
+"is not valid or could not be installed correctly.\n"
+"See the details for more information."
+msgstr ""
+"پروگراممىنى ئىجرا قىلىشقا زۆرۈر بولغان چۈشۈرۈلگەن ئىجازەتنامە ئاچقۇچى "
+"ئىناۋەتسىز، ياكى توغرا ئورناتقىلى بولمىدى.\n"
+"تېخىمۇ كوپ بىلمەكچى بولسىڭىز تەپسىلاتلىرىغا قاراڭ."
+
+#: ../aptdaemon/enums.py:469
+msgid "All available upgrades have already been installed."
+msgstr "بار بولغان بارلىق يېڭىلانمىلار ئورنىتىلغان."
+
+#: ../aptdaemon/enums.py:471
+msgid ""
+"The license key which allows you to use this piece of software could not be "
+"downloaded. Please check your network connection."
+msgstr ""
+"پروگراممىنى ئىجرا قىلىشقا زۆرۈر بولغان ئىجازەتنامە ئاچقۇچىنى چۈشۈرگىلى "
+"بولمىدى. تور باغلىنىشىنى تەكشۈرۈڭ."
+
+#: ../aptdaemon/enums.py:475
+#, fuzzy
+msgid "You don't have the required privileges to perform this action."
+msgstr "سىزنىڭ بۇ مەشغۇلاتنى قىلىش ھوقۇقىڭىز يوق."
+
+#: ../aptdaemon/enums.py:477
+msgid ""
+"You either provided a wrong password or cancelled the authorization.\n"
+"Furthermore there could also be a technical reason for this error if you "
+"haven't seen a password dialog: your desktop environment doesn't provide a "
+"PolicyKit session agent."
+msgstr ""
+
+#: ../aptdaemon/enums.py:485
+msgid "Failed to download package files"
+msgstr "بوغچا ھۆججەتلىرىنى چۈشۈرۈش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:486
+msgid "Failed to download repository information"
+msgstr "خەزىنە ئۇچۇرلىرىنى چۈشۈرۈش مەغلۇپ بولدى."
+
+#: ../aptdaemon/enums.py:488
+msgid "Package dependencies cannot be resolved"
+msgstr "بوغچا بېقىنىشچانلىقىنى ھەل قىلغىلى بولمىدى"
+
+#: ../aptdaemon/enums.py:489
+msgid "The package system is broken"
+msgstr "بوغچا سىستېمىسى بۇزۇلغان"
+
+#: ../aptdaemon/enums.py:490
+msgid "Key was not installed"
+msgstr "ئاچقۇچ ئورنىتىلمىغان"
+
+#: ../aptdaemon/enums.py:491
+msgid "Key was not removed"
+msgstr "ئاچقۇچ ئۆچۈرۈلمىگەن"
+
+#: ../aptdaemon/enums.py:492
+msgid "Failed to lock the package manager"
+msgstr "بوغچا باشقۇرغۇچنى قۇلۇپلاش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:493
+msgid "Failed to load the package list"
+msgstr "بوغچا تىزىمىنى ئوقۇش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:494
+msgid "Package does not exist"
+msgstr "بوغچا مەۋجۇت ئەمەس"
+
+#: ../aptdaemon/enums.py:495
+msgid "Package is already up to date"
+msgstr "بوغچا ئەڭ يېڭى ھالەتتە"
+
+#: ../aptdaemon/enums.py:496
+msgid "Package is already installed"
+msgstr "بوغچا ئاللىقاچان ئورنىتىلغان"
+
+#: ../aptdaemon/enums.py:497
+msgid "Package isn't installed"
+msgstr "بوغچا ئورنىتىلمىغان"
+
+#: ../aptdaemon/enums.py:498
+msgid "Failed to remove essential system package"
+msgstr "ئاساسلىق سىستېما بوغچىلىرىنى ئۆچۈرۈش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:500
+msgid "Task cannot be monitored or controlled"
+msgstr "ۋەزىپىنى كۆزەتكىلى ياكى باشقۇرغىلى بولمىدى"
+
+#: ../aptdaemon/enums.py:501
+msgid "Package operation failed"
+msgstr "بوغچا مەشغۇلاتى مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:502
+msgid "Requires installation of untrusted packages"
+msgstr "ئىشەنچسىز بوغچىنى ئورنىتىشنى تەلەپ قىلىۋاتىدۇ."
+
+#: ../aptdaemon/enums.py:504
+msgid "Previous installation hasn't been completed"
+msgstr "ئالدىنقى قېتىملىق ئورنىتىش تاماملانماپتۇ"
+
+#: ../aptdaemon/enums.py:505
+msgid "The package is of bad quality"
+msgstr "بۇ بوغچىنىڭ سۈپىتى بەك ناچار ئىكەن"
+
+#: ../aptdaemon/enums.py:506
+msgid "Package file could not be opened"
+msgstr "بوغچا ھۆججىتىنى ئاچقىلى بولمىدى"
+
+#: ../aptdaemon/enums.py:507
+msgid "Not supported feature"
+msgstr "قوللىمايدىغان ئىقتىدار"
+
+#: ../aptdaemon/enums.py:508
+msgid "Failed to download the license key"
+msgstr "ئىجازەتنامە ئاچقۇچىنى چۈشۈرۈش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:509
+msgid "Failed to install the license key"
+msgstr "ئىجازەتنامە ئاچقۇچىنى ئورنىتىش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:510
+msgid "The system is already up to date"
+msgstr "سىستېمىڭىز ئاللىقاچان ئەڭ يېڭى ھالەتتە"
+
+#: ../aptdaemon/enums.py:511
+msgid "You could not be authorized"
+msgstr ""
+
+#: ../aptdaemon/enums.py:512
+msgid "You are not allowed to perform this action"
+msgstr ""
+
+#: ../aptdaemon/enums.py:513
+msgid "An unhandlable error occured"
+msgstr "تۇتقىلى بولمايدىغان خاتالىق يۈز بەردى"
+
+#: ../aptdaemon/enums.py:516
+msgid "Waiting for service to start"
+msgstr "مۇلازىمەتنىڭ ئىجرا بولۇشىنى كۈتۈۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:518
+msgid "Waiting"
+msgstr "كۈتۈۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:519
+msgid "Waiting for required medium"
+msgstr "زۆرۈر بولغان CD/DDV نى كۈتۈۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:520
+msgid "Waiting for other software managers to quit"
+msgstr "باشقا يۇمشاق دېتال باشقۇرۇش پروگراممىلىرىنىڭ تاماملىنىشىنى كۈتۈۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:521
+msgid "Waiting for configuration file prompt"
+msgstr "سەپلىمە ھۆججىتىنىڭ كۆرسەتمە چىقىرىشىنى ساقلاۋاتىدۇ."
+
+#: ../aptdaemon/enums.py:523
+msgid "Running task"
+msgstr "ۋەزىپىنى ئىجرا قىلىۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:524
+msgid "Downloading"
+msgstr "چۈشۈرۈۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:525
+msgid "Querying software sources"
+msgstr "يۇمشاق دېتال مەنبەلىرىنى سۈرۈشتۈرۈۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:526
+msgid "Cleaning up"
+msgstr "تازىلاۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:529
+msgid "Finished"
+msgstr "تاماملاندى"
+
+#: ../aptdaemon/enums.py:530
+msgid "Cancelling"
+msgstr "ئەمەلدىن قالدۇرۇۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:531
+msgid "Loading software list"
+msgstr "يۇمشاق دېتال تىزىمىنى ئوقۇۋاتىدۇ"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:536
+#, python-format
+msgid "Installing %s"
+msgstr "ئورنىتىۋاتقىنى %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:538
+#, python-format
+msgid "Configuring %s"
+msgstr "سەپلەۋاتقىنى %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:540
+#, python-format
+msgid "Removing %s"
+msgstr "ئۆچۈرۈۋاتقىنى %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:542
+#, python-format
+msgid "Completely removing %s"
+msgstr "تولۇق ئۆچۈرۈۋاتقىنى %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:544
+#, python-format
+msgid "Noting disappearance of %s"
+msgstr "%s نىڭ يوقىلىشىنى خاتىرىلەۋاتىدۇ"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:546
+#, python-format
+msgid "Running post-installation trigger %s"
+msgstr "ئورنىتىلغاندىن كېيىنكى trigger %s نى ئىجرا قىلىۋاتىدۇ"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:548
+#, python-format
+msgid "Upgrading %s"
+msgstr "يۈكسەلدۈرۈۋاتقىنى %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:550
+#, python-format
+msgid "Unpacking %s"
+msgstr "يېيىۋاتقىنى %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:552
+#, python-format
+msgid "Preparing installation of %s"
+msgstr "بوغچا %s نى ئورنىتىشقا تەييارلىنىۋاتىدۇ"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:554
+#, python-format
+msgid "Preparing configuration of %s"
+msgstr "بوغچا %s نى سەپلەشكە تەييارلىنىۋاتىدۇ"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:556
+#, python-format
+msgid "Preparing removal of %s"
+msgstr "بوغچا %s نى چىقىرىۋەتىشكە تەييارلىنىۋاتىدۇ"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:558
+#, python-format
+msgid "Preparing complete removal of %s"
+msgstr "بوغچا %s نى تولۇق چىقىرىۋەتىشكە تەييارلىنىۋاتىدۇ"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:560
+#, python-format
+msgid "Installed %s"
+msgstr "ئورنىتىلغىنى %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:562
+#, python-format
+msgid "Completely removed %s"
+msgstr "بوغچا %s تولۇق چىقىرىۋېتىلدى"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:564
+#, python-format
+msgid "Removed %s"
+msgstr "چىقىرىۋېتىلگىنى %s"
+
+#: ../aptdaemon/enums.py:567
+msgid "Done"
+msgstr "تامام"
+
+#: ../aptdaemon/enums.py:568
+msgid "Authentication failed"
+msgstr "سالاھىيەت دەلىللەش مەغلۇپ بولدى"
+
+#: ../aptdaemon/enums.py:570
+msgid "Fetching"
+msgstr "ئېلىۋاتىدۇ"
+
+#: ../aptdaemon/enums.py:571
+msgid "Idle"
+msgstr "بىكار"
+
+#: ../aptdaemon/enums.py:572
+msgid "Network isn't available"
+msgstr "تورنى ئىشلەتكىلى بولمايدۇ"
+
+#: ../aptdaemon/enums.py:704
+#, python-format
+msgid "Processing %s"
+msgstr "بىر تەرەپ قىلىۋاتقىنى %s"
+
+#: ../aptdaemon/gtk3widgets.py:306
+#, python-format
+msgid "Downloaded %sB of %sB at %sB/s"
+msgstr "چۈشۈرۈلگىنى %sB / %sB، تېزلىكى %sB/s"
+
+#: ../aptdaemon/gtk3widgets.py:311 ../aptdaemon/gtk3widgets.py:510
+#, python-format
+msgid "Downloaded %sB of %sB"
+msgstr "چۈشۈرۈلگىنى %sB / %sB"
+
+#: ../aptdaemon/gtk3widgets.py:323
+msgid "Details"
+msgstr "تەپسىلاتلار"
+
+#: ../aptdaemon/gtk3widgets.py:474
+msgid "File"
+msgstr "ھۆججەت"
+
+#. TRANSLATORS: header of the progress download column
+#: ../aptdaemon/gtk3widgets.py:479
+msgid "%"
+msgstr "%"
+
+#: ../aptdaemon/gtk3widgets.py:515
+#, python-format
+msgid "Downloaded %sB"
+msgstr "چۈشۈرۈلگىنى %sB"
+
+#: ../aptdaemon/gtk3widgets.py:518
+msgid "Downloaded"
+msgstr "چۈشۈرۈلدى"
+
+#. TRANSLATORS: %s represents the name of a CD or DVD
+#: ../aptdaemon/gtk3widgets.py:853
+#, python-format
+msgid "CD/DVD '%s' is required"
+msgstr "'%s' دېگەن CD/DVD زۆرۈر."
+
+#. TRANSLATORS: %s is the name of the CD/DVD drive
+#: ../aptdaemon/gtk3widgets.py:855
+#, python-format
+msgid ""
+"Please insert the above CD/DVD into the drive '%s' to install software "
+"packages from it."
+msgstr ""
+"ئۇستىدىكى CD/DVD دىن يۇمشاق دېتال بوغچىلىرىنى ئورنىتىش ئۈچۈن، ئۇنى قوزغاتقۇچ "
+"'%s' غا سېلىڭ"
+
+#: ../aptdaemon/gtk3widgets.py:859 ../aptdaemon/gtk3widgets.py:880
+msgid "C_ontinue"
+msgstr "داۋاملاشتۇر(_O)"
+
+#: ../aptdaemon/gtk3widgets.py:931
+msgid "Install"
+msgstr "ئورنات"
+
+#: ../aptdaemon/gtk3widgets.py:932
+msgid "Reinstall"
+msgstr "قايتا ئورنات"
+
+#: ../aptdaemon/gtk3widgets.py:933
+msgid "Remove"
+msgstr "ئۆچۈر"
+
+#: ../aptdaemon/gtk3widgets.py:934
+msgid "Purge"
+msgstr "پاكىزلا"
+
+#: ../aptdaemon/gtk3widgets.py:935
+msgid "Upgrade"
+msgstr "يۈكسەلدۈر"
+
+#: ../aptdaemon/gtk3widgets.py:936
+msgid "Downgrade"
+msgstr "نەشرىنى تۆۋەنلەت"
+
+#: ../aptdaemon/gtk3widgets.py:937
+msgid "Skip upgrade"
+msgstr "يۈكسەلدۈرۈشنى ئۆتكۈزۈۋەت"
+
+#. If there is only one type of changes (e.g. only installs) expand the
+#. tree
+#. FIXME: adapt the title and message accordingly
+#. FIXME: Should we have different modes? Only show dependencies, only
+#. initial packages or both?
+#: ../aptdaemon/gtk3widgets.py:948
+msgid "Please take a look at the list of changes below."
+msgstr "تۆۋەندىكى ئۆزگىرىشلەرنىڭ تىزىمىغا قاراپ چىقىڭ."
+
+#: ../aptdaemon/gtk3widgets.py:956
+msgid "Additional software has to be installed"
+msgstr "ئورنىتىلىدىغان قوشۇمچە يۇمشاق دېتال"
+
+#: ../aptdaemon/gtk3widgets.py:958
+msgid "Additional software has to be re-installed"
+msgstr "قايتا ئورنىتىلىدىغان قوشۇمچە يۇمشاق دېتال"
+
+#: ../aptdaemon/gtk3widgets.py:960
+msgid "Additional software has to be removed"
+msgstr "ئۆچۈرۈلىدىغان قوشۇمچە يۇمشاق دېتال"
+
+#: ../aptdaemon/gtk3widgets.py:962
+msgid "Additional software has to be purged"
+msgstr "پاكىزلىنىدىغان قوشۇمچە يۇمشاق دېتال"
+
+#: ../aptdaemon/gtk3widgets.py:964
+msgid "Additional software has to be upgraded"
+msgstr "يۈكسەلدۈرىدىغان قوشۇمچە يۇمشاق دېتال"
+
+#: ../aptdaemon/gtk3widgets.py:966
+msgid "Additional software has to be downgraded"
+msgstr "نەشرىنى تۆۋەنلىتىدىغان قوشۇمچە يۇمشاق دېتال"
+
+#: ../aptdaemon/gtk3widgets.py:968
+msgid "Updates will be skipped"
+msgstr "يېڭىلاش ئۆتكۈزۈۋېتىلىدۇ"
+
+#: ../aptdaemon/gtk3widgets.py:976
+msgid "Additional changes are required"
+msgstr "قوشۇمچە ئۆزگىرىشلەر تەلەپ قىلىنىدۇ"
+
+#: ../aptdaemon/gtk3widgets.py:981
+#, python-format
+msgid "%sB will be downloaded in total."
+msgstr "جەمئىي %sB چۈشۈرۈلىدۇ"
+
+#: ../aptdaemon/gtk3widgets.py:985
+#, python-format
+msgid "%sB of disk space will be freed."
+msgstr "%sB بوشلۇق بىكارلىنىدۇ."
+
+#: ../aptdaemon/gtk3widgets.py:989
+#, python-format
+msgid "%sB more disk space will be used."
+msgstr "%sB بوشلۇق ئىشلىتىلىدۇ."
+
+#. TRANSLATORS: %s is a file path
+#: ../aptdaemon/gtk3widgets.py:1061
+#, python-format
+msgid ""
+"Replace your changes in '%s' with a later version of the configuration file?"
+msgstr ""
+"'%s' نىڭدىكى ئۆزگىرىشلەرنى كېيىنكى نەشرىدىكى سەپلىمە ھۆججەتلەر بىلەن "
+"قاپلىۋېتەمسىز؟"
+
+#: ../aptdaemon/gtk3widgets.py:1063
+msgid ""
+"If you don't know why the file is there already, it is usually safe to "
+"replace it."
+msgstr ""
+"بۇ ھۆججەتنىڭ بۇ يەرگە قانداق پەيدا بولۇپ قالغانلىقىنى بىلمىسىڭىز خاتىرجەم "
+"قاپلىۋېتىڭ."
+
+#: ../aptdaemon/gtk3widgets.py:1072
+msgid "_Changes"
+msgstr "ئۆزگىرىشلەر(_C)"
+
+#: ../aptdaemon/gtk3widgets.py:1075
+msgid "_Keep"
+msgstr "تەگمە(_K)"
+
+#: ../aptdaemon/gtk3widgets.py:1076
+msgid "_Replace"
+msgstr "ئالماشتۇر(_R)"
+
+#: ../aptdaemon/gtk3widgets.py:1179
+msgid "_Details"
+msgstr "تەپسىلاتلار(_D)"
+
+#. TRANSLATORS: %s is the name of a package manager
+#: ../aptdaemon/lock.py:182
+#, python-format
+msgid "Waiting for %s to exit"
+msgstr "%s نىڭ ئاخىرلىشىشىنى كۈتۈۋاتىدۇ"
+
+#. TRANSLATORS: %s is a list of package names
+#: ../aptdaemon/progress.py:169
+#, python-format
+msgid "Downloading %(files)s"
+msgid_plural "Downloading %(files)s"
+msgstr[0] "چۈشۈرۈۋاتقىنى %(files)s"
+
+#. TRANSLATORS: the string is used as a fallback if we cannot
+#. get the URI of a local repository
+#: ../aptdaemon/progress.py:281 ../aptdaemon/progress.py:320
+msgid "local repository"
+msgstr "يەرلىك خەزىنە"
+
+#. TRANSLATORS: %s is a list of repository names
+#: ../aptdaemon/progress.py:284
+#, python-format
+msgid "Downloading from %s"
+msgid_plural "Downloading from %s"
+msgstr[0] "خەزىنە %s دىن چۈشۈرۈۋاتىدۇ"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:324
+#, python-format
+msgid "Structure of %s"
+msgstr "خەزىنە %s نىڭ قۇرۇلمىسى"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:327
+#, python-format
+msgid "Description of %s"
+msgstr "خەزىنە %s نىڭ چۈشەندۈرۈلۈشى"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:330
+#, python-format
+msgid "Description signature of %s"
+msgstr "خەزىنە %s چۈشەندۈرۈش ئىمزاسى"
+
+#: ../aptdaemon/progress.py:335
+#, python-format
+msgid "Available packages from %s"
+msgstr "خەزىنە %s نىڭدا بار بوغچىلار"
+
+#: ../aptdaemon/progress.py:339
+#, python-format
+msgid "Available sources from %s"
+msgstr "خەزىنە %s نىڭدا بار مەنبەلەر"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:342
+#, python-format
+msgid "Available translations from %s"
+msgstr "خەزىنە %s نىڭدا بار تەرجىمىلەر"
+
+#: ../aptdaemon/progress.py:359
+#, python-format
+msgid "Translations for %s (%s) from %s"
+msgstr "%s (%s) نىڭ %s تەرجىمىسى"
+
+#. TRANSLATORS: %s is the name of a language. The second one is
+#. the name of the repository
+#: ../aptdaemon/progress.py:363
+#, python-format
+msgid "Translations for %s from %s"
+msgstr "%s نىڭ %s تەرجىمىسى"
+
+#. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
+#. The second one is the name of the repository
+#: ../aptdaemon/progress.py:368
+#, python-format
+msgid "Translations (%s) from %s"
+msgstr "(%s) چە تەرجىمىسى، %s ئامباردىن كەلگەن"
+
+#: ../aptdaemon/worker/aptworker.py:374 ../aptdaemon/worker/aptworker.py:671
+#: ../aptdaemon/worker/aptworker.py:748 ../aptdaemon/worker/aptworker.py:791
+#, python-format
+msgid "Package %s isn't available"
+msgstr "%s بوغچا مەۋجۇت ئەمەس"
+
+#: ../aptdaemon/worker/aptworker.py:379 ../aptdaemon/worker/aptworker.py:675
+#: ../aptdaemon/worker/aptworker.py:752 ../aptdaemon/worker/aptworker.py:795
+#, python-format
+msgid "Package %s isn't installed"
+msgstr "%s بوغچا ئورنىتىلمىدى"
+
+#: ../aptdaemon/worker/aptworker.py:383
+#, python-format
+msgid "The version %s of %s isn't installed"
+msgstr "%s نەشرىنىڭ %s ئورنىتىلمىغان"
+
+#: ../aptdaemon/worker/aptworker.py:398
+#, python-format
+msgid "Package %s is already installed"
+msgstr "%s بوغچا ئاللىقاچان ئورنىتىلغان"
+
+#: ../aptdaemon/worker/aptworker.py:407 ../aptdaemon/worker/aptworker.py:821
+#, python-format
+msgid "The version %s of %s isn't available."
+msgstr "%s نەشرىنىڭ %s نى ئىشلەتكىلى بولمايدۇ"
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptdaemon/worker/aptworker.py:565
+#, python-format
+msgid "The keyserver URL is invalid: %s"
+msgstr "ئاچقۇچ مۇلازىمېتىر(keyserver) نىڭ تور ئادرېسى ئىناۋەتسىز: %s"
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptdaemon/worker/aptworker.py:571
+#, python-format
+msgid "Invalid protocol of the server: %s"
+msgstr "مۇلازىمېتىر كېلىشىمنامىسى ئىناۋەتسىز: %s"
+
+#. TRANSLATORS: %s is the id of a GnuPG key
+#. e.g. E08ADE95
+#: ../aptdaemon/worker/aptworker.py:579 ../aptdaemon/worker/aptworker.py:623
+#, python-format
+msgid "Invalid key id: %s"
+msgstr "ئاچقۇچ id سى ئىناۋەتسىز: %s"
+
+#: ../aptdaemon/worker/aptworker.py:587
+#, python-format
+msgid ""
+"Failed to download and install the key %s from %s:\n"
+"%s"
+msgstr ""
+"ئاچقۇچ %s نى %s دىن چۈشۈرۈپ ئورنىتىش مەغلۇپ بولدى:\n"
+"%s"
+
+#: ../aptdaemon/worker/aptworker.py:604
+#, python-format
+msgid "Key file %s couldn't be installed: %s"
+msgstr "ئاچقۇچ %s نى ئورناتقىلى بولمىدى: %s"
+
+#: ../aptdaemon/worker/aptworker.py:628
+#, python-format
+msgid "Key with fingerprint %s couldn't be removed: %s"
+msgstr "بارماق ئىزى %s بولغان ئاچقۇچنى چىقىرىۋەتكىلى بولمىدى: %s"
+
+#: ../aptdaemon/worker/aptworker.py:679
+#, python-format
+msgid "Package %s cannot be removed."
+msgstr "%s بوغچىنى چىقىرىۋەتكىلى بولمىدى"
+
+#: ../aptdaemon/worker/aptworker.py:683
+#, python-format
+msgid "The version %s of %s is not installed"
+msgstr "%s نەشرىنىڭ %s ئورنىتىلمىغان"
+
+#: ../aptdaemon/worker/aptworker.py:763
+#, python-format
+msgid "The former version %s of %s is already installed"
+msgstr "ئىلگىرىكى %s نەشرىنىڭ %s ئاللىقاچان ئورنىتىلغان"
+
+#: ../aptdaemon/worker/aptworker.py:768 ../aptdaemon/worker/aptworker.py:814
+#, python-format
+msgid "The version %s of %s is already installed"
+msgstr "%s نەشرىنىڭ %s ئاللىقاچان ئورنىتىلغان"
+
+#: ../aptdaemon/worker/aptworker.py:775
+#, python-format
+msgid "The version %s of %s isn't available"
+msgstr "%s نەشرىنىڭ %s نى ئىشلەتكىلى بولمايدۇ"
+
+#: ../aptdaemon/worker/aptworker.py:779
+#, python-format
+msgid "You need to specify a version to downgrade %s to"
+msgstr "تۆۋەنلىتىدىغان نەشرى %s نى بەلگىلىشىڭىز كېرەك."
+
+#: ../aptdaemon/worker/aptworker.py:807
+#, python-format
+msgid "The later version %s of %s is already installed"
+msgstr "ئەڭ يېڭى %s نەشرىنىڭ %s ئاللىقاچان ئورنىتىلغان"
+
+#: ../aptdaemon/worker/aptworker.py:838
+#, python-format
+msgid "The package %s isn't available in the %s release."
+msgstr "%s دېگەن بوغچا %s نەشرىدە يوق."
+
+#: ../aptdaemon/worker/aptworker.py:1026
+#, python-format
+msgid "Package %s cannot be removed"
+msgstr "%s بوغچىنى چىقىرىۋەتكىلى بولمىدى"
+
+#: ../aptdaemon/worker/aptworker.py:1123
+msgid ""
+"The package doesn't provide a valid Installed-Size control field. See Debian "
+"Policy 5.6.20."
+msgstr ""
+"بۇ بوغچىدا ئىناۋەتلىك ئورنىتىش چوڭلۇقى(Install-Size) بۆلىكى يوق. Debian "
+"Policy 5.6.20 غا قاراڭ"
+
+#: ../aptdaemon/worker/aptworker.py:1265
+msgid "The license key is empty"
+msgstr "ئىجازەتنامە ئاچقۇچى قۇرۇق"
+
+#: ../aptdaemon/worker/aptworker.py:1281
+msgid "The license key is not allowed to contain executable code."
+msgstr "ئىجازەتنامە ئاچقۇچى تەركىبىدە ئىجرا بولىدىغان كود بولسا بولمايدۇ."
+
+#: ../aptdaemon/worker/aptworker.py:1290
+#, python-format
+msgid "The license key path %s is invalid"
+msgstr "ئىجازەتنامە ئاچقۇچىنىڭ يولى %s ئىناۋەتسىز"
+
+#: ../aptdaemon/worker/aptworker.py:1294
+#, python-format
+msgid "The license key already exists: %s"
+msgstr "ئىجازەتنامە ئاچقۇچى مەۋجۇت: %s"
+
+#: ../aptdaemon/worker/aptworker.py:1299
+#, python-format
+msgid ""
+"The location of the license key is unsecure since it contains symbolic "
+"links. The path %s maps to %s"
+msgstr ""
+"ئىجازەتنامە ئاچقۇچى تەركىبىدە symbolic ئۇلانمىلار بولغاچقا ئۇنىڭ ئورنى ئېنىق "
+"ئەمەس. يول %s ، خەرىتىسى %s"
+
+#: ../aptdaemon/worker/aptworker.py:1307
+#, python-format
+msgid "The directory where to install the key to doesn't exist yet: %s"
+msgstr "ئاچقۇچنى ئورنىتىدىغان مۇندەرىجە تېخى مەۋجۇت ئەمەس: %s"
+
+#: ../aptdaemon/worker/aptworker.py:1318
+#, python-format
+msgid "Failed to write key file to: %s"
+msgstr "ئاچقۇچ ھۆججىتىنى يېزىش مەغلۇپ بولدى: %s"
+
+#: ../aptdaemon/worker/aptworker.py:1353
+msgid "The following packages have unmet dependencies:"
+msgstr "تۆۋەندىكى بوغچا بېقىنىش تەلىپىنى قاندۇرالمىدى:"
+
+#: ../aptdaemon/worker/aptworker.py:1406
+msgid "but it is a virtual package"
+msgstr "بىراق ئۇ بىر مەۋھۇم بوغچا"
+
+#: ../aptdaemon/worker/aptworker.py:1409
+msgid "but it is not installed"
+msgstr "بىراق ئۇ ئورنىتىلمىغان"
+
+#: ../aptdaemon/worker/aptworker.py:1411
+msgid "but it is not going to be installed"
+msgstr "بىراق ئۇ ئورنىتىلمايدۇ"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptdaemon/worker/aptworker.py:1415
+#, python-format
+msgid "but %s is installed"
+msgstr "بىراق %s ئورنىتىلغان"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptdaemon/worker/aptworker.py:1419
+#, python-format
+msgid "but %s is to be installed"
+msgstr "بىراق %s ئورنىتىلىدۇ"
+
+#~ msgid "Adding the key to the list of trused software vendors failed"
+#~ msgstr "ئاچقۇچنى ئىشەنچلىك يۇمساق دېتال vendors تىزىمىغا قوشۇش مەغلۇپ بولدى"

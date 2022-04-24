@@ -1,0 +1,56 @@
+Description: Various locking fixes (LP: #1831981)
+ - Implement frontend locking
+ - Adjust locking order to match APT
+ - Use reverse order for unlocking
+Author: Julian Andres Klode <juliank@ubuntu.com>
+Bug-Ubuntu: https://bugs.launchpad.net/bugs/1831981
+
+--- a/aptdaemon/lock.py
++++ b/aptdaemon/lock.py
+@@ -118,6 +118,7 @@ apt_pkg.init()
+ #: The lock for dpkg status file
+ _status_dir = os.path.dirname(apt_pkg.config.find_file("Dir::State::status"))
+ status_lock = FileLock(os.path.join(_status_dir, "lock"))
++frontend_lock = FileLock(os.path.join(_status_dir, "lock-frontend"))
+ 
+ #: The lock for the package archive
+ _archives_dir = apt_pkg.config.find_dir("Dir::Cache::Archives")
+@@ -131,19 +132,25 @@ lists_lock = FileLock(os.path.join(
+ def acquire():
+     """Acquire an exclusive lock for the package management system."""
+     try:
+-        for lock in archive_lock, status_lock, lists_lock:
++        for lock in frontend_lock, status_lock, archive_lock, lists_lock:
+             if not lock.locked:
+                 lock.acquire()
+     except:
+         release()
+         raise
+ 
++    os.environ['DPKG_FRONTEND_LOCKED'] = '1'
+ 
+ def release():
+     """Release an exclusive lock for the package management system."""
+-    for lock in archive_lock, status_lock, lists_lock:
++    for lock in lists_lock, archive_lock, status_lock, frontend_lock:
+         lock.release()
+ 
++    try:
++        del os.environ['DPKG_FRONTEND_LOCKED']
++    except KeyError:
++        pass
++
+ 
+ def wait_for_lock(trans, alt_lock=None):
+     """Acquire the system lock or the optionally given one. If the lock
+--- a/aptdaemon/worker/aptworker.py
++++ b/aptdaemon/worker/aptworker.py
+@@ -198,6 +198,8 @@ class AptWorker(BaseWorker):
+             apt_pkg.config["DPkg::Options::"] = ("--log=%s/var/log/dpkg.log" %
+                                                  chroot)
+             status_file = apt_pkg.config.find_file("Dir::State::status")
++            lock.frontend_lock.path = os.path.join(os.path.dirname(status_file),
++                                                 "lock-frontend")
+             lock.status_lock.path = os.path.join(os.path.dirname(status_file),
+                                                  "lock")
+             archives_dir = apt_pkg.config.find_dir("Dir::Cache::Archives")

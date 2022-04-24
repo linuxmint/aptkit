@@ -1,0 +1,7 @@
+Tests are supported via nosetests3 from the python3-nose package.
+
+To run the tests you can either use the "python3 setup.py test" or
+the "nosetests3" command.
+
+Since Python 2 is still supported, you should also run the tests with
+"python setup.py test" or the "nosetests" command.

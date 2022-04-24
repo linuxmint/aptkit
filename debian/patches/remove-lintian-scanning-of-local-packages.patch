@@ -1,0 +1,180 @@
+From: Michael Hudson-Doyle <michael.hudson@canonical.com>
+Date: Thu, 1 Aug 2019 12:13:07 +1200
+Subject: Remove lintian scanning of local packages.
+
+lintian has changed in Debian in ways that break this feature and
+removing it seems like a better use of time than fixing it.
+---
+ aptdaemon/progress.py         | 30 +-----------------------------
+ aptdaemon/worker/aptworker.py | 12 ------------
+ setup.py                      |  4 ----
+ tests/test_pk.py              |  6 +++---
+ tests/test_worker.py          | 14 ++------------
+ 5 files changed, 6 insertions(+), 60 deletions(-)
+
+diff --git a/aptdaemon/progress.py b/aptdaemon/progress.py
+index 0a0cd7b..5312c5a 100644
+--- a/aptdaemon/progress.py
++++ b/aptdaemon/progress.py
+@@ -14,8 +14,7 @@ __author__ = "Sebastian Heinlein <devel@glatzor.de>"
+ 
+ __all__ = ("DaemonAcquireProgress", "DaemonOpenProgress",
+            "DaemonInstallProgress", "DaemonDpkgInstallProgress",
+-           "DaemonForkProgress", "DaemonDpkgRecoverProgress",
+-           "DaemonLintianProgress")
++           "DaemonForkProgress", "DaemonDpkgRecoverProgress")
+ 
+ import locale
+ import logging
+@@ -622,33 +621,6 @@ class DaemonForkProgress(object):
+         return False
+ 
+ 
+-class DaemonLintianProgress(DaemonForkProgress):
+-
+-    """Performs a lintian call."""
+-
+-    def _child(self, path):
+-        # Avoid running lintian as root
+-        try:
+-            os.setgroups([self.transaction.gid])
+-        except OSError:
+-            pass
+-        os.setgid(self.transaction.gid)
+-        os.setuid(self.transaction.uid)
+-
+-        if platform.dist()[1] == "debian":
+-            profile = "debian/aptdaemon"
+-        else:
+-            profile = "ubuntu/aptdaemon"
+-        # If HOME isn't set lintian won't try to load user profiles
+-        os.unsetenv("HOME")
+-
+-        lintian_path = apt_pkg.config.find_file("Dir::Bin::Lintian",
+-                                                "/usr/bin/lintian")
+-        os.execlp(lintian_path, lintian_path, "--no-cfg", "--fail-on-warnings",
+-                  "--profile", profile, path)
+-        os._exit(1)
+-
+-
+ class DaemonInstallProgress(DaemonForkProgress):
+ 
+     """Progress to execute APT package operations in a child process."""
+diff --git a/aptdaemon/worker/aptworker.py b/aptdaemon/worker/aptworker.py
+index 5211365..d936e10 100644
+--- a/aptdaemon/worker/aptworker.py
++++ b/aptdaemon/worker/aptworker.py
+@@ -66,7 +66,6 @@ from ..progress import (
+     DaemonDpkgInstallProgress,
+     DaemonDpkgReconfigureProgress,
+     DaemonDpkgRecoverProgress,
+-    DaemonLintianProgress,
+     DaemonForkProgress)
+ 
+ log = logging.getLogger("AptDaemon.Worker")
+@@ -1230,21 +1229,10 @@ class AptWorker(BaseWorker):
+         # This code runs as root for simulate and simulate requires no
+         # authentication - so we need to ensure we do not leak information
+         # about files here (LP: #1449587, CVE-2015-1323)
+-        #
+-        # Note that the actual lintian run is also droping privs (real,
+-        # not just seteuid)
+         with set_euid_egid(trans.uid, trans.gid):
+             if not os.path.isfile(path):
+                 raise TransactionFailed(ERROR_UNREADABLE_PACKAGE_FILE, path)
+ 
+-        if not force and os.path.isfile("/usr/bin/lintian"):
+-            with DaemonLintianProgress(trans) as progress:
+-                progress.run(path)
+-            # FIXME: Add an error to catch return state 2 (failure)
+-            if progress._child_exit != 0:
+-                raise TransactionFailed(ERROR_INVALID_PACKAGE_FILE,
+-                                        "Lintian check results for %s:"
+-                                        "\n%s" % (path, progress.output))
+         try:
+             deb = apt.debfile.DebPackage(path, self._cache)
+         except IOError:
+diff --git a/setup.py b/setup.py
+index 45273df..c08cb5e 100755
+--- a/setup.py
++++ b/setup.py
+@@ -50,10 +50,6 @@ setup(name="aptdaemon",
+                   ("share/dbus-1/system-services/",
+                    ["data/org.debian.apt.service",
+                     "data/org.freedesktop.PackageKit.service"]),
+-                  ("share/lintian/profiles/ubuntu/",
+-                   ["data/lintian/ubuntu/aptdaemon.profile"]),
+-                  ("share/lintian/profiles/debian/",
+-                   ["data/lintian/debian/aptdaemon.profile"]),
+                   ("share/man/man1",
+                    ["doc/aptd.1", "doc/aptdcon.1"]),
+                   ("share/man/man7",
+diff --git a/tests/test_pk.py b/tests/test_pk.py
+index dd386b4..1c73632 100644
+--- a/tests/test_pk.py
++++ b/tests/test_pk.py
+@@ -119,9 +119,9 @@ class PackageKitTest(aptdaemon.test.AptDaemonTestCase):
+     def test_install_files(self):
+         """Test installing local package files."""
+ 
+-        path_pkg_lintian_fail = os.path.join(
++        path_pkg_config = os.path.join(
+             REPO_PATH,
+-            "silly-depend-base-lintian-broken_0.1-0_all.deb")
++            "silly-config_.1-0_all.deb")
+         path_pkg = os.path.join(
+             REPO_PATH,
+             "silly-depend-base_0.1-0_all.deb")
+@@ -131,7 +131,7 @@ class PackageKitTest(aptdaemon.test.AptDaemonTestCase):
+         # Fail if more than package should be installed
+         try:
+             client.install_files(pk.TransactionFlagEnum.NONE,
+-                                 [path_pkg_lintian_fail, path_pkg], None,
++                                 [path_pkg_config, path_pkg], None,
+                                  lambda p, t, d: True, None)
+         except GLib.GError as error:
+             self.assertTrue("Only one package" in error.message)
+diff --git a/tests/test_worker.py b/tests/test_worker.py
+index 474be13..e82ace0 100644
+--- a/tests/test_worker.py
++++ b/tests/test_worker.py
+@@ -315,15 +315,12 @@ Auto-Installed: 1""")
+                                         "etc/silly-packages.cfg")),
+             "Configuration file wasn't removed.")
+ 
+-    @unittest.skipUnless(
+-        os.path.exists('/usr/share/lintian/profiles/debian/aptdaemon.profile'),
+-        'this test needs aptdaemon installed, for the lintian profiles')
+     def test_install_file(self):
+         """Test the installation of a local package file."""
+         # test
+         self.chroot.add_test_repository()
+         pkg = os.path.join(REPO_PATH,
+-                           "silly-depend-base-lintian-broken_0.1-0_all.deb")
++                           "silly-depend-base_0.1-0_all.deb")
+         trans = Transaction(None, enums.ROLE_INSTALL_FILE, self.queue,
+                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
+                             "org.debian.apt.test", connect=False,
+@@ -331,13 +328,6 @@ Auto-Installed: 1""")
+                                     "force": False})
+         self.worker.simulate(trans)
+         self.loop.run()
+-        self.assertIn("wrong-file-owner-uid-or-gid", trans.error.details)
+-        self.assertEqual(trans.error.code, enums.ERROR_INVALID_PACKAGE_FILE,
+-                         "Lintian failed to detect a broken package")
+-        # Now allow to install invalid packages
+-        trans.kwargs["force"] = True
+-        self.worker.simulate(trans)
+-        self.loop.run()
+         self.assertEqual(trans.depends[enums.PKGS_INSTALL],
+                          ["silly-base=0.1-0update1"])
+         self.assertTrue(trans.space > 0)
+@@ -347,7 +337,7 @@ Auto-Installed: 1""")
+                          "%s: %s" % (trans._error_property[0],
+                                      trans._error_property[1]))
+         self.worker._cache.open()
+-        pkg = self.worker._cache["silly-depend-base-lintian-broken"]
++        pkg = self.worker._cache["silly-depend-base"]
+         self.assertTrue(pkg.is_installed)
+ 
+     def test_install_conflicting_file(self):

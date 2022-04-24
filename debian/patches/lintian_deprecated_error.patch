@@ -1,0 +1,20 @@
+Description: don't list deprecated lintian case
+Author: Sebastien Bacher <seb128@ubuntu.com>
+Forwarded: https://code.launchpad.net/~seb128/aptdaemon/lintian-upx-deprecated/+merge/272924
+Bug-Ubuntu: https://launchpad.net/bugs/1490169
+=== modified file 'aptdaemon/data/lintian/ubuntu/aptdaemon.profile'
+Index: aptdaemon-1.1.1+bzr982/data/lintian/ubuntu/aptdaemon.profile
+===================================================================
+--- aptdaemon-1.1.1+bzr982.orig/data/lintian/ubuntu/aptdaemon.profile
++++ aptdaemon-1.1.1+bzr982/data/lintian/ubuntu/aptdaemon.profile
+@@ -5,9 +5,8 @@ Disable-Tags:
+ 	FSSTND-dir-in-usr,
+ 	FSSTND-dir-in-var,
+ 	arch-dependent-file-in-usr-share,
+-        binary-file-compressed-with-upx,
+ 	binary-or-shlib-defines-rpath,
+-        control-interpreter-in-usr-local,
++	control-interpreter-in-usr-local,
+ 	copyright-contains-dh_make-todo-boilerplate,
+ 	copyright-file-compressed,
+  	copyright-file-is-symlink,

@@ -1,0 +1,220 @@
+.\" groff -man -Tascii foo.1
+.TH org.debian.apt.transaction 7 "December 2009" "aptdaemon" "D-Bus Interface"
+.SH NAME
+org.debian.apt.transaction \- the main interface of an aptdaemon transaction
+.SH SYNOPSIS
+Each transaction is represented as an unique D-Bus object, e.g. at the D-Bus path
+.IR /or/debian/apt/transaction/12123-123-123213 .
+Which provides the following interface.
+.SH DESCRIPTION
+.SS METHODS
+.TP
+.B ProvideMedium
+.BI "ProvideMedium\t(in 's' " medium )
+.RS
+.PP
+Continue a paused transaction which is waiting for the given
+.IR medium .
+.PP
+If a media change is required to e.g. install packages from a CD/DVD
+the transaction will be paused and the RequiredMedium property changed
+to an array of the 
+.IR "medium label" " and its " "mount point" .
+Furthermore the MediumRequired signal will be emitted.
+.RE
+.TP
+.B ResolveConfigFileConflict
+.BI "ResolveConfigFilePrompt\t(in 's' " config ,
+.br 
+.BI "\t\t\t\tin 's' " answer )
+.RS
+.PP
+Continue a paused transaction which is waiting for an answer to handle
+a configuration file conflict.
+.I Config
+is the path to the current configuration file and 
+.I answer
+can be either "replace" or "keep".
+.PP
+If a later config file is shipped in a package which overrides some
+user modifications the transaction will be paused and the ConfigFileConflict
+property of the transaction will be set to an array of the old and new
+configuration file path. The later one is supposed to replace the former one.
+Furthermore the ConfigFileConflict signal will be emitted.
+.RE
+.TP
+.B Simulate
+.BI "Simulate\t()" 
+.RS
+.PP
+Simulate the transaction and calculate dependencies, required disk space and
+download size. If a transaction would fail the corresponding error will be
+raised.
+.RE
+.TP
+.B Run
+.BI "Run\t()" 
+.RS
+.PP
+Queue the transaction for processing. Afterwards there cannot be made any further changes to the transaction, e.g. modifing the http proxy.
+.RE
+.TP
+.B Cancel
+.BI "Cancel\t()" 
+.RS
+.PP
+Cancel the transaction if possible.
+.RE
+.SS SIGNALS
+.TP
+.B Finished
+.BI "Finished\t('s' " exit_state )
+.RS
+.PP
+The signal will be emitted when the transaction has been processed. The 
+.I exit_state
+indicates if the transaction was completed, cancelled or failed.
+.RE
+.TP
+.B MediumRequired
+.BI "MediumRequired\t('s' " label ,
+.br
+.BI "\t\t\t's' " mount_point )
+.RS
+.PP
+The signal will be emitted if the transaction has been paused and waits for a media change to install packages.
+.RE
+.TP
+.B ConfigFileConflict
+.BI "ConfigFileConflict\t('s' " old ,
+.br
+.BI "\t\t\t's' " new )
+.RS
+.PP
+The signal will be emitted if the transaction has been paused because a 
+.I new
+configuration file is shipped in a package which would override changes by the
+user in the
+.I old
+configuration file.
+.RE
+.TP
+.B PropertyChanged
+.BI PropertyChanged\t('s' " property_name ,
+.br
+.BI "\t\t\t'v' " value  )
+.RS
+.PP
+The signal will be emitted if one of the following properties has changed.
+.RE
+.SS PROPERTIES
+The properties of the transaction are available through the Get And GetAll
+methods of the D-Bus properties interface and can be changed using the 
+Set method.
+.TP
+.BR Role " read 's'"
+The role enum of the transaction, e.g. update-cache.
+.TP
+.BR Status " read 's'"
+The current status enum of the transaction, e.g. downloading
+.TP
+.BR StatusDetails " read 's'"
+A clear text message describing the current status.
+.TP
+.BR Progress " read 'i'"
+The progress of the transaction in percent.
+.TP
+.BR ProgressDownload " read 'sssiis'"
+The last download progress information recieved from APT. It is an array
+of the URI, status enum, short description, full size, already downloaded
+size and an error or status message.
+.TP
+.BR Space " read 'i'"
+The additional disk space in Bytes which will be required by the transaction.
+The 
+.B Simulate
+method has to be called to calculate the download size.
+.TP
+.BR Download " read 'i'"
+The required download size in Bytes of the transaction.
+The 
+.B Simulate
+method has to be called to calculate the download size.
+.TP
+.BR Packages " read 'a(a(s)a(s)a(s)a(s)a(s)a(s)a(s))'"
+The lists of packages which are initially queued to be installed,
+reinstalled, removed, purged, upgraded, downgraded or skipped from upgrading.
+.TP
+.BR Dependenciens " read 'a(a(s)a(s)a(s)a(s)a(s)a(s)a(s))'"
+The lists of packages which are additionally required to be installed,
+reinstalled, removed, purged, upgraded, downgraded or skipped from upgrading.
+The 
+.B Simulate
+method has to be called to calculate the dependencies.
+.TP
+.BR Cancellable " read 'b'"
+If the transaction can be cancelled.
+.TP
+.BR TerminalAttached " read 'b'"
+If the master pty which has to be set using the Terminal property is attached as controlling terminal to the underlying dpkg call.
+.TP
+.BR RequiredMedium " read 'a(ss)'"
+The transaction will be stopped if a media change is required to install packages. This property provides the 
+.I label
+and the 
+.I mount point
+of the requested medium.
+.TP
+.BR ConfigFileConflict " read 'a(ss)'"
+The transaction will be stopped if a configuration file shipped in the package overrides changes of the user. This property provides the path to 
+.I current
+and the path to the
+.I new
+configuration file.
+.TP
+.BR ExitState " read 's'"
+The exit state enum of the transaction.
+.TP 
+.BR Error " read 'a(ss)'"
+If an error occured this property provides the
+.I error enum
+and the 
+.I error message.
+.TP
+.BR Locale " read-write 's'"
+This is the locale which will be used for translating status and error messages of apt, e.g. de_DE@utf-8.
+.TP
+.BR Terminal " read-write 's'"
+The path to the master pty which will be the controlling terminal of the underlying dpkg call. This allows to have an interactive terminal session.
+.TP
+.BR DebconfSocket " read-write 's'"
+The path to the socket which will be used by the debconf passthrough backend to forward the debconf communication to the user session.
+.TP
+.BR Paused " read 'b'"
+If the transaction is paused, e.g. waiting for a conflict file resolution or media change.
+.TP
+.BR Unauthenticated " read 'as'"
+List of unauthenticated packages which are going to be installed.
+.TP
+.BR RemoveObsoletedDepends " read-write 'b'"
+If obsoleted dependencies of to be removed packages which have been installed
+automatically should be removed too.
+.TP
+.BR AllowUnauthenticated " read-write 'b'"
+If it is allowed to install not authenticated software packages.
+.TP
+.BR HttpProxy " read-write 's'"
+The URL of an http proxy which should be used to download repository meta data and package files, e.g. http://myproxy.athome:8080. You should set the system wide proxy if you use this feature regularly.
+.BR MetaData " read-write 'a{ss}'"
+A dictonary which allows client application to store additional data in the transaction. The key name has to include an identifier of the client application separated by an unterscore from the key name, e.g. sc_icon for the application icon name stored by software-center. The property cannot be changed anymore after the transaction has been queued.
+.SH HOMEPAGE
+https://launchpad.net/aptdaemon
+.SH BUGS
+You can report bugs at the Launchpad site of aptdaemon:
+https://bugs.launchpad.net/aptdaemon/+filebug
+.SH AUTHOR
+Sebastian Heinlein <devel at glatzor dot de>
+.SH SEE ALSO
+.BR org.debian.apt.transaction (7),
+.BR aptd (2),
+.BR aptdcon (2)

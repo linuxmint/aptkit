@@ -1,0 +1,22 @@
+Date: Wed, 09 May 2012 01:24:59 UTC
+MD5Sum:
+ da80d4a76b8c6119b697558524cdaf71             7325 Packages
+ d41d8cd98f00b204e9800998ecf8427e                0 Release
+ 0bd018b62f0031d1ee4993896f50ddd5              782 backports/Packages
+ cec65a680d0777c2f8f06bbaa503d345              899 backports/Release
+ 0bd018b62f0031d1ee4993896f50ddd5              782 security/Packages
+ 4fa3f7d1e32aa2bc06b63bf7519d9e64              895 security/Release
+SHA1:
+ c911274d83557d97f04bbab8d681efd11450b695             7325 Packages
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 Release
+ 42201c0ab580cb2d557ca22a7ed04717a68b2e6e              782 backports/Packages
+ 71e98c6dbe072ebbf7c959c4ebc496743fc4d3ae              899 backports/Release
+ 42201c0ab580cb2d557ca22a7ed04717a68b2e6e              782 security/Packages
+ 8e14bd91f977a2e12d3e30b3649c3f772e84126e              895 security/Release
+SHA256:
+ 9ee3b2e2d7cd1d6f567a7914d4a78e201b80b65d01d21a0865f1d5a9f5cceab2             7325 Packages
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 Release
+ 950233659ae7e86ac11ae886298963e57f4414691881af1357456c6a4038ef91              782 backports/Packages
+ 6e85dc9fc5506e5564bd9914abc165f0c50ac15d34ede44c31b363468ef641b5              899 backports/Release
+ 950233659ae7e86ac11ae886298963e57f4414691881af1357456c6a4038ef91              782 security/Packages
+ cfdf15ef290d6ab0c9e3afff718dec679d78a07b4364cbfc46be9d9ad4296ca1              895 security/Release

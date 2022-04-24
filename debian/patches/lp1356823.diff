@@ -1,0 +1,13 @@
+=== modified file 'aptdaemon/pkcompat.py'
+--- old/aptdaemon/pkcompat.py	2014-06-26 07:07:15 +0000
++++ new/aptdaemon/pkcompat.py	2015-04-16 15:04:08 +0000
+@@ -586,6 +586,8 @@
+ 
+     def _remove_from_connection_no_raise(self):
+         core.Transaction._remove_from_connection_no_raise(self)
++        if self.pktrans is None:
++            return False
+         self.pktrans.Destroy()
+         try:
+             self.pktrans.remove_from_connection()
+

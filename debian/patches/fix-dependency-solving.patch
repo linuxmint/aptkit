@@ -1,0 +1,97 @@
+Description: Fix dependency solving
+ The install_protect() method was deprecated ages ago, and there are all
+ sorts of issues here.
+ .
+ So first of all, remove the install_protect() call as it was removed in apt
+ 1.9.
+ .
+ Secondly, do not pass auto_fix=True to mark_install(), as that creates its
+ own solver for each package and solves just that packages dependencies, which
+ causes odd results (the package could no longer be marked for install after
+ calling mark_install if its dependencies cannot be satisfied)
+ .
+ Thirdly, move the whole marking bits below any changes to the candidate
+ version so we actually mark the correct version for install. This worked
+ OK-ish before, because the install_protect() call would re-mark the packages,
+ but ugh, it's just crazy.
+Author: Julian Andres Klode <juliank@ubuntu.com>
+--- a/aptdaemon/worker/aptworker.py
++++ b/aptdaemon/worker/aptworker.py
+@@ -338,7 +338,6 @@ class AptWorker(BaseWorker):
+     def _resolve_depends(self, trans, resolver):
+         """Resolve the dependencies using the given ProblemResolver."""
+         self._call_plugins("modify_cache_before", resolver)
+-        resolver.install_protect()
+         try:
+             resolver.resolve()
+         except SystemError:
+@@ -421,9 +420,7 @@ class AptWorker(BaseWorker):
+                         raise TransactionFailed(
+                             ERROR_PACKAGE_ALREADY_INSTALLED,
+                             _("Package %s is already installed"), pkg_name)
+-            pkg.mark_install(False, True, from_user)
+-            resolver.clear(pkg)
+-            resolver.protect(pkg)
++
+             if pkg_ver:
+                 try:
+                     pkg.candidate = pkg.versions[pkg_ver]
+@@ -434,6 +431,10 @@ class AptWorker(BaseWorker):
+             elif pkg_rel:
+                 self._set_candidate_release(pkg, pkg_rel)
+ 
++            pkg.mark_install(False, False, from_user)
++            resolver.clear(pkg)
++            resolver.protect(pkg)
++
+     def enable_distro_comp(self, trans, component):
+         """Enable given component in the sources list.
+ 
+@@ -777,10 +778,7 @@ class AptWorker(BaseWorker):
+                                         _("Package %s isn't installed"),
+                                         pkg_name)
+             auto = pkg.is_auto_installed
+-            pkg.mark_install(False, True, True)
+-            pkg.mark_auto(auto)
+-            resolver.clear(pkg)
+-            resolver.protect(pkg)
++
+             if pkg_ver:
+                 if pkg.installed and pkg.installed.version < pkg_ver:
+                     # FIXME: We need a new error enum
+@@ -805,6 +803,11 @@ class AptWorker(BaseWorker):
+                                           "downgrade %s to"),
+                                         pkg_name)
+ 
++            pkg.mark_install(False, False, True)
++            pkg.mark_auto(auto)
++            resolver.clear(pkg)
++            resolver.protect(pkg)
++
+     def _mark_packages_for_upgrade(self, packages, resolver):
+         """Mark packages for upgrade."""
+         for pkg_name, pkg_ver, pkg_rel in [self._split_package_id(pkg)
+@@ -820,10 +823,7 @@ class AptWorker(BaseWorker):
+                                         _("Package %s isn't installed"),
+                                         pkg_name)
+             auto = pkg.is_auto_installed
+-            pkg.mark_install(False, True, True)
+-            pkg.mark_auto(auto)
+-            resolver.clear(pkg)
+-            resolver.protect(pkg)
++
+             if pkg_ver:
+                 if (pkg.installed and
+                     apt_pkg.version_compare(pkg.installed.version,
+@@ -849,6 +849,11 @@ class AptWorker(BaseWorker):
+             elif pkg_rel:
+                 self._set_candidate_release(pkg, pkg_rel)
+ 
++            pkg.mark_install(False, False, True)
++            pkg.mark_auto(auto)
++            resolver.clear(pkg)
++            resolver.protect(pkg)
++
+     @staticmethod
+     def _set_candidate_release(pkg, release):
+         """Set the candidate of a package to the one from the given release."""

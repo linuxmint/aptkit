@@ -1,0 +1,1482 @@
+# Hungarian translation for aptdaemon
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the aptdaemon package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: aptdaemon\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-21 15:36+0200\n"
+"PO-Revision-Date: 2012-09-29 17:25+0000\n"
+"Last-Translator: Péter MÁTÓ <mato.peter@gmail.com>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-03-09 23:28+0000\n"
+"X-Generator: Launchpad (build 16523)\n"
+
+#: ../data/org.debian.apt.policy.in.h:1
+msgid "List keys of trusted vendors"
+msgstr "Megbízható szállítók kulcsainak felsorolása"
+
+#: ../data/org.debian.apt.policy.in.h:2
+msgid "To view the list of trusted keys, you need to authenticate."
+msgstr ""
+"Hitelesítés szükséges a megbízható kulcsok listájának megjelenítéséhez."
+
+#: ../data/org.debian.apt.policy.in.h:3 ../aptdaemon/console.py:619
+msgid "Remove downloaded package files"
+msgstr "Letöltött csomagok eltávolítása"
+
+#: ../data/org.debian.apt.policy.in.h:4
+msgid "To clean downloaded package files, you need to authenticate."
+msgstr "A letöltött csomagok törléséhez hitelesítésre van szükség."
+
+#: ../data/org.debian.apt.policy.in.h:5
+msgid "Change software configuration"
+msgstr "Szoftverbeállítások megváltoztatása"
+
+#: ../data/org.debian.apt.policy.in.h:6
+msgid "To change software settings, you need to authenticate."
+msgstr "A szoftverbeállítások megváltoztatásához hitelesítésre van szükség."
+
+#: ../data/org.debian.apt.policy.in.h:7
+msgid "Change software repository"
+msgstr "Szoftvertároló módosítása"
+
+#: ../data/org.debian.apt.policy.in.h:8
+msgid "To change software repository settings, you need to authenticate."
+msgstr "Hitelesítés szükséges a szoftvertároló-beállítások módosításához."
+
+#: ../data/org.debian.apt.policy.in.h:9
+msgid "Install package file"
+msgstr "Csomagfájl telepítése"
+
+#: ../data/org.debian.apt.policy.in.h:10
+msgid "To install this package, you need to authenticate."
+msgstr "A csomag telepítéséhez hitelesítés szükséges."
+
+#: ../data/org.debian.apt.policy.in.h:11
+msgid "Update package information"
+msgstr "Csomaginformációk frissítése"
+
+#: ../data/org.debian.apt.policy.in.h:12
+msgid "To update the software catalog, you need to authenticate."
+msgstr "A szoftverkatalógus frissítéséhez hitelesítés szükséges."
+
+#: ../data/org.debian.apt.policy.in.h:13
+msgid "Install or remove packages"
+msgstr "Csomagok telepítése vagy eltávolítása"
+
+#: ../data/org.debian.apt.policy.in.h:14
+msgid "To install or remove software, you need to authenticate."
+msgstr "Hitelesítés szükséges szoftver telepítéséhez vagy eltávolításához."
+
+#. This priviledge will be requested when installing a package
+#. from a high trusted repository that can be explicitely whitelisted.
+#.
+#. The defaults for this action are the same as
+#. "org.debian.apt.install-or-remove-packages".
+#.
+#. The admin can override them to e.g. allow passwordless installs for
+#. leightweight applications like unity-webapps or for packages
+#. comming from high trust repositories (like internal repositories)
+#.
+#: ../data/org.debian.apt.policy.in.h:25
+msgid "Install software from a high-trust whitelisted repository."
+msgstr "Szoftver telepítése megbízható, fehérlistán szereplő tárolóból."
+
+#: ../data/org.debian.apt.policy.in.h:26
+msgid "To install software, you need to authenticate."
+msgstr "A szoftver telepítéséhez hitelesítés szükséges."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#.
+#. The client has to authenticate for this privilege before calling
+#. the aptdaemon methods.
+#: ../data/org.debian.apt.policy.in.h:32
+msgid "Add a new repository and install packages from it"
+msgstr "Új tároló hozzáadása, és abból csomagok telepítése"
+
+#: ../data/org.debian.apt.policy.in.h:33
+msgid "To install software from a new source, you need to authenticate."
+msgstr "Hitelesítés szükséges a szoftverek új forrásból való telepítéséhez."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#.
+#. The client has to authenticate for this privilege before calling
+#. the aptdaemon methods.
+#.
+#. The only difference to install-packages-from-new-repo is the wording
+#. of the message. It is required by Ubuntu's Software-Center.
+#: ../data/org.debian.apt.policy.in.h:42
+msgid "Add a new repository of purchased software and install packages from it"
+msgstr ""
+"Új, megvásárolt csomagokat tartalmazó tároló hozzáadása, és abból csomagok "
+"telepítése"
+
+#: ../data/org.debian.apt.policy.in.h:43
+msgid "To install purchased software, you need to authenticate."
+msgstr "Hitelesítés szükséges a megvásárolt szoftverek telepítéséhez."
+
+#: ../data/org.debian.apt.policy.in.h:44
+msgid "Upgrade packages"
+msgstr "Csomagok frissítése"
+
+#: ../data/org.debian.apt.policy.in.h:45
+msgid "To install updated software, you need to authenticate."
+msgstr "Frissített szoftver telepítéséhez hitelesítés szükséges."
+
+#: ../data/org.debian.apt.policy.in.h:46
+msgid "Cancel the task of another user"
+msgstr "Másik felhasználó feladatának megszakítása"
+
+#: ../data/org.debian.apt.policy.in.h:47
+msgid "To cancel someone else's software changes, you need to authenticate."
+msgstr ""
+"Hitelesítés szükséges másik felhasználó szoftvermódosításainak "
+"megszakításához."
+
+#: ../data/org.debian.apt.policy.in.h:48
+msgid "Set a proxy for software downloads"
+msgstr "Proxy beállítása szoftverletöltésekhez"
+
+#: ../data/org.debian.apt.policy.in.h:49
+msgid ""
+"To use a proxy server for downloading software, you need to authenticate."
+msgstr ""
+"A szoftver letöltéséhez proxy kiszolgáló használatához hitelesítés szükséges."
+
+#: ../aptdaemon/console.py:215
+msgid "ERROR"
+msgstr "HIBA"
+
+#: ../aptdaemon/console.py:249
+#, fuzzy, python-format
+msgid "Downloaded %(cur)sB of %(total)sB at %(rate)sB/s"
+msgstr "Letöltve: %sB/%sB, sebesség: %sB/s"
+
+#: ../aptdaemon/console.py:255
+#, fuzzy, python-format
+msgid "Downloaded %(cur)sB of %(total)sB"
+msgstr "Letöltve: %sB/%sB"
+
+#: ../aptdaemon/console.py:385 ../aptdaemon/console.py:390
+msgid "ERROR:"
+msgstr "HIBA:"
+
+#: ../aptdaemon/console.py:386
+msgid "You are not allowed to perform this action."
+msgstr "Ezt a műveletet nem hajthatja végre."
+
+#: ../aptdaemon/console.py:409 ../aptdaemon/console.py:537
+msgid "Queuing"
+msgstr "Sorba állítás"
+
+#: ../aptdaemon/console.py:417 ../aptdaemon/enums.py:527
+msgid "Resolving dependencies"
+msgstr "Függőségek feloldása"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:459
+#, python-format
+msgid "The following NEW package will be installed (%(count)s):"
+msgid_plural "The following NEW packages will be installed (%(count)s):"
+msgstr[0] "A következő új csomag kerül telepítésre (%(count)s):"
+msgstr[1] "A következő új csomagok kerülnek telepítésre (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:467
+#, python-format
+msgid "The following package will be upgraded (%(count)s):"
+msgid_plural "The following packages will be upgraded (%(count)s):"
+msgstr[0] "A következő csomag kerül frissítésre (%(count)s):"
+msgstr[1] "A következő csomagok kerülnek frissítésre (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:475
+#, python-format
+msgid "The following package will be REMOVED (%(count)s):"
+msgid_plural "The following packages will be REMOVED (%(count)s):"
+msgstr[0] "A következő csomag kerül eltávolításra  (%(count)s):"
+msgstr[1] "A következő csomagok kerülnek eltávolításra (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:484
+#, python-format
+msgid "The following package will be DOWNGRADED (%(count)s):"
+msgid_plural "The following packages will be DOWNGRADED (%(count)s):"
+msgstr[0] "A következő csomag kerül visszafejlesztésre (%(count)s):"
+msgstr[1] "A következő csomagok kerülnek visszaminősítésre (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:492
+#, python-format
+msgid "The following package will be reinstalled (%(count)s):"
+msgid_plural "The following packages will be reinstalled (%(count)s):"
+msgstr[0] "A következő csomag kerül újratelepítésre (%(count)s):"
+msgstr[1] "A következő csomagok kerülnek újratelepítésre (%(count)s):"
+
+#: ../aptdaemon/console.py:499
+#, python-format
+msgid "The following package has been kept back (%(count)s):"
+msgid_plural "The following packages have been kept back (%(count)s):"
+msgstr[0] "A következő csomag lett visszatartva (%(count)s):"
+msgstr[1] "A következő csomagok lettek visszatartva (%(count)s):"
+
+#: ../aptdaemon/console.py:507
+#, python-format
+msgid "Need to get %sB of archives."
+msgstr "%sB töltendő le az archívumokból."
+
+#: ../aptdaemon/console.py:510
+#, python-format
+msgid "After this operation, %sB of additional disk space will be used."
+msgstr "A művelet után %sB további lemezhely kerül felhasználásra."
+
+#: ../aptdaemon/console.py:514
+#, python-format
+msgid "After this operation, %sB of additional disk space will be freed."
+msgstr "A művelet után %sB további lemezhely kerül felszabadításra."
+
+#: ../aptdaemon/console.py:522 ../aptdaemon/console.py:524
+msgid "Do you want to continue [Y/n]?"
+msgstr "Kívánja folytatni [I/N]?"
+
+#: ../aptdaemon/console.py:545
+msgid ""
+"To operate on more than one package put the package names in quotation "
+"marks:\n"
+"aptdcon --install \"foo bar\""
+msgstr ""
+"Több csomagon való munkához tegye a csomagneveket idézőjelek közé:\n"
+"aptdcon --install \"izé bigyó\""
+
+#: ../aptdaemon/console.py:551
+msgid "Refresh the cache"
+msgstr "Gyorsítótár frissítése"
+
+#: ../aptdaemon/console.py:554
+msgid ""
+"Try to resolve broken dependencies. Potentially dangerous operation since it "
+"could try to remove many packages."
+msgstr ""
+"Kísérlet törött függőségek feloldására. Veszélyes művelet lehet, mivel sok "
+"csomag eltávolítására tehet kísérletet."
+
+#: ../aptdaemon/console.py:559
+msgid "Try to finish a previous incompleted installation"
+msgstr "Kísérlet korábban be nem fejezett telepítés befejezésére"
+
+#: ../aptdaemon/console.py:563 ../aptdaemon/console.py:576
+msgid "Install the given packages"
+msgstr "A megadott csomagok telepítése"
+
+#: ../aptdaemon/console.py:566
+msgid "Reinstall the given packages"
+msgstr "A megadott csomagok újratelepítése"
+
+#: ../aptdaemon/console.py:569
+msgid "Remove the given packages"
+msgstr "A megadott csomagok eltávolítása"
+
+#: ../aptdaemon/console.py:572
+msgid "Remove the given packages including configuration files"
+msgstr "A megadott csomagok eltávolítása a beállítófájlokkal együtt"
+
+#: ../aptdaemon/console.py:579
+msgid "Downgrade the given packages"
+msgstr "Az adott csomagok visszafejlesztése"
+
+#: ../aptdaemon/console.py:582
+msgid "Deprecated: Please use --safe-upgrade"
+msgstr "Elavult: használja a --safe-upgrade kapcsolót"
+
+#: ../aptdaemon/console.py:586
+msgid "Upgrade the system in a safe way"
+msgstr "A rendszer biztonságos frissítése"
+
+#: ../aptdaemon/console.py:589
+msgid "Upgrade the system, possibly installing and removing packages"
+msgstr ""
+"A rendszer frissítése, csomagok esetleges telepítésével és eltávolításával"
+
+#: ../aptdaemon/console.py:593
+msgid "Add the vendor to the trusted ones"
+msgstr "A szállító hozzáadása a megbízhatókhoz"
+
+#: ../aptdaemon/console.py:596
+msgid "Add the vendor keyid (also needs --keyserver)"
+msgstr "A szállító kulcsazonosítójának hozzáadása (a --keyserver is szükséges)"
+
+#: ../aptdaemon/console.py:600
+msgid "Use the given keyserver for looking up keys"
+msgstr "A megadott kulcskiszolgáló használata kulcsok kikeresésére"
+
+#: ../aptdaemon/console.py:604
+msgid "Add new repository from the given deb-line"
+msgstr "Új tároló felvétele a megadott deb sorból"
+
+#: ../aptdaemon/console.py:608
+msgid ""
+"Specify an alternative sources.list.d file to which repositories should be "
+"added."
+msgstr ""
+"Alternatív sources.list.d fájl megadása, amelyhez a tárolók hozzáadandók."
+
+#: ../aptdaemon/console.py:612
+msgid "List trusted vendor keys"
+msgstr "Megbízható szállítói kulcsok felsorolása"
+
+#: ../aptdaemon/console.py:615
+msgid "Remove the trusted key of the given fingerprint"
+msgstr "A megadott ujjlenyomatok megbízható kulcsának eltávolítása"
+
+#: ../aptdaemon/console.py:622
+msgid ""
+"Reconfigure installed packages. Optionally the minimum priority of questions "
+"can be specified"
+msgstr ""
+"A telepített csomagok újrakonfigurálása. Opcionálisan a minimális "
+"kérdésfontosság meghatározható"
+
+#: ../aptdaemon/console.py:627
+msgid "The minimum debconf priority of question to be displayed"
+msgstr "A megjelenítendő legkisebb debconf kérdésfontosság"
+
+#: ../aptdaemon/console.py:631
+msgid "Do not attach to the apt terminal"
+msgstr "Ne csatlakozzon az apt terminálhoz"
+
+#: ../aptdaemon/console.py:635
+msgid "Allow packages from unauthenticated sources"
+msgstr "Csomagok engedélyezése nem hitelesített forrásokból"
+
+#: ../aptdaemon/console.py:639
+msgid ""
+"Show additional information about the packages. Currently only the version "
+"number"
+msgstr ""
+"További információk megjelenítése a csomagokról. Jelenleg csak a verziószám"
+
+#: ../aptdaemon/console.py:647 ../aptdaemon/enums.py:532
+msgid "Waiting for authentication"
+msgstr "Várakozás hitelesítésre"
+
+#: ../aptdaemon/core.py:2135
+msgid "Do not shutdown the daemon because of inactivity"
+msgstr "Ne álljon le a démon inaktivitás miatt"
+
+#: ../aptdaemon/core.py:2140
+msgid "Do not load any plugins"
+msgstr "Ne töltsön be semmilyen bővítményt"
+
+#: ../aptdaemon/core.py:2144
+msgid "Show internal processing information"
+msgstr "Belső feldolgozási információk megjelenítése"
+
+#: ../aptdaemon/core.py:2149
+msgid "Quit and replace an already running daemon"
+msgstr "Kilépés és meglévő démon cseréje"
+
+#: ../aptdaemon/core.py:2154
+msgid "Listen on the DBus session bus (Only required for testing"
+msgstr "A D-Bus munkamenetbusz figyelése (csak teszteléshez)"
+
+#: ../aptdaemon/core.py:2158
+msgid "Perform operations in the given chroot"
+msgstr "Műveletek végrehajtása a megadott „chroot”-on belül"
+
+#: ../aptdaemon/core.py:2163
+msgid "Store profile stats in the specified file"
+msgstr "Profilstatisztikák tárolása a megadott fájlban"
+
+#: ../aptdaemon/core.py:2168
+msgid "Do not make any changes to the system (Only of use to developers)"
+msgstr "Ne változtasson meg semmit a rendszeren (csak fejlesztőknek)"
+
+#: ../aptdaemon/enums.py:337
+msgid "Installed file"
+msgstr "Fájl telepítve"
+
+#: ../aptdaemon/enums.py:338
+msgid "Installed packages"
+msgstr "Csomagok telepítve"
+
+#: ../aptdaemon/enums.py:339
+msgid "Added key from file"
+msgstr "Kulcs felvéve a fájlból"
+
+#: ../aptdaemon/enums.py:340
+msgid "Updated cache"
+msgstr "Gyorsítótár frissítve"
+
+#: ../aptdaemon/enums.py:341
+msgid "Search done"
+msgstr "Keresés kész"
+
+#: ../aptdaemon/enums.py:342
+msgid "Removed trusted key"
+msgstr "Megbízható kulcs eltávolítva"
+
+#: ../aptdaemon/enums.py:343
+msgid "Removed packages"
+msgstr "Csomagok eltávolítva"
+
+#: ../aptdaemon/enums.py:344
+msgid "Updated packages"
+msgstr "Csomagok frissítve"
+
+#: ../aptdaemon/enums.py:345
+msgid "Upgraded system"
+msgstr "Rendszer frissítve"
+
+#: ../aptdaemon/enums.py:346
+msgid "Applied changes"
+msgstr "Változtatások alkalmazva"
+
+#: ../aptdaemon/enums.py:347
+msgid "Repaired incomplete installation"
+msgstr "Befejezetlen telepítések javítva"
+
+#: ../aptdaemon/enums.py:348
+msgid "Repaired broken dependencies"
+msgstr "Törött függőségek javítva"
+
+#: ../aptdaemon/enums.py:349
+msgid "Added software source"
+msgstr "Szoftverforrás hozzáadva"
+
+#: ../aptdaemon/enums.py:350
+msgid "Enabled component of the distribution"
+msgstr "A disztribúció összetevője engedélyezve"
+
+#: ../aptdaemon/enums.py:351
+msgid "Removed downloaded package files"
+msgstr "Eltávolított letöltött csomagfájlok"
+
+#: ../aptdaemon/enums.py:352
+msgid "Reconfigured installed packages"
+msgstr "Újrakonfigurált telepített csomagok"
+
+#: ../aptdaemon/enums.py:356
+msgid "Successful"
+msgstr "Sikeres"
+
+#: ../aptdaemon/enums.py:357
+msgid "Canceled"
+msgstr "Megszakítva"
+
+#: ../aptdaemon/enums.py:358 ../aptdaemon/enums.py:569
+msgid "Failed"
+msgstr "Sikertelen"
+
+#: ../aptdaemon/enums.py:361
+msgid "Installing file"
+msgstr "Fájl telepítése"
+
+#: ../aptdaemon/enums.py:362
+msgid "Installing packages"
+msgstr "Csomagok telepítése"
+
+#: ../aptdaemon/enums.py:363
+msgid "Adding key from file"
+msgstr "Kulcs hozzáadása fájlból"
+
+#: ../aptdaemon/enums.py:364
+msgid "Updating cache"
+msgstr "Gyorsítótár frissítése"
+
+#: ../aptdaemon/enums.py:365
+msgid "Removing trusted key"
+msgstr "Megbízható kulcs eltávolítása"
+
+#: ../aptdaemon/enums.py:366
+msgid "Removing packages"
+msgstr "Csomagok eltávolítása"
+
+#: ../aptdaemon/enums.py:367
+msgid "Updating packages"
+msgstr "Csomagok frissítése"
+
+#: ../aptdaemon/enums.py:368
+msgid "Upgrading system"
+msgstr "Rendszer frissítése"
+
+#: ../aptdaemon/enums.py:369 ../aptdaemon/enums.py:528
+msgid "Applying changes"
+msgstr "Módosítások alkalmazása"
+
+#: ../aptdaemon/enums.py:370
+msgid "Repairing incomplete installation"
+msgstr "Befejezetlen telepítések javítása"
+
+#: ../aptdaemon/enums.py:371
+msgid "Repairing installed software"
+msgstr "Telepített szoftverek javítása"
+
+#: ../aptdaemon/enums.py:372
+msgid "Adding software source"
+msgstr "Szoftverforrás engedélyezése"
+
+#: ../aptdaemon/enums.py:373
+msgid "Enabling component of the distribution"
+msgstr "A disztribúció összetevőjének engedélyezése"
+
+#: ../aptdaemon/enums.py:374
+msgid "Removing downloaded package files"
+msgstr "Letöltött csomagfájlok eltávolítása"
+
+#: ../aptdaemon/enums.py:375
+msgid "Reconfiguring installed packages"
+msgstr "Telepített csomagok újrakonfigurálása"
+
+#: ../aptdaemon/enums.py:376 ../aptdaemon/enums.py:517
+msgid "Searching"
+msgstr "Keresés"
+
+#: ../aptdaemon/enums.py:380
+msgid "Installation of the package file failed"
+msgstr "A csomagfájl telepítése meghiúsult"
+
+#: ../aptdaemon/enums.py:381
+msgid "Installation of software failed"
+msgstr "A szoftver telepítése meghiúsult"
+
+#: ../aptdaemon/enums.py:382
+msgid "Adding the key to the list of trusted software vendors failed"
+msgstr ""
+
+#: ../aptdaemon/enums.py:384
+msgid "Refreshing the software list failed"
+msgstr "A csomaglisták frissítése meghiúsult"
+
+#: ../aptdaemon/enums.py:385
+msgid "Removing the vendor from the list of trusted ones failed"
+msgstr "A gyártó eltávolítása a megbízható gyártók listájáról meghiúsult"
+
+#: ../aptdaemon/enums.py:387
+msgid "Removing software failed"
+msgstr "A szoftver eltávolítása meghiúsult"
+
+#: ../aptdaemon/enums.py:388
+msgid "Updating software failed"
+msgstr "A csomag frissítése meghiúsult"
+
+#: ../aptdaemon/enums.py:389
+msgid "Upgrading the system failed"
+msgstr "A rendszer frissítése meghiúsult"
+
+#: ../aptdaemon/enums.py:390
+msgid "Applying software changes failed"
+msgstr "A csomagok változásainak jóváhagyása meghiúsult"
+
+#: ../aptdaemon/enums.py:391
+msgid "Repairing incomplete installation failed"
+msgstr "A befejezetlen telepítések javítása meghiúsult"
+
+#: ../aptdaemon/enums.py:393
+msgid "Repairing broken dependencies failed"
+msgstr "A törött függőségek javítása meghiúsult"
+
+#: ../aptdaemon/enums.py:394
+msgid "Adding software source failed"
+msgstr "A szoftverforrás hozzáadása meghiúsult"
+
+#: ../aptdaemon/enums.py:395
+msgid "Enabling component of the distribution failed"
+msgstr "A disztribúció összetevőjének engedélyezése meghiúsult"
+
+#: ../aptdaemon/enums.py:397 ../aptdaemon/enums.py:398
+msgid "Removing downloaded package files failed"
+msgstr "Letöltött csomagfájlok eltávolítása sikertelen"
+
+#: ../aptdaemon/enums.py:399
+msgid "Search failed"
+msgstr "A keresés sikertelen"
+
+#: ../aptdaemon/enums.py:400
+msgid "Adding license key"
+msgstr "Licenc-kulcs hozzáadása"
+
+#: ../aptdaemon/enums.py:404 ../aptdaemon/enums.py:405
+msgid "Check your Internet connection."
+msgstr "Ellenőrizze internetkapcsolatát."
+
+#: ../aptdaemon/enums.py:406
+msgid ""
+"Check if you are using third party repositories. If so disable them, since "
+"they are a common source of problems.\n"
+"Furthermore run the following command in a Terminal: apt-get install -f"
+msgstr ""
+"Ellenőrizze, használ-e harmadik féltől származó tárolókat. Ha van ilyen, "
+"tiltsa le ezeket, mivel gyakran problémák forrásai.\n"
+"Ezen kívül futtassa a „sudo apt-get install -f” parancsot terminálban."
+
+#: ../aptdaemon/enums.py:411
+msgid "The selected file may not be a GPG key file or it might be corrupt."
+msgstr "A kiválasztott fájl nem GPG kulcsfájl, vagy sérült."
+
+#: ../aptdaemon/enums.py:413
+msgid ""
+"The selected key couldn't be removed. Check that you provided a valid "
+"fingerprint."
+msgstr ""
+"A kiválasztott kulcs nem távolítható el. Ellenőrizze, hogy érvényes "
+"ujjlenyomatot adott-e meg."
+
+#: ../aptdaemon/enums.py:415
+msgid ""
+"Check if you are currently running another software management tool, e.g. "
+"Synaptic or aptitude. Only one tool is allowed to make changes at a time."
+msgstr ""
+"Ellenőrizze, hogy nem fut-e jelenleg másik szoftverkezelő eszköz, például a "
+"Synaptic vagy az aptitude. Egyszerre csak egy eszköz végezhet módosításokat."
+
+#: ../aptdaemon/enums.py:418
+msgid ""
+"This is a serious problem. Try again later. If this problem appears again, "
+"please report an error to the developers."
+msgstr ""
+"Ez egy komoly probléma. Próbálja újra később. Ha ez a probléma újra előáll, "
+"jelentse be hibaként a fejlesztőknek."
+
+#: ../aptdaemon/enums.py:421
+msgid ""
+"Check the spelling of the package name, and that the appropriate repository "
+"is enabled."
+msgstr ""
+"Ellenőrizze a csomagnév helyesírását, és hogy a megfelelő tároló "
+"engedélyezve van-e."
+
+#: ../aptdaemon/enums.py:423
+msgid "There isn't any need for an update."
+msgstr "Nincs szükség frissítésre."
+
+#: ../aptdaemon/enums.py:424
+msgid "There isn't any need for an installation"
+msgstr "Nincs szükség telepítésre."
+
+#: ../aptdaemon/enums.py:426
+msgid "There isn't any need for a removal."
+msgstr "Nincs szükség eltávolításra."
+
+#: ../aptdaemon/enums.py:427
+msgid ""
+"You requested to remove a package which is an essential part of your system."
+msgstr "A rendszer alapvető részét képező csomag eltávolítását kérte."
+
+#: ../aptdaemon/enums.py:430
+msgid ""
+"The connection to the daemon was lost. Most likely the background daemon "
+"crashed."
+msgstr ""
+"A kapcsolat elveszett a démonnal. Valószínűleg összeomlott a háttérdémon."
+
+#: ../aptdaemon/enums.py:432
+msgid "The installation or removal of a software package failed."
+msgstr "Egy szoftvercsomag telepítése vagy eltávolítása meghiúsult."
+
+#: ../aptdaemon/enums.py:434
+msgid "The requested feature is not supported."
+msgstr "A kért funkció nem támogatott."
+
+#: ../aptdaemon/enums.py:435
+msgid ""
+"There seems to be a programming error in aptdaemon, the software that allows "
+"you to install/remove software and to perform other package management "
+"related tasks."
+msgstr ""
+"Úgy tűnik, programhiba van az aptdaemonban, a szoftverek telepítését és "
+"eltávolítását, valamint más csomagkezelési műveletek végrehajtását lehetővé "
+"tevő szoftverben."
+
+#: ../aptdaemon/enums.py:439
+msgid ""
+"This error could be caused by required additional software packages which "
+"are missing or not installable. Furthermore there could be a conflict "
+"between software packages which are not allowed to be installed at the same "
+"time."
+msgstr ""
+"Ezt a hibát további szükséges, de hiányzó vagy nem telepíthető "
+"szoftvercsomagok okozhatják. Továbbá ütközés lehet olyan szoftvercsomagok "
+"között, amelyek egyszerre nem lehetnek telepítve."
+
+#: ../aptdaemon/enums.py:445
+msgid "This requires installing packages from unauthenticated sources."
+msgstr "Ez megbízhatatlan forrásból származó csomagok telepítését igényli."
+
+#: ../aptdaemon/enums.py:447
+msgid ""
+"The installation could have failed because of an error in the corresponding "
+"software package or it was cancelled in an unfriendly way. You have to "
+"repair this before you can install or remove any further software."
+msgstr ""
+"A telepítés megszakadását az adott szoftvercsomag hibája okozhatta, vagy "
+"barátságtalan módon megszakították. Ezt ki kell javítania, mielőtt további "
+"szoftvereket telepítene vagy eltávolítana."
+
+#: ../aptdaemon/enums.py:453
+msgid ""
+"Please copy the file to your local computer and check the file permissions."
+msgstr ""
+"Kérjük másolja át a fájlt a helyi gépére és ellenőrizze a "
+"fájljogosultságokat."
+
+#: ../aptdaemon/enums.py:456
+msgid ""
+"The installation of a package which violates the quality standards isn't "
+"allowed. This could cause serious problems on your computer. Please contact "
+"the person or organisation who provided this package file and include the "
+"details beneath."
+msgstr ""
+"A csomagnak, ami megsérti a minőségi szabványokat a telepítése nem "
+"engedélyezett. Ez súlyos kárt tehet a gépében. Kérjük lépjen kapcsolatba "
+"azzal a személlyel vagy szervezettel akitől a csomagfájl származik, és "
+"mellékelje a részleteit."
+
+#: ../aptdaemon/enums.py:463
+msgid ""
+"The downloaded license key which is required to run this piece of software "
+"is not valid or could not be installed correctly.\n"
+"See the details for more information."
+msgstr ""
+"A szoftver használatát lehetővé tevő licenckulcs nem érvényes vagy nem "
+"telepíthető megfelelően.\n"
+"További információkért nézze meg a részleteket."
+
+#: ../aptdaemon/enums.py:469
+msgid "All available upgrades have already been installed."
+msgstr "Az összes elérhető frissítés már telepítve van."
+
+#: ../aptdaemon/enums.py:471
+msgid ""
+"The license key which allows you to use this piece of software could not be "
+"downloaded. Please check your network connection."
+msgstr ""
+"A szoftver használatát lehetővé tevő licenckulcs nem tölthető le. "
+"Ellenőrizze a hálózati kapcsolatot."
+
+#: ../aptdaemon/enums.py:475
+#, fuzzy
+msgid "You don't have the required privileges to perform this action."
+msgstr "Ezt a műveletet nem hajthatja végre."
+
+#: ../aptdaemon/enums.py:477
+msgid ""
+"You either provided a wrong password or cancelled the authorization.\n"
+"Furthermore there could also be a technical reason for this error if you "
+"haven't seen a password dialog: your desktop environment doesn't provide a "
+"PolicyKit session agent."
+msgstr ""
+
+#: ../aptdaemon/enums.py:485
+msgid "Failed to download package files"
+msgstr "A csomagfájlok letöltése meghiúsult"
+
+#: ../aptdaemon/enums.py:486
+msgid "Failed to download repository information"
+msgstr "A tárolóinformációk letöltése meghiúsult"
+
+#: ../aptdaemon/enums.py:488
+msgid "Package dependencies cannot be resolved"
+msgstr "A csomagfüggőségek nem oldhatók fel"
+
+#: ../aptdaemon/enums.py:489
+msgid "The package system is broken"
+msgstr "A csomagrendszer sérült"
+
+#: ../aptdaemon/enums.py:490
+msgid "Key was not installed"
+msgstr "Nincs telepítve a kulcs"
+
+#: ../aptdaemon/enums.py:491
+msgid "Key was not removed"
+msgstr "A kulcs nem került eltávolításra"
+
+#: ../aptdaemon/enums.py:492
+msgid "Failed to lock the package manager"
+msgstr "A csomagkezelő zárolása meghiúsult"
+
+#: ../aptdaemon/enums.py:493
+msgid "Failed to load the package list"
+msgstr "A csomaglista betöltése meghiúsult"
+
+#: ../aptdaemon/enums.py:494
+msgid "Package does not exist"
+msgstr "A csomag nem létezik"
+
+#: ../aptdaemon/enums.py:495
+msgid "Package is already up to date"
+msgstr "A csomag már a legfrissebb verziójú"
+
+#: ../aptdaemon/enums.py:496
+msgid "Package is already installed"
+msgstr "A csomag már telepítve van"
+
+#: ../aptdaemon/enums.py:497
+msgid "Package isn't installed"
+msgstr "A csomag nincs telepítve"
+
+#: ../aptdaemon/enums.py:498
+msgid "Failed to remove essential system package"
+msgstr "Az alapvető rendszercsomag eltávolítása meghiúsult"
+
+#: ../aptdaemon/enums.py:500
+msgid "Task cannot be monitored or controlled"
+msgstr "A feladat nem figyelhető meg vagy nem irányítható"
+
+#: ../aptdaemon/enums.py:501
+msgid "Package operation failed"
+msgstr "A csomagművelet meghiúsult"
+
+#: ../aptdaemon/enums.py:502
+msgid "Requires installation of untrusted packages"
+msgstr "Nem megbízható csomagok telepítését igényli"
+
+#: ../aptdaemon/enums.py:504
+msgid "Previous installation hasn't been completed"
+msgstr "Egy korábbi telepítés nem fejeződött be"
+
+#: ../aptdaemon/enums.py:505
+msgid "The package is of bad quality"
+msgstr "A csomag rossz minőségű"
+
+#: ../aptdaemon/enums.py:506
+msgid "Package file could not be opened"
+msgstr "A csomagfájl nem nyitható meg"
+
+#: ../aptdaemon/enums.py:507
+msgid "Not supported feature"
+msgstr "Nem támogatott funkció"
+
+#: ../aptdaemon/enums.py:508
+msgid "Failed to download the license key"
+msgstr "A licenc-kulcs letöltése nem sikerült"
+
+#: ../aptdaemon/enums.py:509
+msgid "Failed to install the license key"
+msgstr "A licenc-kulcs telepítése sikertelen"
+
+#: ../aptdaemon/enums.py:510
+msgid "The system is already up to date"
+msgstr "A rendszer már naprakész"
+
+#: ../aptdaemon/enums.py:511
+msgid "You could not be authorized"
+msgstr ""
+
+#: ../aptdaemon/enums.py:512
+msgid "You are not allowed to perform this action"
+msgstr ""
+
+#: ../aptdaemon/enums.py:513
+msgid "An unhandlable error occured"
+msgstr "Nem kezelhető hiba történt"
+
+#: ../aptdaemon/enums.py:516
+msgid "Waiting for service to start"
+msgstr "Várakozás a szolgáltatás elindulására"
+
+#: ../aptdaemon/enums.py:518
+msgid "Waiting"
+msgstr "Várakozás"
+
+#: ../aptdaemon/enums.py:519
+msgid "Waiting for required medium"
+msgstr "Várakozás a szükséges adathordozóra"
+
+#: ../aptdaemon/enums.py:520
+msgid "Waiting for other software managers to quit"
+msgstr "Várakozás más szoftverkezelők kilépésére"
+
+#: ../aptdaemon/enums.py:521
+msgid "Waiting for configuration file prompt"
+msgstr "Várakozás a beállítófájl parancssorára"
+
+#: ../aptdaemon/enums.py:523
+msgid "Running task"
+msgstr "Feladat futtatása"
+
+#: ../aptdaemon/enums.py:524
+msgid "Downloading"
+msgstr "Letöltés"
+
+#: ../aptdaemon/enums.py:525
+msgid "Querying software sources"
+msgstr "Szoftverforrások lekérdezése"
+
+#: ../aptdaemon/enums.py:526
+msgid "Cleaning up"
+msgstr "Frissítés befejezése"
+
+#: ../aptdaemon/enums.py:529
+msgid "Finished"
+msgstr "Befejezve"
+
+#: ../aptdaemon/enums.py:530
+msgid "Cancelling"
+msgstr "Megszakítás"
+
+#: ../aptdaemon/enums.py:531
+msgid "Loading software list"
+msgstr "Szoftverlista betöltése"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:536
+#, python-format
+msgid "Installing %s"
+msgstr "%s telepítése"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:538
+#, python-format
+msgid "Configuring %s"
+msgstr "%s konfigurálása"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:540
+#, python-format
+msgid "Removing %s"
+msgstr "%s eltávolítása"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:542
+#, python-format
+msgid "Completely removing %s"
+msgstr "%s teljes eltávolítása"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:544
+#, python-format
+msgid "Noting disappearance of %s"
+msgstr "„%s” eltűnése feljegyezve"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:546
+#, python-format
+msgid "Running post-installation trigger %s"
+msgstr "A(z) %s telepítés utáni trigger futtatása"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:548
+#, python-format
+msgid "Upgrading %s"
+msgstr "%s frissítése"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:550
+#, python-format
+msgid "Unpacking %s"
+msgstr "%s kicsomagolása"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:552
+#, python-format
+msgid "Preparing installation of %s"
+msgstr "%s telepítésének előkészítése"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:554
+#, python-format
+msgid "Preparing configuration of %s"
+msgstr "%s beállításának előkészítése"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:556
+#, python-format
+msgid "Preparing removal of %s"
+msgstr "%s eltávolításának előkészítése"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:558
+#, python-format
+msgid "Preparing complete removal of %s"
+msgstr "%s teljes eltávolításának előkészítése"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:560
+#, python-format
+msgid "Installed %s"
+msgstr "%s telepítve"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:562
+#, python-format
+msgid "Completely removed %s"
+msgstr "%s teljesen eltávolítva"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:564
+#, python-format
+msgid "Removed %s"
+msgstr "%s eltávolítva"
+
+#: ../aptdaemon/enums.py:567
+msgid "Done"
+msgstr "Kész"
+
+#: ../aptdaemon/enums.py:568
+msgid "Authentication failed"
+msgstr "Sikertelen hitelesítés"
+
+#: ../aptdaemon/enums.py:570
+msgid "Fetching"
+msgstr "Letöltés"
+
+#: ../aptdaemon/enums.py:571
+msgid "Idle"
+msgstr "Üresjárat"
+
+#: ../aptdaemon/enums.py:572
+msgid "Network isn't available"
+msgstr "A hálózat nem érhető el"
+
+#: ../aptdaemon/enums.py:704
+#, python-format
+msgid "Processing %s"
+msgstr "%s feldolgozása"
+
+#: ../aptdaemon/gtk3widgets.py:306
+#, python-format
+msgid "Downloaded %sB of %sB at %sB/s"
+msgstr "Letöltve: %sB/%sB, sebesség: %sB/s"
+
+#: ../aptdaemon/gtk3widgets.py:311 ../aptdaemon/gtk3widgets.py:510
+#, python-format
+msgid "Downloaded %sB of %sB"
+msgstr "Letöltve: %sB/%sB"
+
+#: ../aptdaemon/gtk3widgets.py:323
+msgid "Details"
+msgstr "Részletek"
+
+#: ../aptdaemon/gtk3widgets.py:474
+msgid "File"
+msgstr "Fájl"
+
+#. TRANSLATORS: header of the progress download column
+#: ../aptdaemon/gtk3widgets.py:479
+msgid "%"
+msgstr "%"
+
+#: ../aptdaemon/gtk3widgets.py:515
+#, python-format
+msgid "Downloaded %sB"
+msgstr "%sB letöltve"
+
+#: ../aptdaemon/gtk3widgets.py:518
+msgid "Downloaded"
+msgstr "Letöltve"
+
+#. TRANSLATORS: %s represents the name of a CD or DVD
+#: ../aptdaemon/gtk3widgets.py:853
+#, python-format
+msgid "CD/DVD '%s' is required"
+msgstr "„%s” CD/DVD szükséges"
+
+#. TRANSLATORS: %s is the name of the CD/DVD drive
+#: ../aptdaemon/gtk3widgets.py:855
+#, python-format
+msgid ""
+"Please insert the above CD/DVD into the drive '%s' to install software "
+"packages from it."
+msgstr ""
+"Helyezze be a fenti CD-t/DVD-t a(z) „%s” meghajtóba a rajta lévő "
+"szoftvercsomagok telepítéséhez."
+
+#: ../aptdaemon/gtk3widgets.py:859 ../aptdaemon/gtk3widgets.py:880
+msgid "C_ontinue"
+msgstr "_Folytatás"
+
+#: ../aptdaemon/gtk3widgets.py:931
+msgid "Install"
+msgstr "Telepítés"
+
+#: ../aptdaemon/gtk3widgets.py:932
+msgid "Reinstall"
+msgstr "Újratelepítés"
+
+#: ../aptdaemon/gtk3widgets.py:933
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: ../aptdaemon/gtk3widgets.py:934
+msgid "Purge"
+msgstr "Törlés"
+
+#: ../aptdaemon/gtk3widgets.py:935
+msgid "Upgrade"
+msgstr "Frissítés"
+
+#: ../aptdaemon/gtk3widgets.py:936
+msgid "Downgrade"
+msgstr "Visszafejlesztés"
+
+#: ../aptdaemon/gtk3widgets.py:937
+msgid "Skip upgrade"
+msgstr "Frissítés kihagyása"
+
+#. If there is only one type of changes (e.g. only installs) expand the
+#. tree
+#. FIXME: adapt the title and message accordingly
+#. FIXME: Should we have different modes? Only show dependencies, only
+#. initial packages or both?
+#: ../aptdaemon/gtk3widgets.py:948
+msgid "Please take a look at the list of changes below."
+msgstr "Nézze meg a változtatások alábbi listáját."
+
+#: ../aptdaemon/gtk3widgets.py:956
+msgid "Additional software has to be installed"
+msgstr "További szoftvereket kell telepíteni"
+
+#: ../aptdaemon/gtk3widgets.py:958
+msgid "Additional software has to be re-installed"
+msgstr "További szoftvereket kell újratelepíteni"
+
+#: ../aptdaemon/gtk3widgets.py:960
+msgid "Additional software has to be removed"
+msgstr "További szoftvereket kell eltávolítani"
+
+#: ../aptdaemon/gtk3widgets.py:962
+msgid "Additional software has to be purged"
+msgstr "További szoftvereket kell törölni"
+
+#: ../aptdaemon/gtk3widgets.py:964
+msgid "Additional software has to be upgraded"
+msgstr "További szoftvereket kell frissíteni"
+
+#: ../aptdaemon/gtk3widgets.py:966
+msgid "Additional software has to be downgraded"
+msgstr "További szoftvereket kell visszafejleszteni"
+
+#: ../aptdaemon/gtk3widgets.py:968
+msgid "Updates will be skipped"
+msgstr "A frissítések kihagyásra kerülnek"
+
+#: ../aptdaemon/gtk3widgets.py:976
+msgid "Additional changes are required"
+msgstr "További változtatások szükségesek"
+
+#: ../aptdaemon/gtk3widgets.py:981
+#, python-format
+msgid "%sB will be downloaded in total."
+msgstr "Összesen %sB kerül letöltésre."
+
+#: ../aptdaemon/gtk3widgets.py:985
+#, python-format
+msgid "%sB of disk space will be freed."
+msgstr "%s B lemezhely szabadul fel."
+
+#: ../aptdaemon/gtk3widgets.py:989
+#, python-format
+msgid "%sB more disk space will be used."
+msgstr "Még %sB lemezhely kerül felhasználásra."
+
+#. TRANSLATORS: %s is a file path
+#: ../aptdaemon/gtk3widgets.py:1061
+#, python-format
+msgid ""
+"Replace your changes in '%s' with a later version of the configuration file?"
+msgstr ""
+"Lecseréli a változtatásait a(z) „%s” fájlban a beállítófájl egy újabb "
+"verziójával?"
+
+#: ../aptdaemon/gtk3widgets.py:1063
+msgid ""
+"If you don't know why the file is there already, it is usually safe to "
+"replace it."
+msgstr ""
+"Ha nem tudja, miért létezik már a fájl, általában nyugodtan lecserélheti."
+
+#: ../aptdaemon/gtk3widgets.py:1072
+msgid "_Changes"
+msgstr "_Változtatások"
+
+#: ../aptdaemon/gtk3widgets.py:1075
+msgid "_Keep"
+msgstr "_Megtartás"
+
+#: ../aptdaemon/gtk3widgets.py:1076
+msgid "_Replace"
+msgstr "_Csere"
+
+#: ../aptdaemon/gtk3widgets.py:1179
+msgid "_Details"
+msgstr "_Részletek"
+
+#. TRANSLATORS: %s is the name of a package manager
+#: ../aptdaemon/lock.py:182
+#, python-format
+msgid "Waiting for %s to exit"
+msgstr "Várakozás %s kilépésére"
+
+#. TRANSLATORS: %s is a list of package names
+#: ../aptdaemon/progress.py:169
+#, python-format
+msgid "Downloading %(files)s"
+msgid_plural "Downloading %(files)s"
+msgstr[0] "%(files)s letöltése"
+msgstr[1] "%(files)s letöltése"
+
+#. TRANSLATORS: the string is used as a fallback if we cannot
+#. get the URI of a local repository
+#: ../aptdaemon/progress.py:281 ../aptdaemon/progress.py:320
+msgid "local repository"
+msgstr "helyi tároló"
+
+#. TRANSLATORS: %s is a list of repository names
+#: ../aptdaemon/progress.py:284
+#, python-format
+msgid "Downloading from %s"
+msgid_plural "Downloading from %s"
+msgstr[0] "Letöltés innen: %s"
+msgstr[1] "Letöltés innen: %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:324
+#, python-format
+msgid "Structure of %s"
+msgstr "%s szerkezete"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:327
+#, python-format
+msgid "Description of %s"
+msgstr "%s leírása"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:330
+#, python-format
+msgid "Description signature of %s"
+msgstr "%s leíró aláírása"
+
+#: ../aptdaemon/progress.py:335
+#, python-format
+msgid "Available packages from %s"
+msgstr "Elérhető csomagok innen: %s"
+
+#: ../aptdaemon/progress.py:339
+#, python-format
+msgid "Available sources from %s"
+msgstr "Elérhető források innen: %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:342
+#, python-format
+msgid "Available translations from %s"
+msgstr "Elérhető fordítások innen: %s"
+
+#: ../aptdaemon/progress.py:359
+#, python-format
+msgid "Translations for %s (%s) from %s"
+msgstr "%s nyelv (%s) fordításai innen: %s"
+
+#. TRANSLATORS: %s is the name of a language. The second one is
+#. the name of the repository
+#: ../aptdaemon/progress.py:363
+#, python-format
+msgid "Translations for %s from %s"
+msgstr "%s nyelv fordításai innen: %s"
+
+#. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
+#. The second one is the name of the repository
+#: ../aptdaemon/progress.py:368
+#, python-format
+msgid "Translations (%s) from %s"
+msgstr "Fordítások (%s) innen: %s"
+
+#: ../aptdaemon/worker/aptworker.py:374 ../aptdaemon/worker/aptworker.py:671
+#: ../aptdaemon/worker/aptworker.py:748 ../aptdaemon/worker/aptworker.py:791
+#, python-format
+msgid "Package %s isn't available"
+msgstr "A(z) %s csomag nem elérhető"
+
+#: ../aptdaemon/worker/aptworker.py:379 ../aptdaemon/worker/aptworker.py:675
+#: ../aptdaemon/worker/aptworker.py:752 ../aptdaemon/worker/aptworker.py:795
+#, python-format
+msgid "Package %s isn't installed"
+msgstr "A(z) %s csomag nincs telepítve"
+
+#: ../aptdaemon/worker/aptworker.py:383
+#, python-format
+msgid "The version %s of %s isn't installed"
+msgstr "%s csomag %s verziója nincs telepítve"
+
+#: ../aptdaemon/worker/aptworker.py:398
+#, python-format
+msgid "Package %s is already installed"
+msgstr "%s csomag már telepítve van"
+
+#: ../aptdaemon/worker/aptworker.py:407 ../aptdaemon/worker/aptworker.py:821
+#, python-format
+msgid "The version %s of %s isn't available."
+msgstr "%s csomag %s verziója nem érhető el."
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptdaemon/worker/aptworker.py:565
+#, python-format
+msgid "The keyserver URL is invalid: %s"
+msgstr "A kulcskiszolgáló URL-je érvénytelen: %s"
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptdaemon/worker/aptworker.py:571
+#, python-format
+msgid "Invalid protocol of the server: %s"
+msgstr "A kiszolgálóprotokoll érvénytelen: %s"
+
+#. TRANSLATORS: %s is the id of a GnuPG key
+#. e.g. E08ADE95
+#: ../aptdaemon/worker/aptworker.py:579 ../aptdaemon/worker/aptworker.py:623
+#, python-format
+msgid "Invalid key id: %s"
+msgstr "Érvénytelen kulcsazonosító: %s"
+
+#: ../aptdaemon/worker/aptworker.py:587
+#, python-format
+msgid ""
+"Failed to download and install the key %s from %s:\n"
+"%s"
+msgstr ""
+"Nem sikerült letölteni a(z) %s kulcsfájlt, a következő helyről: %s:\n"
+"%s"
+
+#: ../aptdaemon/worker/aptworker.py:604
+#, python-format
+msgid "Key file %s couldn't be installed: %s"
+msgstr "%s kulcsfájl nem telepíthető: %s"
+
+#: ../aptdaemon/worker/aptworker.py:628
+#, python-format
+msgid "Key with fingerprint %s couldn't be removed: %s"
+msgstr "%s ujjlenyomatú kulcs nem távolítható el: %s"
+
+#: ../aptdaemon/worker/aptworker.py:679
+#, python-format
+msgid "Package %s cannot be removed."
+msgstr "A(z) %s csomag nem távolítható el."
+
+#: ../aptdaemon/worker/aptworker.py:683
+#, python-format
+msgid "The version %s of %s is not installed"
+msgstr "A(z) %s verziójú %s nincs telepítve"
+
+#: ../aptdaemon/worker/aptworker.py:763
+#, python-format
+msgid "The former version %s of %s is already installed"
+msgstr "A(z) %s korábbi verziójú %s már telepítve van"
+
+#: ../aptdaemon/worker/aptworker.py:768 ../aptdaemon/worker/aptworker.py:814
+#, python-format
+msgid "The version %s of %s is already installed"
+msgstr "A(z) %s verziójú %s már telepítve van"
+
+#: ../aptdaemon/worker/aptworker.py:775
+#, python-format
+msgid "The version %s of %s isn't available"
+msgstr "A(z) %s verziójú %s nem érhető el"
+
+#: ../aptdaemon/worker/aptworker.py:779
+#, python-format
+msgid "You need to specify a version to downgrade %s to"
+msgstr "Meg kell határoznia, hogy %s milyen verzióra legyen visszafejlesztve"
+
+#: ../aptdaemon/worker/aptworker.py:807
+#, python-format
+msgid "The later version %s of %s is already installed"
+msgstr "A(z) %s újabb verziójú %s már telepítve van"
+
+#: ../aptdaemon/worker/aptworker.py:838
+#, python-format
+msgid "The package %s isn't available in the %s release."
+msgstr "%s csomag nem érhető el a(z) %s kiadásban."
+
+#: ../aptdaemon/worker/aptworker.py:1026
+#, python-format
+msgid "Package %s cannot be removed"
+msgstr "A(z) %s csomag nem eltávolítható."
+
+#: ../aptdaemon/worker/aptworker.py:1123
+msgid ""
+"The package doesn't provide a valid Installed-Size control field. See Debian "
+"Policy 5.6.20."
+msgstr ""
+"A csomag nem ad érvényes Installed-Size vezérlőmező-értéket. Részletekért "
+"tekintse át a Debian Policy 5.6.20. fejezetét."
+
+#: ../aptdaemon/worker/aptworker.py:1265
+msgid "The license key is empty"
+msgstr "A licenckulcs üres"
+
+#: ../aptdaemon/worker/aptworker.py:1281
+msgid "The license key is not allowed to contain executable code."
+msgstr "A licenckulcs nem tartalmazhat végrehajtható kódot."
+
+#: ../aptdaemon/worker/aptworker.py:1290
+#, python-format
+msgid "The license key path %s is invalid"
+msgstr "A(z) %s licenckulcsútvonal érvénytelen"
+
+#: ../aptdaemon/worker/aptworker.py:1294
+#, python-format
+msgid "The license key already exists: %s"
+msgstr "A licenckulcs már létezik: %s"
+
+#: ../aptdaemon/worker/aptworker.py:1299
+#, python-format
+msgid ""
+"The location of the license key is unsecure since it contains symbolic "
+"links. The path %s maps to %s"
+msgstr ""
+"A licenckulcs helye nem biztonságos, mivel szimbolikus linkeket tartalmaz. "
+"A(z) %s útvonal ennek felel meg: %s"
+
+#: ../aptdaemon/worker/aptworker.py:1307
+#, python-format
+msgid "The directory where to install the key to doesn't exist yet: %s"
+msgstr "A kulcsfájl telepítéséhez használandó könyvtár még nem létezik: %s"
+
+#: ../aptdaemon/worker/aptworker.py:1318
+#, python-format
+msgid "Failed to write key file to: %s"
+msgstr "A kulcsfájl kiírása sikertelen ide: %s"
+
+#: ../aptdaemon/worker/aptworker.py:1353
+msgid "The following packages have unmet dependencies:"
+msgstr "A következő csomagoknak teljesítetlen függőségei vannak:"
+
+#: ../aptdaemon/worker/aptworker.py:1406
+msgid "but it is a virtual package"
+msgstr "de ez egy virtuális csomag"
+
+#: ../aptdaemon/worker/aptworker.py:1409
+msgid "but it is not installed"
+msgstr "de nincs telepítve"
+
+#: ../aptdaemon/worker/aptworker.py:1411
+msgid "but it is not going to be installed"
+msgstr "de nincs telepítésre jelölve"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptdaemon/worker/aptworker.py:1415
+#, python-format
+msgid "but %s is installed"
+msgstr "de %s verzió van telepítve"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptdaemon/worker/aptworker.py:1419
+#, python-format
+msgid "but %s is to be installed"
+msgstr "de %s verziót kellene telepíteni"
+
+#~ msgid "Adding the key to the list of trused software vendors failed"
+#~ msgstr ""
+#~ "A kulcs hozzáadása a megbízható szoftvergyártók listájához meghiúsult"

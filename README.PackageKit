@@ -1,0 +1,76 @@
+AptDaemon optionally is capable of providing the PackageKit system D-Bus
+interface (see http://www.packagekit.org/gtk-doc/api-reference.html). The goal
+is to provide the complete PackageKit API to run client applications smoothly.
+There won't be any additions or changes to the original PackageKit API.
+
+
+Unsupported or not fully covered methods:
+
+ * org.freedesktop.PackageKit:
+
+  - GetTimeSinceAction - could make use of the apt history
+  - GetDaemonState - only reports that all is fine (used for debugging only)
+  - SetProxy (should we change the apt config?)
+
+ * org.freedesktop.PackageKit.Transaction:
+
+  - GetOldTransaction
+  - SetHints (cache_age doens't make any sense with APT, interactive and
+    background/idle not yet implemented, locale and frontend_socket working)
+
+
+Issues and shortcomings:
+
+ - Messages are not used (possible candidates could be UNTRUSTED_PACKAGES,
+   NEWER_PACKAGE_EXISTS, CONFIG_FILES_CHANGED, OTHER_UPDATES_HELD_BACK)
+ - The post update hook (/etc/apt/apt.conf.d/20packagekit) cannot call
+   StateHasChanged since caller and callee are the same process (aptd) and
+   the call is blocking. So you see a time out warning in the apt logs.
+ - Translations of package description don't work
+ - RepoListChanged signal doesn't get emitted
+
+
+Supported roles:
+
+ - Get(Packages|Depends|Requires|Details)
+ - (Download|Install|Remove|Update)Packages
+ - InstallFiles (only one file at a time is supported)
+ - GetUpdates
+ - GetUpdateDetail
+ - GetDistroUpgrades
+ - WhatProvides (no builtin handling, only plugins)
+ - RepoEnable (only enabling, not disabling)
+ - InstallSignature
+ - RepairSystem
+
+Unsupported roles:
+
+ - GetCategories: Curently groups are used, would be nice to reuse the
+       categories from software-center or the Debian ones
+ - GetRepoList: not implemented
+ - RepoSetData: not implemented 
+
+Roles we won't support at all because of missing infrastructure in APT:
+
+ - AcceptEula: there isn't any equivalent mechanism in Debian/Ubuntu. Most
+       packages mis-use debconf for this.
+
+Supported filters:
+
+ - (not)installed
+ - (not)free
+ - (not)gui
+ - (not)devel
+ - (not)collections
+ - (not)supported
+ - newest
+ - (not)arch
+
+Not yet supported filters:
+
+ - (not)basename
+ - (not)application
+ - (not)source
+ - (not)downloaded (0.8.9+)
+
+Thanks to Richard Hughsie for his work on PackageKit!

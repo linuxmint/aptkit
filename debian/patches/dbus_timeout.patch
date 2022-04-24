@@ -1,0 +1,63 @@
+=== modified file 'aptdaemon/client.py'
+Index: aptdaemon/aptdaemon/client.py
+===================================================================
+--- aptdaemon.orig/aptdaemon/client.py
++++ aptdaemon/aptdaemon/client.py
+@@ -47,6 +47,10 @@ from .errors import convert_dbus_excepti
+ __all__ = ("AptTransaction", "AptClient", "get_transaction", "get_aptdaemon")
+ 
+ 
++# the default timeout for dbus method calls
++_APTDAEMON_DBUS_TIMEOUT = 86400
++
++
+ class AptTransaction(GObject.Object):
+ 
+     """Represents an aptdaemon transaction.
+@@ -704,7 +708,8 @@ class AptTransaction(GObject.Object):
+         try:
+             return self._iface.RunAfter(transaction.tid,
+                                         error_handler=error_handler,
+-                                        reply_handler=reply_handler)
++                                        reply_handler=reply_handler,
++                                        timeout=_APTDAEMON_DBUS_TIMEOUT)
+         except Exception as error:
+             if error_handler:
+                 error_handler(error)
+@@ -727,7 +732,8 @@ class AptTransaction(GObject.Object):
+         """
+         try:
+             return self._iface.Run(error_handler=error_handler,
+-                                   reply_handler=reply_handler)
++                                   reply_handler=reply_handler,
++                                   timeout=_APTDAEMON_DBUS_TIMEOUT)
+         except Exception as error:
+             if error_handler:
+                 error_handler(error)
+@@ -1609,10 +1615,11 @@ class AptClient(object):
+         if async:
+             deferred = defer.Deferred()
+             dbus_method(reply_handler=deferred.callback,
+-                        error_handler=deferred.errback, *args, timeout=86400)
++                        error_handler=deferred.errback, *args,
++                        timeout=_APTDAEMON_DBUS_TIMEOUT)
+             tid = yield deferred
+         else:
+-            tid = dbus_method(*args, timeout=86400)
++            tid = dbus_method(*args, timeout=_APTDAEMON_DBUS_TIMEOUT)
+         trans = AptTransaction(tid, self.bus)
+         if self._locale:
+             yield trans.set_locale(self._locale)
+Index: aptdaemon/aptdaemon/core.py
+===================================================================
+--- aptdaemon.orig/aptdaemon/core.py
++++ aptdaemon/aptdaemon/core.py
+@@ -83,7 +83,7 @@ APTDAEMON_DBUS_SERVICE = 'org.debian.apt
+ APTDAEMON_TRANSACTION_DBUS_INTERFACE = 'org.debian.apt.transaction'
+ 
+ APTDAEMON_IDLE_CHECK_INTERVAL = 60
+-APTDAEMON_IDLE_TIMEOUT = 5 * 60
++APTDAEMON_IDLE_TIMEOUT = 10 * 60
+ 
+ # Maximum allowed time between the creation of a transaction and its queuing
+ TRANSACTION_IDLE_TIMEOUT = 300

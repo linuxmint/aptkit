@@ -1,0 +1,21 @@
+Description: .assert_called() is not a valid mock method, and its presence
+ masks a failing test.  Under Python 3.5, an AttributeError is raised whereas
+ in earlier Python's this just silently passed.  Since the intent of the test
+ can't be determined, for now just skip it.  We don't use @unittest.skip
+ though because there is apparently some test leakage, so that if this entire
+ test is skipped, other tests fail.
+Author: Barry Warsaw <barry@ubuntu.com>
+Bug: https://bugs.launchpad.net/aptdaemon/+bug/1487087
+
+--- a/tests/test_high_trust_repository_whitelist.py
++++ b/tests/test_high_trust_repository_whitelist.py
+@@ -96,7 +96,8 @@
+                          "data/high-trust-repository-whitelist-broken.cfg"))
+         self.assertEqual(whitelist, set())
+         # ensure we log a error if the config file is broken
+-        mock_log.error.assert_called()
++        # Skip due to LP: #1487087
++        #mock_log.error.assert_called()
+ 
+     @patch("aptdaemon.worker.log")
+     def test_read_high_trust_repository_whitelist_not_there(self, mock_log):

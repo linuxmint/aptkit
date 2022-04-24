@@ -1,0 +1,50 @@
+Description: Take a flag to indicate whether a requested package is auto-installed
+ The aptdaemon API takes a complete list of packages to be installed,
+ including dependencies.  This means that all packages are marked as
+ "selected" by the "user" for installation, even if on the other end of the
+ API they were selected for installation only to resolve dependencies of
+ other packages.
+ .
+ This patch adds an optional "auto" flag to the list of packages passed from
+ the client, so that aptdaemon can pass this information on to apt.
+Author: Michael Vogt <mvo@ubuntu.com>
+Bug-Ubuntu: https://bugs.launchpad.net/bugs/1439769
+
+=== modified file 'aptdaemon/core.py'
+Index: wily/aptdaemon/core.py
+===================================================================
+--- wily.orig/aptdaemon/core.py
++++ wily/aptdaemon/core.py
+@@ -2069,6 +2069,10 @@ class AptDaemon(DBusObject):
+         """
+         for fullname in pkg_names:
+             name, version, release = split_package_id(fullname)
++            name, sep, auto_flag = name.partition("#")
++            if not auto_flag in ("", "auto"):
++                raise errors.AptDaemonError("%s isn't a valid flag" %
++                                            auto_flag)
+             if not re.match(REGEX_VALID_PACKAGENAME, name):
+                 raise errors.AptDaemonError("%s isn't a valid package name" %
+                                             name)
+Index: wily/aptdaemon/worker/aptworker.py
+===================================================================
+--- wily.orig/aptdaemon/worker/aptworker.py
++++ wily/aptdaemon/worker/aptworker.py
+@@ -388,6 +388,8 @@ class AptWorker(BaseWorker):
+         """Mark packages for installation."""
+         for pkg_name, pkg_ver, pkg_rel in [self._split_package_id(pkg)
+                                            for pkg in packages]:
++            pkg_name, sep, auto_marker = pkg_name.partition("#")
++            from_user = (auto_marker != "auto")
+             try:
+                 pkg = self._cache[pkg_name]
+             except KeyError:
+@@ -417,7 +419,7 @@ class AptWorker(BaseWorker):
+                         raise TransactionFailed(
+                             ERROR_PACKAGE_ALREADY_INSTALLED,
+                             _("Package %s is already installed"), pkg_name)
+-            pkg.mark_install(False, True, True)
++            pkg.mark_install(False, True, from_user)
+             resolver.clear(pkg)
+             resolver.protect(pkg)
+             if pkg_ver:

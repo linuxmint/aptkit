@@ -1,0 +1,18 @@
+Description: Remove trailing comma, was causing a TypeError.
+Author: Justin McPherson <justin.mcpherson@canonical.com>
+Forwarded: https://code.launchpad.net/~justinmcp/aptdaemon/1352654/+merge/243354
+Bug-Ubuntu: https://bugs.launchpad.net/ubuntu/+source/aptdaemon/+bug/1352654
+=== modified file 'aptdaemon/aptdaemon/worker/aptworker.py'
+Index: aptdaemon-1.1.1+bzr982/aptdaemon/worker/aptworker.py
+===================================================================
+--- aptdaemon-1.1.1+bzr982.orig/aptdaemon/worker/aptworker.py
++++ aptdaemon-1.1.1+bzr982/aptdaemon/worker/aptworker.py
+@@ -1511,7 +1511,7 @@ class AptWorker(BaseWorker):
+             key = "APT::Periodic::AutocleanInterval"
+             return apt_pkg.config.find_i(key, 0)
+         elif option == "UnattendedUpgrade":
+-            key = "APT::Periodic::Unattended-Upgrade",
++            key = "APT::Periodic::Unattended-Upgrade"
+             return apt_pkg.config.find_b(key, False)
+         elif option == "GetPopconParticipation":
+             return self._get_popcon_pariticipation()

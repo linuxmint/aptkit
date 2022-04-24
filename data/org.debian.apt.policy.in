@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+
+  <vendor>Apt Daemon</vendor>
+  <vendor_url>http://launchpad.net/aptdaemon/</vendor_url>
+  <icon_name>package-x-generic</icon_name>
+
+  <action id="org.debian.apt.get-trusted-vendor-keys">
+    <_description>
+      List keys of trusted vendors
+    </_description>
+    <_message>
+      To view the list of trusted keys, you need to authenticate.
+    </_message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.clean">
+    <_description>
+      Remove downloaded package files
+    </_description>
+    <_message>
+      To clean downloaded package files, you need to authenticate.
+    </_message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.change-config">
+    <_description>
+      Change software configuration
+    </_description>
+    <_message>
+      To change software settings, you need to authenticate.
+    </_message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.change-repository">
+    <_description>
+      Change software repository 
+    </_description>
+    <_message>
+      To change software repository settings, you need to authenticate.
+    </_message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.install-file">
+    <_description>
+      Install package file
+    </_description>
+    <_message>
+      To install this package, you need to authenticate.
+    </_message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.update-cache">
+    <_description>
+      Update package information
+    </_description>
+    <_message>
+      To update the software catalog, you need to authenticate.
+    </_message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.install-or-remove-packages">
+    <_description>
+      Install or remove packages
+    </_description>
+    <_message>
+      To install or remove software, you need to authenticate.
+    </_message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.install-packages.high-trust-repo">
+    <!-- This priviledge will be requested when installing a package
+         from a high trusted repository that can be explicitely whitelisted.
+         
+         The defaults for this action are the same as 
+         "org.debian.apt.install-or-remove-packages".
+
+         The admin can override them to e.g. allow passwordless installs for
+         leightweight applications like unity-webapps or for packages
+         comming from high trust repositories (like internal repositories)
+    -->
+    <_description>
+      Install software from a high-trust whitelisted repository.
+    </_description>
+    <_message>
+      To install software, you need to authenticate.
+    </_message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.install-packages-from-new-repo">
+    <!-- This privilege allows to call AddRepository, UpdateCache(Partially)
+	 and InstallPackages in a row and only authenticating once.
+
+         The client has to authenticate for this privilege before calling
+	 the aptdaemon methods. -->
+    <_description>
+      Add a new repository and install packages from it
+    </_description>
+    <_message>
+      To install software from a new source, you need to authenticate.
+    </_message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.install-purchased-packages">
+    <!-- This privilege allows to call AddRepository, UpdateCache(Partially)
+	 and InstallPackages in a row and only authenticating once.
+
+         The client has to authenticate for this privilege before calling
+	 the aptdaemon methods. 
+	 
+	 The only difference to install-packages-from-new-repo is the wording
+	 of the message. It is required by Ubuntu's Software-Center. -->
+    <_description>
+      Add a new repository of purchased software and install packages from it
+    </_description>
+    <_message>
+      To install purchased software, you need to authenticate.
+    </_message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.upgrade-packages">
+    <_description>
+      Upgrade packages
+    </_description>
+    <_message>To install updated software, you need to authenticate.</_message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.cancel-foreign">
+    <_description>
+      Cancel the task of another user
+    </_description>
+    <_message>
+      To cancel someone else's software changes, you need to authenticate.
+    </_message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.set-proxy">
+    <_description>
+      Set a proxy for software downloads
+    </_description>
+    <_message>
+      To use a proxy server for downloading software, you need to authenticate.
+    </_message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>

@@ -1,0 +1,1434 @@
+# Thai translation for aptdaemon
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the aptdaemon package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: aptdaemon\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-21 15:36+0200\n"
+"PO-Revision-Date: 2011-09-11 01:49+0000\n"
+"Last-Translator: Manop Pornpeanvichanon(มานพ พรเพียรวิชานนท์) <Unknown>\n"
+"Language-Team: Thai <th@li.org>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2013-03-09 23:28+0000\n"
+"X-Generator: Launchpad (build 16523)\n"
+
+#: ../data/org.debian.apt.policy.in.h:1
+msgid "List keys of trusted vendors"
+msgstr "รายการคีย์ของผู้ตัวแทนที่เชื่อถือได้"
+
+#: ../data/org.debian.apt.policy.in.h:2
+msgid "To view the list of trusted keys, you need to authenticate."
+msgstr "คุณต้องยืนยันตัวเพื่อดูรายการกุญแจที่เชื่อถือได้"
+
+#: ../data/org.debian.apt.policy.in.h:3 ../aptdaemon/console.py:619
+msgid "Remove downloaded package files"
+msgstr "เอาแฟ้มแพกเกจต่าง ๆ ที่ดาว์โหลดมาแล้วออก"
+
+#: ../data/org.debian.apt.policy.in.h:4
+msgid "To clean downloaded package files, you need to authenticate."
+msgstr "คุณต้องยืนยันตัวเพื่อล้างแฟ้มแพกเกจต่าง ๆ"
+
+#: ../data/org.debian.apt.policy.in.h:5
+msgid "Change software configuration"
+msgstr "การการตั้งค่าซอฟต์แวร์"
+
+#: ../data/org.debian.apt.policy.in.h:6
+msgid "To change software settings, you need to authenticate."
+msgstr "คุณต้องยืนยันตัวเพื่อเปลี่ยนการตั้งค่าโปรแกรม"
+
+#: ../data/org.debian.apt.policy.in.h:7
+msgid "Change software repository"
+msgstr "เปลี่ยนคลังแพกเกจของโปรแกรม"
+
+#: ../data/org.debian.apt.policy.in.h:8
+msgid "To change software repository settings, you need to authenticate."
+msgstr "คุณต้องยืนยันตัวเพื่อทำการเปลี่ยนการตั้งค่าคลังแพกเกจของโปรแกรม"
+
+#: ../data/org.debian.apt.policy.in.h:9
+msgid "Install package file"
+msgstr "ติดตั้งแฟ้มของแพกเกจ"
+
+#: ../data/org.debian.apt.policy.in.h:10
+msgid "To install this package, you need to authenticate."
+msgstr "คุณต้องยืนยันตัวเพื่อติดตั้งแพกเกจนี้"
+
+#: ../data/org.debian.apt.policy.in.h:11
+msgid "Update package information"
+msgstr "ปรับข้อมูลแพกเกจ"
+
+#: ../data/org.debian.apt.policy.in.h:12
+msgid "To update the software catalog, you need to authenticate."
+msgstr "คุณต้องยืนยันตัวเพื่อปรับปรุงหมวดหมู่โปรแกรม"
+
+#: ../data/org.debian.apt.policy.in.h:13
+msgid "Install or remove packages"
+msgstr "ติดตั้งและถอดถอนแพกเกจ"
+
+#: ../data/org.debian.apt.policy.in.h:14
+msgid "To install or remove software, you need to authenticate."
+msgstr "คุณต้องยืนยันตัวเพื่อติดตังหรือถอดถอนโปรแกรม"
+
+#. This priviledge will be requested when installing a package
+#. from a high trusted repository that can be explicitely whitelisted.
+#.
+#. The defaults for this action are the same as
+#. "org.debian.apt.install-or-remove-packages".
+#.
+#. The admin can override them to e.g. allow passwordless installs for
+#. leightweight applications like unity-webapps or for packages
+#. comming from high trust repositories (like internal repositories)
+#.
+#: ../data/org.debian.apt.policy.in.h:25
+msgid "Install software from a high-trust whitelisted repository."
+msgstr ""
+
+#: ../data/org.debian.apt.policy.in.h:26
+msgid "To install software, you need to authenticate."
+msgstr ""
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#.
+#. The client has to authenticate for this privilege before calling
+#. the aptdaemon methods.
+#: ../data/org.debian.apt.policy.in.h:32
+msgid "Add a new repository and install packages from it"
+msgstr "เพิ่มคลังแพกเกจอันใหม่และทำการติดตั้งแพกเกจต่าง ๆ จากคลังนี้"
+
+#: ../data/org.debian.apt.policy.in.h:33
+msgid "To install software from a new source, you need to authenticate."
+msgstr "คุณต้องยืนยันตัวเพื่อติดตั้งแพกเกจจากแหล่งใหม่"
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#.
+#. The client has to authenticate for this privilege before calling
+#. the aptdaemon methods.
+#.
+#. The only difference to install-packages-from-new-repo is the wording
+#. of the message. It is required by Ubuntu's Software-Center.
+#: ../data/org.debian.apt.policy.in.h:42
+msgid "Add a new repository of purchased software and install packages from it"
+msgstr "เพิ่มคลังเก็บโปรแกรมที่ซื้อมาแล้วและใช้ติดตั้งโปรแกรม"
+
+#: ../data/org.debian.apt.policy.in.h:43
+msgid "To install purchased software, you need to authenticate."
+msgstr "คุณต้องยืนยันตัวเพื่อติดตั้งโปรแกรมที่ซื้อมา"
+
+#: ../data/org.debian.apt.policy.in.h:44
+msgid "Upgrade packages"
+msgstr "ปรับรุ่นแพกเกจ"
+
+#: ../data/org.debian.apt.policy.in.h:45
+msgid "To install updated software, you need to authenticate."
+msgstr "คุณต้องยืนยันตัวเพื่อติดตั้งการปรับปรุงโปรแกรม"
+
+#: ../data/org.debian.apt.policy.in.h:46
+msgid "Cancel the task of another user"
+msgstr "ยกเลิกงานของผู้ใช้อื่น"
+
+#: ../data/org.debian.apt.policy.in.h:47
+msgid "To cancel someone else's software changes, you need to authenticate."
+msgstr "คุณต้องยืนยันตัวเพื่อยกเลิกการแก้ไขโปรแกรมของคนอื่น"
+
+#: ../data/org.debian.apt.policy.in.h:48
+msgid "Set a proxy for software downloads"
+msgstr "ตั้งพร็อกซีสำหรับดึงโปรแกรม"
+
+#: ../data/org.debian.apt.policy.in.h:49
+msgid ""
+"To use a proxy server for downloading software, you need to authenticate."
+msgstr "คุณต้องยืนยันตัวในการใช้พร็อกซีทำการดาวน์โหลดโปรแกรม"
+
+#: ../aptdaemon/console.py:215
+msgid "ERROR"
+msgstr "ผิดพลาด"
+
+#: ../aptdaemon/console.py:249
+#, fuzzy, python-format
+msgid "Downloaded %(cur)sB of %(total)sB at %(rate)sB/s"
+msgstr "ดาวน์โหลด  %sB แล้วจาก %sB ที่ความเร็ว %sB/s"
+
+#: ../aptdaemon/console.py:255
+#, fuzzy, python-format
+msgid "Downloaded %(cur)sB of %(total)sB"
+msgstr "ดาวน์โหลด %sB แล้วจาก %sB"
+
+#: ../aptdaemon/console.py:385 ../aptdaemon/console.py:390
+msgid "ERROR:"
+msgstr "ผิดพลาด:"
+
+#: ../aptdaemon/console.py:386
+msgid "You are not allowed to perform this action."
+msgstr "ไม่คุณไม่ได้รับอนุญาติให้กระทำการนี้"
+
+#: ../aptdaemon/console.py:409 ../aptdaemon/console.py:537
+msgid "Queuing"
+msgstr "กำลังเข้าคิว"
+
+#: ../aptdaemon/console.py:417 ../aptdaemon/enums.py:527
+msgid "Resolving dependencies"
+msgstr "กำลังแก้ปัญหาการขึ้นต่อกัน"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:459
+#, python-format
+msgid "The following NEW package will be installed (%(count)s):"
+msgid_plural "The following NEW packages will be installed (%(count)s):"
+msgstr[0] "แพกเกจใหม่ตามนี้จะถูกติดตั้ง (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:467
+#, python-format
+msgid "The following package will be upgraded (%(count)s):"
+msgid_plural "The following packages will be upgraded (%(count)s):"
+msgstr[0] "แพกเกจตามนี้จะถูกปรับรุ่นขึ้น (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:475
+#, python-format
+msgid "The following package will be REMOVED (%(count)s):"
+msgid_plural "The following packages will be REMOVED (%(count)s):"
+msgstr[0] "แพกเกจตามนี้จะถูกเอาออก (%(count)s):"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:484
+#, python-format
+msgid "The following package will be DOWNGRADED (%(count)s):"
+msgid_plural "The following packages will be DOWNGRADED (%(count)s):"
+msgstr[0] "แพกเกจ  (%(count)s) อันจะถูกปรับรุ่นลง:"
+
+#. TRANSLATORS: %s is the number of packages
+#: ../aptdaemon/console.py:492
+#, python-format
+msgid "The following package will be reinstalled (%(count)s):"
+msgid_plural "The following packages will be reinstalled (%(count)s):"
+msgstr[0] "แพกเกจเหล่านี้จะถูกติดตั้งใหม่ (%(count)s):"
+
+#: ../aptdaemon/console.py:499
+#, python-format
+msgid "The following package has been kept back (%(count)s):"
+msgid_plural "The following packages have been kept back (%(count)s):"
+msgstr[0] "แพกเกจพวกนี้ถูกเก็บแล้ว (%(count)s):"
+
+#: ../aptdaemon/console.py:507
+#, python-format
+msgid "Need to get %sB of archives."
+msgstr "ต้องใช้อีก %sB จากเป้าหมาย"
+
+#: ../aptdaemon/console.py:510
+#, python-format
+msgid "After this operation, %sB of additional disk space will be used."
+msgstr "พื้นที่ว่างบนแผ่นจะถูกใช้ %sB หลังจากการทำงานนี้"
+
+#: ../aptdaemon/console.py:514
+#, python-format
+msgid "After this operation, %sB of additional disk space will be freed."
+msgstr "จะมีพื้นที่ว่าง %sB หลังจากการทำงานนี้"
+
+#: ../aptdaemon/console.py:522 ../aptdaemon/console.py:524
+msgid "Do you want to continue [Y/n]?"
+msgstr "ต้องการทำต่อ [Y/n]"
+
+#: ../aptdaemon/console.py:545
+msgid ""
+"To operate on more than one package put the package names in quotation "
+"marks:\n"
+"aptdcon --install \"foo bar\""
+msgstr ""
+"ให้ใส่เครื่องหมายคำพูดครอบชื่อแพกเกจเพื่อทำงานพร้อมกันหลาย ๆ แพกเกจ:\n"
+"aptdcon --install \"foo bar\""
+
+#: ../aptdaemon/console.py:551
+msgid "Refresh the cache"
+msgstr "เรียกข้อมูลชั่วคราวใหม่"
+
+#: ../aptdaemon/console.py:554
+msgid ""
+"Try to resolve broken dependencies. Potentially dangerous operation since it "
+"could try to remove many packages."
+msgstr "ลองซ่อมการขึ้นกันที่มีปัญหาดู การกระทำนี้ควรระวังเพราะจะมีการลบแพกเกจจำนวนมาก"
+
+#: ../aptdaemon/console.py:559
+msgid "Try to finish a previous incompleted installation"
+msgstr "ลองทำงานติดตั้งที่ยังค้างอยู่ให้เสร็จ"
+
+#: ../aptdaemon/console.py:563 ../aptdaemon/console.py:576
+msgid "Install the given packages"
+msgstr "ติดตั้งแพกเกจที่จัดให้"
+
+#: ../aptdaemon/console.py:566
+msgid "Reinstall the given packages"
+msgstr "ติดตั้งแพกเกจที่จัดให้ใหม่"
+
+#: ../aptdaemon/console.py:569
+msgid "Remove the given packages"
+msgstr "เอาแพกเกจที่ระบุออก"
+
+#: ../aptdaemon/console.py:572
+msgid "Remove the given packages including configuration files"
+msgstr "เอาแพกเกจพร้อมทั้งแฟ้มตั้งค่าที่ระบุออก"
+
+#: ../aptdaemon/console.py:579
+msgid "Downgrade the given packages"
+msgstr "ปรับรุ่นแพกเกจเหล่านี้ลง"
+
+#: ../aptdaemon/console.py:582
+msgid "Deprecated: Please use --safe-upgrade"
+msgstr "ล้าสมัยแล้ว: โปรดใช้ --safe-upgrade"
+
+#: ../aptdaemon/console.py:586
+msgid "Upgrade the system in a safe way"
+msgstr "ปรับรุ่นระบบด้วยวิธีที่ปลอดภัย"
+
+#: ../aptdaemon/console.py:589
+msgid "Upgrade the system, possibly installing and removing packages"
+msgstr "ปรับรุ่นระบบด้วยด้วยการติดตั้งและถอดถอนแพกเกจเพิ่ม"
+
+#: ../aptdaemon/console.py:593
+msgid "Add the vendor to the trusted ones"
+msgstr "เพิ่มผู้จำหน่ายที่เชื่อถือได้"
+
+#: ../aptdaemon/console.py:596
+msgid "Add the vendor keyid (also needs --keyserver)"
+msgstr "เพิ่มผู้จำหน่าย keyid (อาจจะต้องการ --keyserver)"
+
+#: ../aptdaemon/console.py:600
+msgid "Use the given keyserver for looking up keys"
+msgstr "มองหากุญแจจากแม่ข่ายกุญแจที่จัดให้"
+
+#: ../aptdaemon/console.py:604
+msgid "Add new repository from the given deb-line"
+msgstr "เพิ่มคลังแพกเกจใหม่จาก deb-line"
+
+#: ../aptdaemon/console.py:608
+msgid ""
+"Specify an alternative sources.list.d file to which repositories should be "
+"added."
+msgstr "ระบบแฟ้น sources.list.d อันอื่นเพื่อดูคลังโปรแกรมที่อาจถูกเพิ่ม"
+
+#: ../aptdaemon/console.py:612
+msgid "List trusted vendor keys"
+msgstr "รายการผู้แจกกุญแจที่เชื่อถือได้"
+
+#: ../aptdaemon/console.py:615
+msgid "Remove the trusted key of the given fingerprint"
+msgstr "เอากุญแจที่เชื่อถือได้ออกตามลายนิวมือที่จัดใหเ้"
+
+#: ../aptdaemon/console.py:622
+msgid ""
+"Reconfigure installed packages. Optionally the minimum priority of questions "
+"can be specified"
+msgstr "ตั้งค่าแพกเกจที่ถูกติดตั้งแล้วใหม่ ทางเลือกนี้จะมีคำถามที่เกี่ยวกับลำดับความสำคัญน้อยที่สุด"
+
+#: ../aptdaemon/console.py:627
+msgid "The minimum debconf priority of question to be displayed"
+msgstr "ลำดับ defconf คำถามที่ถูกแสดงน้่อยที่สุด"
+
+#: ../aptdaemon/console.py:631
+msgid "Do not attach to the apt terminal"
+msgstr "ไม่ต้องต่อเข้ากับเทอร์มินัลของ apt"
+
+#: ../aptdaemon/console.py:635
+msgid "Allow packages from unauthenticated sources"
+msgstr "อณุญาติแพกเกจที่ไม่ระบุที่มา"
+
+#: ../aptdaemon/console.py:639
+msgid ""
+"Show additional information about the packages. Currently only the version "
+"number"
+msgstr "แสดงข่าวสารเพิ่มเติ่มเกี่ยวกับแพกเกจตัวนี้ เฉพาะ้เลขรุ่นนี้เท่านั้น"
+
+#: ../aptdaemon/console.py:647 ../aptdaemon/enums.py:532
+msgid "Waiting for authentication"
+msgstr "กำลังรอการยืนยัน"
+
+#: ../aptdaemon/core.py:2135
+msgid "Do not shutdown the daemon because of inactivity"
+msgstr "ห้ามปิดดีมอนเพียงเพราะว่ามันไม่ได้ทำงาน"
+
+#: ../aptdaemon/core.py:2140
+msgid "Do not load any plugins"
+msgstr ""
+
+#: ../aptdaemon/core.py:2144
+msgid "Show internal processing information"
+msgstr "แสดงข้อมูลการประมวลผลภายใน"
+
+#: ../aptdaemon/core.py:2149
+msgid "Quit and replace an already running daemon"
+msgstr "ออกและแทนที่ดีมอนที่กำลังทำงานอยู่"
+
+#: ../aptdaemon/core.py:2154
+msgid "Listen on the DBus session bus (Only required for testing"
+msgstr "ฟังที่วาระของ DBUS(เฉพาะทดสอบเท่านั้น)"
+
+#: ../aptdaemon/core.py:2158
+msgid "Perform operations in the given chroot"
+msgstr "ให้กระทำใน chroot ที่จัดให้"
+
+#: ../aptdaemon/core.py:2163
+msgid "Store profile stats in the specified file"
+msgstr "เก็บสถิติโพรไฟล์ลงในแฟ้มที่ระบุไว้"
+
+#: ../aptdaemon/core.py:2168
+msgid "Do not make any changes to the system (Only of use to developers)"
+msgstr "ห้ามทำการเปลี่ยนแปลงระบบ (ใช้เฉพาะนักพัฒนาเท่านั้น)"
+
+#: ../aptdaemon/enums.py:337
+msgid "Installed file"
+msgstr "แฟ้มที่ถูกติดตั้งแล้ว"
+
+#: ../aptdaemon/enums.py:338
+msgid "Installed packages"
+msgstr "แพกเกจที่ถูกติดตั้งแล้ว"
+
+#: ../aptdaemon/enums.py:339
+msgid "Added key from file"
+msgstr "เพิ่มคีย์จากแฟ้มแล้ว"
+
+#: ../aptdaemon/enums.py:340
+msgid "Updated cache"
+msgstr "ปรับปรุงแคช"
+
+#: ../aptdaemon/enums.py:341
+msgid "Search done"
+msgstr ""
+
+#: ../aptdaemon/enums.py:342
+msgid "Removed trusted key"
+msgstr "กุญแจความเชื่อถือถอดถอนแล้ว"
+
+#: ../aptdaemon/enums.py:343
+msgid "Removed packages"
+msgstr "เแพกเกจที่ถอดถอนแล้ว"
+
+#: ../aptdaemon/enums.py:344
+msgid "Updated packages"
+msgstr "แพกเกจที่ปรับปรุงแล้ว"
+
+#: ../aptdaemon/enums.py:345
+msgid "Upgraded system"
+msgstr "ระบบที่ปรับรุ่นแล้ว"
+
+#: ../aptdaemon/enums.py:346
+msgid "Applied changes"
+msgstr "ปรับใช้การเปลี่ยนแปลง"
+
+#: ../aptdaemon/enums.py:347
+msgid "Repaired incomplete installation"
+msgstr "ซ่อมการติดตั้งที่ยังไม่เรียบร้อยเสร็จแล้ว"
+
+#: ../aptdaemon/enums.py:348
+msgid "Repaired broken dependencies"
+msgstr "ซ่อมแซมการขึ้นต่อกันที่เสียหาย"
+
+#: ../aptdaemon/enums.py:349
+msgid "Added software source"
+msgstr "เพิ่มแหล่งโปรแกรมแล้ว"
+
+#: ../aptdaemon/enums.py:350
+msgid "Enabled component of the distribution"
+msgstr "ให้องค์ประกอบทำงานแบบกระจ่ายได้"
+
+#: ../aptdaemon/enums.py:351
+msgid "Removed downloaded package files"
+msgstr "เอาแฟ้มแพกเกจที่ดูดมาออก"
+
+#: ../aptdaemon/enums.py:352
+msgid "Reconfigured installed packages"
+msgstr "ปรับแต่งแพกเกจที่ถูกติดตั้งแล้วใหม่"
+
+#: ../aptdaemon/enums.py:356
+msgid "Successful"
+msgstr "สำเร็จ"
+
+#: ../aptdaemon/enums.py:357
+msgid "Canceled"
+msgstr "ยกเลิกแล้ว"
+
+#: ../aptdaemon/enums.py:358 ../aptdaemon/enums.py:569
+msgid "Failed"
+msgstr "ล้มเหลว"
+
+#: ../aptdaemon/enums.py:361
+msgid "Installing file"
+msgstr "กำลังติดตั้งแฟ้ม"
+
+#: ../aptdaemon/enums.py:362
+msgid "Installing packages"
+msgstr "กำลังติดตั้งแพกเกจ"
+
+#: ../aptdaemon/enums.py:363
+msgid "Adding key from file"
+msgstr "กำลังเพิ่มคีย์จากแฟ้ม"
+
+#: ../aptdaemon/enums.py:364
+msgid "Updating cache"
+msgstr "กำลังปรับปรุงแคช"
+
+#: ../aptdaemon/enums.py:365
+msgid "Removing trusted key"
+msgstr "กำลังถอดถอนคีย์ที่เชื่อถือ"
+
+#: ../aptdaemon/enums.py:366
+msgid "Removing packages"
+msgstr "กำลังถอดถอนแพกเกจ"
+
+#: ../aptdaemon/enums.py:367
+msgid "Updating packages"
+msgstr "กำลังปรับปรุงแพกเกจ"
+
+#: ../aptdaemon/enums.py:368
+msgid "Upgrading system"
+msgstr "กำลังปรับรุ่นระบบ"
+
+#: ../aptdaemon/enums.py:369 ../aptdaemon/enums.py:528
+msgid "Applying changes"
+msgstr "กำลังปรับใช้การเปลี่ยนแปลง"
+
+#: ../aptdaemon/enums.py:370
+msgid "Repairing incomplete installation"
+msgstr "ซ่อมแซมการติดตั้งที่ไม่เสร็จ"
+
+#: ../aptdaemon/enums.py:371
+msgid "Repairing installed software"
+msgstr ""
+
+#: ../aptdaemon/enums.py:372
+msgid "Adding software source"
+msgstr "กำลังเพิ่มแหล่งโปรแกรม"
+
+#: ../aptdaemon/enums.py:373
+msgid "Enabling component of the distribution"
+msgstr "เปิดการทำงานองค์ประกอบแบบกระจ่าย"
+
+#: ../aptdaemon/enums.py:374
+msgid "Removing downloaded package files"
+msgstr "กำลังเอาแฟ้มแพกเกจที่ดูดมาออก"
+
+#: ../aptdaemon/enums.py:375
+msgid "Reconfiguring installed packages"
+msgstr "กำลังปรับแต่งแพกเกจที่ถูกติดตั้งแล้วใหม่"
+
+#: ../aptdaemon/enums.py:376 ../aptdaemon/enums.py:517
+msgid "Searching"
+msgstr ""
+
+#: ../aptdaemon/enums.py:380
+msgid "Installation of the package file failed"
+msgstr "การติดตั้งแฟ้มจากแพกเกจล้มเหลว"
+
+#: ../aptdaemon/enums.py:381
+msgid "Installation of software failed"
+msgstr "การติดตั้งซอฟต์แวร์ล้มเหลว"
+
+#: ../aptdaemon/enums.py:382
+msgid "Adding the key to the list of trusted software vendors failed"
+msgstr ""
+
+#: ../aptdaemon/enums.py:384
+msgid "Refreshing the software list failed"
+msgstr "การปรับปรุงรายการซอฟต์แวร์ล้มเหลว"
+
+#: ../aptdaemon/enums.py:385
+msgid "Removing the vendor from the list of trusted ones failed"
+msgstr "การเอาผู้จำหน่ายออกจากรายการที่เชื่อถือได้ล้มเหลว"
+
+#: ../aptdaemon/enums.py:387
+msgid "Removing software failed"
+msgstr "การถอดถอนซอฟต์แวร์ล้มเหลว"
+
+#: ../aptdaemon/enums.py:388
+msgid "Updating software failed"
+msgstr "การปรับปรุงซอฟต์แวร์ล้มเหลว"
+
+#: ../aptdaemon/enums.py:389
+msgid "Upgrading the system failed"
+msgstr "การปรับรุ่นระบบล้มเหลว"
+
+#: ../aptdaemon/enums.py:390
+msgid "Applying software changes failed"
+msgstr "การปรับใช้การเปลี่ยนแปลงซอฟต์แวร์ล้มเหลว"
+
+#: ../aptdaemon/enums.py:391
+msgid "Repairing incomplete installation failed"
+msgstr "การซ่อมแซมการติดตั้งที่ยังไม่เสร็จล้มเหลว"
+
+#: ../aptdaemon/enums.py:393
+msgid "Repairing broken dependencies failed"
+msgstr "การซ่อมแซมความขึ้นต่อกันที่เสียหาย ล้มเหลว"
+
+#: ../aptdaemon/enums.py:394
+msgid "Adding software source failed"
+msgstr "การเพิ้มแหล่งโปรแกรมล้มเหลว"
+
+#: ../aptdaemon/enums.py:395
+msgid "Enabling component of the distribution failed"
+msgstr "การเปิดใช้งานองค์ประกอบทำงานแบบกระจายล้มเหลวแล้ว"
+
+#: ../aptdaemon/enums.py:397 ../aptdaemon/enums.py:398
+msgid "Removing downloaded package files failed"
+msgstr "การเอาแฟ้มแพกเกจที่ดูดมาออกล้มเหลว"
+
+#: ../aptdaemon/enums.py:399
+msgid "Search failed"
+msgstr ""
+
+#: ../aptdaemon/enums.py:400
+msgid "Adding license key"
+msgstr ""
+
+#: ../aptdaemon/enums.py:404 ../aptdaemon/enums.py:405
+msgid "Check your Internet connection."
+msgstr "โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ"
+
+#: ../aptdaemon/enums.py:406
+msgid ""
+"Check if you are using third party repositories. If so disable them, since "
+"they are a common source of problems.\n"
+"Furthermore run the following command in a Terminal: apt-get install -f"
+msgstr ""
+"ตรวจดูว่าใช้คลังแพกเกจของเจ้าอื่นหรือเปล่า ถ้าปิดการทำงานคลังนั้น ๆ เนือกจากปัญหาจากแหล่งที่มา\n"
+"ให้ลองเรียกคำส่งในเทอร์มินัล: apt-get install -f"
+
+#: ../aptdaemon/enums.py:411
+msgid "The selected file may not be a GPG key file or it might be corrupt."
+msgstr "แฟ้มที่เลือกไว้อาจไม่ใช่แฟ้มกุญแจ GPG หรือมันอาจเสียหาย"
+
+#: ../aptdaemon/enums.py:413
+msgid ""
+"The selected key couldn't be removed. Check that you provided a valid "
+"fingerprint."
+msgstr "กุญแจที่เลือกไว้ไม่สามารถถอดถอนได้ ให้ตรวจดูว่าลายนิวมือที่คุณให้ไว้ถูกต้องหรือไม่"
+
+#: ../aptdaemon/enums.py:415
+msgid ""
+"Check if you are currently running another software management tool, e.g. "
+"Synaptic or aptitude. Only one tool is allowed to make changes at a time."
+msgstr ""
+"ตรวจดูว่าคุณกำลังทำงานกับโปรแกรมจัดการตัวอื่น ๆ อยู่หรือเปล่า เช่น Synaptic หรือ aptitude "
+"อณุญาตแค่โปรแกรมเดียวเท่านั้นที่สามารถทำการเปลี่ยนแปลงในเวลาเดียวกันได้"
+
+#: ../aptdaemon/enums.py:418
+msgid ""
+"This is a serious problem. Try again later. If this problem appears again, "
+"please report an error to the developers."
+msgstr ""
+"นี้เป็นปัญหาร้ายแรง โปรดลองใหม่ภายหลัง ถ้ายังพบปัญหานี้อีก โปรดรายงานข้อผิดพลาดไปที่นักพัฒนา"
+
+#: ../aptdaemon/enums.py:421
+msgid ""
+"Check the spelling of the package name, and that the appropriate repository "
+"is enabled."
+msgstr "ตรวจดูว่าสะกดชื่อแพกเกจถูกหรือเปล่า และ คลังแพกเกจที่ถูกต้องถูกเปิดใช้งานแล้ว"
+
+#: ../aptdaemon/enums.py:423
+msgid "There isn't any need for an update."
+msgstr "ไม่มีความต้องการใด ๆ ที่จะปรับปรุง"
+
+#: ../aptdaemon/enums.py:424
+msgid "There isn't any need for an installation"
+msgstr "นั่นไม่มีความจำเป็นต้องติดตั้ง"
+
+#: ../aptdaemon/enums.py:426
+msgid "There isn't any need for a removal."
+msgstr "นั่นไม่มีความจำเป็นต้องถอดถอน"
+
+#: ../aptdaemon/enums.py:427
+msgid ""
+"You requested to remove a package which is an essential part of your system."
+msgstr "คุณได้ร้องขอให้ถอดถอนแพกเกจซึ่งเป็นส่วนสำคัญของระบบของคุณ"
+
+#: ../aptdaemon/enums.py:430
+msgid ""
+"The connection to the daemon was lost. Most likely the background daemon "
+"crashed."
+msgstr "การเชื่อมต่อไปที่ดีมอนหลุดแล้ว ดูเหมือนกับว่าดีมอนที่ทำงานอยู่ฉากหลังขัดข้อง"
+
+#: ../aptdaemon/enums.py:432
+msgid "The installation or removal of a software package failed."
+msgstr "การติดตั้งหรือถอดถอนแพกเกจของซอฟต์แวร์ล้มเหลว"
+
+#: ../aptdaemon/enums.py:434
+msgid "The requested feature is not supported."
+msgstr ""
+
+#: ../aptdaemon/enums.py:435
+msgid ""
+"There seems to be a programming error in aptdaemon, the software that allows "
+"you to install/remove software and to perform other package management "
+"related tasks."
+msgstr ""
+"น่าจะเป็นข้อผิดพลาดจากการเขียนโปรแกรมใน aptdaemon โปรแกรมนี้ทำการติดตั้ง/"
+"ถอดถอนโปรแกรมและจัดการด้านแพกเกจหรืองานต่าง ๆ ที่เกียวข้อง"
+
+#: ../aptdaemon/enums.py:439
+msgid ""
+"This error could be caused by required additional software packages which "
+"are missing or not installable. Furthermore there could be a conflict "
+"between software packages which are not allowed to be installed at the same "
+"time."
+msgstr ""
+"ข้อผิดพลาดนี้สาเหตุมาจากไม่พบแพกเกจโปรแกรมเพิ่มเติมที่ต้องการ "
+"หรือไม่ก็เกิดจากการขัดกันของแพกเกจโปรแกรมที่ไม่อนุญาติให้ติดตั้งพร้อมกัน"
+
+#: ../aptdaemon/enums.py:445
+msgid "This requires installing packages from unauthenticated sources."
+msgstr ""
+
+#: ../aptdaemon/enums.py:447
+msgid ""
+"The installation could have failed because of an error in the corresponding "
+"software package or it was cancelled in an unfriendly way. You have to "
+"repair this before you can install or remove any further software."
+msgstr ""
+"การติดตั้งนี้ล้มเหลวเพราะว่ามีข้อผิดพลาดจาดแพกเกจโปรแกรม หรือ ถูกยกเลิกการติดตั้งในทางที่ไม่ปกติ "
+"คุณควรซ่อมแซมเรื่องนี้ก่อนที่จะติดตั้งหรือถอดถอดโปรแกรมอื่น ๆ เพิ่ม"
+
+#: ../aptdaemon/enums.py:453
+msgid ""
+"Please copy the file to your local computer and check the file permissions."
+msgstr "โปรดคัดลอกแฟ้มไปที่เครื่องของคุณแล้วตรวจดูสิทธิ์ที่อนุญาตของแฟ้ม"
+
+#: ../aptdaemon/enums.py:456
+msgid ""
+"The installation of a package which violates the quality standards isn't "
+"allowed. This could cause serious problems on your computer. Please contact "
+"the person or organisation who provided this package file and include the "
+"details beneath."
+msgstr ""
+"ไม่อนุญาติให้ทำการติดตั้งแพกเกจที่มีคุณภาพต่ำกว่ามาตราฐาน "
+"เรื่องนี้อาจทำให้เกิดปัญหาร้ายแรงมากกับเครื่องคอมพิวเตอร์ของคุณ "
+"โปรดติดตั้งคนหรือองค์กรณ์ที่ทำการจำหน่ายแฟ้มแพกเกจนี้รวมถึงรายละเอียดอื่น ๆ ด้วย"
+
+#: ../aptdaemon/enums.py:463
+msgid ""
+"The downloaded license key which is required to run this piece of software "
+"is not valid or could not be installed correctly.\n"
+"See the details for more information."
+msgstr ""
+
+#: ../aptdaemon/enums.py:469
+msgid "All available upgrades have already been installed."
+msgstr ""
+
+#: ../aptdaemon/enums.py:471
+msgid ""
+"The license key which allows you to use this piece of software could not be "
+"downloaded. Please check your network connection."
+msgstr ""
+
+#: ../aptdaemon/enums.py:475
+#, fuzzy
+msgid "You don't have the required privileges to perform this action."
+msgstr "ไม่คุณไม่ได้รับอนุญาติให้กระทำการนี้"
+
+#: ../aptdaemon/enums.py:477
+msgid ""
+"You either provided a wrong password or cancelled the authorization.\n"
+"Furthermore there could also be a technical reason for this error if you "
+"haven't seen a password dialog: your desktop environment doesn't provide a "
+"PolicyKit session agent."
+msgstr ""
+
+#: ../aptdaemon/enums.py:485
+msgid "Failed to download package files"
+msgstr "การดาวน์โหลดแฟ้มแพกเกจล้มเหลว"
+
+#: ../aptdaemon/enums.py:486
+msgid "Failed to download repository information"
+msgstr "การดาวน์โหลดแฟ้มข้อมูลคลังล้มเหลว"
+
+#: ../aptdaemon/enums.py:488
+msgid "Package dependencies cannot be resolved"
+msgstr "ไม่สามารถแก้ปัญหาการขึ้นต่อกันของแพกเกจได้"
+
+#: ../aptdaemon/enums.py:489
+msgid "The package system is broken"
+msgstr "แพกเกจของระบบพัง"
+
+#: ../aptdaemon/enums.py:490
+msgid "Key was not installed"
+msgstr "กุญแจยังไม่ถูกติดตั้ง"
+
+#: ../aptdaemon/enums.py:491
+msgid "Key was not removed"
+msgstr "กุญแจยังไม่ถูกถอดถอน"
+
+#: ../aptdaemon/enums.py:492
+msgid "Failed to lock the package manager"
+msgstr "การล็อคโปรแกรมจัดการแพกเกจล้มเหลว"
+
+#: ../aptdaemon/enums.py:493
+msgid "Failed to load the package list"
+msgstr "การโหลดรายชื่อแพกเกจล้มเหลว"
+
+#: ../aptdaemon/enums.py:494
+msgid "Package does not exist"
+msgstr "ไม่พบแพกเกจ"
+
+#: ../aptdaemon/enums.py:495
+msgid "Package is already up to date"
+msgstr ""
+
+#: ../aptdaemon/enums.py:496
+msgid "Package is already installed"
+msgstr "แพกเกจถูกติดตั้งแล้ว"
+
+#: ../aptdaemon/enums.py:497
+msgid "Package isn't installed"
+msgstr "แพกเกจยังไม่ถูกติดตั้ง"
+
+#: ../aptdaemon/enums.py:498
+msgid "Failed to remove essential system package"
+msgstr "การถอดถอนแพกเกจสำคัญของระบบล้มเหลว"
+
+#: ../aptdaemon/enums.py:500
+msgid "Task cannot be monitored or controlled"
+msgstr "ไม่สามารถตามดูหรือควบคุมงานได้"
+
+#: ../aptdaemon/enums.py:501
+msgid "Package operation failed"
+msgstr "การดำเนินการเกี่ยวกับแพกเกจล้มเหลว"
+
+#: ../aptdaemon/enums.py:502
+msgid "Requires installation of untrusted packages"
+msgstr "ต้องการติดตั้งแพกเกจที่ยังไม่ได้รับความเชื่อถือ"
+
+#: ../aptdaemon/enums.py:504
+msgid "Previous installation hasn't been completed"
+msgstr "การติดตั้งครั้งก่อนยังไม่สมบูรณ์"
+
+#: ../aptdaemon/enums.py:505
+msgid "The package is of bad quality"
+msgstr "คุณภาพแพกเกจแย่มาก"
+
+#: ../aptdaemon/enums.py:506
+msgid "Package file could not be opened"
+msgstr "แฟ้มแพกเกจเปิดไม่ได้"
+
+#: ../aptdaemon/enums.py:507
+msgid "Not supported feature"
+msgstr ""
+
+#: ../aptdaemon/enums.py:508
+msgid "Failed to download the license key"
+msgstr ""
+
+#: ../aptdaemon/enums.py:509
+msgid "Failed to install the license key"
+msgstr ""
+
+#: ../aptdaemon/enums.py:510
+msgid "The system is already up to date"
+msgstr ""
+
+#: ../aptdaemon/enums.py:511
+msgid "You could not be authorized"
+msgstr ""
+
+#: ../aptdaemon/enums.py:512
+msgid "You are not allowed to perform this action"
+msgstr ""
+
+#: ../aptdaemon/enums.py:513
+msgid "An unhandlable error occured"
+msgstr "มีปัญหาที่จัดการไม่ได้เกิดขึ้น"
+
+#: ../aptdaemon/enums.py:516
+msgid "Waiting for service to start"
+msgstr "กำลังรอเซอร์วิสเริ่มทำงาน"
+
+#: ../aptdaemon/enums.py:518
+msgid "Waiting"
+msgstr "กำลังรอ"
+
+#: ../aptdaemon/enums.py:519
+msgid "Waiting for required medium"
+msgstr "กำลังรอความต้องการระดับกลาง"
+
+#: ../aptdaemon/enums.py:520
+msgid "Waiting for other software managers to quit"
+msgstr "กำลังรอให้โปรแกรมจัดการแพกเกจอื่น ๆ ปิด"
+
+#: ../aptdaemon/enums.py:521
+msgid "Waiting for configuration file prompt"
+msgstr "กำลังรอการตั้งค่าแฟ้มพรอมต์"
+
+#: ../aptdaemon/enums.py:523
+msgid "Running task"
+msgstr "งานที่กำลังทำงาน"
+
+#: ../aptdaemon/enums.py:524
+msgid "Downloading"
+msgstr "กำลังดาวน์โหลด"
+
+#: ../aptdaemon/enums.py:525
+msgid "Querying software sources"
+msgstr ""
+
+#: ../aptdaemon/enums.py:526
+msgid "Cleaning up"
+msgstr "กำลังเก็บกวาด"
+
+#: ../aptdaemon/enums.py:529
+msgid "Finished"
+msgstr "เสร็จสิ้น"
+
+#: ../aptdaemon/enums.py:530
+msgid "Cancelling"
+msgstr "กำลังยกเลิก"
+
+#: ../aptdaemon/enums.py:531
+msgid "Loading software list"
+msgstr "กำลังโหลดรายชื่อซอฟต์แวร์"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:536
+#, python-format
+msgid "Installing %s"
+msgstr "กำลังติดตั้ง %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:538
+#, python-format
+msgid "Configuring %s"
+msgstr "กำลังตั้งค่า %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:540
+#, python-format
+msgid "Removing %s"
+msgstr "กำลังถอดถอน %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:542
+#, python-format
+msgid "Completely removing %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:544
+#, python-format
+msgid "Noting disappearance of %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:546
+#, python-format
+msgid "Running post-installation trigger %s"
+msgstr "กำลังทำงาน %s หลังการติดตั้ง"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:548
+#, python-format
+msgid "Upgrading %s"
+msgstr "กำลังปรับรุ่น %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:550
+#, python-format
+msgid "Unpacking %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:552
+#, python-format
+msgid "Preparing installation of %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:554
+#, python-format
+msgid "Preparing configuration of %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:556
+#, python-format
+msgid "Preparing removal of %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:558
+#, python-format
+msgid "Preparing complete removal of %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:560
+#, python-format
+msgid "Installed %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:562
+#, python-format
+msgid "Completely removed %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptdaemon/enums.py:564
+#, python-format
+msgid "Removed %s"
+msgstr ""
+
+#: ../aptdaemon/enums.py:567
+msgid "Done"
+msgstr "เรียบร้อย"
+
+#: ../aptdaemon/enums.py:568
+msgid "Authentication failed"
+msgstr "การยืนยันล้มเหลว"
+
+#: ../aptdaemon/enums.py:570
+msgid "Fetching"
+msgstr "กำลังดึงข้อมูล"
+
+#: ../aptdaemon/enums.py:571
+msgid "Idle"
+msgstr "ว่าง"
+
+#: ../aptdaemon/enums.py:572
+msgid "Network isn't available"
+msgstr "ไม่มีเครื่อข่าย"
+
+#: ../aptdaemon/enums.py:704
+#, python-format
+msgid "Processing %s"
+msgstr ""
+
+#: ../aptdaemon/gtk3widgets.py:306
+#, python-format
+msgid "Downloaded %sB of %sB at %sB/s"
+msgstr "ดาวน์โหลด  %sB แล้วจาก %sB ที่ความเร็ว %sB/s"
+
+#: ../aptdaemon/gtk3widgets.py:311 ../aptdaemon/gtk3widgets.py:510
+#, python-format
+msgid "Downloaded %sB of %sB"
+msgstr "ดาวน์โหลด %sB แล้วจาก %sB"
+
+#: ../aptdaemon/gtk3widgets.py:323
+msgid "Details"
+msgstr "รายละเอียด"
+
+#: ../aptdaemon/gtk3widgets.py:474
+msgid "File"
+msgstr "แฟ้ม"
+
+#. TRANSLATORS: header of the progress download column
+#: ../aptdaemon/gtk3widgets.py:479
+msgid "%"
+msgstr "%"
+
+#: ../aptdaemon/gtk3widgets.py:515
+#, python-format
+msgid "Downloaded %sB"
+msgstr "ดาว์โหลดแล้ว %s ไบต์"
+
+#: ../aptdaemon/gtk3widgets.py:518
+msgid "Downloaded"
+msgstr "ดาวน์โหลดแล้ว"
+
+#. TRANSLATORS: %s represents the name of a CD or DVD
+#: ../aptdaemon/gtk3widgets.py:853
+#, python-format
+msgid "CD/DVD '%s' is required"
+msgstr "ต้องมีซีดี/ดีวีดี '%s'"
+
+#. TRANSLATORS: %s is the name of the CD/DVD drive
+#: ../aptdaemon/gtk3widgets.py:855
+#, python-format
+msgid ""
+"Please insert the above CD/DVD into the drive '%s' to install software "
+"packages from it."
+msgstr "โปรดใส่แผ่น CD/DVD ข้างต้นไปที่ไดรว์ '%s' เพื่อติดตั้งแพกเกจโปรแกรม"
+
+#: ../aptdaemon/gtk3widgets.py:859 ../aptdaemon/gtk3widgets.py:880
+msgid "C_ontinue"
+msgstr "_ต่อไป"
+
+#: ../aptdaemon/gtk3widgets.py:931
+msgid "Install"
+msgstr "ติดตั้ง"
+
+#: ../aptdaemon/gtk3widgets.py:932
+msgid "Reinstall"
+msgstr "ติดตั้งใหม่"
+
+#: ../aptdaemon/gtk3widgets.py:933
+msgid "Remove"
+msgstr "เอาออก"
+
+#: ../aptdaemon/gtk3widgets.py:934
+msgid "Purge"
+msgstr "กำจัด"
+
+#: ../aptdaemon/gtk3widgets.py:935
+msgid "Upgrade"
+msgstr "ปรับรุ่น"
+
+#: ../aptdaemon/gtk3widgets.py:936
+msgid "Downgrade"
+msgstr "ลดรุ่น"
+
+#: ../aptdaemon/gtk3widgets.py:937
+msgid "Skip upgrade"
+msgstr "ข้ามการปรับรุ่น"
+
+#. If there is only one type of changes (e.g. only installs) expand the
+#. tree
+#. FIXME: adapt the title and message accordingly
+#. FIXME: Should we have different modes? Only show dependencies, only
+#. initial packages or both?
+#: ../aptdaemon/gtk3widgets.py:948
+msgid "Please take a look at the list of changes below."
+msgstr "โปรดดูที่รายการเปลี่ยนแปลงข้างล่าง"
+
+#: ../aptdaemon/gtk3widgets.py:956
+msgid "Additional software has to be installed"
+msgstr "โปรแกรมเสริมถูกติดตั้งแล้ว"
+
+#: ../aptdaemon/gtk3widgets.py:958
+msgid "Additional software has to be re-installed"
+msgstr "โปรแกรมเสริมถูกติดตั้งใหม่แล้ว"
+
+#: ../aptdaemon/gtk3widgets.py:960
+msgid "Additional software has to be removed"
+msgstr "โปรแกรมเสริมถูกถอดถอนแล้ว"
+
+#: ../aptdaemon/gtk3widgets.py:962
+msgid "Additional software has to be purged"
+msgstr "โปรแกรมเสริมถูกทำให้หยุดทำงาน"
+
+#: ../aptdaemon/gtk3widgets.py:964
+msgid "Additional software has to be upgraded"
+msgstr "โปรแกรมเสริมถูกปรับรุ่นแล้ว"
+
+#: ../aptdaemon/gtk3widgets.py:966
+msgid "Additional software has to be downgraded"
+msgstr "โปรแกรมเสริมถูกปรับรุ่นลงแล้ว"
+
+#: ../aptdaemon/gtk3widgets.py:968
+msgid "Updates will be skipped"
+msgstr "การปรับปรุงจะถูกข้ามไป"
+
+#: ../aptdaemon/gtk3widgets.py:976
+msgid "Additional changes are required"
+msgstr "ต้องการการเปลี่ยนแปลงเพิ่มเติม"
+
+#: ../aptdaemon/gtk3widgets.py:981
+#, python-format
+msgid "%sB will be downloaded in total."
+msgstr "%sไบต์ถูกดาว์โหลดจากทั้งหมด"
+
+#: ../aptdaemon/gtk3widgets.py:985
+#, python-format
+msgid "%sB of disk space will be freed."
+msgstr "จะทำให้มี %s ไบต์ของพื้นที่ว่างของดิสก์"
+
+#: ../aptdaemon/gtk3widgets.py:989
+#, python-format
+msgid "%sB more disk space will be used."
+msgstr "จะใช้พื้นที่บนดิสก์อีก %s ไบต์"
+
+#. TRANSLATORS: %s is a file path
+#: ../aptdaemon/gtk3widgets.py:1061
+#, python-format
+msgid ""
+"Replace your changes in '%s' with a later version of the configuration file?"
+msgstr "แทนที่การเปลี่ยนแปลงของคุณ '%s' ด้วยแฟ้มการตั้งค่าล่าสุดหรือไม่"
+
+#: ../aptdaemon/gtk3widgets.py:1063
+msgid ""
+"If you don't know why the file is there already, it is usually safe to "
+"replace it."
+msgstr "ถ้าคุณไม่รู้ว่าทำไมแฟ้มมาอยู่ที่นี้ มักปลอดภัยที่จะแทนที่แฟ้มนั้น"
+
+#: ../aptdaemon/gtk3widgets.py:1072
+msgid "_Changes"
+msgstr "เ_ปลี่ยนแปลง"
+
+#: ../aptdaemon/gtk3widgets.py:1075
+msgid "_Keep"
+msgstr "เ_ก็บไว้"
+
+#: ../aptdaemon/gtk3widgets.py:1076
+msgid "_Replace"
+msgstr "แ_ทนที่"
+
+#: ../aptdaemon/gtk3widgets.py:1179
+msgid "_Details"
+msgstr "_รายละเอียด"
+
+#. TRANSLATORS: %s is the name of a package manager
+#: ../aptdaemon/lock.py:182
+#, python-format
+msgid "Waiting for %s to exit"
+msgstr "กำลังรอ %s เพื่อออก"
+
+#. TRANSLATORS: %s is a list of package names
+#: ../aptdaemon/progress.py:169
+#, python-format
+msgid "Downloading %(files)s"
+msgid_plural "Downloading %(files)s"
+msgstr[0] "กำลังดาว์โหลด %(files)s"
+
+#. TRANSLATORS: the string is used as a fallback if we cannot
+#. get the URI of a local repository
+#: ../aptdaemon/progress.py:281 ../aptdaemon/progress.py:320
+msgid "local repository"
+msgstr ""
+
+#. TRANSLATORS: %s is a list of repository names
+#: ../aptdaemon/progress.py:284
+#, python-format
+msgid "Downloading from %s"
+msgid_plural "Downloading from %s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:324
+#, python-format
+msgid "Structure of %s"
+msgstr ""
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:327
+#, python-format
+msgid "Description of %s"
+msgstr ""
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:330
+#, python-format
+msgid "Description signature of %s"
+msgstr ""
+
+#: ../aptdaemon/progress.py:335
+#, python-format
+msgid "Available packages from %s"
+msgstr ""
+
+#: ../aptdaemon/progress.py:339
+#, python-format
+msgid "Available sources from %s"
+msgstr ""
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptdaemon/progress.py:342
+#, python-format
+msgid "Available translations from %s"
+msgstr ""
+
+#: ../aptdaemon/progress.py:359
+#, python-format
+msgid "Translations for %s (%s) from %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the name of a language. The second one is
+#. the name of the repository
+#: ../aptdaemon/progress.py:363
+#, python-format
+msgid "Translations for %s from %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
+#. The second one is the name of the repository
+#: ../aptdaemon/progress.py:368
+#, python-format
+msgid "Translations (%s) from %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:374 ../aptdaemon/worker/aptworker.py:671
+#: ../aptdaemon/worker/aptworker.py:748 ../aptdaemon/worker/aptworker.py:791
+#, python-format
+msgid "Package %s isn't available"
+msgstr "ไม่มีแพกเกจ %s"
+
+#: ../aptdaemon/worker/aptworker.py:379 ../aptdaemon/worker/aptworker.py:675
+#: ../aptdaemon/worker/aptworker.py:752 ../aptdaemon/worker/aptworker.py:795
+#, python-format
+msgid "Package %s isn't installed"
+msgstr "แพกเกจ %s ไม่ได้ถูกติดตั้ง"
+
+#: ../aptdaemon/worker/aptworker.py:383
+#, python-format
+msgid "The version %s of %s isn't installed"
+msgstr "รุ่น %s ของ %s ไม่ได้ถูกติดตั้ง"
+
+#: ../aptdaemon/worker/aptworker.py:398
+#, python-format
+msgid "Package %s is already installed"
+msgstr "แพกเกจ %s ถูกติดตั้งอยู่แล้ว"
+
+#: ../aptdaemon/worker/aptworker.py:407 ../aptdaemon/worker/aptworker.py:821
+#, python-format
+msgid "The version %s of %s isn't available."
+msgstr "รุ่น %s ของ %s ยังไม่ได้ถูกติดตั้ง"
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptdaemon/worker/aptworker.py:565
+#, python-format
+msgid "The keyserver URL is invalid: %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptdaemon/worker/aptworker.py:571
+#, python-format
+msgid "Invalid protocol of the server: %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the id of a GnuPG key
+#. e.g. E08ADE95
+#: ../aptdaemon/worker/aptworker.py:579 ../aptdaemon/worker/aptworker.py:623
+#, python-format
+msgid "Invalid key id: %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:587
+#, python-format
+msgid ""
+"Failed to download and install the key %s from %s:\n"
+"%s"
+msgstr ""
+"ล้มเหลวที่จะดาว์โหลดและติดตั้งกุญแจ %s จาก %s:\n"
+"%s"
+
+#: ../aptdaemon/worker/aptworker.py:604
+#, python-format
+msgid "Key file %s couldn't be installed: %s"
+msgstr "แฟ้มคีย์ %s ติดตั้งไม่ได้: %s"
+
+#: ../aptdaemon/worker/aptworker.py:628
+#, python-format
+msgid "Key with fingerprint %s couldn't be removed: %s"
+msgstr "กุญแจกับลายนิวมือ %s ไม่สามารถถอดถอนได้: %s"
+
+#: ../aptdaemon/worker/aptworker.py:679
+#, python-format
+msgid "Package %s cannot be removed."
+msgstr "ถอดถอนแพกเกจ %s ไม่ได้"
+
+#: ../aptdaemon/worker/aptworker.py:683
+#, python-format
+msgid "The version %s of %s is not installed"
+msgstr "รุ่น %s ของ %s ยังไม่ถูกติดตั้ง"
+
+#: ../aptdaemon/worker/aptworker.py:763
+#, python-format
+msgid "The former version %s of %s is already installed"
+msgstr "รุ่น %s of %s ถูกติดตั้งไว้อยู่แล้ว"
+
+#: ../aptdaemon/worker/aptworker.py:768 ../aptdaemon/worker/aptworker.py:814
+#, python-format
+msgid "The version %s of %s is already installed"
+msgstr "รุ่น %s ของ %s ถูกติดตั้งแล้ว"
+
+#: ../aptdaemon/worker/aptworker.py:775
+#, python-format
+msgid "The version %s of %s isn't available"
+msgstr "รุ่น %s ของ %s ไม่มี"
+
+#: ../aptdaemon/worker/aptworker.py:779
+#, python-format
+msgid "You need to specify a version to downgrade %s to"
+msgstr "คุณต้องระบุรุ่นของ %s ที่ปรับรุ่นลง"
+
+#: ../aptdaemon/worker/aptworker.py:807
+#, python-format
+msgid "The later version %s of %s is already installed"
+msgstr "รุ่นล่าสุด %s ของ %s ถูกติดตั้งอยู่แล้ว"
+
+#: ../aptdaemon/worker/aptworker.py:838
+#, python-format
+msgid "The package %s isn't available in the %s release."
+msgstr "แพกเกจ %s ยังไม่มีในรุ่น %s"
+
+#: ../aptdaemon/worker/aptworker.py:1026
+#, python-format
+msgid "Package %s cannot be removed"
+msgstr "เอาแพกเกจ %s ออกไม่ได้"
+
+#: ../aptdaemon/worker/aptworker.py:1123
+msgid ""
+"The package doesn't provide a valid Installed-Size control field. See Debian "
+"Policy 5.6.20."
+msgstr "แพกเกจนี้มีข้อมูลขนาดการติดตั้งที่ไม่ถูกต้อง ดูรายละเอียดในนโยบาย Debian 5.6.20"
+
+#: ../aptdaemon/worker/aptworker.py:1265
+msgid "The license key is empty"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1281
+msgid "The license key is not allowed to contain executable code."
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1290
+#, python-format
+msgid "The license key path %s is invalid"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1294
+#, python-format
+msgid "The license key already exists: %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1299
+#, python-format
+msgid ""
+"The location of the license key is unsecure since it contains symbolic "
+"links. The path %s maps to %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1307
+#, python-format
+msgid "The directory where to install the key to doesn't exist yet: %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1318
+#, python-format
+msgid "Failed to write key file to: %s"
+msgstr ""
+
+#: ../aptdaemon/worker/aptworker.py:1353
+msgid "The following packages have unmet dependencies:"
+msgstr "แพกเกจต่อไปนี้ขาดแพกเกจที่ต้องใช้:"
+
+#: ../aptdaemon/worker/aptworker.py:1406
+msgid "but it is a virtual package"
+msgstr "แต่แพกเกจนี้เป็นแพกเกจเสมือน"
+
+#: ../aptdaemon/worker/aptworker.py:1409
+msgid "but it is not installed"
+msgstr "แต่มันยังไม่ได้ถูกติดตั้ง"
+
+#: ../aptdaemon/worker/aptworker.py:1411
+msgid "but it is not going to be installed"
+msgstr "แต่แพกเกจนี้จะไม่ถูกติดตั้ง"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptdaemon/worker/aptworker.py:1415
+#, python-format
+msgid "but %s is installed"
+msgstr "แต่ %s ถูกติดตั้งแล้ว"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptdaemon/worker/aptworker.py:1419
+#, python-format
+msgid "but %s is to be installed"
+msgstr "แต่ %s กำลังจะถูกติดตั้ง"
+
+#~ msgid "Adding the key to the list of trused software vendors failed"
+#~ msgstr "การเพิ่มคีย์ไปที่รายการผู้จำหน่ายซอฟต์แวร์ที่เชื่อถือได้ล้มเหลว"

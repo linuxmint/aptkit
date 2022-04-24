@@ -1,0 +1,15 @@
+Description: Fix typo hold vs held.
+Author: Julian Andres Klode <juliank@ubuntu.com>
+Last-Update: 2019-06-21
+
+--- aptdaemon-1.1.1+bzr982.orig/aptdaemon/lock.py
++++ aptdaemon-1.1.1+bzr982/aptdaemon/lock.py
+@@ -45,7 +45,7 @@ class LockFailedError(Exception):
+         """
+         msg = "Could not acquire lock on %s." % flock
+         if process:
+-            msg += " The lock is hold by %s." % process
++            msg += " The lock is held by %s." % process
+         Exception.__init__(self, msg)
+         self.flock = flock
+         self.process = process

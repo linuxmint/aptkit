@@ -1,0 +1,5 @@
+Template: aptdaemon/test
+Type: string
+Default: bli bla blub
+Description: This is a test
+ Huhu

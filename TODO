@@ -1,0 +1,26 @@
+HIGH
+
+ * merge mvo's proxy patch
+
+NORMAL
+
+ * client, gtkwidgets.AptProgressDialog: Implement the wait argument on run
+
+ * client: Review documentation and add reply|error_handler notes
+
+ * client/core/worker: Allow to install a list of local package files
+
+ * client: Set the http proxy automattically
+
+ * core: Allow to call AddVendorKey and RemoveVendorKey directly on the
+         daemon interface instead of inside a transaction
+
+ * core/worker: Reduce number of transaction roles handled internally.
+                CommitPackages, UpgradeSystem and UpdateCache should be
+		sufficient
+
+ * core: Add packages attribute to the transaction interface which provides
+         an array of all modified packages of the transaction
+
+ * console: Add dependency calculation and confirmation
+

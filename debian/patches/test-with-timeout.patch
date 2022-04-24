@@ -1,0 +1,15 @@
+Description: Run tests with a timeout
+ Tests are getting stuck for almost 3 hours because we race somewhere and end up
+ getting stuck waiting for calls that never happen.
+Author: Julian Andres Klode <juliank@ubuntu.com>
+--- a/aptdaemon/test.py
++++ b/aptdaemon/test.py
+@@ -223,7 +223,7 @@ class AptDaemonTestCase(unittest.TestCas
+             path = "/usr/sbin/aptd"
+         else:
+             path = os.path.join(dir, "../aptd")
+-        cmd = ["python3", path, "--disable-timeout", "--disable-plugins",
++        cmd = ["python3", path, "--disable-plugins",
+                "--chroot", chroot]
+         if debug:
+             cmd.append("--debug")
