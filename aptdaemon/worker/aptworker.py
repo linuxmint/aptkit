@@ -681,7 +681,7 @@ class AptWorker(BaseWorker):
                 raise TransactionFailed(ERROR_PACKAGE_NOT_INSTALLED,
                                         _("Package %s isn't installed"),
                                         pkg_name)
-            if pkg.essential is True:
+            if not self.is_deletable(pkg):
                 raise TransactionFailed(ERROR_NOT_REMOVE_ESSENTIAL_PACKAGE,
                                         _("Package %s cannot be removed."),
                                         pkg_name)
@@ -693,6 +693,24 @@ class AptWorker(BaseWorker):
             resolver.clear(pkg)
             resolver.protect(pkg)
             resolver.remove(pkg)
+
+    def is_deletable(self, pkg):
+        if pkg.name == "aptdaemon":
+            return False
+
+        if pkg.essential == True or (pkg.installed and pkg.installed.priority == "required"):
+            # Package is essential or required
+            is_orphan = False
+            if pkg.candidate == None or (not pkg.candidate.downloadable):
+                is_orphan = True
+                for version in pkg.versions:
+                    if version.downloadable:
+                        is_orphan = False
+                        break
+            # only allow to delete it if it's an orphan
+            return is_orphan
+
+        return True
 
     def _check_obsoleted_dependencies(self, trans, resolver=None):
         """Mark obsoleted dependencies of to be removed packages
@@ -1029,10 +1047,7 @@ class AptWorker(BaseWorker):
             return
         # Do not allow to remove essential packages
         for pkg in changes:
-            if pkg.marked_delete and (pkg.essential is True or
-                                      (pkg.installed and
-                                       pkg.installed.priority == "required") or
-                                      pkg.name == "aptdaemon"):
+            if pkg.marked_delete and not self.is_deletable(pkg):
                 raise TransactionFailed(ERROR_NOT_REMOVE_ESSENTIAL_PACKAGE,
                                         _("Package %s cannot be removed"),
                                         pkg.name)
