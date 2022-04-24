@@ -928,6 +928,7 @@ class AptConfirmDialog(Gtk.Dialog):
         self.scrolled.set_policy(Gtk.PolicyType.AUTOMATIC,
                                  Gtk.PolicyType.AUTOMATIC)
         self.scrolled.set_shadow_type(Gtk.ShadowType.ETCHED_IN)
+        self.scrolled.set_min_content_height(200)
         self.scrolled.add(self.treeview)
         vbox_left.pack_start(self.scrolled, True, True, 0)
         self.set_default_response(Gtk.ResponseType.CANCEL)
@@ -1174,7 +1175,7 @@ class _DetailsExpanderMessageDialog(_ExpandableDialog):
     Common base class for Apt*Dialog
     """
     def __init__(self, text, desc, type, details=None, parent=None):
-        scrolled = Gtk.ScrolledWindow()
+        scrolled = Gtk.ScrolledWindow(hexpand=True, vexpand=True)
         scrolled.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
         scrolled.set_shadow_type(Gtk.ShadowType.ETCHED_IN)
         textview = Gtk.TextView()
