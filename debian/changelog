@@ -1,3 +1,11 @@
+aptdaemon (1.1.1+bzr982-0ubuntu39mint1) vera; urgency=medium
+
+  * Fix tiny scrolledwindows
+  * Specify version in gi import
+  * Allow removal of essential/required orphans
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 03 Dec 2022 13:47:18 +0000
+
 aptdaemon (1.1.1+bzr982-0ubuntu39) jammy; urgency=medium
 
   * No-change rebuild with Python 3.10 only.
