@@ -1299,7 +1299,6 @@ class Transaction(DBusObject):
         else:
             domain = "aptdaemon"
             return gettext.translation(domain, gettext.bindtextdomain(domain),
-                                       gettext.bind_textdomain_codeset(domain),
                                        fallback=True)
 
     def gettext(self, msg):

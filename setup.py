@@ -12,6 +12,11 @@ import os
 import sys
 from setuptools import *
 
+from DistUtilsExtra.command import (
+    build_extra,
+    build_i18n,
+)
+
 import aptdaemon
 
 readme = open(os.path.join(os.path.dirname(__file__), "README")).read()
@@ -32,6 +37,8 @@ setup(name="aptdaemon",
       test_suite="nose.collector",
       license="GNU LGPL",
       keywords="apt package manager deb dbus d-bus debian ubuntu dpkg",
+      cmdclass={"build": build_extra.build_extra,
+                "build_i18n": build_i18n.build_i18n},
       classifiers=["Development Status :: 5 - Production/Stable",
                    "Intended Audience :: System Administrators",
                    "License :: OSI Approved :: GNU Library or Lesser General " \

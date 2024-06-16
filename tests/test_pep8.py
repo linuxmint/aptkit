@@ -32,7 +32,7 @@ class AptDaemonPep8TestCase(unittest.TestCase):
     def test(self):
         """Check if the source code matches the PEP8 style conventions."""
         subprocess.check_call([
-            "pep8", "--statistics", "--show-source",
+            "pycodestyle", "--statistics", "--show-source",
             "--show-pep8", "--exclude",
             "pkenums.py,aptdaemon,tests,debian,doc,.pc,gtk3-demo.py,setup.py",
             "--ignore=E402"])

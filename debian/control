@@ -23,7 +23,7 @@ Build-Depends: debhelper (>= 7.3),
                python3-mock,
                python3-pkg-resources,
                iso-codes,
-               pep8,
+               pycodestyle,
                xauth,
                xvfb
 Standards-Version: 3.9.6

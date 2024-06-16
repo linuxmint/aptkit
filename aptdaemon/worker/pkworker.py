@@ -31,10 +31,6 @@ import time
 
 import apt_pkg
 
-
-import gi
-gi.require_version('PackageKitGlib', '1.0')
-
 from gi.repository import GObject
 from gi.repository import PackageKitGlib as pk
 

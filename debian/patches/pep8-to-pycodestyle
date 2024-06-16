@@ -1,0 +1,16 @@
+Description: pep8 is dead, long live pycodestyle
+Author: Steve Langasek <steve.langasek@ubuntu.com>
+Forwarded: no
+Last-Update: 2023-05-22
+
+--- aptdaemon-1.1.1+bzr982.orig/tests/test_pep8.py
++++ aptdaemon-1.1.1+bzr982/tests/test_pep8.py
+@@ -32,7 +32,7 @@ class AptDaemonPep8TestCase(unittest.Tes
+     def test(self):
+         """Check if the source code matches the PEP8 style conventions."""
+         subprocess.check_call([
+-            "pep8", "--statistics", "--show-source",
++            "pycodestyle", "--statistics", "--show-source",
+             "--show-pep8", "--exclude",
+             "pkenums.py,aptdaemon,tests,debian,doc,.pc,gtk3-demo.py,setup.py",
+             "--ignore=E402"])

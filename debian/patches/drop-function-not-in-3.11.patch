@@ -1,0 +1,14 @@
+Description: Drop function not in python3.11
+Author: Gunnar Hjalmarsson <gunnarhj@ubuntu.com>
+Last-Update: 2023-01-07
+
+--- a/aptdaemon/core.py
++++ b/aptdaemon/core.py
+@@ -1282,7 +1282,6 @@
+         else:
+             domain = "aptdaemon"
+             return gettext.translation(domain, gettext.bindtextdomain(domain),
+-                                       gettext.bind_textdomain_codeset(domain),
+                                        fallback=True)
+ 
+     def gettext(self, msg):

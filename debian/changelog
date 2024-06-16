@@ -1,10 +1,35 @@
-aptdaemon (1.1.1+bzr982-0ubuntu39mint1) vera; urgency=medium
+aptdaemon (1.1.1+bzr982-0ubuntu44) mantic; urgency=medium
 
-  * Fix tiny scrolledwindows
-  * Specify version in gi import
-  * Allow removal of essential/required orphans
+  * pep8->pycodestyle.
 
- -- Clement Lefebvre <root@linuxmint.com>  Sat, 03 Dec 2022 13:47:18 +0000
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Mon, 22 May 2023 13:24:55 -0700
+
+aptdaemon (1.1.1+bzr982-0ubuntu43) lunar; urgency=medium
+
+  * Fix FTBFS: error in setup.cfg: command 'build' has no such option 'i18n'
+    by importing DistUtilsExtra in setup.py (LP: #1999148)
+
+ -- Julian Andres Klode <juliank@ubuntu.com>  Wed, 12 Apr 2023 16:24:35 +0200
+
+aptdaemon (1.1.1+bzr982-0ubuntu42) lunar; urgency=medium
+
+  * Reverse the change in -41. It was a mistake.
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Sun, 08 Jan 2023 23:47:47 +0100
+
+aptdaemon (1.1.1+bzr982-0ubuntu41) lunar; urgency=medium
+
+  * debian/tests/control:
+    - Require version 1.3.7-9 of python3-nose
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Sun, 08 Jan 2023 10:28:23 +0100
+
+aptdaemon (1.1.1+bzr982-0ubuntu40) lunar; urgency=medium
+
+  * debian/patches/drop-function-not-in-3.11.patch:
+    - Don’t use bind_textdomain_codeset() function.
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Sat, 07 Jan 2023 17:40:02 +0100
 
 aptdaemon (1.1.1+bzr982-0ubuntu39) jammy; urgency=medium
 

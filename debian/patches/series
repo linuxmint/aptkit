@@ -31,3 +31,6 @@ CVE-2020-16128.patch
 CVE-2020-27349.patch
 fix-some-deprecated-code.patch
 gdk-gtk-versions.py
+drop-function-not-in-3.11.patch
+setup-py-import-distutils-extra.patch
+pep8-to-pycodestyle
