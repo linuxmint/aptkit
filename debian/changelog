@@ -1,3 +1,11 @@
+aptdaemon (1.1.1+bzr982-0ubuntu44mint1) wilma; urgency=medium
+
+  * Fix tiny scrolledwindows
+  * Specify version in gi import
+  * Allow removal of essential/required orphans
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 16 Jun 2024 14:59:56 +0100
+
 aptdaemon (1.1.1+bzr982-0ubuntu44) mantic; urgency=medium
 
   * pep8->pycodestyle.
