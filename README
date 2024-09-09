@@ -1,7 +1,0 @@
-Aptkit allows to perform package management tasks in a background process
-controlled by DBus. It is greatly inspired by PackageKit, which doesn't support
-essential features of apt by policy.
-
-The project homepage is at https://launchpad.net/aptkit
-
-You can report errors and suggestion there.

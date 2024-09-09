@@ -19,8 +19,6 @@ from DistUtilsExtra.command import (
 
 import aptkit
 
-readme = open(os.path.join(os.path.dirname(__file__), "README")).read()
-
 # The transaction class has got it's own gettext translation
 # Don't set bug-contact in setup.cfg since p-d-u-e will overwrite
 # XGETTEXT_ARGS otherwise.
@@ -29,7 +27,6 @@ os.environ["XGETTEXT_ARGS"] = "--keyword=self.trans.gettext"
 setup(name="aptkit",
       version=aptkit.__version__,
       description="DBus driven daemon for APT",
-      long_description=readme,
       author="Sebastian Heinlein",
       author_email="devel@glatzor.de",
       packages=["aptkit", "aptkit.worker"],
