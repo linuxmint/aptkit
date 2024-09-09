@@ -28,7 +28,7 @@ Do not shutdown the daemon after an idle time.
 Instead of applying the changes to the system only show a progress. This option is only usable for developers to locate problems in client applications.
 .SH FILES
 .TP
-.I /etc/apt/apt.conf.d/20dbus
+.I /etc/apt/apt.conf.d/20aptkit
 Adds a small post update hook which will emit the org.debian.apt.CacheChanged signal on the system D-Bus to indicate that the cache has been changed and a possible running aptk instance should reloade its internal cache.
 .TP
 .I /usr/share/polkit-1/actions/org.debian.apt.policy

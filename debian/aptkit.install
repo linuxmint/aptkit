@@ -1,4 +1,4 @@
-etc/apt/apt.conf.d/20dbus
+etc/apt/apt.conf.d/20aptkit
 etc/dbus-1/system.d/org.debian.apt.conf
 ../../build/scripts-3.*/aptk /usr/sbin
 ../../build/scripts-3.*/aptkcon /usr/bin
