@@ -1,0 +1,9 @@
+build
+debian/aptkit*/*
+debian/python3-aptkit*/
+debian/tmp
+debian/*debhelper*
+debian/*substvars*
+debian/files
+.pybuild/
+aptkit.egg-info/
