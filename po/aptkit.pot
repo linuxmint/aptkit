@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-09 17:51+0100\n"
+"POT-Creation-Date: 2024-09-09 19:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
@@ -967,74 +966,70 @@ msgstr ""
 #. TRANSLATORS: %s is a list of package names
 #: ../aptkit/progress.py:168
 #, python-format
-msgid "Downloading %(files)s"
-msgid_plural "Downloading %(files)s"
-msgstr[0] ""
-msgstr[1] ""
+msgid "Downloading %s"
+msgstr ""
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: ../aptkit/progress.py:280 ../aptkit/progress.py:319
+#: ../aptkit/progress.py:277 ../aptkit/progress.py:314
 msgid "local repository"
 msgstr ""
 
 #. TRANSLATORS: %s is a list of repository names
-#: ../aptkit/progress.py:283
+#: ../aptkit/progress.py:280
 #, python-format
 msgid "Downloading from %s"
-msgid_plural "Downloading from %s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr ""
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:323
+#: ../aptkit/progress.py:318
 #, python-format
 msgid "Structure of %s"
 msgstr ""
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:326
+#: ../aptkit/progress.py:321
 #, python-format
 msgid "Description of %s"
 msgstr ""
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:329
+#: ../aptkit/progress.py:324
 #, python-format
 msgid "Description signature of %s"
 msgstr ""
 
-#: ../aptkit/progress.py:334
+#: ../aptkit/progress.py:329
 #, python-format
 msgid "Available packages from %s"
 msgstr ""
 
-#: ../aptkit/progress.py:338
+#: ../aptkit/progress.py:333
 #, python-format
 msgid "Available sources from %s"
 msgstr ""
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:341
+#: ../aptkit/progress.py:336
 #, python-format
 msgid "Available translations from %s"
 msgstr ""
 
-#: ../aptkit/progress.py:358
+#: ../aptkit/progress.py:353
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr ""
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: ../aptkit/progress.py:362
+#: ../aptkit/progress.py:357
 #, python-format
 msgid "Translations for %s from %s"
 msgstr ""
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: ../aptkit/progress.py:367
+#: ../aptkit/progress.py:362
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr ""

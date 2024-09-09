@@ -165,10 +165,7 @@ class DaemonAcquireProgress(apt.progress.base.AcquireProgress):
                 names.add(item.shortdesc)
         if names:
             # TRANSLATORS: %s is a list of package names
-            msg = self.transaction.ngettext("Downloading %(files)s",
-                                            "Downloading %(files)s",
-                                            len(items)) % {"files":
-                                                           " ".join(names)}
+            msg = self.transaction.gettext("Downloading %s") % " ".join(names)
             self.transaction.status_details = msg
 
     def done(self, item):
@@ -280,9 +277,7 @@ class DaemonAcquireRepoProgress(DaemonAcquireProgress):
                 repos.add(self.transaction.gettext("local repository"))
         if repos:
             # TRANSLATORS: %s is a list of repository names
-            msg = self.transaction.ngettext("Downloading from %s",
-                                            "Downloading from %s",
-                                            len(repos)) % " ".join(repos)
+            msg = self.transaction.gettext("Downloading from %s") % " ".join(repos)
             self.transaction.status_details = msg
 
     def _emit_acquire_item(self, item, total_size=0, current_size=0):
