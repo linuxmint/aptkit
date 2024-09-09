@@ -1,11 +1,11 @@
-# Esperanto translation for aptdaemon
+# Esperanto translation for aptkit
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the aptdaemon package.
+# This file is distributed under the same license as the aptkit package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: aptdaemon\n"
+"Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-21 15:36+0200\n"
 "PO-Revision-Date: 2012-09-15 16:37+0000\n"
@@ -27,7 +27,7 @@ msgstr "Listigi ŝlosilojn de fidataj vendejoj"
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "Aŭtentokontrolo necesas por vidi la liston da fidataj ŝlosiloj."
 
-#: ../data/org.debian.apt.policy.in.h:3 ../aptdaemon/console.py:619
+#: ../data/org.debian.apt.policy.in.h:3 ../aptkit/console.py:619
 msgid "Remove downloaded package files"
 msgstr "Forigi elŝutitajn pakaĵdosierojn"
 
@@ -97,7 +97,7 @@ msgstr "Vi necesas aŭtentigadon por instali programarojn."
 #. and InstallPackages in a row and only authenticating once.
 #.
 #. The client has to authenticate for this privilege before calling
-#. the aptdaemon methods.
+#. the aptkit methods.
 #: ../data/org.debian.apt.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "Aldoni novan deponejon kaj instali pakaĵojn el ĝi"
@@ -110,7 +110,7 @@ msgstr "Aŭtentokontrolo necesas por instali programaron el nova fonto."
 #. and InstallPackages in a row and only authenticating once.
 #.
 #. The client has to authenticate for this privilege before calling
-#. the aptdaemon methods.
+#. the aptkit methods.
 #.
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
@@ -149,38 +149,38 @@ msgid ""
 msgstr ""
 "Aŭtentokontrolo necesas por uzi prokuran servilon por elŝuti programaron."
 
-#: ../aptdaemon/console.py:215
+#: ../aptkit/console.py:215
 msgid "ERROR"
 msgstr "ERARO"
 
-#: ../aptdaemon/console.py:249
+#: ../aptkit/console.py:249
 #, fuzzy, python-format
 msgid "Downloaded %(cur)sB of %(total)sB at %(rate)sB/s"
 msgstr "%sB el %sB je %sB/s elŝutitaj"
 
-#: ../aptdaemon/console.py:255
+#: ../aptkit/console.py:255
 #, fuzzy, python-format
 msgid "Downloaded %(cur)sB of %(total)sB"
 msgstr "%sB el %sB elŝutitaj"
 
-#: ../aptdaemon/console.py:385 ../aptdaemon/console.py:390
+#: ../aptkit/console.py:385 ../aptkit/console.py:390
 msgid "ERROR:"
 msgstr "ERARO:"
 
-#: ../aptdaemon/console.py:386
+#: ../aptkit/console.py:386
 msgid "You are not allowed to perform this action."
 msgstr "Vi ne rajtas fari ĉi tiun agon."
 
-#: ../aptdaemon/console.py:409 ../aptdaemon/console.py:537
+#: ../aptkit/console.py:409 ../aptkit/console.py:537
 msgid "Queuing"
 msgstr "Enviciganta"
 
-#: ../aptdaemon/console.py:417 ../aptdaemon/enums.py:527
+#: ../aptkit/console.py:417 ../aptkit/enums.py:527
 msgid "Resolving dependencies"
 msgstr "Solvanta dependojn"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:459
+#: ../aptkit/console.py:459
 #, python-format
 msgid "The following NEW package will be installed (%(count)s):"
 msgid_plural "The following NEW packages will be installed (%(count)s):"
@@ -188,7 +188,7 @@ msgstr[0] "La sekva NOVA pakaĵo estos instalata (%(count)s):"
 msgstr[1] "La sekvaj NOVAJ pakaĵoj estos instalataj (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:467
+#: ../aptkit/console.py:467
 #, python-format
 msgid "The following package will be upgraded (%(count)s):"
 msgid_plural "The following packages will be upgraded (%(count)s):"
@@ -196,7 +196,7 @@ msgstr[0] "La sekva pakaĵo estos ĝisdatigata (%(count)s):"
 msgstr[1] "La sekvaj pakaĵoj estos ĝisdatigataj (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:475
+#: ../aptkit/console.py:475
 #, python-format
 msgid "The following package will be REMOVED (%(count)s):"
 msgid_plural "The following packages will be REMOVED (%(count)s):"
@@ -204,7 +204,7 @@ msgstr[0] "La sekva pakaĵo estos FORIGATA (%(count)s):"
 msgstr[1] "La sekvaj pakaĵoj estos FORIGATAJ (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:484
+#: ../aptkit/console.py:484
 #, python-format
 msgid "The following package will be DOWNGRADED (%(count)s):"
 msgid_plural "The following packages will be DOWNGRADED (%(count)s):"
@@ -212,53 +212,53 @@ msgstr[0] "La sekva pakaĵo estos MALĜISDATIGATA (%(count)s):"
 msgstr[1] "La sekvaj pakaĵoj estos MALĜISDATIGATAJ (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:492
+#: ../aptkit/console.py:492
 #, python-format
 msgid "The following package will be reinstalled (%(count)s):"
 msgid_plural "The following packages will be reinstalled (%(count)s):"
 msgstr[0] "La sekva pakaĵo estos reinstalata (%(count)s):"
 msgstr[1] "La sekvaj pakaĵoj estos reinstalataj (%(count)s):"
 
-#: ../aptdaemon/console.py:499
+#: ../aptkit/console.py:499
 #, python-format
 msgid "The following package has been kept back (%(count)s):"
 msgid_plural "The following packages have been kept back (%(count)s):"
 msgstr[0] "La sekva pakaĵo estas retenita (%(count)s):"
 msgstr[1] "La sekvaj pakaĵoj estas retenitaj (%(count)s):"
 
-#: ../aptdaemon/console.py:507
+#: ../aptkit/console.py:507
 #, python-format
 msgid "Need to get %sB of archives."
 msgstr "Necesas elŝuti %sB da arĥivoj."
 
-#: ../aptdaemon/console.py:510
+#: ../aptkit/console.py:510
 #, python-format
 msgid "After this operation, %sB of additional disk space will be used."
 msgstr "Post ĉi tiu ago, %sB da plia diskspaco estos uzata."
 
-#: ../aptdaemon/console.py:514
+#: ../aptkit/console.py:514
 #, python-format
 msgid "After this operation, %sB of additional disk space will be freed."
 msgstr "Post ĉi tiu ago, %sB da diskspaco estos liberigata."
 
-#: ../aptdaemon/console.py:522 ../aptdaemon/console.py:524
+#: ../aptkit/console.py:522 ../aptkit/console.py:524
 msgid "Do you want to continue [Y/n]?"
 msgstr "Ĉu vi volas daŭrigi [J/n]?"
 
-#: ../aptdaemon/console.py:545
+#: ../aptkit/console.py:545
 msgid ""
 "To operate on more than one package put the package names in quotation "
 "marks:\n"
-"aptdcon --install \"foo bar\""
+"aptkcon --install \"foo bar\""
 msgstr ""
 "Por agi por pli ol unu pakaĵo, enmetu la pakaĵnomojn en citilojn:\n"
-"aptdcon --install \"fuo baro\""
+"aptkcon --install \"fuo baro\""
 
-#: ../aptdaemon/console.py:551
+#: ../aptkit/console.py:551
 msgid "Refresh the cache"
 msgstr "Refreŝigi kaŝmemoron"
 
-#: ../aptdaemon/console.py:554
+#: ../aptkit/console.py:554
 msgid ""
 "Try to resolve broken dependencies. Potentially dangerous operation since it "
 "could try to remove many packages."
@@ -266,59 +266,59 @@ msgstr ""
 "Provi solvi rompitajn dependecojn. Tio povas esti danĝera ĉar la ago eble "
 "provus forigi multajn pakaĵojn."
 
-#: ../aptdaemon/console.py:559
+#: ../aptkit/console.py:559
 msgid "Try to finish a previous incompleted installation"
 msgstr "Provi fini antaŭe nekompletigitan instaladon"
 
-#: ../aptdaemon/console.py:563 ../aptdaemon/console.py:576
+#: ../aptkit/console.py:563 ../aptkit/console.py:576
 msgid "Install the given packages"
 msgstr "Instali la indikitajn pakaĵojn"
 
-#: ../aptdaemon/console.py:566
+#: ../aptkit/console.py:566
 msgid "Reinstall the given packages"
 msgstr "Reinstali la indikitajn pakaĵojn"
 
-#: ../aptdaemon/console.py:569
+#: ../aptkit/console.py:569
 msgid "Remove the given packages"
 msgstr "Forigi la indikitajn pakaĵojn"
 
-#: ../aptdaemon/console.py:572
+#: ../aptkit/console.py:572
 msgid "Remove the given packages including configuration files"
 msgstr "Forigi la indikitajn pakaĵojn, inkluzive agordajn dosierojn"
 
-#: ../aptdaemon/console.py:579
+#: ../aptkit/console.py:579
 msgid "Downgrade the given packages"
 msgstr "Malĝisdatigi la elektitajn pakaĵojn"
 
-#: ../aptdaemon/console.py:582
+#: ../aptkit/console.py:582
 msgid "Deprecated: Please use --safe-upgrade"
 msgstr "Evitenda: Bonvole uzu --safe-upgrade"
 
-#: ../aptdaemon/console.py:586
+#: ../aptkit/console.py:586
 msgid "Upgrade the system in a safe way"
 msgstr "Ĝisdatigi la sistemon sekurmaniere"
 
-#: ../aptdaemon/console.py:589
+#: ../aptkit/console.py:589
 msgid "Upgrade the system, possibly installing and removing packages"
 msgstr "Ĝisdatigi la sistemon, eble instaligante kaj forigante pakaĵojn."
 
-#: ../aptdaemon/console.py:593
+#: ../aptkit/console.py:593
 msgid "Add the vendor to the trusted ones"
 msgstr "Aldoni la vendiston al la fidatoj"
 
-#: ../aptdaemon/console.py:596
+#: ../aptkit/console.py:596
 msgid "Add the vendor keyid (also needs --keyserver)"
 msgstr "Aldoni la 'keyid' de la vendisto (bezonas ankaŭ --keyserver)"
 
-#: ../aptdaemon/console.py:600
+#: ../aptkit/console.py:600
 msgid "Use the given keyserver for looking up keys"
 msgstr "Uzi la indikitan ŝlosilservilon por serĉi ŝlosilojn"
 
-#: ../aptdaemon/console.py:604
+#: ../aptkit/console.py:604
 msgid "Add new repository from the given deb-line"
 msgstr "Aldoni novan deponejon per la indikita deb-linio"
 
-#: ../aptdaemon/console.py:608
+#: ../aptkit/console.py:608
 msgid ""
 "Specify an alternative sources.list.d file to which repositories should be "
 "added."
@@ -326,15 +326,15 @@ msgstr ""
 "Specifi alternativan sources.list.d-dosieron, al kiu deponejoj estu "
 "aldonataj."
 
-#: ../aptdaemon/console.py:612
+#: ../aptkit/console.py:612
 msgid "List trusted vendor keys"
 msgstr "Montri ŝlosilojn de fidataj vendistoj"
 
-#: ../aptdaemon/console.py:615
+#: ../aptkit/console.py:615
 msgid "Remove the trusted key of the given fingerprint"
 msgstr "Forigi la fidatan ŝlosilon de la indikita fingropremo"
 
-#: ../aptdaemon/console.py:622
+#: ../aptkit/console.py:622
 msgid ""
 "Reconfigure installed packages. Optionally the minimum priority of questions "
 "can be specified"
@@ -342,270 +342,270 @@ msgstr ""
 "Reagordi instalitajn pakaĵojn. Opcie la minimuma prioritato de demandoj "
 "specifeblas"
 
-#: ../aptdaemon/console.py:627
+#: ../aptkit/console.py:627
 msgid "The minimum debconf priority of question to be displayed"
 msgstr "La minimume montrenda debconf-prioritato de demandoj"
 
-#: ../aptdaemon/console.py:631
+#: ../aptkit/console.py:631
 msgid "Do not attach to the apt terminal"
 msgstr "Ne konekti al la apt-terminalo"
 
-#: ../aptdaemon/console.py:635
+#: ../aptkit/console.py:635
 msgid "Allow packages from unauthenticated sources"
 msgstr "Permesi pakaĵojn el neaŭtentigitaj fontoj"
 
-#: ../aptdaemon/console.py:639
+#: ../aptkit/console.py:639
 msgid ""
 "Show additional information about the packages. Currently only the version "
 "number"
 msgstr "Montri kromajn informojn pri la pakaĵoj. Nun nur la versionumeron"
 
-#: ../aptdaemon/console.py:647 ../aptdaemon/enums.py:532
+#: ../aptkit/console.py:647 ../aptkit/enums.py:532
 msgid "Waiting for authentication"
 msgstr "Atendanta aŭtentokontrolon"
 
-#: ../aptdaemon/core.py:2135
+#: ../aptkit/core.py:2135
 msgid "Do not shutdown the daemon because of inactivity"
 msgstr "Ne ĉesigi la demonon pro neaktiveco"
 
-#: ../aptdaemon/core.py:2140
+#: ../aptkit/core.py:2140
 msgid "Do not load any plugins"
 msgstr "Ne ŝargi iujn kromprogramojn"
 
-#: ../aptdaemon/core.py:2144
+#: ../aptkit/core.py:2144
 msgid "Show internal processing information"
 msgstr "Montri informojn pri interna traktado"
 
-#: ../aptdaemon/core.py:2149
+#: ../aptkit/core.py:2149
 msgid "Quit and replace an already running daemon"
 msgstr "Ĉesigi kaj anstataŭigi jam aktivan demonon"
 
-#: ../aptdaemon/core.py:2154
+#: ../aptkit/core.py:2154
 msgid "Listen on the DBus session bus (Only required for testing"
 msgstr "Aŭskulti je la DBus-seancbuso (nur postulata por testado)"
 
-#: ../aptdaemon/core.py:2158
+#: ../aptkit/core.py:2158
 msgid "Perform operations in the given chroot"
 msgstr "Efektivigi operaciojn en la elektita ‘chroot’"
 
-#: ../aptdaemon/core.py:2163
+#: ../aptkit/core.py:2163
 msgid "Store profile stats in the specified file"
 msgstr "Konservi profilstatojn en la specifan dosieron"
 
-#: ../aptdaemon/core.py:2168
+#: ../aptkit/core.py:2168
 msgid "Do not make any changes to the system (Only of use to developers)"
 msgstr "Ne fari ajnan ŝanĝon al la sistemo (Nur uzinda por programistoj)"
 
-#: ../aptdaemon/enums.py:337
+#: ../aptkit/enums.py:337
 msgid "Installed file"
 msgstr "Instalita dosiero"
 
-#: ../aptdaemon/enums.py:338
+#: ../aptkit/enums.py:338
 msgid "Installed packages"
 msgstr "Instalitaj pakaĵoj"
 
-#: ../aptdaemon/enums.py:339
+#: ../aptkit/enums.py:339
 msgid "Added key from file"
 msgstr "Aldonis ŝlosilon el dosiero"
 
-#: ../aptdaemon/enums.py:340
+#: ../aptkit/enums.py:340
 msgid "Updated cache"
 msgstr "Aktualigis kaŝmemoron"
 
-#: ../aptdaemon/enums.py:341
+#: ../aptkit/enums.py:341
 msgid "Search done"
 msgstr "Serĉo farita"
 
-#: ../aptdaemon/enums.py:342
+#: ../aptkit/enums.py:342
 msgid "Removed trusted key"
 msgstr "Forigis fidatan ŝlosilon"
 
-#: ../aptdaemon/enums.py:343
+#: ../aptkit/enums.py:343
 msgid "Removed packages"
 msgstr "Forigis pakaĵojn"
 
-#: ../aptdaemon/enums.py:344
+#: ../aptkit/enums.py:344
 msgid "Updated packages"
 msgstr "Ĝisdatigis pakaĵojn"
 
-#: ../aptdaemon/enums.py:345
+#: ../aptkit/enums.py:345
 msgid "Upgraded system"
 msgstr "Promociis sistemon"
 
-#: ../aptdaemon/enums.py:346
+#: ../aptkit/enums.py:346
 msgid "Applied changes"
 msgstr "Aplikis ŝanĝojn"
 
-#: ../aptdaemon/enums.py:347
+#: ../aptkit/enums.py:347
 msgid "Repaired incomplete installation"
 msgstr "Riparis nekompletan instalon"
 
-#: ../aptdaemon/enums.py:348
+#: ../aptkit/enums.py:348
 msgid "Repaired broken dependencies"
 msgstr "Riparis rompitajn dependecojn"
 
-#: ../aptdaemon/enums.py:349
+#: ../aptkit/enums.py:349
 msgid "Added software source"
 msgstr "Aldonis programaran fonton"
 
-#: ../aptdaemon/enums.py:350
+#: ../aptkit/enums.py:350
 msgid "Enabled component of the distribution"
 msgstr "Ebligis komponenton de la distribuo"
 
-#: ../aptdaemon/enums.py:351
+#: ../aptkit/enums.py:351
 msgid "Removed downloaded package files"
 msgstr "Forigis elŝutitajn pakaĵdosierojn"
 
-#: ../aptdaemon/enums.py:352
+#: ../aptkit/enums.py:352
 msgid "Reconfigured installed packages"
 msgstr "Reagordis instalitajn pakaĵojn"
 
-#: ../aptdaemon/enums.py:356
+#: ../aptkit/enums.py:356
 msgid "Successful"
 msgstr "Sukcesis"
 
-#: ../aptdaemon/enums.py:357
+#: ../aptkit/enums.py:357
 msgid "Canceled"
 msgstr "Nuligita"
 
-#: ../aptdaemon/enums.py:358 ../aptdaemon/enums.py:569
+#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
 msgid "Failed"
 msgstr "Fiaskis"
 
-#: ../aptdaemon/enums.py:361
+#: ../aptkit/enums.py:361
 msgid "Installing file"
 msgstr "Instalas dosieron"
 
-#: ../aptdaemon/enums.py:362
+#: ../aptkit/enums.py:362
 msgid "Installing packages"
 msgstr "Instalas pakaĵojn"
 
-#: ../aptdaemon/enums.py:363
+#: ../aptkit/enums.py:363
 msgid "Adding key from file"
 msgstr "Aldonas ŝlosilon el dosiero"
 
-#: ../aptdaemon/enums.py:364
+#: ../aptkit/enums.py:364
 msgid "Updating cache"
 msgstr "Aktualigas kaŝmemoron"
 
-#: ../aptdaemon/enums.py:365
+#: ../aptkit/enums.py:365
 msgid "Removing trusted key"
 msgstr "Forigas fidatan ŝlosilon"
 
-#: ../aptdaemon/enums.py:366
+#: ../aptkit/enums.py:366
 msgid "Removing packages"
 msgstr "Forigas pakaĵojn"
 
-#: ../aptdaemon/enums.py:367
+#: ../aptkit/enums.py:367
 msgid "Updating packages"
 msgstr "Ĝisdatigas pakaĵojn"
 
-#: ../aptdaemon/enums.py:368
+#: ../aptkit/enums.py:368
 msgid "Upgrading system"
 msgstr "Promocias sistemon"
 
-#: ../aptdaemon/enums.py:369 ../aptdaemon/enums.py:528
+#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
 msgid "Applying changes"
 msgstr "Aplikas ŝanĝojn"
 
-#: ../aptdaemon/enums.py:370
+#: ../aptkit/enums.py:370
 msgid "Repairing incomplete installation"
 msgstr "Riparas nekompletan instalon"
 
-#: ../aptdaemon/enums.py:371
+#: ../aptkit/enums.py:371
 msgid "Repairing installed software"
 msgstr "Riparanta instalitan programaron"
 
-#: ../aptdaemon/enums.py:372
+#: ../aptkit/enums.py:372
 msgid "Adding software source"
 msgstr "Aldonas programaran fonton"
 
-#: ../aptdaemon/enums.py:373
+#: ../aptkit/enums.py:373
 msgid "Enabling component of the distribution"
 msgstr "Ebligas komponenton de la distribuo"
 
-#: ../aptdaemon/enums.py:374
+#: ../aptkit/enums.py:374
 msgid "Removing downloaded package files"
 msgstr "Forigas elŝutitajn pakaĵdosierojn"
 
-#: ../aptdaemon/enums.py:375
+#: ../aptkit/enums.py:375
 msgid "Reconfiguring installed packages"
 msgstr "Reagordas instalitajn pakaĵojn"
 
-#: ../aptdaemon/enums.py:376 ../aptdaemon/enums.py:517
+#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
 msgid "Searching"
 msgstr "Ŝerĉanta"
 
-#: ../aptdaemon/enums.py:380
+#: ../aptkit/enums.py:380
 msgid "Installation of the package file failed"
 msgstr "Instalado de la pakaĵdosiero fiaskis"
 
-#: ../aptdaemon/enums.py:381
+#: ../aptkit/enums.py:381
 msgid "Installation of software failed"
 msgstr "Instalado de programaro fiaskis"
 
-#: ../aptdaemon/enums.py:382
+#: ../aptkit/enums.py:382
 msgid "Adding the key to the list of trusted software vendors failed"
 msgstr ""
 
-#: ../aptdaemon/enums.py:384
+#: ../aptkit/enums.py:384
 msgid "Refreshing the software list failed"
 msgstr "Fiaskis la aktualigo de la programara listo"
 
-#: ../aptdaemon/enums.py:385
+#: ../aptkit/enums.py:385
 msgid "Removing the vendor from the list of trusted ones failed"
 msgstr ""
 "Fiaskis la forigo de la programaro-liveranto el la listo de fidata programaro"
 
-#: ../aptdaemon/enums.py:387
+#: ../aptkit/enums.py:387
 msgid "Removing software failed"
 msgstr "Fiaskis forigo de programaro"
 
-#: ../aptdaemon/enums.py:388
+#: ../aptkit/enums.py:388
 msgid "Updating software failed"
 msgstr "Fiaskis la programara ĝisdatigo"
 
-#: ../aptdaemon/enums.py:389
+#: ../aptkit/enums.py:389
 msgid "Upgrading the system failed"
 msgstr "Fiaskis la promociado de la sistemo"
 
-#: ../aptdaemon/enums.py:390
+#: ../aptkit/enums.py:390
 msgid "Applying software changes failed"
 msgstr "Fiaskis la apliko de programaraj ŝanĝoj"
 
-#: ../aptdaemon/enums.py:391
+#: ../aptkit/enums.py:391
 msgid "Repairing incomplete installation failed"
 msgstr "Fiaskis la riparo de nekompleta instalo"
 
-#: ../aptdaemon/enums.py:393
+#: ../aptkit/enums.py:393
 msgid "Repairing broken dependencies failed"
 msgstr "Fiaskis la riparo de rompiĝintaj dependecoj"
 
-#: ../aptdaemon/enums.py:394
+#: ../aptkit/enums.py:394
 msgid "Adding software source failed"
 msgstr "Aldono de programara fonto fiaskis"
 
-#: ../aptdaemon/enums.py:395
+#: ../aptkit/enums.py:395
 msgid "Enabling component of the distribution failed"
 msgstr "Ebligo de komponento de la distribuo fiaskis"
 
-#: ../aptdaemon/enums.py:397 ../aptdaemon/enums.py:398
+#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
 msgid "Removing downloaded package files failed"
 msgstr "Fiaskis la forigo de elŝutitaj pakaĵdosieroj"
 
-#: ../aptdaemon/enums.py:399
+#: ../aptkit/enums.py:399
 msgid "Search failed"
 msgstr "Serĉo ne sukcesis"
 
-#: ../aptdaemon/enums.py:400
+#: ../aptkit/enums.py:400
 msgid "Adding license key"
 msgstr "Aldonanta permesilŝlosilon"
 
-#: ../aptdaemon/enums.py:404 ../aptdaemon/enums.py:405
+#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
 msgid "Check your Internet connection."
 msgstr "Kontrolu vian interret-konekton"
 
-#: ../aptdaemon/enums.py:406
+#: ../aptkit/enums.py:406
 msgid ""
 "Check if you are using third party repositories. If so disable them, since "
 "they are a common source of problems.\n"
@@ -615,12 +615,12 @@ msgstr ""
 "ilin, ĉar ili estas kutima fonto da problemoj.\n"
 "Aldone, rulu la sekvan komandon en terminalo: apt-get install -f"
 
-#: ../aptdaemon/enums.py:411
+#: ../aptkit/enums.py:411
 msgid "The selected file may not be a GPG key file or it might be corrupt."
 msgstr ""
 "Eble aŭ la elektita dosiero ne estas GPG-ŝlosila dosiero aŭ ĝi estas fuŝita."
 
-#: ../aptdaemon/enums.py:413
+#: ../aptkit/enums.py:413
 msgid ""
 "The selected key couldn't be removed. Check that you provided a valid "
 "fingerprint."
@@ -628,7 +628,7 @@ msgstr ""
 "Ne eblis forigi la elektitan ŝlosilon. Kontrolu ĉu vi provizis validan "
 "fingropremon."
 
-#: ../aptdaemon/enums.py:415
+#: ../aptkit/enums.py:415
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
@@ -636,7 +636,7 @@ msgstr ""
 "Kontrolu ĉu vi nun uzas alian programar-mastruman ilon, ekz. Synaptic aŭ "
 "aptitue. Nur unu ilo samtempe povas fari ŝanĝojn."
 
-#: ../aptdaemon/enums.py:418
+#: ../aptkit/enums.py:418
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
@@ -644,7 +644,7 @@ msgstr ""
 "Tio ĉi estas serioza problemo. Reprovu poste. Se tiu ĉi problemo prezentas "
 "sin denove, bonvolu raporti eraron al la programistoj"
 
-#: ../aptdaemon/enums.py:421
+#: ../aptkit/enums.py:421
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
@@ -652,48 +652,48 @@ msgstr ""
 "Kontrolu la literumadon de la pakaĵnomo, kaj kontrolu ĉu la ĝusta deponejo "
 "estas ebligita."
 
-#: ../aptdaemon/enums.py:423
+#: ../aptkit/enums.py:423
 msgid "There isn't any need for an update."
 msgstr "Ne necesas ĝisdatigi."
 
-#: ../aptdaemon/enums.py:424
+#: ../aptkit/enums.py:424
 msgid "There isn't any need for an installation"
 msgstr "Mankas neceso por instalado"
 
-#: ../aptdaemon/enums.py:426
+#: ../aptkit/enums.py:426
 msgid "There isn't any need for a removal."
 msgstr "Ne necasas forigado."
 
-#: ../aptdaemon/enums.py:427
+#: ../aptkit/enums.py:427
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr "Vi petis forigi pakaĵon kiu estas esenca parto de via sistemo."
 
-#: ../aptdaemon/enums.py:430
+#: ../aptkit/enums.py:430
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
 msgstr "La konekto al la demono perdiĝis. Verŝajne la fona demono kolapsis."
 
-#: ../aptdaemon/enums.py:432
+#: ../aptkit/enums.py:432
 msgid "The installation or removal of a software package failed."
 msgstr "Fiaskis la instalo aŭ forigo de programara pakaĵo."
 
-#: ../aptdaemon/enums.py:434
+#: ../aptkit/enums.py:434
 msgid "The requested feature is not supported."
 msgstr "La petita trajto ne estas subtenata"
 
-#: ../aptdaemon/enums.py:435
+#: ../aptkit/enums.py:435
 msgid ""
-"There seems to be a programming error in aptdaemon, the software that allows "
+"There seems to be a programming error in aptkit, the software that allows "
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
-"Ŝajnas, ke programaderaro estas en aptdaemon, la programaro kiu permesas vin "
+"Ŝajnas, ke programaderaro estas en aptkit, la programaro kiu permesas vin "
 "instali/forigi programarojn kaj por plenumi aliajn pakaĵadministradajn "
 "taskojn."
 
-#: ../aptdaemon/enums.py:439
+#: ../aptkit/enums.py:439
 msgid ""
 "This error could be caused by required additional software packages which "
 "are missing or not installable. Furthermore there could be a conflict "
@@ -704,11 +704,11 @@ msgstr ""
 "pakaĵoj. Krome povas esti konflikto inter programaraj pakaĵoj kiuj ne rajtas "
 "esti instalitaj samtempe."
 
-#: ../aptdaemon/enums.py:445
+#: ../aptkit/enums.py:445
 msgid "This requires installing packages from unauthenticated sources."
 msgstr "Tio necesas instalon de pakaĵoj el neaŭtentigitaj fontoj."
 
-#: ../aptdaemon/enums.py:447
+#: ../aptkit/enums.py:447
 msgid ""
 "The installation could have failed because of an error in the corresponding "
 "software package or it was cancelled in an unfriendly way. You have to "
@@ -718,14 +718,14 @@ msgstr ""
 "estis malĝuste ĉesita. Vi devas ripari ĝin antaŭ ol vi povas instali aŭ "
 "forigi ajnan plian programaron."
 
-#: ../aptdaemon/enums.py:453
+#: ../aptkit/enums.py:453
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
 msgstr ""
 "Bonvolu kopii la dosieron al via loka komputilo kaj kontroli la "
 "dosierpermesojn."
 
-#: ../aptdaemon/enums.py:456
+#: ../aptkit/enums.py:456
 msgid ""
 "The installation of a package which violates the quality standards isn't "
 "allowed. This could cause serious problems on your computer. Please contact "
@@ -737,7 +737,7 @@ msgstr ""
 "personon aŭ organizon, kiu provizis ĉi tiun pakaĵdosieron kaj inkluzivu la "
 "detalojn supre."
 
-#: ../aptdaemon/enums.py:463
+#: ../aptkit/enums.py:463
 msgid ""
 "The downloaded license key which is required to run this piece of software "
 "is not valid or could not be installed correctly.\n"
@@ -747,11 +747,11 @@ msgstr ""
 "programaro, ne estas valida aŭ eble ne estas korekte instalita.\n"
 "Vidu la detalojn por pliaj informoj."
 
-#: ../aptdaemon/enums.py:469
+#: ../aptkit/enums.py:469
 msgid "All available upgrades have already been installed."
 msgstr "Ĉiuj disponeblaj ĝisdatigoj estas jam instalitaj."
 
-#: ../aptdaemon/enums.py:471
+#: ../aptkit/enums.py:471
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
@@ -759,12 +759,12 @@ msgstr ""
 "La permesilŝlosilo, kiu permesas vin uzi ĉi tiun eron de programaro, ne "
 "elŝuteblas. Bonvole kontrolu vian retkonekton."
 
-#: ../aptdaemon/enums.py:475
+#: ../aptkit/enums.py:475
 #, fuzzy
 msgid "You don't have the required privileges to perform this action."
 msgstr "Vi ne rajtas fari ĉi tiun agon."
 
-#: ../aptdaemon/enums.py:477
+#: ../aptkit/enums.py:477
 msgid ""
 "You either provided a wrong password or cancelled the authorization.\n"
 "Furthermore there could also be a technical reason for this error if you "
@@ -772,313 +772,313 @@ msgid ""
 "PolicyKit session agent."
 msgstr ""
 
-#: ../aptdaemon/enums.py:485
+#: ../aptkit/enums.py:485
 msgid "Failed to download package files"
 msgstr "Fiaskis elŝuti pakaĵdosierojn"
 
-#: ../aptdaemon/enums.py:486
+#: ../aptkit/enums.py:486
 msgid "Failed to download repository information"
 msgstr "Fiaskis elŝuti deponejajn informojn"
 
-#: ../aptdaemon/enums.py:488
+#: ../aptkit/enums.py:488
 msgid "Package dependencies cannot be resolved"
 msgstr "Pakaĵaj dependecoj ne povas esti solvataj"
 
-#: ../aptdaemon/enums.py:489
+#: ../aptkit/enums.py:489
 msgid "The package system is broken"
 msgstr "La pakaĵa sistemo estas kaduka"
 
-#: ../aptdaemon/enums.py:490
+#: ../aptkit/enums.py:490
 msgid "Key was not installed"
 msgstr "Ŝlosilo estas neinstalita"
 
-#: ../aptdaemon/enums.py:491
+#: ../aptkit/enums.py:491
 msgid "Key was not removed"
 msgstr "Ŝlosilo estas neforigita"
 
-#: ../aptdaemon/enums.py:492
+#: ../aptkit/enums.py:492
 msgid "Failed to lock the package manager"
 msgstr "Fiaskis ŝlosi la pakaĵadministrilon"
 
-#: ../aptdaemon/enums.py:493
+#: ../aptkit/enums.py:493
 msgid "Failed to load the package list"
 msgstr "Fiaskis ŝargi la pakaĵliston"
 
-#: ../aptdaemon/enums.py:494
+#: ../aptkit/enums.py:494
 msgid "Package does not exist"
 msgstr "Pakaĵo ne ekzistas"
 
-#: ../aptdaemon/enums.py:495
+#: ../aptkit/enums.py:495
 msgid "Package is already up to date"
 msgstr "Pakaĵo estas jam ĝisdata"
 
-#: ../aptdaemon/enums.py:496
+#: ../aptkit/enums.py:496
 msgid "Package is already installed"
 msgstr "Pakaĵo jam estas instalita"
 
-#: ../aptdaemon/enums.py:497
+#: ../aptkit/enums.py:497
 msgid "Package isn't installed"
 msgstr "Pakaĵo ne estas instalita"
 
-#: ../aptdaemon/enums.py:498
+#: ../aptkit/enums.py:498
 msgid "Failed to remove essential system package"
 msgstr "Fiaskis forigi estencan sistempakaĵon"
 
-#: ../aptdaemon/enums.py:500
+#: ../aptkit/enums.py:500
 msgid "Task cannot be monitored or controlled"
 msgstr "Tasko ne povas esti monitorata aŭ kontrolata"
 
-#: ../aptdaemon/enums.py:501
+#: ../aptkit/enums.py:501
 msgid "Package operation failed"
 msgstr "Pakaĵoperacio fiaskis"
 
-#: ../aptdaemon/enums.py:502
+#: ../aptkit/enums.py:502
 msgid "Requires installation of untrusted packages"
 msgstr "Postulas instalon de nefidataj pakaĵoj"
 
-#: ../aptdaemon/enums.py:504
+#: ../aptkit/enums.py:504
 msgid "Previous installation hasn't been completed"
 msgstr "Antaŭa instalo ne estis kompletigita"
 
-#: ../aptdaemon/enums.py:505
+#: ../aptkit/enums.py:505
 msgid "The package is of bad quality"
 msgstr "La pakaĵo estas malbonkvalita"
 
-#: ../aptdaemon/enums.py:506
+#: ../aptkit/enums.py:506
 msgid "Package file could not be opened"
 msgstr "Ne eblis malfermi pakaĵdosieron"
 
-#: ../aptdaemon/enums.py:507
+#: ../aptkit/enums.py:507
 msgid "Not supported feature"
 msgstr "Nesubtenata trajto"
 
-#: ../aptdaemon/enums.py:508
+#: ../aptkit/enums.py:508
 msgid "Failed to download the license key"
 msgstr "Elŝuto de permesilŝlosilo fiaskis"
 
-#: ../aptdaemon/enums.py:509
+#: ../aptkit/enums.py:509
 msgid "Failed to install the license key"
 msgstr "Instalo de permesilŝlosilo fiaskis"
 
-#: ../aptdaemon/enums.py:510
+#: ../aptkit/enums.py:510
 msgid "The system is already up to date"
 msgstr "La sistemo estas jam ĝisdata"
 
-#: ../aptdaemon/enums.py:511
+#: ../aptkit/enums.py:511
 msgid "You could not be authorized"
 msgstr ""
 
-#: ../aptdaemon/enums.py:512
+#: ../aptkit/enums.py:512
 msgid "You are not allowed to perform this action"
 msgstr ""
 
-#: ../aptdaemon/enums.py:513
+#: ../aptkit/enums.py:513
 msgid "An unhandlable error occured"
 msgstr "Okazis netraktebla eraro"
 
-#: ../aptdaemon/enums.py:516
+#: ../aptkit/enums.py:516
 msgid "Waiting for service to start"
 msgstr "Atendas la starton de servo"
 
-#: ../aptdaemon/enums.py:518
+#: ../aptkit/enums.py:518
 msgid "Waiting"
 msgstr "Atendas"
 
-#: ../aptdaemon/enums.py:519
+#: ../aptkit/enums.py:519
 msgid "Waiting for required medium"
 msgstr "Atendas postulatan datumportilon"
 
-#: ../aptdaemon/enums.py:520
+#: ../aptkit/enums.py:520
 msgid "Waiting for other software managers to quit"
 msgstr "Atendas ĝis aliaj programaraj administriloj ĉesas"
 
-#: ../aptdaemon/enums.py:521
+#: ../aptkit/enums.py:521
 msgid "Waiting for configuration file prompt"
 msgstr "Atendas la fenestron de la agordodosiero"
 
-#: ../aptdaemon/enums.py:523
+#: ../aptkit/enums.py:523
 msgid "Running task"
 msgstr "Aktiva tasko"
 
-#: ../aptdaemon/enums.py:524
+#: ../aptkit/enums.py:524
 msgid "Downloading"
 msgstr "Elŝutas"
 
-#: ../aptdaemon/enums.py:525
+#: ../aptkit/enums.py:525
 msgid "Querying software sources"
 msgstr "Petanta pri programarfontoj"
 
-#: ../aptdaemon/enums.py:526
+#: ../aptkit/enums.py:526
 msgid "Cleaning up"
 msgstr "Purigado"
 
-#: ../aptdaemon/enums.py:529
+#: ../aptkit/enums.py:529
 msgid "Finished"
 msgstr "Finita"
 
-#: ../aptdaemon/enums.py:530
+#: ../aptkit/enums.py:530
 msgid "Cancelling"
 msgstr "Nuligas"
 
-#: ../aptdaemon/enums.py:531
+#: ../aptkit/enums.py:531
 msgid "Loading software list"
 msgstr "Ŝargas programaran liston"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:536
+#: ../aptkit/enums.py:536
 #, python-format
 msgid "Installing %s"
 msgstr "Instalado de %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:538
+#: ../aptkit/enums.py:538
 #, python-format
 msgid "Configuring %s"
 msgstr "Agordado de %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:540
+#: ../aptkit/enums.py:540
 #, python-format
 msgid "Removing %s"
 msgstr "Forigado de %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:542
+#: ../aptkit/enums.py:542
 #, python-format
 msgid "Completely removing %s"
 msgstr "Tute foriganta %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:544
+#: ../aptkit/enums.py:544
 #, python-format
 msgid "Noting disappearance of %s"
 msgstr "Notanta malaperon de %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:546
+#: ../aptkit/enums.py:546
 #, python-format
 msgid "Running post-installation trigger %s"
 msgstr "Rulas post-instalan ekagilon %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:548
+#: ../aptkit/enums.py:548
 #, python-format
 msgid "Upgrading %s"
 msgstr "Promociado de %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:550
+#: ../aptkit/enums.py:550
 #, python-format
 msgid "Unpacking %s"
 msgstr "Malpakanta %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:552
+#: ../aptkit/enums.py:552
 #, python-format
 msgid "Preparing installation of %s"
 msgstr "Pretiganta instalon de %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:554
+#: ../aptkit/enums.py:554
 #, python-format
 msgid "Preparing configuration of %s"
 msgstr "Pretiganta agordojn por %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:556
+#: ../aptkit/enums.py:556
 #, python-format
 msgid "Preparing removal of %s"
 msgstr "Pretiganta forigon de %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:558
+#: ../aptkit/enums.py:558
 #, python-format
 msgid "Preparing complete removal of %s"
 msgstr "Pretiganta tutan forigon de %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:560
+#: ../aptkit/enums.py:560
 #, python-format
 msgid "Installed %s"
 msgstr "%s instalita"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:562
+#: ../aptkit/enums.py:562
 #, python-format
 msgid "Completely removed %s"
 msgstr "%s tute forigata"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:564
+#: ../aptkit/enums.py:564
 #, python-format
 msgid "Removed %s"
 msgstr "%s forigita"
 
-#: ../aptdaemon/enums.py:567
+#: ../aptkit/enums.py:567
 msgid "Done"
 msgstr "Preta"
 
-#: ../aptdaemon/enums.py:568
+#: ../aptkit/enums.py:568
 msgid "Authentication failed"
 msgstr "Aŭtentokontrolo malsukcesis"
 
-#: ../aptdaemon/enums.py:570
+#: ../aptkit/enums.py:570
 msgid "Fetching"
 msgstr "Venigas"
 
-#: ../aptdaemon/enums.py:571
+#: ../aptkit/enums.py:571
 msgid "Idle"
 msgstr "Senokupe"
 
-#: ../aptdaemon/enums.py:572
+#: ../aptkit/enums.py:572
 msgid "Network isn't available"
 msgstr "Reto ne disponeblas"
 
-#: ../aptdaemon/enums.py:704
+#: ../aptkit/enums.py:704
 #, python-format
 msgid "Processing %s"
 msgstr "Procesanta %s"
 
-#: ../aptdaemon/gtk3widgets.py:306
+#: ../aptkit/gtk3widgets.py:306
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
 msgstr "%sB el %sB je %sB/s elŝutitaj"
 
-#: ../aptdaemon/gtk3widgets.py:311 ../aptdaemon/gtk3widgets.py:510
+#: ../aptkit/gtk3widgets.py:311 ../aptkit/gtk3widgets.py:510
 #, python-format
 msgid "Downloaded %sB of %sB"
 msgstr "%sB el %sB elŝutitaj"
 
-#: ../aptdaemon/gtk3widgets.py:323
+#: ../aptkit/gtk3widgets.py:323
 msgid "Details"
 msgstr "Detaloj"
 
-#: ../aptdaemon/gtk3widgets.py:474
+#: ../aptkit/gtk3widgets.py:474
 msgid "File"
 msgstr "Dosiero"
 
 #. TRANSLATORS: header of the progress download column
-#: ../aptdaemon/gtk3widgets.py:479
+#: ../aptkit/gtk3widgets.py:479
 msgid "%"
 msgstr "%"
 
-#: ../aptdaemon/gtk3widgets.py:515
+#: ../aptkit/gtk3widgets.py:515
 #, python-format
 msgid "Downloaded %sB"
 msgstr "Elŝutis %sB"
 
-#: ../aptdaemon/gtk3widgets.py:518
+#: ../aptkit/gtk3widgets.py:518
 msgid "Downloaded"
 msgstr "Elŝutis"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: ../aptdaemon/gtk3widgets.py:853
+#: ../aptkit/gtk3widgets.py:853
 #, python-format
 msgid "CD/DVD '%s' is required"
 msgstr "Lumdisko '%s' estas bezonata"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: ../aptdaemon/gtk3widgets.py:855
+#: ../aptkit/gtk3widgets.py:855
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
@@ -1087,35 +1087,35 @@ msgstr ""
 "Metu la supre indikitan CD/DVD en ingo '%s' por instali programarajn "
 "pakaĵojn el ĝi."
 
-#: ../aptdaemon/gtk3widgets.py:859 ../aptdaemon/gtk3widgets.py:880
+#: ../aptkit/gtk3widgets.py:859 ../aptkit/gtk3widgets.py:880
 msgid "C_ontinue"
 msgstr "D_aŭrigi"
 
-#: ../aptdaemon/gtk3widgets.py:931
+#: ../aptkit/gtk3widgets.py:931
 msgid "Install"
 msgstr "Instali"
 
-#: ../aptdaemon/gtk3widgets.py:932
+#: ../aptkit/gtk3widgets.py:932
 msgid "Reinstall"
 msgstr "Reinstali"
 
-#: ../aptdaemon/gtk3widgets.py:933
+#: ../aptkit/gtk3widgets.py:933
 msgid "Remove"
 msgstr "Forigi"
 
-#: ../aptdaemon/gtk3widgets.py:934
+#: ../aptkit/gtk3widgets.py:934
 msgid "Purge"
 msgstr "Plene forigi"
 
-#: ../aptdaemon/gtk3widgets.py:935
+#: ../aptkit/gtk3widgets.py:935
 msgid "Upgrade"
 msgstr "Ĝisdatigi"
 
-#: ../aptdaemon/gtk3widgets.py:936
+#: ../aptkit/gtk3widgets.py:936
 msgid "Downgrade"
 msgstr "Malĝisdatigi"
 
-#: ../aptdaemon/gtk3widgets.py:937
+#: ../aptkit/gtk3widgets.py:937
 msgid "Skip upgrade"
 msgstr "Preterpasi ĝisdatigon"
 
@@ -1124,59 +1124,59 @@ msgstr "Preterpasi ĝisdatigon"
 #. FIXME: adapt the title and message accordingly
 #. FIXME: Should we have different modes? Only show dependencies, only
 #. initial packages or both?
-#: ../aptdaemon/gtk3widgets.py:948
+#: ../aptkit/gtk3widgets.py:948
 msgid "Please take a look at the list of changes below."
 msgstr "Bonvolu rigardi la suban ŝanĝoliston."
 
-#: ../aptdaemon/gtk3widgets.py:956
+#: ../aptkit/gtk3widgets.py:956
 msgid "Additional software has to be installed"
 msgstr "Aldona programaro devas esti instalita"
 
-#: ../aptdaemon/gtk3widgets.py:958
+#: ../aptkit/gtk3widgets.py:958
 msgid "Additional software has to be re-installed"
 msgstr "Aldona programaro devas esti reinstalita"
 
-#: ../aptdaemon/gtk3widgets.py:960
+#: ../aptkit/gtk3widgets.py:960
 msgid "Additional software has to be removed"
 msgstr "Aldona programaro devas esti forigita"
 
-#: ../aptdaemon/gtk3widgets.py:962
+#: ../aptkit/gtk3widgets.py:962
 msgid "Additional software has to be purged"
 msgstr "Aldona programaro devas esti plene forigita"
 
-#: ../aptdaemon/gtk3widgets.py:964
+#: ../aptkit/gtk3widgets.py:964
 msgid "Additional software has to be upgraded"
 msgstr "Aldona programaro devas esti ĝisdatigita"
 
-#: ../aptdaemon/gtk3widgets.py:966
+#: ../aptkit/gtk3widgets.py:966
 msgid "Additional software has to be downgraded"
 msgstr "Aldona programaro devas esti malpromociita"
 
-#: ../aptdaemon/gtk3widgets.py:968
+#: ../aptkit/gtk3widgets.py:968
 msgid "Updates will be skipped"
 msgstr "Ĝisdatigoj estos transsaltataj"
 
-#: ../aptdaemon/gtk3widgets.py:976
+#: ../aptkit/gtk3widgets.py:976
 msgid "Additional changes are required"
 msgstr "Aldona ŝanĝoj nepras"
 
-#: ../aptdaemon/gtk3widgets.py:981
+#: ../aptkit/gtk3widgets.py:981
 #, python-format
 msgid "%sB will be downloaded in total."
 msgstr "Entute %sB devos esti elŝutita."
 
-#: ../aptdaemon/gtk3widgets.py:985
+#: ../aptkit/gtk3widgets.py:985
 #, python-format
 msgid "%sB of disk space will be freed."
 msgstr "%sB da diskspaco estos liberigita"
 
-#: ../aptdaemon/gtk3widgets.py:989
+#: ../aptkit/gtk3widgets.py:989
 #, python-format
 msgid "%sB more disk space will be used."
 msgstr "%sB da plia diskspaco estos uzata."
 
 #. TRANSLATORS: %s is a file path
-#: ../aptdaemon/gtk3widgets.py:1061
+#: ../aptkit/gtk3widgets.py:1061
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
@@ -1184,7 +1184,7 @@ msgstr ""
 "Ĉu anstataŭigi viajn ŝanĝojn en '%s' per pli nova versio de la agordo-"
 "dosiero?"
 
-#: ../aptdaemon/gtk3widgets.py:1063
+#: ../aptkit/gtk3widgets.py:1063
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
@@ -1192,30 +1192,30 @@ msgstr ""
 "Se vi ne scias kial la dosiero jam ekzistas, kutime vi povas senprobleme "
 "anstataŭigi ĝin."
 
-#: ../aptdaemon/gtk3widgets.py:1072
+#: ../aptkit/gtk3widgets.py:1072
 msgid "_Changes"
 msgstr "Ŝa_nĝoj"
 
-#: ../aptdaemon/gtk3widgets.py:1075
+#: ../aptkit/gtk3widgets.py:1075
 msgid "_Keep"
 msgstr "_Konservi"
 
-#: ../aptdaemon/gtk3widgets.py:1076
+#: ../aptkit/gtk3widgets.py:1076
 msgid "_Replace"
 msgstr "_Anstataŭigi"
 
-#: ../aptdaemon/gtk3widgets.py:1179
+#: ../aptkit/gtk3widgets.py:1179
 msgid "_Details"
 msgstr "_Detaloj"
 
 #. TRANSLATORS: %s is the name of a package manager
-#: ../aptdaemon/lock.py:182
+#: ../aptkit/lock.py:182
 #, python-format
 msgid "Waiting for %s to exit"
 msgstr "Atendas ĝis %s ĉesas"
 
 #. TRANSLATORS: %s is a list of package names
-#: ../aptdaemon/progress.py:169
+#: ../aptkit/progress.py:169
 #, python-format
 msgid "Downloading %(files)s"
 msgid_plural "Downloading %(files)s"
@@ -1224,12 +1224,12 @@ msgstr[1] "Elŝutas %(files)s"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: ../aptdaemon/progress.py:281 ../aptdaemon/progress.py:320
+#: ../aptkit/progress.py:281 ../aptkit/progress.py:320
 msgid "local repository"
 msgstr "lokaj deponejoj"
 
 #. TRANSLATORS: %s is a list of repository names
-#: ../aptdaemon/progress.py:284
+#: ../aptkit/progress.py:284
 #, python-format
 msgid "Downloading from %s"
 msgid_plural "Downloading from %s"
@@ -1237,107 +1237,107 @@ msgstr[0] "Elŝutanta el %s"
 msgstr[1] "Elŝutanta el %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:324
+#: ../aptkit/progress.py:324
 #, python-format
 msgid "Structure of %s"
 msgstr "Strukturo de %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:327
+#: ../aptkit/progress.py:327
 #, python-format
 msgid "Description of %s"
 msgstr "Priskribo de %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:330
+#: ../aptkit/progress.py:330
 #, python-format
 msgid "Description signature of %s"
 msgstr "Priskriba subskribo de %s"
 
-#: ../aptdaemon/progress.py:335
+#: ../aptkit/progress.py:335
 #, python-format
 msgid "Available packages from %s"
 msgstr "Disponeblaj pakaĵoj de %s"
 
-#: ../aptdaemon/progress.py:339
+#: ../aptkit/progress.py:339
 #, python-format
 msgid "Available sources from %s"
 msgstr "Disponeblaj fontoj ĉe %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:342
+#: ../aptkit/progress.py:342
 #, python-format
 msgid "Available translations from %s"
 msgstr "Disponeblaj tradukoj ĉe %s"
 
-#: ../aptdaemon/progress.py:359
+#: ../aptkit/progress.py:359
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr "Tradukoj por la %s (%s) ĉe %s"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: ../aptdaemon/progress.py:363
+#: ../aptkit/progress.py:363
 #, python-format
 msgid "Translations for %s from %s"
 msgstr "Tradukoj por la %s ĉe %s"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: ../aptdaemon/progress.py:368
+#: ../aptkit/progress.py:368
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr "Tradukoj (%s) el %s"
 
-#: ../aptdaemon/worker/aptworker.py:374 ../aptdaemon/worker/aptworker.py:671
-#: ../aptdaemon/worker/aptworker.py:748 ../aptdaemon/worker/aptworker.py:791
+#: ../aptkit/worker/aptworker.py:374 ../aptkit/worker/aptworker.py:671
+#: ../aptkit/worker/aptworker.py:748 ../aptkit/worker/aptworker.py:791
 #, python-format
 msgid "Package %s isn't available"
 msgstr "Pakaĵo %s estas nedisponebla"
 
-#: ../aptdaemon/worker/aptworker.py:379 ../aptdaemon/worker/aptworker.py:675
-#: ../aptdaemon/worker/aptworker.py:752 ../aptdaemon/worker/aptworker.py:795
+#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:675
+#: ../aptkit/worker/aptworker.py:752 ../aptkit/worker/aptworker.py:795
 #, python-format
 msgid "Package %s isn't installed"
 msgstr "Pakaĵo %s ne estas instalita"
 
-#: ../aptdaemon/worker/aptworker.py:383
+#: ../aptkit/worker/aptworker.py:383
 #, python-format
 msgid "The version %s of %s isn't installed"
 msgstr "La versio %s de %s ne estas instalita"
 
-#: ../aptdaemon/worker/aptworker.py:398
+#: ../aptkit/worker/aptworker.py:398
 #, python-format
 msgid "Package %s is already installed"
 msgstr "Pakaĵo %s estas jam instalita"
 
-#: ../aptdaemon/worker/aptworker.py:407 ../aptdaemon/worker/aptworker.py:821
+#: ../aptkit/worker/aptworker.py:407 ../aptkit/worker/aptworker.py:821
 #, python-format
 msgid "The version %s of %s isn't available."
 msgstr "La versio %s de %s ne estas havebla."
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
-#: ../aptdaemon/worker/aptworker.py:565
+#: ../aptkit/worker/aptworker.py:565
 #, python-format
 msgid "The keyserver URL is invalid: %s"
 msgstr "URL de la ŝlosila servilo nevalidas: %s"
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
-#: ../aptdaemon/worker/aptworker.py:571
+#: ../aptkit/worker/aptworker.py:571
 #, python-format
 msgid "Invalid protocol of the server: %s"
 msgstr "Nevalida protokolo de la servilo: %s"
 
 #. TRANSLATORS: %s is the id of a GnuPG key
 #. e.g. E08ADE95
-#: ../aptdaemon/worker/aptworker.py:579 ../aptdaemon/worker/aptworker.py:623
+#: ../aptkit/worker/aptworker.py:579 ../aptkit/worker/aptworker.py:623
 #, python-format
 msgid "Invalid key id: %s"
 msgstr "Nevalida identigilo de ŝlosilo: %s"
 
-#: ../aptdaemon/worker/aptworker.py:587
+#: ../aptkit/worker/aptworker.py:587
 #, python-format
 msgid ""
 "Failed to download and install the key %s from %s:\n"
@@ -1346,62 +1346,62 @@ msgstr ""
 "Fiaskis elŝuti kaj instali la ŝlosilon %s el %s:\n"
 "%s"
 
-#: ../aptdaemon/worker/aptworker.py:604
+#: ../aptkit/worker/aptworker.py:604
 #, python-format
 msgid "Key file %s couldn't be installed: %s"
 msgstr "Ne eblis instali ŝlosildosieron %s: %s"
 
-#: ../aptdaemon/worker/aptworker.py:628
+#: ../aptkit/worker/aptworker.py:628
 #, python-format
 msgid "Key with fingerprint %s couldn't be removed: %s"
 msgstr "Ne eblis forigi ŝlosilon kun fingropremo %s: %s"
 
-#: ../aptdaemon/worker/aptworker.py:679
+#: ../aptkit/worker/aptworker.py:679
 #, python-format
 msgid "Package %s cannot be removed."
 msgstr "Ne eblas forigi pakaĵon %s."
 
-#: ../aptdaemon/worker/aptworker.py:683
+#: ../aptkit/worker/aptworker.py:683
 #, python-format
 msgid "The version %s of %s is not installed"
 msgstr "La versio %s de %s ne estas instalita"
 
-#: ../aptdaemon/worker/aptworker.py:763
+#: ../aptkit/worker/aptworker.py:763
 #, python-format
 msgid "The former version %s of %s is already installed"
 msgstr "La antaŭa versio %s de %s jam estas instalita"
 
-#: ../aptdaemon/worker/aptworker.py:768 ../aptdaemon/worker/aptworker.py:814
+#: ../aptkit/worker/aptworker.py:768 ../aptkit/worker/aptworker.py:814
 #, python-format
 msgid "The version %s of %s is already installed"
 msgstr "La versio %s de %s jam estas instalita"
 
-#: ../aptdaemon/worker/aptworker.py:775
+#: ../aptkit/worker/aptworker.py:775
 #, python-format
 msgid "The version %s of %s isn't available"
 msgstr "La versio %s de %s ne estas havebla"
 
-#: ../aptdaemon/worker/aptworker.py:779
+#: ../aptkit/worker/aptworker.py:779
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
 msgstr "Vi devas specifi version al kiu %s estu malpromociata"
 
-#: ../aptdaemon/worker/aptworker.py:807
+#: ../aptkit/worker/aptworker.py:807
 #, python-format
 msgid "The later version %s of %s is already installed"
 msgstr "La pli posta versio %s de %s jam estas instalita"
 
-#: ../aptdaemon/worker/aptworker.py:838
+#: ../aptkit/worker/aptworker.py:838
 #, python-format
 msgid "The package %s isn't available in the %s release."
 msgstr "La pakaĵo %s ne estas havebla en la eldono %s."
 
-#: ../aptdaemon/worker/aptworker.py:1026
+#: ../aptkit/worker/aptworker.py:1026
 #, python-format
 msgid "Package %s cannot be removed"
 msgstr "Ne eblas forigi pakaĵon %s"
 
-#: ../aptdaemon/worker/aptworker.py:1123
+#: ../aptkit/worker/aptworker.py:1123
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
@@ -1409,25 +1409,25 @@ msgstr ""
 "La pakaĵo ne provizas validan kontrolkampon 'Installed-Size' (Grando-"
 "Instalita). Vidu Debian-politikon 5.6.20."
 
-#: ../aptdaemon/worker/aptworker.py:1265
+#: ../aptkit/worker/aptworker.py:1265
 msgid "The license key is empty"
 msgstr "La permesilŝlosilo estas malplena"
 
-#: ../aptdaemon/worker/aptworker.py:1281
+#: ../aptkit/worker/aptworker.py:1281
 msgid "The license key is not allowed to contain executable code."
 msgstr "La permesilŝlosilo ne estas permesita por enhavi ruleblan kodon."
 
-#: ../aptdaemon/worker/aptworker.py:1290
+#: ../aptkit/worker/aptworker.py:1290
 #, python-format
 msgid "The license key path %s is invalid"
 msgstr "La pado de la permesilŝlosilo %s nevalidas"
 
-#: ../aptdaemon/worker/aptworker.py:1294
+#: ../aptkit/worker/aptworker.py:1294
 #, python-format
 msgid "The license key already exists: %s"
 msgstr "La permesilŝlosilo jam ekzistas: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1299
+#: ../aptkit/worker/aptworker.py:1299
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
@@ -1436,40 +1436,40 @@ msgstr ""
 "La loko de la permesilŝlosilo ne sekuras, ekde ĝi enhavas simbolajn "
 "ligilojn. La pado %s ligas al %s"
 
-#: ../aptdaemon/worker/aptworker.py:1307
+#: ../aptkit/worker/aptworker.py:1307
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
 msgstr "La dosierujo, kie instali la ŝlosilo ne ankoraŭ ekzistas: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1318
+#: ../aptkit/worker/aptworker.py:1318
 #, python-format
 msgid "Failed to write key file to: %s"
 msgstr "Skribado de la ŝlosildosiero en %s fiaskis"
 
-#: ../aptdaemon/worker/aptworker.py:1353
+#: ../aptkit/worker/aptworker.py:1353
 msgid "The following packages have unmet dependencies:"
 msgstr "La sekvaj pakaĵoj havas neefektivigitajn dependecojn:"
 
-#: ../aptdaemon/worker/aptworker.py:1406
+#: ../aptkit/worker/aptworker.py:1406
 msgid "but it is a virtual package"
 msgstr "sed ĝi estas virtuala pakaĵo"
 
-#: ../aptdaemon/worker/aptworker.py:1409
+#: ../aptkit/worker/aptworker.py:1409
 msgid "but it is not installed"
 msgstr "sed ĝi ne estas instalita"
 
-#: ../aptdaemon/worker/aptworker.py:1411
+#: ../aptkit/worker/aptworker.py:1411
 msgid "but it is not going to be installed"
 msgstr "sed ĝi ne estas instalota"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptdaemon/worker/aptworker.py:1415
+#: ../aptkit/worker/aptworker.py:1415
 #, python-format
 msgid "but %s is installed"
 msgstr "sed %s estas instalita"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptdaemon/worker/aptworker.py:1419
+#: ../aptkit/worker/aptworker.py:1419
 #, python-format
 msgid "but %s is to be installed"
 msgstr "sed %s estas instalota"

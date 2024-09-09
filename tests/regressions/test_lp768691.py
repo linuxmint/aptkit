@@ -8,7 +8,7 @@ import os
 import sys
 import unittest
 
-from aptdaemon import core, enums, test, errors, utils
+from aptkit import core, enums, test, errors, utils
 
 DEBUG = True
 
@@ -16,7 +16,7 @@ if sys.version >= '3':
     unicode = str
 
 
-class GettextTest(test.AptDaemonTestCase):
+class GettextTest(test.AptKitTestCase):
 
     """Regression test for LP: #768691 and LP: #926340
 
@@ -24,7 +24,7 @@ class GettextTest(test.AptDaemonTestCase):
     If we try to perform a string format operation, Python wants to convert
     string to unicode. If the daemon is running with a different
     default encoding as the translated message this results in an error.
-    By defaulf aptdaemon runs as C if activated by D-Bus.
+    By defaulf aptkit runs as C if activated by D-Bus.
     """
 
     def setUp(self):

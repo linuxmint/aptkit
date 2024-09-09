@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Provides unit tests for the APTDAEMON high-trust-repo feature."""
+"""Provides unit tests for the APTKIT high-trust-repo feature."""
 # Copyright (C) 2011 Sebastian Heinlein <devel@glatzor.de>
 #
 # Licensed under the GNU General Public License Version 2
@@ -32,29 +32,29 @@ from gi.repository import GLib
 from mock import (
     patch)
 
-import aptdaemon.client
-from aptdaemon.policykit1 import (
+import aptkit.client
+from aptkit.policykit1 import (
     PK_ACTION_INSTALL_PACKAGES_FROM_HIGH_TRUST_REPO as PK_ACTION)
-import aptdaemon.test
+import aptkit.test
 
-from aptdaemon.worker.aptworker import (
+from aptkit.worker.aptworker import (
     _read_high_trust_repository_whitelist_file,
     read_high_trust_repository_dir,
     trans_only_installs_pkgs_from_high_trust_repos,
     AptWorker)
-from aptdaemon.core import Transaction
-from aptdaemon import enums
+from aptkit.core import Transaction
+from aptkit import enums
 
 
-REPO_PATH = os.path.join(aptdaemon.test.get_tests_dir(), "repo")
+REPO_PATH = os.path.join(aptkit.test.get_tests_dir(), "repo")
 
 PY3K = sys.version_info.major > 2
 
 
-class BaseHighTrustTestCase(aptdaemon.test.AptDaemonTestCase):
+class BaseHighTrustTestCase(aptkit.test.AptKitTestCase):
 
     def setUp(self):
-        self.chroot = aptdaemon.test.Chroot()
+        self.chroot = aptkit.test.Chroot()
         self.chroot.setup()
         self.addCleanup(self.chroot.remove)
         self.loop = GLib.MainLoop()
@@ -66,7 +66,7 @@ class HighTrustRepositoryTestCase(BaseHighTrustTestCase):
 
     def setUp(self):
         super(HighTrustRepositoryTestCase, self).setUp()
-        self.queue = aptdaemon.test.MockQueue()
+        self.queue = aptkit.test.MockQueue()
         self.worker = AptWorker(chroot=self.chroot.path, load_plugins=False)
         self.worker.connect("transaction-done", lambda w, t: self.loop.quit())
         self.worker.connect("transaction-simulated",
@@ -74,7 +74,7 @@ class HighTrustRepositoryTestCase(BaseHighTrustTestCase):
 
     def test_read_high_trust_repository_whitelist_dir(self):
         whitelist = read_high_trust_repository_dir(
-            os.path.join(aptdaemon.test.get_tests_dir(),
+            os.path.join(aptkit.test.get_tests_dir(),
                          "data/high-trust-repository-whitelist.d"))
         self.assertEqual(
             whitelist, set([("Ubuntu", "main", "foo.*"),
@@ -82,24 +82,24 @@ class HighTrustRepositoryTestCase(BaseHighTrustTestCase):
 
     def test_read_high_trust_repository_whitelist(self):
         whitelist = _read_high_trust_repository_whitelist_file(
-            os.path.join(aptdaemon.test.get_tests_dir(),
+            os.path.join(aptkit.test.get_tests_dir(),
                          "data/high-trust-repository-whitelist.cfg"))
         self.assertEqual(
             whitelist, set([("Ubuntu", "main", "foo.*"),
                             ("Debian-Security", "non-free", "^bar$")]))
 
-    @patch("aptdaemon.worker.log")
+    @patch("aptkit.worker.log")
     def test_read_high_trust_repository_whitelist_broken(self, mock_log):
         """ test that a broken repo file results in a empty whitelist """
         whitelist = _read_high_trust_repository_whitelist_file(
-            os.path.join(aptdaemon.test.get_tests_dir(),
+            os.path.join(aptkit.test.get_tests_dir(),
                          "data/high-trust-repository-whitelist-broken.cfg"))
         self.assertEqual(whitelist, set())
         # ensure we log a error if the config file is broken
         # Skip due to LP: #1487087
         #mock_log.error.assert_called()
 
-    @patch("aptdaemon.worker.log")
+    @patch("aptkit.worker.log")
     def test_read_high_trust_repository_whitelist_not_there(self, mock_log):
         whitelist = _read_high_trust_repository_whitelist_file(
             "lalalala-not-there-really.cfg")
@@ -109,7 +109,7 @@ class HighTrustRepositoryTestCase(BaseHighTrustTestCase):
 
     def test_high_trust_repository(self):
         """Test if using a high_trust repo is working """
-        self.chroot.add_repository(os.path.join(aptdaemon.test.get_tests_dir(),
+        self.chroot.add_repository(os.path.join(aptkit.test.get_tests_dir(),
                                                 "repo/whitelisted"))
         # setup a whitelist
         self.worker._high_trust_repositories.add(
@@ -143,14 +143,14 @@ class HighTrustRepositoryIntegrationTestCase(BaseHighTrustTestCase):
 
     def setUp(self):
         super(HighTrustRepositoryIntegrationTestCase, self).setUp()
-        # Start aptdaemon with the chroot on the session bus
+        # Start aptkit with the chroot on the session bus
         self.start_dbus_daemon()
         self.bus = dbus.bus.BusConnection(self.dbus_address)
         # setup the environment first including the high-trust whitelist
-        self.chroot.add_repository(os.path.join(aptdaemon.test.get_tests_dir(),
+        self.chroot.add_repository(os.path.join(aptkit.test.get_tests_dir(),
                                                 "repo/whitelisted"))
         whitelist_file = os.path.join(
-            self.chroot.path, "etc", "aptdaemon",
+            self.chroot.path, "etc", "aptkit",
             "high-trust-repository-whitelist.d", "test.cfg")
         os.makedirs(os.path.dirname(whitelist_file))
 
@@ -161,34 +161,34 @@ origin = Ubuntu
 component =
 pkgnames = silly.*
 """)
-        # *after* that start the aptdaemon
-        self.start_session_aptd(self.chroot.path)
+        # *after* that start the aptkit
+        self.start_session_aptk(self.chroot.path)
         time.sleep(1)
         # start policykit and *only* allow from-whitelisted repo pk action
         self.start_fake_polkitd(PK_ACTION)
         time.sleep(1)
 
     def test_high_trust_polkit_ok(self):
-        self.client = aptdaemon.client.AptClient(self.bus)
+        self.client = aptkit.client.AptClient(self.bus)
         # test that the high trust whitelist works
         trans = self.client.install_packages(["silly-base"])
         trans.simulate()
         trans.connect("finished", lambda a, b: self.loop.quit())
         trans.run()
         self.loop.run()
-        self.assertEqual(trans.exit, aptdaemon.enums.EXIT_SUCCESS)
+        self.assertEqual(trans.exit, aptkit.enums.EXIT_SUCCESS)
         # plus ensure removal will not work
         trans = self.client.remove_packages(["silly-base"])
-        with self.assertRaises(aptdaemon.errors.NotAuthorizedError):
+        with self.assertRaises(aptkit.errors.NotAuthorizedError):
             trans.run()
 
     def test_high_trust_polkit_not_ok(self):
-        self.client = aptdaemon.client.AptClient(self.bus)
+        self.client = aptkit.client.AptClient(self.bus)
         # ensure that non-whitelisted packages can not be installed
         trans = self.client.install_packages(["other-pkg"])
         trans.simulate()
         trans.connect("finished", lambda a, b: self.loop.quit())
-        with self.assertRaises(aptdaemon.errors.NotAuthorizedError):
+        with self.assertRaises(aptkit.errors.NotAuthorizedError):
             trans.run()
 
 

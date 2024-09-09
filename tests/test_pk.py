@@ -28,21 +28,21 @@ import apt.auth
 from gi.repository import GLib
 from gi.repository import PackageKitGlib as pk
 
-import aptdaemon.test
+import aptkit.test
 
-REPO_PATH = os.path.join(aptdaemon.test.get_tests_dir(), "repo")
+REPO_PATH = os.path.join(aptkit.test.get_tests_dir(), "repo")
 DEBUG = True
 
 
 @unittest.skip("Removed PackageKit compat")
-class PackageKitTest(aptdaemon.test.AptDaemonTestCase):
+class PackageKitTest(aptkit.test.AptKitTestCase):
 
     """Test the PackageKit compatibility layer."""
 
     def setUp(self):
-        """Setup a chroot, run the aptdaemon and a fake PolicyKit daemon."""
+        """Setup a chroot, run the aptkit and a fake PolicyKit daemon."""
         # Setup chroot
-        self.chroot = aptdaemon.test.Chroot()
+        self.chroot = aptkit.test.Chroot()
         self.chroot.setup()
         self.addCleanup(self.chroot.remove)
         self.chroot.add_test_repository()
@@ -58,10 +58,10 @@ class PackageKitTest(aptdaemon.test.AptDaemonTestCase):
             f.write('Dir "%s";\n' % self.chroot.path)
         os.environ['APT_CONFIG'] = apt_conf
 
-        # if tests install keys, have aptd query a local fake server
-        os.environ['APTDAEMON_KEYSERVER'] = 'hkp://localhost:19191'
+        # if tests install keys, have aptk query a local fake server
+        os.environ['APTKIT_KEYSERVER'] = 'hkp://localhost:19191'
 
-        self.start_session_aptd(self.chroot.path)
+        self.start_session_aptk(self.chroot.path)
         # Start the fake PolikcyKit daemon
         self.start_fake_polkitd()
         time.sleep(2.0)
@@ -169,7 +169,7 @@ class PackageKitTest(aptdaemon.test.AptDaemonTestCase):
         """Test downloading packages."""
         pkg_filename = "silly-base_0.1-0update1_all.deb"
         pkg_id = "silly-base;0.1-0update1;all;"
-        temp_dir = tempfile.mkdtemp(prefix="aptd-download-test-")
+        temp_dir = tempfile.mkdtemp(prefix="aptk-download-test-")
 
         client = pk.Client()
         res = client.download_packages([pkg_id], temp_dir,
@@ -250,7 +250,7 @@ class PackageKitTest(aptdaemon.test.AptDaemonTestCase):
 
     def test_get_updates_security(self):
         """Test if security updates are detected correctly."""
-        self.chroot.add_repository(os.path.join(aptdaemon.test.get_tests_dir(),
+        self.chroot.add_repository(os.path.join(aptkit.test.get_tests_dir(),
                                                 "repo/security"))
         pkg = "silly-base_0.1-0_all.deb"
         self.chroot.install_debfile(os.path.join(REPO_PATH, pkg), True)
@@ -271,7 +271,7 @@ class PackageKitTest(aptdaemon.test.AptDaemonTestCase):
 
     def test_get_updates_backports(self):
         """Test if backports are detected correctly."""
-        self.chroot.add_repository(os.path.join(aptdaemon.test.get_tests_dir(),
+        self.chroot.add_repository(os.path.join(aptkit.test.get_tests_dir(),
                                                 "repo/backports"))
         pkg = "silly-base_0.1-0_all.deb"
         self.chroot.install_debfile(os.path.join(REPO_PATH, pkg), True)
@@ -350,7 +350,7 @@ class PackageKitTest(aptdaemon.test.AptDaemonTestCase):
 
         # add plugin for extra codecs
         f = open(os.path.join(self.workdir, "extra_codecs.py"), "w")
-        f.write("""import aptdaemon.pkenums as enums
+        f.write("""import aptkit.pkenums as enums
 
 def fake_what_provides(cache, type, search):
     if type in (enums.PROVIDES_CODEC, enums.PROVIDES_ANY):
@@ -376,7 +376,7 @@ def fake_what_provides(cache, type, search):
 
         # another plugin to test chaining and a new type
         f = open(os.path.join(self.workdir, "more_stuff.py"), "w")
-        f.write("""import aptdaemon.pkenums as enums
+        f.write("""import aptkit.pkenums as enums
 
 def my_what_provides(cache, type, search):
     if type in (enums.PROVIDES_CODEC, enums.PROVIDES_ANY):
@@ -578,7 +578,7 @@ def setUp():
 
     This requires to run nosetests to launch this test suite.
     """
-    proc, address = aptdaemon.test.start_dbus_daemon()
+    proc, address = aptkit.test.start_dbus_daemon()
     os.environ["DBUS_SYSTEM_BUS_ADDRESS"] = address
     # The pk.Client uses a DBus connection with exit-on-disconnect set to
     # True which cannot be modified. Furthermore the registered signal

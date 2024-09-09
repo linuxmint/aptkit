@@ -46,13 +46,13 @@ except ImportError:
 
 from ..pkutils import (bitfield_add, bitfield_remove, bitfield_summarize,
                        bitfield_contains)
-from . import enums as aptd_enums
+from . import enums as aptkit_enums
 from ..errors import TransactionFailed
 from ..progress import DaemonAcquireProgress
 from . import aptworker
 
 
-pklog = logging.getLogger("AptDaemon.PackageKitWorker")
+pklog = logging.getLogger("AptKit.PackageKitWorker")
 
 # Check if update-manager-core is installed to get aware of the
 # latest distro releases
@@ -217,50 +217,50 @@ class AptPackageKitWorker(aptworker.AptWorker):
             return aptworker.AptWorker._run_transaction(self, trans)
 
     def _simulate_and_emit_packages(self, trans):
-        trans.status = aptd_enums.STATUS_RUNNING
+        trans.status = aptkit_enums.STATUS_RUNNING
 
         self._simulate_transaction_idle(trans)
 
         # The simulate method lets the transaction fail in the case of an
         # error
-        if trans.exit == aptd_enums.EXIT_UNFINISHED:
+        if trans.exit == aptkit_enums.EXIT_UNFINISHED:
             # It is a little bit complicated to get the packages but avoids
             # a larger refactoring of apt.AptWorker._simulate()
-            for pkg in trans.depends[aptd_enums.PKGS_INSTALL]:
+            for pkg in trans.depends[aptkit_enums.PKGS_INSTALL]:
                 self._emit_package(trans,
                                    self._cache[self._split_package_id(pkg)[0]],
                                    pk.InfoEnum.INSTALLING)
-            for pkg in trans.depends[aptd_enums.PKGS_REINSTALL]:
+            for pkg in trans.depends[aptkit_enums.PKGS_REINSTALL]:
                 self._emit_package(trans,
                                    self._cache[self._split_package_id(pkg)[0]],
                                    pk.InfoEnum.REINSTALLING)
-            for pkg in trans.depends[aptd_enums.PKGS_REMOVE]:
+            for pkg in trans.depends[aptkit_enums.PKGS_REMOVE]:
                 self._emit_package(trans,
                                    self._cache[self._split_package_id(pkg)[0]],
                                    pk.InfoEnum.REMOVING)
-            for pkg in trans.depends[aptd_enums.PKGS_PURGE]:
+            for pkg in trans.depends[aptkit_enums.PKGS_PURGE]:
                 self._emit_package(trans,
                                    self._cache[self._split_package_id(pkg)[0]],
                                    pk.InfoEnum.REMOVING)
-            for pkg in trans.depends[aptd_enums.PKGS_UPGRADE]:
+            for pkg in trans.depends[aptkit_enums.PKGS_UPGRADE]:
                 self._emit_package(trans,
                                    self._cache[self._split_package_id(pkg)[0]],
                                    pk.InfoEnum.UPDATING, force_candidate=True)
-            for pkg in trans.depends[aptd_enums.PKGS_DOWNGRADE]:
+            for pkg in trans.depends[aptkit_enums.PKGS_DOWNGRADE]:
                 self._emit_package(trans,
                                    self._cache[self._split_package_id(pkg)[0]],
                                    pk.InfoEnum.DOWNGRADING,
                                    force_candidate=True)
-            for pkg in trans.depends[aptd_enums.PKGS_KEEP]:
+            for pkg in trans.depends[aptkit_enums.PKGS_KEEP]:
                 self._emit_package(trans,
                                    self._cache[self._split_package_id(pkg)[0]],
                                    pk.InfoEnum.BLOCKED, force_candidate=True)
             for pkg in trans.unauthenticated:
                 self._emit_package(trans, self._cache[pkg],
                                    pk.InfoEnum.UNTRUSTED, force_candidate=True)
-            trans.status = aptd_enums.STATUS_FINISHED
+            trans.status = aptkit_enums.STATUS_FINISHED
             trans.progress = 100
-            trans.exit = aptd_enums.EXIT_SUCCESS
+            trans.exit = aptkit_enums.EXIT_SUCCESS
         tid = trans.tid[:]
         self.trans = None
         self.marked_tid = None
@@ -269,8 +269,8 @@ class AptPackageKitWorker(aptworker.AptWorker):
 
     def query(self, trans):
         """Run the worker"""
-        if trans.role != aptd_enums.ROLE_PK_QUERY:
-            raise TransactionFailed(aptd_enums.ERROR_UNKNOWN,
+        if trans.role != aptkit_enums.ROLE_PK_QUERY:
+            raise TransactionFailed(aptkit_enums.ERROR_UNKNOWN,
                                     "The transaction doesn't seem to be "
                                     "a query")
         if trans.pktrans.role == pk.RoleEnum.RESOLVE:
@@ -302,7 +302,7 @@ class AptPackageKitWorker(aptworker.AptWorker):
         elif trans.pktrans.role == pk.RoleEnum.INSTALL_SIGNATURE:
             self.install_signature(trans, **trans.kwargs)
         else:
-            raise TransactionFailed(aptd_enums.ERROR_UNKNOWN,
+            raise TransactionFailed(aptkit_enums.ERROR_UNKNOWN,
                                     "Role %s isn't supported",
                                     trans.pktrans.role)
 
@@ -345,7 +345,7 @@ class AptPackageKitWorker(aptworker.AptWorker):
                 self._emit_visible_packages_by_name(trans, filters,
                                                     result_names)
             else:
-                raise TransactionFailed(aptd_enums.ERROR_INTERNAL_ERROR,
+                raise TransactionFailed(aptkit_enums.ERROR_INTERNAL_ERROR,
                                         "%s %s" % (stdout, stderr))
         # Search for installed files
         filenames_regex = []
@@ -713,7 +713,7 @@ class AptPackageKitWorker(aptworker.AptWorker):
 
     def resolve(self, trans, filters, packages):
         """Implement org.freedesktop.PackageKit.Transaction.Resolve()"""
-        trans.status = aptd_enums.STATUS_QUERY
+        trans.status = aptkit_enums.STATUS_QUERY
         trans.progress = 101
         self.cancellable = False
 
@@ -731,7 +731,7 @@ class AptPackageKitWorker(aptworker.AptWorker):
             try:
                 pkg = self._cache[name]
             except KeyError:
-                raise TransactionFailed(aptd_enums.ERROR_NO_PACKAGE,
+                raise TransactionFailed(aptkit_enums.ERROR_NO_PACKAGE,
                                         "Package name %s could not be "
                                         "resolved.", name)
             else:
@@ -794,7 +794,7 @@ class AptPackageKitWorker(aptworker.AptWorker):
                 self._emit_package(trans, pkg)
 
         # Setup the transaction
-        self.status = aptd_enums.STATUS_RESOLVING_DEP
+        self.status = aptkit_enums.STATUS_RESOLVING_DEP
         trans.progress = 101
         self.cancellable = True
 
@@ -823,7 +823,7 @@ class AptPackageKitWorker(aptworker.AptWorker):
 
         Recursive searching is not supported.
         """
-        self.status = aptd_enums.STATUS_RESOLVING_DEP
+        self.status = aptkit_enums.STATUS_RESOLVING_DEP
         self.progress = 101
         self.cancellable = True
         for id in package_ids:
@@ -863,7 +863,7 @@ class AptPackageKitWorker(aptworker.AptWorker):
                 pkg_ver = self._get_version_by_id(id)
                 if not pkg_ver.downloadable:
                     raise TransactionFailed(
-                        aptd_enums.ERROR_PACKAGE_DOWNLOAD_FAILED,
+                        aptkit_enums.ERROR_PACKAGE_DOWNLOAD_FAILED,
                         "package %s isn't downloadable" % id)
                 total += pkg_ver.size
                 versions.append((id, pkg_ver))
@@ -872,16 +872,16 @@ class AptPackageKitWorker(aptworker.AptWorker):
                 end = start + ver.size * 100 / total
                 yield id, ver, start, end
                 downloaded += ver.size
-        trans.status = aptd_enums.STATUS_DOWNLOADING
+        trans.status = aptkit_enums.STATUS_DOWNLOADING
         trans.cancellable = True
         trans.progress = 10
         # Check the destination directory
         if store_in_cache:
             dest = apt_pkg.config.find_dir("Dir::Cache::archives")
         else:
-            dest = tempfile.mkdtemp(prefix="aptdaemon-download")
+            dest = tempfile.mkdtemp(prefix="aptkit-download")
         if not os.path.isdir(dest) or not os.access(dest, os.W_OK):
-            raise TransactionFailed(aptd_enums.ERROR_INTERNAL_ERROR,
+            raise TransactionFailed(aptkit_enums.ERROR_INTERNAL_ERROR,
                                     "The directory '%s' is not writable" %
                                     dest)
         # Start the download
@@ -892,7 +892,7 @@ class AptPackageKitWorker(aptworker.AptWorker):
                 ver.fetch_binary(dest, progress)
             except Exception as error:
                 raise TransactionFailed(
-                    aptd_enums.ERROR_PACKAGE_DOWNLOAD_FAILED, str(error))
+                    aptkit_enums.ERROR_PACKAGE_DOWNLOAD_FAILED, str(error))
             else:
                 path = os.path.join(dest, os.path.basename(ver.filename))
                 trans.emit_files(id, [path])
@@ -929,21 +929,21 @@ class AptPackageKitWorker(aptworker.AptWorker):
 
         if not supported_type and provides_type != pk.ProvidesEnum.ANY:
             # none of the plugins felt responsible for this type
-            raise TransactionFailed(aptd_enums.ERROR_NOT_SUPPORTED,
+            raise TransactionFailed(aptkit_enums.ERROR_NOT_SUPPORTED,
                                     "Query type '%s' is not supported" %
                                     pk.provides_enum_to_string(provides_type))
 
     def repo_enable(self, trans, repo_id, enabled):
         """Enable or disable a repository."""
         if not enabled:
-            raise TransactionFailed(aptd_enums.ERROR_NOT_SUPPORTED,
+            raise TransactionFailed(aptkit_enums.ERROR_NOT_SUPPORTED,
                                     "Disabling repositories is not "
                                     "implemented")
 
         fields = repo_id.split()
         if len(fields) < 3 or fields[0] not in ('deb', 'deb-src'):
             raise TransactionFailed(
-                aptd_enums.ERROR_NOT_SUPPORTED,
+                aptkit_enums.ERROR_NOT_SUPPORTED,
                 "Unknown repository ID format: %s" % repo_id)
 
         self.add_repository(trans, fields[0], fields[1], fields[2],
@@ -952,10 +952,10 @@ class AptPackageKitWorker(aptworker.AptWorker):
     def install_signature(self, trans, sig_type, key_id, package_id):
         """Install an archive key."""
         if sig_type != pk.SigTypeEnum.GPG:
-            raise TransactionFailed(aptd_enums.ERROR_NOT_SUPPORTED,
+            raise TransactionFailed(aptkit_enums.ERROR_NOT_SUPPORTED,
                                     "Type %s is not supported" % sig_type)
         try:
-            keyserver = os.environ["APTDAEMON_KEYSERVER"]
+            keyserver = os.environ["APTKIT_KEYSERVER"]
         except KeyError:
             if platform.dist()[0] == "Ubuntu":
                 keyserver = "hkp://keyserver.ubuntu.com:80"
@@ -1209,17 +1209,17 @@ class AptPackageKitWorker(aptworker.AptWorker):
         try:
             pkg = self._cache[name]
         except KeyError:
-            raise TransactionFailed(aptd_enums.ERROR_NO_PACKAGE,
+            raise TransactionFailed(aptkit_enums.ERROR_NO_PACKAGE,
                                     "There isn't any package named %s",
                                     name)
         try:
             version = pkg.versions[version_string]
         except:
-            raise TransactionFailed(aptd_enums.ERROR_NO_PACKAGE,
+            raise TransactionFailed(aptkit_enums.ERROR_NO_PACKAGE,
                                     "Verion %s doesn't exist",
                                     version_string)
         if version.architecture != arch:
-            raise TransactionFailed(aptd_enums.ERROR_NO_PACKAGE,
+            raise TransactionFailed(aptkit_enums.ERROR_NO_PACKAGE,
                                     "Version %s of %s isn't available "
                                     "for architecture %s",
                                     pkg.name, version.version, arch)
@@ -1302,9 +1302,9 @@ class AptPackageKitWorker(aptworker.AptWorker):
                                            install_range)
 
         if (hasattr(trans, "pktrans") and
-            (trans.role == aptd_enums.ROLE_UPGRADE_SYSTEM or
-             trans.packages[aptd_enums.PKGS_UPGRADE] or
-             trans.depends[aptd_enums.PKGS_UPGRADE])):
+            (trans.role == aptkit_enums.ROLE_UPGRADE_SYSTEM or
+             trans.packages[aptkit_enums.PKGS_UPGRADE] or
+             trans.depends[aptkit_enums.PKGS_UPGRADE])):
             self._emit_require_restart(trans)
 
 

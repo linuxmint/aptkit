@@ -1,4 +1,4 @@
-Aptdaemon documentation
+Aptkit documentation
 =======================
 
 Contents:
@@ -6,9 +6,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   aptdaemon.client
-   aptdaemon.enums
-   aptdaemon.gtk3widgets
+   aptkit.client
+   aptkit.enums
+   aptkit.gtk3widgets
 
    dbus
    plugins

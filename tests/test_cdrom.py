@@ -9,31 +9,31 @@ import unittest
 import defer
 import dbus
 
-import aptdaemon.client
-import aptdaemon.loop
-import aptdaemon.enums
+import aptkit.client
+import aptkit.loop
+import aptkit.enums
 
-import aptdaemon.test
+import aptkit.test
 
 DEBUG = True
 
 
-class CDROMTestCase(aptdaemon.test.AptDaemonTestCase):
+class CDROMTestCase(aptkit.test.AptKitTestCase):
 
     """Test the installation from removable media, e.g. CDROMs."""
 
     def setUp(self):
-        """Setup a chroot, run the aptdaemon and a fake PolicyKit daemon."""
+        """Setup a chroot, run the aptkit and a fake PolicyKit daemon."""
         # Setup chroot
-        self.chroot = aptdaemon.test.Chroot()
+        self.chroot = aptkit.test.Chroot()
         self.chroot.setup()
         self.addCleanup(self.chroot.remove)
         self.chroot.add_trusted_key()
         self.chroot.add_cdrom_repository()
-        # Start aptdaemon with the chroot on the session bus
+        # Start aptkit with the chroot on the session bus
         self.start_dbus_daemon()
         self.bus = dbus.bus.BusConnection(self.dbus_address)
-        self.start_session_aptd(self.chroot.path)
+        self.start_session_aptk(self.chroot.path)
         # Start the fake PolikcyKit daemon
         self.start_fake_polkitd()
         time.sleep(1)
@@ -54,41 +54,41 @@ class CDROMTestCase(aptdaemon.test.AptDaemonTestCase):
 
     def _on_finished(self, trans, exit):
         """Callback to stop the mainloop after a transaction is done."""
-        aptdaemon.loop.mainloop.quit()
+        aptkit.loop.mainloop.quit()
 
     def test(self):
         """Test changing media."""
         @defer.inline_callbacks
         def run():
-            self.client = aptdaemon.client.AptClient(self.bus)
+            self.client = aptkit.client.AptClient(self.bus)
             trans = yield self.client.install_packages(["silly-depend-base"])
             trans.connect("finished", self._on_finished)
             trans.connect("medium-required", self._on_medium_required)
             yield trans.run()
             defer.return_value(trans)
         deferred = run()
-        aptdaemon.loop.mainloop.run()
-        self.assertEqual(deferred.result.exit, aptdaemon.enums.EXIT_SUCCESS)
+        aptkit.loop.mainloop.run()
+        self.assertEqual(deferred.result.exit, aptkit.enums.EXIT_SUCCESS)
 
     def test_cancel(self):
         """Test cancelling a required medium request."""
         @defer.inline_callbacks
         def run():
-            self.client = aptdaemon.client.AptClient(self.bus)
+            self.client = aptkit.client.AptClient(self.bus)
             trans = yield self.client.install_packages(["silly-depend-base"])
             trans.connect("finished", self._on_finished)
             trans.connect("medium-required", self._on_medium_required_cancel)
             yield trans.run()
             defer.return_value(trans)
         deferred = run()
-        aptdaemon.loop.mainloop.run()
-        self.assertEqual(deferred.result.exit, aptdaemon.enums.EXIT_CANCELLED)
+        aptkit.loop.mainloop.run()
+        self.assertEqual(deferred.result.exit, aptkit.enums.EXIT_CANCELLED)
 
         self.chroot.mount_cdrom()
 
         deferred = run()
-        aptdaemon.loop.mainloop.run()
-        self.assertEqual(deferred.result.exit, aptdaemon.enums.EXIT_SUCCESS)
+        aptkit.loop.mainloop.run()
+        self.assertEqual(deferred.result.exit, aptkit.enums.EXIT_SUCCESS)
 
 
 if __name__ == "__main__":

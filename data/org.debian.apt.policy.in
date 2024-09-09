@@ -5,7 +5,7 @@
 <policyconfig>
 
   <vendor>Apt Daemon</vendor>
-  <vendor_url>http://launchpad.net/aptdaemon/</vendor_url>
+  <vendor_url>http://launchpad.net/aptkit/</vendor_url>
   <icon_name>package-x-generic</icon_name>
 
   <action id="org.debian.apt.get-trusted-vendor-keys">
@@ -135,7 +135,7 @@
 	 and InstallPackages in a row and only authenticating once.
 
          The client has to authenticate for this privilege before calling
-	 the aptdaemon methods. -->
+	 the aptkit methods. -->
     <_description>
       Add a new repository and install packages from it
     </_description>
@@ -154,7 +154,7 @@
 	 and InstallPackages in a row and only authenticating once.
 
          The client has to authenticate for this privilege before calling
-	 the aptdaemon methods. 
+	 the aptkit methods. 
 	 
 	 The only difference to install-packages-from-new-repo is the wording
 	 of the message. It is required by Ubuntu's Software-Center. -->

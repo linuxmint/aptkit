@@ -37,29 +37,29 @@ from mock import (
     Mock,
     patch)
 
-import aptdaemon.test
-from aptdaemon.worker.aptworker import (
+import aptkit.test
+from aptkit.worker.aptworker import (
     AptWorker)
-from aptdaemon.core import Transaction
-from aptdaemon import enums, errors
+from aptkit.core import Transaction
+from aptkit import enums, errors
 
 
-REPO_PATH = os.path.join(aptdaemon.test.get_tests_dir(), "repo")
+REPO_PATH = os.path.join(aptkit.test.get_tests_dir(), "repo")
 
 PY3K = sys.version_info.major > 2
 
 
-class WorkerTestCase(aptdaemon.test.AptDaemonTestCase):
+class WorkerTestCase(aptkit.test.AptKitTestCase):
 
     """Test suite for the worker which performs the actual package
     installation and removal."""
 
     def setUp(self):
-        self.chroot = aptdaemon.test.Chroot()
+        self.chroot = aptkit.test.Chroot()
         self.chroot.setup()
         self.addCleanup(self.chroot.remove)
         self.loop = GLib.MainLoop()
-        self.queue = aptdaemon.test.MockQueue()
+        self.queue = aptkit.test.MockQueue()
         self.worker = AptWorker(chroot=self.chroot.path, load_plugins=False)
         self.worker.connect("transaction-done", lambda w, t: self.loop.quit())
         self.worker.connect("transaction-simulated",
@@ -120,7 +120,7 @@ class WorkerTestCase(aptdaemon.test.AptDaemonTestCase):
         with open(os.path.join(self.chroot.path, "var/log/apt/history.log")) \
                 as history_file:
             history = history_file.read()
-        self.assertTrue("Commandline: aptdaemon role='%s'" % trans.role in
+        self.assertTrue("Commandline: aptkit role='%s'" % trans.role in
                         history)
 
         self.assertEqual(self.worker._cache["silly-base"].installed.version,
@@ -457,7 +457,7 @@ Auto-Installed: 1""")
                                     "server_name": "mock"},
                             connect=False)
         os.makedirs(os.path.join(
-            aptdaemon.worker.aptworker.apt_pkg.config["Dir"],
+            aptkit.worker.aptworker.apt_pkg.config["Dir"],
             "opt/silly-license/"))
         self.worker.plugins["get_license_key"] = [get_license_key_mock]
         self.worker.run(trans)
@@ -467,7 +467,7 @@ Auto-Installed: 1""")
                                      trans._error_property[1]))
         # Check the content of the installed key
         verify_path = os.path.join(
-            aptdaemon.worker.aptworker.apt_pkg.config["Dir"], license_path[1:])
+            aptkit.worker.aptworker.apt_pkg.config["Dir"], license_path[1:])
         with open(verify_path) as verify_file:
             self.assertEqual(license_key, verify_file.read(),
                              "Content of license key doesn't match")

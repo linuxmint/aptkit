@@ -28,7 +28,7 @@ import unittest
 
 import apt_pkg
 
-from aptdaemon.config import ConfigWriter
+from aptkit.config import ConfigWriter
 
 
 class ConfigurationParserTestCase(unittest.TestCase):

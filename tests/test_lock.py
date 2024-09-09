@@ -9,9 +9,9 @@ import subprocess
 import sys
 import unittest
 
-import aptdaemon.test
+import aptkit.test
 
-import aptdaemon.worker.aptworker
+import aptkit.worker.aptworker
 
 DEBUG = False
 
@@ -21,17 +21,17 @@ apt_pkg.init()
 
 class LockTest(unittest.TestCase):
 
-    REMOTE_REPO = "deb copy://%s/repo ./" % aptdaemon.test.get_tests_dir()
+    REMOTE_REPO = "deb copy://%s/repo ./" % aptkit.test.get_tests_dir()
 
     def setUp(self):
-        self.chroot = aptdaemon.test.Chroot("-lock-test")
+        self.chroot = aptkit.test.Chroot("-lock-test")
         self.chroot.setup()
         self.addCleanup(self.chroot.remove)
         # Required to change the lock pathes to the chroot
-        self.worker = aptdaemon.worker.aptworker.AptWorker(
+        self.worker = aptkit.worker.aptworker.AptWorker(
             chroot=self.chroot.path,
             load_plugins=False)
-        pkg_path = os.path.join(aptdaemon.test.get_tests_dir(),
+        pkg_path = os.path.join(aptkit.test.get_tests_dir(),
                                 "repo/silly-base_0.1-0_all.deb")
         self.dpkg_cmd = ["fakeroot", "dpkg", "--root", self.chroot.path,
                          "--log=%s/var/log/dpkg.log" % self.chroot.path,
@@ -42,7 +42,7 @@ class LockTest(unittest.TestCase):
                          '-o "Dir::Bin::Dpkg"="%s/dpkg-wrapper.sh" '
                          '-o "DPkg::Options::"="--root=%s" -y --force-yes' %
                          (self.chroot.path, self.chroot.path,
-                          aptdaemon.test.get_tests_dir(), self.chroot.path))
+                          aptkit.test.get_tests_dir(), self.chroot.path))
         self.apt_cmd = ('apt-get update -o "Dir"="%s" -o "Dir::state::status="'
                         '"%s/var/lib/dpkg/status"' %
                         (self.chroot.path, self.chroot.path))
@@ -59,12 +59,12 @@ class LockTest(unittest.TestCase):
     def test_global_lock(self):
         """Check if the lock blocks dpkg and apt-get."""
         # Lock!
-        aptdaemon.worker.aptworker.lock.acquire()
+        aptkit.worker.aptworker.lock.acquire()
         self.assertEqual(2, subprocess.call(self.dpkg_cmd, env=self.env))
         self.assertEqual(100, subprocess.call(self.apt_cmd, env=self.env,
                          shell=True))
         # Relase and all should work again!
-        aptdaemon.worker.aptworker.lock.release()
+        aptkit.worker.aptworker.lock.release()
         self.assertEqual(0, subprocess.call(self.dpkg_cmd, env=self.env))
         self.assertEqual(0, subprocess.call(self.apt_cmd, env=self.env,
                          shell=True))
@@ -72,12 +72,12 @@ class LockTest(unittest.TestCase):
     def test_status_lock(self):
         """Test the lock on the status lock."""
         # Lock!
-        aptdaemon.worker.aptworker.lock.status_lock.acquire()
+        aptkit.worker.aptworker.lock.status_lock.acquire()
         self.assertEqual(2, subprocess.call(self.dpkg_cmd, env=self.env))
         self.assertEqual(0, subprocess.call(self.apt_cmd, env=self.env,
                          shell=True))
         # Relase and all should work again!
-        aptdaemon.worker.aptworker.lock.status_lock.release()
+        aptkit.worker.aptworker.lock.status_lock.release()
         self.assertEqual(0, subprocess.call(self.dpkg_cmd, env=self.env))
         self.assertEqual(0, subprocess.call(self.apt_cmd, env=self.env,
                          shell=True))
@@ -85,20 +85,20 @@ class LockTest(unittest.TestCase):
     def test_lists_lock(self):
         """Test the lock on the repository packages lists."""
         # Lock!
-        aptdaemon.worker.aptworker.lock.lists_lock.acquire()
+        aptkit.worker.aptworker.lock.lists_lock.acquire()
         # Dpkg doesn't care about the lock
         self.assertEqual(0, subprocess.call(self.dpkg_cmd, env=self.env))
         self.assertEqual(100, subprocess.call(self.apt_cmd, env=self.env,
                          shell=True))
         # Relase and all should work again!
-        aptdaemon.worker.aptworker.lock.lists_lock.release()
+        aptkit.worker.aptworker.lock.lists_lock.release()
         self.assertEqual(0, subprocess.call(self.apt_cmd, env=self.env,
                          shell=True))
 
     def test_archives_lock(self):
         """Test the lock on the download archives."""
         # Skip the test if we don't have networking
-        aptdaemon.worker.aptworker.lock.archive_lock.acquire()
+        aptkit.worker.aptworker.lock.archive_lock.acquire()
         lst_path = os.path.join(self.chroot.path, "etc/apt/sources.list")
         with open(lst_path, "w") as lst_file:
             lst_file.write(self.REMOTE_REPO)
@@ -110,7 +110,7 @@ class LockTest(unittest.TestCase):
         self.assertEqual(100, subprocess.call(self.inst_cmd, env=self.env,
                          shell=True))
         # Relase and all should work again!
-        aptdaemon.worker.aptworker.lock.archive_lock.release()
+        aptkit.worker.aptworker.lock.archive_lock.release()
         self.assertEqual(0, subprocess.call(self.inst_cmd, env=self.env,
                          shell=True))
 

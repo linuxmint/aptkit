@@ -26,7 +26,7 @@ import os
 
 import apt_pkg
 
-log = logging.getLogger("AptDaemon.ConfigWriter")
+log = logging.getLogger("AptKit.ConfigWriter")
 
 
 class Value(object):

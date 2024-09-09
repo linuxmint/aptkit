@@ -58,7 +58,7 @@ class DebconfProxy(object):
         self.socket_path = socket_path
         self.temp_dir = None
         if socket_path is None:
-            self.temp_dir = tempfile.mkdtemp(prefix="aptdaemon-")
+            self.temp_dir = tempfile.mkdtemp(prefix="aptkit-")
             self.socket_path = os.path.join(self.temp_dir, "debconf.socket")
         log.debug("debconf socket: %s" % self.socket_path)
         self.socket = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)

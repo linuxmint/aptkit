@@ -1,18 +1,18 @@
 .\" groff -man -Tascii foo.1
-.TH APTDCON 1 "December 2009" aptdaemon "User manual"
+.TH APTKCON 1 "December 2009" aptkit "User manual"
 .SH NAME
-aptdcon \- command line client for aptdaemon
+aptkcon \- command line client for aptkit
 .SH SYNOPSIS
-.B aptdcon
+.B aptkcon
 .RI [ OPTIONS ]
 .SH DESCRIPTION
-.B aptdcon
+.B aptkcon
 allows to perform package management tasks, e.g. installing or removing
-software, using aptdaemon. There isn't any need to be root to run this
+software, using aptkit. There isn't any need to be root to run this
 programme.
 .SH OPTIONS
 .IP "-v, --version"
-Show the version number of the aptdcon.
+Show the version number of the aptkcon.
 .IP "-h, --help"
 Show information about the usage of the command.
 .IP "-d, --debug"
@@ -62,12 +62,12 @@ Allow to install packages which are not from a trusted vendor.
 .SH EXAMPLES
 The following command will install the package xterm and remove the package eterm in the same run:
 .RS
-$ aptdcon --install "xterm" --remove "eterm"
+$ aptkcon --install "xterm" --remove "eterm"
 .RE
 .PP
 To handle more than one package the names have to be put into quotation marks. The following command will install xterm and eterm:
 .RS
-$ aptdcon --install "xterm eterm"
+$ aptkcon --install "xterm eterm"
 .RE
 .PP
 The following command will add the backport repository to the sources.list in
@@ -75,21 +75,21 @@ a separate file
 .I /etc/apt/sources.list.d/backports.list
 :
 .RS
-$ aptdcon --sources-file backports.list \\
+$ aptkcon --sources-file backports.list \\
 .br
     --add-repostiry "deb http://archive.backports.org/debian stable main"
 .RE
 .SH DIAGNOSTICS
-By default aptdaemon logs to the syslog facility AptDaemon. Furthermore you 
+By default aptkit logs to the syslog facility AptKit. Furthermore you 
 can use the -d option to get additional information on the command line.
 .SH HOMEPAGE
-https://launchpad.net/aptdaemon
+https://launchpad.net/aptkit
 .SH BUGS
-You can report bugs at the Launchpad site of aptdaemon:
-https://bugs.launchpad.net/aptdaemon/+filebug
+You can report bugs at the Launchpad site of aptkit:
+https://bugs.launchpad.net/aptkit/+filebug
 .SH AUTHOR
 Sebastian Heinlein <devel at glatzor dot de>
 .SH SEE ALSO
-.BR aptd (1),
+.BR aptk (1),
 .BR org.debian.apt (7),
 .BR org.debian.apt.transaction (7)

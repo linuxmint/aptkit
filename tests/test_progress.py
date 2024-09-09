@@ -8,14 +8,14 @@ import mock
 import sys
 import unittest
 
-import aptdaemon.test
-from aptdaemon.progress import DaemonOpenProgress
+import aptkit.test
+from aptkit.progress import DaemonOpenProgress
 
 
 class TestProgress(unittest.TestCase):
 
     def setUp(self):
-        self.chroot = aptdaemon.test.Chroot()
+        self.chroot = aptkit.test.Chroot()
         self.chroot.setup()
         self.addCleanup(self.chroot.remove)
 

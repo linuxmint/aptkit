@@ -1,11 +1,11 @@
 Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?rev=59
-Source: https://launchpad.net/aptdaemon
+Source: https://launchpad.net/aptkit
 
 Files: *
 Copyright: © 2008-2009 Sebastian Heinlein <devel@glatzor.de>
 License: GPL-2+
 
-Files: aptdaemon/client.py
+Files: aptkit/client.py
 Copyright: © 2008 Canonical Ltd.
            © 2008 Aidan Skinner <aidan@skinner.me.uk>
            © 2008 Martin Pitt <martin.pitt@ubuntu.com>
@@ -13,7 +13,7 @@ Copyright: © 2008 Canonical Ltd.
            © 2008 Sebastian Heinlein <devel@glatzor.de>
 License: GPL-2+
 
-Files: aptdaemon/debconf.py
+Files: aptkit/debconf.py
 Copyright: © 2009 Sebastian Heinlein <devel@glatzor.de>
            © 2009 Michael Vogt <mvo@ubuntu.com>
 License: GPL-2+

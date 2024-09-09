@@ -41,8 +41,8 @@ from .utils import IsoCodes
 # Required to get translatable strings extraced by xgettext
 _ = lambda s: s
 
-log = logging.getLogger("AptDaemon.Worker")
-log_terminal = logging.getLogger("AptDaemon.Worker.Terminal")
+log = logging.getLogger("AptKit.Worker")
+log_terminal = logging.getLogger("AptKit.Worker.Terminal")
 
 INSTALL_TIMEOUT = 10 * 60
 
@@ -566,8 +566,8 @@ class DaemonForkProgress(object):
         if self.transaction.http_proxy:
             apt_pkg.config.set("Acquire::http::Proxy",
                                self.transaction.http_proxy)
-        # Mark changes as being make by aptdaemon
-        cmd = "aptdaemon role='%s' sender='%s'" % (self.transaction.role,
+        # Mark changes as being make by aptkit
+        cmd = "aptkit role='%s' sender='%s'" % (self.transaction.role,
                                                    self.transaction.sender)
         apt_pkg.config.set("CommandLine::AsString", cmd)
 

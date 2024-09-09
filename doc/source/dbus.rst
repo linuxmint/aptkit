@@ -1,13 +1,13 @@
-The D-Bus API of the aptdaemon
+The D-Bus API of the aptkit
 ==============================
 
-Aptdaemon provides two D-Bus interfaces on the system bus.
+Aptkit provides two D-Bus interfaces on the system bus.
 
-org.debian.apt --- The aptdaemon interface
+org.debian.apt --- The aptkit interface
 ------------------------------------------
 
 This is the main interface which allows you to perform package managing tasks. 
-It is proivded by the aptdaemon object at ``/org/debian/apt``. 
+It is proivded by the aptkit object at ``/org/debian/apt``. 
 
 There are two kind of tasks: ones which are performed immediately and ones 
 which are queued up in transaction and performed in a sequence.
@@ -15,9 +15,9 @@ which are queued up in transaction and performed in a sequence.
 Non-transaction based methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. automethod:: aptdaemon.core.AptDaemon.GetTrustedVendorKeys() -> array(string)
+.. automethod:: aptkit.core.AptKit.GetTrustedVendorKeys() -> array(string)
 
-.. automethod:: aptdaemon.core.AptDaemon.Quit()
+.. automethod:: aptkit.core.AptKit.Quit()
 
 
 Transaction based methos
@@ -30,33 +30,33 @@ the transaction or put it on the queue.
 :ref:`life_cycle` and :ref:`chaining` are described in the Python client
 documentation with code examples.
 
-.. automethod:: aptdaemon.core.AptDaemon.UpdateCache() -> string
+.. automethod:: aptkit.core.AptKit.UpdateCache() -> string
 
-.. automethod:: aptdaemon.core.AptDaemon.UpdateCachePartially(sources_list : string) -> string
+.. automethod:: aptkit.core.AptKit.UpdateCachePartially(sources_list : string) -> string
 
-.. automethod:: aptdaemon.core.AptDaemon.AddRepository(src_type : string, uri : string, dist : string, comps : array(string), comment : string, sourcesfile : string) -> string
+.. automethod:: aptkit.core.AptKit.AddRepository(src_type : string, uri : string, dist : string, comps : array(string), comment : string, sourcesfile : string) -> string
 
-.. automethod:: aptdaemon.core.AptDaemon.EnableDistroComponent(component : string) -> string
+.. automethod:: aptkit.core.AptKit.EnableDistroComponent(component : string) -> string
 
-.. automethod:: aptdaemon.core.AptDaemon.InstallFile(path : string, force : boolean) -> string
+.. automethod:: aptkit.core.AptKit.InstallFile(path : string, force : boolean) -> string
 
-.. automethod:: aptdaemon.core.AptDaemon.InstallPackages(package_names : array(string)) -> string
+.. automethod:: aptkit.core.AptKit.InstallPackages(package_names : array(string)) -> string
 
-.. automethod:: aptdaemon.core.AptDaemon.RemovePackages(package_names : array(string)) -> string
+.. automethod:: aptkit.core.AptKit.RemovePackages(package_names : array(string)) -> string
 
-.. automethod:: aptdaemon.core.AptDaemon.UpgradePackages(package_names : array(string)) -> string
+.. automethod:: aptkit.core.AptKit.UpgradePackages(package_names : array(string)) -> string
 
-.. automethod:: aptdaemon.core.AptDaemon.CommitPackages(install : array(string), reinstall : array(string), remove : array(string), purge : array(string), upgrade : array(string), downgrade : array(string)) -> string
+.. automethod:: aptkit.core.AptKit.CommitPackages(install : array(string), reinstall : array(string), remove : array(string), purge : array(string), upgrade : array(string), downgrade : array(string)) -> string
 
-.. automethod:: aptdaemon.core.AptDaemon.UpgradeSystem(safe_mode : boolean) -> string
+.. automethod:: aptkit.core.AptKit.UpgradeSystem(safe_mode : boolean) -> string
 
-.. automethod:: aptdaemon.core.AptDaemon.FixIncompleteInstall() -> string
+.. automethod:: aptkit.core.AptKit.FixIncompleteInstall() -> string
 
-.. automethod:: aptdaemon.core.AptDaemon.FixBrokenDepends() -> string
+.. automethod:: aptkit.core.AptKit.FixBrokenDepends() -> string
 
-.. automethod:: aptdaemon.core.AptDaemon.AddVendorKeyFromKeyserver(keyid : string, keyserver : string) -> string
+.. automethod:: aptkit.core.AptKit.AddVendorKeyFromKeyserver(keyid : string, keyserver : string) -> string
 
-.. automethod:: aptdaemon.core.AptDaemon.AddVendorKeyFromFile(path : string) -> string
+.. automethod:: aptkit.core.AptKit.AddVendorKeyFromFile(path : string) -> string
 
 
 Signals
@@ -64,7 +64,7 @@ Signals
 
 The following singal can be emitted on the org.debian.apt interface.
 
-.. automethod:: aptdaemon.core.AptDaemon.ActiveTransactionsChanged(current : string, queued : array(string))
+.. automethod:: aptkit.core.AptKit.ActiveTransactionsChanged(current : string, queued : array(string))
 
 Properties
 ^^^^^^^^^^
@@ -124,31 +124,31 @@ org.debian.apt.transaction --- The transaction interface
 
 This is the main interface of a transaction object. It allows to control and
 monitor the transaction. Transactions are created by using the org.debian.apt
-interface of aptdaemon.
+interface of aptkit.
 
 The path of a transaction object consists of ``/org/debian/apt/transaction/`` and an unique identifier.
 
 Methods
 ^^^^^^^
 
-.. automethod:: aptdaemon.core.Transaction.Run()
+.. automethod:: aptkit.core.Transaction.Run()
 
-.. automethod:: aptdaemon.core.Transaction.RunAfter(tid : string)
+.. automethod:: aptkit.core.Transaction.RunAfter(tid : string)
 
-.. automethod:: aptdaemon.core.Transaction.Cancel()
+.. automethod:: aptkit.core.Transaction.Cancel()
 
-.. automethod:: aptdaemon.core.Transaction.Simulate()
+.. automethod:: aptkit.core.Transaction.Simulate()
 
-.. automethod:: aptdaemon.core.Transaction.ProvideMedium(medium : string)
+.. automethod:: aptkit.core.Transaction.ProvideMedium(medium : string)
 
-.. automethod:: aptdaemon.core.Transaction.ResolveConfigFileConflict(config : string, answer : string)
+.. automethod:: aptkit.core.Transaction.ResolveConfigFileConflict(config : string, answer : string)
 
 Signals
 ^^^^^^^
 
-.. automethod:: aptdaemon.core.Transaction.Finished() -> string
+.. automethod:: aptkit.core.Transaction.Finished() -> string
 
-.. automethod:: aptdaemon.core.Transaction.PropertyChanged() -> string, variant
+.. automethod:: aptkit.core.Transaction.PropertyChanged() -> string, variant
 
 Properties
 ^^^^^^^^^^
@@ -156,7 +156,7 @@ Properties
 The transaction interface provides a set of properties which can be accessed and modified through :meth:`Set()`, :meth:`Get()` and :meth:`GetAll()` methods of the ``org.freedesktop.DBus.Properties`` interface.
 See the `D-Bus specification <http://dbus.freedesktop.org/doc/dbus-specification.html#standard-interfaces-properties>`_ for more details.
 
-For the documentation of the available string enumerations, see :mod:`aptdaemon.enums`.
+For the documentation of the available string enumerations, see :mod:`aptkit.enums`.
 
 The following properties are available:
 
@@ -387,8 +387,8 @@ PolicyKit privileges
 --------------------
 
 Most actions require the user to authenticate. The PolicyKit
-framework is used by aptdaemon for the authentication process.
-This allows to run aptdaemon as root and the client application as normal user.
+framework is used by aptkit for the authentication process.
+This allows to run aptkit as root and the client application as normal user.
 
 For non-transaction based actions the authentication will happen immediately. 
 For transaction based actions the privilege will be checked after :meth:`Run()`
@@ -397,7 +397,7 @@ be requested to authenticate interactively.
 This allows the user to simulate a transaction before having to
 authenticate.
 
-Aptdaemon supports so called high level privileges which allow to perform
+Aptkit supports so called high level privileges which allow to perform
 a specified set of actions in a row without having to authenticate for each
 one separately. This only works if the client application authenticates for 
 the high level privilge before running the transactions and the authentication

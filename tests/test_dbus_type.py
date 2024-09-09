@@ -11,10 +11,10 @@ import unittest
 import dbus
 from gi.repository import GLib
 
-from aptdaemon.worker import aptworker
-from aptdaemon import core
-from aptdaemon import enums
-from aptdaemon import test
+from aptkit.worker import aptworker
+from aptkit import core
+from aptkit import enums
+from aptkit import test
 
 REGEX_SIG = "([ibxsdt])|(a{[ibxsdt]+?})|(a[ixbsdt]+?)|(\([ibxsdt]+?\))"
 REGEX_IFACE = r"\n(org\.debian\.apt[a-z\.]*) --- "
@@ -27,7 +27,7 @@ dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
 DOC_PATH = os.path.join(test.get_tests_dir(), "../doc")
 
 
-class DBusTypeTest(test.AptDaemonTestCase):
+class DBusTypeTest(test.AptKitTestCase):
 
     """Make sure that the specified types are returned over D-Bus."""
 
@@ -140,9 +140,9 @@ class DBusTypeTest(test.AptDaemonTestCase):
         trans = core.Transaction(None, enums.ROLE_REMOVE_PACKAGES, None,
                                  os.getpid(), os.getuid(), sys.argv[0],
                                  "org.debian.apt.test", bus=self.dbus)
-        proxy = self.dbus.get_object(core.APTDAEMON_DBUS_INTERFACE,
+        proxy = self.dbus.get_object(core.APTKIT_DBUS_INTERFACE,
                                      trans.tid)
-        iface = core.APTDAEMON_TRANSACTION_DBUS_INTERFACE
+        iface = core.APTKIT_TRANSACTION_DBUS_INTERFACE
         proxy.GetAll(iface,
                      reply_handler=lambda x: self._get_all_cb(iface, x),
                      error_handler=self._error_cb,
@@ -173,15 +173,15 @@ class DBusTypeTest(test.AptDaemonTestCase):
         self.assertEqual(self.error, None)
 
     @unittest.skip("Requires to be convert to a C based test client")
-    def test_aptdaemon_properties(self):
-        """Test aptdaemon properties."""
+    def test_aptkit_properties(self):
+        """Test aptkit properties."""
         Options = namedtuple("Options", "dummy")
         opt = Options(True)
-        self.daemon = core.AptDaemon(opt, bus=self.dbus)
+        self.daemon = core.AptKit(opt, bus=self.dbus)
 
-        proxy = self.dbus.get_object(core.APTDAEMON_DBUS_SERVICE,
-                                     core.APTDAEMON_DBUS_PATH)
-        iface = core.APTDAEMON_DBUS_INTERFACE
+        proxy = self.dbus.get_object(core.APTKIT_DBUS_SERVICE,
+                                     core.APTKIT_DBUS_PATH)
+        iface = core.APTKIT_DBUS_INTERFACE
         proxy.GetAll(iface,
                      reply_handler=lambda x: self._get_all_cb(iface, x),
                      error_handler=self._error_cb,

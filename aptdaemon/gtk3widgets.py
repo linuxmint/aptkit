@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This module provides widgets to use aptdaemon in a GTK application.
+This module provides widgets to use aptkit in a GTK application.
 """
 # Copyright (C) 2008-2009 Sebastian Heinlein <devel@glatzor.de>
 #
@@ -56,7 +56,7 @@ from .enums import *
 from defer import inline_callbacks
 from defer.utils import deferable
 
-_ = lambda msg: gettext.dgettext("aptdaemon", msg)
+_ = lambda msg: gettext.dgettext("aptkit", msg)
 
 (COLUMN_ID,
  COLUMN_PACKAGE) = list(range(2))
@@ -65,7 +65,7 @@ _ = lambda msg: gettext.dgettext("aptdaemon", msg)
 class AptStatusIcon(Gtk.Image):
     """
     Provides a Gtk.Image which shows an icon representing the status of a
-    aptdaemon transaction
+    aptkit transaction
     """
     def __init__(self, transaction=None, size=Gtk.IconSize.DIALOG):
         Gtk.Image.__init__(self)
@@ -103,7 +103,7 @@ class AptStatusIcon(Gtk.Image):
 class AptRoleIcon(AptStatusIcon):
     """
     Provides a Gtk.Image which shows an icon representing the role of an
-    aptdaemon transaction
+    aptkit transaction
     """
     def set_transaction(self, transaction):
         for sig in self._signals:
@@ -206,7 +206,7 @@ class AptStatusAnimation(AptStatusIcon):
 
 class AptRoleLabel(Gtk.Label):
     """
-    Status label for the running aptdaemon transaction
+    Status label for the running aptkit transaction
     """
     def __init__(self, transaction=None):
         GtkLabel.__init__(self)
@@ -218,7 +218,7 @@ class AptRoleLabel(Gtk.Label):
             self.set_transaction(transaction)
 
     def set_transaction(self, transaction):
-        """Connect the status label to the given aptdaemon transaction"""
+        """Connect the status label to the given aptkit transaction"""
         for sig in self._signals:
             GLib.source_remove(sig)
         self._signals = []
@@ -233,7 +233,7 @@ class AptRoleLabel(Gtk.Label):
 
 class AptStatusLabel(Gtk.Label):
     """
-    Status label for the running aptdaemon transaction
+    Status label for the running aptkit transaction
     """
     def __init__(self, transaction=None):
         Gtk.Label.__init__(self)
@@ -245,7 +245,7 @@ class AptStatusLabel(Gtk.Label):
             self.set_transaction(transaction)
 
     def set_transaction(self, transaction):
-        """Connect the status label to the given aptdaemon transaction"""
+        """Connect the status label to the given aptkit transaction"""
         for sig in self._signals:
             GLib.source_remove(sig)
         self._signals = []
@@ -266,7 +266,7 @@ class AptStatusLabel(Gtk.Label):
 
 class AptProgressBar(Gtk.ProgressBar):
     """
-    Provides a Gtk.Progress which represents the progress of an aptdaemon
+    Provides a Gtk.Progress which represents the progress of an aptkit
     transactions
     """
     def __init__(self, transaction=None):
@@ -279,7 +279,7 @@ class AptProgressBar(Gtk.ProgressBar):
             self.set_transaction(transaction)
 
     def set_transaction(self, transaction):
-        """Connect the progress bar to the given aptdaemon transaction"""
+        """Connect the progress bar to the given aptkit transaction"""
         for sig in self._signals:
             GLib.source_remove(sig)
         self._signals = []
@@ -350,7 +350,7 @@ class AptDetailsExpander(Gtk.Expander):
             self.set_transaction(transaction)
 
     def set_transaction(self, transaction):
-        """Connect the status label to the given aptdaemon transaction"""
+        """Connect the status label to the given aptkit transaction"""
         for sig in self._signals:
             GLib.source_remove(sig)
         self._signals.append(
@@ -403,7 +403,7 @@ class AptTerminal(Vte.Terminal):
             self.set_transaction(transaction)
 
     def set_transaction(self, transaction):
-        """Connect the status label to the given aptdaemon transaction"""
+        """Connect the status label to the given aptkit transaction"""
         for sig in self._signals:
             GLib.source_remove(sig)
         self._signals.append(
@@ -419,7 +419,7 @@ class AptTerminal(Vte.Terminal):
 
 class AptCancelButton(Gtk.Button):
     """
-    Provides a Gtk.Button which allows to cancel a running aptdaemon
+    Provides a Gtk.Button which allows to cancel a running aptkit
     transaction
     """
     def __init__(self, transaction=None):
@@ -432,7 +432,7 @@ class AptCancelButton(Gtk.Button):
             self.set_transaction(transaction)
 
     def set_transaction(self, transaction):
-        """Connect the status label to the given aptdaemon transaction"""
+        """Connect the status label to the given aptkit transaction"""
         for sig in self._signals:
             GLib.source_remove(sig)
         self._signals = []
@@ -492,7 +492,7 @@ class AptDownloadsView(Gtk.TreeView):
         self.set_tooltip_column(self.COL_URI)
 
     def set_transaction(self, transaction):
-        """Connect the download view to the given aptdaemon transaction"""
+        """Connect the download view to the given aptkit transaction"""
         for sig in self._signals:
             GLib.source_remove(sig)
         self._signals = []
@@ -562,7 +562,7 @@ class AptDownloadsView(Gtk.TreeView):
 
 class AptProgressDialog(Gtk.Dialog):
     """
-    Complete progress dialog for long taking aptdaemon transactions, which
+    Complete progress dialog for long taking aptkit transactions, which
     features a progress bar, cancel button, status icon and label
     """
 
@@ -719,7 +719,7 @@ class AptProgressDialog(Gtk.Dialog):
         self.label_role.set_markup("<big><b>%s</b></big>" % role)
 
     def set_transaction(self, transaction):
-        """Connect the dialog to the given aptdaemon transaction"""
+        """Connect the dialog to the given aptkit transaction"""
         for sig in self._signals:
             GLib.source_remove(sig)
         self._signals = []
@@ -773,7 +773,7 @@ class _ExpandableDialog(Gtk.Dialog):
 
     def __init__(self, parent=None, stock_type=None, expanded_child=None,
                  expander_label=None, title=None, message=None, buttons=None):
-        """Return an _AptDaemonDialog instance.
+        """Return an _AptKitDialog instance.
 
         Keyword arguments:
         parent -- set the dialog transient for the given Gtk.Window
@@ -1197,7 +1197,7 @@ class _DetailsExpanderMessageDialog(_ExpandableDialog):
 
 class AptErrorDialog(_DetailsExpanderMessageDialog):
     """
-    Dialog for aptdaemon errors with details in an expandable text view
+    Dialog for aptkit errors with details in an expandable text view
     """
     def __init__(self, error=None, parent=None):
         text = get_error_string_from_enum(error.code)

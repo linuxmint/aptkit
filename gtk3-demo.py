@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-Provides a graphical demo application for aptdaemon
+Provides a graphical demo application for aptkit
 """
 # Copyright (C) 2008-2009 Sebastian Heinlein <sevel@glatzor.de>
 #
@@ -33,15 +33,15 @@ import logging
 
 from gi.repository import GLib, Gtk
 
-import aptdaemon.client
-from aptdaemon.enums import *
-from aptdaemon.gtk3widgets import AptErrorDialog, \
+import aptkit.client
+from aptkit.enums import *
+from aptkit.gtk3widgets import AptErrorDialog, \
                                  AptConfirmDialog, \
                                  AptProgressDialog
-import aptdaemon.errors
+import aptkit.errors
 
 
-class AptDaemonDemo(object):
+class AptKitDemo(object):
 
     """Provides a graphical test application."""
 
@@ -65,12 +65,12 @@ class AptDaemonDemo(object):
         self._run_transaction(trans)
 
     def _on_error(self, error):
-        if isinstance(error, aptdaemon.errors.NotAuthorizedError):
+        if isinstance(error, aptkit.errors.NotAuthorizedError):
             # Silently ignore auth failures
             return
-        elif not isinstance(error, aptdaemon.errors.TransactionFailed):
+        elif not isinstance(error, aptkit.errors.TransactionFailed):
             # Catch internal errors of the client
-            error = aptdaemon.errors.TransactionFailed(ERROR_UNKNOWN,
+            error = aptkit.errors.TransactionFailed(ERROR_UNKNOWN,
                                                        str(error))
         dia = AptErrorDialog(error)
         dia.run()
@@ -113,10 +113,10 @@ class AptDaemonDemo(object):
         self.win = Gtk.Window()
         self.package = package
         self.win.set_resizable(False)
-        self.win.set_title("Aptdaemon Demo")
+        self.win.set_title("Aptkit Demo")
         icon_theme = Gtk.IconTheme.get_default()
         try:
-            Gtk.window_set_default_icon(icon_theme.load_icon("aptdaemon-setup",
+            Gtk.window_set_default_icon(icon_theme.load_icon("aptkit-setup",
                                                               32, 0))
         except (GLib.GError, AttributeError):
             pass
@@ -140,7 +140,7 @@ class AptDaemonDemo(object):
         self.loop = GLib.MainLoop()
         self.win.connect("delete-event", lambda w, e: self.loop.quit())
         self.win.show_all()
-        self.ac = aptdaemon.client.AptClient()
+        self.ac = aptkit.client.AptClient()
 
     def run(self):
         self.loop.run()
@@ -157,7 +157,7 @@ def main():
     if options.debug:
         logging.basicConfig(level=logging.DEBUG)
 
-    demo = AptDaemonDemo(options.package)
+    demo = AptKitDemo(options.package)
     demo.run()
 
 if __name__ == "__main__":

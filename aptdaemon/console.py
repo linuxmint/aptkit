@@ -1,5 +1,5 @@
 """
-This module provides a command line client for the aptdaemon
+This module provides a command line client for the aptkit
 """
 # Copyright (C) 2008-2009 Sebastian Heinlein <sevel@glatzor.de>
 #
@@ -43,7 +43,7 @@ from gi.repository import GLib
 import dbus.mainloop.glib
 dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
 
-import aptdaemon
+import aptkit
 from . import client
 from . import enums
 from . import errors
@@ -56,7 +56,7 @@ PY3K = sys.version_info.major > 2
 
 class ConsoleClient:
     """
-    Command line interface client to aptdaemon
+    Command line interface client to aptkit
     """
     def __init__(self, show_terminal=True, allow_unauthenticated=False,
                  details=False):
@@ -332,7 +332,7 @@ class ConsoleClient:
         self._update_progress()
 
     def _detach(self):
-        """Dettach the controlling terminal to aptdaemon."""
+        """Dettach the controlling terminal to aptkit."""
         for wid in self._watchers:
             GLib.source_remove(wid)
         if self._old_tty_mode:
@@ -340,7 +340,7 @@ class ConsoleClient:
                           self._old_tty_mode)
 
     def _attach(self):
-        """Attach the controlling terminal to aptdaemon.
+        """Attach the controlling terminal to aptkit.
         Based on pty.spwan()
         """
         try:
@@ -541,11 +541,11 @@ class ConsoleClient:
 
 
 def main():
-    """Run a command line client for aptdaemon"""
+    """Run a command line client for aptkit"""
     epilog = _("To operate on more than one package put the package "
-               "names in quotation marks:\naptdcon --install "
+               "names in quotation marks:\naptkcon --install "
                "\"foo bar\"")
-    parser = OptionParser(version=aptdaemon.__version__, epilog=epilog)
+    parser = OptionParser(version=aptkit.__version__, epilog=epilog)
     parser.add_option("-c", "--refresh", default="",
                       action="store_true", dest="refresh",
                       help=_("Refresh the cache"))

@@ -1,6 +1,6 @@
-# The default profile installing local software packages used by aptdaemon
-Profile: ubuntu/aptdaemon
-Extends: debian/aptdaemon
+# The default profile installing local software packages used by aptkit
+Profile: ubuntu/aptkit
+Extends: debian/aptkit
 Disable-Tags:
 	FSSTND-dir-in-usr,
 	FSSTND-dir-in-var,

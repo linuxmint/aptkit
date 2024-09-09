@@ -36,7 +36,7 @@ import logging
 import os
 
 
-log = logging.getLogger("AptDaemon.NetMonitor")
+log = logging.getLogger("AptKit.NetMonitor")
 
 
 class NetworkMonitorBase(GObject.GObject):

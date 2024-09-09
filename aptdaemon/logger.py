@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Logging facilities for aptdaemon
+Logging facilities for aptkit
 """
 # Copyright (C) 2013 Sebastian Heinlein <devel@glatzor.de>
 #

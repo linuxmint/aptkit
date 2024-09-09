@@ -1,5 +1,5 @@
-# The default profile installing local software packages used by aptdaemon
-Profile: debian/aptdaemon
+# The default profile installing local software packages used by aptkit
+Profile: debian/aptkit
 Extends: debian/ftp-master-auto-reject
 Disable-Tags:
 	dir-or-file-in-opt,

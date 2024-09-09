@@ -1,11 +1,11 @@
-# Slovak translation for aptdaemon
+# Slovak translation for aptkit
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the aptdaemon package.
+# This file is distributed under the same license as the aptkit package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: aptdaemon\n"
+"Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-21 15:36+0200\n"
 "PO-Revision-Date: 2012-10-03 12:58+0000\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Ak chcete prehliadať zoznam dôveryhodných kľúčov je potrebné overiť vašu "
 "totožnosť."
 
-#: ../data/org.debian.apt.policy.in.h:3 ../aptdaemon/console.py:619
+#: ../data/org.debian.apt.policy.in.h:3 ../aptkit/console.py:619
 msgid "Remove downloaded package files"
 msgstr "Odobrať stiahnuté balíky súborov"
 
@@ -105,7 +105,7 @@ msgstr "Aby ste mohli inštalovať softvér, je nutné overenie totožnosti."
 #. and InstallPackages in a row and only authenticating once.
 #.
 #. The client has to authenticate for this privilege before calling
-#. the aptdaemon methods.
+#. the aptkit methods.
 #: ../data/org.debian.apt.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "Pridať nový zdroj softvéru a nainštalovať z neho balíky"
@@ -120,7 +120,7 @@ msgstr ""
 #. and InstallPackages in a row and only authenticating once.
 #.
 #. The client has to authenticate for this privilege before calling
-#. the aptdaemon methods.
+#. the aptkit methods.
 #.
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
@@ -164,38 +164,38 @@ msgstr ""
 "Ak chcete použiť server proxy na sťahovanie softvéru, je potrebné overiť "
 "vašu totožnosť."
 
-#: ../aptdaemon/console.py:215
+#: ../aptkit/console.py:215
 msgid "ERROR"
 msgstr "CHYBA"
 
-#: ../aptdaemon/console.py:249
+#: ../aptkit/console.py:249
 #, fuzzy, python-format
 msgid "Downloaded %(cur)sB of %(total)sB at %(rate)sB/s"
 msgstr "Stiahnuté %sB z %sB pri %sB/s"
 
-#: ../aptdaemon/console.py:255
+#: ../aptkit/console.py:255
 #, fuzzy, python-format
 msgid "Downloaded %(cur)sB of %(total)sB"
 msgstr "Stiahnuté %sB z %sB"
 
-#: ../aptdaemon/console.py:385 ../aptdaemon/console.py:390
+#: ../aptkit/console.py:385 ../aptkit/console.py:390
 msgid "ERROR:"
 msgstr "CHYBA:"
 
-#: ../aptdaemon/console.py:386
+#: ../aptkit/console.py:386
 msgid "You are not allowed to perform this action."
 msgstr "Nemáte oprávnenie vykonať túto operáciu."
 
-#: ../aptdaemon/console.py:409 ../aptdaemon/console.py:537
+#: ../aptkit/console.py:409 ../aptkit/console.py:537
 msgid "Queuing"
 msgstr "Zaraďuje sa do frontu"
 
-#: ../aptdaemon/console.py:417 ../aptdaemon/enums.py:527
+#: ../aptkit/console.py:417 ../aptkit/enums.py:527
 msgid "Resolving dependencies"
 msgstr "Riešia sa závislosti"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:459
+#: ../aptkit/console.py:459
 #, python-format
 msgid "The following NEW package will be installed (%(count)s):"
 msgid_plural "The following NEW packages will be installed (%(count)s):"
@@ -204,7 +204,7 @@ msgstr[1] "Nasledovný NOVÝ balík bude nainštalovaný (%(count)s):"
 msgstr[2] "Nasledovné NOVÉ balíky budu nainštalované (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:467
+#: ../aptkit/console.py:467
 #, python-format
 msgid "The following package will be upgraded (%(count)s):"
 msgid_plural "The following packages will be upgraded (%(count)s):"
@@ -213,7 +213,7 @@ msgstr[1] "Nasledovný balík bude aktualizovaný (%(count)s):"
 msgstr[2] "Nasledovné balíky budu aktualizované (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:475
+#: ../aptkit/console.py:475
 #, python-format
 msgid "The following package will be REMOVED (%(count)s):"
 msgid_plural "The following packages will be REMOVED (%(count)s):"
@@ -222,7 +222,7 @@ msgstr[1] "Nasledovný balík bude ODSTRÁNENÝ (%(count)s):"
 msgstr[2] "Nasledovné balíky budu ODSTRANENÉ (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:484
+#: ../aptkit/console.py:484
 #, python-format
 msgid "The following package will be DOWNGRADED (%(count)s):"
 msgid_plural "The following packages will be DOWNGRADED (%(count)s):"
@@ -231,7 +231,7 @@ msgstr[1] "VERZIA nasledovného balíka bude ZNÍŽENÁ (%(count)s):"
 msgstr[2] "VERZIA nasledovných balíkov bude ZNÍŽENÁ (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:492
+#: ../aptkit/console.py:492
 #, python-format
 msgid "The following package will be reinstalled (%(count)s):"
 msgid_plural "The following packages will be reinstalled (%(count)s):"
@@ -239,7 +239,7 @@ msgstr[0] "Nasledovné balíky budu preinštalované (%(count)s):"
 msgstr[1] "Nasledovný balík bude preinštalovaný (%(count)s):"
 msgstr[2] "Nasledovné balíky budu preinštalované (%(count)s):"
 
-#: ../aptdaemon/console.py:499
+#: ../aptkit/console.py:499
 #, python-format
 msgid "The following package has been kept back (%(count)s):"
 msgid_plural "The following packages have been kept back (%(count)s):"
@@ -247,40 +247,40 @@ msgstr[0] "Nasledovné balíky budú podržané (%(count)s):"
 msgstr[1] "Nasledovný balík bude podržaný (%(count)s):"
 msgstr[2] "Nasledovné balíky budú podržané (%(count)s):"
 
-#: ../aptdaemon/console.py:507
+#: ../aptkit/console.py:507
 #, python-format
 msgid "Need to get %sB of archives."
 msgstr "Je potrebné stiahnuť %sB archívov."
 
-#: ../aptdaemon/console.py:510
+#: ../aptkit/console.py:510
 #, python-format
 msgid "After this operation, %sB of additional disk space will be used."
 msgstr "Po tejto operácii bude využitých ďalších %sB miesta na disku."
 
-#: ../aptdaemon/console.py:514
+#: ../aptkit/console.py:514
 #, python-format
 msgid "After this operation, %sB of additional disk space will be freed."
 msgstr "Po tejto operácii sa uvoľní %sB miesta na disku."
 
-#: ../aptdaemon/console.py:522 ../aptdaemon/console.py:524
+#: ../aptkit/console.py:522 ../aptkit/console.py:524
 msgid "Do you want to continue [Y/n]?"
 msgstr "Chcete pokračovať [Y/n]?"
 
-#: ../aptdaemon/console.py:545
+#: ../aptkit/console.py:545
 msgid ""
 "To operate on more than one package put the package names in quotation "
 "marks:\n"
-"aptdcon --install \"foo bar\""
+"aptkcon --install \"foo bar\""
 msgstr ""
 "Ak chcete pracovať s viac ako jedným balíkom, uveďte názvy balíkov v "
 "úvodzovkách:\n"
-"aptdcon --install \"foo bar\""
+"aptkcon --install \"foo bar\""
 
-#: ../aptdaemon/console.py:551
+#: ../aptkit/console.py:551
 msgid "Refresh the cache"
 msgstr "Aktualizovať vyrovnávaciu pamäť"
 
-#: ../aptdaemon/console.py:554
+#: ../aptkit/console.py:554
 msgid ""
 "Try to resolve broken dependencies. Potentially dangerous operation since it "
 "could try to remove many packages."
@@ -288,59 +288,59 @@ msgstr ""
 "Pokúsiť sa vyriešiť poškodené závislosti. To je potenciálne nebezpečná "
 "operácia, pretože by sa mohla pokúsiť odstrániť veľké množstvo balíkov."
 
-#: ../aptdaemon/console.py:559
+#: ../aptkit/console.py:559
 msgid "Try to finish a previous incompleted installation"
 msgstr "Pokúsiť sa dokončiť predošlú nedokončenú inštaláciu"
 
-#: ../aptdaemon/console.py:563 ../aptdaemon/console.py:576
+#: ../aptkit/console.py:563 ../aptkit/console.py:576
 msgid "Install the given packages"
 msgstr "Nainštalovať dané balíky"
 
-#: ../aptdaemon/console.py:566
+#: ../aptkit/console.py:566
 msgid "Reinstall the given packages"
 msgstr "Znova nainštalovať dané balíky"
 
-#: ../aptdaemon/console.py:569
+#: ../aptkit/console.py:569
 msgid "Remove the given packages"
 msgstr "Odstrániť dané balíky"
 
-#: ../aptdaemon/console.py:572
+#: ../aptkit/console.py:572
 msgid "Remove the given packages including configuration files"
 msgstr "Odstrániť dané balíky vrátane konfiguračných súborov"
 
-#: ../aptdaemon/console.py:579
+#: ../aptkit/console.py:579
 msgid "Downgrade the given packages"
 msgstr "Znížiť verziu uvedených balíkov"
 
-#: ../aptdaemon/console.py:582
+#: ../aptkit/console.py:582
 msgid "Deprecated: Please use --safe-upgrade"
 msgstr "Zavrhované: Prosím, použite --safe-upgrade"
 
-#: ../aptdaemon/console.py:586
+#: ../aptkit/console.py:586
 msgid "Upgrade the system in a safe way"
 msgstr "Aktualizovať systém bezpečným spôsobom"
 
-#: ../aptdaemon/console.py:589
+#: ../aptkit/console.py:589
 msgid "Upgrade the system, possibly installing and removing packages"
 msgstr "Aktualizovať systém, s možnou inštaláciou a odstránením balíkov"
 
-#: ../aptdaemon/console.py:593
+#: ../aptkit/console.py:593
 msgid "Add the vendor to the trusted ones"
 msgstr "Pridať dodávateľa do zoznamu dôveryhodných"
 
-#: ../aptdaemon/console.py:596
+#: ../aptkit/console.py:596
 msgid "Add the vendor keyid (also needs --keyserver)"
 msgstr "Pridať ID kľúča dodávateľa (tiež vyžaduje --keyserver)"
 
-#: ../aptdaemon/console.py:600
+#: ../aptkit/console.py:600
 msgid "Use the given keyserver for looking up keys"
 msgstr "Použiť na vyhľadanie kľúčov uvedený server s kľúčmi"
 
-#: ../aptdaemon/console.py:604
+#: ../aptkit/console.py:604
 msgid "Add new repository from the given deb-line"
 msgstr "Pridať nový zdroj softvéru zo zadaného riadka deb"
 
-#: ../aptdaemon/console.py:608
+#: ../aptkit/console.py:608
 msgid ""
 "Specify an alternative sources.list.d file to which repositories should be "
 "added."
@@ -348,15 +348,15 @@ msgstr ""
 "Zadajte alternatívny súbor v sources.list.d, do ktorého sa majú pridať "
 "zdroje softvéru."
 
-#: ../aptdaemon/console.py:612
+#: ../aptkit/console.py:612
 msgid "List trusted vendor keys"
 msgstr "Zoznam dôveryhodných kľúčov dodávateľov"
 
-#: ../aptdaemon/console.py:615
+#: ../aptkit/console.py:615
 msgid "Remove the trusted key of the given fingerprint"
 msgstr "Odstrániť kľúč s uvedeným odtlačkom spomedzi dôveryhodných"
 
-#: ../aptdaemon/console.py:622
+#: ../aptkit/console.py:622
 msgid ""
 "Reconfigure installed packages. Optionally the minimum priority of questions "
 "can be specified"
@@ -364,269 +364,269 @@ msgstr ""
 "Znova nakonfigurovať nainštalované balíky. Je možné zadať minimálnu prioritu "
 "otázok."
 
-#: ../aptdaemon/console.py:627
+#: ../aptkit/console.py:627
 msgid "The minimum debconf priority of question to be displayed"
 msgstr "Minimálna priorita otázok debconf, ktoré sa budú zobrazovať."
 
-#: ../aptdaemon/console.py:631
+#: ../aptkit/console.py:631
 msgid "Do not attach to the apt terminal"
 msgstr "Nepripájať sa k terminálu apt"
 
-#: ../aptdaemon/console.py:635
+#: ../aptkit/console.py:635
 msgid "Allow packages from unauthenticated sources"
 msgstr "Povoliť inštaláciu balíkov z neoverených zdrojov"
 
-#: ../aptdaemon/console.py:639
+#: ../aptkit/console.py:639
 msgid ""
 "Show additional information about the packages. Currently only the version "
 "number"
 msgstr "Ďalšie informácie o balíkoch. Momentálne oba číslo verzie."
 
-#: ../aptdaemon/console.py:647 ../aptdaemon/enums.py:532
+#: ../aptkit/console.py:647 ../aptkit/enums.py:532
 msgid "Waiting for authentication"
 msgstr "Čaká sa na overenie totožnosti"
 
-#: ../aptdaemon/core.py:2135
+#: ../aptkit/core.py:2135
 msgid "Do not shutdown the daemon because of inactivity"
 msgstr "Nevypínať démona z dôvodu neaktivity"
 
-#: ../aptdaemon/core.py:2140
+#: ../aptkit/core.py:2140
 msgid "Do not load any plugins"
 msgstr "Nenačítavať žiadne zásuvné moduly"
 
-#: ../aptdaemon/core.py:2144
+#: ../aptkit/core.py:2144
 msgid "Show internal processing information"
 msgstr "Zobraziť interné informácie o priebehu"
 
-#: ../aptdaemon/core.py:2149
+#: ../aptkit/core.py:2149
 msgid "Quit and replace an already running daemon"
 msgstr "Ukončiť a nahradiť už bežiaceho démona"
 
-#: ../aptdaemon/core.py:2154
+#: ../aptkit/core.py:2154
 msgid "Listen on the DBus session bus (Only required for testing"
 msgstr "Počúvať na zbernici DBus relácie (potrebné iba na testovanie)"
 
-#: ../aptdaemon/core.py:2158
+#: ../aptkit/core.py:2158
 msgid "Perform operations in the given chroot"
 msgstr "Vykonať operácie v uvedenom chroote"
 
-#: ../aptdaemon/core.py:2163
+#: ../aptkit/core.py:2163
 msgid "Store profile stats in the specified file"
 msgstr "Ukladať štatistiky profilu v určenom súbore"
 
-#: ../aptdaemon/core.py:2168
+#: ../aptkit/core.py:2168
 msgid "Do not make any changes to the system (Only of use to developers)"
 msgstr "Nevykonávať žiadne zmeny v systéme (užitočné iba pre vývojárov)"
 
-#: ../aptdaemon/enums.py:337
+#: ../aptkit/enums.py:337
 msgid "Installed file"
 msgstr "Nainštalovaný súbor"
 
-#: ../aptdaemon/enums.py:338
+#: ../aptkit/enums.py:338
 msgid "Installed packages"
 msgstr "Nainštalované balíky"
 
-#: ../aptdaemon/enums.py:339
+#: ../aptkit/enums.py:339
 msgid "Added key from file"
 msgstr "Pridaný kľúč zo súboru"
 
-#: ../aptdaemon/enums.py:340
+#: ../aptkit/enums.py:340
 msgid "Updated cache"
 msgstr "Aktualizovaná vyrovnávacia pamäť"
 
-#: ../aptdaemon/enums.py:341
+#: ../aptkit/enums.py:341
 msgid "Search done"
 msgstr "Hľadanie dokončené"
 
-#: ../aptdaemon/enums.py:342
+#: ../aptkit/enums.py:342
 msgid "Removed trusted key"
 msgstr "Odstránený dôveryhodný kľúč"
 
-#: ../aptdaemon/enums.py:343
+#: ../aptkit/enums.py:343
 msgid "Removed packages"
 msgstr "Odstránené balíky"
 
-#: ../aptdaemon/enums.py:344
+#: ../aptkit/enums.py:344
 msgid "Updated packages"
 msgstr "Aktualizované balíky"
 
-#: ../aptdaemon/enums.py:345
+#: ../aptkit/enums.py:345
 msgid "Upgraded system"
 msgstr "Aktualizovaný systém"
 
-#: ../aptdaemon/enums.py:346
+#: ../aptkit/enums.py:346
 msgid "Applied changes"
 msgstr "Zmeny boli aplikované"
 
-#: ../aptdaemon/enums.py:347
+#: ../aptkit/enums.py:347
 msgid "Repaired incomplete installation"
 msgstr "Opravená neúplná inštalácia"
 
-#: ../aptdaemon/enums.py:348
+#: ../aptkit/enums.py:348
 msgid "Repaired broken dependencies"
 msgstr "Opravené poškodené závislosti"
 
-#: ../aptdaemon/enums.py:349
+#: ../aptkit/enums.py:349
 msgid "Added software source"
 msgstr "Pridaný zdroj softvéru"
 
-#: ../aptdaemon/enums.py:350
+#: ../aptkit/enums.py:350
 msgid "Enabled component of the distribution"
 msgstr "Zapnutý komponent distribúcie"
 
-#: ../aptdaemon/enums.py:351
+#: ../aptkit/enums.py:351
 msgid "Removed downloaded package files"
 msgstr "Odstránené stiahnuté súbory balíkov"
 
-#: ../aptdaemon/enums.py:352
+#: ../aptkit/enums.py:352
 msgid "Reconfigured installed packages"
 msgstr "Znovu nakonfigurované nainštalované balíky"
 
-#: ../aptdaemon/enums.py:356
+#: ../aptkit/enums.py:356
 msgid "Successful"
 msgstr "Úspešné"
 
-#: ../aptdaemon/enums.py:357
+#: ../aptkit/enums.py:357
 msgid "Canceled"
 msgstr "Zrušené"
 
-#: ../aptdaemon/enums.py:358 ../aptdaemon/enums.py:569
+#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
 msgid "Failed"
 msgstr "Zlyhalo"
 
-#: ../aptdaemon/enums.py:361
+#: ../aptkit/enums.py:361
 msgid "Installing file"
 msgstr "Inštaluje sa súbor"
 
-#: ../aptdaemon/enums.py:362
+#: ../aptkit/enums.py:362
 msgid "Installing packages"
 msgstr "Inštalujú sa balíky"
 
-#: ../aptdaemon/enums.py:363
+#: ../aptkit/enums.py:363
 msgid "Adding key from file"
 msgstr "Pridáva sa kľúč zo súboru"
 
-#: ../aptdaemon/enums.py:364
+#: ../aptkit/enums.py:364
 msgid "Updating cache"
 msgstr "Aktualizuje sa vyrovnávacia pamäť"
 
-#: ../aptdaemon/enums.py:365
+#: ../aptkit/enums.py:365
 msgid "Removing trusted key"
 msgstr "Odstraňuje sa dôveryhodný kľúč"
 
-#: ../aptdaemon/enums.py:366
+#: ../aptkit/enums.py:366
 msgid "Removing packages"
 msgstr "Odstraňujú sa balíky"
 
-#: ../aptdaemon/enums.py:367
+#: ../aptkit/enums.py:367
 msgid "Updating packages"
 msgstr "Aktualizujú sa balíky"
 
-#: ../aptdaemon/enums.py:368
+#: ../aptkit/enums.py:368
 msgid "Upgrading system"
 msgstr "Aktualizuje sa systém"
 
-#: ../aptdaemon/enums.py:369 ../aptdaemon/enums.py:528
+#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
 msgid "Applying changes"
 msgstr "Aplikujú sa zmeny"
 
-#: ../aptdaemon/enums.py:370
+#: ../aptkit/enums.py:370
 msgid "Repairing incomplete installation"
 msgstr "Opravuje sa neúplná inštalácia"
 
-#: ../aptdaemon/enums.py:371
+#: ../aptkit/enums.py:371
 msgid "Repairing installed software"
 msgstr "Opravuje sa nainštalovaný softvér"
 
-#: ../aptdaemon/enums.py:372
+#: ../aptkit/enums.py:372
 msgid "Adding software source"
 msgstr "Pridáva sa zdroj softvéru"
 
-#: ../aptdaemon/enums.py:373
+#: ../aptkit/enums.py:373
 msgid "Enabling component of the distribution"
 msgstr "Zapína sa komponent distribúcie"
 
-#: ../aptdaemon/enums.py:374
+#: ../aptkit/enums.py:374
 msgid "Removing downloaded package files"
 msgstr "Odstraňujú sa stiahnuté súbory balíkov"
 
-#: ../aptdaemon/enums.py:375
+#: ../aptkit/enums.py:375
 msgid "Reconfiguring installed packages"
 msgstr "Znovu sa konfigurujú nainštalované balíky"
 
-#: ../aptdaemon/enums.py:376 ../aptdaemon/enums.py:517
+#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
 msgid "Searching"
 msgstr "Hľadá sa"
 
-#: ../aptdaemon/enums.py:380
+#: ../aptkit/enums.py:380
 msgid "Installation of the package file failed"
 msgstr "Inštalácia balíka zlyhala"
 
-#: ../aptdaemon/enums.py:381
+#: ../aptkit/enums.py:381
 msgid "Installation of software failed"
 msgstr "Inštalácia softvéru zlyhala"
 
-#: ../aptdaemon/enums.py:382
+#: ../aptkit/enums.py:382
 msgid "Adding the key to the list of trusted software vendors failed"
 msgstr ""
 
-#: ../aptdaemon/enums.py:384
+#: ../aptkit/enums.py:384
 msgid "Refreshing the software list failed"
 msgstr "Aktualizácia zoznamu softvéru zlyhala"
 
-#: ../aptdaemon/enums.py:385
+#: ../aptkit/enums.py:385
 msgid "Removing the vendor from the list of trusted ones failed"
 msgstr "Odstraňovanie dodávateľa zo zoznamu dôveryhodných zlyhalo"
 
-#: ../aptdaemon/enums.py:387
+#: ../aptkit/enums.py:387
 msgid "Removing software failed"
 msgstr "Odstraňovanie softvéru zlyhalo"
 
-#: ../aptdaemon/enums.py:388
+#: ../aptkit/enums.py:388
 msgid "Updating software failed"
 msgstr "Aktualizácia zoznamu softvéru zlyhala"
 
-#: ../aptdaemon/enums.py:389
+#: ../aptkit/enums.py:389
 msgid "Upgrading the system failed"
 msgstr "Aktualizácia softvéru zlyhala"
 
-#: ../aptdaemon/enums.py:390
+#: ../aptkit/enums.py:390
 msgid "Applying software changes failed"
 msgstr "Použitie zmien softvéru zlyhalo"
 
-#: ../aptdaemon/enums.py:391
+#: ../aptkit/enums.py:391
 msgid "Repairing incomplete installation failed"
 msgstr "Oprava neúplnej inštalácie zlyhala"
 
-#: ../aptdaemon/enums.py:393
+#: ../aptkit/enums.py:393
 msgid "Repairing broken dependencies failed"
 msgstr "Oprava poškodených závislostí zlyhala"
 
-#: ../aptdaemon/enums.py:394
+#: ../aptkit/enums.py:394
 msgid "Adding software source failed"
 msgstr "Pridanie zdroje softvéru zlyhalo"
 
-#: ../aptdaemon/enums.py:395
+#: ../aptkit/enums.py:395
 msgid "Enabling component of the distribution failed"
 msgstr "Zapnutie komponentu distribúcie zlyhalo"
 
-#: ../aptdaemon/enums.py:397 ../aptdaemon/enums.py:398
+#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
 msgid "Removing downloaded package files failed"
 msgstr "Odstránenie stiahnutých balíkov sa nepodarilo"
 
-#: ../aptdaemon/enums.py:399
+#: ../aptkit/enums.py:399
 msgid "Search failed"
 msgstr "Hľadanie zlyhalo"
 
-#: ../aptdaemon/enums.py:400
+#: ../aptkit/enums.py:400
 msgid "Adding license key"
 msgstr "Pridáva sa licenčný kľúč"
 
-#: ../aptdaemon/enums.py:404 ../aptdaemon/enums.py:405
+#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
 msgid "Check your Internet connection."
 msgstr "Skontrolujte svoje pripojenie k internetu"
 
-#: ../aptdaemon/enums.py:406
+#: ../aptkit/enums.py:406
 msgid ""
 "Check if you are using third party repositories. If so disable them, since "
 "they are a common source of problems.\n"
@@ -636,11 +636,11 @@ msgstr ""
 "ich, pretože sú častou príčinou problémov.\n"
 "Ďalej spustite v Termináli nasledujúci príkaz: apt-get install -f"
 
-#: ../aptdaemon/enums.py:411
+#: ../aptkit/enums.py:411
 msgid "The selected file may not be a GPG key file or it might be corrupt."
 msgstr "Vybraný súbor nie je autentifikačným kľúčom GPG alebo je poškodený."
 
-#: ../aptdaemon/enums.py:413
+#: ../aptkit/enums.py:413
 msgid ""
 "The selected key couldn't be removed. Check that you provided a valid "
 "fingerprint."
@@ -648,7 +648,7 @@ msgstr ""
 "Vybraný kľúč nebolo možné odstrániť. Skontrolujte, či ste poskytli platný "
 "odtlačok kľúča."
 
-#: ../aptdaemon/enums.py:415
+#: ../aptkit/enums.py:415
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
@@ -656,7 +656,7 @@ msgstr ""
 "Skontrolujte, či práve nebeží iný nástroj na správu softvéru, napr. Synaptic "
 "alebo aptitude. Iba jeden zdroj naraz môže vykonávať zmeny."
 
-#: ../aptdaemon/enums.py:418
+#: ../aptkit/enums.py:418
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
@@ -664,7 +664,7 @@ msgstr ""
 "Toto je vážny problém. Prosím, skúste to neskôr znova. Ak sa tento problém "
 "znova objaví, prosím nahláste chybu vývojárom."
 
-#: ../aptdaemon/enums.py:421
+#: ../aptkit/enums.py:421
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
@@ -672,51 +672,51 @@ msgstr ""
 "Skontrolujte, či ste správne napísali názov balíka a či je príslušný zdroj "
 "softvéru zapnutý."
 
-#: ../aptdaemon/enums.py:423
+#: ../aptkit/enums.py:423
 msgid "There isn't any need for an update."
 msgstr "Aktualizácia nie je potrebná."
 
-#: ../aptdaemon/enums.py:424
+#: ../aptkit/enums.py:424
 msgid "There isn't any need for an installation"
 msgstr "Inštalácia nie je potrebná."
 
-#: ../aptdaemon/enums.py:426
+#: ../aptkit/enums.py:426
 msgid "There isn't any need for a removal."
 msgstr "Odstraňovanie nie je potrebné."
 
-#: ../aptdaemon/enums.py:427
+#: ../aptkit/enums.py:427
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr ""
 "Požiadali ste o odstránenie balíka, ktorý je nevyhnutnou súčasťou vášho "
 "systému."
 
-#: ../aptdaemon/enums.py:430
+#: ../aptkit/enums.py:430
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
 msgstr ""
 "Spojenie s démonom bolo stratené. Pravdepodobne démon na pozadí havaroval."
 
-#: ../aptdaemon/enums.py:432
+#: ../aptkit/enums.py:432
 msgid "The installation or removal of a software package failed."
 msgstr "Inštalácia alebo odstránenie softvérového balíka zlyhalo"
 
-#: ../aptdaemon/enums.py:434
+#: ../aptkit/enums.py:434
 msgid "The requested feature is not supported."
 msgstr "Požadovaná funkcia nie je podporovaná"
 
-#: ../aptdaemon/enums.py:435
+#: ../aptkit/enums.py:435
 msgid ""
-"There seems to be a programming error in aptdaemon, the software that allows "
+"There seems to be a programming error in aptkit, the software that allows "
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
-"Zdá sa, že sa vyskytla chyba v aptdaemon, softvéri, ktorý vám umožňuje "
+"Zdá sa, že sa vyskytla chyba v aptkit, softvéri, ktorý vám umožňuje "
 "inštalovať a odstraňovať softvér a vykonávať iné úlohy súvisiace so správou "
 "softvéru."
 
-#: ../aptdaemon/enums.py:439
+#: ../aptkit/enums.py:439
 msgid ""
 "This error could be caused by required additional software packages which "
 "are missing or not installable. Furthermore there could be a conflict "
@@ -727,11 +727,11 @@ msgstr ""
 "ich nebolo možné nainštalovať. Okrem toho mohol nastať konflikt medzi "
 "balíkmi, ktoré nemožno nainštalovať súčasne."
 
-#: ../aptdaemon/enums.py:445
+#: ../aptkit/enums.py:445
 msgid "This requires installing packages from unauthenticated sources."
 msgstr "Vyžaduje sa inštalovanie balíkov z nedôveryhodných zdrojov."
 
-#: ../aptdaemon/enums.py:447
+#: ../aptkit/enums.py:447
 msgid ""
 "The installation could have failed because of an error in the corresponding "
 "software package or it was cancelled in an unfriendly way. You have to "
@@ -741,14 +741,14 @@ msgstr ""
 "bola zrušená nezvyčajným spôsobom. Musíte to opraviť predtým, než budete "
 "môcť inštalovať alebo odstraňovať ďalší softvér."
 
-#: ../aptdaemon/enums.py:453
+#: ../aptkit/enums.py:453
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
 msgstr ""
 "Prosím, skopírujte súbor na svoj lokálny počítač a skontrolujte oprávnenia "
 "súboru."
 
-#: ../aptdaemon/enums.py:456
+#: ../aptkit/enums.py:456
 msgid ""
 "The installation of a package which violates the quality standards isn't "
 "allowed. This could cause serious problems on your computer. Please contact "
@@ -760,7 +760,7 @@ msgstr ""
 "osobu alebo organizáciu, ktorá poskytla tento balík a poskytnite dolu "
 "uvedené informácie."
 
-#: ../aptdaemon/enums.py:463
+#: ../aptkit/enums.py:463
 msgid ""
 "The downloaded license key which is required to run this piece of software "
 "is not valid or could not be installed correctly.\n"
@@ -770,11 +770,11 @@ msgstr ""
 "nedal korektne nainštalovať.\n"
 "Ďalšie informácie nájdete v podrobnostiach."
 
-#: ../aptdaemon/enums.py:469
+#: ../aptkit/enums.py:469
 msgid "All available upgrades have already been installed."
 msgstr "Všetky dostupné aktualizácie už boli nainštalované."
 
-#: ../aptdaemon/enums.py:471
+#: ../aptkit/enums.py:471
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
@@ -782,12 +782,12 @@ msgstr ""
 "Licenčný kľúč, ktorý vám umožňuje používať tento softvér, nebolo možné "
 "stiahnuť. Prosím, skontrolujte vaše pripojenie k sieti."
 
-#: ../aptdaemon/enums.py:475
+#: ../aptkit/enums.py:475
 #, fuzzy
 msgid "You don't have the required privileges to perform this action."
 msgstr "Nemáte oprávnenie vykonať túto operáciu."
 
-#: ../aptdaemon/enums.py:477
+#: ../aptkit/enums.py:477
 msgid ""
 "You either provided a wrong password or cancelled the authorization.\n"
 "Furthermore there could also be a technical reason for this error if you "
@@ -795,313 +795,313 @@ msgid ""
 "PolicyKit session agent."
 msgstr ""
 
-#: ../aptdaemon/enums.py:485
+#: ../aptkit/enums.py:485
 msgid "Failed to download package files"
 msgstr "Zlyhalo sťahovanie balíkov"
 
-#: ../aptdaemon/enums.py:486
+#: ../aptkit/enums.py:486
 msgid "Failed to download repository information"
 msgstr "Zlyhalo sťahovanie informácií o zdrojoch softvéru"
 
-#: ../aptdaemon/enums.py:488
+#: ../aptkit/enums.py:488
 msgid "Package dependencies cannot be resolved"
 msgstr "Závislosti balíkov sa nedali vyriešiť"
 
-#: ../aptdaemon/enums.py:489
+#: ../aptkit/enums.py:489
 msgid "The package system is broken"
 msgstr "Systém balíkov je poškodený"
 
-#: ../aptdaemon/enums.py:490
+#: ../aptkit/enums.py:490
 msgid "Key was not installed"
 msgstr "Kľúč nebol nainštalovaný"
 
-#: ../aptdaemon/enums.py:491
+#: ../aptkit/enums.py:491
 msgid "Key was not removed"
 msgstr "Kľúč nebol odstránený"
 
-#: ../aptdaemon/enums.py:492
+#: ../aptkit/enums.py:492
 msgid "Failed to lock the package manager"
 msgstr "Zlyhalo zamknutie správcu balíkov"
 
-#: ../aptdaemon/enums.py:493
+#: ../aptkit/enums.py:493
 msgid "Failed to load the package list"
 msgstr "Zlyhalo načítanie zoznamu balíkov"
 
-#: ../aptdaemon/enums.py:494
+#: ../aptkit/enums.py:494
 msgid "Package does not exist"
 msgstr "Balík neexistuje"
 
-#: ../aptdaemon/enums.py:495
+#: ../aptkit/enums.py:495
 msgid "Package is already up to date"
 msgstr "Balík je už aktuálny"
 
-#: ../aptdaemon/enums.py:496
+#: ../aptkit/enums.py:496
 msgid "Package is already installed"
 msgstr "Balík už je nainštalovaný"
 
-#: ../aptdaemon/enums.py:497
+#: ../aptkit/enums.py:497
 msgid "Package isn't installed"
 msgstr "Balík nie je nainštalovaný"
 
-#: ../aptdaemon/enums.py:498
+#: ../aptkit/enums.py:498
 msgid "Failed to remove essential system package"
 msgstr "Nepodarilo sa odstrániť nevyhnutný systémový balík"
 
-#: ../aptdaemon/enums.py:500
+#: ../aptkit/enums.py:500
 msgid "Task cannot be monitored or controlled"
 msgstr "Úlohu nemožno sledovať alebo kontrolovať"
 
-#: ../aptdaemon/enums.py:501
+#: ../aptkit/enums.py:501
 msgid "Package operation failed"
 msgstr "Operácia s balíkom zlyhala"
 
-#: ../aptdaemon/enums.py:502
+#: ../aptkit/enums.py:502
 msgid "Requires installation of untrusted packages"
 msgstr "Vyžaduje inštaláciu nedôveryhodných balíkov"
 
-#: ../aptdaemon/enums.py:504
+#: ../aptkit/enums.py:504
 msgid "Previous installation hasn't been completed"
 msgstr "Predošlá inštalácia nebola dokončená"
 
-#: ../aptdaemon/enums.py:505
+#: ../aptkit/enums.py:505
 msgid "The package is of bad quality"
 msgstr "Tento balík je nekvalitný"
 
-#: ../aptdaemon/enums.py:506
+#: ../aptkit/enums.py:506
 msgid "Package file could not be opened"
 msgstr "Súbor balíka nebolo možné otvoriť"
 
-#: ../aptdaemon/enums.py:507
+#: ../aptkit/enums.py:507
 msgid "Not supported feature"
 msgstr "Nepodporovaná funkcia"
 
-#: ../aptdaemon/enums.py:508
+#: ../aptkit/enums.py:508
 msgid "Failed to download the license key"
 msgstr "Nepodarilo sa stiahnuť licenčný kľúč"
 
-#: ../aptdaemon/enums.py:509
+#: ../aptkit/enums.py:509
 msgid "Failed to install the license key"
 msgstr "Nepodarilo sa nainštalovať licenčný kľúč"
 
-#: ../aptdaemon/enums.py:510
+#: ../aptkit/enums.py:510
 msgid "The system is already up to date"
 msgstr "Systém je už aktuálny"
 
-#: ../aptdaemon/enums.py:511
+#: ../aptkit/enums.py:511
 msgid "You could not be authorized"
 msgstr ""
 
-#: ../aptdaemon/enums.py:512
+#: ../aptkit/enums.py:512
 msgid "You are not allowed to perform this action"
 msgstr ""
 
-#: ../aptdaemon/enums.py:513
+#: ../aptkit/enums.py:513
 msgid "An unhandlable error occured"
 msgstr "Vyskytla sa neobslúžiteľná chyba"
 
-#: ../aptdaemon/enums.py:516
+#: ../aptkit/enums.py:516
 msgid "Waiting for service to start"
 msgstr "Čaká sa na spustenie služby"
 
-#: ../aptdaemon/enums.py:518
+#: ../aptkit/enums.py:518
 msgid "Waiting"
 msgstr "Čaká sa"
 
-#: ../aptdaemon/enums.py:519
+#: ../aptkit/enums.py:519
 msgid "Waiting for required medium"
 msgstr "Čaká sa na požadovaný nosič"
 
-#: ../aptdaemon/enums.py:520
+#: ../aptkit/enums.py:520
 msgid "Waiting for other software managers to quit"
 msgstr "Čaká sa na ukončenie iných nástrojov na správu softvéru"
 
-#: ../aptdaemon/enums.py:521
+#: ../aptkit/enums.py:521
 msgid "Waiting for configuration file prompt"
 msgstr "Čaká sa na výzvu konfiguračného súboru"
 
-#: ../aptdaemon/enums.py:523
+#: ../aptkit/enums.py:523
 msgid "Running task"
 msgstr "Prebieha úloha"
 
-#: ../aptdaemon/enums.py:524
+#: ../aptkit/enums.py:524
 msgid "Downloading"
 msgstr "Sťahuje sa"
 
-#: ../aptdaemon/enums.py:525
+#: ../aptkit/enums.py:525
 msgid "Querying software sources"
 msgstr "Prebieha požiadavka na zdroje softvéru"
 
-#: ../aptdaemon/enums.py:526
+#: ../aptkit/enums.py:526
 msgid "Cleaning up"
 msgstr "Prebieha čistenie"
 
-#: ../aptdaemon/enums.py:529
+#: ../aptkit/enums.py:529
 msgid "Finished"
 msgstr "Dokončené"
 
-#: ../aptdaemon/enums.py:530
+#: ../aptkit/enums.py:530
 msgid "Cancelling"
 msgstr "Ruší sa"
 
-#: ../aptdaemon/enums.py:531
+#: ../aptkit/enums.py:531
 msgid "Loading software list"
 msgstr "Načítava sa zoznam softvéru"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:536
+#: ../aptkit/enums.py:536
 #, python-format
 msgid "Installing %s"
 msgstr "Inštaluje sa %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:538
+#: ../aptkit/enums.py:538
 #, python-format
 msgid "Configuring %s"
 msgstr "Nastavuje sa %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:540
+#: ../aptkit/enums.py:540
 #, python-format
 msgid "Removing %s"
 msgstr "Odstraňuje sa %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:542
+#: ../aptkit/enums.py:542
 #, python-format
 msgid "Completely removing %s"
 msgstr "Úplne sa odstraňuje %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:544
+#: ../aptkit/enums.py:544
 #, python-format
 msgid "Noting disappearance of %s"
 msgstr "Zaznamenali sme zmiznutie %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:546
+#: ../aptkit/enums.py:546
 #, python-format
 msgid "Running post-installation trigger %s"
 msgstr "Vykonáva sa spúšťač post-installation %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:548
+#: ../aptkit/enums.py:548
 #, python-format
 msgid "Upgrading %s"
 msgstr "Aktualizuje sa %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:550
+#: ../aptkit/enums.py:550
 #, python-format
 msgid "Unpacking %s"
 msgstr "Rozbaľuje sa %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:552
+#: ../aptkit/enums.py:552
 #, python-format
 msgid "Preparing installation of %s"
 msgstr "Pripravuje sa inštalácia %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:554
+#: ../aptkit/enums.py:554
 #, python-format
 msgid "Preparing configuration of %s"
 msgstr "Pripravuje sa konfigurácia %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:556
+#: ../aptkit/enums.py:556
 #, python-format
 msgid "Preparing removal of %s"
 msgstr "Pripravuje sa odstránenie %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:558
+#: ../aptkit/enums.py:558
 #, python-format
 msgid "Preparing complete removal of %s"
 msgstr "Pripravuje sa úplné odstránenie %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:560
+#: ../aptkit/enums.py:560
 #, python-format
 msgid "Installed %s"
 msgstr "Nainštalovaný balík %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:562
+#: ../aptkit/enums.py:562
 #, python-format
 msgid "Completely removed %s"
 msgstr "Balík „%s“ je úplne odstránený"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:564
+#: ../aptkit/enums.py:564
 #, python-format
 msgid "Removed %s"
 msgstr "Odstránený balík %s"
 
-#: ../aptdaemon/enums.py:567
+#: ../aptkit/enums.py:567
 msgid "Done"
 msgstr "Hotovo"
 
-#: ../aptdaemon/enums.py:568
+#: ../aptkit/enums.py:568
 msgid "Authentication failed"
 msgstr "Overenie totožnosti zlyhalo"
 
-#: ../aptdaemon/enums.py:570
+#: ../aptkit/enums.py:570
 msgid "Fetching"
 msgstr "Sťahuje sa"
 
-#: ../aptdaemon/enums.py:571
+#: ../aptkit/enums.py:571
 msgid "Idle"
 msgstr "Nečinný"
 
-#: ../aptdaemon/enums.py:572
+#: ../aptkit/enums.py:572
 msgid "Network isn't available"
 msgstr "Sieť nie je dostupná"
 
-#: ../aptdaemon/enums.py:704
+#: ../aptkit/enums.py:704
 #, python-format
 msgid "Processing %s"
 msgstr "Prebieha spracovanie %s"
 
-#: ../aptdaemon/gtk3widgets.py:306
+#: ../aptkit/gtk3widgets.py:306
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
 msgstr "Stiahnuté %sB z %sB pri %sB/s"
 
-#: ../aptdaemon/gtk3widgets.py:311 ../aptdaemon/gtk3widgets.py:510
+#: ../aptkit/gtk3widgets.py:311 ../aptkit/gtk3widgets.py:510
 #, python-format
 msgid "Downloaded %sB of %sB"
 msgstr "Stiahnuté %sB z %sB"
 
-#: ../aptdaemon/gtk3widgets.py:323
+#: ../aptkit/gtk3widgets.py:323
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: ../aptdaemon/gtk3widgets.py:474
+#: ../aptkit/gtk3widgets.py:474
 msgid "File"
 msgstr "Súbor"
 
 #. TRANSLATORS: header of the progress download column
-#: ../aptdaemon/gtk3widgets.py:479
+#: ../aptkit/gtk3widgets.py:479
 msgid "%"
 msgstr "%"
 
-#: ../aptdaemon/gtk3widgets.py:515
+#: ../aptkit/gtk3widgets.py:515
 #, python-format
 msgid "Downloaded %sB"
 msgstr "Stiahnutých %sB"
 
-#: ../aptdaemon/gtk3widgets.py:518
+#: ../aptkit/gtk3widgets.py:518
 msgid "Downloaded"
 msgstr "Stiahnutých"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: ../aptdaemon/gtk3widgets.py:853
+#: ../aptkit/gtk3widgets.py:853
 #, python-format
 msgid "CD/DVD '%s' is required"
 msgstr "Vyžaduje sa CD/DVD „%s“"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: ../aptdaemon/gtk3widgets.py:855
+#: ../aptkit/gtk3widgets.py:855
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
@@ -1110,35 +1110,35 @@ msgstr ""
 "Prosím, vložte vyššie uvedené CD/DVD do jednotky „%s“ aby ste z neho mohli "
 "nainštalovať softvérové balíky."
 
-#: ../aptdaemon/gtk3widgets.py:859 ../aptdaemon/gtk3widgets.py:880
+#: ../aptkit/gtk3widgets.py:859 ../aptkit/gtk3widgets.py:880
 msgid "C_ontinue"
 msgstr "P_okračovať"
 
-#: ../aptdaemon/gtk3widgets.py:931
+#: ../aptkit/gtk3widgets.py:931
 msgid "Install"
 msgstr "Nainštalovať"
 
-#: ../aptdaemon/gtk3widgets.py:932
+#: ../aptkit/gtk3widgets.py:932
 msgid "Reinstall"
 msgstr "Znovu nainštalovať"
 
-#: ../aptdaemon/gtk3widgets.py:933
+#: ../aptkit/gtk3widgets.py:933
 msgid "Remove"
 msgstr "Odstrániť"
 
-#: ../aptdaemon/gtk3widgets.py:934
+#: ../aptkit/gtk3widgets.py:934
 msgid "Purge"
 msgstr "Odstrániť s konfiguráciou"
 
-#: ../aptdaemon/gtk3widgets.py:935
+#: ../aptkit/gtk3widgets.py:935
 msgid "Upgrade"
 msgstr "Aktualizovať"
 
-#: ../aptdaemon/gtk3widgets.py:936
+#: ../aptkit/gtk3widgets.py:936
 msgid "Downgrade"
 msgstr "Znížiť verziu"
 
-#: ../aptdaemon/gtk3widgets.py:937
+#: ../aptkit/gtk3widgets.py:937
 msgid "Skip upgrade"
 msgstr "Preskočiť aktualizáciu"
 
@@ -1147,95 +1147,95 @@ msgstr "Preskočiť aktualizáciu"
 #. FIXME: adapt the title and message accordingly
 #. FIXME: Should we have different modes? Only show dependencies, only
 #. initial packages or both?
-#: ../aptdaemon/gtk3widgets.py:948
+#: ../aptkit/gtk3widgets.py:948
 msgid "Please take a look at the list of changes below."
 msgstr "Prosím, skontrolujte zoznam zmien dolu."
 
-#: ../aptdaemon/gtk3widgets.py:956
+#: ../aptkit/gtk3widgets.py:956
 msgid "Additional software has to be installed"
 msgstr "Je potrebné nainštalovať ďalší softvér"
 
-#: ../aptdaemon/gtk3widgets.py:958
+#: ../aptkit/gtk3widgets.py:958
 msgid "Additional software has to be re-installed"
 msgstr "Je potrebné znovu nainštalovať ďalší softvér"
 
-#: ../aptdaemon/gtk3widgets.py:960
+#: ../aptkit/gtk3widgets.py:960
 msgid "Additional software has to be removed"
 msgstr "Je potrebné odstrániť ďalší softvér"
 
-#: ../aptdaemon/gtk3widgets.py:962
+#: ../aptkit/gtk3widgets.py:962
 msgid "Additional software has to be purged"
 msgstr "Je potrebné odstrániť s konfiguráciou ďalší softvér"
 
-#: ../aptdaemon/gtk3widgets.py:964
+#: ../aptkit/gtk3widgets.py:964
 msgid "Additional software has to be upgraded"
 msgstr "Je potrebné aktualizovať ďalší softvér"
 
-#: ../aptdaemon/gtk3widgets.py:966
+#: ../aptkit/gtk3widgets.py:966
 msgid "Additional software has to be downgraded"
 msgstr "Je potrebné znížiť verziu ďalšieho softvéru"
 
-#: ../aptdaemon/gtk3widgets.py:968
+#: ../aptkit/gtk3widgets.py:968
 msgid "Updates will be skipped"
 msgstr "Aktualizácie sa preskočia"
 
-#: ../aptdaemon/gtk3widgets.py:976
+#: ../aptkit/gtk3widgets.py:976
 msgid "Additional changes are required"
 msgstr "Vyžadujú sa ďalšie zmeny"
 
-#: ../aptdaemon/gtk3widgets.py:981
+#: ../aptkit/gtk3widgets.py:981
 #, python-format
 msgid "%sB will be downloaded in total."
 msgstr "Stiahne sa celkom %sB."
 
-#: ../aptdaemon/gtk3widgets.py:985
+#: ../aptkit/gtk3widgets.py:985
 #, python-format
 msgid "%sB of disk space will be freed."
 msgstr "Uvoľní sa %sB miesta na disku."
 
-#: ../aptdaemon/gtk3widgets.py:989
+#: ../aptkit/gtk3widgets.py:989
 #, python-format
 msgid "%sB more disk space will be used."
 msgstr "Použije sa ďalších %sB miesta na disku."
 
 #. TRANSLATORS: %s is a file path
-#: ../aptdaemon/gtk3widgets.py:1061
+#: ../aptkit/gtk3widgets.py:1061
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
 msgstr "Nahradiť vaše zmeny v „%s“ novšou verziou konfiguračného súboru?"
 
-#: ../aptdaemon/gtk3widgets.py:1063
+#: ../aptkit/gtk3widgets.py:1063
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
 msgstr ""
 "Ak neviete, prečo sa tu súbor už nachádza, je zvyčajne bezpečné ho nahradiť."
 
-#: ../aptdaemon/gtk3widgets.py:1072
+#: ../aptkit/gtk3widgets.py:1072
 msgid "_Changes"
 msgstr "_Zmeny"
 
-#: ../aptdaemon/gtk3widgets.py:1075
+#: ../aptkit/gtk3widgets.py:1075
 msgid "_Keep"
 msgstr "_Ponechať"
 
-#: ../aptdaemon/gtk3widgets.py:1076
+#: ../aptkit/gtk3widgets.py:1076
 msgid "_Replace"
 msgstr "Nah_radiť"
 
-#: ../aptdaemon/gtk3widgets.py:1179
+#: ../aptkit/gtk3widgets.py:1179
 msgid "_Details"
 msgstr "Po_drobnosti"
 
 #. TRANSLATORS: %s is the name of a package manager
-#: ../aptdaemon/lock.py:182
+#: ../aptkit/lock.py:182
 #, python-format
 msgid "Waiting for %s to exit"
 msgstr "Čaká sa na ukončenie %s"
 
 #. TRANSLATORS: %s is a list of package names
-#: ../aptdaemon/progress.py:169
+#: ../aptkit/progress.py:169
 #, python-format
 msgid "Downloading %(files)s"
 msgid_plural "Downloading %(files)s"
@@ -1245,12 +1245,12 @@ msgstr[2] "Sťahuje sa %(files)s"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: ../aptdaemon/progress.py:281 ../aptdaemon/progress.py:320
+#: ../aptkit/progress.py:281 ../aptkit/progress.py:320
 msgid "local repository"
 msgstr "lokálny zdroj softvéru"
 
 #. TRANSLATORS: %s is a list of repository names
-#: ../aptdaemon/progress.py:284
+#: ../aptkit/progress.py:284
 #, python-format
 msgid "Downloading from %s"
 msgid_plural "Downloading from %s"
@@ -1259,107 +1259,107 @@ msgstr[1] "Sťahuje sa z %s"
 msgstr[2] "Sťahuje sa z %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:324
+#: ../aptkit/progress.py:324
 #, python-format
 msgid "Structure of %s"
 msgstr "Štruktúra %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:327
+#: ../aptkit/progress.py:327
 #, python-format
 msgid "Description of %s"
 msgstr "Popis %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:330
+#: ../aptkit/progress.py:330
 #, python-format
 msgid "Description signature of %s"
 msgstr "Úplne sa odstraňuje %s"
 
-#: ../aptdaemon/progress.py:335
+#: ../aptkit/progress.py:335
 #, python-format
 msgid "Available packages from %s"
 msgstr "Dostupné balíky z %s"
 
-#: ../aptdaemon/progress.py:339
+#: ../aptkit/progress.py:339
 #, python-format
 msgid "Available sources from %s"
 msgstr "Dostupné zdroje z %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:342
+#: ../aptkit/progress.py:342
 #, python-format
 msgid "Available translations from %s"
 msgstr "Dostupné preklady z %s"
 
-#: ../aptdaemon/progress.py:359
+#: ../aptkit/progress.py:359
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr "Dostupné preklady %s (%s) z %s"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: ../aptdaemon/progress.py:363
+#: ../aptkit/progress.py:363
 #, python-format
 msgid "Translations for %s from %s"
 msgstr "Dostupné preklady pre %s z %s"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: ../aptdaemon/progress.py:368
+#: ../aptkit/progress.py:368
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr "Preklady (%s) z %s"
 
-#: ../aptdaemon/worker/aptworker.py:374 ../aptdaemon/worker/aptworker.py:671
-#: ../aptdaemon/worker/aptworker.py:748 ../aptdaemon/worker/aptworker.py:791
+#: ../aptkit/worker/aptworker.py:374 ../aptkit/worker/aptworker.py:671
+#: ../aptkit/worker/aptworker.py:748 ../aptkit/worker/aptworker.py:791
 #, python-format
 msgid "Package %s isn't available"
 msgstr "Balík %s nie je dostupný"
 
-#: ../aptdaemon/worker/aptworker.py:379 ../aptdaemon/worker/aptworker.py:675
-#: ../aptdaemon/worker/aptworker.py:752 ../aptdaemon/worker/aptworker.py:795
+#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:675
+#: ../aptkit/worker/aptworker.py:752 ../aptkit/worker/aptworker.py:795
 #, python-format
 msgid "Package %s isn't installed"
 msgstr "Balík %s nie je nainštalovaný"
 
-#: ../aptdaemon/worker/aptworker.py:383
+#: ../aptkit/worker/aptworker.py:383
 #, python-format
 msgid "The version %s of %s isn't installed"
 msgstr "Verzia %s %s nie je nainštalovaná"
 
-#: ../aptdaemon/worker/aptworker.py:398
+#: ../aptkit/worker/aptworker.py:398
 #, python-format
 msgid "Package %s is already installed"
 msgstr "Balík %s je už nainštalovaný"
 
-#: ../aptdaemon/worker/aptworker.py:407 ../aptdaemon/worker/aptworker.py:821
+#: ../aptkit/worker/aptworker.py:407 ../aptkit/worker/aptworker.py:821
 #, python-format
 msgid "The version %s of %s isn't available."
 msgstr "Verzia %s %s nie je dostupná."
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
-#: ../aptdaemon/worker/aptworker.py:565
+#: ../aptkit/worker/aptworker.py:565
 #, python-format
 msgid "The keyserver URL is invalid: %s"
 msgstr "URL servera kľúčov je neplatné: %s"
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
-#: ../aptdaemon/worker/aptworker.py:571
+#: ../aptkit/worker/aptworker.py:571
 #, python-format
 msgid "Invalid protocol of the server: %s"
 msgstr "Neplatný protokol servera: %s"
 
 #. TRANSLATORS: %s is the id of a GnuPG key
 #. e.g. E08ADE95
-#: ../aptdaemon/worker/aptworker.py:579 ../aptdaemon/worker/aptworker.py:623
+#: ../aptkit/worker/aptworker.py:579 ../aptkit/worker/aptworker.py:623
 #, python-format
 msgid "Invalid key id: %s"
 msgstr "Neplatný identifikátor kľúča: %s"
 
-#: ../aptdaemon/worker/aptworker.py:587
+#: ../aptkit/worker/aptworker.py:587
 #, python-format
 msgid ""
 "Failed to download and install the key %s from %s:\n"
@@ -1368,62 +1368,62 @@ msgstr ""
 "Nepodarilo sa stiahnuť a nainštalovať kľúč %s z %s:\n"
 "%s"
 
-#: ../aptdaemon/worker/aptworker.py:604
+#: ../aptkit/worker/aptworker.py:604
 #, python-format
 msgid "Key file %s couldn't be installed: %s"
 msgstr "Súbor kľúča %s nebolo možné nainštalovať: %s"
 
-#: ../aptdaemon/worker/aptworker.py:628
+#: ../aptkit/worker/aptworker.py:628
 #, python-format
 msgid "Key with fingerprint %s couldn't be removed: %s"
 msgstr "Kľúč s odtlačkom %s nebolo možné odstrániť: %s"
 
-#: ../aptdaemon/worker/aptworker.py:679
+#: ../aptkit/worker/aptworker.py:679
 #, python-format
 msgid "Package %s cannot be removed."
 msgstr "Balík %s nie je možné odstrániť."
 
-#: ../aptdaemon/worker/aptworker.py:683
+#: ../aptkit/worker/aptworker.py:683
 #, python-format
 msgid "The version %s of %s is not installed"
 msgstr "Verzia %s %s nie je nainštalovaná"
 
-#: ../aptdaemon/worker/aptworker.py:763
+#: ../aptkit/worker/aptworker.py:763
 #, python-format
 msgid "The former version %s of %s is already installed"
 msgstr "Predošlá verzia %s %s už je nainštalovaná"
 
-#: ../aptdaemon/worker/aptworker.py:768 ../aptdaemon/worker/aptworker.py:814
+#: ../aptkit/worker/aptworker.py:768 ../aptkit/worker/aptworker.py:814
 #, python-format
 msgid "The version %s of %s is already installed"
 msgstr "Verzia %s %s už je nainštalovaná"
 
-#: ../aptdaemon/worker/aptworker.py:775
+#: ../aptkit/worker/aptworker.py:775
 #, python-format
 msgid "The version %s of %s isn't available"
 msgstr "Verzia %s %s nie je dostupná"
 
-#: ../aptdaemon/worker/aptworker.py:779
+#: ../aptkit/worker/aptworker.py:779
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
 msgstr "Musíte uviesť verziu, na ktorú chcete znížiť balík %s"
 
-#: ../aptdaemon/worker/aptworker.py:807
+#: ../aptkit/worker/aptworker.py:807
 #, python-format
 msgid "The later version %s of %s is already installed"
 msgstr "Novšia verzia %s %s je už nainštalovaná"
 
-#: ../aptdaemon/worker/aptworker.py:838
+#: ../aptkit/worker/aptworker.py:838
 #, python-format
 msgid "The package %s isn't available in the %s release."
 msgstr "Balík %s nie je dostupný vo vydaní %s."
 
-#: ../aptdaemon/worker/aptworker.py:1026
+#: ../aptkit/worker/aptworker.py:1026
 #, python-format
 msgid "Package %s cannot be removed"
 msgstr "Balík %s nie je možné odstrániť"
 
-#: ../aptdaemon/worker/aptworker.py:1123
+#: ../aptkit/worker/aptworker.py:1123
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
@@ -1431,25 +1431,25 @@ msgstr ""
 "Balík neposkytuje platné pole Installed-Size v súbore control. Pozri Debian "
 "Policy 5.6.20."
 
-#: ../aptdaemon/worker/aptworker.py:1265
+#: ../aptkit/worker/aptworker.py:1265
 msgid "The license key is empty"
 msgstr "Licenčný kľúč je prázdny"
 
-#: ../aptdaemon/worker/aptworker.py:1281
+#: ../aptkit/worker/aptworker.py:1281
 msgid "The license key is not allowed to contain executable code."
 msgstr "Licenčný kľúč nemôže obsahovať spustiteľný kód"
 
-#: ../aptdaemon/worker/aptworker.py:1290
+#: ../aptkit/worker/aptworker.py:1290
 #, python-format
 msgid "The license key path %s is invalid"
 msgstr "Cesta %s k licenčnému kľúču  je neplatná"
 
-#: ../aptdaemon/worker/aptworker.py:1294
+#: ../aptkit/worker/aptworker.py:1294
 #, python-format
 msgid "The license key already exists: %s"
 msgstr "Licenčný kľúč už existuje: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1299
+#: ../aptkit/worker/aptworker.py:1299
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
@@ -1458,40 +1458,40 @@ msgstr ""
 "Umiestnenie licenčného kľúča nie je bezpečné, pretože obsahuje symbolické "
 "odkazy. Cesta %s sa mapuje na %s"
 
-#: ../aptdaemon/worker/aptworker.py:1307
+#: ../aptkit/worker/aptworker.py:1307
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
 msgstr "Adresár, kde sa má nainštalovať kľúč zatiaľ neexistuje: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1318
+#: ../aptkit/worker/aptworker.py:1318
 #, python-format
 msgid "Failed to write key file to: %s"
 msgstr "Nepodarilo sa zapísať kľúč do: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1353
+#: ../aptkit/worker/aptworker.py:1353
 msgid "The following packages have unmet dependencies:"
 msgstr "Nasledovné balíky maú nesplnené závislosti:"
 
-#: ../aptdaemon/worker/aptworker.py:1406
+#: ../aptkit/worker/aptworker.py:1406
 msgid "but it is a virtual package"
 msgstr "ale je to virtuálny balík"
 
-#: ../aptdaemon/worker/aptworker.py:1409
+#: ../aptkit/worker/aptworker.py:1409
 msgid "but it is not installed"
 msgstr "ale nie je nainštalovaný"
 
-#: ../aptdaemon/worker/aptworker.py:1411
+#: ../aptkit/worker/aptworker.py:1411
 msgid "but it is not going to be installed"
 msgstr "ale nebude sa inštalovať"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptdaemon/worker/aptworker.py:1415
+#: ../aptkit/worker/aptworker.py:1415
 #, python-format
 msgid "but %s is installed"
 msgstr "ale %s je nainštalovaný"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptdaemon/worker/aptworker.py:1419
+#: ../aptkit/worker/aptworker.py:1419
 #, python-format
 msgid "but %s is to be installed"
 msgstr "ale %s sa bude inštalovať"

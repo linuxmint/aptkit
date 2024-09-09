@@ -19,7 +19,7 @@
 
 __author__ = "Sebastian Heinlein <devel@glatzor.de>"
 
-__all__ = ("AptDaemonError", "ForeignTransaction", "InvalidMetaDataError",
+__all__ = ("AptKitError", "ForeignTransaction", "InvalidMetaDataError",
            "InvalidProxyError", "RepositoryInvalidError",
            "TransactionAlreadyRunning", "TransactionCancelled",
            "TransactionAlreadySimulating",
@@ -33,14 +33,14 @@ import sys
 
 import dbus
 
-import aptdaemon.enums
+import aptkit.enums
 
 PY3K = sys.version_info.major > 2
 
 
-class AptDaemonError(dbus.DBusException):
+class AptKitError(dbus.DBusException):
 
-    """Internal error of the aptdaemon"""
+    """Internal error of the aptkit"""
 
     _dbus_error_name = "org.debian.apt"
 
@@ -59,21 +59,21 @@ class AptDaemonError(dbus.DBusException):
             return self._message.encode("UTF-8")
 
 
-class TransactionRoleAlreadySet(AptDaemonError):
+class TransactionRoleAlreadySet(AptKitError):
 
     """Error if a transaction has already been configured."""
 
     _dbus_error_name = "org.debian.apt.TransactionRoleAlreadySet"
 
 
-class TransactionAlreadyRunning(AptDaemonError):
+class TransactionAlreadyRunning(AptKitError):
 
     """Error if a transaction has already been configured."""
 
     _dbus_error_name = "org.debian.apt.TransactionAlreadyRunning"
 
 
-class TransactionAlreadySimulating(AptDaemonError):
+class TransactionAlreadySimulating(AptKitError):
 
     """Error if a transaction should be simulated but a simulation is
     already processed.
@@ -82,14 +82,14 @@ class TransactionAlreadySimulating(AptDaemonError):
     _dbus_error_name = "org.debian.apt.TransactionAlreadySimulating"
 
 
-class ForeignTransaction(AptDaemonError):
+class ForeignTransaction(AptKitError):
 
     """Error if a transaction was initialized by a different user."""
 
     _dbus_error_name = "org.debian.apt.TransactionAlreadyRunning"
 
 
-class TransactionFailed(AptDaemonError):
+class TransactionFailed(AptKitError):
 
     """Internal error if a transaction could not be processed successfully."""
 
@@ -104,11 +104,11 @@ class TransactionFailed(AptDaemonError):
         self.code = code
         self.details = details
         self.details_args = args
-        AptDaemonError.__init__(self, "%s: %s" % (code, details % args))
+        AptKitError.__init__(self, "%s: %s" % (code, details % args))
 
     def __unicode__(self):
         return "Transaction failed: %s\n%s" % \
-               (aptdaemon.enums.get_error_string_from_enum(self.code),
+               (aptkit.enums.get_error_string_from_enum(self.code),
                 self.details)
 
     def __str__(self):
@@ -118,31 +118,31 @@ class TransactionFailed(AptDaemonError):
             return self.__unicode__().encode("utf-8")
 
 
-class InvalidMetaDataError(AptDaemonError):
+class InvalidMetaDataError(AptKitError):
 
     """Invalid meta data given"""
 
     _dbus_error_name = "org.debian.apt.InvalidMetaData"
 
 
-class InvalidProxyError(AptDaemonError):
+class InvalidProxyError(AptKitError):
 
     """Invalid proxy given"""
 
     _dbus_error_name = "org.debian.apt.InvalidProxy"
 
     def __init__(self, proxy):
-        AptDaemonError.__init__(self, "InvalidProxyError: %s" % proxy)
+        AptKitError.__init__(self, "InvalidProxyError: %s" % proxy)
 
 
-class TransactionCancelled(AptDaemonError):
+class TransactionCancelled(AptKitError):
 
     """Internal error if a transaction was cancelled."""
 
     _dbus_error_name = "org.debian.apt.TransactionCancelled"
 
 
-class RepositoryInvalidError(AptDaemonError):
+class RepositoryInvalidError(AptKitError):
 
     """The added repository is invalid"""
 
@@ -215,7 +215,7 @@ def get_native_exception(error):
         return AuthorizationFailed(*dbus_msg.split(":", 1))
     elif dbus_name == NotAuthorizedError._dbus_error_name:
         return NotAuthorizedError(*dbus_msg.split(":", 1))
-    for error_cls in [AptDaemonError, TransactionRoleAlreadySet,
+    for error_cls in [AptKitError, TransactionRoleAlreadySet,
                       TransactionAlreadyRunning, ForeignTransaction,
                       InvalidMetaDataError, InvalidProxyError,
                       TransactionCancelled, RepositoryInvalidError]:

@@ -9,61 +9,61 @@ import unittest
 from gi.repository import GObject
 import dbus
 
-import aptdaemon.client
-import aptdaemon.loop
-import aptdaemon.enums
+import aptkit.client
+import aptkit.loop
+import aptkit.enums
 
-import aptdaemon.test
+import aptkit.test
 
 DEBUG = True
 
 
-class DaemonTest(aptdaemon.test.AptDaemonTestCase):
+class DaemonTest(aptkit.test.AptKitTestCase):
 
     """Test the python client."""
 
     def setUp(self):
-        """Setup a chroot, run the aptdaemon and a fake PolicyKit daemon."""
+        """Setup a chroot, run the aptkit and a fake PolicyKit daemon."""
         # Setup chroot
-        self.chroot = aptdaemon.test.Chroot()
+        self.chroot = aptkit.test.Chroot()
         self.chroot.setup()
         self.addCleanup(self.chroot.remove)
-        # Start aptdaemon with the chroot on the session bus
+        # Start aptkit with the chroot on the session bus
         self.start_dbus_daemon()
         self.bus = dbus.bus.BusConnection(self.dbus_address)
-        self.start_session_aptd(self.chroot.path)
+        self.start_session_aptk(self.chroot.path)
         # Start the fake PolikcyKit daemon
         self.start_fake_polkitd()
         time.sleep(1)
 
     def _on_finished(self, trans, exit):
         """Callback to stop the mainloop after a transaction is done."""
-        aptdaemon.loop.mainloop.quit()
+        aptkit.loop.mainloop.quit()
 
     def test_detect_unauthenticated(self):
         """Test if the installation of an unauthenticated packages fails
         if simulate hasn't been called explicitly before.
         """
         self.chroot.add_test_repository(copy_sig=False)
-        self.client = aptdaemon.client.AptClient(self.bus)
+        self.client = aptkit.client.AptClient(self.bus)
         trans = self.client.install_packages(["silly-base"])
         trans.connect("finished", self._on_finished)
         trans.run()
-        aptdaemon.loop.mainloop.run()
-        self.assertEqual(trans.exit, aptdaemon.enums.EXIT_FAILED)
+        aptkit.loop.mainloop.run()
+        self.assertEqual(trans.exit, aptkit.enums.EXIT_FAILED)
         self.assertEqual(trans.error.code,
-                         aptdaemon.enums.ERROR_PACKAGE_UNAUTHENTICATED)
+                         aptkit.enums.ERROR_PACKAGE_UNAUTHENTICATED)
         self.assertEqual(trans.unauthenticated, ["silly-base"])
 
     def test_environment(self):
         """Ensure that the test environment works."""
         self.chroot.add_test_repository()
-        self.client = aptdaemon.client.AptClient(self.bus)
+        self.client = aptkit.client.AptClient(self.bus)
         trans = self.client.install_packages(["silly-base"])
         trans.connect("finished", self._on_finished)
         trans.run()
-        aptdaemon.loop.mainloop.run()
-        self.assertEqual(trans.exit, aptdaemon.enums.EXIT_SUCCESS)
+        aptkit.loop.mainloop.run()
+        self.assertEqual(trans.exit, aptkit.enums.EXIT_SUCCESS)
 
 
 if __name__ == "__main__":

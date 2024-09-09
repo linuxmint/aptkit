@@ -1,7 +1,7 @@
 .\" groff -man -Tascii foo.1
-.TH org.debian.apt 7 "December 2009" "aptdaemon" "D-Bus Interface"
+.TH org.debian.apt 7 "December 2009" "aptkit" "D-Bus Interface"
 .SH NAME
-org.debian.apt \- the main interface of aptdaemon
+org.debian.apt \- the main interface of aptkit
 .SH SYNOPSIS
 The daemon is accessed through the D-Bus object at
 .IR /org/debian/apt .
@@ -226,13 +226,13 @@ transactions. If there's any active transaction active will be an empty
 string.
 .RE
 .SH HOMEPAGE
-https://launchpad.net/aptdaemon
+https://launchpad.net/aptkit
 .SH BUGS
-You can report bugs at the Launchpad site of aptdaemon:
-https://bugs.launchpad.net/aptdaemon/+filebug
+You can report bugs at the Launchpad site of aptkit:
+https://bugs.launchpad.net/aptkit/+filebug
 .SH AUTHOR
 Sebastian Heinlein <devel at glatzor dot de>
 .SH SEE ALSO
 .BR org.debian.apt.transaction (7),
-.BR aptd (2),
-.BR aptdcon (2)
+.BR aptk (2),
+.BR aptkcon (2)

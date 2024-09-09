@@ -8,7 +8,7 @@ import shutil
 import tempfile
 import unittest
 
-from aptdaemon.gtk3widgets import DiffView
+from aptkit.gtk3widgets import DiffView
 
 
 class TestLP1120322(unittest.TestCase):

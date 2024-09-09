@@ -8,7 +8,7 @@ import apt
 import apt_pkg
 import unittest
 
-import aptdaemon.test
+import aptkit.test
 
 
 class IndexRaceTest(unittest.TestCase):
@@ -22,7 +22,7 @@ class IndexRaceTest(unittest.TestCase):
     """
 
     def setUp(self):
-        self.chroot = aptdaemon.test.Chroot()
+        self.chroot = aptkit.test.Chroot()
         self.chroot.setup()
         self.chroot.add_test_repository()
         # Check if installing an uninstalled package works

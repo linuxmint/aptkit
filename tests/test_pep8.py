@@ -27,14 +27,14 @@ import unittest
 
 
 @unittest.skip("Does not work")
-class AptDaemonPep8TestCase(unittest.TestCase):
+class AptKitPep8TestCase(unittest.TestCase):
 
     def test(self):
         """Check if the source code matches the PEP8 style conventions."""
         subprocess.check_call([
             "pycodestyle", "--statistics", "--show-source",
             "--show-pep8", "--exclude",
-            "pkenums.py,aptdaemon,tests,debian,doc,.pc,gtk3-demo.py,setup.py",
+            "pkenums.py,aptkit,tests,debian,doc,.pc,gtk3-demo.py,setup.py",
             "--ignore=E402"])
 
 

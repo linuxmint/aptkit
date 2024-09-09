@@ -8,8 +8,8 @@ import unittest
 import apt
 import mock
 
-import aptdaemon.core
-import aptdaemon.errors
+import aptkit.core
+import aptkit.errors
 
 
 class TestValidPacakgeNames(unittest.TestCase):
@@ -21,7 +21,7 @@ class TestValidPacakgeNames(unittest.TestCase):
         self.cache = apt.Cache()
         opt = mock.Mock()
         opt.dummy = True
-        self.daemon = aptdaemon.core.AptDaemon(opt, connect=False)
+        self.daemon = aptkit.core.AptKit(opt, connect=False)
 
     def test_valid_package_names(self):
         # ensure that the code raises on invalid ones, note that we
@@ -31,7 +31,7 @@ class TestValidPacakgeNames(unittest.TestCase):
                 "foo_bar", "äää", "i space", "a", "+invalidstart", "noUpper",
                 "foo=", "foo=", "foo=a", "foo=0 space"
                 "foo/", "foo/ space"]:
-            with self.assertRaises(aptdaemon.errors.AptDaemonError):
+            with self.assertRaises(aptkit.errors.AptKitError):
                 self.daemon._check_package_names([invalid])
 
         # check some simple good cases

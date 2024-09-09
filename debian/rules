@@ -9,7 +9,7 @@ PYTHON3=$(shell py3versions -vr)
 
 override_dh_auto_clean:
 	dh_auto_clean
-	rm -rf build *.egg-info po/aptdaemon.pot
+	rm -rf build *.egg-info po/aptkit.pot
 
 # ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 # test-python%:

@@ -1,4 +1,4 @@
-AptDaemon optionally is capable of providing the PackageKit system D-Bus
+AptKit optionally is capable of providing the PackageKit system D-Bus
 interface (see http://www.packagekit.org/gtk-doc/api-reference.html). The goal
 is to provide the complete PackageKit API to run client applications smoothly.
 There won't be any additions or changes to the original PackageKit API.
@@ -24,7 +24,7 @@ Issues and shortcomings:
  - Messages are not used (possible candidates could be UNTRUSTED_PACKAGES,
    NEWER_PACKAGE_EXISTS, CONFIG_FILES_CHANGED, OTHER_UPDATES_HELD_BACK)
  - The post update hook (/etc/apt/apt.conf.d/20packagekit) cannot call
-   StateHasChanged since caller and callee are the same process (aptd) and
+   StateHasChanged since caller and callee are the same process (aptk) and
    the call is blocking. So you see a time out warning in the apt logs.
  - Translations of package description don't work
  - RepoListChanged signal doesn't get emitted

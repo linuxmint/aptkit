@@ -1,11 +1,11 @@
-# Korean translation for aptdaemon
+# Korean translation for aptkit
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the aptdaemon package.
+# This file is distributed under the same license as the aptkit package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: aptdaemon\n"
+"Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-21 15:36+0200\n"
 "PO-Revision-Date: 2013-01-30 12:15+0000\n"
@@ -27,7 +27,7 @@ msgstr "신뢰하는 공급자의 키 목록"
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "신뢰할 수 있는 키의 목록을 보려면 인증이 필요합니다."
 
-#: ../data/org.debian.apt.policy.in.h:3 ../aptdaemon/console.py:619
+#: ../data/org.debian.apt.policy.in.h:3 ../aptkit/console.py:619
 msgid "Remove downloaded package files"
 msgstr "다운로드한 패키지 파일을 제거"
 
@@ -97,7 +97,7 @@ msgstr "소프트웨어를 설치하려면 인증을 해야합니다."
 #. and InstallPackages in a row and only authenticating once.
 #.
 #. The client has to authenticate for this privilege before calling
-#. the aptdaemon methods.
+#. the aptkit methods.
 #: ../data/org.debian.apt.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "새 저장소를 추가하고 패키지 설치하기"
@@ -110,7 +110,7 @@ msgstr "새 소스에서 소프트웨어를 설치하려면 인증이 필요합�
 #. and InstallPackages in a row and only authenticating once.
 #.
 #. The client has to authenticate for this privilege before calling
-#. the aptdaemon methods.
+#. the aptkit methods.
 #.
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
@@ -147,110 +147,110 @@ msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr "프록시 서버로 소프트웨어를 다운로드하려면 인증이 필요합니다."
 
-#: ../aptdaemon/console.py:215
+#: ../aptkit/console.py:215
 msgid "ERROR"
 msgstr "오류"
 
-#: ../aptdaemon/console.py:249
+#: ../aptkit/console.py:249
 #, fuzzy, python-format
 msgid "Downloaded %(cur)sB of %(total)sB at %(rate)sB/s"
 msgstr "다운로드함  %sB of %sB 속도 %sB/s"
 
-#: ../aptdaemon/console.py:255
+#: ../aptkit/console.py:255
 #, fuzzy, python-format
 msgid "Downloaded %(cur)sB of %(total)sB"
 msgstr "다운로드함 %sB of %sB"
 
-#: ../aptdaemon/console.py:385 ../aptdaemon/console.py:390
+#: ../aptkit/console.py:385 ../aptkit/console.py:390
 msgid "ERROR:"
 msgstr "오류:"
 
-#: ../aptdaemon/console.py:386
+#: ../aptkit/console.py:386
 msgid "You are not allowed to perform this action."
 msgstr "이 작업을 실행할 수 있는 권한이 없습니다."
 
-#: ../aptdaemon/console.py:409 ../aptdaemon/console.py:537
+#: ../aptkit/console.py:409 ../aptkit/console.py:537
 msgid "Queuing"
 msgstr "대기 중"
 
-#: ../aptdaemon/console.py:417 ../aptdaemon/enums.py:527
+#: ../aptkit/console.py:417 ../aptkit/enums.py:527
 msgid "Resolving dependencies"
 msgstr "의존성 문제 해결 중"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:459
+#: ../aptkit/console.py:459
 #, python-format
 msgid "The following NEW package will be installed (%(count)s):"
 msgid_plural "The following NEW packages will be installed (%(count)s):"
 msgstr[0] "새로 설치할 패키지 (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:467
+#: ../aptkit/console.py:467
 #, python-format
 msgid "The following package will be upgraded (%(count)s):"
 msgid_plural "The following packages will be upgraded (%(count)s):"
 msgstr[0] "업그레이드할 패키지 (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:475
+#: ../aptkit/console.py:475
 #, python-format
 msgid "The following package will be REMOVED (%(count)s):"
 msgid_plural "The following packages will be REMOVED (%(count)s):"
 msgstr[0] "제거할 패키지 (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:484
+#: ../aptkit/console.py:484
 #, python-format
 msgid "The following package will be DOWNGRADED (%(count)s):"
 msgid_plural "The following packages will be DOWNGRADED (%(count)s):"
 msgstr[0] "하위 버전으로 다운그레이드할 패키지 (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:492
+#: ../aptkit/console.py:492
 #, python-format
 msgid "The following package will be reinstalled (%(count)s):"
 msgid_plural "The following packages will be reinstalled (%(count)s):"
 msgstr[0] "다시 설치할 패키지 (%(count)s):"
 
-#: ../aptdaemon/console.py:499
+#: ../aptkit/console.py:499
 #, python-format
 msgid "The following package has been kept back (%(count)s):"
 msgid_plural "The following packages have been kept back (%(count)s):"
 msgstr[0] "그대로 유지할 패키지 (%(count)s):"
 
-#: ../aptdaemon/console.py:507
+#: ../aptkit/console.py:507
 #, python-format
 msgid "Need to get %sB of archives."
 msgstr "압축 파일 %sB를 가져와야 합니다."
 
-#: ../aptdaemon/console.py:510
+#: ../aptkit/console.py:510
 #, python-format
 msgid "After this operation, %sB of additional disk space will be used."
 msgstr "다음 동작은 %sB의 디스크 용량을 추가로 사용합니다."
 
-#: ../aptdaemon/console.py:514
+#: ../aptkit/console.py:514
 #, python-format
 msgid "After this operation, %sB of additional disk space will be freed."
 msgstr "다음 동작은 %sB의 디스크 용량을 추가로 확보합니다."
 
-#: ../aptdaemon/console.py:522 ../aptdaemon/console.py:524
+#: ../aptkit/console.py:522 ../aptkit/console.py:524
 msgid "Do you want to continue [Y/n]?"
 msgstr "계속 진행하시겠습니까(Y/N)?"
 
-#: ../aptdaemon/console.py:545
+#: ../aptkit/console.py:545
 msgid ""
 "To operate on more than one package put the package names in quotation "
 "marks:\n"
-"aptdcon --install \"foo bar\""
+"aptkcon --install \"foo bar\""
 msgstr ""
 "한 개의 패키지 이상으로 작업하려면 인용 기호로 패키지 이름을 감싸십시오.:\n"
-"aptdcon --install \"foo bar\""
+"aptkcon --install \"foo bar\""
 
-#: ../aptdaemon/console.py:551
+#: ../aptkit/console.py:551
 msgid "Refresh the cache"
 msgstr "캐시 다시 읽기"
 
-#: ../aptdaemon/console.py:554
+#: ../aptkit/console.py:554
 msgid ""
 "Try to resolve broken dependencies. Potentially dangerous operation since it "
 "could try to remove many packages."
@@ -258,73 +258,73 @@ msgstr ""
 "망가진 의존성을 해결하려고 합니다. 많은 패키지를 제거할 수도 있는 위험한 작업"
 "입니다."
 
-#: ../aptdaemon/console.py:559
+#: ../aptkit/console.py:559
 msgid "Try to finish a previous incompleted installation"
 msgstr "이전에 완료하지 못한 설치 다시 시도"
 
-#: ../aptdaemon/console.py:563 ../aptdaemon/console.py:576
+#: ../aptkit/console.py:563 ../aptkit/console.py:576
 msgid "Install the given packages"
 msgstr "해당 패키지 다시 설치"
 
-#: ../aptdaemon/console.py:566
+#: ../aptkit/console.py:566
 msgid "Reinstall the given packages"
 msgstr "해당 패키지 다시 설치"
 
-#: ../aptdaemon/console.py:569
+#: ../aptkit/console.py:569
 msgid "Remove the given packages"
 msgstr "해당 패키지 제거"
 
-#: ../aptdaemon/console.py:572
+#: ../aptkit/console.py:572
 msgid "Remove the given packages including configuration files"
 msgstr "해당 패키지와 포함된 설정 파일 제거"
 
-#: ../aptdaemon/console.py:579
+#: ../aptkit/console.py:579
 msgid "Downgrade the given packages"
 msgstr "해당 패키지 다운그레이드"
 
-#: ../aptdaemon/console.py:582
+#: ../aptkit/console.py:582
 msgid "Deprecated: Please use --safe-upgrade"
 msgstr "사용 불가: --safe-upgrade 옵션을 사용하십시오"
 
-#: ../aptdaemon/console.py:586
+#: ../aptkit/console.py:586
 msgid "Upgrade the system in a safe way"
 msgstr "안전하게 시스템 업그레이드"
 
-#: ../aptdaemon/console.py:589
+#: ../aptkit/console.py:589
 msgid "Upgrade the system, possibly installing and removing packages"
 msgstr "패키지를 설치 혹은 제거하면서 시스템 업그레이드"
 
-#: ../aptdaemon/console.py:593
+#: ../aptkit/console.py:593
 msgid "Add the vendor to the trusted ones"
 msgstr "해당 공급자를 신뢰하는 항목으로 추가"
 
-#: ../aptdaemon/console.py:596
+#: ../aptkit/console.py:596
 msgid "Add the vendor keyid (also needs --keyserver)"
 msgstr "공급자의 키 ID 추가 (--keyserver 옵션도 필요합니다.)"
 
-#: ../aptdaemon/console.py:600
+#: ../aptkit/console.py:600
 msgid "Use the given keyserver for looking up keys"
 msgstr "키를 검색하기 위하여 주어진 키 서버를 사용"
 
-#: ../aptdaemon/console.py:604
+#: ../aptkit/console.py:604
 msgid "Add new repository from the given deb-line"
 msgstr "주어진 deb-line에서 새 공급자를 추가합니다."
 
-#: ../aptdaemon/console.py:608
+#: ../aptkit/console.py:608
 msgid ""
 "Specify an alternative sources.list.d file to which repositories should be "
 "added."
 msgstr "추가해야 할 공급자의 대안 sources.list.d 파일을 지정합니다."
 
-#: ../aptdaemon/console.py:612
+#: ../aptkit/console.py:612
 msgid "List trusted vendor keys"
 msgstr "신뢰하는 공급자의 키의 목록 표시"
 
-#: ../aptdaemon/console.py:615
+#: ../aptkit/console.py:615
 msgid "Remove the trusted key of the given fingerprint"
 msgstr "주어진 지문을 가진 신뢰하는 키 제거"
 
-#: ../aptdaemon/console.py:622
+#: ../aptkit/console.py:622
 msgid ""
 "Reconfigure installed packages. Optionally the minimum priority of questions "
 "can be specified"
@@ -332,269 +332,269 @@ msgstr ""
 "설치한 패키지를 다시 설정합니다. 추가적으로 질의의 우선 순위를 최소화할 수 있"
 "습니다."
 
-#: ../aptdaemon/console.py:627
+#: ../aptkit/console.py:627
 msgid "The minimum debconf priority of question to be displayed"
 msgstr "표시할 질문의 최소 debconf 우선 순위"
 
-#: ../aptdaemon/console.py:631
+#: ../aptkit/console.py:631
 msgid "Do not attach to the apt terminal"
 msgstr "apt 터미널에 첨부하지 마십시오."
 
-#: ../aptdaemon/console.py:635
+#: ../aptkit/console.py:635
 msgid "Allow packages from unauthenticated sources"
 msgstr "인증하지 않은 소스의 패키지를 허용합니다."
 
-#: ../aptdaemon/console.py:639
+#: ../aptkit/console.py:639
 msgid ""
 "Show additional information about the packages. Currently only the version "
 "number"
 msgstr "패키지에 대한 추가 정보 표시. 현재는 버전만 표시 중"
 
-#: ../aptdaemon/console.py:647 ../aptdaemon/enums.py:532
+#: ../aptkit/console.py:647 ../aptkit/enums.py:532
 msgid "Waiting for authentication"
 msgstr "인증을 기다리는 중"
 
-#: ../aptdaemon/core.py:2135
+#: ../aptkit/core.py:2135
 msgid "Do not shutdown the daemon because of inactivity"
 msgstr "중지한 상태이므로 데몬을 종료하지 마십시오"
 
-#: ../aptdaemon/core.py:2140
+#: ../aptkit/core.py:2140
 msgid "Do not load any plugins"
 msgstr "어떨 플러그인도 불러오지 않기"
 
-#: ../aptdaemon/core.py:2144
+#: ../aptkit/core.py:2144
 msgid "Show internal processing information"
 msgstr "내부 작업 정보 보이기"
 
-#: ../aptdaemon/core.py:2149
+#: ../aptkit/core.py:2149
 msgid "Quit and replace an already running daemon"
 msgstr "끝낸 후 이미 실행 중인 데몬 바꾸기"
 
-#: ../aptdaemon/core.py:2154
+#: ../aptkit/core.py:2154
 msgid "Listen on the DBus session bus (Only required for testing"
 msgstr "DBUS 세션 버스 듣기 (시험 목적으로만 사용합니다)"
 
-#: ../aptdaemon/core.py:2158
+#: ../aptkit/core.py:2158
 msgid "Perform operations in the given chroot"
 msgstr "주어진 chroot로 작업 수행"
 
-#: ../aptdaemon/core.py:2163
+#: ../aptkit/core.py:2163
 msgid "Store profile stats in the specified file"
 msgstr "명시된 파일내에 프로파일 통계를 저장합니다"
 
-#: ../aptdaemon/core.py:2168
+#: ../aptkit/core.py:2168
 msgid "Do not make any changes to the system (Only of use to developers)"
 msgstr "시스템 바꾸지 않기. (개발자 전용)"
 
-#: ../aptdaemon/enums.py:337
+#: ../aptkit/enums.py:337
 msgid "Installed file"
 msgstr "설치한 파일"
 
-#: ../aptdaemon/enums.py:338
+#: ../aptkit/enums.py:338
 msgid "Installed packages"
 msgstr "설치한 패키지"
 
-#: ../aptdaemon/enums.py:339
+#: ../aptkit/enums.py:339
 msgid "Added key from file"
 msgstr "파일에서 추가한 키"
 
-#: ../aptdaemon/enums.py:340
+#: ../aptkit/enums.py:340
 msgid "Updated cache"
 msgstr "업데이트한 캐시"
 
-#: ../aptdaemon/enums.py:341
+#: ../aptkit/enums.py:341
 msgid "Search done"
 msgstr "검색 완료"
 
-#: ../aptdaemon/enums.py:342
+#: ../aptkit/enums.py:342
 msgid "Removed trusted key"
 msgstr "제거한 신뢰하는 키"
 
-#: ../aptdaemon/enums.py:343
+#: ../aptkit/enums.py:343
 msgid "Removed packages"
 msgstr "제거한 패키지"
 
-#: ../aptdaemon/enums.py:344
+#: ../aptkit/enums.py:344
 msgid "Updated packages"
 msgstr "업데이트한 패키지"
 
-#: ../aptdaemon/enums.py:345
+#: ../aptkit/enums.py:345
 msgid "Upgraded system"
 msgstr "업그레이드한 시스템"
 
-#: ../aptdaemon/enums.py:346
+#: ../aptkit/enums.py:346
 msgid "Applied changes"
 msgstr "바뀐 내용 적용함"
 
-#: ../aptdaemon/enums.py:347
+#: ../aptkit/enums.py:347
 msgid "Repaired incomplete installation"
 msgstr "완료하지 못한 설치 상태를 복구"
 
-#: ../aptdaemon/enums.py:348
+#: ../aptkit/enums.py:348
 msgid "Repaired broken dependencies"
 msgstr "의존성 문제 해결"
 
-#: ../aptdaemon/enums.py:349
+#: ../aptkit/enums.py:349
 msgid "Added software source"
 msgstr "추가한 소프트웨어 소스"
 
-#: ../aptdaemon/enums.py:350
+#: ../aptkit/enums.py:350
 msgid "Enabled component of the distribution"
 msgstr "사용 중인 배포판의 구성 요소"
 
-#: ../aptdaemon/enums.py:351
+#: ../aptkit/enums.py:351
 msgid "Removed downloaded package files"
 msgstr "다운로드한 패키지 파일 제거"
 
-#: ../aptdaemon/enums.py:352
+#: ../aptkit/enums.py:352
 msgid "Reconfigured installed packages"
 msgstr "설치한 패키지 다시 설정"
 
-#: ../aptdaemon/enums.py:356
+#: ../aptkit/enums.py:356
 msgid "Successful"
 msgstr "성공"
 
-#: ../aptdaemon/enums.py:357
+#: ../aptkit/enums.py:357
 msgid "Canceled"
 msgstr "취소함"
 
-#: ../aptdaemon/enums.py:358 ../aptdaemon/enums.py:569
+#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
 msgid "Failed"
 msgstr "실패"
 
-#: ../aptdaemon/enums.py:361
+#: ../aptkit/enums.py:361
 msgid "Installing file"
 msgstr "파일 설치"
 
-#: ../aptdaemon/enums.py:362
+#: ../aptkit/enums.py:362
 msgid "Installing packages"
 msgstr "패키지 설치"
 
-#: ../aptdaemon/enums.py:363
+#: ../aptkit/enums.py:363
 msgid "Adding key from file"
 msgstr "파일에서 키 추가"
 
-#: ../aptdaemon/enums.py:364
+#: ../aptkit/enums.py:364
 msgid "Updating cache"
 msgstr "캐시 업데이트"
 
-#: ../aptdaemon/enums.py:365
+#: ../aptkit/enums.py:365
 msgid "Removing trusted key"
 msgstr "신뢰하는 키를 제거"
 
-#: ../aptdaemon/enums.py:366
+#: ../aptkit/enums.py:366
 msgid "Removing packages"
 msgstr "패키지 제거"
 
-#: ../aptdaemon/enums.py:367
+#: ../aptkit/enums.py:367
 msgid "Updating packages"
 msgstr "패키지 업데이트"
 
-#: ../aptdaemon/enums.py:368
+#: ../aptkit/enums.py:368
 msgid "Upgrading system"
 msgstr "시스템 업그레이드"
 
-#: ../aptdaemon/enums.py:369 ../aptdaemon/enums.py:528
+#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
 msgid "Applying changes"
 msgstr "바뀐 내용 적용"
 
-#: ../aptdaemon/enums.py:370
+#: ../aptkit/enums.py:370
 msgid "Repairing incomplete installation"
 msgstr "완료하지 못한 설치 상태를 복구 중"
 
-#: ../aptdaemon/enums.py:371
+#: ../aptkit/enums.py:371
 msgid "Repairing installed software"
 msgstr "설치한 소프트웨어 복구"
 
-#: ../aptdaemon/enums.py:372
+#: ../aptkit/enums.py:372
 msgid "Adding software source"
 msgstr "소프트웨어 소스 추가"
 
-#: ../aptdaemon/enums.py:373
+#: ../aptkit/enums.py:373
 msgid "Enabling component of the distribution"
 msgstr "배포판의 구성 요소 사용"
 
-#: ../aptdaemon/enums.py:374
+#: ../aptkit/enums.py:374
 msgid "Removing downloaded package files"
 msgstr "다운로드한 패키지 파일 제거"
 
-#: ../aptdaemon/enums.py:375
+#: ../aptkit/enums.py:375
 msgid "Reconfiguring installed packages"
 msgstr "설치한 패키지 다시 설정"
 
-#: ../aptdaemon/enums.py:376 ../aptdaemon/enums.py:517
+#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
 msgid "Searching"
 msgstr "검색"
 
-#: ../aptdaemon/enums.py:380
+#: ../aptkit/enums.py:380
 msgid "Installation of the package file failed"
 msgstr "패키지 파일의 설치 실패"
 
-#: ../aptdaemon/enums.py:381
+#: ../aptkit/enums.py:381
 msgid "Installation of software failed"
 msgstr "소프트웨어 설치 실패"
 
-#: ../aptdaemon/enums.py:382
+#: ../aptkit/enums.py:382
 msgid "Adding the key to the list of trusted software vendors failed"
 msgstr "신뢰하는 소프트웨어 판매자 목록에 기를 추가할 수 없습니다."
 
-#: ../aptdaemon/enums.py:384
+#: ../aptkit/enums.py:384
 msgid "Refreshing the software list failed"
 msgstr "소프트웨어 목록 다시 읽기 실패"
 
-#: ../aptdaemon/enums.py:385
+#: ../aptkit/enums.py:385
 msgid "Removing the vendor from the list of trusted ones failed"
 msgstr "신뢰 목록에서 공급자 제거 실패"
 
-#: ../aptdaemon/enums.py:387
+#: ../aptkit/enums.py:387
 msgid "Removing software failed"
 msgstr "소프트웨어 제거 실패"
 
-#: ../aptdaemon/enums.py:388
+#: ../aptkit/enums.py:388
 msgid "Updating software failed"
 msgstr "소프트웨어 업데이트 실패"
 
-#: ../aptdaemon/enums.py:389
+#: ../aptkit/enums.py:389
 msgid "Upgrading the system failed"
 msgstr "시스템 업그레이드 실패"
 
-#: ../aptdaemon/enums.py:390
+#: ../aptkit/enums.py:390
 msgid "Applying software changes failed"
 msgstr "소프트웨어의 바뀐 내용 적용 실패"
 
-#: ../aptdaemon/enums.py:391
+#: ../aptkit/enums.py:391
 msgid "Repairing incomplete installation failed"
 msgstr "완료하지 못한 설치 상태 복구 작업 실패"
 
-#: ../aptdaemon/enums.py:393
+#: ../aptkit/enums.py:393
 msgid "Repairing broken dependencies failed"
 msgstr "의존성 문제 해결 실패"
 
-#: ../aptdaemon/enums.py:394
+#: ../aptkit/enums.py:394
 msgid "Adding software source failed"
 msgstr "소프트웨어 소스 추가를 실패하였습니다."
 
-#: ../aptdaemon/enums.py:395
+#: ../aptkit/enums.py:395
 msgid "Enabling component of the distribution failed"
 msgstr "배포의 구성물 활성화를 실패하였습니다."
 
-#: ../aptdaemon/enums.py:397 ../aptdaemon/enums.py:398
+#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
 msgid "Removing downloaded package files failed"
 msgstr "다운로드한 패키지 파일 제거 실패"
 
-#: ../aptdaemon/enums.py:399
+#: ../aptkit/enums.py:399
 msgid "Search failed"
 msgstr "검색 실패"
 
-#: ../aptdaemon/enums.py:400
+#: ../aptkit/enums.py:400
 msgid "Adding license key"
 msgstr "라이선스 키 추가"
 
-#: ../aptdaemon/enums.py:404 ../aptdaemon/enums.py:405
+#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
 msgid "Check your Internet connection."
 msgstr "인터넷 연결 상태를 확인하십시오."
 
-#: ../aptdaemon/enums.py:406
+#: ../aptkit/enums.py:406
 msgid ""
 "Check if you are using third party repositories. If so disable them, since "
 "they are a common source of problems.\n"
@@ -604,17 +604,17 @@ msgstr ""
 "고 있는 서드 파티 저장소를 사용하지 않도록 설정하십시오.또한 다음 명령을 터미"
 "널에서 실행하십시오: apt-get install -f"
 
-#: ../aptdaemon/enums.py:411
+#: ../aptkit/enums.py:411
 msgid "The selected file may not be a GPG key file or it might be corrupt."
 msgstr "선택된 파일은 GPG 키 파일이 아니거나 올바르지 않은 파일입니다."
 
-#: ../aptdaemon/enums.py:413
+#: ../aptkit/enums.py:413
 msgid ""
 "The selected key couldn't be removed. Check that you provided a valid "
 "fingerprint."
 msgstr "선택한 키를 제거할 수 없습니다. 올바른 지문을 제공하는지 확인하십시오."
 
-#: ../aptdaemon/enums.py:415
+#: ../aptkit/enums.py:415
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
@@ -622,7 +622,7 @@ msgstr ""
 "현재 시냅틱 또는 apttiude와 같은 다른 소프트웨어 관리 도구를 실행 중인지 확인"
 "하십시오. 한번에 한 개의 도구만이 시스템을 바꿀 수 있습니다."
 
-#: ../aptdaemon/enums.py:418
+#: ../aptkit/enums.py:418
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
@@ -630,7 +630,7 @@ msgstr ""
 "이것은 심각한 문제입니다. 잠시 뒤 다시 시도하십시오. 만약 이러한 문제가 계속 "
 "발생한다면 개발자에게 오류를 보고해 주십시오."
 
-#: ../aptdaemon/enums.py:421
+#: ../aptkit/enums.py:421
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
@@ -638,24 +638,24 @@ msgstr ""
 "패키지 이름의 철자를 확인하십시오, 패키지 이름으로 적합한 저장소를 사용하도"
 "록 합니다."
 
-#: ../aptdaemon/enums.py:423
+#: ../aptkit/enums.py:423
 msgid "There isn't any need for an update."
 msgstr "업데이트할 필요가 없습니다."
 
-#: ../aptdaemon/enums.py:424
+#: ../aptkit/enums.py:424
 msgid "There isn't any need for an installation"
 msgstr "설치할 필요가 없습니다"
 
-#: ../aptdaemon/enums.py:426
+#: ../aptkit/enums.py:426
 msgid "There isn't any need for a removal."
 msgstr "제거할 필요가 없습니다."
 
-#: ../aptdaemon/enums.py:427
+#: ../aptkit/enums.py:427
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr "시스템의 필수 패키지를 제거할 것을 요청했습니다."
 
-#: ../aptdaemon/enums.py:430
+#: ../aptkit/enums.py:430
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
@@ -663,25 +663,25 @@ msgstr ""
 "데몬 연결을 잃어 버렸습니다. 백그라운드 데몬이 충돌한 것이 이유일 가능서이 높"
 "습니다."
 
-#: ../aptdaemon/enums.py:432
+#: ../aptkit/enums.py:432
 msgid "The installation or removal of a software package failed."
 msgstr "소프트웨어의 설치 혹은 제거에 실패했습니다."
 
-#: ../aptdaemon/enums.py:434
+#: ../aptkit/enums.py:434
 msgid "The requested feature is not supported."
 msgstr "요청한 기능을 지원하지 않습니다."
 
-#: ../aptdaemon/enums.py:435
+#: ../aptkit/enums.py:435
 msgid ""
-"There seems to be a programming error in aptdaemon, the software that allows "
+"There seems to be a programming error in aptkit, the software that allows "
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
-"이 것은 aptdaemon의 프로그래밍 오류인 것 같습니다. 이 소프트웨어는 프로그램"
+"이 것은 aptkit의 프로그래밍 오류인 것 같습니다. 이 소프트웨어는 프로그램"
 "을 설치하고 제거할 수 있게 한 후 작업과 관계 있는 다른 패키지 관리자를 실행합"
 "니다."
 
-#: ../aptdaemon/enums.py:439
+#: ../aptkit/enums.py:439
 msgid ""
 "This error could be caused by required additional software packages which "
 "are missing or not installable. Furthermore there could be a conflict "
@@ -691,11 +691,11 @@ msgstr ""
 "이 오류는 요청한 추가 소프트웨어 패키지가 없거나 설치할 수 없을 경우 발생합니"
 "다.또한 동시에 설치할 수 없는 소프트웨어 패키지의 충돌일 수도 있습니다."
 
-#: ../aptdaemon/enums.py:445
+#: ../aptkit/enums.py:445
 msgid "This requires installing packages from unauthenticated sources."
 msgstr "안전성을 확인하지 않은 출처에서 패키지를 설치해야 합니다."
 
-#: ../aptdaemon/enums.py:447
+#: ../aptkit/enums.py:447
 msgid ""
 "The installation could have failed because of an error in the corresponding "
 "software package or it was cancelled in an unfriendly way. You have to "
@@ -705,12 +705,12 @@ msgstr ""
 "실패했습니다.추가 소프트웨어를 설치/제거 하기 전에 우선 이 문제를 해결해야 합"
 "니다."
 
-#: ../aptdaemon/enums.py:453
+#: ../aptkit/enums.py:453
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
 msgstr "파일을 컴퓨터로 복사하여 파일 권한을 확인해보세요."
 
-#: ../aptdaemon/enums.py:456
+#: ../aptkit/enums.py:456
 msgid ""
 "The installation of a package which violates the quality standards isn't "
 "allowed. This could cause serious problems on your computer. Please contact "
@@ -721,7 +721,7 @@ msgstr ""
 "킬 수 있습니다.본 패키지를 제공한 사람 혹은 기관에 연락한 후 아래의 정보를 첨"
 "부해주세요."
 
-#: ../aptdaemon/enums.py:463
+#: ../aptkit/enums.py:463
 msgid ""
 "The downloaded license key which is required to run this piece of software "
 "is not valid or could not be installed correctly.\n"
@@ -731,11 +731,11 @@ msgstr ""
 "로 설치할 수 없습니다.\n"
 "더 많은 정보를 자세한 내용을 확인하십시오."
 
-#: ../aptdaemon/enums.py:469
+#: ../aptkit/enums.py:469
 msgid "All available upgrades have already been installed."
 msgstr "사용할 수 있는 모든 업그레이드를 설치했습니다."
 
-#: ../aptdaemon/enums.py:471
+#: ../aptkit/enums.py:471
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
@@ -743,12 +743,12 @@ msgstr ""
 "이 소프트웨어를 사용하는데 필요한 라이선스 키를 다운로드할 수 없습니다.네트워"
 "크 연결을 확인하십시오."
 
-#: ../aptdaemon/enums.py:475
+#: ../aptkit/enums.py:475
 #, fuzzy
 msgid "You don't have the required privileges to perform this action."
 msgstr "이 동작을 수행할 수 있는 권한이 없습니다."
 
-#: ../aptdaemon/enums.py:477
+#: ../aptkit/enums.py:477
 msgid ""
 "You either provided a wrong password or cancelled the authorization.\n"
 "Furthermore there could also be a technical reason for this error if you "
@@ -760,313 +760,313 @@ msgstr ""
 "류가 발생했을 수 있습니다. 사용자의 데스크톱 환경이 PolicyKit 세션 에이전트"
 "를 제공하지 않습니다."
 
-#: ../aptdaemon/enums.py:485
+#: ../aptkit/enums.py:485
 msgid "Failed to download package files"
 msgstr "패키지 파일 다운로드에 실패했습니다"
 
-#: ../aptdaemon/enums.py:486
+#: ../aptkit/enums.py:486
 msgid "Failed to download repository information"
 msgstr "저장소 정보 다운로드에 실패함"
 
-#: ../aptdaemon/enums.py:488
+#: ../aptkit/enums.py:488
 msgid "Package dependencies cannot be resolved"
 msgstr "패키지 의존성을 해결할 수 없습니다"
 
-#: ../aptdaemon/enums.py:489
+#: ../aptkit/enums.py:489
 msgid "The package system is broken"
 msgstr "패키지 시스템이 망가졌습니다"
 
-#: ../aptdaemon/enums.py:490
+#: ../aptkit/enums.py:490
 msgid "Key was not installed"
 msgstr "키가 설치되지 않았습니다"
 
-#: ../aptdaemon/enums.py:491
+#: ../aptkit/enums.py:491
 msgid "Key was not removed"
 msgstr "키를 제거하지 않았습니다"
 
-#: ../aptdaemon/enums.py:492
+#: ../aptkit/enums.py:492
 msgid "Failed to lock the package manager"
 msgstr "패키지 관리자를 잠글 수 없습니다"
 
-#: ../aptdaemon/enums.py:493
+#: ../aptkit/enums.py:493
 msgid "Failed to load the package list"
 msgstr "패키지 목록을 불러오지 못했습니다"
 
-#: ../aptdaemon/enums.py:494
+#: ../aptkit/enums.py:494
 msgid "Package does not exist"
 msgstr "패키지가 존재하지 않습니다"
 
-#: ../aptdaemon/enums.py:495
+#: ../aptkit/enums.py:495
 msgid "Package is already up to date"
 msgstr "페키지를 모두 업데이트했습니다"
 
-#: ../aptdaemon/enums.py:496
+#: ../aptkit/enums.py:496
 msgid "Package is already installed"
 msgstr "패키지를 이미 설치했습니다"
 
-#: ../aptdaemon/enums.py:497
+#: ../aptkit/enums.py:497
 msgid "Package isn't installed"
 msgstr "패키지를 설치되지 않았습니다"
 
-#: ../aptdaemon/enums.py:498
+#: ../aptkit/enums.py:498
 msgid "Failed to remove essential system package"
 msgstr "필수 시스템 패키지를 제거할 수 없습니다"
 
-#: ../aptdaemon/enums.py:500
+#: ../aptkit/enums.py:500
 msgid "Task cannot be monitored or controlled"
 msgstr "작업을 감시하거나 통제할 수 없습니다"
 
-#: ../aptdaemon/enums.py:501
+#: ../aptkit/enums.py:501
 msgid "Package operation failed"
 msgstr "패키지 작업 실패"
 
-#: ../aptdaemon/enums.py:502
+#: ../aptkit/enums.py:502
 msgid "Requires installation of untrusted packages"
 msgstr "신뢰할 수 없는 패키지를 설치해야 합니다"
 
-#: ../aptdaemon/enums.py:504
+#: ../aptkit/enums.py:504
 msgid "Previous installation hasn't been completed"
 msgstr "이전 설치 작업을 완료하지 못했습니다"
 
-#: ../aptdaemon/enums.py:505
+#: ../aptkit/enums.py:505
 msgid "The package is of bad quality"
 msgstr "패키지의 품질이 나쁩니다."
 
-#: ../aptdaemon/enums.py:506
+#: ../aptkit/enums.py:506
 msgid "Package file could not be opened"
 msgstr "패키지 파일 열 수 없음"
 
-#: ../aptdaemon/enums.py:507
+#: ../aptkit/enums.py:507
 msgid "Not supported feature"
 msgstr "지원하지 않는 기능"
 
-#: ../aptdaemon/enums.py:508
+#: ../aptkit/enums.py:508
 msgid "Failed to download the license key"
 msgstr "라이선스 키 다운로드 실패"
 
-#: ../aptdaemon/enums.py:509
+#: ../aptkit/enums.py:509
 msgid "Failed to install the license key"
 msgstr "라이선스 키 설치 실패"
 
-#: ../aptdaemon/enums.py:510
+#: ../aptkit/enums.py:510
 msgid "The system is already up to date"
 msgstr "시스템을 모두 업데이트했습니다"
 
-#: ../aptdaemon/enums.py:511
+#: ../aptkit/enums.py:511
 msgid "You could not be authorized"
 msgstr "인증할 수 없습니다."
 
-#: ../aptdaemon/enums.py:512
+#: ../aptkit/enums.py:512
 msgid "You are not allowed to perform this action"
 msgstr "이 동작을 수행할 수 있는 권한이 없습니다."
 
-#: ../aptdaemon/enums.py:513
+#: ../aptkit/enums.py:513
 msgid "An unhandlable error occured"
 msgstr "처리할 수 없는 오류가 발생하였습니다."
 
-#: ../aptdaemon/enums.py:516
+#: ../aptkit/enums.py:516
 msgid "Waiting for service to start"
 msgstr "서비스 시작을 기다립니다"
 
-#: ../aptdaemon/enums.py:518
+#: ../aptkit/enums.py:518
 msgid "Waiting"
 msgstr "대기 중"
 
-#: ../aptdaemon/enums.py:519
+#: ../aptkit/enums.py:519
 msgid "Waiting for required medium"
 msgstr "요구하는 미디어를 기다리는 중"
 
-#: ../aptdaemon/enums.py:520
+#: ../aptkit/enums.py:520
 msgid "Waiting for other software managers to quit"
 msgstr "다른 소프트웨어 관리자들이 끝나는 것을 기다립니다"
 
-#: ../aptdaemon/enums.py:521
+#: ../aptkit/enums.py:521
 msgid "Waiting for configuration file prompt"
 msgstr "설정 파일 프롬프트를 기다립니다"
 
-#: ../aptdaemon/enums.py:523
+#: ../aptkit/enums.py:523
 msgid "Running task"
 msgstr "작업 실행 중"
 
-#: ../aptdaemon/enums.py:524
+#: ../aptkit/enums.py:524
 msgid "Downloading"
 msgstr "다운로드 중"
 
-#: ../aptdaemon/enums.py:525
+#: ../aptkit/enums.py:525
 msgid "Querying software sources"
 msgstr "소프트웨어 소스 질의"
 
-#: ../aptdaemon/enums.py:526
+#: ../aptkit/enums.py:526
 msgid "Cleaning up"
 msgstr "지우는 중"
 
-#: ../aptdaemon/enums.py:529
+#: ../aptkit/enums.py:529
 msgid "Finished"
 msgstr "완료함"
 
-#: ../aptdaemon/enums.py:530
+#: ../aptkit/enums.py:530
 msgid "Cancelling"
 msgstr "취소 중"
 
-#: ../aptdaemon/enums.py:531
+#: ../aptkit/enums.py:531
 msgid "Loading software list"
 msgstr "소프트웨어 목록을 불러오는 중"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:536
+#: ../aptkit/enums.py:536
 #, python-format
 msgid "Installing %s"
 msgstr "%s을(를) 설치하는 중"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:538
+#: ../aptkit/enums.py:538
 #, python-format
 msgid "Configuring %s"
 msgstr "%s을(를) 설정하는 중"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:540
+#: ../aptkit/enums.py:540
 #, python-format
 msgid "Removing %s"
 msgstr "%s을(를) 제거하는 중"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:542
+#: ../aptkit/enums.py:542
 #, python-format
 msgid "Completely removing %s"
 msgstr "%s 완전하게 제거"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:544
+#: ../aptkit/enums.py:544
 #, python-format
 msgid "Noting disappearance of %s"
 msgstr "%s이(가) 사라지지 않음"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:546
+#: ../aptkit/enums.py:546
 #, python-format
 msgid "Running post-installation trigger %s"
 msgstr "설치 후 트리거 %s을(를) 실행하는 중입니다"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:548
+#: ../aptkit/enums.py:548
 #, python-format
 msgid "Upgrading %s"
 msgstr "%s을(를) 업그레이드 하는 중"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:550
+#: ../aptkit/enums.py:550
 #, python-format
 msgid "Unpacking %s"
 msgstr "%s의 압축을 해제하는 중"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:552
+#: ../aptkit/enums.py:552
 #, python-format
 msgid "Preparing installation of %s"
 msgstr "%s을(를) 설치할 준비를 하는 중"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:554
+#: ../aptkit/enums.py:554
 #, python-format
 msgid "Preparing configuration of %s"
 msgstr "%s을(를) 설정할 준비를 하는 중"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:556
+#: ../aptkit/enums.py:556
 #, python-format
 msgid "Preparing removal of %s"
 msgstr "%s을(를) 제거할 준비를 하는 중"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:558
+#: ../aptkit/enums.py:558
 #, python-format
 msgid "Preparing complete removal of %s"
 msgstr "%s을(를) 완전히 제거할 준비를 하는 중"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:560
+#: ../aptkit/enums.py:560
 #, python-format
 msgid "Installed %s"
 msgstr "%s을(를) 설치함"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:562
+#: ../aptkit/enums.py:562
 #, python-format
 msgid "Completely removed %s"
 msgstr "%s을(를) 완전히 제거함"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:564
+#: ../aptkit/enums.py:564
 #, python-format
 msgid "Removed %s"
 msgstr "%s을(를) 제거함"
 
-#: ../aptdaemon/enums.py:567
+#: ../aptkit/enums.py:567
 msgid "Done"
 msgstr "완료"
 
-#: ../aptdaemon/enums.py:568
+#: ../aptkit/enums.py:568
 msgid "Authentication failed"
 msgstr "인증을 실패했습니다"
 
-#: ../aptdaemon/enums.py:570
+#: ../aptkit/enums.py:570
 msgid "Fetching"
 msgstr "가져오는 중"
 
-#: ../aptdaemon/enums.py:571
+#: ../aptkit/enums.py:571
 msgid "Idle"
 msgstr "대기"
 
-#: ../aptdaemon/enums.py:572
+#: ../aptkit/enums.py:572
 msgid "Network isn't available"
 msgstr "네트워크를 사용할 수 없습니다."
 
-#: ../aptdaemon/enums.py:704
+#: ../aptkit/enums.py:704
 #, python-format
 msgid "Processing %s"
 msgstr "%s을(를) 처리하는 중"
 
-#: ../aptdaemon/gtk3widgets.py:306
+#: ../aptkit/gtk3widgets.py:306
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
 msgstr "다운로드함  %sB of %sB 속도 %sB/s"
 
-#: ../aptdaemon/gtk3widgets.py:311 ../aptdaemon/gtk3widgets.py:510
+#: ../aptkit/gtk3widgets.py:311 ../aptkit/gtk3widgets.py:510
 #, python-format
 msgid "Downloaded %sB of %sB"
 msgstr "다운로드함 %sB of %sB"
 
-#: ../aptdaemon/gtk3widgets.py:323
+#: ../aptkit/gtk3widgets.py:323
 msgid "Details"
 msgstr "자세한 내용"
 
-#: ../aptdaemon/gtk3widgets.py:474
+#: ../aptkit/gtk3widgets.py:474
 msgid "File"
 msgstr "파일"
 
 #. TRANSLATORS: header of the progress download column
-#: ../aptdaemon/gtk3widgets.py:479
+#: ../aptkit/gtk3widgets.py:479
 msgid "%"
 msgstr "%"
 
-#: ../aptdaemon/gtk3widgets.py:515
+#: ../aptkit/gtk3widgets.py:515
 #, python-format
 msgid "Downloaded %sB"
 msgstr "%sB을(를) 다운로드함"
 
-#: ../aptdaemon/gtk3widgets.py:518
+#: ../aptkit/gtk3widgets.py:518
 msgid "Downloaded"
 msgstr "다운로드함"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: ../aptdaemon/gtk3widgets.py:853
+#: ../aptkit/gtk3widgets.py:853
 #, python-format
 msgid "CD/DVD '%s' is required"
 msgstr "CD/DVD '%s'이(가) 필요합니다"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: ../aptdaemon/gtk3widgets.py:855
+#: ../aptkit/gtk3widgets.py:855
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
@@ -1074,35 +1074,35 @@ msgid ""
 msgstr ""
 "소프트웨어 패키지를 설치하려면 위 CD/DVD을(를) '%s' 드라이브에 넣어주십시오."
 
-#: ../aptdaemon/gtk3widgets.py:859 ../aptdaemon/gtk3widgets.py:880
+#: ../aptkit/gtk3widgets.py:859 ../aptkit/gtk3widgets.py:880
 msgid "C_ontinue"
 msgstr "계속(_O)"
 
-#: ../aptdaemon/gtk3widgets.py:931
+#: ../aptkit/gtk3widgets.py:931
 msgid "Install"
 msgstr "설치"
 
-#: ../aptdaemon/gtk3widgets.py:932
+#: ../aptkit/gtk3widgets.py:932
 msgid "Reinstall"
 msgstr "다시 설치"
 
-#: ../aptdaemon/gtk3widgets.py:933
+#: ../aptkit/gtk3widgets.py:933
 msgid "Remove"
 msgstr "제거"
 
-#: ../aptdaemon/gtk3widgets.py:934
+#: ../aptkit/gtk3widgets.py:934
 msgid "Purge"
 msgstr "완전히 제거"
 
-#: ../aptdaemon/gtk3widgets.py:935
+#: ../aptkit/gtk3widgets.py:935
 msgid "Upgrade"
 msgstr "업그레이드"
 
-#: ../aptdaemon/gtk3widgets.py:936
+#: ../aptkit/gtk3widgets.py:936
 msgid "Downgrade"
 msgstr "다운그레이드"
 
-#: ../aptdaemon/gtk3widgets.py:937
+#: ../aptkit/gtk3widgets.py:937
 msgid "Skip upgrade"
 msgstr "업그레이드 건너 뛰기"
 
@@ -1111,95 +1111,95 @@ msgstr "업그레이드 건너 뛰기"
 #. FIXME: adapt the title and message accordingly
 #. FIXME: Should we have different modes? Only show dependencies, only
 #. initial packages or both?
-#: ../aptdaemon/gtk3widgets.py:948
+#: ../aptkit/gtk3widgets.py:948
 msgid "Please take a look at the list of changes below."
 msgstr "아래의 바뀐 내용 목록을 확인하십시오."
 
-#: ../aptdaemon/gtk3widgets.py:956
+#: ../aptkit/gtk3widgets.py:956
 msgid "Additional software has to be installed"
 msgstr "추가 소프트웨어를 설치해야 합니다."
 
-#: ../aptdaemon/gtk3widgets.py:958
+#: ../aptkit/gtk3widgets.py:958
 msgid "Additional software has to be re-installed"
 msgstr "추가 소프트웨어를 다시 설치해야 합니다."
 
-#: ../aptdaemon/gtk3widgets.py:960
+#: ../aptkit/gtk3widgets.py:960
 msgid "Additional software has to be removed"
 msgstr "추가 소프트웨어를 제거해야 합니다."
 
-#: ../aptdaemon/gtk3widgets.py:962
+#: ../aptkit/gtk3widgets.py:962
 msgid "Additional software has to be purged"
 msgstr "추가 소프트웨어를 완전히 삭제해야 합니다."
 
-#: ../aptdaemon/gtk3widgets.py:964
+#: ../aptkit/gtk3widgets.py:964
 msgid "Additional software has to be upgraded"
 msgstr "추가 소프트웨어를 업그레이드해야 합니다."
 
-#: ../aptdaemon/gtk3widgets.py:966
+#: ../aptkit/gtk3widgets.py:966
 msgid "Additional software has to be downgraded"
 msgstr "추가 소프트웨어를 다운그레이드해야 합니다."
 
-#: ../aptdaemon/gtk3widgets.py:968
+#: ../aptkit/gtk3widgets.py:968
 msgid "Updates will be skipped"
 msgstr "업데이트를 건너 뜁니다."
 
-#: ../aptdaemon/gtk3widgets.py:976
+#: ../aptkit/gtk3widgets.py:976
 msgid "Additional changes are required"
 msgstr "추가로 바꿔야 합니다."
 
-#: ../aptdaemon/gtk3widgets.py:981
+#: ../aptkit/gtk3widgets.py:981
 #, python-format
 msgid "%sB will be downloaded in total."
 msgstr "모두 %sB를 다운로드할 것입니다."
 
-#: ../aptdaemon/gtk3widgets.py:985
+#: ../aptkit/gtk3widgets.py:985
 #, python-format
 msgid "%sB of disk space will be freed."
 msgstr "디스크 공간의 %sB가 비울 것입니다."
 
-#: ../aptdaemon/gtk3widgets.py:989
+#: ../aptkit/gtk3widgets.py:989
 #, python-format
 msgid "%sB more disk space will be used."
 msgstr "%sB의 디스크 공간을 사용할 것입니다."
 
 #. TRANSLATORS: %s is a file path
-#: ../aptdaemon/gtk3widgets.py:1061
+#: ../aptkit/gtk3widgets.py:1061
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
 msgstr "파일 '%s'의 바뀐 내용을 최신 설정 파일로 바꾸시겠습니까?"
 
-#: ../aptdaemon/gtk3widgets.py:1063
+#: ../aptkit/gtk3widgets.py:1063
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
 msgstr ""
 "이유를 알 수는 없어도 파일이 존재한다면 그 파일은 교체해도 안전한 파일입니다."
 
-#: ../aptdaemon/gtk3widgets.py:1072
+#: ../aptkit/gtk3widgets.py:1072
 msgid "_Changes"
 msgstr "바뀐 내용(_C)"
 
-#: ../aptdaemon/gtk3widgets.py:1075
+#: ../aptkit/gtk3widgets.py:1075
 msgid "_Keep"
 msgstr "유지(_K)"
 
-#: ../aptdaemon/gtk3widgets.py:1076
+#: ../aptkit/gtk3widgets.py:1076
 msgid "_Replace"
 msgstr "바꾸기(_R)"
 
-#: ../aptdaemon/gtk3widgets.py:1179
+#: ../aptkit/gtk3widgets.py:1179
 msgid "_Details"
 msgstr "자세한 내용(_D)"
 
 #. TRANSLATORS: %s is the name of a package manager
-#: ../aptdaemon/lock.py:182
+#: ../aptkit/lock.py:182
 #, python-format
 msgid "Waiting for %s to exit"
 msgstr "%s이(가) 끝나는 것을 기다리는 중"
 
 #. TRANSLATORS: %s is a list of package names
-#: ../aptdaemon/progress.py:169
+#: ../aptkit/progress.py:169
 #, python-format
 msgid "Downloading %(files)s"
 msgid_plural "Downloading %(files)s"
@@ -1207,119 +1207,119 @@ msgstr[0] "%(files)s 다운로드 중"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: ../aptdaemon/progress.py:281 ../aptdaemon/progress.py:320
+#: ../aptkit/progress.py:281 ../aptkit/progress.py:320
 msgid "local repository"
 msgstr "로컬 저장소"
 
 #. TRANSLATORS: %s is a list of repository names
-#: ../aptdaemon/progress.py:284
+#: ../aptkit/progress.py:284
 #, python-format
 msgid "Downloading from %s"
 msgid_plural "Downloading from %s"
 msgstr[0] "%s에서 다운로드 중"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:324
+#: ../aptkit/progress.py:324
 #, python-format
 msgid "Structure of %s"
 msgstr "%s 저장소의 서명"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:327
+#: ../aptkit/progress.py:327
 #, python-format
 msgid "Description of %s"
 msgstr "%s 저장소 설명"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:330
+#: ../aptkit/progress.py:330
 #, python-format
 msgid "Description signature of %s"
 msgstr "%s 저장소 서명의 설명"
 
-#: ../aptdaemon/progress.py:335
+#: ../aptkit/progress.py:335
 #, python-format
 msgid "Available packages from %s"
 msgstr "%s 저장소에서 사용할 수 있는 패키지"
 
-#: ../aptdaemon/progress.py:339
+#: ../aptkit/progress.py:339
 #, python-format
 msgid "Available sources from %s"
 msgstr "%s 저장소에서 사용할 수 있는 소스"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:342
+#: ../aptkit/progress.py:342
 #, python-format
 msgid "Available translations from %s"
 msgstr "%s 저장소에서 사용할 수 있는 번역"
 
-#: ../aptdaemon/progress.py:359
+#: ../aptkit/progress.py:359
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr "%s (%s)의 번역을 저장소 %s에서 가져오는 중"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: ../aptdaemon/progress.py:363
+#: ../aptkit/progress.py:363
 #, python-format
 msgid "Translations for %s from %s"
 msgstr "%s 번역을 저장소 %s에서 가져오는 중"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: ../aptdaemon/progress.py:368
+#: ../aptkit/progress.py:368
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr "번역 (%s), 저장소 %s"
 
-#: ../aptdaemon/worker/aptworker.py:374 ../aptdaemon/worker/aptworker.py:671
-#: ../aptdaemon/worker/aptworker.py:748 ../aptdaemon/worker/aptworker.py:791
+#: ../aptkit/worker/aptworker.py:374 ../aptkit/worker/aptworker.py:671
+#: ../aptkit/worker/aptworker.py:748 ../aptkit/worker/aptworker.py:791
 #, python-format
 msgid "Package %s isn't available"
 msgstr "다음 패키지를 사용할 수 없습니다 %s"
 
-#: ../aptdaemon/worker/aptworker.py:379 ../aptdaemon/worker/aptworker.py:675
-#: ../aptdaemon/worker/aptworker.py:752 ../aptdaemon/worker/aptworker.py:795
+#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:675
+#: ../aptkit/worker/aptworker.py:752 ../aptkit/worker/aptworker.py:795
 #, python-format
 msgid "Package %s isn't installed"
 msgstr "다음 패키지가 설치되지 않았습니다 %s"
 
-#: ../aptdaemon/worker/aptworker.py:383
+#: ../aptkit/worker/aptworker.py:383
 #, python-format
 msgid "The version %s of %s isn't installed"
 msgstr "%s 버전의 %s을(를) 설치하지 않았습니다"
 
-#: ../aptdaemon/worker/aptworker.py:398
+#: ../aptkit/worker/aptworker.py:398
 #, python-format
 msgid "Package %s is already installed"
 msgstr "패키지 %s은(는) 이미 설치했습니다"
 
-#: ../aptdaemon/worker/aptworker.py:407 ../aptdaemon/worker/aptworker.py:821
+#: ../aptkit/worker/aptworker.py:407 ../aptkit/worker/aptworker.py:821
 #, python-format
 msgid "The version %s of %s isn't available."
 msgstr "%s의 %s 버전을 이용할 수 없습니다."
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
-#: ../aptdaemon/worker/aptworker.py:565
+#: ../aptkit/worker/aptworker.py:565
 #, python-format
 msgid "The keyserver URL is invalid: %s"
 msgstr "키 서버 주소가 올바르지 않음: %s"
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
-#: ../aptdaemon/worker/aptworker.py:571
+#: ../aptkit/worker/aptworker.py:571
 #, python-format
 msgid "Invalid protocol of the server: %s"
 msgstr "올바르지 않은 서버 프로토콜: %s"
 
 #. TRANSLATORS: %s is the id of a GnuPG key
 #. e.g. E08ADE95
-#: ../aptdaemon/worker/aptworker.py:579 ../aptdaemon/worker/aptworker.py:623
+#: ../aptkit/worker/aptworker.py:579 ../aptkit/worker/aptworker.py:623
 #, python-format
 msgid "Invalid key id: %s"
 msgstr "올바르지 않은 키 ID: %s"
 
-#: ../aptdaemon/worker/aptworker.py:587
+#: ../aptkit/worker/aptworker.py:587
 #, python-format
 msgid ""
 "Failed to download and install the key %s from %s:\n"
@@ -1328,62 +1328,62 @@ msgstr ""
 "키 %s을(를) %s에서 다운로드하고 설치하지 못했습니다:\n"
 "%s"
 
-#: ../aptdaemon/worker/aptworker.py:604
+#: ../aptkit/worker/aptworker.py:604
 #, python-format
 msgid "Key file %s couldn't be installed: %s"
 msgstr "키 파일 %s이(가) 설치되지 못했습니다: %s"
 
-#: ../aptdaemon/worker/aptworker.py:628
+#: ../aptkit/worker/aptworker.py:628
 #, python-format
 msgid "Key with fingerprint %s couldn't be removed: %s"
 msgstr "지문이 있는 키 %s을(를) 제거할 수 없었습니다: %s"
 
-#: ../aptdaemon/worker/aptworker.py:679
+#: ../aptkit/worker/aptworker.py:679
 #, python-format
 msgid "Package %s cannot be removed."
 msgstr "패키지 %s을(를) 제거할 수 없습니다."
 
-#: ../aptdaemon/worker/aptworker.py:683
+#: ../aptkit/worker/aptworker.py:683
 #, python-format
 msgid "The version %s of %s is not installed"
 msgstr "버전 %s의  %s을(를) 설치하지 않았습니다"
 
-#: ../aptdaemon/worker/aptworker.py:763
+#: ../aptkit/worker/aptworker.py:763
 #, python-format
 msgid "The former version %s of %s is already installed"
 msgstr "이미 이전 버전  %s의  %s을(를) 설치했습니다."
 
-#: ../aptdaemon/worker/aptworker.py:768 ../aptdaemon/worker/aptworker.py:814
+#: ../aptkit/worker/aptworker.py:768 ../aptkit/worker/aptworker.py:814
 #, python-format
 msgid "The version %s of %s is already installed"
 msgstr "버전 %s의 %s을(를) 이미 설치했습니다."
 
-#: ../aptdaemon/worker/aptworker.py:775
+#: ../aptkit/worker/aptworker.py:775
 #, python-format
 msgid "The version %s of %s isn't available"
 msgstr "%s의 %s 버전을 이용할 수 없습니다."
 
-#: ../aptdaemon/worker/aptworker.py:779
+#: ../aptkit/worker/aptworker.py:779
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
 msgstr "%s의 다운그레이드할 버전을 선택해야 합니다."
 
-#: ../aptdaemon/worker/aptworker.py:807
+#: ../aptkit/worker/aptworker.py:807
 #, python-format
 msgid "The later version %s of %s is already installed"
 msgstr "이미 최신 버전 %s의 %s을(를) 설치했습니다."
 
-#: ../aptdaemon/worker/aptworker.py:838
+#: ../aptkit/worker/aptworker.py:838
 #, python-format
 msgid "The package %s isn't available in the %s release."
 msgstr "%s 릴리즈에서 패키지 %s을(를) 사용할 수 없습니다."
 
-#: ../aptdaemon/worker/aptworker.py:1026
+#: ../aptkit/worker/aptworker.py:1026
 #, python-format
 msgid "Package %s cannot be removed"
 msgstr "패키지 %s을(를) 제거할 수 없습니다"
 
-#: ../aptdaemon/worker/aptworker.py:1123
+#: ../aptkit/worker/aptworker.py:1123
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
@@ -1391,25 +1391,25 @@ msgstr ""
 "이 패키지는 올바른 설치 용량 정보를 제공하지 않습니다. Debian Policy 5.6.20"
 "을 참고하십시오."
 
-#: ../aptdaemon/worker/aptworker.py:1265
+#: ../aptkit/worker/aptworker.py:1265
 msgid "The license key is empty"
 msgstr "라이선스 키의 내용이 없음"
 
-#: ../aptdaemon/worker/aptworker.py:1281
+#: ../aptkit/worker/aptworker.py:1281
 msgid "The license key is not allowed to contain executable code."
 msgstr "라이선스 키가 내장 실행 코드를 실행할 권한이 없습니다."
 
-#: ../aptdaemon/worker/aptworker.py:1290
+#: ../aptkit/worker/aptworker.py:1290
 #, python-format
 msgid "The license key path %s is invalid"
 msgstr "라이선스 키 경로 %s이(가) 올바르지 않습니다"
 
-#: ../aptdaemon/worker/aptworker.py:1294
+#: ../aptkit/worker/aptworker.py:1294
 #, python-format
 msgid "The license key already exists: %s"
 msgstr "라이선스 키가 올바르지 않습니다: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1299
+#: ../aptkit/worker/aptworker.py:1299
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
@@ -1418,40 +1418,40 @@ msgstr ""
 "라이선스 키의 위치가 심볼릭 링크를 포함하고 있기 때문에 불안정합니다.경로 %s"
 "이(가) %s(으)로 연결되었습니다"
 
-#: ../aptdaemon/worker/aptworker.py:1307
+#: ../aptkit/worker/aptworker.py:1307
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
 msgstr "키를 설치할 디렉터리가 아직 존재하지 않습니다: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1318
+#: ../aptkit/worker/aptworker.py:1318
 #, python-format
 msgid "Failed to write key file to: %s"
 msgstr "키 파일을 작성할 수 없습니다: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1353
+#: ../aptkit/worker/aptworker.py:1353
 msgid "The following packages have unmet dependencies:"
 msgstr "다음 패키지가 충족할 수 없는 의존성을 가지고 있습니다:"
 
-#: ../aptdaemon/worker/aptworker.py:1406
+#: ../aptkit/worker/aptworker.py:1406
 msgid "but it is a virtual package"
 msgstr "하지만 이것은 가상 패키지입니다."
 
-#: ../aptdaemon/worker/aptworker.py:1409
+#: ../aptkit/worker/aptworker.py:1409
 msgid "but it is not installed"
 msgstr "하지만 설치하지 않았습니다."
 
-#: ../aptdaemon/worker/aptworker.py:1411
+#: ../aptkit/worker/aptworker.py:1411
 msgid "but it is not going to be installed"
 msgstr "하지만  설치하지 않습니다."
 
 #. TRANSLATORS: %s is a version number
-#: ../aptdaemon/worker/aptworker.py:1415
+#: ../aptkit/worker/aptworker.py:1415
 #, python-format
 msgid "but %s is installed"
 msgstr "하지만 %s은(는) 설치했습니다"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptdaemon/worker/aptworker.py:1419
+#: ../aptkit/worker/aptworker.py:1419
 #, python-format
 msgid "but %s is to be installed"
 msgstr "하지만 %s은(는) 설치했습니다"

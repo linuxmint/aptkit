@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-aptdcon - command line interface client to aptdaemon
+aptkcon - command line interface client to aptkit
 """
 # Copyright (C) 2008 Sebastian Heinlein <devel@glatzor.de>
 #
@@ -22,9 +22,9 @@ aptdcon - command line interface client to aptdaemon
 __author__  = "Sebastian Heinlein <devel@glatzor.de>"
 __state__   = "experimental"
 
-import aptdaemon.console
+import aptkit.console
 
 if __name__ == "__main__":
-    aptdaemon.console.main()
+    aptkit.console.main()
 
 # vim:ts=4:sw=4:et

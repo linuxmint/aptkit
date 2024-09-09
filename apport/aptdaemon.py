@@ -32,11 +32,11 @@ apt_pkg.init()
 def add_info(report):
     """Collect and append additional information about a crash.
 
-    Note: Please consider that aptdaemon also manually creates
+    Note: Please consider that aptkit also manually creates
           apport reports for failed transaction which don't result
-          in a crash of aptdaemon, see aptdaemon.crash
+          in a crash of aptkit, see aptkit.crash
 
-    :param report: The apport report of an aptdaemon crash
+    :param report: The apport report of an aptkit crash
     """
     # Attach apt configuration
     report["AptConfig"] = apt_pkg.config.dump()
@@ -70,6 +70,6 @@ def add_info(report):
                                            "AptTermLog")
     apport.hookutils.attach_file_if_exists(report, "/var/log/dpkg.log",
                                            "DpkgLog")
-    report["SysLog"] = apport.hookutils.recent_syslog(re.compile("AptDaemon"))
+    report["SysLog"] = apport.hookutils.recent_syslog(re.compile("AptKit"))
 
 # vim:ts=4:sw=4:et

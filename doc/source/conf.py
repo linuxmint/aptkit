@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# aptdaemon documentation build configuration file, created by
+# aptkit documentation build configuration file, created by
 # sphinx-quickstart on Thu Aug 26 06:52:32 2010.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -38,7 +38,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'aptdaemon'
+project = u'aptkit'
 copyright = u'2010, Sebastian Heinlein'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -159,7 +159,7 @@ html_static_path = ['_static']
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'aptdaemondoc'
+htmlhelp_basename = 'aptkitdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -173,7 +173,7 @@ htmlhelp_basename = 'aptdaemondoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'aptdaemon.tex', u'aptdaemon Documentation',
+  ('index', 'aptkit.tex', u'aptkit Documentation',
    u'Sebastian Heinlein', 'manual'),
 ]
 

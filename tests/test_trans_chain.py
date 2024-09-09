@@ -4,15 +4,15 @@
 import unittest
 from gi.repository import GLib
 
-from aptdaemon import enums, client
+from aptkit import enums, client
 
 DEBUG = False
 
 
 class TransChainTest(unittest.TestCase):
 
-    """These tests require an aptdaemon running with the dummy worker:
-    # sudo aptd -td --dummy
+    """These tests require an aptkit running with the dummy worker:
+    # sudo aptk -td --dummy
     """
 
     def setUp(self):

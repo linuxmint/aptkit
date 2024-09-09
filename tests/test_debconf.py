@@ -12,8 +12,8 @@ import unittest
 import apt_pkg
 from gi.repository import GLib
 
-from aptdaemon import test
-from aptdaemon.debconf import DebconfProxy
+from aptkit import test
+from aptkit.debconf import DebconfProxy
 
 DEBUG = False
 
@@ -31,7 +31,7 @@ class DebconfTestBasic(unittest.TestCase):
         self.proxy = DebconfProxy("editor", self.debconf_socket_path)
         self.proxy.start()
 
-    def _set_input_value(self, template="aptdaemon/test", value="lalelu"):
+    def _set_input_value(self, template="aptkit/test", value="lalelu"):
         os.environ["DEBIAN_PRIORITY"] = "high"
         os.environ["EDITOR"] = "sed -ie 's/\\(%s=\\).*/\\1\\\"%s\\\"/i'" % \
                                (template.replace("/", "\\/"), value)
@@ -39,7 +39,7 @@ class DebconfTestBasic(unittest.TestCase):
     def _spawn_config_script(self, config_db_path, command=None):
         if command is None:
             command = [os.path.join(test.get_tests_dir(),
-                                    "debconf/aptdaemon.config")]
+                                    "debconf/aptkit.config")]
         env = {}
         env["DEBCONF_DB_REPLACE"] = "File{%s}" % config_db_path
         env["DEBIAN_FRONTEND"] = "passthrough"

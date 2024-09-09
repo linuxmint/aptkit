@@ -43,16 +43,16 @@ def create_report(error, traceback, trans=None):
     uid = 0
     report = apport.Report("Crash")
     report["Title"] = error
-    package = "aptdaemon"
+    package = "aptkit"
     try:
         package_version = apport.packaging.get_version(package)
     except ValueError as e:
         if 'does not exist' in e.message:
             package_version = 'unknown'
     report['Package'] = '%s %s' % (package, package_version)
-    report["SourcePackage"] = "aptdaemon"
+    report["SourcePackage"] = "aptkit"
     report["Traceback"] = traceback
-    report["ExecutablePath"] = "/usr/sbin/aptd"
+    report["ExecutablePath"] = "/usr/sbin/aptk"
     report.add_os_info()
 
     # Attach information about the transaction

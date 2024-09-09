@@ -21,7 +21,7 @@
 # Licensed under the GNU General Public License Version 2
 
 __author__ = "Sebastian Heinlein <devel@glatzor.de>"
-__all__ = ("get_tests_dir", "Chroot", "AptDaemonTestCase")
+__all__ = ("get_tests_dir", "Chroot", "AptKitTestCase")
 
 import inspect
 import os
@@ -176,7 +176,7 @@ class Chroot(object):
                                                                      filename))
 
 
-class AptDaemonTestCase(unittest.TestCase):
+class AptKitTestCase(unittest.TestCase):
 
     @classmethod
     def setupClass(cls):
@@ -204,8 +204,8 @@ class AptDaemonTestCase(unittest.TestCase):
         self.addCleanup(self._kill_process, proc)
         return proc
 
-    def start_session_aptd(self, chroot="/", debug=True):
-        """Start an aptdaemon which listens on the session D-Bus.
+    def start_session_aptk(self, chroot="/", debug=True):
+        """Start an aptkit which listens on the session D-Bus.
 
         :param chroot: path to the chroot
         """
@@ -219,10 +219,10 @@ class AptDaemonTestCase(unittest.TestCase):
         except KeyError:
             pass
         dir = get_tests_dir()
-        if dir == "/usr/share/aptdaemon/tests":
-            path = "/usr/sbin/aptd"
+        if dir == "/usr/share/aptkit/tests":
+            path = "/usr/sbin/aptk"
         else:
-            path = os.path.join(dir, "../aptd")
+            path = os.path.join(dir, "../aptk")
         cmd = ["python3", path, "--disable-plugins",
                "--chroot", chroot]
         if debug:
@@ -280,7 +280,7 @@ def get_tests_dir():
     # Try to detect a relative tests dir if we are running from the source
     # directory
     try:
-        path = inspect.getsourcefile(sys.modules["aptdaemon.test"])
+        path = inspect.getsourcefile(sys.modules["aptkit.test"])
     except KeyError:
         path = inspect.getsourcefile(inspect.currentframe())
     path = os.path.realpath(path)
@@ -288,8 +288,8 @@ def get_tests_dir():
     if os.path.exists(os.path.join(relative_path, "repo/Packages")):
         return os.path.normpath(relative_path)
     # Fallback to an absolute path
-    elif os.path.exists("/usr/share/aptdaemon/tests/repo/Packages"):
-        return "/usr/share/aptdaemon/tests"
+    elif os.path.exists("/usr/share/aptkit/tests/repo/Packages"):
+        return "/usr/share/aptkit/tests"
     else:
         raise Exception("Could not find tests direcotry")
 

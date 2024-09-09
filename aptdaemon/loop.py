@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Main loop for aptdaemon."""
+"""Main loop for aptkit."""
 # Copyright (C) 2008-2009 Sebastian Heinlein <devel@glatzor.de>
 #
 # This program is free software; you can redistribute it and/or modify

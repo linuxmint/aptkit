@@ -1,4 +1,4 @@
-aptdaemon (1.1.1+bzr982-0ubuntu44mint1) wilma; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu44mint1) wilma; urgency=medium
 
   * Fix tiny scrolledwindows
   * Specify version in gi import
@@ -6,120 +6,120 @@ aptdaemon (1.1.1+bzr982-0ubuntu44mint1) wilma; urgency=medium
 
  -- Clement Lefebvre <root@linuxmint.com>  Sun, 16 Jun 2024 14:59:56 +0100
 
-aptdaemon (1.1.1+bzr982-0ubuntu44) mantic; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu44) mantic; urgency=medium
 
   * pep8->pycodestyle.
 
  -- Steve Langasek <steve.langasek@ubuntu.com>  Mon, 22 May 2023 13:24:55 -0700
 
-aptdaemon (1.1.1+bzr982-0ubuntu43) lunar; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu43) lunar; urgency=medium
 
   * Fix FTBFS: error in setup.cfg: command 'build' has no such option 'i18n'
     by importing DistUtilsExtra in setup.py (LP: #1999148)
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Wed, 12 Apr 2023 16:24:35 +0200
 
-aptdaemon (1.1.1+bzr982-0ubuntu42) lunar; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu42) lunar; urgency=medium
 
   * Reverse the change in -41. It was a mistake.
 
  -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Sun, 08 Jan 2023 23:47:47 +0100
 
-aptdaemon (1.1.1+bzr982-0ubuntu41) lunar; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu41) lunar; urgency=medium
 
   * debian/tests/control:
     - Require version 1.3.7-9 of python3-nose
 
  -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Sun, 08 Jan 2023 10:28:23 +0100
 
-aptdaemon (1.1.1+bzr982-0ubuntu40) lunar; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu40) lunar; urgency=medium
 
   * debian/patches/drop-function-not-in-3.11.patch:
     - Don’t use bind_textdomain_codeset() function.
 
  -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Sat, 07 Jan 2023 17:40:02 +0100
 
-aptdaemon (1.1.1+bzr982-0ubuntu39) jammy; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu39) jammy; urgency=medium
 
   * No-change rebuild with Python 3.10 only.
 
  -- Matthias Klose <doko@ubuntu.com>  Thu, 17 Mar 2022 15:06:12 +0100
 
-aptdaemon (1.1.1+bzr982-0ubuntu38) jammy; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu38) jammy; urgency=medium
 
   * debian/patches/gdk-gtk-versions.py: Specify the versions of Gtk and Gtk
     which are required. (LP: #1939324)
 
  -- Brian Murray <brian@ubuntu.com>  Wed, 19 Jan 2022 11:48:25 -0800
 
-aptdaemon (1.1.1+bzr982-0ubuntu37) jammy; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu37) jammy; urgency=medium
 
   * fix-some-deprecated-code.patch (LP: #1951985)
 
  -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 23 Nov 2021 18:05:11 +0100
 
-aptdaemon (1.1.1+bzr982-0ubuntu36) hirsute; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu36) hirsute; urgency=medium
 
   * SECURITY UPDATE: info disclosure via transaction properties
     (LP: #1899513)
     - debian/patches/CVE-2020-16128.patch: drop privileges when doing file
-      checks in aptdaemon/core.py, aptdaemon/worker/aptworker.py,
-      aptdaemon/utils.py.
+      checks in aptkit/core.py, aptkit/worker/aptworker.py,
+      aptkit/utils.py.
     - CVE-2020-16128
   * SECURITY UPDATE: policykit checks are too late (LP: #1899193)
     - debian/patches/CVE-2020-27349.patch: check PolicyKit before
-      simulating local install in aptdaemon/core.py.
+      simulating local install in aptkit/core.py.
     - CVE-2020-27349
 
  -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 11 Dec 2020 09:49:56 -0500
 
-aptdaemon (1.1.1+bzr982-0ubuntu35) hirsute; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu35) hirsute; urgency=medium
 
-  * test-with-timeout.patch: Do not pass --disable-timeout to aptd when
+  * test-with-timeout.patch: Do not pass --disable-timeout to aptk when
     running tests, so we don't get tests stuck for hours.
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Thu, 12 Nov 2020 11:17:21 +0100
 
-aptdaemon (1.1.1+bzr982-0ubuntu34) groovy; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu34) groovy; urgency=medium
 
   * SECURITY UPDATE: information disclosure via locale (LP: #1888235)
     - debian/patches/CVE-2020-15703.patch: reject locales with full paths
-      in aptdaemon/core.py.
+      in aptkit/core.py.
     - CVE-2020-15703
 
  -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 24 Sep 2020 10:49:44 -0400
 
-aptdaemon (1.1.1+bzr982-0ubuntu33) groovy; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu33) groovy; urgency=medium
 
   * Update crash handler to use the changed apport function. (LP: #1700810)
 
  -- Brian Murray <brian@ubuntu.com>  Mon, 11 May 2020 15:10:33 -0700
 
-aptdaemon (1.1.1+bzr982-0ubuntu32) focal; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu32) focal; urgency=medium
 
   * Build-Depend on dh-python (LP: #1870049)
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Wed, 01 Apr 2020 16:28:36 +0200
 
-aptdaemon (1.1.1+bzr982-0ubuntu31) focal; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu31) focal; urgency=medium
 
   * Fix compatibility with python-apt security update (LP: #1858973)
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Thu, 23 Jan 2020 11:22:34 +0100
 
-aptdaemon (1.1.1+bzr982-0ubuntu30) focal; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu30) focal; urgency=medium
 
   * Port to debhelper 12
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 13 Jan 2020 16:25:52 +0100
 
-aptdaemon (1.1.1+bzr982-0ubuntu29) focal; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu29) focal; urgency=medium
 
   * Remove unused python- build-dependencies (LP: #1859477)
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 13 Jan 2020 16:00:17 +0100
 
-aptdaemon (1.1.1+bzr982-0ubuntu28) eoan; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu28) eoan; urgency=medium
 
   * d/patches/remove-lintian-scanning-of-local-packages.patch:
     Remove lintian scanning of local packages. lintian has changed in Debian
@@ -129,7 +129,7 @@ aptdaemon (1.1.1+bzr982-0ubuntu28) eoan; urgency=medium
 
  -- Michael Hudson-Doyle <michael.hudson@ubuntu.com>  Thu, 01 Aug 2019 12:25:29 +1200
 
-aptdaemon (1.1.1+bzr982-0ubuntu27) eoan; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu27) eoan; urgency=medium
 
   * Completely fix the dependency solving to work as any normal apt
     frontend does, avoiding auto-fixing, and solving dependencies of the
@@ -137,26 +137,26 @@ aptdaemon (1.1.1+bzr982-0ubuntu27) eoan; urgency=medium
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Wed, 26 Jun 2019 11:39:20 +0200
 
-aptdaemon (1.1.1+bzr982-0ubuntu26) eoan; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu26) eoan; urgency=medium
 
   * Remove call to install_protect(), gone in APT 1.9
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 24 Jun 2019 17:50:40 +0200
 
-aptdaemon (1.1.1+bzr982-0ubuntu25) eoan; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu25) eoan; urgency=medium
 
   * Say "The lock is held by %s" instead of "hold by" when lock fails
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Fri, 21 Jun 2019 23:04:50 +0200
 
-aptdaemon (1.1.1+bzr982-0ubuntu24) eoan; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu24) eoan; urgency=medium
 
   * Fixup: Ignore failure to delete non-existing DPKG_FRONTEND_LOCKED
     variable when releasing locks.
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Fri, 07 Jun 2019 13:36:48 +0200
 
-aptdaemon (1.1.1+bzr982-0ubuntu23) eoan; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu23) eoan; urgency=medium
 
   * Various locking fixes (LP: #1831981)
     - Implement frontend locking
@@ -165,7 +165,7 @@ aptdaemon (1.1.1+bzr982-0ubuntu23) eoan; urgency=medium
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Fri, 07 Jun 2019 12:04:55 +0200
 
-aptdaemon (1.1.1+bzr982-0ubuntu22) eoan; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu22) eoan; urgency=medium
 
   * Use PackageKit's socket-activated debconf helper (LP: #1726068)
   * Fix failing tests and disable ones we do not care about anymore (PK/PEP8)
@@ -174,7 +174,7 @@ aptdaemon (1.1.1+bzr982-0ubuntu22) eoan; urgency=medium
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Fri, 24 May 2019 12:16:27 +0200
 
-aptdaemon (1.1.1+bzr982-0ubuntu21) disco; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu21) disco; urgency=medium
 
   * Use 'return' instead of 'raise StopIteration', in order to adjust for
     PEP 479 which turns 'raise StopIteration' into a 'RuntimeError'
@@ -182,14 +182,14 @@ aptdaemon (1.1.1+bzr982-0ubuntu21) disco; urgency=medium
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Wed, 27 Mar 2019 15:49:09 +0100
 
-aptdaemon (1.1.1+bzr982-0ubuntu20) cosmic; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu20) cosmic; urgency=medium
 
   * d/patches/python3.7-compat.patch: do not use 'async' as a variable
     name as that is now a keyword in Python 3.7. 
 
  -- Michael Hudson-Doyle <michael.hudson@ubuntu.com>  Thu, 02 Aug 2018 09:46:26 +1200
 
-aptdaemon (1.1.1+bzr982-0ubuntu19) bionic; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu19) bionic; urgency=medium
 
   * d/p/lp1690541-details-open-twice.patch: Indicate that the AptTerminal
     widget would like extra space so we can see more terminal output.
@@ -197,7 +197,7 @@ aptdaemon (1.1.1+bzr982-0ubuntu19) bionic; urgency=medium
 
  -- Brian Murray <brian@ubuntu.com>  Tue, 27 Feb 2018 16:21:11 -0800
 
-aptdaemon (1.1.1+bzr982-0ubuntu18) bionic; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu18) bionic; urgency=medium
 
   * d/p/lp1689668-config-file-window.patch: Ensure that the dialog to resolve
     config conflicts is large enough to provide useful information.
@@ -205,7 +205,7 @@ aptdaemon (1.1.1+bzr982-0ubuntu18) bionic; urgency=medium
 
  -- Brian Murray <brian@ubuntu.com>  Tue, 27 Feb 2018 08:43:10 -0800
 
-aptdaemon (1.1.1+bzr982-0ubuntu17) zesty; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu17) zesty; urgency=medium
 
   * d/patches/lp1623856-window-height.patch: Set the scrolled
     window minimum height so that the text is more readable.  (LP: #1623856)
@@ -213,14 +213,14 @@ aptdaemon (1.1.1+bzr982-0ubuntu17) zesty; urgency=medium
 
  -- Barry Warsaw <barry@ubuntu.com>  Mon, 23 Jan 2017 18:00:53 -0500
 
-aptdaemon (1.1.1+bzr982-0ubuntu16) yakkety; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu16) yakkety; urgency=medium
 
   * debian/control:
-    - Have python(3)-aptdaemon depend on aptdaemon (LP: #1605868)
+    - Have python(3)-aptkit depend on aptkit (LP: #1605868)
 
  -- Jeremy Bicha <jbicha@ubuntu.com>  Wed, 17 Aug 2016 12:54:52 -0400
 
-aptdaemon (1.1.1+bzr982-0ubuntu15) yakkety; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu15) yakkety; urgency=medium
 
   * debian/patches/drop_pkcompat.patch: don't call on pkcompat's PackageKit
     implementation. Instead, expect PackageKit to be DBus-activated so we can
@@ -228,21 +228,21 @@ aptdaemon (1.1.1+bzr982-0ubuntu15) yakkety; urgency=medium
   * debian/patches/pk1.1.1-compat.patch: remove API that is no longer there
     in PackageKit 1.1.1: GET_DEPENDS and GET_REQUIRES.
   * debian/control:
-    - drop python3-aptdaemon.pkcompat binary package.
-    - aptdaemon Breaks/Replaces python3-aptdaemon.pkcompat for transition.
+    - drop python3-aptkit.pkcompat binary package.
+    - aptkit Breaks/Replaces python3-aptkit.pkcompat for transition.
     - Depends on gir1.2-packagekitglib-1.0 (>= 1.1.1) now, to enforce using
       PackageKit 1.1; which drops GET_DEPENDS and GET_REQUIRES.
 
  -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Mon, 06 Jun 2016 20:22:54 -0400
 
-aptdaemon (1.1.1+bzr982-0ubuntu14) wily; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu14) wily; urgency=medium
 
-  * debian/patches/lp1439769-aptdaemon-autoinstall.patch: Display the flag
+  * debian/patches/lp1439769-aptkit-autoinstall.patch: Display the flag
     name in the error message, not the package name.
 
  -- Brian Murray <brian@ubuntu.com>  Mon, 12 Oct 2015 09:02:44 -0700
 
-aptdaemon (1.1.1+bzr982-0ubuntu13) wily; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu13) wily; urgency=medium
 
   * Drop Vcs-Bzr from debian/control:
     - The branch pointed to is "ubuntu-vivid".  This is obviously incorrect
@@ -251,20 +251,20 @@ aptdaemon (1.1.1+bzr982-0ubuntu13) wily; urgency=medium
     - Uploaders do not have commit rights on the listed branch.  A Vcs-Bzr
       field should only point to a branch that uploaders have rights to,
       otherwise it can never be authoritative.
-  * debian/patches/lp1439769-aptdaemon-autoinstall.patch: Take a flag to
+  * debian/patches/lp1439769-aptkit-autoinstall.patch: Take a flag to
     indicate whether a requested package is auto-installed.  Thanks to
     Michael Vogt <mvo@ubuntu.com>.  Closes LP: #1439769.
 
  -- Steve Langasek <steve.langasek@ubuntu.com>  Tue, 06 Oct 2015 11:33:41 -0700
 
-aptdaemon (1.1.1+bzr982-0ubuntu12) wily; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu12) wily; urgency=medium
 
   * debian/patches/fix-observed-linitian-error.diff: drop Ubuntu patch that
     was added this cycle, it's not needed with the recent lintian change
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 01 Oct 2015 12:22:11 +0200
 
-aptdaemon (1.1.1+bzr982-0ubuntu11) wily; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu11) wily; urgency=medium
 
   * debian/patches/lintian_deprecated_error.patch:
     - don't list the binary-file-compressed-with-upx lintian error, it was
@@ -273,9 +273,9 @@ aptdaemon (1.1.1+bzr982-0ubuntu11) wily; urgency=medium
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 30 Sep 2015 16:46:03 +0200
 
-aptdaemon (1.1.1+bzr982-0ubuntu10) wily; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu10) wily; urgency=medium
 
-  * debian/control: let python(3)-aptdaemon Depends on 
+  * debian/control: let python(3)-aptkit Depends on 
       gir1.2-packagekitglib-1.0 (<< 0.9) (restrict the version because 
       0.9 is incompatible, also that version was uploaded to 
       wily-proposed and deleted but some users got it installed, that 
@@ -285,7 +285,7 @@ aptdaemon (1.1.1+bzr982-0ubuntu10) wily; urgency=medium
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 29 Sep 2015 16:40:25 +0200
 
-aptdaemon (1.1.1+bzr982-0ubuntu9) wily; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu9) wily; urgency=medium
 
   * Fix package installation by not considering the "data" which is bogus to
     pass to apt. (LP: #1352654)
@@ -293,21 +293,21 @@ aptdaemon (1.1.1+bzr982-0ubuntu9) wily; urgency=medium
 
  -- Iain Lane <iain@orangesquash.org.uk>  Mon, 28 Sep 2015 18:10:56 +0100
 
-aptdaemon (1.1.1+bzr982-0ubuntu8) wily; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu8) wily; urgency=medium
 
   * debian/patches/lp1487087.diff: Always avoid the bogus mock
     .assert_called() call.
 
  -- Barry Warsaw <barry@ubuntu.com>  Thu, 20 Aug 2015 15:33:06 -0400
 
-aptdaemon (1.1.1+bzr982-0ubuntu7) wily; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu7) wily; urgency=medium
 
   * debian/patches/lp1487087.diff: Added to skip a bogus .assert_called()
     call on a mock which no longer exists, but only under Python 3.5.
 
  -- Barry Warsaw <barry@ubuntu.com>  Thu, 20 Aug 2015 10:17:28 -0400
 
-aptdaemon (1.1.1+bzr982-0ubuntu6) wily; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu6) wily; urgency=medium
 
   * debian/patches/pep8-accommodations.diff: Added to make the PEP 8 test
     not fail autopkgtests due to pep8 tool bogosity.
@@ -316,13 +316,13 @@ aptdaemon (1.1.1+bzr982-0ubuntu6) wily; urgency=medium
 
  -- Barry Warsaw <barry@ubuntu.com>  Wed, 19 Aug 2015 11:40:43 -0400
 
-aptdaemon (1.1.1+bzr982-0ubuntu5) wily; urgency=medium
+aptkit (1.1.1+bzr982-0ubuntu5) wily; urgency=medium
 
   * No-change rebuild for python3.5 transition
 
  -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 22 Jul 2015 04:09:09 +0000
 
-aptdaemon (1.1.1+bzr982-0ubuntu4) wily; urgency=low
+aptkit (1.1.1+bzr982-0ubuntu4) wily; urgency=low
 
   [ Michael Vogt ]
   * SECURITY UPDATE: information disclosure via simulate dbus method
@@ -333,33 +333,33 @@ aptdaemon (1.1.1+bzr982-0ubuntu4) wily; urgency=low
 
  -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 16 Jun 2015 13:38:47 -0400
 
-aptdaemon (1.1.1+bzr982-0ubuntu3) vivid; urgency=low
+aptkit (1.1.1+bzr982-0ubuntu3) vivid; urgency=low
 
   * debian/patches/lp1356823.diff:
     - try harder to fix crash #1356823
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 16 Apr 2015 10:05:07 -0500
 
-aptdaemon (1.1.1+bzr982-0ubuntu2) vivid; urgency=low
+aptkit (1.1.1+bzr982-0ubuntu2) vivid; urgency=low
 
   * debian/patches/lp1356823.diff:
     - fix crash #1356823
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 10 Apr 2015 10:01:10 +0200
 
-aptdaemon (1.1.1+bzr982-0ubuntu1) vivid; urgency=low
+aptkit (1.1.1+bzr982-0ubuntu1) vivid; urgency=low
 
   * fix crash in _on_progress_details() (LP: #1436725)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 07 Apr 2015 11:34:02 +0200
 
-aptdaemon (1.1.1+bzr981-0ubuntu2) vivid; urgency=medium
+aptkit (1.1.1+bzr981-0ubuntu2) vivid; urgency=medium
 
   * autopkgtest: Don't let root reports in /var/crash fail the test.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 01 Dec 2014 08:01:17 +0100
 
-aptdaemon (1.1.1+bzr981-0ubuntu1) vivid; urgency=medium
+aptkit (1.1.1+bzr981-0ubuntu1) vivid; urgency=medium
 
   * New bzr snapshot:
     + Port to VTE 2.91
@@ -368,7 +368,7 @@ aptdaemon (1.1.1+bzr981-0ubuntu1) vivid; urgency=medium
 
  -- Iain Lane <iain@orangesquash.org.uk>  Tue, 11 Nov 2014 16:05:26 +0000
 
-aptdaemon (1.1.1+bzr980-0ubuntu1) utopic; urgency=medium
+aptkit (1.1.1+bzr980-0ubuntu1) utopic; urgency=medium
 
   * New bzr snapshot:
     - Drop obsolete gobject compatibility and gtkwidgets
@@ -376,37 +376,37 @@ aptdaemon (1.1.1+bzr980-0ubuntu1) utopic; urgency=medium
     - Do not crash when "#" are in comments
   * Drop fix-configparser.patch, applied upstream.
   * Refresh other patches.
-  * Drop python-aptdaemon.gtkwidgets and python-aptdaemon-gtk binaries. These
+  * Drop python-aptkit.gtkwidgets and python-aptkit-gtk binaries. These
     have been obsolete for a long time, unmaintained/untested, and there are
     no reverse dependencies any more.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 21 Aug 2014 15:47:42 +0200
 
-aptdaemon (1.1.1+bzr973-1ubuntu4) utopic; urgency=medium
+aptkit (1.1.1+bzr973-1ubuntu4) utopic; urgency=medium
 
-  * debian/python3-aptdaemon.pkcompat.install:
+  * debian/python3-aptkit.pkcompat.install:
     - install pkutils.py, which is required by pkcompat.py.
 
  -- Alberto Milone <alberto.milone@canonical.com>  Wed, 30 Jul 2014 15:47:24 +0200
 
-aptdaemon (1.1.1+bzr973-1ubuntu3) utopic; urgency=medium
+aptkit (1.1.1+bzr973-1ubuntu3) utopic; urgency=medium
 
   * New bzr snapshot to fix PEP-8 errors.
   * Update Vcs-* for utopic branch.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 26 Jun 2014 09:26:20 +0200
 
-aptdaemon (1.1.1+bzr970-1ubuntu2) utopic; urgency=low
+aptkit (1.1.1+bzr970-1ubuntu2) utopic; urgency=low
 
   * debian/patches/lp1153725-temporary-workaround.patch:
     - dropped, tests work fine (LP: #1153725)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 12 Jun 2014 10:36:33 +0200
 
-aptdaemon (1.1.1+bzr970-1ubuntu1) utopic; urgency=low
+aptkit (1.1.1+bzr970-1ubuntu1) utopic; urgency=low
 
   * New bzr snapshot
-    - lp:~brian-murray/aptdaemon/package-version-in-crash
+    - lp:~brian-murray/aptkit/package-version-in-crash
       + include package version in crash reports
   * patches already upstream:
     + upstream_lintian_2.5.18.patch 
@@ -416,9 +416,9 @@ aptdaemon (1.1.1+bzr970-1ubuntu1) utopic; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 06 Jun 2014 11:27:25 +0200
 
-aptdaemon (1.1.1-1ubuntu5) trusty; urgency=low
+aptkit (1.1.1-1ubuntu5) trusty; urgency=low
 
-  * debian/python3-aptdaemon.test.install:
+  * debian/python3-aptkit.test.install:
     - install all test deb files
   * debian/patches/dbus_timeout.patch:
     - fix pep8 issue
@@ -432,7 +432,7 @@ aptdaemon (1.1.1-1ubuntu5) trusty; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 11 Apr 2014 14:48:52 +0200
 
-aptdaemon (1.1.1-1ubuntu4) trusty; urgency=low
+aptkit (1.1.1-1ubuntu4) trusty; urgency=low
 
   * debian/patches/dbus_timeout.patch
     - increase dbus timeouts to avoid a dbus timeout error if a
@@ -442,19 +442,19 @@ aptdaemon (1.1.1-1ubuntu4) trusty; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 10 Apr 2014 16:28:03 +0200
 
-aptdaemon (1.1.1-1ubuntu3) trusty; urgency=medium
+aptkit (1.1.1-1ubuntu3) trusty; urgency=medium
 
   * Rewrite the python shebang path to /usr/bin/python3.
 
  -- Matthias Klose <doko@ubuntu.com>  Thu, 20 Feb 2014 17:39:44 +0100
 
-aptdaemon (1.1.1-1ubuntu2) trusty; urgency=low
+aptkit (1.1.1-1ubuntu2) trusty; urgency=low
 
   * Backport fix for LP: #1024590 from trunk r963
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 05 Dec 2013 14:39:32 +0100
 
-aptdaemon (1.1.1-1ubuntu1) trusty; urgency=low
+aptkit (1.1.1-1ubuntu1) trusty; urgency=low
 
   * Merge with Debian unstable. Remaining Ubuntu changes:
     - Build-depend on dh-translations and use it in debian/rules.
@@ -466,7 +466,7 @@ aptdaemon (1.1.1-1ubuntu1) trusty; urgency=low
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 24 Oct 2013 07:01:30 +0200
 
-aptdaemon (1.1.1-1) unstable; urgency=low
+aptkit (1.1.1-1) unstable; urgency=low
 
   [ Sebastian Heinlein ]
   * New upstream release:
@@ -493,7 +493,7 @@ aptdaemon (1.1.1-1) unstable; urgency=low
 
  -- Julian Andres Klode <jak@debian.org>  Thu, 15 Aug 2013 13:09:38 +0200
 
-aptdaemon (1.0-1) unstable; urgency=low
+aptkit (1.0-1) unstable; urgency=low
 
   * Merge with Ubuntu saucy.
     - Fixes incorrect GObjectMeta usage (Closes: #707768)
@@ -504,7 +504,7 @@ aptdaemon (1.0-1) unstable; urgency=low
 
  -- Julian Andres Klode <jak@debian.org>  Sun, 14 Jul 2013 18:11:59 +0200
 
-aptdaemon (1.0-0ubuntu10) saucy; urgency=low
+aptkit (1.0-0ubuntu10) saucy; urgency=low
 
   * Update Vcs-* to saucy branch.
   * Add upstream-dropped-lintian-check.patch: Drop
@@ -513,21 +513,21 @@ aptdaemon (1.0-0ubuntu10) saucy; urgency=low
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 06 Jun 2013 08:54:17 +0200
 
-aptdaemon (1.0-0ubuntu9) raring; urgency=low
+aptkit (1.0-0ubuntu9) raring; urgency=low
 
   * Flush debconf-communicate stdin after writing to it
     (LP: #1163142, #1163163).
 
  -- Colin Watson <cjwatson@ubuntu.com>  Tue, 02 Apr 2013 14:07:01 +0100
 
-aptdaemon (1.0-0ubuntu8) raring; urgency=low
+aptkit (1.0-0ubuntu8) raring; urgency=low
 
   *debian/patches/fix-lp898851.patch: Workaround a random crash during
    progress dialog.  Thanks to Sebastian Heinlein for the patch. (LP: #898851)
 
  -- Brian Murray <brian@ubuntu.com>  Fri, 22 Mar 2013 15:09:13 -0700
 
-aptdaemon (1.0-0ubuntu7) raring; urgency=low
+aptkit (1.0-0ubuntu7) raring; urgency=low
 
   * debian/rules: Drop the hackery again to salvage the "whitelist directory"
     test case, and instead exclude it in lp1153725-temporary-workaround.patch
@@ -535,7 +535,7 @@ aptdaemon (1.0-0ubuntu7) raring; urgency=low
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 18 Mar 2013 14:27:32 +0100
 
-aptdaemon (1.0-0ubuntu6) raring; urgency=low
+aptkit (1.0-0ubuntu6) raring; urgency=low
 
   [ Martin Pitt ]
   * Add gir1.2-vte-2.90 build and test dependency.
@@ -555,7 +555,7 @@ aptdaemon (1.0-0ubuntu6) raring; urgency=low
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 18 Mar 2013 13:14:20 +0100
 
-aptdaemon (1.0-0ubuntu5) raring; urgency=low
+aptkit (1.0-0ubuntu5) raring; urgency=low
 
   * Add pep8 build dependency as well, as tests are called during package
     build.
@@ -566,7 +566,7 @@ aptdaemon (1.0-0ubuntu5) raring; urgency=low
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 18 Mar 2013 12:17:19 +0100
 
-aptdaemon (1.0-0ubuntu4) raring; urgency=low
+aptkit (1.0-0ubuntu4) raring; urgency=low
 
   * Add missing pep8 test dependency.
   * Add upstream-pep8-fixes.patch: Fix some PEP-8 issues, caught by test
@@ -578,19 +578,19 @@ aptdaemon (1.0-0ubuntu4) raring; urgency=low
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 18 Mar 2013 11:16:11 +0100
 
-aptdaemon (1.0-0ubuntu3) raring; urgency=low
+aptkit (1.0-0ubuntu3) raring; urgency=low
 
   * Make the DEP-8 tests depend on xvfb.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 15 Mar 2013 13:12:30 +0000
 
-aptdaemon (1.0-0ubuntu2) raring; urgency=low
+aptkit (1.0-0ubuntu2) raring; urgency=low
 
   * Run DEP-8 tests under xvfb-run, to match tests run during the build.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Fri, 15 Mar 2013 11:34:25 +0000
 
-aptdaemon (1.0-0ubuntu1) raring; urgency=low
+aptkit (1.0-0ubuntu1) raring; urgency=low
 
   * New stable bug fix release 1.0:
     - Add PEP8 compliance and a corresponding test 
@@ -600,7 +600,7 @@ aptdaemon (1.0-0ubuntu1) raring; urgency=low
       thanks to Barry Warsaw and Robert Collins (LP: #1120322)
     - Fix crash if the removal of a package valid candidate is simulated
     - Allow repository release names to include dots
-    - Convert aptdaemon exceptions to PackageKit ones in the compat
+    - Convert aptkit exceptions to PackageKit ones in the compat
       layer (currently only invalid input ant failed authorization are
       supported)
     - Store the default values in the PackageKit transaction interface
@@ -617,7 +617,7 @@ aptdaemon (1.0-0ubuntu1) raring; urgency=low
 
  -- Sebastian Heinlein <glatzor@ubuntu.com>  Mon, 11 Mar 2013 07:02:07 +0100
 
-aptdaemon (0.45+bzr883-0ubuntu1) raring; urgency=low
+aptkit (0.45+bzr883-0ubuntu1) raring; urgency=low
 
   * New upstream snapshot:
     - Don't change the automatic installed state when upgrading package
@@ -632,14 +632,14 @@ aptdaemon (0.45+bzr883-0ubuntu1) raring; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 17 Dec 2012 11:45:14 +0100
 
-aptdaemon (0.45+bzr877-0ubuntu1) raring; urgency=low
+aptkit (0.45+bzr877-0ubuntu1) raring; urgency=low
 
   * New upstream snapshot:
     - ignore lintian "file-in-etc-not-marked-as-conffile" (LP: #1060505)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 30 Nov 2012 08:28:18 +0100
 
-aptdaemon (0.45+bzr876-0ubuntu1) raring; urgency=low
+aptkit (0.45+bzr876-0ubuntu1) raring; urgency=low
 
   * New upstream snapshot:
     - fix signal handling with latest python-gi
@@ -647,14 +647,14 @@ aptdaemon (0.45+bzr876-0ubuntu1) raring; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 28 Nov 2012 14:19:11 +0100
 
-aptdaemon (0.45+bzr874-0ubuntu1) raring; urgency=low
+aptkit (0.45+bzr874-0ubuntu1) raring; urgency=low
 
   * New upstream snapshot:
     - Fix ClientTest.test_tid_caching without a system D-BUS.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 26 Nov 2012 12:42:15 +0100
 
-aptdaemon (0.45+bzr873-0ubuntu1) raring; urgency=low
+aptkit (0.45+bzr873-0ubuntu1) raring; urgency=low
 
   * debian/control: Update Vcs-* for raring branch.
   * New upstream snapshot:
@@ -673,7 +673,7 @@ aptdaemon (0.45+bzr873-0ubuntu1) raring; urgency=low
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 26 Nov 2012 12:22:02 +0100
 
-aptdaemon (0.45+bzr861-0ubuntu9.1) quantal-proposed; urgency=low
+aptkit (0.45+bzr861-0ubuntu9.1) quantal-proposed; urgency=low
 
   [ Sebastian Heinlein ]
   * do not issue a "quality warning" if dpkg-vendor is missing 
@@ -681,21 +681,21 @@ aptdaemon (0.45+bzr861-0ubuntu9.1) quantal-proposed; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 16 Oct 2012 13:58:07 +0200
 
-aptdaemon (0.45+bzr861-0ubuntu9) quantal; urgency=low
+aptkit (0.45+bzr861-0ubuntu9) quantal; urgency=low
 
   * Workaround that ensures that for sys.getfilesystemencoding() 
     "utf8" is used when the daemon is dbus auto-activatied (LP: #1058038)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 09 Oct 2012 14:27:36 +0200
 
-aptdaemon (0.45+bzr861-0ubuntu8) quantal; urgency=low
+aptkit (0.45+bzr861-0ubuntu8) quantal; urgency=low
 
   * debian/patches/lp846044.patch:
     - fix unicode decode error in py2 clients (LP: #846044)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 08 Oct 2012 15:57:29 +0200
 
-aptdaemon (0.45+bzr861-0ubuntu7) quantal; urgency=low
+aptkit (0.45+bzr861-0ubuntu7) quantal; urgency=low
 
   * Following https://bugs.launchpad.net/bugs/1016643,
     apt.auth.add_key_from_keyserver requires long (v4) keyids.  Fix
@@ -704,7 +704,7 @@ aptdaemon (0.45+bzr861-0ubuntu7) quantal; urgency=low
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sun, 07 Oct 2012 15:28:18 +0100
 
-aptdaemon (0.45+bzr861-0ubuntu6) quantal; urgency=low
+aptkit (0.45+bzr861-0ubuntu6) quantal; urgency=low
 
   * Ensure the transaction is simulated in the pkcompat layer to
     ensure the high-trust repo support works from the packagekit
@@ -713,14 +713,14 @@ aptdaemon (0.45+bzr861-0ubuntu6) quantal; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 04 Oct 2012 16:58:34 +0200
 
-aptdaemon (0.45+bzr861-0ubuntu5) quantal; urgency=low
+aptkit (0.45+bzr861-0ubuntu5) quantal; urgency=low
 
   * debian/patches/binary-mode-report-writing.patch: open our crash
     report for writing in binary mode.  Closes LP: #1054984.
 
  -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 26 Sep 2012 10:24:48 -0700
 
-aptdaemon (0.45+bzr861-0ubuntu4) quantal; urgency=low
+aptkit (0.45+bzr861-0ubuntu4) quantal; urgency=low
 
   * debian/patches/apt-dbus-text-api.patch:
     - Convert Origin.label from python-apt API to python-dbus API, for
@@ -728,38 +728,38 @@ aptdaemon (0.45+bzr861-0ubuntu4) quantal; urgency=low
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 17 Sep 2012 15:12:38 +0100
 
-aptdaemon (0.45+bzr861-0ubuntu3) quantal; urgency=low
+aptkit (0.45+bzr861-0ubuntu3) quantal; urgency=low
 
   * debian/tests/control: Added missing dependencies required to run
     autopkgtest. Thanks Jean-Baptiste Lallement!
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 13 Sep 2012 19:17:22 +0200
 
-aptdaemon (0.45+bzr861-0ubuntu2) quantal; urgency=low
+aptkit (0.45+bzr861-0ubuntu2) quantal; urgency=low
 
   * Add autopkgtest integration. Thanks Jean-Baptiste Lallement!
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 13 Sep 2012 12:45:12 +0200
 
-aptdaemon (0.45+bzr861-0ubuntu1) quantal; urgency=low
+aptkit (0.45+bzr861-0ubuntu1) quantal; urgency=low
 
   * New upstream snapshot:
-    - lp:~mvo/aptdaemon/support-for-whitelisted-repositories that adds
+    - lp:~mvo/aptkit/support-for-whitelisted-repositories that adds
       support for a new trusted-repo policykit action LP: #1035207
-    - lp:~vorlon/aptdaemon/lp.1034806 that fixes unicode/str errors
+    - lp:~vorlon/aptkit/lp.1034806 that fixes unicode/str errors
       LP: #768691, #926340, #1034806
   * debian/patches/fix_gettext_return_value_type.patch:
-    - dropped, merged as part of lp:~vorlon/aptdaemon/lp.1034806
+    - dropped, merged as part of lp:~vorlon/aptkit/lp.1034806
     
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 13 Sep 2012 09:13:07 +0200
 
-aptdaemon (0.45+bzr857-0ubuntu1) quantal; urgency=low
+aptkit (0.45+bzr857-0ubuntu1) quantal; urgency=low
 
   * fix FTBFS in the tests when LANG/LANGUAGE is unset
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 12 Sep 2012 12:02:38 +0200
 
-aptdaemon (0.45+bzr856-0ubuntu1) quantal; urgency=low
+aptkit (0.45+bzr856-0ubuntu1) quantal; urgency=low
 
   * New upstream snapshot:
     - pkcompat: Fix get_files() LP: #1040619 (thanks to Martin Pitt)
@@ -771,31 +771,31 @@ aptdaemon (0.45+bzr856-0ubuntu1) quantal; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 07 Sep 2012 10:20:10 +0200
 
-aptdaemon (0.45+bzr852-0ubuntu2) quantal; urgency=low
+aptkit (0.45+bzr852-0ubuntu2) quantal; urgency=low
 
   * debian/patches/fix_gettext_return_value_type.patch: also return unicode
-    from aptdaemon.utils.IsoCodes.get_localised_name(). (LP: #1034806)
+    from aptkit.utils.IsoCodes.get_localised_name(). (LP: #1034806)
 
  -- Steve Langasek <steve.langasek@ubuntu.com>  Sat, 11 Aug 2012 01:39:05 +0000
 
-aptdaemon (0.45+bzr852-0ubuntu1) quantal; urgency=low
+aptkit (0.45+bzr852-0ubuntu1) quantal; urgency=low
 
   [ Martin Pitt ]
   * debian/rules: Make test suite failures fatal again.
   
   [ Michael Vogt ]
   * New upstream snapshot:
-    - lp:~evfool/aptdaemon/lp1030988:
+    - lp:~evfool/aptkit/lp1030988:
       Change the error message for installation required from 
       unauthenticated sources (LP: #1030988)
-    - lp:~dobey/aptdaemon/fix-imports: 
+    - lp:~dobey/aptkit/fix-imports: 
       Check that the item in sys.modules is not None before trying to 
       import it
     - fix "compatibilty" typo
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 10 Aug 2012 16:16:03 +0200
 
-aptdaemon (0.45+bzr848-0ubuntu2) quantal; urgency=low
+aptkit (0.45+bzr848-0ubuntu2) quantal; urgency=low
 
   * debian/patches/fix_gettext_return_value_type.patch:
     - Make sure to always return unicode from core.Transaction.gettext()
@@ -803,10 +803,10 @@ aptdaemon (0.45+bzr848-0ubuntu2) quantal; urgency=low
 
  -- Colin Watson <cjwatson@ubuntu.com>  Wed, 08 Aug 2012 16:19:51 +0100
 
-aptdaemon (0.45+bzr848-0ubuntu1) quantal; urgency=low
+aptkit (0.45+bzr848-0ubuntu1) quantal; urgency=low
 
   * New upstream snapshot:
-    - aptdaemon/client.py: Prefer GI GObject module. (LP: #1026066)
+    - aptkit/client.py: Prefer GI GObject module. (LP: #1026066)
     - lintian supports skipping user profiles since 2.5.9, make use of this to
       simplify code a bit.
   * debian/rules: Temporarily make test suite non-fatal while
@@ -815,10 +815,10 @@ aptdaemon (0.45+bzr848-0ubuntu1) quantal; urgency=low
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 24 Jul 2012 10:09:31 +0200
 
-aptdaemon (0.45+bzr846-0ubuntu1) quantal; urgency=low
+aptkit (0.45+bzr846-0ubuntu1) quantal; urgency=low
 
   * New upstream snapshot:
-    - Python3 porting from lp:~aptdaemon-developers/aptdaemon/py3k
+    - Python3 porting from lp:~aptkit-developers/aptkit/py3k
     - Fix package status enum description for an unknown status 
       which resulted in a type mismatch in the gettext call 
       (fixes LP: #900982)
@@ -826,65 +826,65 @@ aptdaemon (0.45+bzr846-0ubuntu1) quantal; urgency=low
       is broken (final partial fix to LP: #932581)
     - client: Use INT64 in signals where required (Fixes LP: #981124)
     - use lintian profiles instead of tags
-  * debian/aptdaemon.install:
+  * debian/aptkit.install:
     - use the new lintian profiles instead of the tags
   * debian/patches/series:
     - drop patches, applied upstream
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 14 Jun 2012 12:27:44 +0200
 
-aptdaemon (0.45-3) unstable; urgency=low
+aptkit (0.45-3) unstable; urgency=low
 
   * Drop the pkcompat package for now, to ease PackageKit 0.8 transition. Will
-    upload a new aptdaemon release after PK 0.8 migrated to testing.
+    upload a new aptkit release after PK 0.8 migrated to testing.
 
  -- Julian Andres Klode <jak@debian.org>  Fri, 28 Jun 2013 23:32:36 +0200
 
-aptdaemon (0.45-2) unstable; urgency=medium
+aptkit (0.45-2) unstable; urgency=medium
 
   * Check downloaded key id; merged from Ubuntu (CVE-2012-0962)
 
  -- Julian Andres Klode <jak@debian.org>  Sat, 02 Mar 2013 18:57:17 +0100
 
-aptdaemon (0.45-1) unstable; urgency=low
+aptkit (0.45-1) unstable; urgency=low
 
   * New upstream releases bringing a lot of bug fixes and improvements
   * debian/control:
     - Remove use of X(B|S)-Python-Version
-    - python-aptdaemon.pkcompat now provides packagekit-system-interface
+    - python-aptkit.pkcompat now provides packagekit-system-interface
       which helps to avoid ugly or dependencies in PackageKit clients
     - Don't use the shlibs depends since we don't have got any libraries
-  * debian/aptdaemon.install:
-    - Don't ship the aptdaemon.desktop file which was used in the apport
+  * debian/aptkit.install:
+    - Don't ship the aptkit.desktop file which was used in the apport
       reports
 
  -- Sebastian Heinlein (Devel) <devel@glatzor.de>  Mon, 11 Jun 2012 11:07:08 +0200
 
-aptdaemon (0.43+bzr838-0ubuntu2) quantal; urgency=low
+aptkit (0.43+bzr838-0ubuntu2) quantal; urgency=low
 
-  * python3-aptdaemon.test needs to Breaks/Replaces python-aptdaemon.test,
+  * python3-aptkit.test needs to Breaks/Replaces python-aptkit.test,
     which it replaces.
 
  -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 13 Jun 2012 13:08:20 -0700
 
-aptdaemon (0.43+bzr838-0ubuntu1) quantal; urgency=low
+aptkit (0.43+bzr838-0ubuntu1) quantal; urgency=low
 
   * Upload of the latest Python3 porting efforts from trunk
   * debian/patches:
      - Add disable_simulate_test: Fails on build bot for unknown reasons
   * debian/control:
-     - Switch aptdaemon package to Python3 by default
-     - Add new python3-aptdaemon.gtk3widgets package
-     - Replace python-aptdaemon.test by python3-aptdaemon.test
-     - Replace python-aptdaemon.pkcompat by python3-aptdaemon.pkcompat
-     - python3-aptdaemon.pkcompat provides the new virtual package
+     - Switch aptkit package to Python3 by default
+     - Add new python3-aptkit.gtk3widgets package
+     - Replace python-aptkit.test by python3-aptkit.test
+     - Replace python-aptkit.pkcompat by python3-aptkit.pkcompat
+     - python3-aptkit.pkcompat provides the new virtual package
        packagekit-system-interface to obsolete the OR dependencies
        with packagekit of PackageKit clients
      - Remove policykit1 dependecy from the modules and add it to the server
        package
      - Remove not used shlibs macros
      - Remove dependency to python-packagekit, since we ship the enums
-       in python3-aptdaemon.pkcompat
+       in python3-aptkit.pkcompat
      - Add build dependencies to run the test suite
   * debian/rules:
      - Build with Python2 and 3
@@ -898,31 +898,31 @@ aptdaemon (0.43+bzr838-0ubuntu1) quantal; urgency=low
       python-apt with apt.auth module
     - Add explicit depends, build-depends on iso-codes, which is needed but
       is otherwise only a Recommend.
-  * aptdaemon/test.py: explicitly set the chroot directory in the apt config
+  * aptkit/test.py: explicitly set the chroot directory in the apt config
     as part of the test setup, without which apt-key's chroot handling won't
     work.
   * test/test_pk.py: increase the sleep on startup, to allow longer for
     fake-polkitd to start up.
-  * aptdaemon/worker.py: restore compatibility with python2, which doesn't
+  * aptkit/worker.py: restore compatibility with python2, which doesn't
     have urllib.parse.
 
  -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 13 Jun 2012 09:44:55 -0700
 
-aptdaemon (0.43+bzr810-0ubuntu3) quantal; urgency=low
+aptkit (0.43+bzr810-0ubuntu3) quantal; urgency=low
 
-  * debian/python-aptdaemon.test.install: Fix installation path of
+  * debian/python-aptkit.test.install: Fix installation path of
     dpkg-wrapper.sh.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Wed, 23 May 2012 12:53:16 +0200
 
-aptdaemon (0.43+bzr810-0ubuntu2) quantal; urgency=low
+aptkit (0.43+bzr810-0ubuntu2) quantal; urgency=low
 
   * debian/control: Update Vcs-* for quantal branch.
-  * debian/python-aptdaemon.test.install: Install test dbus.conf.
+  * debian/python-aptkit.test.install: Install test dbus.conf.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 22 May 2012 11:01:33 +0200
 
-aptdaemon (0.43+bzr810-0ubuntu1) quantal; urgency=low
+aptkit (0.43+bzr810-0ubuntu1) quantal; urgency=low
 
   * new upstream snapshot
   * debian/control:
@@ -931,7 +931,7 @@ aptdaemon (0.43+bzr810-0ubuntu1) quantal; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 11 May 2012 15:56:04 +0200
 
-aptdaemon (0.43+bzr805-0ubuntu1) precise; urgency=low
+aptkit (0.43+bzr805-0ubuntu1) precise; urgency=low
 
   * New upstream snapshot:
     - Fix: Catch a possible exception in apt.cache.Cache.required_download
@@ -950,34 +950,34 @@ aptdaemon (0.43+bzr805-0ubuntu1) precise; urgency=low
     - Fix wrong variable names in the download progress (fixes LP: #971839,
       LP: #976521)
     - Fix: Catch a possible pipe reading error (fixes LP: #733090)
-    - Fix: Don't show the name of aptdaemon in crash reports
+    - Fix: Don't show the name of aptkit in crash reports
       (fixes LP: #973370)
-      Aptdaemon is a system daemon and should work and fail silently
+      Aptkit is a system daemon and should work and fail silently
     - Fix: Fallback to a default terminal width of 80 chars (fixes LP: #948588)
       The width request could fail on standard input/output redirections
     - Fix: Don't use a reserved name for the simulate helper function
     - Fix: Convert exceptions to string before raising TransactionFailed()
     - Fix wrong variable name in the add license key failed error message
     - Fix: Don't overwrite the GObject.GObject.disconnect in
-      aptdemon.client.Transaction by renaming the method to
+      aptkit.client.Transaction by renaming the method to
       _disconnect_from_dbus()
     - Fix: Allow to cancel a transaction which hasn't been queued yet and
       is still in limbo
     - Fix: Raise NotImplementedError instead of ImplementedError
     - Add a test case for config file changes handling
-  * debian/aptdaemon.install:
+  * debian/aptkit.install:
     - Don't ship the obsolete .desktop file anymore
 
  -- Sebastian Heinlein <glatzor@ubuntu.com>  Mon, 09 Apr 2012 20:48:44 +0200
 
-aptdaemon (0.43+bzr790-1) unstable; urgency=high
+aptkit (0.43+bzr790-1) unstable; urgency=high
 
   * New upstream snapshot
   * fixes CVE-2012-0944
 
  -- Michael Vogt <mvo@debian.org>  Mon, 02 Apr 2012 20:57:57 +0200
 
-aptdaemon (0.43+bzr790-0ubuntu1) precise; urgency=low
+aptkit (0.43+bzr790-0ubuntu1) precise; urgency=low
 
   New upstream snapshot:
   * merged patch for LP: #959131 (CVE 2012-0944)
@@ -994,7 +994,7 @@ aptdaemon (0.43+bzr790-0ubuntu1) precise; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 02 Apr 2012 19:04:16 +0200
 
-aptdaemon (0.43+bzr784-0ubuntu1) precise; urgency=low
+aptkit (0.43+bzr784-0ubuntu1) precise; urgency=low
 
   New upstream snapshot:
   * lock: Fix an exception if the lock file doesn't exists 
@@ -1007,13 +1007,13 @@ aptdaemon (0.43+bzr784-0ubuntu1) precise; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 14 Mar 2012 13:26:31 +0100
 
-aptdaemon (0.43+bzr778-0ubuntu1) precise; urgency=low
+aptkit (0.43+bzr778-0ubuntu1) precise; urgency=low
 
   * fix crash in pkgcompat on restart_required
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 09 Mar 2012 09:26:06 +0100
 
-aptdaemon (0.43+bzr777-0ubuntu1) precise; urgency=low
+aptkit (0.43+bzr777-0ubuntu1) precise; urgency=low
 
   * New upstream snapshot:
     - store sources.list credentials in /etc/apt/auth.conf instead of
@@ -1029,7 +1029,7 @@ aptdaemon (0.43+bzr777-0ubuntu1) precise; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 09 Mar 2012 09:02:40 +0100
 
-aptdaemon (0.43+bzr769-1) unstable; urgency=low
+aptkit (0.43+bzr769-1) unstable; urgency=low
 
   * New upstream snapshot
     - Works without pkcompat (Closes: #652644)
@@ -1039,7 +1039,7 @@ aptdaemon (0.43+bzr769-1) unstable; urgency=low
 
  -- Julian Andres Klode <jak@debian.org>  Mon, 05 Mar 2012 16:03:14 +0100
 
-aptdaemon (0.43+bzr769-0ubuntu1) precise; urgency=low
+aptkit (0.43+bzr769-0ubuntu1) precise; urgency=low
 
   * New upstream snapshot:
     - Add plugin support to PackageKit compat layer.
@@ -1049,7 +1049,7 @@ aptdaemon (0.43+bzr769-0ubuntu1) precise; urgency=low
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 03 Feb 2012 06:37:42 +0100
 
-aptdaemon (0.43+bzr756-0ubuntu1) precise; urgency=low
+aptkit (0.43+bzr756-0ubuntu1) precise; urgency=low
 
   [ Chris Coulson ]
   * After simulating a transaction, correctly disconnect from the 
@@ -1060,7 +1060,7 @@ aptdaemon (0.43+bzr756-0ubuntu1) precise; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 03 Jan 2012 13:30:22 +0100
 
-aptdaemon (0.43+bzr754-0ubuntu1) precise; urgency=low
+aptkit (0.43+bzr754-0ubuntu1) precise; urgency=low
 
   [ Martin Pitt ]
   * debian/control: debian/control: Move from transitional python-gobject to
@@ -1074,14 +1074,14 @@ aptdaemon (0.43+bzr754-0ubuntu1) precise; urgency=low
   * Change from up-to-date to up to date for consistency (LP: #864336)
   
   [ Sebastian Heinlein ]
-  - Fix downgrade option of aptdcon
+  - Fix downgrade option of aptkcon
   - Add support for cancelling the transaction in PK
   - Fix changelog cache cleanup
   - Typo fixes
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 15 Dec 2011 10:15:46 +0100
 
-aptdaemon (0.43+bzr742-0ubuntu1) precise; urgency=low
+aptkit (0.43+bzr742-0ubuntu1) precise; urgency=low
 
   * New bzr snapshot:
     - Fix resizing the GTK3 progress dialog (LP: #840942)
@@ -1093,7 +1093,7 @@ aptdaemon (0.43+bzr742-0ubuntu1) precise; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 01 Dec 2011 14:40:52 +0100
 
-aptdaemon (0.43+bzr715-0) UNRELEASED; urgency=low
+aptkit (0.43+bzr715-0) UNRELEASED; urgency=low
 
   * new bzr snapshot:
     - Add a small README about the state of the PackageKit compatibilty
@@ -1104,12 +1104,12 @@ aptdaemon (0.43+bzr715-0) UNRELEASED; urgency=low
   * debian/patches:
     - Remove 01_add_dpkg_untranslated_messages_env.patch (merged by upstream)
     - Remove 03_additional_resolve_run.patch (merged upstream)
-  * debian/python-aptdaemon.pkcompat.docs: Ship README
+  * debian/python-aptkit.pkcompat.docs: Ship README
   * debian/README.Debian: Removed since obsolete
 
  -- Sebastian Heinlein <devel@glatzor.de>  Mon, 21 Nov 2011 12:04:11 +0100
 
-aptdaemon (0.43+bzr713-1) unstable; urgency=low
+aptkit (0.43+bzr713-1) unstable; urgency=low
 
   * Merge with Ubuntu, remaining differences:
     - debian/control: Changes of Vcs, Maintainer stuff
@@ -1118,7 +1118,7 @@ aptdaemon (0.43+bzr713-1) unstable; urgency=low
 
  -- Julian Andres Klode <jak@debian.org>  Mon, 21 Nov 2011 11:24:00 +0100
 
-aptdaemon (0.43+bzr712-0ubuntu1) precise; urgency=low
+aptkit (0.43+bzr712-0ubuntu1) precise; urgency=low
 
   [ Michael Vogt ]
   * Merged from the latest debian upload
@@ -1128,12 +1128,12 @@ aptdaemon (0.43+bzr712-0ubuntu1) precise; urgency=low
   * new bzr snapshot with:
     - pkcompat branch
     - async simulate
-  * add new python-aptdaemon.pkgcompat package that provides the
+  * add new python-aptkit.pkgcompat package that provides the
     packagekit system API
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 21 Nov 2011 10:08:24 +0100
 
-aptdaemon (0.43+bzr707-1) unstable; urgency=low
+aptkit (0.43+bzr707-1) unstable; urgency=low
 
   [ Julian Andres Klode ]
   * Merge with Ubuntu, remaining differences:
@@ -1147,14 +1147,14 @@ aptdaemon (0.43+bzr707-1) unstable; urgency=low
   * New bzr snapshot:
     - Add the PackageKit compatibilty layer
   * debian/control:
-    - Add new binary package python-aptdaemon.pkcompat
+    - Add new binary package python-aptkit.pkcompat
     - Correct VCS location
-  * debian/python-aptdaemon:
+  * debian/python-aptkit:
     - Ship the networking module
 
  -- Julian Andres Klode <jak@debian.org>  Sun, 20 Nov 2011 14:49:48 +0100
 
-aptdaemon (0.43+bzr703-0ubuntu1) precise; urgency=low
+aptkit (0.43+bzr703-0ubuntu1) precise; urgency=low
 
   * New bzr snapshot:
     - Merge the AddLicenseKey method
@@ -1163,14 +1163,14 @@ aptdaemon (0.43+bzr703-0ubuntu1) precise; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 18 Nov 2011 12:03:22 +0100
 
-aptdaemon (0.43+bzr701-0ubuntu1) precise; urgency=low
+aptkit (0.43+bzr701-0ubuntu1) precise; urgency=low
 
   * new bzr snapshot:
-    - aptdaemon/progress.py: fix crash when a translation has the wrong 
+    - aptkit/progress.py: fix crash when a translation has the wrong 
       number of %s (LP: #858684)
     - Map messages from apt on the status-fd to enums to provide better 
       terms and translations in the future - fixes LP#641262
-    - lp:~mpt/aptdaemon/bug-635138:
+    - lp:~mpt/aptkit/bug-635138:
       * Fixes bug 635138 (Apt cache repair 'In Progress' text is 
         'Repairing broken deps').
   * debian/patches/02_fix_crash_on_dpkg_disappear.patch:
@@ -1178,7 +1178,7 @@ aptdaemon (0.43+bzr701-0ubuntu1) precise; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 14 Nov 2011 09:26:01 +0100
 
-aptdaemon (0.43+bzr697-0ubuntu1) oneiric; urgency=low
+aptkit (0.43+bzr697-0ubuntu1) oneiric; urgency=low
 
   * debian/patches/03_additional_resolve_run.patch:
     - do an additional resolver run to ensure that autoremove does
@@ -1186,7 +1186,7 @@ aptdaemon (0.43+bzr697-0ubuntu1) oneiric; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 28 Sep 2011 13:36:53 +0200
 
-aptdaemon (0.43+bzr697) oneiric; urgency=low
+aptkit (0.43+bzr697) oneiric; urgency=low
 
   * New bzr bugfix version:
     - Don't block on lintian calls to avoid time outs on the DBus 
@@ -1199,7 +1199,7 @@ aptdaemon (0.43+bzr697) oneiric; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 19 Sep 2011 14:01:15 +0200
 
-aptdaemon (0.43+bzr695) oneiric; urgency=low
+aptkit (0.43+bzr695) oneiric; urgency=low
 
   * New bzr snapshot:
     - Don't track valid DBusException sent to the client by apport
@@ -1211,7 +1211,7 @@ aptdaemon (0.43+bzr695) oneiric; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 14 Sep 2011 15:48:01 +0200
 
-aptdaemon (0.43+bzr691) oneiric; urgency=low
+aptkit (0.43+bzr691) oneiric; urgency=low
 
   * New bzr snapshot:
     - Fix integer overflows in the ProgressDetails property (LP: #827677,
@@ -1220,7 +1220,7 @@ aptdaemon (0.43+bzr691) oneiric; urgency=low
 
  -- Sebastian Heinlein <devel@glatzor.de>  Fri, 26 Aug 2011 15:22:19 +0200
 
-aptdaemon (0.43+bzr686) oneiric; urgency=low
+aptkit (0.43+bzr686) oneiric; urgency=low
 
   * New bzr snapshot:
     - Improve apport integration by adding a package hook and only sending
@@ -1229,16 +1229,16 @@ aptdaemon (0.43+bzr686) oneiric; urgency=low
     - Fixes to the test suite
     - More debugging output to help resolve DBus type conversion/overflow
       errors
-  * debian/aptdaemon.install:
+  * debian/aptkit.install:
     - Ship apport package hook
     - Ship desktop file to provide a nicer name in apport dialogs
   * debian/control:
-    - Add missing dependency on python-pkg-resources to python-aptdaemon
+    - Add missing dependency on python-pkg-resources to python-aptkit
       (LP: #788121)
 
  -- Sebastian Heinlein <devel@glatzor.de>  Fri, 26 Aug 2011 08:13:42 +0200
 
-aptdaemon (0.43+bzr676-0ubuntu1) oneiric; urgency=low
+aptkit (0.43+bzr676-0ubuntu1) oneiric; urgency=low
 
   * new bzr snapshot:
     - Make the handling of exceptions in the forked child process
@@ -1248,7 +1248,7 @@ aptdaemon (0.43+bzr676-0ubuntu1) oneiric; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 25 Aug 2011 10:30:13 +0200
 
-aptdaemon (0.43+bzr674-0ubuntu1) oneiric; urgency=low
+aptkit (0.43+bzr674-0ubuntu1) oneiric; urgency=low
 
   * new bzr snapshot:
     - add /var/log/apt/history.log integration
@@ -1258,21 +1258,21 @@ aptdaemon (0.43+bzr674-0ubuntu1) oneiric; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 23 Aug 2011 11:29:50 +0200
 
-aptdaemon (0.43+bzr670-0ubuntu1) oneiric; urgency=low
+aptkit (0.43+bzr670-0ubuntu1) oneiric; urgency=low
 
   * New bzr snapshot: Fix previous patch to only use GObject when actually
     using GI.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Wed, 17 Aug 2011 13:58:17 +0200
 
-aptdaemon (0.43+bzr669-0ubuntu1) oneiric; urgency=low
+aptkit (0.43+bzr669-0ubuntu1) oneiric; urgency=low
 
   * New bzr snapshot: Move from static gobject to GI GObject module, to be
     compatible to upcoming pygobject 3.0.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Wed, 17 Aug 2011 08:11:43 +0200
 
-aptdaemon (0.43+bzr666-0ubuntu1) oneiric; urgency=low
+aptkit (0.43+bzr666-0ubuntu1) oneiric; urgency=low
 
   * new bzr snapshot:
     - fix LP: #818521
@@ -1281,13 +1281,13 @@ aptdaemon (0.43+bzr666-0ubuntu1) oneiric; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 12 Aug 2011 11:13:32 +0200
 
-aptdaemon (0.43+bzr663-0ubuntu1) oneiric; urgency=low
+aptkit (0.43+bzr663-0ubuntu1) oneiric; urgency=low
 
   * New bzr snapshot add adds a RebootRequiered property
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 28 Jul 2011 16:44:12 +0200
 
-aptdaemon (0.43+bzr662-0ubuntu1) oneiric; urgency=low
+aptkit (0.43+bzr662-0ubuntu1) oneiric; urgency=low
 
   * New bzr snapshot
   * debian/patches/01_add_dpkg_untranslated_messages_env.patch:
@@ -1297,39 +1297,39 @@ aptdaemon (0.43+bzr662-0ubuntu1) oneiric; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 28 Jun 2011 10:01:10 +0100
 
-aptdaemon (0.43+bzr660-0ubuntu1) oneiric; urgency=low
+aptkit (0.43+bzr660-0ubuntu1) oneiric; urgency=low
 
   * New bzr snapshot, this will improve the quality of the 
     apport pkgfailure reports
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 10 Jun 2011 11:34:50 +0200
 
-aptdaemon (0.41+bzr658-0ubuntu2) oneiric; urgency=low
+aptkit (0.41+bzr658-0ubuntu2) oneiric; urgency=low
 
   * debian/control: Drop GTK2 GIR dependencies, only use GTK 3 now.
   * debian/control: Drop lintian recommends. It's too heavy for a default
     install (pulling in dpkg-dev, build-essential, g++, lots of Perl, and
     associated helper tools like diffstat). This will be replaced with
-    aptdaemon or software-center installing lintian when you add a third-party
+    aptkit or software-center installing lintian when you add a third-party
     repository. (UbuntuSpec:desktop-o-cdspace)
   * debian/control: Fix "allows to" grammar error, thanks lintian.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 31 May 2011 10:54:29 +0200
 
-aptdaemon (0.41+bzr658-0ubuntu1) oneiric; urgency=low
+aptkit (0.41+bzr658-0ubuntu1) oneiric; urgency=low
 
   * New bzr snapshot, this fixes (LP: #781874)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 16 May 2011 11:48:39 +0200
 
-aptdaemon (0.41+bzr657-0ubuntu1.1) natty-proposed; urgency=low
+aptkit (0.41+bzr657-0ubuntu1.1) natty-proposed; urgency=low
 
   * patches/fix_lp_781874.patch:
     - fix bug when canceling a transaction (LP: #781874)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 16 May 2011 11:39:08 +0200
 
-aptdaemon (0.41+bzr657-0ubuntu1) natty-proposed; urgency=low
+aptkit (0.41+bzr657-0ubuntu1) natty-proposed; urgency=low
 
   * New bzr bugfix snapshot:
     - fix FD leak (LP: #742935)
@@ -1338,7 +1338,7 @@ aptdaemon (0.41+bzr657-0ubuntu1) natty-proposed; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 28 Apr 2011 17:55:29 +0200
 
-aptdaemon (0.41+bzr651-0ubuntu1) natty; urgency=low
+aptkit (0.41+bzr651-0ubuntu1) natty; urgency=low
 
   * New bzr bugfix snapshot:
     - ensure dbus exceptions strings are utf8
@@ -1349,7 +1349,7 @@ aptdaemon (0.41+bzr651-0ubuntu1) natty; urgency=low
 
  -- Michael Vogt <mvo@ubuntu.com>  Tue, 19 Apr 2011 08:52:09 +0200
 
-aptdaemon (0.41+bzr646-0ubuntu2) natty; urgency=low
+aptkit (0.41+bzr646-0ubuntu2) natty; urgency=low
 
   * debian/patches/01_fix_locking.patch: 
     - cherry pick from evfool, many thanks (LP: #764422)
@@ -1359,14 +1359,14 @@ aptdaemon (0.41+bzr646-0ubuntu2) natty; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 18 Apr 2011 13:48:38 +0200
 
-aptdaemon (0.41+bzr646-0ubuntu1) natty; urgency=low
+aptkit (0.41+bzr646-0ubuntu1) natty; urgency=low
 
   * New bzr bugfix snapshot:
     - fix crash in wait_for_lock (LP: #763642)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 18 Apr 2011 09:25:51 +0200
 
-aptdaemon (0.41+bzr645-0ubuntu1) natty; urgency=low
+aptkit (0.41+bzr645-0ubuntu1) natty; urgency=low
 
   * New bzr bugfix snapshot:
     - fix state of queue transactions (LP: #702442)
@@ -1379,7 +1379,7 @@ aptdaemon (0.41+bzr645-0ubuntu1) natty; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 15 Apr 2011 13:57:10 +0200
 
-aptdaemon (0.41+bzr641-0ubuntu1) natty; urgency=low
+aptkit (0.41+bzr641-0ubuntu1) natty; urgency=low
 
   * debian/lintian-nonfatal.tag.Ubuntu:
     - relax checks more (LP: #756649)
@@ -1391,11 +1391,11 @@ aptdaemon (0.41+bzr641-0ubuntu1) natty; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 14 Apr 2011 16:31:39 +0200
 
-aptdaemon (0.41+bzr629-0ubuntu1) natty; urgency=low
+aptkit (0.41+bzr629-0ubuntu1) natty; urgency=low
 
   * New bzr bugfix snapshot:
     - improve utf8 encoding handling tests
-    - lp:~mvo/aptdaemon/relax-lintian-checks merged
+    - lp:~mvo/aptkit/relax-lintian-checks merged
     - improve terminal handling, LP: #741260, #693290, #741260,  
       #738056,  #742780, #743818, #744444, #746727, #747539, #753700,
       #753762, #753927, #754134, #754174, #754205, #754206, #754220
@@ -1411,14 +1411,14 @@ aptdaemon (0.41+bzr629-0ubuntu1) natty; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 12 Apr 2011 13:25:49 +0200
 
-aptdaemon (0.41+bzr614-0ubuntu3) natty; urgency=low
+aptkit (0.41+bzr614-0ubuntu3) natty; urgency=low
 
   * debian/patches/04_import_logging.patch:
     - Import logging to resolve undefined name. (LP: #752220)
 
  -- Barry Warsaw <barry@ubuntu.com>  Fri, 08 Apr 2011 18:36:22 -0400
 
-aptdaemon (0.41+bzr614-0ubuntu2) natty; urgency=low
+aptkit (0.41+bzr614-0ubuntu2) natty; urgency=low
 
   * debian/patches/02_fix_unicode_in_convert_struct.patch:
     - Decode non-unicode strings in _convert_struct (LP: #736507)
@@ -1427,7 +1427,7 @@ aptdaemon (0.41+bzr614-0ubuntu2) natty; urgency=low
 
  -- Julian Andres Klode <juliank@ubuntu.com>  Thu, 07 Apr 2011 10:02:21 +0200
 
-aptdaemon (0.41+bzr614-0ubuntu1) natty; urgency=low
+aptkit (0.41+bzr614-0ubuntu1) natty; urgency=low
 
   * New bzr bugfix snapshot:
     - fix i18n crash (LP: #724735)
@@ -1438,12 +1438,12 @@ aptdaemon (0.41+bzr614-0ubuntu1) natty; urgency=low
     - Make the run method of the GTK2 progress dialog deferable
       (LP: #626798)
   * debian/patches/01_relax_lintian_checks.patch:
-    - add lp:~mvo/aptdaemon/relax-lintian-checks as distro patch
+    - add lp:~mvo/aptkit/relax-lintian-checks as distro patch
       until upstream (LP: #712377)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 05 Apr 2011 16:31:37 +0200
 
-aptdaemon (0.41+bzr604-0ubuntu1) natty; urgency=low
+aptkit (0.41+bzr604-0ubuntu1) natty; urgency=low
 
   * New bzr bugfix snapshot:
     - fix fix typo (LP: #733732), thanks to seb128
@@ -1456,7 +1456,7 @@ aptdaemon (0.41+bzr604-0ubuntu1) natty; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 23 Mar 2011 15:44:07 +0100
 
-aptdaemon (0.41+bzr597-0ubuntu1) natty; urgency=low
+aptkit (0.41+bzr597-0ubuntu1) natty; urgency=low
 
   * New upstream bzr snapshot:
     - data/org.debian.apt.policy.in: Drop gettext domain field, it will be
@@ -1465,39 +1465,39 @@ aptdaemon (0.41+bzr597-0ubuntu1) natty; urgency=low
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 17 Mar 2011 12:30:25 +0100
 
-aptdaemon (0.41+bzr595-0ubuntu1) natty; urgency=low
+aptkit (0.41+bzr595-0ubuntu1) natty; urgency=low
 
   * New upstream bzr snapshot:
     - fix installing local debs (LP: #702217)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 08 Mar 2011 08:52:55 +0100
 
-aptdaemon (0.41+bzr594-0ubuntu1) natty; urgency=low
+aptkit (0.41+bzr594-0ubuntu1) natty; urgency=low
 
   * New upstream bzr snapshot:
     - Show details about broken dependencies
     - Call waitpid after reading the output from lintian to avoid interrupted
       system calls on systems under heavy load
-    - aptdaemon/worker.py, tests/test_client.py: fix crash in
+    - aptkit/worker.py, tests/test_client.py: fix crash in
       enable_distro_component and add test, update docstring (and fix
       docstring for remove_vendor_key along the way)
-    - aptdaemon/worker.py, tests/test_client.py: fix crash in
+    - aptkit/worker.py, tests/test_client.py: fix crash in
       client.add_repository(), add test for client.add_repository(), refactor
       test for enable_component() to make it more generic
     - gtk3widgets.py: Fix require_version usage.
   * debian/control: Add appropriate python-gobject dependency to
-    python-aptdaemon.gtk3widgets, to ensure availability of PyGI.
+    python-aptkit.gtk3widgets, to ensure availability of PyGI.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 03 Mar 2011 17:31:24 +0100
 
-aptdaemon (0.41+bzr586-0ubuntu2) natty; urgency=low
+aptkit (0.41+bzr586-0ubuntu2) natty; urgency=low
 
   * debian/control: Add proper Conflicts:/Replaces: to avoid file overwrite
     error on upgrades. (LP: #724683)
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 25 Feb 2011 09:29:02 +0100
 
-aptdaemon (0.41+bzr586-0ubuntu1) natty; urgency=low
+aptkit (0.41+bzr586-0ubuntu1) natty; urgency=low
 
   * new bzr snapshot that contains a security fix for 
     LP: #722228
@@ -1510,7 +1510,7 @@ aptdaemon (0.41+bzr586-0ubuntu1) natty; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 22 Feb 2011 16:18:34 +0100
 
-aptdaemon (0.41+bzr582-0ubuntu1) natty; urgency=low
+aptkit (0.41+bzr582-0ubuntu1) natty; urgency=low
 
   [ Sebastian Heinlein ]
   * New upstream version:
@@ -1526,22 +1526,22 @@ aptdaemon (0.41+bzr582-0ubuntu1) natty; urgency=low
     - Several bug fixes (fixes LP: #707490, LP: #712838)
 
   * debian/control:
-    - Add python-aptdaemon.gtkwidgets and python-aptdaemon.gtk3widgets
-      instead of a shared python-aptdaemon-gtk to follow the package 
-      naming of the Python policy. Python-aptdaemon-gtk is kept as
+    - Add python-aptkit.gtkwidgets and python-aptkit.gtk3widgets
+      instead of a shared python-aptkit-gtk to follow the package 
+      naming of the Python policy. Python-aptkit-gtk is kept as
       a transitional dummy package
-    - Add a new aptdaemon-data package which provides common files
+    - Add a new aptkit-data package which provides common files
       (e.g. icons) for the client modules
-    - aptdaemon recommends lintian to test local packages before
+    - aptkit recommends lintian to test local packages before
       installing
     - Add build dependencies on python-apt, python-gobject, python-defer,
       python-software-properties, python-dbus, python-debian,
       python-mock, dbus-x11 and python-unittest2 to run unittests at build
       time
     - Add missing dependency on python-dbus and python-debian to
-      python-aptdaemon
-    - Add a new package python-aptdaemon.test package which provides
-      the infrastructure to write unittests for aptdaemon clients
+      python-aptkit
+    - Add a new package python-aptkit.test package which provides
+      the infrastructure to write unittests for aptkit clients
     - Raise Python minimum version to 2.6
 
   * debian/patches:
@@ -1554,14 +1554,14 @@ aptdaemon (0.41+bzr582-0ubuntu1) natty; urgency=low
   * debian/rules:
     - Run the test suite at package build time by overriding dh_auto_test
 
-  * debian/python-aptdaemon.test.(install|examples):
-    - Ship the aptdaemon.test module, the silly packages repo, the dpkg
+  * debian/python-aptkit.test.(install|examples):
+    - Ship the aptkit.test module, the silly packages repo, the dpkg
       wrapper and the fake PolicyKit daemon
 
-  * debian/python-aptdaemon.gtk(3)widgets.(install|example):
+  * debian/python-aptkit.gtk(3)widgets.(install|example):
     - Ship the corresponding Python module and example client
 
-  * debian/aptdaemon-data.install:
+  * debian/aptkit-data.install:
     - Ship the icons
   
   [ Michael Vogt ]
@@ -1570,14 +1570,14 @@ aptdaemon (0.41+bzr582-0ubuntu1) natty; urgency=low
  
  -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 09 Feb 2011 10:33:15 +0100
 
-aptdaemon (0.40+bzr541-0ubuntu2) natty; urgency=low
+aptkit (0.40+bzr541-0ubuntu2) natty; urgency=low
 
   * Add 00upstream_gtk3_fixes.patch: Adjust gtk3widgets.py to work with
     current pygobject/gtk. Taken from upstream branch r563.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 28 Jan 2011 15:45:29 +0100
 
-aptdaemon (0.40+bzr541-0ubuntu1) natty; urgency=low
+aptkit (0.40+bzr541-0ubuntu1) natty; urgency=low
 
   * New upstream bzr snapshot:
     - gtk3widgets.py: Put back AptTerminal class, now that vte has a GTK3 GIR
@@ -1588,7 +1588,7 @@ aptdaemon (0.40+bzr541-0ubuntu1) natty; urgency=low
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 10 Jan 2011 21:11:13 -0600
 
-aptdaemon (0.40+bzr529-0ubuntu3) natty; urgency=low
+aptkit (0.40+bzr529-0ubuntu3) natty; urgency=low
 
   [ Sebastian Heinlein ]
   * debian/patches/09_fix_index_race_659438.patch:
@@ -1600,21 +1600,21 @@ aptdaemon (0.40+bzr529-0ubuntu3) natty; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 03 Jan 2011 12:26:48 +0100
 
-aptdaemon (0.40+bzr529-0ubuntu2) natty; urgency=low
+aptkit (0.40+bzr529-0ubuntu2) natty; urgency=low
 
   * No-change rebuild to prefer python2.7.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Wed, 22 Dec 2010 09:33:29 +0100
   
-aptdaemon (0.40+bzr529-0ubuntu1) natty; urgency=low
+aptkit (0.40+bzr529-0ubuntu1) natty; urgency=low
 
   * new bzr snapshot:
-    - fixes crash when there is no aptdaemon translation for the
+    - fixes crash when there is no aptkit translation for the
       language in use is available
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 07 Dec 2010 14:04:23 +0100
 
-aptdaemon (0.40+bzr527-0ubuntu1) natty; urgency=low
+aptkit (0.40+bzr527-0ubuntu1) natty; urgency=low
 
   * New upstream release 0.40. This involves some API changes, so please test
     and adapt your programs. See NEWS for details.
@@ -1624,10 +1624,10 @@ aptdaemon (0.40+bzr527-0ubuntu1) natty; urgency=low
   * 05_sources_list_password.patch: Unfuzz.
   * Drop 07_fix-race-597017.patch, upstream now.
   * Drop 08_fix_deb_install.patch, fixed differently upstream.
-  * debian/python-aptdaemon.install: Drop defer.py, it's now a separate
+  * debian/python-aptkit.install: Drop defer.py, it's now a separate
     project. Add dependency to python-defer in debian/control.
-  * debian/python-aptdaemon.install: Install the new modules from upstream.
-  * debian/python-aptdaemon-gtk.install, debian/python-aptdaemon-gtk.examples:
+  * debian/python-aptkit.install: Install the new modules from upstream.
+  * debian/python-aptkit-gtk.install, debian/python-aptkit-gtk.examples:
     Install the gtk3 variants of the module and example script.
   * debian/control: Update Vcs-Bzr: to natty branch.
   * debian/rules: Switch from pycentral to dh_python2. Drop python-central
@@ -1636,7 +1636,7 @@ aptdaemon (0.40+bzr527-0ubuntu1) natty; urgency=low
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 07 Dec 2010 11:44:07 +0100
 
-aptdaemon (0.33-0ubuntu1) natty; urgency=low
+aptkit (0.33-0ubuntu1) natty; urgency=low
 
   * new upstream release
   * debian/patches/06_rosetta_po_update.patch:
@@ -1644,7 +1644,7 @@ aptdaemon (0.33-0ubuntu1) natty; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 20 Oct 2010 09:40:01 +0200
 
-aptdaemon (0.31+bzr506-0ubuntu3) maverick-proposed; urgency=low
+aptkit (0.31+bzr506-0ubuntu3) maverick-proposed; urgency=low
 
   * debian/patches/08_fix_deb_install.patch:
     - fix installing deb packages with odd/broken installed-size
@@ -1652,16 +1652,16 @@ aptdaemon (0.31+bzr506-0ubuntu3) maverick-proposed; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 19 Oct 2010 16:52:13 +0200
 
-aptdaemon (0.31+bzr506-0ubuntu2) maverick; urgency=low
+aptkit (0.31+bzr506-0ubuntu2) maverick; urgency=low
 
   * 07_fix-race-597017.patch:
     - fix race in locking by backporting the relevant bits from
-      lp:aptdaemon/trunk (thanks to Sebastian Heinlein)
+      lp:aptkit/trunk (thanks to Sebastian Heinlein)
       (LP: #597017)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 05 Oct 2010 18:04:52 +0200
 
-aptdaemon (0.31+bzr506-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr506-0ubuntu1) maverick; urgency=low
 
   * fix incorrect error message on failed key adding
   * fix crash when sys.stdin.encoding returns None
@@ -1669,7 +1669,7 @@ aptdaemon (0.31+bzr506-0ubuntu1) maverick; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 27 Sep 2010 22:55:21 +0200
 
-aptdaemon (0.31+bzr503-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr503-0ubuntu1) maverick; urgency=low
 
   * merge fixes from bzr:
     - allow purge of removed files with conffiles left
@@ -1681,15 +1681,15 @@ aptdaemon (0.31+bzr503-0ubuntu1) maverick; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 16 Sep 2010 09:11:50 +0200
 
-aptdaemon (0.31+bzr496-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr496-0ubuntu1) maverick; urgency=low
 
   * merge fixes from bzr:
-    - fix for aptdaemon.client.get_transaction()
+    - fix for aptkit.client.get_transaction()
     - autodetect if "defer" is needed
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 10 Sep 2010 10:23:34 +0200
 
-aptdaemon (0.31+bzr493-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr493-0ubuntu1) maverick; urgency=low
 
   * new bzr snapshot:
     - makes 03_auth_me_less.patch no longer needed (applied upstream)
@@ -1697,7 +1697,7 @@ aptdaemon (0.31+bzr493-0ubuntu1) maverick; urgency=low
   
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 09 Sep 2010 17:25:30 +0200
 
-aptdaemon (0.31+bzr488-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr488-0ubuntu1) maverick; urgency=low
 
   * new bzr snapshot:
     - makes 07_i18n_fixes.patch no longer needed (applied upstream)
@@ -1709,7 +1709,7 @@ aptdaemon (0.31+bzr488-0ubuntu1) maverick; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 09 Sep 2010 11:39:45 +0200
 
-aptdaemon (0.31+bzr487-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr487-0ubuntu1) maverick; urgency=low
 
   * new bzr snapshot:
     -  makes 07_i18n_fixes.patch no longer needed (applied upstream)
@@ -1721,7 +1721,7 @@ aptdaemon (0.31+bzr487-0ubuntu1) maverick; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 09 Sep 2010 17:10:24 +0200
 
-aptdaemon (0.31+bzr476-0ubuntu2) maverick; urgency=low
+aptkit (0.31+bzr476-0ubuntu2) maverick; urgency=low
 
   * debian/patches/07_i18n_fixes.patch: 
     - use dgettext to not clobber the clients gettext.textdomain
@@ -1732,38 +1732,38 @@ aptdaemon (0.31+bzr476-0ubuntu2) maverick; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 08 Sep 2010 09:38:31 +0200
 
-aptdaemon (0.31+bzr476-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr476-0ubuntu1) maverick; urgency=low
 
   * new bzr snapshot that fixes missing i18n in the policykit
     descriptions (LP: #625409)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 31 Aug 2010 22:27:29 +0200
 
-aptdaemon (0.31+bzr474-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr474-0ubuntu1) maverick; urgency=low
 
   * new bzr snapshot that fixes some locking issues (LP: #616470)
-  * debian/python-aptdaemon.install:
+  * debian/python-aptkit.install:
     - add lock.py to the installed files
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 25 Aug 2010 16:50:28 +0200
 
-aptdaemon (0.31+bzr468-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr468-0ubuntu1) maverick; urgency=low
 
   * new bzr snapshot that fixes authentication timeout problem
     (LP: #623424), big thanks to Sebastian Heinlein
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 24 Aug 2010 20:49:32 +0200
 
-aptdaemon (0.31+bzr466-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr466-0ubuntu1) maverick; urgency=low
 
   * .bzr-builddeb/default.conf:
-    - switch to lp:~aptdaemon-developers/aptdaemon/0.3
+    - switch to lp:~aptkit-developers/aptkit/0.3
   * new bzr snapshot from the 0.3 stable branch:
     - simplify/improved policykit priviligies
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 24 Aug 2010 09:00:36 +0200
 
-aptdaemon (0.31+bzr449-0ubuntu2) maverick; urgency=low
+aptkit (0.31+bzr449-0ubuntu2) maverick; urgency=low
 
   * debian/patches/06_rosetta_po_update.patch:
     - updated translations from rosetta for the policy.in
@@ -1771,20 +1771,20 @@ aptdaemon (0.31+bzr449-0ubuntu2) maverick; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 23 Aug 2010 11:10:24 +0200
 
-aptdaemon (0.31+bzr449-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr449-0ubuntu1) maverick; urgency=low
 
   * new bzr snapshot that fixes two crashes
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 09 Aug 2010 14:58:42 +0200
 
-aptdaemon (0.31+bzr447-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr447-0ubuntu1) maverick; urgency=low
 
   * new bzr snapshot
   * drop 01_vendor-keys-download.patch, taken upstream
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 26 Jul 2010 08:45:23 +0200
 
-aptdaemon (0.31+bzr427-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr427-0ubuntu1) maverick; urgency=low
 
   * new bzr snapshot
   * debian/patches/03_auth_me_less.patch:
@@ -1792,12 +1792,12 @@ aptdaemon (0.31+bzr427-0ubuntu1) maverick; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 12 Jul 2010 09:46:15 +0200
 
-aptdaemon (0.31+bzr416-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr416-0ubuntu1) maverick; urgency=low
 
   * updated to current bzr
     - fixes STAT_FAILED vs STAT_ERROR crash
   * debian/patches/01_vendor-keys-download.patch:
-    - add changes from lp:~mvo/aptdaemon/download-vendor-keys
+    - add changes from lp:~mvo/aptkit/download-vendor-keys
       to support downloading repository vendor keys via https
   * debian/patches/03_auth_me_less.patch: 
     - updated to current code
@@ -1806,7 +1806,7 @@ aptdaemon (0.31+bzr416-0ubuntu1) maverick; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 02 Jul 2010 10:28:33 +0200
 
-aptdaemon (0.31+bzr413-1) unstable; urgency=low
+aptkit (0.31+bzr413-1) unstable; urgency=low
 
   * Merge with Ubuntu, remaining differences:
     - debian/copyright uses DEP-5 format.
@@ -1818,13 +1818,13 @@ aptdaemon (0.31+bzr413-1) unstable; urgency=low
 
  -- Julian Andres Klode <jak@debian.org>  Sun, 06 Jun 2010 14:30:27 +0200
 
-aptdaemon (0.31+bzr412-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr412-0ubuntu1) maverick; urgency=low
 
   * New bzr snapshot that improves the gtk progress widget
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 31 May 2010 15:03:56 +0200
 
-aptdaemon (0.31+bzr403-0ubuntu1) maverick; urgency=low
+aptkit (0.31+bzr403-0ubuntu1) maverick; urgency=low
 
   * First release of the new 0.3X development branch
   * debian/patches:
@@ -1833,12 +1833,12 @@ aptdaemon (0.31+bzr403-0ubuntu1) maverick; urgency=low
     - Remove 04_caution_is_good: Merged upstream
     - Remove 05_conffile_not_exists: Merged upstream
     - Update 03_auth_me_less: Remove cherry-picked PolicyKit enhancements
-  * aptdaemon.install: Ship the man pages
+  * aptkit.install: Ship the man pages
   * control: Fix location of vcs
 
  -- Sebastian Heinlein <glatzor@ubuntu.com>  Tue, 25 May 2010 12:09:50 +0200
 
-aptdaemon (0.11+bzr345-0ubuntu4) lucid; urgency=low
+aptkit (0.11+bzr345-0ubuntu4) lucid; urgency=low
 
   * debian/patches/04_caution_is_good.patch
       - cherry pick fix from trunk to prevent removal of essenial
@@ -1848,7 +1848,7 @@ aptdaemon (0.11+bzr345-0ubuntu4) lucid; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 16 Apr 2010 22:09:03 +0200
 
-aptdaemon (0.11+bzr345-0ubuntu3) lucid; urgency=low
+aptkit (0.11+bzr345-0ubuntu3) lucid; urgency=low
 
   * debian/patches/03_auth_me_less.patch:
     - require only a single authentication prompt when adding
@@ -1857,31 +1857,31 @@ aptdaemon (0.11+bzr345-0ubuntu3) lucid; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 01 Apr 2010 17:34:12 +0200
 
-aptdaemon (0.11+bzr345-0ubuntu2) lucid; urgency=low
+aptkit (0.11+bzr345-0ubuntu2) lucid; urgency=low
 
   * debian/patches/02_fix_errback.patch:
     - fix error handling from policykit (LP: #530393)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 01 Apr 2010 08:52:21 +0200
 
-aptdaemon (0.11+bzr345-0ubuntu1) lucid; urgency=low
+aptkit (0.11+bzr345-0ubuntu1) lucid; urgency=low
 
   * New snapshot that fixes crashes in AddRepository and
     DpkgRecovery
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 31 Mar 2010 10:43:22 +0200
 
-aptdaemon (0.11+bzr343-1) unstable; urgency=low
+aptkit (0.11+bzr343-1) unstable; urgency=low
 
   * New upstream snapshot.
   * 01_unused_removal.patch: Drop, merged upstream.
-  * debian/aptdaemon.install: Install the manpages.
+  * debian/aptkit.install: Install the manpages.
   * debian/control: breaks software-center (<< 1.1.21)
   * python-apt-08api.diff: Port to new python-apt API (Closes: #572071)
 
  -- Julian Andres Klode <jak@debian.org>  Mon, 29 Mar 2010 13:44:55 +0200
 
-aptdaemon (0.11+bzr342-0ubuntu2) lucid; urgency=low
+aptkit (0.11+bzr342-0ubuntu2) lucid; urgency=low
 
   * debian/patches/01_enable_component.patch:
     - add missing EnableComponents call to fix bug when
@@ -1889,7 +1889,7 @@ aptdaemon (0.11+bzr342-0ubuntu2) lucid; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 30 Mar 2010 16:19:38 +0200
 
-aptdaemon (0.11+bzr342-0ubuntu1) lucid; urgency=low
+aptkit (0.11+bzr342-0ubuntu1) lucid; urgency=low
 
   * New snapshot release based on the stable branch
     - fixes debconf race condition (LP: #455861)
@@ -1903,7 +1903,7 @@ aptdaemon (0.11+bzr342-0ubuntu1) lucid; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 26 Mar 2010 10:15:37 +0100
 
-aptdaemon (0.11+bzr322-1) unstable; urgency=low
+aptkit (0.11+bzr322-1) unstable; urgency=low
 
   * New upstream snapshot.
   * Merge debian/patches/series from Ubuntu:
@@ -1914,7 +1914,7 @@ aptdaemon (0.11+bzr322-1) unstable; urgency=low
 
  -- Julian Andres Klode <jak@debian.org>  Tue, 02 Feb 2010 16:14:55 +0100
 
-aptdaemon (0.11+bzr322-0ubuntu2) lucid; urgency=low
+aptkit (0.11+bzr322-0ubuntu2) lucid; urgency=low
 
   * debian/patches/02_fix-455861.patch:
     - merge patch from james_w to fix race in debconf socket
@@ -1922,7 +1922,7 @@ aptdaemon (0.11+bzr322-0ubuntu2) lucid; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 16 Mar 2010 17:17:53 +0100
 
-aptdaemon (0.11+bzr322-0ubuntu1) lucid; urgency=low
+aptkit (0.11+bzr322-0ubuntu1) lucid; urgency=low
 
   * New git snapshot
   * debian/patches/series:
@@ -1931,7 +1931,7 @@ aptdaemon (0.11+bzr322-0ubuntu1) lucid; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 04 Jan 2010 12:59:14 +0100
 
-aptdaemon (0.11+bzr319-0ubuntu1) lucid; urgency=low
+aptkit (0.11+bzr319-0ubuntu1) lucid; urgency=low
 
   * New git snapshot
     - support generic meta-data for a transaction (LP: #493775)
@@ -1942,34 +1942,34 @@ aptdaemon (0.11+bzr319-0ubuntu1) lucid; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 14 Dec 2009 11:33:47 +0100
 
-aptdaemon (0.11+bzr297-0ubuntu1) lucid; urgency=low
+aptkit (0.11+bzr297-0ubuntu1) lucid; urgency=low
 
   * New git snapshot, API improvements
   * debian/control:
     - update Vcs-Bzr branch to point to "ubuntu-lucid"
-  * debian/patches/aptd-sbin.patch,
-    debian/patches/aptd_http_proxy.patch:
+  * debian/patches/aptk-sbin.patch,
+    debian/patches/aptkit_http_proxy.patch:
     - removed, taken upstream
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 07 Dec 2009 18:08:28 +0100
 
-aptdaemon (0.11-2) unstable; urgency=low
+aptkit (0.11-2) unstable; urgency=low
 
   * Add missing dependency on python-software-properties.
 
  -- Julian Andres Klode <jak@debian.org>  Mon, 30 Nov 2009 17:39:39 +0100
 
-aptdaemon (0.11-1) unstable; urgency=low
+aptkit (0.11-1) unstable; urgency=low
 
   * Initial upload to Debian unstable (Closes: #558690)
   * Switch source package to 3.0 (quilt) and use debhelper 7.
   * debian/copyright: Use the DEP-5 format.
   * debian/watch: Add.
-  * aptd-sbin.patch: Drop, merged upstream.
+  * aptk-sbin.patch: Drop, merged upstream.
 
  -- Julian Andres Klode <jak@debian.org>  Sun, 29 Nov 2009 20:40:01 +0100
 
-aptdaemon (0.10+bzr264-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr264-0ubuntu1) karmic; urgency=low
 
   [ Sebastian Heinlein ]
   * Import translations from Launchpad - fixes LP #445603 
@@ -1981,7 +1981,7 @@ aptdaemon (0.10+bzr264-0ubuntu1) karmic; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 14 Oct 2009 18:19:12 +0200
 
-aptdaemon (0.10+bzr260-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr260-0ubuntu1) karmic; urgency=low
 
   [ Sebastian Heinlein ]
   * Merge fix for killing randomly user processes on hung dpkg 
@@ -1989,18 +1989,18 @@ aptdaemon (0.10+bzr260-0ubuntu1) karmic; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 12 Oct 2009 17:20:15 +0200
 
-aptdaemon (0.10+bzr259-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr259-0ubuntu1) karmic; urgency=low
 
-  * debian/patches/aptd_http_proxy.patch:
+  * debian/patches/aptkit_http_proxy.patch:
     - add basic http proxy proxy support (LP: #446069)
   * dropped patches:
-    - debian/patches/aptd_locking_fixes.patch
+    - debian/patches/aptkit_locking_fixes.patch
     - debian/patches/fix_syslog_crash.patch
     Both got accepted upstream (no other changes in r259)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 09 Oct 2009 10:16:49 +0200
 
-aptdaemon (0.10+bzr258-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr258-0ubuntu1) karmic; urgency=low
 
   * New upstream snapshot:
     - fix hang in authentication dialog (LP: #426720)
@@ -2010,12 +2010,12 @@ aptdaemon (0.10+bzr258-0ubuntu1) karmic; urgency=low
     both got merged upstream
   * debian/patches/fix_syslog_crash.patch:
     - fix crash if no syslogd is installed
-  * aptdaemon/worker.py:
+  * aptkit/worker.py:
     - test lock of the apt download dir as well 
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 06 Oct 2009 09:01:10 +0200
 
-aptdaemon (0.10+bzr242-0ubuntu3) karmic; urgency=low
+aptkit (0.10+bzr242-0ubuntu3) karmic; urgency=low
 
   * debian/patches/mvo-branch.patch:
     - updated to include fix debconf race with multiple transactions 
@@ -2023,41 +2023,41 @@ aptdaemon (0.10+bzr242-0ubuntu3) karmic; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 02 Oct 2009 14:40:47 +0200
 
-aptdaemon (0.10+bzr242-0ubuntu2) karmic; urgency=low
+aptkit (0.10+bzr242-0ubuntu2) karmic; urgency=low
 
   * debian/patches/mvo-branch.patch:
     - updated to include fix for gettext fiddling (LP: #438077)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 28 Sep 2009 18:54:35 +0200
 
-aptdaemon (0.10+bzr242-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr242-0ubuntu1) karmic; urgency=low
 
-  * aptdaemon/core.py:
+  * aptkit/core.py:
     - do not fail on a not running syslog daemon (LP: #428843)
   * Include dpkg errors in the error output
   * debian/rules:
     - move to simple-patchsys (for now) to make maintaining the
       patches simpler
   * debian/patches/disallow-unauthenticated-branch.diff:
-    Patch generated from lp:~mvo/aptdaemon/allow-unauthenticated
+    Patch generated from lp:~mvo/aptkit/allow-unauthenticated
     to support controlling if unauthenticated packages are allowed
     during a transaction. Default to "not allow unauthenticated"
     (LP: #435313)
   * debian/patches/mvo-branch.patch:
-    Patch generated from lp:~mvo/aptdaemon/mvo that fixes:
-    - aptdaemon/worker.py: check the apt download dir lock 
+    Patch generated from lp:~mvo/aptkit/mvo that fixes:
+    - aptkit/worker.py: check the apt download dir lock 
       in _watch_lock to avoid possible race with apt-get LP: #437709
-    - aptdaemon/progress.py: fix crash in error handling (LP: #436808)
-    - aptdaemon/progress.py: fix crash in INSTALL_TIMEOUT handling 
+    - aptkit/progress.py: fix crash in error handling (LP: #436808)
+    - aptkit/progress.py: fix crash in INSTALL_TIMEOUT handling 
       (LP: #430860)
-    - aptdaemon/gtkwidgets.py: make the dialog resizable and add bigger 
+    - aptkit/gtkwidgets.py: make the dialog resizable and add bigger 
       default size (LP: #434937)
-    - aptdaemon/core.py: add _remove_from_connection_no_raise() that 
+    - aptkit/core.py: add _remove_from_connection_no_raise() that 
       will discard errors if the object is not exported (LP: #422585)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 28 Sep 2009 09:39:34 +0200
 
-aptdaemon (0.10+bzr240-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr240-0ubuntu1) karmic; urgency=low
 
   * New upstream snapshot version:
     - Allow to cancel a running transaction in the console client 
@@ -2068,7 +2068,7 @@ aptdaemon (0.10+bzr240-0ubuntu1) karmic; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 22 Sep 2009 12:07:47 +0200
 
-aptdaemon (0.10+bzr234-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr234-0ubuntu1) karmic; urgency=low
 
   * New upstream snapshot version:
     - less verbose debug (LP: #432937)
@@ -2080,7 +2080,7 @@ aptdaemon (0.10+bzr234-0ubuntu1) karmic; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 21 Sep 2009 18:01:09 +0200
 
-aptdaemon (0.10+bzr226-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr226-0ubuntu1) karmic; urgency=low
 
   * When the dpkg lock is taken, wait until its released and
     emit a appropriate status (LP: #420980)
@@ -2088,28 +2088,28 @@ aptdaemon (0.10+bzr226-0ubuntu1) karmic; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 01 Sep 2009 18:40:25 +0200
 
-aptdaemon (0.10+bzr223-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr223-0ubuntu1) karmic; urgency=low
 
   * fix bug in repository adding code when a empty components
     list is used
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 27 Aug 2009 17:02:16 +0200
 
-aptdaemon (0.10+bzr222-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr222-0ubuntu1) karmic; urgency=low
 
   * fix AttributeError (LP: #403467)
   * add support for adding repositories
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 27 Aug 2009 14:46:20 +0200
 
-aptdaemon (0.10+bzr220-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr220-0ubuntu1) karmic; urgency=low
 
   * new version that includes a transaction cache and
     bugfixes
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 24 Aug 2009 17:33:22 +0200
 
-aptdaemon (0.10+bzr216-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr216-0ubuntu1) karmic; urgency=low
 
   [ Sebastian Heinlein ]
   * New snapshot release:
@@ -2121,25 +2121,25 @@ aptdaemon (0.10+bzr216-0ubuntu1) karmic; urgency=low
     - Fix progress calcualtion during installation
   * debian/control:
     - Replace dependency on policykit by policykit-1
-  * debian/aptdaemon.install: Adapt install location of PolicyKit-1 action files
-  * debian/python-aptdaemon.install: 
+  * debian/aptkit.install: Adapt install location of PolicyKit-1 action files
+  * debian/python-aptkit.install: 
     - Replaced policykit.py by policykit1.py
     - Added loop.py and defer.py
 
   [ Stephan Peijnik ]
   * debian/control: Replaced build-dependency on python-all-dev with python.
-  * debian/aptdaemon.install: Removed misc.py
+  * debian/aptkit.install: Removed misc.py
   * debian/copyright: Fixed lintian warning about dh_make boilerplate.
 	
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 17 Aug 2009 08:22:13 +0200
 
-aptdaemon (0.10+bzr208-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr208-0ubuntu1) karmic; urgency=low
 
   * updated to current bzr
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 10 Jul 2009 09:32:00 +0200
 
-aptdaemon (0.10+bzr185-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr185-0ubuntu1) karmic; urgency=low
 
   * updated to current bzr
   * fixd FTBFS
@@ -2147,13 +2147,13 @@ aptdaemon (0.10+bzr185-0ubuntu1) karmic; urgency=low
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 06 Jul 2009 09:56:53 +0200
 
-aptdaemon (0.10+bzr173.1-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr173.1-0ubuntu1) karmic; urgency=low
 
   * fix incorrect setup.py from a unclean build env
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 02 Jul 2009 11:09:28 +0200
 
-aptdaemon (0.10+bzr173-0ubuntu1) karmic; urgency=low
+aptkit (0.10+bzr173-0ubuntu1) karmic; urgency=low
 
   * Initial Release.
 

@@ -19,15 +19,15 @@ class LockFileLocationTest(unittest.TestCase):
         # Make sure that the lock module is reloaded if called from
         # within a test suite (to ensure no stale apt_pkg.config values
         # hanging around)
-        import aptdaemon.lock
-        imp.reload(aptdaemon.lock)
+        import aptkit.lock
+        imp.reload(aptkit.lock)
         # the actual test
-        self.assertEqual(aptdaemon.lock.status_lock.path,
+        self.assertEqual(aptkit.lock.status_lock.path,
                          os.path.join(os.path.dirname(self.STATUS_PATH),
                                       "lock"))
-        self.assertEqual(aptdaemon.lock.lists_lock.path,
+        self.assertEqual(aptkit.lock.lists_lock.path,
                          os.path.join(self.LISTS_PATH, "lock"))
-        self.assertEqual(aptdaemon.lock.archive_lock.path,
+        self.assertEqual(aptkit.lock.archive_lock.path,
                          os.path.join(self.ARCHIVES_PATH, "lock"))
 
     def setUp(self):

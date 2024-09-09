@@ -1,5 +1,5 @@
 [D-BUS Service]
 Name=org.debian.apt
-Exec=/usr/sbin/aptd
+Exec=/usr/sbin/aptk
 User=root
 

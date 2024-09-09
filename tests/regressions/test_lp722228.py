@@ -28,7 +28,7 @@ The UpdateCache method allows to specify an alternative sources.list
 snippet to only update the repositories specified in the corresponding
 configuration file.
 
-Aptdaemon did not restrict the path to the sources.list.d directory and
+Aptkit did not restrict the path to the sources.list.d directory and
 allowed to inject packages from malicious sources specified in a custom
 sources.list and even to read every file on the system.
 """
@@ -44,10 +44,10 @@ import apt_pkg
 import dbus
 import mock
 
-import aptdaemon.client
-import aptdaemon.test
-from aptdaemon.worker import AptWorker
-from aptdaemon.errors import AptDaemonError
+import aptkit.client
+import aptkit.test
+from aptkit.worker import AptWorker
+from aptkit.errors import AptKitError
 
 
 class TestFix(unittest2.TestCase):
@@ -74,37 +74,37 @@ class TestFix(unittest2.TestCase):
 
         # ensure absolute path is no longer working
         worker._cache.reset_mock()
-        self.assertRaises(AptDaemonError, worker.update_cache, trans,
+        self.assertRaises(AptKitError, worker.update_cache, trans,
                           "/etc/fstab")
         self.assertFalse(worker._cache.update.called)
         worker._cache.reset_mock()
-        self.assertRaises(AptDaemonError, worker.update_cache, trans,
+        self.assertRaises(AptKitError, worker.update_cache, trans,
                           "/tmp/etc/apt/sources.list.d")
         self.assertFalse(worker._cache.update.called)
         worker._cache.reset_mock()
-        self.assertRaises(AptDaemonError, worker.update_cache, trans,
+        self.assertRaises(AptKitError, worker.update_cache, trans,
                           "/etc/apt/sources.list.d/../../tmp/evil.list")
         self.assertFalse(worker._cache.update.called)
         worker._cache.reset_mock()
-        self.assertRaises(AptDaemonError, worker.update_cache, trans,
+        self.assertRaises(AptKitError, worker.update_cache, trans,
                           "../../../../../../../../../tmp/evil.list")
         self.assertFalse(worker._cache.update.called)
 
 
-class TestExploit(aptdaemon.test.AptDaemonTestCase):
+class TestExploit(aptkit.test.AptKitTestCase):
 
     """Test if the a possible exploit still exists."""
 
     def setUp(self):
-        """Setup a chroot, run the aptdaemon and a fake PolicyKit daemon."""
+        """Setup a chroot, run the aptkit and a fake PolicyKit daemon."""
         # Setup chroot
-        self.chroot = aptdaemon.test.Chroot()
+        self.chroot = aptkit.test.Chroot()
         self.chroot.setup()
         self.addCleanup(self.chroot.remove)
-        # Start aptdaemon with the chroot on the session bus
+        # Start aptkit with the chroot on the session bus
         self.start_dbus_daemon()
         self.bus = dbus.bus.BusConnection(self.dbus_address)
-        self.start_session_aptd(self.chroot.path)
+        self.start_session_aptk(self.chroot.path)
         # Start the fake PolikcyKit daemon
         self.start_fake_polkitd()
         time.sleep(1)
@@ -133,9 +133,9 @@ class TestExploit(aptdaemon.test.AptDaemonTestCase):
         with open(lst_path, "w") as lst_file:
             lst_file.write("deb file://%s a a" % repo_path)
 
-        client = aptdaemon.client.AptClient(self.bus)
+        client = aptkit.client.AptClient(self.bus)
         exit = client.update_cache(sources_list=lst_path, wait=True)
-        self.assertEqual(exit, aptdaemon.enums.EXIT_SUCCESS)
+        self.assertEqual(exit, aptkit.enums.EXIT_SUCCESS)
 
         # Check if succeeded to leak the file content!
         repo_path_encoded = apt_pkg.uri_to_filename("file://%s" % repo_path)

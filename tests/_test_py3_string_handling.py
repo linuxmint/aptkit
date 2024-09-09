@@ -28,11 +28,11 @@ __author__ = "Michael Vogt <mvo@glatzor.de>"
 
 import unittest
 
-from aptdaemon.errors import TransactionFailed
-from aptdaemon.test import AptDaemonTestCase
+from aptkit.errors import TransactionFailed
+from aptkit.test import AptKitTestCase
 
 
-class TestUnicodeDecodingPy3(AptDaemonTestCase):
+class TestUnicodeDecodingPy3(AptKitTestCase):
 
     def test_dbus_exception_lp846044(self):
         e = TransactionFailed("foo", "bar")

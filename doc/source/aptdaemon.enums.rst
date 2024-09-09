@@ -1,5 +1,5 @@
-:mod:`aptdaemon.enums` --- The enums module
+:mod:`aptkit.enums` --- The enums module
 ===========================================
 
-.. automodule:: aptdaemon.enums
+.. automodule:: aptkit.enums
     :members:

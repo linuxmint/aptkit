@@ -44,16 +44,16 @@ import defer
 from defer.utils import deferable
 from .errors import convert_dbus_exception, TransactionFailed
 
-__all__ = ("AptTransaction", "AptClient", "get_transaction", "get_aptdaemon")
+__all__ = ("AptTransaction", "AptClient", "get_transaction", "get_aptkit")
 
 
 # the default timeout for dbus method calls
-_APTDAEMON_DBUS_TIMEOUT = 86400
+_APTKIT_DBUS_TIMEOUT = 86400
 
 
 class AptTransaction(GObject.Object):
 
-    """Represents an aptdaemon transaction.
+    """Represents an aptkit transaction.
 
     .. note:: This class cannot be inherited since it makes use of
               a metaclass.
@@ -112,7 +112,7 @@ class AptTransaction(GObject.Object):
         The signal is emitted when an error occured.
 
         :param error_code: The error code enumeration, e.g.
-             :data:`aptdaemon.enums.ERROR_NO_CACHE`.
+             :data:`aptkit.enums.ERROR_NO_CACHE`.
         :param error_details: The error description string.
 
     .. signal:: finished -> exit_state
@@ -160,7 +160,7 @@ class AptTransaction(GObject.Object):
         The signal is emitted when :attr:`role` changed.
 
         :param role: The new role enum, e.g.
-            :data:`~aptdaemon.enums.ROLE_UPDATE_CACHE`.
+            :data:`~aptkit.enums.ROLE_UPDATE_CACHE`.
 
     .. signal:: space-changed -> space
 
@@ -218,7 +218,7 @@ class AptTransaction(GObject.Object):
 
         :param uri: The URI of the file which is downloaded.
         :param status: The status of the downloade, e.g.
-            :data:`~aptdaemon.enums.DOWNLOAD_AUTH_FAILED`.
+            :data:`~aptkit.enums.DOWNLOAD_AUTH_FAILED`.
         :param short_desc: A short description of the file.
         :param total_size: The size of the file in Bytes.
         :param current_size: How much of the file in Bytes has already be
@@ -345,7 +345,7 @@ class AptTransaction(GObject.Object):
         of the drive which should be used and secondly of the name of the
         medium.
 
-        The :func:`provide_medium()` method should be used to notify aptdaemon
+        The :func:`provide_medium()` method should be used to notify aptkit
         about an inserted medium and to continue processing the transaction.
 
     .. attribute:: role
@@ -709,7 +709,7 @@ class AptTransaction(GObject.Object):
             return self._iface.RunAfter(transaction.tid,
                                         error_handler=error_handler,
                                         reply_handler=reply_handler,
-                                        timeout=_APTDAEMON_DBUS_TIMEOUT)
+                                        timeout=_APTKIT_DBUS_TIMEOUT)
         except Exception as error:
             if error_handler:
                 error_handler(error)
@@ -728,12 +728,12 @@ class AptTransaction(GObject.Object):
         :param defer: Run the method asynchrounsly and return a defer.Deferred.
             This options is only available as a keyword.
 
-        :raises: aptdaemon.errors.TransactionFailed, dbus.DBusException
+        :raises: aptkit.errors.TransactionFailed, dbus.DBusException
         """
         try:
             return self._iface.Run(error_handler=error_handler,
                                    reply_handler=reply_handler,
-                                   timeout=_APTDAEMON_DBUS_TIMEOUT)
+                                   timeout=_APTKIT_DBUS_TIMEOUT)
         except Exception as error:
             if error_handler:
                 error_handler(error)
@@ -755,7 +755,7 @@ class AptTransaction(GObject.Object):
         :param defer: Run the method asynchrounsly and return a defer.Deferred.
             This options is only available as a keyword.
 
-        :raises: aptdaemon.errors.TransactionFailed, dbus.DBusException
+        :raises: aptkit.errors.TransactionFailed, dbus.DBusException
         """
         self._iface.Simulate(reply_handler=reply_handler,
                              error_handler=error_handler)
@@ -772,7 +772,7 @@ class AptTransaction(GObject.Object):
         :param defer: Run the method asynchrounsly and return a defer.Deferred.
             This options is only available as a keyword.
 
-        :raises: aptdaemon.errors.NotAuthorizedError, dbus.DBusException
+        :raises: aptkit.errors.NotAuthorizedError, dbus.DBusException
         """
         self._iface.Cancel(reply_handler=reply_handler,
                            error_handler=error_handler)
@@ -791,8 +791,8 @@ class AptTransaction(GObject.Object):
         :param defer: Run the method asynchrounsly and return a defer.Deferred.
             This options is only available as a keyword.
 
-        :raises: aptdaemon.errors.NotAuthorizedError, dbus.DBusException
-            aptdaemon.errors.ForeignTransaction,
+        :raises: aptkit.errors.NotAuthorizedError, dbus.DBusException
+            aptkit.errors.ForeignTransaction,
         """
         if reply_handler:
             _reply_handler = lambda: reply_handler(self)
@@ -819,7 +819,7 @@ class AptTransaction(GObject.Object):
         :param defer: Run the method asynchrounsly and return a defer.Deferred.
             This options is only available as a keyword.
 
-        :raises: aptdaemon.errors.ForeignTransaction, dbus.DBusException
+        :raises: aptkit.errors.ForeignTransaction, dbus.DBusException
         """
         if reply_handler:
             _reply_handler = lambda: reply_handler(self)
@@ -849,7 +849,7 @@ class AptTransaction(GObject.Object):
         :param defer: Run the method asynchrounsly and return a defer.Deferred.
             This options is only available as a keyword.
 
-        :raises: aptdaemon.errors.ForeignTransaction, dbus.DBusException
+        :raises: aptkit.errors.ForeignTransaction, dbus.DBusException
         """
         if reply_handler:
             _reply_handler = lambda: reply_handler(self)
@@ -869,7 +869,7 @@ class AptTransaction(GObject.Object):
         scripts.
 
         Debian allows packages to interact with the user during installation,
-        configuration and removal phase via debconf. Aptdaemon forwards the
+        configuration and removal phase via debconf. Aptkit forwards the
         communication to a debconf instance running as the user of the
         client application.
 
@@ -882,7 +882,7 @@ class AptTransaction(GObject.Object):
         :param defer: Run the method asynchrounsly and return a defer.Deferred.
             This options is only available as a keyword.
 
-        :raises: aptdaemon.errors.ForeignTransaction, dbus.DBusException
+        :raises: aptkit.errors.ForeignTransaction, dbus.DBusException
          """
         if reply_handler:
             _reply_handler = lambda: reply_handler(self)
@@ -927,7 +927,7 @@ class AptTransaction(GObject.Object):
         :param defer: Run the method asynchrounsly and return a defer.Deferred.
             This options is only available as a keyword.
 
-        :raises: aptdaemon.errors.ForeignTransaction, dbus.DBusException
+        :raises: aptkit.errors.ForeignTransaction, dbus.DBusException
         """
         reply_handler = kwargs.pop("reply_handler", None)
         error_handler = kwargs.pop("error_handler", None)
@@ -960,7 +960,7 @@ class AptTransaction(GObject.Object):
         :param defer: Run the method asynchrounsly and return a defer.Deferred.
             This options is only available as a keyword.
 
-        :raises: aptdaemon.errors.ForeignTransaction, dbus.DBusException
+        :raises: aptkit.errors.ForeignTransaction, dbus.DBusException
         """
         if reply_handler:
             _reply_handler = lambda: reply_handler(self)
@@ -990,7 +990,7 @@ class AptTransaction(GObject.Object):
         :param defer: Run the method asynchrounsly and return a defer.Deferred.
             This options is only available as a keyword.
 
-        :raises: aptdaemon.errors.ForeignTransaction, dbus.DBusException
+        :raises: aptkit.errors.ForeignTransaction, dbus.DBusException
         """
         if reply_handler:
             _reply_handler = lambda: reply_handler(self)
@@ -1015,7 +1015,7 @@ class AptTransaction(GObject.Object):
         :param defer: Run the method asynchrounsly and return a defer.Deferred.
             This options is only available as a keyword.
 
-        :raises: aptdaemon.errors.ForeignTransaction, dbus.DBusException
+        :raises: aptkit.errors.ForeignTransaction, dbus.DBusException
          """
         self._iface.ProvideMedium(medium, reply_handler=reply_handler,
                                   error_handler=error_handler)
@@ -1037,7 +1037,7 @@ class AptTransaction(GObject.Object):
         :param defer: Run the method asynchrounsly and return a defer.Deferred.
             This options is only available as a keyword.
 
-        :raises: aptdaemon.errors.ForeignTransaction, dbus.DBusException
+        :raises: aptkit.errors.ForeignTransaction, dbus.DBusException
          """
         self._iface.ResolveConfigFileConflict(config, answer,
                                               reply_handler=reply_handler,
@@ -1046,7 +1046,7 @@ class AptTransaction(GObject.Object):
 
 class AptClient(object):
 
-    """Provides a complete client for aptdaemon."""
+    """Provides a complete client for aptkit."""
 
     def __init__(self, bus=None):
         """Return a new AptClient instance."""
@@ -1077,7 +1077,7 @@ class AptClient(object):
 
         :returns: Fingerprints of all installed vendor keys.
         """
-        daemon = get_aptdaemon(self.bus)
+        daemon = get_aptkit(self.bus)
         keys = daemon.GetTrustedVendorKeys(reply_handler=reply_handler,
                                            error_handler=error_handler)
         return keys
@@ -1620,16 +1620,16 @@ class AptClient(object):
 
     @defer.inline_callbacks
     def _run_transaction_helper(self, method_name, args, wait, async_):
-        daemon = get_aptdaemon(self.bus)
+        daemon = get_aptkit(self.bus)
         dbus_method = daemon.get_dbus_method(method_name)
         if async_:
             deferred = defer.Deferred()
             dbus_method(reply_handler=deferred.callback,
                         error_handler=deferred.errback, *args,
-                        timeout=_APTDAEMON_DBUS_TIMEOUT)
+                        timeout=_APTKIT_DBUS_TIMEOUT)
             tid = yield deferred
         else:
-            tid = dbus_method(*args, timeout=_APTDAEMON_DBUS_TIMEOUT)
+            tid = dbus_method(*args, timeout=_APTKIT_DBUS_TIMEOUT)
         trans = AptTransaction(tid, self.bus)
         if self._locale:
             yield trans.set_locale(self._locale)
@@ -1658,7 +1658,7 @@ def get_transaction(tid, bus=None, reply_handler=None, error_handler=None):
 
     :param tid: The identifer and D-Bus path of the transaction
         e.g. /org/debian/apt/transaction/78904e5f9fa34098879e768032789109
-    :param bus: Optionally the D-Bus on which aptdaemon listens. Defaults
+    :param bus: Optionally the D-Bus on which aptkit listens. Defaults
         to the system bus.
 
     :param reply_handler: Callback function. If specified in combination
@@ -1694,10 +1694,10 @@ def get_size_string(bytes):
     return "%3.1f%s" % (bytes, "T")
 
 
-def get_aptdaemon(bus=None):
+def get_aptkit(bus=None):
     """Get the daemon D-Bus interface.
 
-    :param bus: Optionally the D-Bus on which aptdaemon listens. Defaults
+    :param bus: Optionally the D-Bus on which aptkit listens. Defaults
         to the system bus.
 
     :raises: dbus.DBusException

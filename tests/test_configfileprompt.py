@@ -10,31 +10,31 @@ import unittest
 import defer
 import dbus
 
-import aptdaemon.client
-import aptdaemon.loop
-import aptdaemon.enums
+import aptkit.client
+import aptkit.loop
+import aptkit.enums
 
-import aptdaemon.test
+import aptkit.test
 
 DEBUG = True
-REPO_PATH = os.path.join(aptdaemon.test.get_tests_dir(), "repo")
+REPO_PATH = os.path.join(aptkit.test.get_tests_dir(), "repo")
 
 
-class ConfigFilePromptTestCase(aptdaemon.test.AptDaemonTestCase):
+class ConfigFilePromptTestCase(aptkit.test.AptKitTestCase):
 
     """Test the replacement of config files."""
 
     def setUp(self):
-        """Setup a chroot, run the aptdaemon and a fake PolicyKit daemon."""
+        """Setup a chroot, run the aptkit and a fake PolicyKit daemon."""
         # Setup chroot
-        self.chroot = aptdaemon.test.Chroot()
+        self.chroot = aptkit.test.Chroot()
         self.chroot.setup()
         self.addCleanup(self.chroot.remove)
         self.chroot.add_test_repository()
-        # Start aptdaemon with the chroot on the session bus
+        # Start aptkit with the chroot on the session bus
         self.start_dbus_daemon()
         self.bus = dbus.bus.BusConnection(self.dbus_address)
-        self.start_session_aptd(self.chroot.path)
+        self.start_session_aptk(self.chroot.path)
         # Start the fake PolikcyKit daemon
         self.start_fake_polkitd()
         time.sleep(1)
@@ -52,14 +52,14 @@ class ConfigFilePromptTestCase(aptdaemon.test.AptDaemonTestCase):
             # Check if cancelling is forbidden
             try:
                 yield trans.cancel()
-            except aptdaemon.errors.AptDaemonError as error:
+            except aptkit.errors.AptKitError as error:
                 self.assertTrue(str(error),
                                 "org.debian.apt: Could not cancel transaction")
             # Check if we fail correctly on wrong answers
             try:
                 yield trans.resolve_config_file_conflict(config_old,
                                                          "a&&dasmk")
-            except aptdaemon.errors.AptDaemonError as error:
+            except aptkit.errors.AptKitError as error:
                 self.assertTrue(str(error).index("Invalid value"))
                 yield trans.resolve_config_file_conflict(config_old, "replace")
             else:
@@ -69,13 +69,13 @@ class ConfigFilePromptTestCase(aptdaemon.test.AptDaemonTestCase):
 
     def _on_finished(self, trans, exit):
         """Callback to stop the mainloop after a transaction is done."""
-        aptdaemon.loop.mainloop.quit()
+        aptkit.loop.mainloop.quit()
 
     def test_keep(self):
         """Test keeping the current configuration file."""
         @defer.inline_callbacks
         def run():
-            self.client = aptdaemon.client.AptClient(self.bus)
+            self.client = aptkit.client.AptClient(self.bus)
             trans = yield self.client.install_packages(["silly-config"])
             trans.connect("finished", self._on_finished)
             trans.connect("config-file-conflict",
@@ -84,8 +84,8 @@ class ConfigFilePromptTestCase(aptdaemon.test.AptDaemonTestCase):
             yield trans.run()
             defer.return_value(trans)
         deferred = run()
-        aptdaemon.loop.mainloop.run()
-        self.assertEqual(deferred.result.exit, aptdaemon.enums.EXIT_SUCCESS)
+        aptkit.loop.mainloop.run()
+        self.assertEqual(deferred.result.exit, aptkit.enums.EXIT_SUCCESS)
         with open(self.config_path) as config:
             self.assertEqual(config.read(),
                              "BliBlaBlub")
@@ -97,7 +97,7 @@ class ConfigFilePromptTestCase(aptdaemon.test.AptDaemonTestCase):
         """Test replacing the current configuration file."""
         @defer.inline_callbacks
         def run():
-            self.client = aptdaemon.client.AptClient(self.bus)
+            self.client = aptkit.client.AptClient(self.bus)
             trans = yield self.client.install_packages(["silly-config"])
             trans.connect("finished", self._on_finished)
             trans.connect("config-file-conflict",
@@ -106,8 +106,8 @@ class ConfigFilePromptTestCase(aptdaemon.test.AptDaemonTestCase):
             yield trans.run()
             defer.return_value(trans)
         deferred = run()
-        aptdaemon.loop.mainloop.run()
-        self.assertEqual(deferred.result.exit, aptdaemon.enums.EXIT_SUCCESS)
+        aptkit.loop.mainloop.run()
+        self.assertEqual(deferred.result.exit, aptkit.enums.EXIT_SUCCESS)
         with open(self.config_path) as config:
             self.assertEqual(config.read(),
                              "#Just another config file.\n")
@@ -119,7 +119,7 @@ class ConfigFilePromptTestCase(aptdaemon.test.AptDaemonTestCase):
         """Test failing correctly."""
         @defer.inline_callbacks
         def run():
-            self.client = aptdaemon.client.AptClient(self.bus)
+            self.client = aptkit.client.AptClient(self.bus)
             trans = yield self.client.install_packages(["silly-config"])
             yield trans.set_locale("C")
             trans.connect("finished", self._on_finished)
@@ -129,8 +129,8 @@ class ConfigFilePromptTestCase(aptdaemon.test.AptDaemonTestCase):
             yield trans.run()
             defer.return_value(trans)
         deferred = run()
-        aptdaemon.loop.mainloop.run()
-        self.assertEqual(deferred.result.exit, aptdaemon.enums.EXIT_SUCCESS)
+        aptkit.loop.mainloop.run()
+        self.assertEqual(deferred.result.exit, aptkit.enums.EXIT_SUCCESS)
         with open(self.config_path) as config:
             self.assertEqual(config.read(),
                              "#Just another config file.\n")

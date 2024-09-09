@@ -33,12 +33,12 @@ import unittest
 import dbus
 from dbus.lowlevel import ErrorMessage, Message
 
-from aptdaemon.core import Transaction
-from aptdaemon.errors import TransactionFailed
-from aptdaemon.test import AptDaemonTestCase, Chroot
+from aptkit.core import Transaction
+from aptkit.errors import TransactionFailed
+from aptkit.test import AptKitTestCase, Chroot
 
 
-class TestUnicodeDecoding(AptDaemonTestCase):
+class TestUnicodeDecoding(AptKitTestCase):
 
     """Test the workaround."""
 

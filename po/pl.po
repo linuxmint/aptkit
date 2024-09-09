@@ -1,11 +1,11 @@
-# Polish translation for aptdaemon
+# Polish translation for aptkit
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the aptdaemon package.
+# This file is distributed under the same license as the aptkit package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: aptdaemon\n"
+"Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-21 15:36+0200\n"
 "PO-Revision-Date: 2013-01-19 15:50+0000\n"
@@ -30,7 +30,7 @@ msgstr "Lista kluczy zaufanych dostawców"
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "Aby wyświetlić listę zaufanych kluczy, należy się uwierzytelnić."
 
-#: ../data/org.debian.apt.policy.in.h:3 ../aptdaemon/console.py:619
+#: ../data/org.debian.apt.policy.in.h:3 ../aptkit/console.py:619
 msgid "Remove downloaded package files"
 msgstr "Usunięcie pobranych pakietów"
 
@@ -102,7 +102,7 @@ msgstr "Aby zainstalować oprogramowanie, należy się uwierzytelnić."
 #. and InstallPackages in a row and only authenticating once.
 #.
 #. The client has to authenticate for this privilege before calling
-#. the aptdaemon methods.
+#. the aptkit methods.
 #: ../data/org.debian.apt.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "Dodaj nowe repozytorium i instaluj z niego pakiety"
@@ -116,7 +116,7 @@ msgstr ""
 #. and InstallPackages in a row and only authenticating once.
 #.
 #. The client has to authenticate for this privilege before calling
-#. the aptdaemon methods.
+#. the aptkit methods.
 #.
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
@@ -159,38 +159,38 @@ msgstr ""
 "Aby użyć pośrednika sieciowego do pobierania oprogramowania, należy się "
 "uwierzytelnić."
 
-#: ../aptdaemon/console.py:215
+#: ../aptkit/console.py:215
 msgid "ERROR"
 msgstr "BŁĄD"
 
-#: ../aptdaemon/console.py:249
+#: ../aptkit/console.py:249
 #, fuzzy, python-format
 msgid "Downloaded %(cur)sB of %(total)sB at %(rate)sB/s"
 msgstr "Pobrano %sB z %sB z prędkością %sB/s"
 
-#: ../aptdaemon/console.py:255
+#: ../aptkit/console.py:255
 #, fuzzy, python-format
 msgid "Downloaded %(cur)sB of %(total)sB"
 msgstr "Pobrano %sB z %sB"
 
-#: ../aptdaemon/console.py:385 ../aptdaemon/console.py:390
+#: ../aptkit/console.py:385 ../aptkit/console.py:390
 msgid "ERROR:"
 msgstr "BŁĄD:"
 
-#: ../aptdaemon/console.py:386
+#: ../aptkit/console.py:386
 msgid "You are not allowed to perform this action."
 msgstr "Użytkownikowi nie wolno wykonać tego działania."
 
-#: ../aptdaemon/console.py:409 ../aptdaemon/console.py:537
+#: ../aptkit/console.py:409 ../aptkit/console.py:537
 msgid "Queuing"
 msgstr "Kolejkowanie"
 
-#: ../aptdaemon/console.py:417 ../aptdaemon/enums.py:527
+#: ../aptkit/console.py:417 ../aptkit/enums.py:527
 msgid "Resolving dependencies"
 msgstr "Rozwiązywanie zależności"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:459
+#: ../aptkit/console.py:459
 #, python-format
 msgid "The following NEW package will be installed (%(count)s):"
 msgid_plural "The following NEW packages will be installed (%(count)s):"
@@ -199,7 +199,7 @@ msgstr[1] "Następujące (%(count)s) nowe pakiety zostaną zainstalowane:"
 msgstr[2] "(%(count)s) następujących nowych pakietów zostanie zainstalowanych:"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:467
+#: ../aptkit/console.py:467
 #, python-format
 msgid "The following package will be upgraded (%(count)s):"
 msgid_plural "The following packages will be upgraded (%(count)s):"
@@ -208,7 +208,7 @@ msgstr[1] "Następujace (%(count)s) pakiety zostaną zaktualizowane:"
 msgstr[2] "Następujacych (%(count)s) pakietów zostanie zaktualizowanych:"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:475
+#: ../aptkit/console.py:475
 #, python-format
 msgid "The following package will be REMOVED (%(count)s):"
 msgid_plural "The following packages will be REMOVED (%(count)s):"
@@ -217,7 +217,7 @@ msgstr[1] "Następujace (%(count)s) pakiety zostaną usunięte:"
 msgstr[2] "Następujacych (%(count)s) pakietów zostanie usuniętych:"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:484
+#: ../aptkit/console.py:484
 #, python-format
 msgid "The following package will be DOWNGRADED (%(count)s):"
 msgid_plural "The following packages will be DOWNGRADED (%(count)s):"
@@ -226,7 +226,7 @@ msgstr[1] "Następujace (%(count)s) pakiety zostaną zdezaktualizowane:"
 msgstr[2] "Następujacych (%(count)s) pakietów zostanie zdezaktualizowanych:"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:492
+#: ../aptkit/console.py:492
 #, python-format
 msgid "The following package will be reinstalled (%(count)s):"
 msgid_plural "The following packages will be reinstalled (%(count)s):"
@@ -234,7 +234,7 @@ msgstr[0] "Następujacy (%(count)s) pakiet zostanie przeinstalowany:"
 msgstr[1] "Następujace (%(count)s) pakiety zostaną przeinstalowane:"
 msgstr[2] "Następujacych (%(count)s) pakietów zostanie przeinstalowanych:"
 
-#: ../aptdaemon/console.py:499
+#: ../aptkit/console.py:499
 #, python-format
 msgid "The following package has been kept back (%(count)s):"
 msgid_plural "The following packages have been kept back (%(count)s):"
@@ -242,40 +242,40 @@ msgstr[0] "Następujacy (%(count)s) pakiet został przywrócony:"
 msgstr[1] "Następujace (%(count)s) pakiety zostały przywrócone:"
 msgstr[2] "Następujacych (%(count)s) pakietów zostało przywróconych:"
 
-#: ../aptdaemon/console.py:507
+#: ../aptkit/console.py:507
 #, python-format
 msgid "Need to get %sB of archives."
 msgstr "Należy pobrać %sB archiwów."
 
-#: ../aptdaemon/console.py:510
+#: ../aptkit/console.py:510
 #, python-format
 msgid "After this operation, %sB of additional disk space will be used."
 msgstr "Po tej operacji użyte zostanie %sB dodatkowego miejsca."
 
-#: ../aptdaemon/console.py:514
+#: ../aptkit/console.py:514
 #, python-format
 msgid "After this operation, %sB of additional disk space will be freed."
 msgstr "Po tej operacji zwolnione zostanie %sB dodatkowego miejsca."
 
-#: ../aptdaemon/console.py:522 ../aptdaemon/console.py:524
+#: ../aptkit/console.py:522 ../aptkit/console.py:524
 msgid "Do you want to continue [Y/n]?"
 msgstr "Kontynuować [T/n]?"
 
-#: ../aptdaemon/console.py:545
+#: ../aptkit/console.py:545
 msgid ""
 "To operate on more than one package put the package names in quotation "
 "marks:\n"
-"aptdcon --install \"foo bar\""
+"aptkcon --install \"foo bar\""
 msgstr ""
 "Aby działać na więcej niż jednym pakiecie należy umieścić nazwy pakietów w "
 "cudzysłowach:\n"
-"aptdcon --install \"foo bar\""
+"aptkcon --install \"foo bar\""
 
-#: ../aptdaemon/console.py:551
+#: ../aptkit/console.py:551
 msgid "Refresh the cache"
 msgstr "Odśwież bufor"
 
-#: ../aptdaemon/console.py:554
+#: ../aptkit/console.py:554
 msgid ""
 "Try to resolve broken dependencies. Potentially dangerous operation since it "
 "could try to remove many packages."
@@ -283,59 +283,59 @@ msgstr ""
 "Spróbuj rozwiązać uszkodzone zależności. Potencjalnie niebezpieczne "
 "działanie, ponieważ może usunąć wiele pakietów."
 
-#: ../aptdaemon/console.py:559
+#: ../aptkit/console.py:559
 msgid "Try to finish a previous incompleted installation"
 msgstr "Próbuje ukończyć poprzednią nieukończoną instalację"
 
-#: ../aptdaemon/console.py:563 ../aptdaemon/console.py:576
+#: ../aptkit/console.py:563 ../aptkit/console.py:576
 msgid "Install the given packages"
 msgstr "Instaluje podane pakiety"
 
-#: ../aptdaemon/console.py:566
+#: ../aptkit/console.py:566
 msgid "Reinstall the given packages"
 msgstr "Instaluje ponownie podane pakiety"
 
-#: ../aptdaemon/console.py:569
+#: ../aptkit/console.py:569
 msgid "Remove the given packages"
 msgstr "Usuwa podane pakiety"
 
-#: ../aptdaemon/console.py:572
+#: ../aptkit/console.py:572
 msgid "Remove the given packages including configuration files"
 msgstr "Usuwa podane pakiety wraz z plikami konfiguracji"
 
-#: ../aptdaemon/console.py:579
+#: ../aptkit/console.py:579
 msgid "Downgrade the given packages"
 msgstr "Powrót do wcześniejszych wersji pakietów"
 
-#: ../aptdaemon/console.py:582
+#: ../aptkit/console.py:582
 msgid "Deprecated: Please use --safe-upgrade"
 msgstr "Przestarzałe: proszę użyć --safe-upgrade"
 
-#: ../aptdaemon/console.py:586
+#: ../aptkit/console.py:586
 msgid "Upgrade the system in a safe way"
 msgstr "Aktualizuje system w bezpieczny sposób"
 
-#: ../aptdaemon/console.py:589
+#: ../aptkit/console.py:589
 msgid "Upgrade the system, possibly installing and removing packages"
 msgstr "Aktualizuje system, usuwając i instalując pakiety"
 
-#: ../aptdaemon/console.py:593
+#: ../aptkit/console.py:593
 msgid "Add the vendor to the trusted ones"
 msgstr "Dodaje dostawcę do zaufanych"
 
-#: ../aptdaemon/console.py:596
+#: ../aptkit/console.py:596
 msgid "Add the vendor keyid (also needs --keyserver)"
 msgstr "Dodaje identyfikator klucza dostawcy (wymaga także --keyserver)"
 
-#: ../aptdaemon/console.py:600
+#: ../aptkit/console.py:600
 msgid "Use the given keyserver for looking up keys"
 msgstr "Używa podanego serwera kluczy do wyszukiwania kluczy"
 
-#: ../aptdaemon/console.py:604
+#: ../aptkit/console.py:604
 msgid "Add new repository from the given deb-line"
 msgstr "Dodaje nowe repozytorium z podanego wiersza deb"
 
-#: ../aptdaemon/console.py:608
+#: ../aptkit/console.py:608
 msgid ""
 "Specify an alternative sources.list.d file to which repositories should be "
 "added."
@@ -343,15 +343,15 @@ msgstr ""
 "Określa alternatywny plik sources.list.d, do których mają zostać dodane "
 "repozytoria."
 
-#: ../aptdaemon/console.py:612
+#: ../aptkit/console.py:612
 msgid "List trusted vendor keys"
 msgstr "Wyświetla listę kluczy zaufanych dostawców"
 
-#: ../aptdaemon/console.py:615
+#: ../aptkit/console.py:615
 msgid "Remove the trusted key of the given fingerprint"
 msgstr "Usuwa zaufany klucz podanego odcisku palca"
 
-#: ../aptdaemon/console.py:622
+#: ../aptkit/console.py:622
 msgid ""
 "Reconfigure installed packages. Optionally the minimum priority of questions "
 "can be specified"
@@ -359,19 +359,19 @@ msgstr ""
 "Rekonfiguracja zainstalowanych pakietów. Opcjonalnie można sprecyzować "
 "priorytety zapytań systemowych."
 
-#: ../aptdaemon/console.py:627
+#: ../aptkit/console.py:627
 msgid "The minimum debconf priority of question to be displayed"
 msgstr "Zostanie wyświetlona minimalna ilość zapytań debconf"
 
-#: ../aptdaemon/console.py:631
+#: ../aptkit/console.py:631
 msgid "Do not attach to the apt terminal"
 msgstr "Bez załączania terminalu apt"
 
-#: ../aptdaemon/console.py:635
+#: ../aptkit/console.py:635
 msgid "Allow packages from unauthenticated sources"
 msgstr "Zezwala na pakiety z nieuwierzytelnionych źródeł"
 
-#: ../aptdaemon/console.py:639
+#: ../aptkit/console.py:639
 msgid ""
 "Show additional information about the packages. Currently only the version "
 "number"
@@ -379,252 +379,252 @@ msgstr ""
 "Wyświetlanie dodatkowych informacji o pakietach. Na tym etapie tylko numery "
 "wersji"
 
-#: ../aptdaemon/console.py:647 ../aptdaemon/enums.py:532
+#: ../aptkit/console.py:647 ../aptkit/enums.py:532
 msgid "Waiting for authentication"
 msgstr "Oczekiwanie na uwierzytelnienie"
 
-#: ../aptdaemon/core.py:2135
+#: ../aptkit/core.py:2135
 msgid "Do not shutdown the daemon because of inactivity"
 msgstr "Nie wyłączaj usługi z powodu bezczynności"
 
-#: ../aptdaemon/core.py:2140
+#: ../aptkit/core.py:2140
 msgid "Do not load any plugins"
 msgstr "Nie wczytuj żadnych wtyczek"
 
-#: ../aptdaemon/core.py:2144
+#: ../aptkit/core.py:2144
 msgid "Show internal processing information"
 msgstr "Wyświetlaj wewnętrzne informacje przetwarzania"
 
-#: ../aptdaemon/core.py:2149
+#: ../aptkit/core.py:2149
 msgid "Quit and replace an already running daemon"
 msgstr "Zakończ i zamień już uruchomioną usługę"
 
-#: ../aptdaemon/core.py:2154
+#: ../aptkit/core.py:2154
 msgid "Listen on the DBus session bus (Only required for testing"
 msgstr "Nasłuchiwanie na magistrali sesji DBus (wymagane tylko do testowania"
 
-#: ../aptdaemon/core.py:2158
+#: ../aptkit/core.py:2158
 msgid "Perform operations in the given chroot"
 msgstr "Przeprowadzenie oparacji na podanym chroot"
 
-#: ../aptdaemon/core.py:2163
+#: ../aptkit/core.py:2163
 msgid "Store profile stats in the specified file"
 msgstr "Zachowa statystyki profilu w określonym pliku"
 
-#: ../aptdaemon/core.py:2168
+#: ../aptkit/core.py:2168
 msgid "Do not make any changes to the system (Only of use to developers)"
 msgstr "Nie dokonuj żadnych zmian w systemie (Tylko do użytku programistów)"
 
-#: ../aptdaemon/enums.py:337
+#: ../aptkit/enums.py:337
 msgid "Installed file"
 msgstr "Zainstalowano plik"
 
-#: ../aptdaemon/enums.py:338
+#: ../aptkit/enums.py:338
 msgid "Installed packages"
 msgstr "Zainstalowano pakiety"
 
-#: ../aptdaemon/enums.py:339
+#: ../aptkit/enums.py:339
 msgid "Added key from file"
 msgstr "Dodano klucz z pliku"
 
-#: ../aptdaemon/enums.py:340
+#: ../aptkit/enums.py:340
 msgid "Updated cache"
 msgstr "Zaktualizowano bufor"
 
-#: ../aptdaemon/enums.py:341
+#: ../aptkit/enums.py:341
 msgid "Search done"
 msgstr "Wyszukiwanie zakończone"
 
-#: ../aptdaemon/enums.py:342
+#: ../aptkit/enums.py:342
 msgid "Removed trusted key"
 msgstr "Usunięto zaufany klucz"
 
-#: ../aptdaemon/enums.py:343
+#: ../aptkit/enums.py:343
 msgid "Removed packages"
 msgstr "Usunięto pakiety"
 
-#: ../aptdaemon/enums.py:344
+#: ../aptkit/enums.py:344
 msgid "Updated packages"
 msgstr "Zaktualizowano pakiety"
 
-#: ../aptdaemon/enums.py:345
+#: ../aptkit/enums.py:345
 msgid "Upgraded system"
 msgstr "Zaktualizowano system"
 
-#: ../aptdaemon/enums.py:346
+#: ../aptkit/enums.py:346
 msgid "Applied changes"
 msgstr "Zastosowano zmiany"
 
-#: ../aptdaemon/enums.py:347
+#: ../aptkit/enums.py:347
 msgid "Repaired incomplete installation"
 msgstr "Naprawiono niekompletną instalację"
 
-#: ../aptdaemon/enums.py:348
+#: ../aptkit/enums.py:348
 msgid "Repaired broken dependencies"
 msgstr "Naprawiono uszkodzone zależności"
 
-#: ../aptdaemon/enums.py:349
+#: ../aptkit/enums.py:349
 msgid "Added software source"
 msgstr "Dodano żródło oprogramowania"
 
-#: ../aptdaemon/enums.py:350
+#: ../aptkit/enums.py:350
 msgid "Enabled component of the distribution"
 msgstr "Składnik dystrybucji włączony"
 
-#: ../aptdaemon/enums.py:351
+#: ../aptkit/enums.py:351
 msgid "Removed downloaded package files"
 msgstr "Usunięte pobrane pliki pakietów"
 
-#: ../aptdaemon/enums.py:352
+#: ../aptkit/enums.py:352
 msgid "Reconfigured installed packages"
 msgstr "Zrekonfigurowane zainstalowane pakiety"
 
-#: ../aptdaemon/enums.py:356
+#: ../aptkit/enums.py:356
 msgid "Successful"
 msgstr "Udane"
 
-#: ../aptdaemon/enums.py:357
+#: ../aptkit/enums.py:357
 msgid "Canceled"
 msgstr "Anulowane"
 
-#: ../aptdaemon/enums.py:358 ../aptdaemon/enums.py:569
+#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
 msgid "Failed"
 msgstr "Nieudane"
 
-#: ../aptdaemon/enums.py:361
+#: ../aptkit/enums.py:361
 msgid "Installing file"
 msgstr "Instalowanie pliku"
 
-#: ../aptdaemon/enums.py:362
+#: ../aptkit/enums.py:362
 msgid "Installing packages"
 msgstr "Instalowanie pakietu"
 
-#: ../aptdaemon/enums.py:363
+#: ../aptkit/enums.py:363
 msgid "Adding key from file"
 msgstr "Dodawanie klucza z pliku"
 
-#: ../aptdaemon/enums.py:364
+#: ../aptkit/enums.py:364
 msgid "Updating cache"
 msgstr "Aktualizowanie bufora"
 
-#: ../aptdaemon/enums.py:365
+#: ../aptkit/enums.py:365
 msgid "Removing trusted key"
 msgstr "Usuwanie zaufanego klucza"
 
-#: ../aptdaemon/enums.py:366
+#: ../aptkit/enums.py:366
 msgid "Removing packages"
 msgstr "Usuwanie pakietów"
 
-#: ../aptdaemon/enums.py:367
+#: ../aptkit/enums.py:367
 msgid "Updating packages"
 msgstr "Aktualizowanie pakietów"
 
-#: ../aptdaemon/enums.py:368
+#: ../aptkit/enums.py:368
 msgid "Upgrading system"
 msgstr "Aktualizowanie systemu"
 
-#: ../aptdaemon/enums.py:369 ../aptdaemon/enums.py:528
+#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
 msgid "Applying changes"
 msgstr "Zastosowywanie zmian"
 
-#: ../aptdaemon/enums.py:370
+#: ../aptkit/enums.py:370
 msgid "Repairing incomplete installation"
 msgstr "Naprawianie niekompletnej instalacji"
 
-#: ../aptdaemon/enums.py:371
+#: ../aptkit/enums.py:371
 msgid "Repairing installed software"
 msgstr "Naprawa zainstalowanego oprogramowania"
 
-#: ../aptdaemon/enums.py:372
+#: ../aptkit/enums.py:372
 msgid "Adding software source"
 msgstr "Dodawanie żródła oprogramowania"
 
-#: ../aptdaemon/enums.py:373
+#: ../aptkit/enums.py:373
 msgid "Enabling component of the distribution"
 msgstr "Włączanie składnika dystrybucji"
 
-#: ../aptdaemon/enums.py:374
+#: ../aptkit/enums.py:374
 msgid "Removing downloaded package files"
 msgstr "Usuwanie pobranych plików pakietów"
 
-#: ../aptdaemon/enums.py:375
+#: ../aptkit/enums.py:375
 msgid "Reconfiguring installed packages"
 msgstr "Rekonfigurowanie zainstalowanych pakietów"
 
-#: ../aptdaemon/enums.py:376 ../aptdaemon/enums.py:517
+#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
 msgid "Searching"
 msgstr "Wyszukiwanie"
 
-#: ../aptdaemon/enums.py:380
+#: ../aptkit/enums.py:380
 msgid "Installation of the package file failed"
 msgstr "Instalacja pliku pakietu się nie powiodła"
 
-#: ../aptdaemon/enums.py:381
+#: ../aptkit/enums.py:381
 msgid "Installation of software failed"
 msgstr "Instalacja programu się nie powiodła"
 
-#: ../aptdaemon/enums.py:382
+#: ../aptkit/enums.py:382
 msgid "Adding the key to the list of trusted software vendors failed"
 msgstr ""
 "Dodanie klucza do listy zaufanych dostawców oprogramowania nie powiodło się"
 
-#: ../aptdaemon/enums.py:384
+#: ../aptkit/enums.py:384
 msgid "Refreshing the software list failed"
 msgstr "Odświeżenie listy oprogramowania się nie powiodło"
 
-#: ../aptdaemon/enums.py:385
+#: ../aptkit/enums.py:385
 msgid "Removing the vendor from the list of trusted ones failed"
 msgstr "Usunięcie z listy zaufanych dostawców się nie powiodło"
 
-#: ../aptdaemon/enums.py:387
+#: ../aptkit/enums.py:387
 msgid "Removing software failed"
 msgstr "Usunięcie programu się nie powiodło"
 
-#: ../aptdaemon/enums.py:388
+#: ../aptkit/enums.py:388
 msgid "Updating software failed"
 msgstr "Aktualizacja programu się nie powiodła"
 
-#: ../aptdaemon/enums.py:389
+#: ../aptkit/enums.py:389
 msgid "Upgrading the system failed"
 msgstr "Aktualizacja systemu się nie powiodła"
 
-#: ../aptdaemon/enums.py:390
+#: ../aptkit/enums.py:390
 msgid "Applying software changes failed"
 msgstr "Zastosowanie zmian w programie się nie powiodło"
 
-#: ../aptdaemon/enums.py:391
+#: ../aptkit/enums.py:391
 msgid "Repairing incomplete installation failed"
 msgstr "Naprawa niekompletnej instalacji się nie powiodła"
 
-#: ../aptdaemon/enums.py:393
+#: ../aptkit/enums.py:393
 msgid "Repairing broken dependencies failed"
 msgstr "Naprawa uszkodzonych zależności się nie powiodła"
 
-#: ../aptdaemon/enums.py:394
+#: ../aptkit/enums.py:394
 msgid "Adding software source failed"
 msgstr "Dodawanie żródła oprogramowania się nie powiodło"
 
-#: ../aptdaemon/enums.py:395
+#: ../aptkit/enums.py:395
 msgid "Enabling component of the distribution failed"
 msgstr "Włączenie składnika dystrybucji się nie powiodło"
 
-#: ../aptdaemon/enums.py:397 ../aptdaemon/enums.py:398
+#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
 msgid "Removing downloaded package files failed"
 msgstr "Usuwanie pobranych plików pakietów, zakończone niepowodzeniem"
 
-#: ../aptdaemon/enums.py:399
+#: ../aptkit/enums.py:399
 msgid "Search failed"
 msgstr "Wyszukiwanie nie powiodło się"
 
-#: ../aptdaemon/enums.py:400
+#: ../aptkit/enums.py:400
 msgid "Adding license key"
 msgstr "Dodawanie klucza licencji"
 
-#: ../aptdaemon/enums.py:404 ../aptdaemon/enums.py:405
+#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
 msgid "Check your Internet connection."
 msgstr "Proszę sprawdzić połączenie internetowe."
 
-#: ../aptdaemon/enums.py:406
+#: ../aptkit/enums.py:406
 msgid ""
 "Check if you are using third party repositories. If so disable them, since "
 "they are a common source of problems.\n"
@@ -635,11 +635,11 @@ msgstr ""
 "Następnie proszę uruchomić następujące polecenie w terminalu: apt-get "
 "install -f"
 
-#: ../aptdaemon/enums.py:411
+#: ../aptkit/enums.py:411
 msgid "The selected file may not be a GPG key file or it might be corrupt."
 msgstr "Wybrany plik nie jest kluczem GPG lub jest uszkodzony."
 
-#: ../aptdaemon/enums.py:413
+#: ../aptkit/enums.py:413
 msgid ""
 "The selected key couldn't be removed. Check that you provided a valid "
 "fingerprint."
@@ -647,7 +647,7 @@ msgstr ""
 "Wybrany klucz nie mógł zostać usunięty. Proszę sprawdzić, czy podany odcisk "
 "palca jest prawidłowy."
 
-#: ../aptdaemon/enums.py:415
+#: ../aptkit/enums.py:415
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
@@ -656,7 +656,7 @@ msgstr ""
 "oprogramowania, np. Synaptic lub aptitude. Tylko jedno narzędzie w jednym "
 "czasie może wprowadzać zmiany."
 
-#: ../aptdaemon/enums.py:418
+#: ../aptkit/enums.py:418
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
@@ -664,7 +664,7 @@ msgstr ""
 "To poważny problem. Proszę spróbować później. Jeśli problem pojawi się "
 "ponownie, to proszę zgłosić błąd programistom."
 
-#: ../aptdaemon/enums.py:421
+#: ../aptkit/enums.py:421
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
@@ -672,48 +672,48 @@ msgstr ""
 "Proszę sprawdzić pisownię nazwy pakiety i czy odpowiednie repozytorium "
 "zostało dodane."
 
-#: ../aptdaemon/enums.py:423
+#: ../aptkit/enums.py:423
 msgid "There isn't any need for an update."
 msgstr "Nie ma potrzeby aktualizacji."
 
-#: ../aptdaemon/enums.py:424
+#: ../aptkit/enums.py:424
 msgid "There isn't any need for an installation"
 msgstr "Nie ma potrzeby instalacji"
 
-#: ../aptdaemon/enums.py:426
+#: ../aptkit/enums.py:426
 msgid "There isn't any need for a removal."
 msgstr "Nie ma potrzeby usunięcia."
 
-#: ../aptdaemon/enums.py:427
+#: ../aptkit/enums.py:427
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr "Zażądano usunięcia pakietu, który jest niezbędnym elementem systemu."
 
-#: ../aptdaemon/enums.py:430
+#: ../aptkit/enums.py:430
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
 msgstr ""
 "Połączenie z usługą utracono. Najprawdopodobniej usługa w tle uległa awarii."
 
-#: ../aptdaemon/enums.py:432
+#: ../aptkit/enums.py:432
 msgid "The installation or removal of a software package failed."
 msgstr "Instalacja lub usunięcie oprogramowania się nie powiodło."
 
-#: ../aptdaemon/enums.py:434
+#: ../aptkit/enums.py:434
 msgid "The requested feature is not supported."
 msgstr "Żądana opcja nie jest obsługiwana."
 
-#: ../aptdaemon/enums.py:435
+#: ../aptkit/enums.py:435
 msgid ""
-"There seems to be a programming error in aptdaemon, the software that allows "
+"There seems to be a programming error in aptkit, the software that allows "
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
-"Zdaje się, że aptdaemon zawiera błąd programisty. Program ten pozwala na "
+"Zdaje się, że aptkit zawiera błąd programisty. Program ten pozwala na "
 "instalację i usuwanie oprogramowania oraz zarządzanie pakietami."
 
-#: ../aptdaemon/enums.py:439
+#: ../aptkit/enums.py:439
 msgid ""
 "This error could be caused by required additional software packages which "
 "are missing or not installable. Furthermore there could be a conflict "
@@ -725,13 +725,13 @@ msgstr ""
 "pomiędzy pakietami oprogramowania, które nie mogą być zainstalowane w jednym "
 "czasie."
 
-#: ../aptdaemon/enums.py:445
+#: ../aptkit/enums.py:445
 msgid "This requires installing packages from unauthenticated sources."
 msgstr ""
 "Ta czynność wymaga zainstalowania pakietów pochodzących z "
 "nieuwierzytelnionych zasobów."
 
-#: ../aptdaemon/enums.py:447
+#: ../aptkit/enums.py:447
 msgid ""
 "The installation could have failed because of an error in the corresponding "
 "software package or it was cancelled in an unfriendly way. You have to "
@@ -741,12 +741,12 @@ msgstr ""
 "lub została anulowana w nieodpowiedni sposób. Należy to naprawić przed "
 "instalowaniem lub usuwaniem dalszego oprogramowania."
 
-#: ../aptdaemon/enums.py:453
+#: ../aptkit/enums.py:453
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
 msgstr "Skopiuj plik na dysk komputera i sprawdź jego uprawnienia dostępu"
 
-#: ../aptdaemon/enums.py:456
+#: ../aptkit/enums.py:456
 msgid ""
 "The installation of a package which violates the quality standards isn't "
 "allowed. This could cause serious problems on your computer. Please contact "
@@ -757,7 +757,7 @@ msgstr ""
 "To działanie mogłoby wywołać poważne problemy z działaniem komputera. "
 "Skontaktuj się z dostawcą pliku pakietu, dołączając poniższe szczegóły."
 
-#: ../aptdaemon/enums.py:463
+#: ../aptkit/enums.py:463
 msgid ""
 "The downloaded license key which is required to run this piece of software "
 "is not valid or could not be installed correctly.\n"
@@ -767,11 +767,11 @@ msgstr ""
 "nieważny lub nie może zostać zainstalowany.\n"
 "Zobacz szczegóły aby uzyskać więcej informacji."
 
-#: ../aptdaemon/enums.py:469
+#: ../aptkit/enums.py:469
 msgid "All available upgrades have already been installed."
 msgstr "Wszystkie dostępne aktualizacje zostały już zainstalowane."
 
-#: ../aptdaemon/enums.py:471
+#: ../aptkit/enums.py:471
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
@@ -779,12 +779,12 @@ msgstr ""
 "Klucz licencyjny, umożliwiający korzystanie z tego programu nie może zostać "
 "pobrany. Proszę sprawdzić połączenie sieciowe."
 
-#: ../aptdaemon/enums.py:475
+#: ../aptkit/enums.py:475
 #, fuzzy
 msgid "You don't have the required privileges to perform this action."
 msgstr "Brak wymaganych uprawnień do wykonania tej operacji."
 
-#: ../aptdaemon/enums.py:477
+#: ../aptkit/enums.py:477
 msgid ""
 "You either provided a wrong password or cancelled the authorization.\n"
 "Furthermore there could also be a technical reason for this error if you "
@@ -796,313 +796,313 @@ msgstr ""
 "wprowadzania hasła nie było widoczne: środowisko graficzne nie udostępnia "
 "klienta sesji PolicyKit."
 
-#: ../aptdaemon/enums.py:485
+#: ../aptkit/enums.py:485
 msgid "Failed to download package files"
 msgstr "Nieudane pobranie plików pakietów"
 
-#: ../aptdaemon/enums.py:486
+#: ../aptkit/enums.py:486
 msgid "Failed to download repository information"
 msgstr "Nieudane pobranie informacji z repozytoriów"
 
-#: ../aptdaemon/enums.py:488
+#: ../aptkit/enums.py:488
 msgid "Package dependencies cannot be resolved"
 msgstr "Zależności pakietu nie mogą zostać rozwiązane"
 
-#: ../aptdaemon/enums.py:489
+#: ../aptkit/enums.py:489
 msgid "The package system is broken"
 msgstr "System pakietów jest uszkodzony"
 
-#: ../aptdaemon/enums.py:490
+#: ../aptkit/enums.py:490
 msgid "Key was not installed"
 msgstr "Klucz nie został zainstalowany"
 
-#: ../aptdaemon/enums.py:491
+#: ../aptkit/enums.py:491
 msgid "Key was not removed"
 msgstr "Klucz nie została usunięty"
 
-#: ../aptdaemon/enums.py:492
+#: ../aptkit/enums.py:492
 msgid "Failed to lock the package manager"
 msgstr "Nieudane zablokowanie menedżera pakietów"
 
-#: ../aptdaemon/enums.py:493
+#: ../aptkit/enums.py:493
 msgid "Failed to load the package list"
 msgstr "Nieudane wczytanie listy pakietów"
 
-#: ../aptdaemon/enums.py:494
+#: ../aptkit/enums.py:494
 msgid "Package does not exist"
 msgstr "Pakiet nie istnieje"
 
-#: ../aptdaemon/enums.py:495
+#: ../aptkit/enums.py:495
 msgid "Package is already up to date"
 msgstr "To jest już najnowsza wersja tego pakietu"
 
-#: ../aptdaemon/enums.py:496
+#: ../aptkit/enums.py:496
 msgid "Package is already installed"
 msgstr "Pakiet jest już zainstalowany"
 
-#: ../aptdaemon/enums.py:497
+#: ../aptkit/enums.py:497
 msgid "Package isn't installed"
 msgstr "Pakiet nie jest zainstalowany"
 
-#: ../aptdaemon/enums.py:498
+#: ../aptkit/enums.py:498
 msgid "Failed to remove essential system package"
 msgstr "Nieudane usunięcie niezbędnego pakietu systemu"
 
-#: ../aptdaemon/enums.py:500
+#: ../aptkit/enums.py:500
 msgid "Task cannot be monitored or controlled"
 msgstr "Zadanie nie może być monitorowane ani kontrolowane"
 
-#: ../aptdaemon/enums.py:501
+#: ../aptkit/enums.py:501
 msgid "Package operation failed"
 msgstr "Nieudane działanie pakietu"
 
-#: ../aptdaemon/enums.py:502
+#: ../aptkit/enums.py:502
 msgid "Requires installation of untrusted packages"
 msgstr "Wymaga instalacji niezaufanych pakietów"
 
-#: ../aptdaemon/enums.py:504
+#: ../aptkit/enums.py:504
 msgid "Previous installation hasn't been completed"
 msgstr "Poprzednia instalacja nie została ukończona"
 
-#: ../aptdaemon/enums.py:505
+#: ../aptkit/enums.py:505
 msgid "The package is of bad quality"
 msgstr "Ten pakiet ma złą jakość"
 
-#: ../aptdaemon/enums.py:506
+#: ../aptkit/enums.py:506
 msgid "Package file could not be opened"
 msgstr "Plik pakietu nie mógł zostać otwarty"
 
-#: ../aptdaemon/enums.py:507
+#: ../aptkit/enums.py:507
 msgid "Not supported feature"
 msgstr "Opcja niedostępna"
 
-#: ../aptdaemon/enums.py:508
+#: ../aptkit/enums.py:508
 msgid "Failed to download the license key"
 msgstr "Nie udało się pobrać klucza licencyjnego"
 
-#: ../aptdaemon/enums.py:509
+#: ../aptkit/enums.py:509
 msgid "Failed to install the license key"
 msgstr "Nie udało się zainstalować klucza licencyjnego"
 
-#: ../aptdaemon/enums.py:510
+#: ../aptkit/enums.py:510
 msgid "The system is already up to date"
 msgstr "System jest już w pełni zaktualizowany"
 
-#: ../aptdaemon/enums.py:511
+#: ../aptkit/enums.py:511
 msgid "You could not be authorized"
 msgstr "Autoryzacja nieudana"
 
-#: ../aptdaemon/enums.py:512
+#: ../aptkit/enums.py:512
 msgid "You are not allowed to perform this action"
 msgstr "Niestety nie wolno Tobie wykonać tej operacji."
 
-#: ../aptdaemon/enums.py:513
+#: ../aptkit/enums.py:513
 msgid "An unhandlable error occured"
 msgstr "Wystąpił nieobsługiwany błąd"
 
-#: ../aptdaemon/enums.py:516
+#: ../aptkit/enums.py:516
 msgid "Waiting for service to start"
 msgstr "Oczekiwanie na uruchomienie usługi"
 
-#: ../aptdaemon/enums.py:518
+#: ../aptkit/enums.py:518
 msgid "Waiting"
 msgstr "Oczekiwanie"
 
-#: ../aptdaemon/enums.py:519
+#: ../aptkit/enums.py:519
 msgid "Waiting for required medium"
 msgstr "Oczekiwanie na żądany nośnik"
 
-#: ../aptdaemon/enums.py:520
+#: ../aptkit/enums.py:520
 msgid "Waiting for other software managers to quit"
 msgstr "Oczekiwanie na zakończenie pracy innych menedżerów oprogramowania"
 
-#: ../aptdaemon/enums.py:521
+#: ../aptkit/enums.py:521
 msgid "Waiting for configuration file prompt"
 msgstr "Oczekiwanie na zapytanie pliku konfiguracji"
 
-#: ../aptdaemon/enums.py:523
+#: ../aptkit/enums.py:523
 msgid "Running task"
 msgstr "Przetwarzanie zadania"
 
-#: ../aptdaemon/enums.py:524
+#: ../aptkit/enums.py:524
 msgid "Downloading"
 msgstr "Pobieranie"
 
-#: ../aptdaemon/enums.py:525
+#: ../aptkit/enums.py:525
 msgid "Querying software sources"
 msgstr "Wysylanie zapytań do źródeł oprogramowania"
 
-#: ../aptdaemon/enums.py:526
+#: ../aptkit/enums.py:526
 msgid "Cleaning up"
 msgstr "Sprzątanie"
 
-#: ../aptdaemon/enums.py:529
+#: ../aptkit/enums.py:529
 msgid "Finished"
 msgstr "Ukończono"
 
-#: ../aptdaemon/enums.py:530
+#: ../aptkit/enums.py:530
 msgid "Cancelling"
 msgstr "Anulowanie"
 
-#: ../aptdaemon/enums.py:531
+#: ../aptkit/enums.py:531
 msgid "Loading software list"
 msgstr "Wczytywanie listy oprogramowania"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:536
+#: ../aptkit/enums.py:536
 #, python-format
 msgid "Installing %s"
 msgstr "Instalowanie %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:538
+#: ../aptkit/enums.py:538
 #, python-format
 msgid "Configuring %s"
 msgstr "Konfigurowanie %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:540
+#: ../aptkit/enums.py:540
 #, python-format
 msgid "Removing %s"
 msgstr "Usuwanie %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:542
+#: ../aptkit/enums.py:542
 #, python-format
 msgid "Completely removing %s"
 msgstr "Całkowite usuwanie %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:544
+#: ../aptkit/enums.py:544
 #, python-format
 msgid "Noting disappearance of %s"
 msgstr "Odnotowano zniknięcie pakietu %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:546
+#: ../aptkit/enums.py:546
 #, python-format
 msgid "Running post-installation trigger %s"
 msgstr "Przetwarzanie wyzwalacza %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:548
+#: ../aptkit/enums.py:548
 #, python-format
 msgid "Upgrading %s"
 msgstr "Aktualizowanie %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:550
+#: ../aptkit/enums.py:550
 #, python-format
 msgid "Unpacking %s"
 msgstr "Rozpakowywanie %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:552
+#: ../aptkit/enums.py:552
 #, python-format
 msgid "Preparing installation of %s"
 msgstr "Przygotowanie do instalacji %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:554
+#: ../aptkit/enums.py:554
 #, python-format
 msgid "Preparing configuration of %s"
 msgstr "Przygotowanie do konfiguracji %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:556
+#: ../aptkit/enums.py:556
 #, python-format
 msgid "Preparing removal of %s"
 msgstr "Przygotowanie do usunięcia %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:558
+#: ../aptkit/enums.py:558
 #, python-format
 msgid "Preparing complete removal of %s"
 msgstr "Przygotowanie do całkowitego usunięcia %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:560
+#: ../aptkit/enums.py:560
 #, python-format
 msgid "Installed %s"
 msgstr "Zainstalowano %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:562
+#: ../aptkit/enums.py:562
 #, python-format
 msgid "Completely removed %s"
 msgstr "Całkowicie usunięto %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:564
+#: ../aptkit/enums.py:564
 #, python-format
 msgid "Removed %s"
 msgstr "Usunięto %s"
 
-#: ../aptdaemon/enums.py:567
+#: ../aptkit/enums.py:567
 msgid "Done"
 msgstr "Ukończono"
 
-#: ../aptdaemon/enums.py:568
+#: ../aptkit/enums.py:568
 msgid "Authentication failed"
 msgstr "Uwierzytelnienie się nie powiodło"
 
-#: ../aptdaemon/enums.py:570
+#: ../aptkit/enums.py:570
 msgid "Fetching"
 msgstr "Pobieranie"
 
-#: ../aptdaemon/enums.py:571
+#: ../aptkit/enums.py:571
 msgid "Idle"
 msgstr "Bezczynny"
 
-#: ../aptdaemon/enums.py:572
+#: ../aptkit/enums.py:572
 msgid "Network isn't available"
 msgstr "Sieć jest niedostępna"
 
-#: ../aptdaemon/enums.py:704
+#: ../aptkit/enums.py:704
 #, python-format
 msgid "Processing %s"
 msgstr "Przetwarzanie %s"
 
-#: ../aptdaemon/gtk3widgets.py:306
+#: ../aptkit/gtk3widgets.py:306
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
 msgstr "Pobrano %sB z %sB z prędkością %sB/s"
 
-#: ../aptdaemon/gtk3widgets.py:311 ../aptdaemon/gtk3widgets.py:510
+#: ../aptkit/gtk3widgets.py:311 ../aptkit/gtk3widgets.py:510
 #, python-format
 msgid "Downloaded %sB of %sB"
 msgstr "Pobrano %sB z %sB"
 
-#: ../aptdaemon/gtk3widgets.py:323
+#: ../aptkit/gtk3widgets.py:323
 msgid "Details"
 msgstr "Szczegóły"
 
-#: ../aptdaemon/gtk3widgets.py:474
+#: ../aptkit/gtk3widgets.py:474
 msgid "File"
 msgstr "Plik"
 
 #. TRANSLATORS: header of the progress download column
-#: ../aptdaemon/gtk3widgets.py:479
+#: ../aptkit/gtk3widgets.py:479
 msgid "%"
 msgstr "%"
 
-#: ../aptdaemon/gtk3widgets.py:515
+#: ../aptkit/gtk3widgets.py:515
 #, python-format
 msgid "Downloaded %sB"
 msgstr "Pobrano %sB"
 
-#: ../aptdaemon/gtk3widgets.py:518
+#: ../aptkit/gtk3widgets.py:518
 msgid "Downloaded"
 msgstr "Pobrano"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: ../aptdaemon/gtk3widgets.py:853
+#: ../aptkit/gtk3widgets.py:853
 #, python-format
 msgid "CD/DVD '%s' is required"
 msgstr "Wymagany nośnik CD/DVD \"%s\""
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: ../aptdaemon/gtk3widgets.py:855
+#: ../aptkit/gtk3widgets.py:855
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
@@ -1111,35 +1111,35 @@ msgstr ""
 "Proszę wsunąć powyższą płytę CD/DVD do napędu \"%s\", aby zainstalować z "
 "niej pakiety oprogramowania."
 
-#: ../aptdaemon/gtk3widgets.py:859 ../aptdaemon/gtk3widgets.py:880
+#: ../aptkit/gtk3widgets.py:859 ../aptkit/gtk3widgets.py:880
 msgid "C_ontinue"
 msgstr "_Kontynuuj"
 
-#: ../aptdaemon/gtk3widgets.py:931
+#: ../aptkit/gtk3widgets.py:931
 msgid "Install"
 msgstr "Zaintaluj"
 
-#: ../aptdaemon/gtk3widgets.py:932
+#: ../aptkit/gtk3widgets.py:932
 msgid "Reinstall"
 msgstr "Zainstaluj ponownie"
 
-#: ../aptdaemon/gtk3widgets.py:933
+#: ../aptkit/gtk3widgets.py:933
 msgid "Remove"
 msgstr "Usuń"
 
-#: ../aptdaemon/gtk3widgets.py:934
+#: ../aptkit/gtk3widgets.py:934
 msgid "Purge"
 msgstr "Usuń z konfiguracją"
 
-#: ../aptdaemon/gtk3widgets.py:935
+#: ../aptkit/gtk3widgets.py:935
 msgid "Upgrade"
 msgstr "Zaktualizuj"
 
-#: ../aptdaemon/gtk3widgets.py:936
+#: ../aptkit/gtk3widgets.py:936
 msgid "Downgrade"
 msgstr "Przywróć poprzednią wersję"
 
-#: ../aptdaemon/gtk3widgets.py:937
+#: ../aptkit/gtk3widgets.py:937
 msgid "Skip upgrade"
 msgstr "Pomiń aktualizację"
 
@@ -1148,65 +1148,65 @@ msgstr "Pomiń aktualizację"
 #. FIXME: adapt the title and message accordingly
 #. FIXME: Should we have different modes? Only show dependencies, only
 #. initial packages or both?
-#: ../aptdaemon/gtk3widgets.py:948
+#: ../aptkit/gtk3widgets.py:948
 msgid "Please take a look at the list of changes below."
 msgstr "Proszę obejrzeć na listę zmian poniżej."
 
-#: ../aptdaemon/gtk3widgets.py:956
+#: ../aptkit/gtk3widgets.py:956
 msgid "Additional software has to be installed"
 msgstr "Należy zainstalować dodatkowe oprogramowanie"
 
-#: ../aptdaemon/gtk3widgets.py:958
+#: ../aptkit/gtk3widgets.py:958
 msgid "Additional software has to be re-installed"
 msgstr "Należy zainstalować ponownie dodatkowe oprogramowanie"
 
-#: ../aptdaemon/gtk3widgets.py:960
+#: ../aptkit/gtk3widgets.py:960
 msgid "Additional software has to be removed"
 msgstr "Należy usunąć dodatkowe oprogramowanie"
 
-#: ../aptdaemon/gtk3widgets.py:962
+#: ../aptkit/gtk3widgets.py:962
 msgid "Additional software has to be purged"
 msgstr "Należy usunąć wraz z konfiguracją dodatkowe oprogramowanie"
 
-#: ../aptdaemon/gtk3widgets.py:964
+#: ../aptkit/gtk3widgets.py:964
 msgid "Additional software has to be upgraded"
 msgstr "Należy zaktualizować dodatkowe oprogramowanie"
 
-#: ../aptdaemon/gtk3widgets.py:966
+#: ../aptkit/gtk3widgets.py:966
 msgid "Additional software has to be downgraded"
 msgstr "Należy przywrócić poprzednią wersję dodatkowego oprogramowania"
 
-#: ../aptdaemon/gtk3widgets.py:968
+#: ../aptkit/gtk3widgets.py:968
 msgid "Updates will be skipped"
 msgstr "Aktualizacje zostaną pominięte"
 
-#: ../aptdaemon/gtk3widgets.py:976
+#: ../aptkit/gtk3widgets.py:976
 msgid "Additional changes are required"
 msgstr "Wymagane są dodatkowe zmiany"
 
-#: ../aptdaemon/gtk3widgets.py:981
+#: ../aptkit/gtk3widgets.py:981
 #, python-format
 msgid "%sB will be downloaded in total."
 msgstr "%sB do pobranie ogółem."
 
-#: ../aptdaemon/gtk3widgets.py:985
+#: ../aptkit/gtk3widgets.py:985
 #, python-format
 msgid "%sB of disk space will be freed."
 msgstr "%sB miejsca na dysku zostanie zwolnione."
 
-#: ../aptdaemon/gtk3widgets.py:989
+#: ../aptkit/gtk3widgets.py:989
 #, python-format
 msgid "%sB more disk space will be used."
 msgstr "%sB więcej miejsca na dysku zostanie użyte."
 
 #. TRANSLATORS: %s is a file path
-#: ../aptdaemon/gtk3widgets.py:1061
+#: ../aptkit/gtk3widgets.py:1061
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
 msgstr "Czy zastąpić zmiany w '%s' późniejszymi plikami konfiguracji?"
 
-#: ../aptdaemon/gtk3widgets.py:1063
+#: ../aptkit/gtk3widgets.py:1063
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
@@ -1214,30 +1214,30 @@ msgstr ""
 "Jeżeli nie wiesz dlaczego plik już istnieje, najbezpieczniej będzie go "
 "zastąpić."
 
-#: ../aptdaemon/gtk3widgets.py:1072
+#: ../aptkit/gtk3widgets.py:1072
 msgid "_Changes"
 msgstr "_Zmiany"
 
-#: ../aptdaemon/gtk3widgets.py:1075
+#: ../aptkit/gtk3widgets.py:1075
 msgid "_Keep"
 msgstr "Za_chowaj"
 
-#: ../aptdaemon/gtk3widgets.py:1076
+#: ../aptkit/gtk3widgets.py:1076
 msgid "_Replace"
 msgstr "_Zamień"
 
-#: ../aptdaemon/gtk3widgets.py:1179
+#: ../aptkit/gtk3widgets.py:1179
 msgid "_Details"
 msgstr "_Szczegóły"
 
 #. TRANSLATORS: %s is the name of a package manager
-#: ../aptdaemon/lock.py:182
+#: ../aptkit/lock.py:182
 #, python-format
 msgid "Waiting for %s to exit"
 msgstr "Oczekiwanie na zamknięcie programu %s"
 
 #. TRANSLATORS: %s is a list of package names
-#: ../aptdaemon/progress.py:169
+#: ../aptkit/progress.py:169
 #, python-format
 msgid "Downloading %(files)s"
 msgid_plural "Downloading %(files)s"
@@ -1247,12 +1247,12 @@ msgstr[2] "Pobieranie %(files)s"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: ../aptdaemon/progress.py:281 ../aptdaemon/progress.py:320
+#: ../aptkit/progress.py:281 ../aptkit/progress.py:320
 msgid "local repository"
 msgstr "repozytorium lokalne"
 
 #. TRANSLATORS: %s is a list of repository names
-#: ../aptdaemon/progress.py:284
+#: ../aptkit/progress.py:284
 #, python-format
 msgid "Downloading from %s"
 msgid_plural "Downloading from %s"
@@ -1261,107 +1261,107 @@ msgstr[1] "Pobieranie z %s"
 msgstr[2] "Pobieranie z %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:324
+#: ../aptkit/progress.py:324
 #, python-format
 msgid "Structure of %s"
 msgstr "Struktura %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:327
+#: ../aptkit/progress.py:327
 #, python-format
 msgid "Description of %s"
 msgstr "Opis %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:330
+#: ../aptkit/progress.py:330
 #, python-format
 msgid "Description signature of %s"
 msgstr "Opis sygnatury %s"
 
-#: ../aptdaemon/progress.py:335
+#: ../aptkit/progress.py:335
 #, python-format
 msgid "Available packages from %s"
 msgstr "Dostępne pakiety z %s"
 
-#: ../aptdaemon/progress.py:339
+#: ../aptkit/progress.py:339
 #, python-format
 msgid "Available sources from %s"
 msgstr "Dostępne źródła z %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:342
+#: ../aptkit/progress.py:342
 #, python-format
 msgid "Available translations from %s"
 msgstr "Dostępne tłumaczenia z %s"
 
-#: ../aptdaemon/progress.py:359
+#: ../aptkit/progress.py:359
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr "Tłumaczenia dla języka %s (%s), z %s"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: ../aptdaemon/progress.py:363
+#: ../aptkit/progress.py:363
 #, python-format
 msgid "Translations for %s from %s"
 msgstr "Tłumaczenia w języku %s z %s"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: ../aptdaemon/progress.py:368
+#: ../aptkit/progress.py:368
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr "Tłumaczenia(%s) z %s"
 
-#: ../aptdaemon/worker/aptworker.py:374 ../aptdaemon/worker/aptworker.py:671
-#: ../aptdaemon/worker/aptworker.py:748 ../aptdaemon/worker/aptworker.py:791
+#: ../aptkit/worker/aptworker.py:374 ../aptkit/worker/aptworker.py:671
+#: ../aptkit/worker/aptworker.py:748 ../aptkit/worker/aptworker.py:791
 #, python-format
 msgid "Package %s isn't available"
 msgstr "Pakiet %s jest niedostępny"
 
-#: ../aptdaemon/worker/aptworker.py:379 ../aptdaemon/worker/aptworker.py:675
-#: ../aptdaemon/worker/aptworker.py:752 ../aptdaemon/worker/aptworker.py:795
+#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:675
+#: ../aptkit/worker/aptworker.py:752 ../aptkit/worker/aptworker.py:795
 #, python-format
 msgid "Package %s isn't installed"
 msgstr "Pakiet %s nie jest zainstalowany"
 
-#: ../aptdaemon/worker/aptworker.py:383
+#: ../aptkit/worker/aptworker.py:383
 #, python-format
 msgid "The version %s of %s isn't installed"
 msgstr "Wersja %s pakietu %s nie jest zainstalowana"
 
-#: ../aptdaemon/worker/aptworker.py:398
+#: ../aptkit/worker/aptworker.py:398
 #, python-format
 msgid "Package %s is already installed"
 msgstr "Pakiet %s jest już zainstalowany"
 
-#: ../aptdaemon/worker/aptworker.py:407 ../aptdaemon/worker/aptworker.py:821
+#: ../aptkit/worker/aptworker.py:407 ../aptkit/worker/aptworker.py:821
 #, python-format
 msgid "The version %s of %s isn't available."
 msgstr "Wersja %s pakietu %s jest niedostępna."
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
-#: ../aptdaemon/worker/aptworker.py:565
+#: ../aptkit/worker/aptworker.py:565
 #, python-format
 msgid "The keyserver URL is invalid: %s"
 msgstr "Adres URL serwera kluczy jest nieprawidłowy: %s"
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
-#: ../aptdaemon/worker/aptworker.py:571
+#: ../aptkit/worker/aptworker.py:571
 #, python-format
 msgid "Invalid protocol of the server: %s"
 msgstr "Nieprawidłowy protokół serwera: %s"
 
 #. TRANSLATORS: %s is the id of a GnuPG key
 #. e.g. E08ADE95
-#: ../aptdaemon/worker/aptworker.py:579 ../aptdaemon/worker/aptworker.py:623
+#: ../aptkit/worker/aptworker.py:579 ../aptkit/worker/aptworker.py:623
 #, python-format
 msgid "Invalid key id: %s"
 msgstr "Nieprawidłowy identyfikator klucza: %s"
 
-#: ../aptdaemon/worker/aptworker.py:587
+#: ../aptkit/worker/aptworker.py:587
 #, python-format
 msgid ""
 "Failed to download and install the key %s from %s:\n"
@@ -1370,62 +1370,62 @@ msgstr ""
 "Nie udało się pobrać i zainstalować klucza %s z %s:\n"
 "%s"
 
-#: ../aptdaemon/worker/aptworker.py:604
+#: ../aptkit/worker/aptworker.py:604
 #, python-format
 msgid "Key file %s couldn't be installed: %s"
 msgstr "Plik klucza %s nie mógł być zainstalowany: %s"
 
-#: ../aptdaemon/worker/aptworker.py:628
+#: ../aptkit/worker/aptworker.py:628
 #, python-format
 msgid "Key with fingerprint %s couldn't be removed: %s"
 msgstr "Klucz z odciskiem palca %s nie mógł być usunięty: %s"
 
-#: ../aptdaemon/worker/aptworker.py:679
+#: ../aptkit/worker/aptworker.py:679
 #, python-format
 msgid "Package %s cannot be removed."
 msgstr "Usunięcie pakietu %s nie jest możliwe."
 
-#: ../aptdaemon/worker/aptworker.py:683
+#: ../aptkit/worker/aptworker.py:683
 #, python-format
 msgid "The version %s of %s is not installed"
 msgstr "Wersja %s pakietu %s nie jest zainstalowana"
 
-#: ../aptdaemon/worker/aptworker.py:763
+#: ../aptkit/worker/aptworker.py:763
 #, python-format
 msgid "The former version %s of %s is already installed"
 msgstr "Poprzednia wersja %s pakietu %s jest już zainstalowana"
 
-#: ../aptdaemon/worker/aptworker.py:768 ../aptdaemon/worker/aptworker.py:814
+#: ../aptkit/worker/aptworker.py:768 ../aptkit/worker/aptworker.py:814
 #, python-format
 msgid "The version %s of %s is already installed"
 msgstr "Wersja %s pakietu %s jest już zainstalowana"
 
-#: ../aptdaemon/worker/aptworker.py:775
+#: ../aptkit/worker/aptworker.py:775
 #, python-format
 msgid "The version %s of %s isn't available"
 msgstr "Wersja %s pakietu %s jest niedostępna"
 
-#: ../aptdaemon/worker/aptworker.py:779
+#: ../aptkit/worker/aptworker.py:779
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
 msgstr "Należy sprecyzować do której wersji zdezaktualizować %s"
 
-#: ../aptdaemon/worker/aptworker.py:807
+#: ../aptkit/worker/aptworker.py:807
 #, python-format
 msgid "The later version %s of %s is already installed"
 msgstr "Nowsza wersja %s pakietu %s jest już zainstalowana"
 
-#: ../aptdaemon/worker/aptworker.py:838
+#: ../aptkit/worker/aptworker.py:838
 #, python-format
 msgid "The package %s isn't available in the %s release."
 msgstr "Pakiet %s jest niedostępny w tym wydaniu %s ."
 
-#: ../aptdaemon/worker/aptworker.py:1026
+#: ../aptkit/worker/aptworker.py:1026
 #, python-format
 msgid "Package %s cannot be removed"
 msgstr "Pakiet %s nie może zostać usunięty"
 
-#: ../aptdaemon/worker/aptworker.py:1123
+#: ../aptkit/worker/aptworker.py:1123
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
@@ -1433,25 +1433,25 @@ msgstr ""
 "Ten pakiet nie dostarcza aktualnej informacji o rozmiarze instalacji. "
 "Szczegóły w Debian Policy 5.6.20."
 
-#: ../aptdaemon/worker/aptworker.py:1265
+#: ../aptkit/worker/aptworker.py:1265
 msgid "The license key is empty"
 msgstr "Klucz licencji jest pusty"
 
-#: ../aptdaemon/worker/aptworker.py:1281
+#: ../aptkit/worker/aptworker.py:1281
 msgid "The license key is not allowed to contain executable code."
 msgstr "Klucz licencyjny nie może zawierać kodu wykonawczego."
 
-#: ../aptdaemon/worker/aptworker.py:1290
+#: ../aptkit/worker/aptworker.py:1290
 #, python-format
 msgid "The license key path %s is invalid"
 msgstr "Ścieżka %s  klucza licencyjnego jest nieprawidłowa"
 
-#: ../aptdaemon/worker/aptworker.py:1294
+#: ../aptkit/worker/aptworker.py:1294
 #, python-format
 msgid "The license key already exists: %s"
 msgstr "Klucz licencyjny już istnieje: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1299
+#: ../aptkit/worker/aptworker.py:1299
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
@@ -1460,41 +1460,41 @@ msgstr ""
 "Lokalizacja klucza licencyjnego jest niezabezpieczona, ponieważ zawiera "
 "dowiązania symboliczne. Ścieżka %s prowadzi do %s"
 
-#: ../aptdaemon/worker/aptworker.py:1307
+#: ../aptkit/worker/aptworker.py:1307
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
 msgstr ""
 "Katalog, w którym ma być zainstalowany klucz,  jeszcze nie istnieje: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1318
+#: ../aptkit/worker/aptworker.py:1318
 #, python-format
 msgid "Failed to write key file to: %s"
 msgstr "Nie można zapisać pliku klucza do: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1353
+#: ../aptkit/worker/aptworker.py:1353
 msgid "The following packages have unmet dependencies:"
 msgstr "Zależności dla następujących pakietów, nie zostały spełnione:"
 
-#: ../aptdaemon/worker/aptworker.py:1406
+#: ../aptkit/worker/aptworker.py:1406
 msgid "but it is a virtual package"
 msgstr "to jest pakiet wirtualny"
 
-#: ../aptdaemon/worker/aptworker.py:1409
+#: ../aptkit/worker/aptworker.py:1409
 msgid "but it is not installed"
 msgstr "ale został zainstalowany"
 
-#: ../aptdaemon/worker/aptworker.py:1411
+#: ../aptkit/worker/aptworker.py:1411
 msgid "but it is not going to be installed"
 msgstr "ale nie zostanie zainstalowany"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptdaemon/worker/aptworker.py:1415
+#: ../aptkit/worker/aptworker.py:1415
 #, python-format
 msgid "but %s is installed"
 msgstr "ale %s jest zainstalowany"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptdaemon/worker/aptworker.py:1419
+#: ../aptkit/worker/aptworker.py:1419
 #, python-format
 msgid "but %s is to be installed"
 msgstr "ale %s zostanie zainstalowany"

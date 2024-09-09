@@ -1,10 +1,10 @@
-:mod:`aptdaemon.client` --- The client module
+:mod:`aptkit.client` --- The client module
 =============================================
 
 Introduction
 ------------
 
-Aptdaemon comes with a client module which provides a smoother interface on top
+Aptkit comes with a client module which provides a smoother interface on top
 of the D-Bus interface. It provides GObjects of the daemon and each transaction.
 
 
@@ -15,7 +15,7 @@ Life cycle of a transaction based action
 
 At first you initialize an AptClient instance.
 
-    >>> from aptdaemon import client
+    >>> from aptkit import client
     >>>
     >>> apt_client = client.AptClient()
 
@@ -52,7 +52,7 @@ Asynchronous programming
 
 In the above examples simple synchronous calls have been made to the D-Bus. 
 Until these calls return your whole application is blocked/frozen.
-In the case of password prompts this can be quite long. So aptdaemon supports
+In the case of password prompts this can be quite long. So aptkit supports
 the following asynchronous styles:
 
 D-Bus style callbacks
@@ -78,7 +78,7 @@ already familiar with those if you have written a Python D-Bus client before:
 Deferred callbacks
 ^^^^^^^^^^^^^^^^^^
 
-Aptdaemon uses a simplified version of Twisted deferreds internally, called
+Aptkit uses a simplified version of Twisted deferreds internally, called
 python-defer. But you can also make use of them in your application.
 
 The inline_callbacks decorator of python-defer allows to write asynchronous
@@ -106,7 +106,7 @@ It is possible to chain transactions. This allows to add a simple
 dependency relation, e.g. you want to add a new repository, update
 the cache and finally install a new package.
 
-        >>> client = aptdaemon.client.AptClient()
+        >>> client = aptkit.client.AptClient()
         >>> trans1 = client.add_repository("deb", [...])
         >>> trans2 = client.update_cache()
         >>> trans3 = client.install_packages(["new-package"])
@@ -120,15 +120,15 @@ fail too with the :data:`enums.EXIT_PREVIOUS_FAILED` exit state.
 Class Reference
 ---------------
 
-.. autoclass:: aptdaemon.client.AptClient
+.. autoclass:: aptkit.client.AptClient
     :members:
 
-.. autoclass:: aptdaemon.client.AptTransaction
+.. autoclass:: aptkit.client.AptTransaction
     :members:
 
 Function Reference
 ------------------
 
-.. autofunction:: aptdaemon.client.get_transaction
+.. autofunction:: aptkit.client.get_transaction
 
-.. autofunction:: aptdaemon.client.get_aptdaemon
+.. autofunction:: aptkit.client.get_aptkit

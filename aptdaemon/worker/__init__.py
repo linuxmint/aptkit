@@ -32,7 +32,7 @@ from gi.repository import GObject, GLib
 from .. import enums
 from .. import errors
 
-log = logging.getLogger("AptDaemon.Worker")
+log = logging.getLogger("AptKit.Worker")
 
 # Just required to detect translatable strings. The translation is done by
 # core.Transaction.gettext
@@ -184,7 +184,7 @@ class BaseWorker(GObject.GObject):
             self.last_action_timestamp = time.time()
         return False
 
-    def _load_plugins(self, plugins, entry_point="aptdaemon.plugins"):
+    def _load_plugins(self, plugins, entry_point="aptkit.plugins"):
         """Load the plugins from setuptools' entry points."""
         plugin_dirs = [os.path.join(os.path.dirname(__file__), "plugins")]
         env = pkg_resources.Environment(plugin_dirs)

@@ -1,11 +1,11 @@
-# Lithuanian translation for aptdaemon
+# Lithuanian translation for aptkit
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the aptdaemon package.
+# This file is distributed under the same license as the aptkit package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: aptdaemon\n"
+"Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-21 15:36+0200\n"
 "PO-Revision-Date: 2012-09-17 20:17+0000\n"
@@ -28,7 +28,7 @@ msgstr "Parodyti patikimų tiekėjų raktus"
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "Patikimų raktų sąrašui peržiūrėti turite patvirtinti tapatybę."
 
-#: ../data/org.debian.apt.policy.in.h:3 ../aptdaemon/console.py:619
+#: ../data/org.debian.apt.policy.in.h:3 ../aptkit/console.py:619
 msgid "Remove downloaded package files"
 msgstr "Pašalinti atsiųsto paketo failus"
 
@@ -100,7 +100,7 @@ msgstr "Norėdami įdiegti programinę įrangą turite patvirtinti tapatybę."
 #. and InstallPackages in a row and only authenticating once.
 #.
 #. The client has to authenticate for this privilege before calling
-#. the aptdaemon methods.
+#. the aptkit methods.
 #: ../data/org.debian.apt.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "Pridėti naują saugyklą ir įdiegti paketus iš jos"
@@ -114,7 +114,7 @@ msgstr ""
 #. and InstallPackages in a row and only authenticating once.
 #.
 #. The client has to authenticate for this privilege before calling
-#. the aptdaemon methods.
+#. the aptkit methods.
 #.
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
@@ -155,38 +155,38 @@ msgstr ""
 "Tarpinio serverio, programinės įrangos atsiuntimui, naudojimui turite "
 "patvirtinti tapatybę."
 
-#: ../aptdaemon/console.py:215
+#: ../aptkit/console.py:215
 msgid "ERROR"
 msgstr "KLAIDA"
 
-#: ../aptdaemon/console.py:249
+#: ../aptkit/console.py:249
 #, fuzzy, python-format
 msgid "Downloaded %(cur)sB of %(total)sB at %(rate)sB/s"
 msgstr "Atsiųsta %s B iš %s B (%s B/s)"
 
-#: ../aptdaemon/console.py:255
+#: ../aptkit/console.py:255
 #, fuzzy, python-format
 msgid "Downloaded %(cur)sB of %(total)sB"
 msgstr "Atsiųsta %s B iš %s B"
 
-#: ../aptdaemon/console.py:385 ../aptdaemon/console.py:390
+#: ../aptkit/console.py:385 ../aptkit/console.py:390
 msgid "ERROR:"
 msgstr "KLAIDA:"
 
-#: ../aptdaemon/console.py:386
+#: ../aptkit/console.py:386
 msgid "You are not allowed to perform this action."
 msgstr "Jums neleidžiama atlikti šio veiksmo."
 
-#: ../aptdaemon/console.py:409 ../aptdaemon/console.py:537
+#: ../aptkit/console.py:409 ../aptkit/console.py:537
 msgid "Queuing"
 msgstr "Įtraukiama į eilę"
 
-#: ../aptdaemon/console.py:417 ../aptdaemon/enums.py:527
+#: ../aptkit/console.py:417 ../aptkit/enums.py:527
 msgid "Resolving dependencies"
 msgstr "Sprendžiamos priklausomybių sąsajos"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:459
+#: ../aptkit/console.py:459
 #, python-format
 msgid "The following NEW package will be installed (%(count)s):"
 msgid_plural "The following NEW packages will be installed (%(count)s):"
@@ -195,7 +195,7 @@ msgstr[1] "Šie NAUJI paketai bus įdiegti (%(count)s):"
 msgstr[2] "Šie NAUJI paketai bus įdiegti (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:467
+#: ../aptkit/console.py:467
 #, python-format
 msgid "The following package will be upgraded (%(count)s):"
 msgid_plural "The following packages will be upgraded (%(count)s):"
@@ -204,7 +204,7 @@ msgstr[1] "Šie paketai bus atnaujinti (%(count)s):"
 msgstr[2] "Šie paketai bus atnaujinti (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:475
+#: ../aptkit/console.py:475
 #, python-format
 msgid "The following package will be REMOVED (%(count)s):"
 msgid_plural "The following packages will be REMOVED (%(count)s):"
@@ -213,7 +213,7 @@ msgstr[1] "Šie paketai bus PAŠALINTI (%(count)s):"
 msgstr[2] "Šie paketai bus PAŠALINTI (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:484
+#: ../aptkit/console.py:484
 #, python-format
 msgid "The following package will be DOWNGRADED (%(count)s):"
 msgid_plural "The following packages will be DOWNGRADED (%(count)s):"
@@ -222,7 +222,7 @@ msgstr[1] "Šie paketai bus PASENDINTI (%(count)s):"
 msgstr[2] "Šie paketai bus PASENDINTI (%(count)s):"
 
 #. TRANSLATORS: %s is the number of packages
-#: ../aptdaemon/console.py:492
+#: ../aptkit/console.py:492
 #, python-format
 msgid "The following package will be reinstalled (%(count)s):"
 msgid_plural "The following packages will be reinstalled (%(count)s):"
@@ -230,7 +230,7 @@ msgstr[0] "Šis paketas bus įdiegtas iš naujo (%(count)s):"
 msgstr[1] "Šie paketai bus įdiegti iš naujo (%(count)s):"
 msgstr[2] "Šie paketai bus įdiegti iš naujo (%(count)s):"
 
-#: ../aptdaemon/console.py:499
+#: ../aptkit/console.py:499
 #, python-format
 msgid "The following package has been kept back (%(count)s):"
 msgid_plural "The following packages have been kept back (%(count)s):"
@@ -238,40 +238,40 @@ msgstr[0] "Šis paketas buvo sulaikytas (%(count)s):"
 msgstr[1] "Šie paketai buvo sulaikyti (%(count)s):"
 msgstr[2] "Šie paketai buvo sulaikyti (%(count)s):"
 
-#: ../aptdaemon/console.py:507
+#: ../aptkit/console.py:507
 #, python-format
 msgid "Need to get %sB of archives."
 msgstr "Reikia gauti archyvų %sB."
 
-#: ../aptdaemon/console.py:510
+#: ../aptkit/console.py:510
 #, python-format
 msgid "After this operation, %sB of additional disk space will be used."
 msgstr "Po šios operacijos bus sunaudota %sB papildomos vietos diske."
 
-#: ../aptdaemon/console.py:514
+#: ../aptkit/console.py:514
 #, python-format
 msgid "After this operation, %sB of additional disk space will be freed."
 msgstr "Po šios operacijos bus atlaisvinta %sB papildomos vietos diske."
 
-#: ../aptdaemon/console.py:522 ../aptdaemon/console.py:524
+#: ../aptkit/console.py:522 ../aptkit/console.py:524
 msgid "Do you want to continue [Y/n]?"
 msgstr "Ar norite tęsti [T/n]?"
 
-#: ../aptdaemon/console.py:545
+#: ../aptkit/console.py:545
 msgid ""
 "To operate on more than one package put the package names in quotation "
 "marks:\n"
-"aptdcon --install \"foo bar\""
+"aptkcon --install \"foo bar\""
 msgstr ""
 "Norėdami dirbti su daugiau nei vienu paketu rašykite paketų pavadinimus "
 "kabutėse:\n"
-"aptdcon --install \"foo bar\""
+"aptkcon --install \"foo bar\""
 
-#: ../aptdaemon/console.py:551
+#: ../aptkit/console.py:551
 msgid "Refresh the cache"
 msgstr "Atnaujinti podėlį"
 
-#: ../aptdaemon/console.py:554
+#: ../aptkit/console.py:554
 msgid ""
 "Try to resolve broken dependencies. Potentially dangerous operation since it "
 "could try to remove many packages."
@@ -279,59 +279,59 @@ msgstr ""
 "Mėginti išspręsti sugadintas priklausomybes. Tai potencialiai pavojinga "
 "operacija, nes ji gali mėginti pašalinti daug paketų."
 
-#: ../aptdaemon/console.py:559
+#: ../aptkit/console.py:559
 msgid "Try to finish a previous incompleted installation"
 msgstr "Mėginti užbaigti ankstesnį nebaigtą įdiegimą"
 
-#: ../aptdaemon/console.py:563 ../aptdaemon/console.py:576
+#: ../aptkit/console.py:563 ../aptkit/console.py:576
 msgid "Install the given packages"
 msgstr "Įdiegti nurodytus paketus"
 
-#: ../aptdaemon/console.py:566
+#: ../aptkit/console.py:566
 msgid "Reinstall the given packages"
 msgstr "Iš naujo įdiegti nurodytus paketus"
 
-#: ../aptdaemon/console.py:569
+#: ../aptkit/console.py:569
 msgid "Remove the given packages"
 msgstr "Pašalinti nurodytus paketus"
 
-#: ../aptdaemon/console.py:572
+#: ../aptkit/console.py:572
 msgid "Remove the given packages including configuration files"
 msgstr "Pašalinti nurodytus paketus įskaitant konfigūracijos failus"
 
-#: ../aptdaemon/console.py:579
+#: ../aptkit/console.py:579
 msgid "Downgrade the given packages"
 msgstr "Pasendinti nurodytus paketus"
 
-#: ../aptdaemon/console.py:582
+#: ../aptkit/console.py:582
 msgid "Deprecated: Please use --safe-upgrade"
 msgstr "Nebenaudotinas: naudokite --safe-upgrade"
 
-#: ../aptdaemon/console.py:586
+#: ../aptkit/console.py:586
 msgid "Upgrade the system in a safe way"
 msgstr "Saugiai atnaujinti sistemą"
 
-#: ../aptdaemon/console.py:589
+#: ../aptkit/console.py:589
 msgid "Upgrade the system, possibly installing and removing packages"
 msgstr "Atnaujinti sistemą, galimai įdiegiant ir pašalinant paketus"
 
-#: ../aptdaemon/console.py:593
+#: ../aptkit/console.py:593
 msgid "Add the vendor to the trusted ones"
 msgstr "Įtraukti tiekėją į patikimų sąrašą"
 
-#: ../aptdaemon/console.py:596
+#: ../aptkit/console.py:596
 msgid "Add the vendor keyid (also needs --keyserver)"
 msgstr "Pridėti tiekėjo keyid (taip pat reikia --keyserver)"
 
-#: ../aptdaemon/console.py:600
+#: ../aptkit/console.py:600
 msgid "Use the given keyserver for looking up keys"
 msgstr "Naudoti nurodytą raktų serverį raktų paieškai"
 
-#: ../aptdaemon/console.py:604
+#: ../aptkit/console.py:604
 msgid "Add new repository from the given deb-line"
 msgstr "Pridėti naują saugyklą iš deb-eilutės"
 
-#: ../aptdaemon/console.py:608
+#: ../aptkit/console.py:608
 msgid ""
 "Specify an alternative sources.list.d file to which repositories should be "
 "added."
@@ -339,15 +339,15 @@ msgstr ""
 "Nurodyti alternatyvų sources.list.d failą į kurį turėtų būti pridedamos "
 "saugyklos."
 
-#: ../aptdaemon/console.py:612
+#: ../aptkit/console.py:612
 msgid "List trusted vendor keys"
 msgstr "Parodyti patikimų tiekėjų raktus"
 
-#: ../aptdaemon/console.py:615
+#: ../aptkit/console.py:615
 msgid "Remove the trusted key of the given fingerprint"
 msgstr "Pašalinti patikimą raktą iš duoto kontrolinio kodo"
 
-#: ../aptdaemon/console.py:622
+#: ../aptkit/console.py:622
 msgid ""
 "Reconfigure installed packages. Optionally the minimum priority of questions "
 "can be specified"
@@ -355,269 +355,269 @@ msgstr ""
 "Perkonfigūruoti įdiegtus paketus. Papildomai gali būti nurodytas mažiausias "
 "klausimų prioritetas"
 
-#: ../aptdaemon/console.py:627
+#: ../aptkit/console.py:627
 msgid "The minimum debconf priority of question to be displayed"
 msgstr "Mažiausias rodomų „debconf“ klausimų prioritetas"
 
-#: ../aptdaemon/console.py:631
+#: ../aptkit/console.py:631
 msgid "Do not attach to the apt terminal"
 msgstr "Neprisijungti prie „apt“ terminalo"
 
-#: ../aptdaemon/console.py:635
+#: ../aptkit/console.py:635
 msgid "Allow packages from unauthenticated sources"
 msgstr "Leisti paketus iš nepatvirtinto tapatumo saugyklų"
 
-#: ../aptdaemon/console.py:639
+#: ../aptkit/console.py:639
 msgid ""
 "Show additional information about the packages. Currently only the version "
 "number"
 msgstr "Rodyti papildomą informaciją apie paketus. Kol kas tik versijos numerį"
 
-#: ../aptdaemon/console.py:647 ../aptdaemon/enums.py:532
+#: ../aptkit/console.py:647 ../aptkit/enums.py:532
 msgid "Waiting for authentication"
 msgstr "Laukiama tapatybės patvirtinimo"
 
-#: ../aptdaemon/core.py:2135
+#: ../aptkit/core.py:2135
 msgid "Do not shutdown the daemon because of inactivity"
 msgstr "Neišjungti tarnybos dėl neaktyvumo"
 
-#: ../aptdaemon/core.py:2140
+#: ../aptkit/core.py:2140
 msgid "Do not load any plugins"
 msgstr "Neįkelti jokių papildinių"
 
-#: ../aptdaemon/core.py:2144
+#: ../aptkit/core.py:2144
 msgid "Show internal processing information"
 msgstr "Rodyti vidinio apdorojimo informaciją"
 
-#: ../aptdaemon/core.py:2149
+#: ../aptkit/core.py:2149
 msgid "Quit and replace an already running daemon"
 msgstr "Baigti ir pakeisti jau paleistą tarnybą"
 
-#: ../aptdaemon/core.py:2154
+#: ../aptkit/core.py:2154
 msgid "Listen on the DBus session bus (Only required for testing"
 msgstr "Klausytis DBus seanso magistralės (Reikalinga tik testavimui"
 
-#: ../aptdaemon/core.py:2158
+#: ../aptkit/core.py:2158
 msgid "Perform operations in the given chroot"
 msgstr "Vykdyti operacijas nurodytame „chroot“"
 
-#: ../aptdaemon/core.py:2163
+#: ../aptkit/core.py:2163
 msgid "Store profile stats in the specified file"
 msgstr "Saugoti profilio statistiką nurodytame faile"
 
-#: ../aptdaemon/core.py:2168
+#: ../aptkit/core.py:2168
 msgid "Do not make any changes to the system (Only of use to developers)"
 msgstr "Neatlikti jokių sistemos pakeitimų (naudinga tik kūrėjams)"
 
-#: ../aptdaemon/enums.py:337
+#: ../aptkit/enums.py:337
 msgid "Installed file"
 msgstr "Įdiegtas failas"
 
-#: ../aptdaemon/enums.py:338
+#: ../aptkit/enums.py:338
 msgid "Installed packages"
 msgstr "Įdiegti paketai"
 
-#: ../aptdaemon/enums.py:339
+#: ../aptkit/enums.py:339
 msgid "Added key from file"
 msgstr "Iš failo pridėtas raktas"
 
-#: ../aptdaemon/enums.py:340
+#: ../aptkit/enums.py:340
 msgid "Updated cache"
 msgstr "Podėlis atnaujintas"
 
-#: ../aptdaemon/enums.py:341
+#: ../aptkit/enums.py:341
 msgid "Search done"
 msgstr "Paieška baigta"
 
-#: ../aptdaemon/enums.py:342
+#: ../aptkit/enums.py:342
 msgid "Removed trusted key"
 msgstr "Patikimas raktas pašalintas"
 
-#: ../aptdaemon/enums.py:343
+#: ../aptkit/enums.py:343
 msgid "Removed packages"
 msgstr "Pašalinti paketai"
 
-#: ../aptdaemon/enums.py:344
+#: ../aptkit/enums.py:344
 msgid "Updated packages"
 msgstr "Atnaujinti paketai"
 
-#: ../aptdaemon/enums.py:345
+#: ../aptkit/enums.py:345
 msgid "Upgraded system"
 msgstr "Atnaujinta sistema"
 
-#: ../aptdaemon/enums.py:346
+#: ../aptkit/enums.py:346
 msgid "Applied changes"
 msgstr "Pritaikyti pakeitimai"
 
-#: ../aptdaemon/enums.py:347
+#: ../aptkit/enums.py:347
 msgid "Repaired incomplete installation"
 msgstr "Pataisytas nebaigtas diegimas"
 
-#: ../aptdaemon/enums.py:348
+#: ../aptkit/enums.py:348
 msgid "Repaired broken dependencies"
 msgstr "Pataisytos sugadintos priklausomybės"
 
-#: ../aptdaemon/enums.py:349
+#: ../aptkit/enums.py:349
 msgid "Added software source"
 msgstr "Pridėta programinės įrangos saugykla"
 
-#: ../aptdaemon/enums.py:350
+#: ../aptkit/enums.py:350
 msgid "Enabled component of the distribution"
 msgstr "Įjungtas distribucijos komponentas"
 
-#: ../aptdaemon/enums.py:351
+#: ../aptkit/enums.py:351
 msgid "Removed downloaded package files"
 msgstr "Pašalinti atsiųsti paketų failai"
 
-#: ../aptdaemon/enums.py:352
+#: ../aptkit/enums.py:352
 msgid "Reconfigured installed packages"
 msgstr "Perkonfigūruoti įdiegti paketai"
 
-#: ../aptdaemon/enums.py:356
+#: ../aptkit/enums.py:356
 msgid "Successful"
 msgstr "Sėkmingas"
 
-#: ../aptdaemon/enums.py:357
+#: ../aptkit/enums.py:357
 msgid "Canceled"
 msgstr "Nutraukta"
 
-#: ../aptdaemon/enums.py:358 ../aptdaemon/enums.py:569
+#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
 msgid "Failed"
 msgstr "Nepavyko"
 
-#: ../aptdaemon/enums.py:361
+#: ../aptkit/enums.py:361
 msgid "Installing file"
 msgstr "Diegiamas failas"
 
-#: ../aptdaemon/enums.py:362
+#: ../aptkit/enums.py:362
 msgid "Installing packages"
 msgstr "Diegiami paketai"
 
-#: ../aptdaemon/enums.py:363
+#: ../aptkit/enums.py:363
 msgid "Adding key from file"
 msgstr "Pridedamas raktas iš failo"
 
-#: ../aptdaemon/enums.py:364
+#: ../aptkit/enums.py:364
 msgid "Updating cache"
 msgstr "Atnaujinamas podėlis"
 
-#: ../aptdaemon/enums.py:365
+#: ../aptkit/enums.py:365
 msgid "Removing trusted key"
 msgstr "Šalinamas patikimas raktas"
 
-#: ../aptdaemon/enums.py:366
+#: ../aptkit/enums.py:366
 msgid "Removing packages"
 msgstr "Šalinami paketai"
 
-#: ../aptdaemon/enums.py:367
+#: ../aptkit/enums.py:367
 msgid "Updating packages"
 msgstr "Atnaujinami paketai"
 
-#: ../aptdaemon/enums.py:368
+#: ../aptkit/enums.py:368
 msgid "Upgrading system"
 msgstr "Atnaujinama sistema"
 
-#: ../aptdaemon/enums.py:369 ../aptdaemon/enums.py:528
+#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
 msgid "Applying changes"
 msgstr "Pritaikomi pakeitimai"
 
-#: ../aptdaemon/enums.py:370
+#: ../aptkit/enums.py:370
 msgid "Repairing incomplete installation"
 msgstr "Taisomas nebaigtas diegimas"
 
-#: ../aptdaemon/enums.py:371
+#: ../aptkit/enums.py:371
 msgid "Repairing installed software"
 msgstr "Taisoma įdiegta programinė įranga"
 
-#: ../aptdaemon/enums.py:372
+#: ../aptkit/enums.py:372
 msgid "Adding software source"
 msgstr "Pridedama programinės įrangos saugykla"
 
-#: ../aptdaemon/enums.py:373
+#: ../aptkit/enums.py:373
 msgid "Enabling component of the distribution"
 msgstr "Įjungiamas distribucijos komponentas"
 
-#: ../aptdaemon/enums.py:374
+#: ../aptkit/enums.py:374
 msgid "Removing downloaded package files"
 msgstr "Šalinami atsiųsti paketų failai"
 
-#: ../aptdaemon/enums.py:375
+#: ../aptkit/enums.py:375
 msgid "Reconfiguring installed packages"
 msgstr "Perkonfigūruojami įdiegti paketai"
 
-#: ../aptdaemon/enums.py:376 ../aptdaemon/enums.py:517
+#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
 msgid "Searching"
 msgstr "Ieškoma"
 
-#: ../aptdaemon/enums.py:380
+#: ../aptkit/enums.py:380
 msgid "Installation of the package file failed"
 msgstr "Nepavyko įdiegti paketo failo"
 
-#: ../aptdaemon/enums.py:381
+#: ../aptkit/enums.py:381
 msgid "Installation of software failed"
 msgstr "Nepavyko įdiegti programos"
 
-#: ../aptdaemon/enums.py:382
+#: ../aptkit/enums.py:382
 msgid "Adding the key to the list of trusted software vendors failed"
 msgstr ""
 
-#: ../aptdaemon/enums.py:384
+#: ../aptkit/enums.py:384
 msgid "Refreshing the software list failed"
 msgstr "Nepavyko atnaujinti programinės įrangos sąrašo"
 
-#: ../aptdaemon/enums.py:385
+#: ../aptkit/enums.py:385
 msgid "Removing the vendor from the list of trusted ones failed"
 msgstr "Nepavyko pašalinti tiekėjo iš patikimų sąrašo"
 
-#: ../aptdaemon/enums.py:387
+#: ../aptkit/enums.py:387
 msgid "Removing software failed"
 msgstr "Nepavyko pašalinti programinės įrangos"
 
-#: ../aptdaemon/enums.py:388
+#: ../aptkit/enums.py:388
 msgid "Updating software failed"
 msgstr "Nepavyko atnaujinti programinės įrangos"
 
-#: ../aptdaemon/enums.py:389
+#: ../aptkit/enums.py:389
 msgid "Upgrading the system failed"
 msgstr "Nepavyko atnaujinti sistemos"
 
-#: ../aptdaemon/enums.py:390
+#: ../aptkit/enums.py:390
 msgid "Applying software changes failed"
 msgstr "Nepavyko pritaikyti programinės įrangos pakeitimų"
 
-#: ../aptdaemon/enums.py:391
+#: ../aptkit/enums.py:391
 msgid "Repairing incomplete installation failed"
 msgstr "Nepavyko pataisyti nebaigto diegimo"
 
-#: ../aptdaemon/enums.py:393
+#: ../aptkit/enums.py:393
 msgid "Repairing broken dependencies failed"
 msgstr "Nepavyko pataisyti sugadintų priklausomybių"
 
-#: ../aptdaemon/enums.py:394
+#: ../aptkit/enums.py:394
 msgid "Adding software source failed"
 msgstr "Nepavyko pridėti programinės įrangos saugyklos"
 
-#: ../aptdaemon/enums.py:395
+#: ../aptkit/enums.py:395
 msgid "Enabling component of the distribution failed"
 msgstr "Nepavyko įjungti distribucijos komponento"
 
-#: ../aptdaemon/enums.py:397 ../aptdaemon/enums.py:398
+#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
 msgid "Removing downloaded package files failed"
 msgstr "Nepavyko pašalinti atsiųstų paketų failų"
 
-#: ../aptdaemon/enums.py:399
+#: ../aptkit/enums.py:399
 msgid "Search failed"
 msgstr "Paieška nepavyko"
 
-#: ../aptdaemon/enums.py:400
+#: ../aptkit/enums.py:400
 msgid "Adding license key"
 msgstr "Pridedamas licencijos raktas"
 
-#: ../aptdaemon/enums.py:404 ../aptdaemon/enums.py:405
+#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
 msgid "Check your Internet connection."
 msgstr "Patikrinkite interneto ryšį."
 
-#: ../aptdaemon/enums.py:406
+#: ../aptkit/enums.py:406
 msgid ""
 "Check if you are using third party repositories. If so disable them, since "
 "they are a common source of problems.\n"
@@ -627,11 +627,11 @@ msgstr ""
 "nes jos yra dažnas problemų šaltinis.\n"
 "Be to paleiskite šią komandą terminale: apt-get install -f"
 
-#: ../aptdaemon/enums.py:411
+#: ../aptkit/enums.py:411
 msgid "The selected file may not be a GPG key file or it might be corrupt."
 msgstr "Pasirinktas failas gali būti sugadintas arba ne GPG rakto failas."
 
-#: ../aptdaemon/enums.py:413
+#: ../aptkit/enums.py:413
 msgid ""
 "The selected key couldn't be removed. Check that you provided a valid "
 "fingerprint."
@@ -639,7 +639,7 @@ msgstr ""
 "Nepavyko pašalinti pasirinkto rakto. Patikrinkite, kad nurodėte teisingą "
 "kontrolinį kodą."
 
-#: ../aptdaemon/enums.py:415
+#: ../aptkit/enums.py:415
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
@@ -648,7 +648,7 @@ msgstr ""
 "pvz., „Synaptic“ ar „aptitude“. Vienu metu pakeitimus atlikti gali tik "
 "vienas įrankis."
 
-#: ../aptdaemon/enums.py:418
+#: ../aptkit/enums.py:418
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
@@ -656,54 +656,54 @@ msgstr ""
 "Tai yra rimta problema. Mėginkite vėliau. Jei problema pasikartos, "
 "praneškite apie klaidą kūrėjams."
 
-#: ../aptdaemon/enums.py:421
+#: ../aptkit/enums.py:421
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
 msgstr "Patikrinkite paketo vardo rašybą ir kad įjungta tinkama saugykla."
 
-#: ../aptdaemon/enums.py:423
+#: ../aptkit/enums.py:423
 msgid "There isn't any need for an update."
 msgstr "Nėra jokio poreikio atnaujinimui."
 
-#: ../aptdaemon/enums.py:424
+#: ../aptkit/enums.py:424
 msgid "There isn't any need for an installation"
 msgstr "Nėra jokio poreikio diegimui."
 
-#: ../aptdaemon/enums.py:426
+#: ../aptkit/enums.py:426
 msgid "There isn't any need for a removal."
 msgstr "Nėra jokio poreikio pašalinimui."
 
-#: ../aptdaemon/enums.py:427
+#: ../aptkit/enums.py:427
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr "Jūs paprašėte pašalinti paketą, kuris yra būtina sistemos dalis."
 
-#: ../aptdaemon/enums.py:430
+#: ../aptkit/enums.py:430
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
 msgstr "Ryšys su tarnyba buvo prarastas. Greičiausiai užstrigo foninė tarnyba."
 
-#: ../aptdaemon/enums.py:432
+#: ../aptkit/enums.py:432
 msgid "The installation or removal of a software package failed."
 msgstr "Programinės įrangos paketo diegimas ar pašalinimas nepavyko."
 
-#: ../aptdaemon/enums.py:434
+#: ../aptkit/enums.py:434
 msgid "The requested feature is not supported."
 msgstr "Paprašyta funkcija yra nepalaikoma."
 
-#: ../aptdaemon/enums.py:435
+#: ../aptkit/enums.py:435
 msgid ""
-"There seems to be a programming error in aptdaemon, the software that allows "
+"There seems to be a programming error in aptkit, the software that allows "
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
-"Panašu, kad „aptdaemon“ programoje, kuri leidžia jums įdiegti, pašalinti "
+"Panašu, kad „aptkit“ programoje, kuri leidžia jums įdiegti, pašalinti "
 "programinę įrangą ir atlikti kitus paketų tvarkymo darbus, yra programavimo "
 "klaida."
 
-#: ../aptdaemon/enums.py:439
+#: ../aptkit/enums.py:439
 msgid ""
 "This error could be caused by required additional software packages which "
 "are missing or not installable. Furthermore there could be a conflict "
@@ -714,12 +714,12 @@ msgstr ""
 "trūksta ar kurie yra neįdiegiami. Be to, gali būti konfliktas tarp "
 "programinės įrangos paketų, kurie negali būti įdiegti tuo pačiu metu."
 
-#: ../aptdaemon/enums.py:445
+#: ../aptkit/enums.py:445
 msgid "This requires installing packages from unauthenticated sources."
 msgstr ""
 "Tai reikalauja įdiegti paketų iš saugyklų, kurių tapatumas nenustatytas."
 
-#: ../aptdaemon/enums.py:447
+#: ../aptkit/enums.py:447
 msgid ""
 "The installation could have failed because of an error in the corresponding "
 "software package or it was cancelled in an unfriendly way. You have to "
@@ -729,13 +729,13 @@ msgstr ""
 "pakete, arba jis buvo netinkamai nutrauktas. Jūs turite tai pataisyti prieš "
 "diegdami ar šalindami kitą programinę įrangą."
 
-#: ../aptdaemon/enums.py:453
+#: ../aptkit/enums.py:453
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
 msgstr ""
 "Nukopijuokite failą į vietinį kompiuterį ir patikrinkite failo leidimus."
 
-#: ../aptdaemon/enums.py:456
+#: ../aptkit/enums.py:456
 msgid ""
 "The installation of a package which violates the quality standards isn't "
 "allowed. This could cause serious problems on your computer. Please contact "
@@ -747,7 +747,7 @@ msgstr ""
 "organizacija, kuri pateikė šį paketo failą ir įtraukite žemiau pateiktą "
 "informaciją."
 
-#: ../aptdaemon/enums.py:463
+#: ../aptkit/enums.py:463
 msgid ""
 "The downloaded license key which is required to run this piece of software "
 "is not valid or could not be installed correctly.\n"
@@ -757,11 +757,11 @@ msgstr ""
 "yra neteisingas ar jo nepavyko teisingai įdiegti.\n"
 "Išsamioje informacijoje pamatysite daugiau informacijos."
 
-#: ../aptdaemon/enums.py:469
+#: ../aptkit/enums.py:469
 msgid "All available upgrades have already been installed."
 msgstr "Visi prieinami atnaujinimai jau yra įdiegti."
 
-#: ../aptdaemon/enums.py:471
+#: ../aptkit/enums.py:471
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
@@ -769,12 +769,12 @@ msgstr ""
 "Nepavyko atsiųsti licencijos rakto, kuris leidžia jums naudoti šią "
 "programinę įrangą. Patikrinkite tinklo ryšį."
 
-#: ../aptdaemon/enums.py:475
+#: ../aptkit/enums.py:475
 #, fuzzy
 msgid "You don't have the required privileges to perform this action."
 msgstr "Jums neleidžiama atlikti šio veiksmo."
 
-#: ../aptdaemon/enums.py:477
+#: ../aptkit/enums.py:477
 msgid ""
 "You either provided a wrong password or cancelled the authorization.\n"
 "Furthermore there could also be a technical reason for this error if you "
@@ -782,313 +782,313 @@ msgid ""
 "PolicyKit session agent."
 msgstr ""
 
-#: ../aptdaemon/enums.py:485
+#: ../aptkit/enums.py:485
 msgid "Failed to download package files"
 msgstr "Nepavyko atsiųsti paketų failų"
 
-#: ../aptdaemon/enums.py:486
+#: ../aptkit/enums.py:486
 msgid "Failed to download repository information"
 msgstr "Nepavyko atsiųsti saugyklų informacijos"
 
-#: ../aptdaemon/enums.py:488
+#: ../aptkit/enums.py:488
 msgid "Package dependencies cannot be resolved"
 msgstr "Nepavyko nustatyti paketų priklausomybių"
 
-#: ../aptdaemon/enums.py:489
+#: ../aptkit/enums.py:489
 msgid "The package system is broken"
 msgstr "Paketų sistema sugadinta"
 
-#: ../aptdaemon/enums.py:490
+#: ../aptkit/enums.py:490
 msgid "Key was not installed"
 msgstr "Raktas nebuvo įdiegtas"
 
-#: ../aptdaemon/enums.py:491
+#: ../aptkit/enums.py:491
 msgid "Key was not removed"
 msgstr "Raktas nebuvo pašalintas"
 
-#: ../aptdaemon/enums.py:492
+#: ../aptkit/enums.py:492
 msgid "Failed to lock the package manager"
 msgstr "Nepavyko blokuoti paketų tvarkytuvės"
 
-#: ../aptdaemon/enums.py:493
+#: ../aptkit/enums.py:493
 msgid "Failed to load the package list"
 msgstr "Nepavyko įkelti paketų sąrašo"
 
-#: ../aptdaemon/enums.py:494
+#: ../aptkit/enums.py:494
 msgid "Package does not exist"
 msgstr "Paketas neegzistuoja"
 
-#: ../aptdaemon/enums.py:495
+#: ../aptkit/enums.py:495
 msgid "Package is already up to date"
 msgstr "Paketas jau atnaujintas"
 
-#: ../aptdaemon/enums.py:496
+#: ../aptkit/enums.py:496
 msgid "Package is already installed"
 msgstr "Paketas jau įdiegtas"
 
-#: ../aptdaemon/enums.py:497
+#: ../aptkit/enums.py:497
 msgid "Package isn't installed"
 msgstr "Paketas nėra įdiegtas"
 
-#: ../aptdaemon/enums.py:498
+#: ../aptkit/enums.py:498
 msgid "Failed to remove essential system package"
 msgstr "Nepavyko pašalinti būtino sistemos paketo"
 
-#: ../aptdaemon/enums.py:500
+#: ../aptkit/enums.py:500
 msgid "Task cannot be monitored or controlled"
 msgstr "Užduotis negali būti stebima ar valdoma"
 
-#: ../aptdaemon/enums.py:501
+#: ../aptkit/enums.py:501
 msgid "Package operation failed"
 msgstr "Paketo operacija nepavyko"
 
-#: ../aptdaemon/enums.py:502
+#: ../aptkit/enums.py:502
 msgid "Requires installation of untrusted packages"
 msgstr "Reikalauja nepatikimų paketų įdiegimo"
 
-#: ../aptdaemon/enums.py:504
+#: ../aptkit/enums.py:504
 msgid "Previous installation hasn't been completed"
 msgstr "Ankstesnis diegimas nebuvo baigtas"
 
-#: ../aptdaemon/enums.py:505
+#: ../aptkit/enums.py:505
 msgid "The package is of bad quality"
 msgstr "Paketas yra prastos kokybės"
 
-#: ../aptdaemon/enums.py:506
+#: ../aptkit/enums.py:506
 msgid "Package file could not be opened"
 msgstr "Nepavyko atverti paketo failo"
 
-#: ../aptdaemon/enums.py:507
+#: ../aptkit/enums.py:507
 msgid "Not supported feature"
 msgstr "Nepalaikoma funkcija"
 
-#: ../aptdaemon/enums.py:508
+#: ../aptkit/enums.py:508
 msgid "Failed to download the license key"
 msgstr "Nepavyko atsiųsti licencijos rakto"
 
-#: ../aptdaemon/enums.py:509
+#: ../aptkit/enums.py:509
 msgid "Failed to install the license key"
 msgstr "Nepavyko įdiegti licencijos rakto"
 
-#: ../aptdaemon/enums.py:510
+#: ../aptkit/enums.py:510
 msgid "The system is already up to date"
 msgstr "Sistema jau atnaujinta"
 
-#: ../aptdaemon/enums.py:511
+#: ../aptkit/enums.py:511
 msgid "You could not be authorized"
 msgstr ""
 
-#: ../aptdaemon/enums.py:512
+#: ../aptkit/enums.py:512
 msgid "You are not allowed to perform this action"
 msgstr ""
 
-#: ../aptdaemon/enums.py:513
+#: ../aptkit/enums.py:513
 msgid "An unhandlable error occured"
 msgstr "Įvyko neapdorojama klaida"
 
-#: ../aptdaemon/enums.py:516
+#: ../aptkit/enums.py:516
 msgid "Waiting for service to start"
 msgstr "Laukiama kol bus paleista tarnyba"
 
-#: ../aptdaemon/enums.py:518
+#: ../aptkit/enums.py:518
 msgid "Waiting"
 msgstr "Laukiama"
 
-#: ../aptdaemon/enums.py:519
+#: ../aptkit/enums.py:519
 msgid "Waiting for required medium"
 msgstr "Laukiama reikalingos laikmenos"
 
-#: ../aptdaemon/enums.py:520
+#: ../aptkit/enums.py:520
 msgid "Waiting for other software managers to quit"
 msgstr "Laukiama kol išsijungs kitos programinės įrangos tvarkytuvės"
 
-#: ../aptdaemon/enums.py:521
+#: ../aptkit/enums.py:521
 msgid "Waiting for configuration file prompt"
 msgstr "Laukiama konfigūracijos failo pranešimo"
 
-#: ../aptdaemon/enums.py:523
+#: ../aptkit/enums.py:523
 msgid "Running task"
 msgstr "Vykdoma užduotis"
 
-#: ../aptdaemon/enums.py:524
+#: ../aptkit/enums.py:524
 msgid "Downloading"
 msgstr "Atsiunčiama"
 
-#: ../aptdaemon/enums.py:525
+#: ../aptkit/enums.py:525
 msgid "Querying software sources"
 msgstr "Užklausiamos programinės įrangos saugyklos"
 
-#: ../aptdaemon/enums.py:526
+#: ../aptkit/enums.py:526
 msgid "Cleaning up"
 msgstr "Išvaloma"
 
-#: ../aptdaemon/enums.py:529
+#: ../aptkit/enums.py:529
 msgid "Finished"
 msgstr "Baigta"
 
-#: ../aptdaemon/enums.py:530
+#: ../aptkit/enums.py:530
 msgid "Cancelling"
 msgstr "Nutraukiama"
 
-#: ../aptdaemon/enums.py:531
+#: ../aptkit/enums.py:531
 msgid "Loading software list"
 msgstr "Įkeliamas programinės įrangos sąrašas"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:536
+#: ../aptkit/enums.py:536
 #, python-format
 msgid "Installing %s"
 msgstr "Diegiamas %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:538
+#: ../aptkit/enums.py:538
 #, python-format
 msgid "Configuring %s"
 msgstr "Konfigūruojamas %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:540
+#: ../aptkit/enums.py:540
 #, python-format
 msgid "Removing %s"
 msgstr "Šalinamas %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:542
+#: ../aptkit/enums.py:542
 #, python-format
 msgid "Completely removing %s"
 msgstr "Visiškai šalinamas %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:544
+#: ../aptkit/enums.py:544
 #, python-format
 msgid "Noting disappearance of %s"
 msgstr "Pastebimas %s dingimas"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:546
+#: ../aptkit/enums.py:546
 #, python-format
 msgid "Running post-installation trigger %s"
 msgstr "Vykdomas post-installation trigeris %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:548
+#: ../aptkit/enums.py:548
 #, python-format
 msgid "Upgrading %s"
 msgstr "Atnaujinamas %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:550
+#: ../aptkit/enums.py:550
 #, python-format
 msgid "Unpacking %s"
 msgstr "Išpakuojamas %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:552
+#: ../aptkit/enums.py:552
 #, python-format
 msgid "Preparing installation of %s"
 msgstr "Ruošiamas %s įdiegimas"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:554
+#: ../aptkit/enums.py:554
 #, python-format
 msgid "Preparing configuration of %s"
 msgstr "Ruošiamas %s konfigūravimas"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:556
+#: ../aptkit/enums.py:556
 #, python-format
 msgid "Preparing removal of %s"
 msgstr "Ruošiamas %s šalinimas"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:558
+#: ../aptkit/enums.py:558
 #, python-format
 msgid "Preparing complete removal of %s"
 msgstr "Ruošiamas %s visiškas pašalinimas"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:560
+#: ../aptkit/enums.py:560
 #, python-format
 msgid "Installed %s"
 msgstr "Įdiegta %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:562
+#: ../aptkit/enums.py:562
 #, python-format
 msgid "Completely removed %s"
 msgstr "Visiškai pašalintas %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptdaemon/enums.py:564
+#: ../aptkit/enums.py:564
 #, python-format
 msgid "Removed %s"
 msgstr "Pašalintas %s"
 
-#: ../aptdaemon/enums.py:567
+#: ../aptkit/enums.py:567
 msgid "Done"
 msgstr "Baigta"
 
-#: ../aptdaemon/enums.py:568
+#: ../aptkit/enums.py:568
 msgid "Authentication failed"
 msgstr "Nepavyko nustatyti tapatybės"
 
-#: ../aptdaemon/enums.py:570
+#: ../aptkit/enums.py:570
 msgid "Fetching"
 msgstr "Atsiunčiama"
 
-#: ../aptdaemon/enums.py:571
+#: ../aptkit/enums.py:571
 msgid "Idle"
 msgstr "Neužimtas"
 
-#: ../aptdaemon/enums.py:572
+#: ../aptkit/enums.py:572
 msgid "Network isn't available"
 msgstr "Tinklas neprieinamas"
 
-#: ../aptdaemon/enums.py:704
+#: ../aptkit/enums.py:704
 #, python-format
 msgid "Processing %s"
 msgstr "Apdorojomas %s"
 
-#: ../aptdaemon/gtk3widgets.py:306
+#: ../aptkit/gtk3widgets.py:306
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
 msgstr "Atsiųsta %s B iš %s B (%s B/s)"
 
-#: ../aptdaemon/gtk3widgets.py:311 ../aptdaemon/gtk3widgets.py:510
+#: ../aptkit/gtk3widgets.py:311 ../aptkit/gtk3widgets.py:510
 #, python-format
 msgid "Downloaded %sB of %sB"
 msgstr "Atsiųsta %s B iš %s B"
 
-#: ../aptdaemon/gtk3widgets.py:323
+#: ../aptkit/gtk3widgets.py:323
 msgid "Details"
 msgstr "Išsamiai"
 
-#: ../aptdaemon/gtk3widgets.py:474
+#: ../aptkit/gtk3widgets.py:474
 msgid "File"
 msgstr "Failas"
 
 #. TRANSLATORS: header of the progress download column
-#: ../aptdaemon/gtk3widgets.py:479
+#: ../aptkit/gtk3widgets.py:479
 msgid "%"
 msgstr "%"
 
-#: ../aptdaemon/gtk3widgets.py:515
+#: ../aptkit/gtk3widgets.py:515
 #, python-format
 msgid "Downloaded %sB"
 msgstr "Atsiųsta %sB"
 
-#: ../aptdaemon/gtk3widgets.py:518
+#: ../aptkit/gtk3widgets.py:518
 msgid "Downloaded"
 msgstr "Atsiųsta"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: ../aptdaemon/gtk3widgets.py:853
+#: ../aptkit/gtk3widgets.py:853
 #, python-format
 msgid "CD/DVD '%s' is required"
 msgstr "Reikalingas „%s“ CD/DVD"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: ../aptdaemon/gtk3widgets.py:855
+#: ../aptkit/gtk3widgets.py:855
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
@@ -1097,35 +1097,35 @@ msgstr ""
 "Įdėkite aukščiau nurodytą CD/DVD į įrenginį „%s“ programinės įrangos "
 "paketams iš jo įdiegti."
 
-#: ../aptdaemon/gtk3widgets.py:859 ../aptdaemon/gtk3widgets.py:880
+#: ../aptkit/gtk3widgets.py:859 ../aptkit/gtk3widgets.py:880
 msgid "C_ontinue"
 msgstr "_Tęsti"
 
-#: ../aptdaemon/gtk3widgets.py:931
+#: ../aptkit/gtk3widgets.py:931
 msgid "Install"
 msgstr "Įdiegti"
 
-#: ../aptdaemon/gtk3widgets.py:932
+#: ../aptkit/gtk3widgets.py:932
 msgid "Reinstall"
 msgstr "Įdiegti iš naujo"
 
-#: ../aptdaemon/gtk3widgets.py:933
+#: ../aptkit/gtk3widgets.py:933
 msgid "Remove"
 msgstr "Pašalinti"
 
-#: ../aptdaemon/gtk3widgets.py:934
+#: ../aptkit/gtk3widgets.py:934
 msgid "Purge"
 msgstr "Išvalyti"
 
-#: ../aptdaemon/gtk3widgets.py:935
+#: ../aptkit/gtk3widgets.py:935
 msgid "Upgrade"
 msgstr "Atnaujinti"
 
-#: ../aptdaemon/gtk3widgets.py:936
+#: ../aptkit/gtk3widgets.py:936
 msgid "Downgrade"
 msgstr "Sendinti"
 
-#: ../aptdaemon/gtk3widgets.py:937
+#: ../aptkit/gtk3widgets.py:937
 msgid "Skip upgrade"
 msgstr "Praleisti atnaujinimą"
 
@@ -1134,66 +1134,66 @@ msgstr "Praleisti atnaujinimą"
 #. FIXME: adapt the title and message accordingly
 #. FIXME: Should we have different modes? Only show dependencies, only
 #. initial packages or both?
-#: ../aptdaemon/gtk3widgets.py:948
+#: ../aptkit/gtk3widgets.py:948
 msgid "Please take a look at the list of changes below."
 msgstr "Patikrinkite pakeitimų sąrašą žemiau."
 
-#: ../aptdaemon/gtk3widgets.py:956
+#: ../aptkit/gtk3widgets.py:956
 msgid "Additional software has to be installed"
 msgstr "Papildoma programinė įranga turi būti įdiegta"
 
-#: ../aptdaemon/gtk3widgets.py:958
+#: ../aptkit/gtk3widgets.py:958
 msgid "Additional software has to be re-installed"
 msgstr "Papildoma programinė įranga turi būti įdiegta iš naujo"
 
-#: ../aptdaemon/gtk3widgets.py:960
+#: ../aptkit/gtk3widgets.py:960
 msgid "Additional software has to be removed"
 msgstr "Papildoma programinė įranga turi būti pašalinta"
 
-#: ../aptdaemon/gtk3widgets.py:962
+#: ../aptkit/gtk3widgets.py:962
 msgid "Additional software has to be purged"
 msgstr "Papildoma programinė įranga turi būti išvalyta"
 
-#: ../aptdaemon/gtk3widgets.py:964
+#: ../aptkit/gtk3widgets.py:964
 msgid "Additional software has to be upgraded"
 msgstr "Papildoma programinė įranga turi būti atnaujinta"
 
-#: ../aptdaemon/gtk3widgets.py:966
+#: ../aptkit/gtk3widgets.py:966
 msgid "Additional software has to be downgraded"
 msgstr "Papildoma programinė įranga turi būti pasendinta"
 
-#: ../aptdaemon/gtk3widgets.py:968
+#: ../aptkit/gtk3widgets.py:968
 msgid "Updates will be skipped"
 msgstr "Atnaujinimai bus praleisti"
 
-#: ../aptdaemon/gtk3widgets.py:976
+#: ../aptkit/gtk3widgets.py:976
 msgid "Additional changes are required"
 msgstr "Reikalingi papildomi pakeitimai"
 
-#: ../aptdaemon/gtk3widgets.py:981
+#: ../aptkit/gtk3widgets.py:981
 #, python-format
 msgid "%sB will be downloaded in total."
 msgstr "%sB bus atsiųsta iš viso."
 
-#: ../aptdaemon/gtk3widgets.py:985
+#: ../aptkit/gtk3widgets.py:985
 #, python-format
 msgid "%sB of disk space will be freed."
 msgstr "%sB vietos diske bus atlaisvinta."
 
-#: ../aptdaemon/gtk3widgets.py:989
+#: ../aptkit/gtk3widgets.py:989
 #, python-format
 msgid "%sB more disk space will be used."
 msgstr "%sB vietos diske bus sunaudota."
 
 #. TRANSLATORS: %s is a file path
-#: ../aptdaemon/gtk3widgets.py:1061
+#: ../aptkit/gtk3widgets.py:1061
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
 msgstr ""
 "Perrašyti jūsų pakeitimus faile „%s“ naujesne konfigūracijos failo versija?"
 
-#: ../aptdaemon/gtk3widgets.py:1063
+#: ../aptkit/gtk3widgets.py:1063
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
@@ -1201,30 +1201,30 @@ msgstr ""
 "Jei jūs nežinote kodėl šis failas ten yra, greičiausiai yra saugu jį "
 "perrašyti."
 
-#: ../aptdaemon/gtk3widgets.py:1072
+#: ../aptkit/gtk3widgets.py:1072
 msgid "_Changes"
 msgstr "_Pakeitimai"
 
-#: ../aptdaemon/gtk3widgets.py:1075
+#: ../aptkit/gtk3widgets.py:1075
 msgid "_Keep"
 msgstr "_Palikti"
 
-#: ../aptdaemon/gtk3widgets.py:1076
+#: ../aptkit/gtk3widgets.py:1076
 msgid "_Replace"
 msgstr "Pa_keisti"
 
-#: ../aptdaemon/gtk3widgets.py:1179
+#: ../aptkit/gtk3widgets.py:1179
 msgid "_Details"
 msgstr "_Išsamiau"
 
 #. TRANSLATORS: %s is the name of a package manager
-#: ../aptdaemon/lock.py:182
+#: ../aptkit/lock.py:182
 #, python-format
 msgid "Waiting for %s to exit"
 msgstr "Laukiama kol %s baigs darbą"
 
 #. TRANSLATORS: %s is a list of package names
-#: ../aptdaemon/progress.py:169
+#: ../aptkit/progress.py:169
 #, python-format
 msgid "Downloading %(files)s"
 msgid_plural "Downloading %(files)s"
@@ -1234,12 +1234,12 @@ msgstr[2] "Atsiunčiami %(files)s"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: ../aptdaemon/progress.py:281 ../aptdaemon/progress.py:320
+#: ../aptkit/progress.py:281 ../aptkit/progress.py:320
 msgid "local repository"
 msgstr "vietinė saugykla"
 
 #. TRANSLATORS: %s is a list of repository names
-#: ../aptdaemon/progress.py:284
+#: ../aptkit/progress.py:284
 #, python-format
 msgid "Downloading from %s"
 msgid_plural "Downloading from %s"
@@ -1248,107 +1248,107 @@ msgstr[1] "Atsiunčiama iš %s"
 msgstr[2] "Atsiunčiama iš %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:324
+#: ../aptkit/progress.py:324
 #, python-format
 msgid "Structure of %s"
 msgstr "%s struktūra"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:327
+#: ../aptkit/progress.py:327
 #, python-format
 msgid "Description of %s"
 msgstr "%s aprašas"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:330
+#: ../aptkit/progress.py:330
 #, python-format
 msgid "Description signature of %s"
 msgstr "%s aprašo parašas"
 
-#: ../aptdaemon/progress.py:335
+#: ../aptkit/progress.py:335
 #, python-format
 msgid "Available packages from %s"
 msgstr "Prieinami paketai iš %s"
 
-#: ../aptdaemon/progress.py:339
+#: ../aptkit/progress.py:339
 #, python-format
 msgid "Available sources from %s"
 msgstr "Prieinamos saugyklos iš %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptdaemon/progress.py:342
+#: ../aptkit/progress.py:342
 #, python-format
 msgid "Available translations from %s"
 msgstr "Prieinami vertimai iš %s"
 
-#: ../aptdaemon/progress.py:359
+#: ../aptkit/progress.py:359
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr "%s (%s) vertimai iš %s"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: ../aptdaemon/progress.py:363
+#: ../aptkit/progress.py:363
 #, python-format
 msgid "Translations for %s from %s"
 msgstr "%s vertimai iš %s"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: ../aptdaemon/progress.py:368
+#: ../aptkit/progress.py:368
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr "Vertimai (%s) iš %s"
 
-#: ../aptdaemon/worker/aptworker.py:374 ../aptdaemon/worker/aptworker.py:671
-#: ../aptdaemon/worker/aptworker.py:748 ../aptdaemon/worker/aptworker.py:791
+#: ../aptkit/worker/aptworker.py:374 ../aptkit/worker/aptworker.py:671
+#: ../aptkit/worker/aptworker.py:748 ../aptkit/worker/aptworker.py:791
 #, python-format
 msgid "Package %s isn't available"
 msgstr "Paketas %s neprieinamas"
 
-#: ../aptdaemon/worker/aptworker.py:379 ../aptdaemon/worker/aptworker.py:675
-#: ../aptdaemon/worker/aptworker.py:752 ../aptdaemon/worker/aptworker.py:795
+#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:675
+#: ../aptkit/worker/aptworker.py:752 ../aptkit/worker/aptworker.py:795
 #, python-format
 msgid "Package %s isn't installed"
 msgstr "Paketas %s neįdiegtas"
 
-#: ../aptdaemon/worker/aptworker.py:383
+#: ../aptkit/worker/aptworker.py:383
 #, python-format
 msgid "The version %s of %s isn't installed"
 msgstr "Versija %s iš %s nėra įdiegta"
 
-#: ../aptdaemon/worker/aptworker.py:398
+#: ../aptkit/worker/aptworker.py:398
 #, python-format
 msgid "Package %s is already installed"
 msgstr "Paketas %s jau įdiegtas"
 
-#: ../aptdaemon/worker/aptworker.py:407 ../aptdaemon/worker/aptworker.py:821
+#: ../aptkit/worker/aptworker.py:407 ../aptkit/worker/aptworker.py:821
 #, python-format
 msgid "The version %s of %s isn't available."
 msgstr "Versija %s iš %s nėra galima."
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
-#: ../aptdaemon/worker/aptworker.py:565
+#: ../aptkit/worker/aptworker.py:565
 #, python-format
 msgid "The keyserver URL is invalid: %s"
 msgstr "Raktų serverio URL yra netinkamas: %s"
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
-#: ../aptdaemon/worker/aptworker.py:571
+#: ../aptkit/worker/aptworker.py:571
 #, python-format
 msgid "Invalid protocol of the server: %s"
 msgstr "Netinkamas serverio protokolas: %s"
 
 #. TRANSLATORS: %s is the id of a GnuPG key
 #. e.g. E08ADE95
-#: ../aptdaemon/worker/aptworker.py:579 ../aptdaemon/worker/aptworker.py:623
+#: ../aptkit/worker/aptworker.py:579 ../aptkit/worker/aptworker.py:623
 #, python-format
 msgid "Invalid key id: %s"
 msgstr "Netinkamas rakto id: %s"
 
-#: ../aptdaemon/worker/aptworker.py:587
+#: ../aptkit/worker/aptworker.py:587
 #, python-format
 msgid ""
 "Failed to download and install the key %s from %s:\n"
@@ -1357,62 +1357,62 @@ msgstr ""
 "Nepavyko atsiųsti ir įdiegti rakto %s iš %s:\n"
 "%s"
 
-#: ../aptdaemon/worker/aptworker.py:604
+#: ../aptkit/worker/aptworker.py:604
 #, python-format
 msgid "Key file %s couldn't be installed: %s"
 msgstr "Rakto failas %s negalėjo būti įdiegtas: %s"
 
-#: ../aptdaemon/worker/aptworker.py:628
+#: ../aptkit/worker/aptworker.py:628
 #, python-format
 msgid "Key with fingerprint %s couldn't be removed: %s"
 msgstr "Raktas su kontroliniu kodu %s negalėjo būti pašalintas: %s"
 
-#: ../aptdaemon/worker/aptworker.py:679
+#: ../aptkit/worker/aptworker.py:679
 #, python-format
 msgid "Package %s cannot be removed."
 msgstr "Paketas %s negali būti pašalintas."
 
-#: ../aptdaemon/worker/aptworker.py:683
+#: ../aptkit/worker/aptworker.py:683
 #, python-format
 msgid "The version %s of %s is not installed"
 msgstr "Versija %s iš %s neįdiegta"
 
-#: ../aptdaemon/worker/aptworker.py:763
+#: ../aptkit/worker/aptworker.py:763
 #, python-format
 msgid "The former version %s of %s is already installed"
 msgstr "Buvusi versija %s iš %s jau įdiegta"
 
-#: ../aptdaemon/worker/aptworker.py:768 ../aptdaemon/worker/aptworker.py:814
+#: ../aptkit/worker/aptworker.py:768 ../aptkit/worker/aptworker.py:814
 #, python-format
 msgid "The version %s of %s is already installed"
 msgstr "Versija %s iš %s jau įdiegta"
 
-#: ../aptdaemon/worker/aptworker.py:775
+#: ../aptkit/worker/aptworker.py:775
 #, python-format
 msgid "The version %s of %s isn't available"
 msgstr "Versija %s iš %s nėra galima."
 
-#: ../aptdaemon/worker/aptworker.py:779
+#: ../aptkit/worker/aptworker.py:779
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
 msgstr "Turite nurodyti versiją %s pasendinimui į"
 
-#: ../aptdaemon/worker/aptworker.py:807
+#: ../aptkit/worker/aptworker.py:807
 #, python-format
 msgid "The later version %s of %s is already installed"
 msgstr "Vėlesnė versija %s iš %s jau yra įdiegta"
 
-#: ../aptdaemon/worker/aptworker.py:838
+#: ../aptkit/worker/aptworker.py:838
 #, python-format
 msgid "The package %s isn't available in the %s release."
 msgstr "Paketas %s neprieinamas %s laidoje."
 
-#: ../aptdaemon/worker/aptworker.py:1026
+#: ../aptkit/worker/aptworker.py:1026
 #, python-format
 msgid "Package %s cannot be removed"
 msgstr "Paketas %s negali būti pašalintas"
 
-#: ../aptdaemon/worker/aptworker.py:1123
+#: ../aptkit/worker/aptworker.py:1123
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
@@ -1420,25 +1420,25 @@ msgstr ""
 "Paketas nepateikia teisingo „Installed-Size“ valdymo lauko. Žiūrėkite "
 "„Debian Policy“ 5.6.20."
 
-#: ../aptdaemon/worker/aptworker.py:1265
+#: ../aptkit/worker/aptworker.py:1265
 msgid "The license key is empty"
 msgstr "Licencijos raktas tuščias"
 
-#: ../aptdaemon/worker/aptworker.py:1281
+#: ../aptkit/worker/aptworker.py:1281
 msgid "The license key is not allowed to contain executable code."
 msgstr "Licencijos rakte negali būti vykdomojo kodo."
 
-#: ../aptdaemon/worker/aptworker.py:1290
+#: ../aptkit/worker/aptworker.py:1290
 #, python-format
 msgid "The license key path %s is invalid"
 msgstr "Licencijos rakto kelias %s neteisingas"
 
-#: ../aptdaemon/worker/aptworker.py:1294
+#: ../aptkit/worker/aptworker.py:1294
 #, python-format
 msgid "The license key already exists: %s"
 msgstr "Licencijos raktas jau egzistuoja: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1299
+#: ../aptkit/worker/aptworker.py:1299
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
@@ -1447,40 +1447,40 @@ msgstr ""
 "Licencijos rakto vieta yra nesaugi nes joje yra simbolinių nuorodų. Kelias "
 "%s atvaizduojamas į %s"
 
-#: ../aptdaemon/worker/aptworker.py:1307
+#: ../aptkit/worker/aptworker.py:1307
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
 msgstr "Katalogas rakto įdiegimui dar neegzistuoja: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1318
+#: ../aptkit/worker/aptworker.py:1318
 #, python-format
 msgid "Failed to write key file to: %s"
 msgstr "Nepavyko įrašyti rakto failo į: %s"
 
-#: ../aptdaemon/worker/aptworker.py:1353
+#: ../aptkit/worker/aptworker.py:1353
 msgid "The following packages have unmet dependencies:"
 msgstr "Šie paketai turi nepatenkintų priklausomybių:"
 
-#: ../aptdaemon/worker/aptworker.py:1406
+#: ../aptkit/worker/aptworker.py:1406
 msgid "but it is a virtual package"
 msgstr "bet jis yra virtualus paketas"
 
-#: ../aptdaemon/worker/aptworker.py:1409
+#: ../aptkit/worker/aptworker.py:1409
 msgid "but it is not installed"
 msgstr "bet jis neįdiegtas"
 
-#: ../aptdaemon/worker/aptworker.py:1411
+#: ../aptkit/worker/aptworker.py:1411
 msgid "but it is not going to be installed"
 msgstr "bet jis nebus įdiegtas"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptdaemon/worker/aptworker.py:1415
+#: ../aptkit/worker/aptworker.py:1415
 #, python-format
 msgid "but %s is installed"
 msgstr "bet %s yra įdiegta"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptdaemon/worker/aptworker.py:1419
+#: ../aptkit/worker/aptworker.py:1419
 #, python-format
 msgid "but %s is to be installed"
 msgstr "bet %s nebus įdiegta"

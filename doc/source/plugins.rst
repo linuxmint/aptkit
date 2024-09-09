@@ -1,8 +1,8 @@
 Plugins
 =======
 
-Aptdaemon provides a plugin mechanism by making use of setuptools' entry points.
-The group name is ``aptdaemon.plugins``. 
+Aptkit provides a plugin mechanism by making use of setuptools' entry points.
+The group name is ``aptkit.plugins``. 
 
 Cache modifiers
 ---------------
@@ -42,7 +42,7 @@ server to query.
 Example
 -------
 
-Here is an example which would install language packages :file:`./plugins/aptd.py`:
+Here is an example which would install language packages :file:`./plugins/aptk.py`:
 
 >>> def install_language_packs(resolver, cache):
 >>>     """Marks the required language packs for installation."""
@@ -57,8 +57,8 @@ Finally you would have to register your function as entry point in :file:`setup.
 
 >>> setup(
 >>> ...
->>> entry_points="""[aptdaemon.plugins]
->>> modify_cache_after=plugins.aptd:install_language_packs
+>>> entry_points="""[aptkit.plugins]
+>>> modify_cache_after=plugins.aptk:install_language_packs
 >>> """,
 >>> ...
 >>> )

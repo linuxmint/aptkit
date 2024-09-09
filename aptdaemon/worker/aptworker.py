@@ -69,7 +69,7 @@ from ..progress import (
     DaemonDpkgRecoverProgress,
     DaemonForkProgress)
 
-log = logging.getLogger("AptDaemon.Worker")
+log = logging.getLogger("AptKit.Worker")
 
 # Just required to detect translatable strings. The translation is done by
 # core.Transaction.gettext
@@ -94,7 +94,7 @@ USE_HTTP="yes"
 def trans_only_installs_pkgs_from_high_trust_repos(trans,
                                                    whitelist=set()):
     """Return True if this transaction only touches packages in the
-    aptdaemon repoisotry high trust repository whitelist
+    aptkit repoisotry high trust repository whitelist
     """
     # the transaction *must* be simulated before
     if not trans.simulated:
@@ -195,7 +195,7 @@ class AptWorker(BaseWorker):
         # webapps/company repos
         self._high_trust_repositories = read_high_trust_repository_dir(
             os.path.join(apt_pkg.config.find_dir("Dir"),
-                         "etc/aptdaemon/high-trust-repository-whitelist.d"))
+                         "etc/aptkit/high-trust-repository-whitelist.d"))
         log.debug(
             "using high-trust whitelist: '%s'" % self._high_trust_repositories)
 
@@ -695,7 +695,7 @@ class AptWorker(BaseWorker):
             resolver.remove(pkg)
 
     def is_deletable(self, pkg):
-        if pkg.name == "aptdaemon":
+        if pkg.name == "aptkit":
             return False
 
         if pkg.essential == True or (pkg.installed and pkg.installed.priority == "required"):
@@ -902,7 +902,7 @@ class AptWorker(BaseWorker):
                 common_prefix = os.path.commonprefix([sources_list, basedir])
                 if not (compare_pathes(common_prefix, basedir) or
                         compare_pathes(sources_list, system_sources)):
-                    raise AptDaemonError("Only alternative sources.list files "
+                    raise AptKitError("Only alternative sources.list files "
                                          "inside '%s' are allowed (not '%s')" %
                                          (basedir, sources_list))
             else:
@@ -1092,7 +1092,7 @@ class AptWorker(BaseWorker):
     def _frozen_status(self):
         """Freeze the status file to allow simulate operations during
         a dpkg call."""
-        frozen_dir = tempfile.mkdtemp(prefix="aptdaemon-frozen-status")
+        frozen_dir = tempfile.mkdtemp(prefix="aptkit-frozen-status")
         shutil.copy(self._status_orig, frozen_dir)
         self._status_frozen = os.path.join(frozen_dir, "status")
         try:

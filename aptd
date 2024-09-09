@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-aptd - apt daemon
+aptk - apt kit
 """
 # Copyright (C) 2008 Sebastian Heinlein <devel@glatzor.de>
 #
@@ -34,8 +34,8 @@ if __name__ == "__main__":
         os.environ["LANG"] = "C.UTF-8"
         os.execv(sys.argv[0], sys.argv)
 
-    import aptdaemon.core
+    import aptkit.core
 
-    aptdaemon.core.main()
+    aptkit.core.main()
 
 # vim:ts=4:sw=4:et

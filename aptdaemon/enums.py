@@ -69,29 +69,29 @@ import gettext
 
 
 def _(msg):
-    return gettext.dgettext("aptdaemon", msg)
+    return gettext.dgettext("aptkit", msg)
 
 # PACKAGE GROUP INDEXES
 #: Index of the list of to be installed packages in the :attr:`dependencies`
-#: and :attr:`packages` property of :class:`~aptdaemon.client.AptTransaction`.
+#: and :attr:`packages` property of :class:`~aptkit.client.AptTransaction`.
 PKGS_INSTALL = 0
 #: Index of the list of to be re-installed packages in the :attr:`dependencies`
-#: and :attr:`packages` property of :class:`~aptdaemon.client.AptTransaction`.
+#: and :attr:`packages` property of :class:`~aptkit.client.AptTransaction`.
 PKGS_REINSTALL = 1
 #: Index of the list of to be removed packages in the :attr:`dependencies`
-#: and :attr:`packages` property of :class:`~aptdaemon.client.AptTransaction`.
+#: and :attr:`packages` property of :class:`~aptkit.client.AptTransaction`.
 PKGS_REMOVE = 2
 #: Index of the list of to be purged packages in the :attr:`dependencies`
-#: and :attr:`packages` property of :class:`~aptdaemon.client.AptTransaction`.
+#: and :attr:`packages` property of :class:`~aptkit.client.AptTransaction`.
 PKGS_PURGE = 3
 #: Index of the list of to be upgraded packages in the :attr:`dependencies`
-#: and :attr:`packages` property of :class:`~aptdaemon.client.AptTransaction`.
+#: and :attr:`packages` property of :class:`~aptkit.client.AptTransaction`.
 PKGS_UPGRADE = 4
 #: Index of the list of to be downgraded packages in the :attr:`dependencies`
-#: and :attr:`packages` property of :class:`~aptdaemon.client.AptTransaction`.
+#: and :attr:`packages` property of :class:`~aptkit.client.AptTransaction`.
 PKGS_DOWNGRADE = 5
 #: Index of the list of to be keept packages in the :attr:`dependencies`
-#: property of :class:`~aptdaemon.client.AptTransaction`.
+#: property of :class:`~aptkit.client.AptTransaction`.
 PKGS_KEEP = 6
 
 # FINISH STATES
@@ -133,7 +133,7 @@ ERROR_PACKAGE_ALREADY_INSTALLED = "error-package-already-installed"
 ERROR_PACKAGE_NOT_INSTALLED = "error-package-not-installed"
 #: It is not allowed to remove an essential system package.
 ERROR_NOT_REMOVE_ESSENTIAL_PACKAGE = "error-not-remove-essential"
-#: The aptdaemon crashed or could not be connected to on the D-Bus.
+#: The aptkit crashed or could not be connected to on the D-Bus.
 ERROR_DAEMON_DIED = "error-daemon-died"
 #: On of the maintainer scripts during the dpkg call failed.
 ERROR_PACKAGE_MANAGER_FAILED = "error-package-manager-failed"
@@ -298,40 +298,40 @@ DOWNLOAD_IDLE = "download-idle"
 DOWNLOAD_NETWORK_ERROR = "download-network-error"
 
 _ICONS_STATUS = {
-    STATUS_CANCELLING: 'aptdaemon-cleanup',
-    STATUS_CLEANING_UP: 'aptdaemon-cleanup',
-    STATUS_RESOLVING_DEP: 'aptdaemon-resolve',
-    STATUS_COMMITTING: 'aptdaemon-working',
-    STATUS_DOWNLOADING: 'aptdaemon-download',
-    STATUS_DOWNLOADING_REPO: 'aptdaemon-download',
-    STATUS_FINISHED: 'aptdaemon-cleanup',
-    STATUS_LOADING_CACHE: 'aptdaemon-update-cache',
-    STATUS_RUNNING: 'aptdaemon-working',
-    STATUS_SETTING_UP: 'aptdaemon-working',
-    STATUS_WAITING: 'aptdaemon-wait',
-    STATUS_WAITING_LOCK: 'aptdaemon-wait',
-    STATUS_WAITING_MEDIUM: 'aptdaemon-wait',
-    STATUS_WAITING_CONFIG_FILE_PROMPT:  'aptdaemon-wait'}
+    STATUS_CANCELLING: 'aptkit-cleanup',
+    STATUS_CLEANING_UP: 'aptkit-cleanup',
+    STATUS_RESOLVING_DEP: 'aptkit-resolve',
+    STATUS_COMMITTING: 'aptkit-working',
+    STATUS_DOWNLOADING: 'aptkit-download',
+    STATUS_DOWNLOADING_REPO: 'aptkit-download',
+    STATUS_FINISHED: 'aptkit-cleanup',
+    STATUS_LOADING_CACHE: 'aptkit-update-cache',
+    STATUS_RUNNING: 'aptkit-working',
+    STATUS_SETTING_UP: 'aptkit-working',
+    STATUS_WAITING: 'aptkit-wait',
+    STATUS_WAITING_LOCK: 'aptkit-wait',
+    STATUS_WAITING_MEDIUM: 'aptkit-wait',
+    STATUS_WAITING_CONFIG_FILE_PROMPT:  'aptkit-wait'}
 
 _ICONS_ROLE = {
-    ROLE_INSTALL_FILE: 'aptdaemon-add',
-    ROLE_INSTALL_PACKAGES: 'aptdaemon-add',
-    ROLE_UPDATE_CACHE: 'aptdaemon-update-cache',
-    ROLE_REMOVE_PACKAGES: 'aptdaemon-delete',
-    ROLE_UPGRADE_PACKAGES: 'aptdaemon-upgrade',
+    ROLE_INSTALL_FILE: 'aptkit-add',
+    ROLE_INSTALL_PACKAGES: 'aptkit-add',
+    ROLE_UPDATE_CACHE: 'aptkit-update-cache',
+    ROLE_REMOVE_PACKAGES: 'aptkit-delete',
+    ROLE_UPGRADE_PACKAGES: 'aptkit-upgrade',
     ROLE_UPGRADE_SYSTEM: 'system-software-update'}
 
 _ANIMATIONS_STATUS = {
-    STATUS_CANCELLING: 'aptdaemon-action-cleaning-up',
-    STATUS_CLEANING_UP: 'aptdaemon-action-cleaning-up',
-    STATUS_RESOLVING_DEP: 'aptdaemon-action-resolving',
-    STATUS_DOWNLOADING: 'aptdaemon-action-downloading',
-    STATUS_DOWNLOADING_REPO: 'aptdaemon-action-downloading',
-    STATUS_LOADING_CACHE: 'aptdaemon-action-updating-cache',
-    STATUS_WAITING: 'aptdaemon-action-waiting',
-    STATUS_WAITING_LOCK: 'aptdaemon-action-waiting',
-    STATUS_WAITING_MEDIUM: 'aptdaemon-action-waiting',
-    STATUS_WAITING_CONFIG_FILE_PROMPT: 'aptdaemon-action-waiting'}
+    STATUS_CANCELLING: 'aptkit-action-cleaning-up',
+    STATUS_CLEANING_UP: 'aptkit-action-cleaning-up',
+    STATUS_RESOLVING_DEP: 'aptkit-action-resolving',
+    STATUS_DOWNLOADING: 'aptkit-action-downloading',
+    STATUS_DOWNLOADING_REPO: 'aptkit-action-downloading',
+    STATUS_LOADING_CACHE: 'aptkit-action-updating-cache',
+    STATUS_WAITING: 'aptkit-action-waiting',
+    STATUS_WAITING_LOCK: 'aptkit-action-waiting',
+    STATUS_WAITING_MEDIUM: 'aptkit-action-waiting',
+    STATUS_WAITING_CONFIG_FILE_PROMPT: 'aptkit-action-waiting'}
 
 _PAST_ROLE = {
     ROLE_INSTALL_FILE: _("Installed file"),
@@ -432,7 +432,7 @@ _DESCS_ERROR = {
     ERROR_PACKAGE_MANAGER_FAILED: _("The installation or removal of a "
                                     "software package failed."),
     ERROR_NOT_SUPPORTED: _("The requested feature is not supported."),
-    ERROR_UNKNOWN: _("There seems to be a programming error in aptdaemon, "
+    ERROR_UNKNOWN: _("There seems to be a programming error in aptkit, "
                      "the software that allows you to install/remove "
                      "software and to perform other package management "
                      "related tasks."),
@@ -581,7 +581,7 @@ def get_status_icon_name_from_enum(enum):
     try:
         return _ICONS_STATUS[enum]
     except KeyError:
-        return "aptdaemon-working"
+        return "aptkit-working"
 
 
 def get_role_icon_name_from_enum(enum):
@@ -593,7 +593,7 @@ def get_role_icon_name_from_enum(enum):
     try:
         return _ICONS_ROLE[enum]
     except KeyError:
-        return "aptdaemon-working"
+        return "aptkit-working"
 
 
 def get_status_animation_name_from_enum(enum):

@@ -4,9 +4,9 @@ import dbus
 
 from gi.repository import GLib
 
-from aptdaemon.client import AptClient
-from aptdaemon.defer import inline_callbacks
-from aptdaemon import policykit1
+from aptkit.client import AptClient
+from aptkit.defer import inline_callbacks
+from aptkit import policykit1
 
 loop = GLib.MainLoop()
 

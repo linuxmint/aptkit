@@ -28,8 +28,8 @@ import struct
 import apt_pkg
 from gi.repository import GLib
 
-from aptdaemon import enums
-from aptdaemon.errors import TransactionCancelled
+from aptkit import enums
+from aptkit.errors import TransactionCancelled
 
 
 class LockFailedError(Exception):

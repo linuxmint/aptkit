@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Core components of aptdaemon.
+Core components of aptkit.
 
-This module provides the following core classes of the aptdaemon:
-AptDaemon - complete daemon for managing software via DBus interface
+This module provides the following core classes of the aptkit:
+AptKit - complete daemon for managing software via DBus interface
 Transaction - represents a software management operation
-TransactionQueue - queue for aptdaemon transactions
+TransactionQueue - queue for aptkit transactions
 
 The main function allows to run the daemon as a command.
 """
@@ -28,10 +28,10 @@ The main function allows to run the daemon as a command.
 
 __author__ = "Sebastian Heinlein <devel@glatzor.de>"
 
-__all__ = ("Transaction", "TransactionQueue", "AptDaemon",
-           "APTDAEMON_TRANSACTION_DBUS_INTERFACE", "APTDAEMON_DBUS_INTERFACE"
-           "APTDAEMON_DBUS_PATH", "APTDAEMON_DBUS_SERVICE",
-           "APTDAEMON_IDLE_CHECK_INTERVAL", "APTDAEMON_IDLE_TIMEOUT",
+__all__ = ("Transaction", "TransactionQueue", "AptKit",
+           "APTKIT_TRANSACTION_DBUS_INTERFACE", "APTKIT_DBUS_INTERFACE"
+           "APTKIT_DBUS_PATH", "APTKIT_DBUS_SERVICE",
+           "APTKIT_IDLE_CHECK_INTERVAL", "APTKIT_IDLE_TIMEOUT",
            "TRANSACTION_IDLE_TIMEOUT", "TRANSACTION_DEL_TIMEOUT")
 
 import collections
@@ -68,7 +68,7 @@ from .loop import mainloop
 from .logger import ColoredFormatter
 
 # Setup i18n
-_ = lambda msg: gettext.dgettext("aptdaemon", msg)
+_ = lambda msg: gettext.dgettext("aptkit", msg)
 if sys.version >= '3':
     _gettext_method = "gettext"
     _ngettext_method = "ngettext"
@@ -76,14 +76,14 @@ else:
     _gettext_method = "ugettext"
     _ngettext_method = "ungettext"
 
-APTDAEMON_DBUS_INTERFACE = 'org.debian.apt'
-APTDAEMON_DBUS_PATH = '/org/debian/apt'
-APTDAEMON_DBUS_SERVICE = 'org.debian.apt'
+APTKIT_DBUS_INTERFACE = 'org.debian.apt'
+APTKIT_DBUS_PATH = '/org/debian/apt'
+APTKIT_DBUS_SERVICE = 'org.debian.apt'
 
-APTDAEMON_TRANSACTION_DBUS_INTERFACE = 'org.debian.apt.transaction'
+APTKIT_TRANSACTION_DBUS_INTERFACE = 'org.debian.apt.transaction'
 
-APTDAEMON_IDLE_CHECK_INTERVAL = 60
-APTDAEMON_IDLE_TIMEOUT = 10 * 60
+APTKIT_IDLE_CHECK_INTERVAL = 60
+APTKIT_IDLE_TIMEOUT = 10 * 60
 
 # Maximum allowed time between the creation of a transaction and its queuing
 TRANSACTION_IDLE_TIMEOUT = 300
@@ -108,7 +108,7 @@ os.putenv("PATH",
           "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin")
 
 # Setup logging to syslog and the console
-log = logging.getLogger("AptDaemon")
+log = logging.getLogger("AptKit")
 try:
     _syslog_handler = logging.handlers.SysLogHandler(
         address="/dev/log",
@@ -128,7 +128,7 @@ _console_formatter = ColoredFormatter("%(asctime)s %(name)s [%(levelname)s]: "
 _console_handler.setFormatter(_console_formatter)
 log.addHandler(_console_handler)
 # FIXME: Use LoggerAdapter (requires Python 2.6)
-log_trans = logging.getLogger("AptDaemon.Trans")
+log_trans = logging.getLogger("AptKit.Trans")
 
 # Required for translations from APT
 try:
@@ -138,13 +138,13 @@ except locale.Error:
 
 
 def _excepthook(exc_type, exc_obj, exc_tb, apport_excepthook):
-    """Handle exceptions of aptdaemon and avoid tiggering apport crash
+    """Handle exceptions of aptkit and avoid tiggering apport crash
     reports for valid DBusExceptions that are sent to the client.
     """
     # apport registers it's own excepthook as sys.excepthook. So we have to
     # send exceptions that we don't want to be tracked to Python's
     # internal excepthook directly
-    if issubclass(exc_type, errors.AptDaemonError):
+    if issubclass(exc_type, errors.AptKitError):
         sys.__excepthook__(exc_type, exc_obj, exc_tb)
     else:
         apport_excepthook(exc_type, exc_obj, exc_tb)
@@ -347,7 +347,7 @@ class Transaction(DBusObject):
             self.bus = bus
             if bus is None:
                 self.bus = dbus.SystemBus()
-            bus_name = dbus.service.BusName(APTDAEMON_DBUS_SERVICE, self.bus)
+            bus_name = dbus.service.BusName(APTKIT_DBUS_SERVICE, self.bus)
             dbus_path = self.tid
         else:
             bus = None
@@ -754,7 +754,7 @@ class Transaction(DBusObject):
     # Signals
 
     # pylint: disable-msg=C0103,C0322
-    @dbus.service.signal(dbus_interface=APTDAEMON_TRANSACTION_DBUS_INTERFACE,
+    @dbus.service.signal(dbus_interface=APTKIT_TRANSACTION_DBUS_INTERFACE,
                          signature="sv")
     def PropertyChanged(self, property, value):
         """The signal gets emitted if a property of the transaction changed.
@@ -768,7 +768,7 @@ class Transaction(DBusObject):
         log_trans.debug("Emitting PropertyChanged: %s, %s" % (property, value))
 
     # pylint: disable-msg=C0103,C0322
-    @dbus.service.signal(dbus_interface=APTDAEMON_TRANSACTION_DBUS_INTERFACE,
+    @dbus.service.signal(dbus_interface=APTKIT_TRANSACTION_DBUS_INTERFACE,
                          signature="s")
     def Finished(self, exit_state):
         """The signal gets emitted if the transaction has been finished.
@@ -781,7 +781,7 @@ class Transaction(DBusObject):
                         enums.get_exit_string_from_enum(exit_state))
 
     # pylint: disable-msg=C0103,C0322
-    @dbus.service.signal(dbus_interface=APTDAEMON_TRANSACTION_DBUS_INTERFACE,
+    @dbus.service.signal(dbus_interface=APTKIT_TRANSACTION_DBUS_INTERFACE,
                          signature="ss")
     def MediumRequired(self, medium, drive):
         """Set and emit the required medium change.
@@ -796,7 +796,7 @@ class Transaction(DBusObject):
         log_trans.debug("Emitting MediumRequired: %s, %s" % (medium, drive))
 
     # pylint: disable-msg=C0103,C0322
-    @dbus.service.signal(dbus_interface=APTDAEMON_TRANSACTION_DBUS_INTERFACE,
+    @dbus.service.signal(dbus_interface=APTKIT_TRANSACTION_DBUS_INTERFACE,
                          signature="ss")
     def ConfigFileConflict(self, old, new):
         """Set and emit the ConfigFileConflict signal.
@@ -834,7 +834,7 @@ class Transaction(DBusObject):
                 self.locale = dbus.String(lang)
             else:
                 self.locale = dbus.String("%s.%s" % (lang, encoding))
-            self._translation = gettext.translation("aptdaemon",
+            self._translation = gettext.translation("aptkit",
                                                     fallback=True,
                                                     languages=[lang])
             self.PropertyChanged("locale", self.locale)
@@ -878,7 +878,7 @@ class Transaction(DBusObject):
                              self.allow_unauthenticated)
 
     # pylint: disable-msg=C0103,C0322
-    @dbus.service.method(APTDAEMON_TRANSACTION_DBUS_INTERFACE,
+    @dbus.service.method(APTKIT_TRANSACTION_DBUS_INTERFACE,
                          in_signature="s", out_signature="",
                          sender_keyword="sender")
     def RunAfter(self, tid, sender):
@@ -903,7 +903,7 @@ class Transaction(DBusObject):
         trans_before.after = self
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_TRANSACTION_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_TRANSACTION_DBUS_INTERFACE,
                           in_signature="", out_signature="",
                           sender_keyword="sender")
     def Run(self, sender):
@@ -934,7 +934,7 @@ class Transaction(DBusObject):
         #       the status and re-simulate the transaction
         if self.simulated is None:
             # If there isn't any transaction on the queue we send an early
-            # progress information. Otherwise it juse seems that aptdaemon
+            # progress information. Otherwise it juse seems that aptkit
             # hangs since it doesn't send any progress information after the
             # the transaction has been started
             if not self.queue.worker.trans:
@@ -1010,7 +1010,7 @@ class Transaction(DBusObject):
         return_value(False)
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_TRANSACTION_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_TRANSACTION_DBUS_INTERFACE,
                           in_signature="", out_signature="",
                           sender_keyword="sender")
     def Cancel(self, sender):
@@ -1044,10 +1044,10 @@ class Transaction(DBusObject):
             self.status = enums.STATUS_CANCELLING
             self.paused = False
             return
-        raise errors.AptDaemonError("Could not cancel transaction")
+        raise errors.AptKitError("Could not cancel transaction")
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_TRANSACTION_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_TRANSACTION_DBUS_INTERFACE,
                           in_signature="", out_signature="",
                           sender_keyword="sender")
     def Simulate(self, sender):
@@ -1111,23 +1111,23 @@ class Transaction(DBusObject):
             raise errors.TransactionAlreadyRunning()
         with set_euid_egid(self.uid, self.gid):
             if os.path.dirname(ttyname) != "/dev/pts":
-                raise errors.AptDaemonError("%s isn't a tty" % ttyname)
+                raise errors.AptKitError("%s isn't a tty" % ttyname)
 
             slave_fd = None
             try:
                 slave_fd = os.open(ttyname, os.O_RDWR | os.O_NOCTTY)
             except Exception:
-                raise errors.AptDaemonError("Could not open %s" % ttyname)
+                raise errors.AptKitError("Could not open %s" % ttyname)
             else:
                 if os.fstat(slave_fd).st_uid != self.uid:
-                    raise errors.AptDaemonError("Pty device '%s' has to be owned by"
+                    raise errors.AptKitError("Pty device '%s' has to be owned by"
                                                 "the owner of the transaction "
                                                 "(uid %s) " % (ttyname, self.uid))
                 if os.isatty(slave_fd):
                     self.terminal = dbus.String(ttyname)
                     self.PropertyChanged("Terminal", self.terminal)
                 else:
-                    raise errors.AptDaemonError("%s isn't a tty" % ttyname)
+                    raise errors.AptKitError("%s isn't a tty" % ttyname)
             finally:
                 if slave_fd is not None:
                     os.close(slave_fd)
@@ -1150,18 +1150,18 @@ class Transaction(DBusObject):
             try:
                 stat = os.stat(debconf_socket)
             except Exception:
-                raise errors.AptDaemonError("socket status could not be read: "
+                raise errors.AptKitError("socket status could not be read: "
                                             "%s" % debconf_socket)
             else:
                 if stat.st_uid != self.uid:
-                    raise errors.AptDaemonError("socket '%s' has to be owned by the "
+                    raise errors.AptKitError("socket '%s' has to be owned by the "
                                                 "owner of the "
                                                 "transaction" % debconf_socket)
         self.debconf = dbus.String(debconf_socket)
         self.PropertyChanged("DebconfSocket", self.debconf)
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_TRANSACTION_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_TRANSACTION_DBUS_INTERFACE,
                           in_signature="s", out_signature="",
                           sender_keyword="sender")
     def ProvideMedium(self, medium, sender):
@@ -1181,14 +1181,14 @@ class Transaction(DBusObject):
     def _provide_medium(self, medium, sender):
         yield self._check_foreign_user(sender)
         if not self.required_medium:
-            raise errors.AptDaemonError("There isn't any required medium.")
+            raise errors.AptKitError("There isn't any required medium.")
         if not self.required_medium[0] == medium:
-            raise errors.AptDaemonError("The medium '%s' isn't "
+            raise errors.AptKitError("The medium '%s' isn't "
                                         "requested." % medium)
         self.paused = False
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_TRANSACTION_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_TRANSACTION_DBUS_INTERFACE,
                           in_signature="ss", out_signature="",
                           sender_keyword="sender")
     def ResolveConfigFileConflict(self, config, answer, sender):
@@ -1211,15 +1211,15 @@ class Transaction(DBusObject):
     def _resolve_config_file_conflict(self, config, answer, sender):
         yield self._check_foreign_user(sender)
         if not self.config_file_conflict:
-            raise errors.AptDaemonError("There isn't any config file prompt "
+            raise errors.AptKitError("There isn't any config file prompt "
                                         "required")
         if answer not in ["keep", "replace"]:
             # FIXME: should we re-send the config file prompt
             #        message or assume the client is buggy and
             #        just use a safe default (like keep)?
-            raise errors.AptDaemonError("Invalid value: %s" % answer)
+            raise errors.AptKitError("Invalid value: %s" % answer)
         if not self.config_file_conflict[0] == config:
-            raise errors.AptDaemonError("Invalid config file: %s" % config)
+            raise errors.AptKitError("Invalid config file: %s" % config)
         self.config_file_conflict_resolution = answer
         self.paused = False
 
@@ -1227,7 +1227,7 @@ class Transaction(DBusObject):
     def _set_property(self, iface, name, value, sender):
         """Helper to set a name on the properties D-Bus interface."""
         yield self._check_foreign_user(sender)
-        if iface == APTDAEMON_TRANSACTION_DBUS_INTERFACE:
+        if iface == APTKIT_TRANSACTION_DBUS_INTERFACE:
             if name == "MetaData":
                 self._set_meta_data(value)
             elif name == "Terminal":
@@ -1251,7 +1251,7 @@ class Transaction(DBusObject):
 
     def _get_properties(self, iface):
         """Helper to get the properties of a D-Bus interface."""
-        if iface == APTDAEMON_TRANSACTION_DBUS_INTERFACE:
+        if iface == APTKIT_TRANSACTION_DBUS_INTERFACE:
             return {"Role": self.role,
                     "Progress": self.progress,
                     "ProgressDetails": self.progress_details,
@@ -1297,7 +1297,7 @@ class Transaction(DBusObject):
         if self._translation:
             return self._translation
         else:
-            domain = "aptdaemon"
+            domain = "aptkit"
             return gettext.translation(domain, gettext.bindtextdomain(domain),
                                        fallback=True)
 
@@ -1399,7 +1399,7 @@ class TransactionQueue(GObject.GObject):
         return list(self._queue)
 
 
-class AptDaemon(DBusObject):
+class AptKit(DBusObject):
 
     """Provides a system daemon to process package management tasks.
 
@@ -1409,7 +1409,7 @@ class AptDaemon(DBusObject):
     """
 
     def __init__(self, options, connect=True, bus=None):
-        """Initialize a new AptDaemon instance.
+        """Initialize a new AptKit instance.
 
         Keyword arguments:
         options -- command line options of the type optparse.Values
@@ -1430,11 +1430,11 @@ class AptDaemon(DBusObject):
             if bus is None:
                 bus = dbus.SystemBus()
             self.bus = bus
-            bus_path = APTDAEMON_DBUS_PATH
+            bus_path = APTKIT_DBUS_PATH
             # Check if another object has already registered the name on
             # the bus. Quit the other daemon if replace would be set
             try:
-                bus_name = dbus.service.BusName(APTDAEMON_DBUS_SERVICE,
+                bus_name = dbus.service.BusName(APTKIT_DBUS_SERVICE,
                                                 bus,
                                                 do_not_queue=True)
             except dbus.exceptions.NameExistsException:
@@ -1442,12 +1442,12 @@ class AptDaemon(DBusObject):
                     log.critical("Another daemon is already running")
                     sys.exit(1)
                 log.warning("Replacing already running daemon")
-                the_other_guy = bus.get_object(APTDAEMON_DBUS_SERVICE,
-                                               APTDAEMON_DBUS_PATH)
-                the_other_guy.Quit(dbus_interface=APTDAEMON_DBUS_INTERFACE,
+                the_other_guy = bus.get_object(APTKIT_DBUS_SERVICE,
+                                               APTKIT_DBUS_PATH)
+                the_other_guy.Quit(dbus_interface=APTKIT_DBUS_INTERFACE,
                                    timeout=300)
                 time.sleep(1)
-                bus_name = dbus.service.BusName(APTDAEMON_DBUS_SERVICE,
+                bus_name = dbus.service.BusName(APTKIT_DBUS_SERVICE,
                                                 bus,
                                                 do_not_queue=True)
         else:
@@ -1485,7 +1485,7 @@ class AptDaemon(DBusObject):
         self.ActiveTransactionsChanged(current, queued)
 
     # pylint: disable-msg=C0103,C0322
-    @dbus.service.signal(dbus_interface=APTDAEMON_DBUS_INTERFACE,
+    @dbus.service.signal(dbus_interface=APTKIT_DBUS_INTERFACE,
                          signature="sv")
     def PropertyChanged(self, property, value):
         """The signal gets emitted if a property of the transaction changed.
@@ -1499,7 +1499,7 @@ class AptDaemon(DBusObject):
         log.debug("Emitting PropertyChanged: %s, %s" % (property, value))
 
     # pylint: disable-msg=C0103,C0322
-    @dbus.service.signal(dbus_interface=APTDAEMON_DBUS_INTERFACE,
+    @dbus.service.signal(dbus_interface=APTKIT_DBUS_INTERFACE,
                          signature="sas")
     def ActiveTransactionsChanged(self, current, queued):
         """The currently processed or the queued transactions changed.
@@ -1518,7 +1518,7 @@ class AptDaemon(DBusObject):
         """Start the daemon and listen for calls."""
         if self.options.disable_timeout is False:
             log.debug("Using inactivity check")
-            GLib.timeout_add_seconds(APTDAEMON_IDLE_CHECK_INTERVAL,
+            GLib.timeout_add_seconds(APTKIT_IDLE_CHECK_INTERVAL,
                                      self._check_for_inactivity)
         log.debug("Waiting for calls")
         try:
@@ -1539,7 +1539,7 @@ class AptDaemon(DBusObject):
         return_value(trans.tid)
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="", out_signature="s",
                           sender_keyword="sender")
     def FixIncompleteInstall(self, sender):
@@ -1556,7 +1556,7 @@ class AptDaemon(DBusObject):
         return self._create_trans(enums.ROLE_FIX_INCOMPLETE_INSTALL, sender)
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="", out_signature="s",
                           sender_keyword="sender")
     def FixBrokenDepends(self, sender):
@@ -1572,7 +1572,7 @@ class AptDaemon(DBusObject):
         return self._create_trans(enums.ROLE_FIX_BROKEN_DEPENDS, sender)
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="", out_signature="s",
                           sender_keyword="sender")
     def UpdateCache(self, sender):
@@ -1591,7 +1591,7 @@ class AptDaemon(DBusObject):
                                   kwargs=kwargs)
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="s", out_signature="s",
                           sender_keyword="sender")
     def UpdateCachePartially(self, sources_list, sender):
@@ -1602,9 +1602,9 @@ class AptDaemon(DBusObject):
         :ref:`PolicyKit privilege <policykit>`.
 
         :param sources_list: The absolute path to a sources.list, e.g.
-            :file:`/etc/apt/sources.list.d/ppa-aptdaemon.list` or the name
+            :file:`/etc/apt/sources.list.d/ppa-aptkit.list` or the name
             of the snippet in :file:`/etc/apt/sources.list.d/`, e.g.
-            :file:`ppa-aptdaemon.list`.
+            :file:`ppa-aptkit.list`.
         :type sources_list: s
 
         :returns: The D-Bus path of the new transaction object which
@@ -1616,7 +1616,7 @@ class AptDaemon(DBusObject):
                                   kwargs=kwargs)
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="as", out_signature="s",
                           sender_keyword="sender")
     def RemovePackages(self, package_names, sender):
@@ -1639,7 +1639,7 @@ class AptDaemon(DBusObject):
                                   packages=([], [], package_names, [], [], []))
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="b", out_signature="s",
                           sender_keyword="sender")
     def UpgradeSystem(self, safe_mode, sender):
@@ -1661,7 +1661,7 @@ class AptDaemon(DBusObject):
                                   kwargs={"safe_mode": safe_mode})
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="asasasasasas", out_signature="s",
                           sender_keyword="sender")
     def CommitPackages(self, install, reinstall, remove, purge, upgrade,
@@ -1716,7 +1716,7 @@ class AptDaemon(DBusObject):
                                   packages=packages_lst)
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="as", out_signature="s",
                           sender_keyword="sender")
     def InstallPackages(self, package_names, sender):
@@ -1742,7 +1742,7 @@ class AptDaemon(DBusObject):
                                   packages=(package_names, [], [], [], [], []))
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="as", out_signature="s",
                           sender_keyword="sender")
     def UpgradePackages(self, package_names, sender):
@@ -1768,7 +1768,7 @@ class AptDaemon(DBusObject):
                                   packages=([], [], [], [], package_names, []))
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="ss", out_signature="s",
                           sender_keyword="sender")
     def AddVendorKeyFromKeyserver(self, keyid, keyserver, sender):
@@ -1795,7 +1795,7 @@ class AptDaemon(DBusObject):
                                                   "keyserver": keyserver})
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="s", out_signature="s",
                           sender_keyword="sender")
     def AddVendorKeyFromFile(self, path, sender):
@@ -1816,7 +1816,7 @@ class AptDaemon(DBusObject):
                                   sender, kwargs={"path": path})
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="s", out_signature="s",
                           sender_keyword="sender")
     def RemoveVendorKey(self, fingerprint, sender):
@@ -1837,7 +1837,7 @@ class AptDaemon(DBusObject):
                                   sender, kwargs={"fingerprint": fingerprint})
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="sb", out_signature="s",
                           sender_keyword="sender")
     def InstallFile(self, path, force, sender):
@@ -1864,7 +1864,7 @@ class AptDaemon(DBusObject):
                                                   "force": force})
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="", out_signature="s",
                           sender_keyword="sender")
     def Clean(self, sender):
@@ -1880,7 +1880,7 @@ class AptDaemon(DBusObject):
         return self._create_trans(enums.ROLE_CLEAN, sender)
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="ass", out_signature="s",
                           sender_keyword="sender")
     def Reconfigure(self, packages, priority, sender):
@@ -1906,7 +1906,7 @@ class AptDaemon(DBusObject):
                                   kwargs={"priority": priority})
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="sssasss", out_signature="s",
                           sender_keyword="sender")
     def AddRepository(self, src_type, uri, dist, comps, comment, sourcesfile,
@@ -1944,7 +1944,7 @@ class AptDaemon(DBusObject):
                                           "sourcesfile": sourcesfile})
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="s", out_signature="s",
                           sender_keyword="sender")
     def EnableDistroComponent(self, component, sender):
@@ -1969,7 +1969,7 @@ class AptDaemon(DBusObject):
                                   kwargs={"component": component})
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="", out_signature="as",
                           sender_keyword="sender")
     def GetTrustedVendorKeys(self, sender):
@@ -1993,7 +1993,7 @@ class AptDaemon(DBusObject):
         return_value(fingerprints)
 
     # pylint: disable-msg=C0103,C0322
-    @dbus.service.method(APTDAEMON_DBUS_INTERFACE,
+    @dbus.service.method(APTKIT_DBUS_INTERFACE,
                          in_signature="", out_signature="sas")
     def GetActiveTransactions(self):
         """Return the currently running transaction and the list of queued
@@ -2008,7 +2008,7 @@ class AptDaemon(DBusObject):
         return current, queued
 
     # pylint: disable-msg=C0103,C0322
-    @dbus.service.method(APTDAEMON_DBUS_INTERFACE,
+    @dbus.service.method(APTKIT_DBUS_INTERFACE,
                          in_signature="", out_signature="",
                          sender_keyword="caller_name")
     def Quit(self, caller_name):
@@ -2019,7 +2019,7 @@ class AptDaemon(DBusObject):
         log.debug("Exit")
 
     # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTDAEMON_DBUS_INTERFACE,
+    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="sss", out_signature="s",
                           sender_keyword="sender")
     def AddLicenseKey(self, pkg_name, json_token, server_name, sender):
@@ -2052,7 +2052,7 @@ class AptDaemon(DBusObject):
         action = policykit1.PK_ACTION_CHANGE_CONFIG
         yield policykit1.check_authorization_by_name(sender, action,
                                                      bus=self.bus)
-        if iface == APTDAEMON_DBUS_INTERFACE:
+        if iface == APTKIT_DBUS_INTERFACE:
             if name == "PopConParticipation":
                 self.worker.set_config(name, dbus.Boolean(value))
             elif name == "AutoUpdateInterval":
@@ -2078,23 +2078,23 @@ class AptDaemon(DBusObject):
             name, version, release = split_package_id(fullname)
             name, sep, auto_flag = name.partition("#")
             if not auto_flag in ("", "auto"):
-                raise errors.AptDaemonError("%s isn't a valid flag" %
+                raise errors.AptKitError("%s isn't a valid flag" %
                                             auto_flag)
             if not re.match(REGEX_VALID_PACKAGENAME, name):
-                raise errors.AptDaemonError("%s isn't a valid package name" %
+                raise errors.AptKitError("%s isn't a valid package name" %
                                             name)
             if (version is not None and
                     not re.match(REGEX_VALID_VERSION, version)):
-                raise errors.AptDaemonError("%s isn't a valid version" %
+                raise errors.AptKitError("%s isn't a valid version" %
                                             version)
             if (release is not None and
                     not re.match(REGEX_VALID_RELEASE, release)):
-                raise errors.AptDaemonError("%s isn't a valid release" %
+                raise errors.AptKitError("%s isn't a valid release" %
                                             release)
 
     def _get_properties(self, iface):
         """Helper get the properties of a D-Bus interface."""
-        if iface == APTDAEMON_DBUS_INTERFACE:
+        if iface == APTKIT_DBUS_INTERFACE:
             return {
                 "AutoUpdateInterval": dbus.Int32(
                     self.worker.get_config("AutoUpdateInterval")),
@@ -2117,13 +2117,13 @@ class AptDaemon(DBusObject):
 
     def _check_for_inactivity(self):
         """Shutdown the daemon if it has been inactive for time specified
-        in APTDAEMON_IDLE_TIMEOUT.
+        in APTKIT_IDLE_TIMEOUT.
         """
         log.debug("Checking for inactivity")
         timestamp = self.queue.worker.last_action_timestamp
         if (not self.queue.worker.trans and
                 not GLib.main_context_default().pending() and
-                time.time() - timestamp > APTDAEMON_IDLE_TIMEOUT and
+                time.time() - timestamp > APTKIT_IDLE_TIMEOUT and
                 not self.queue):
             log.info("Quitting due to inactivity")
             self.Quit(None)
@@ -2190,7 +2190,7 @@ def main():
         bus = dbus.SessionBus()
     else:
         bus = None
-    daemon = AptDaemon(options, bus=bus)
+    daemon = AptKit(options, bus=bus)
     if options.profile:
         import profile
         profiler = profile.Profile()
