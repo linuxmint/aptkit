@@ -20,60 +20,60 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-03-09 23:28+0000\n"
 "X-Generator: Launchpad (build 16523)\n"
 
-#: ../data/org.debian.apt.policy.in.h:1
+#: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
 msgstr "Спіс ключоў давераных пастаўшчыкоў"
 
-#: ../data/org.debian.apt.policy.in.h:2
+#: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "Для прагляду спісу давераных ключоў патрабуецца аўтэнтыфікацыя."
 
-#: ../data/org.debian.apt.policy.in.h:3 ../aptkit/console.py:619
+#: ../data/org.debian.aptkit.policy.in.h:3 ../aptkit/console.py:619
 msgid "Remove downloaded package files"
 msgstr "Выдаліць файлы загружаных пакетаў"
 
-#: ../data/org.debian.apt.policy.in.h:4
+#: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr "Вам неабходна аўтарызавацца для ачысткі файлаў загружаных пакетаў."
 
-#: ../data/org.debian.apt.policy.in.h:5
+#: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
 msgstr "Змяніць сховішча з праграмамі"
 
-#: ../data/org.debian.apt.policy.in.h:6
+#: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
 msgstr "Вам трэба аўтарызавацца для змены налад праграмнага забеспячэння."
 
-#: ../data/org.debian.apt.policy.in.h:7
+#: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
 msgstr "Змяніць сховішча праграмнага забеспячэння"
 
-#: ../data/org.debian.apt.policy.in.h:8
+#: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr "Каб змяніць налады сховішча, вы павінны аўтарызавацца."
 
-#: ../data/org.debian.apt.policy.in.h:9
+#: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
 msgstr "Усталёўка файла пакета"
 
-#: ../data/org.debian.apt.policy.in.h:10
+#: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
 msgstr "Каб усталяваць гэты пакет, вы павінны аўтарызавацца."
 
-#: ../data/org.debian.apt.policy.in.h:11
+#: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
 msgstr "Абнаўленне інфармацыі аб пакетах"
 
-#: ../data/org.debian.apt.policy.in.h:12
+#: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
 msgstr ""
 "Для абнаўлення каталога праграмнага забеспячэння патрабуецца аўтэнтыфікацыя."
 
-#: ../data/org.debian.apt.policy.in.h:13
+#: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
 msgstr "Усталяваць ці выдаліць пакеты"
 
-#: ../data/org.debian.apt.policy.in.h:14
+#: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
 msgstr "Каб усталяваць ці выдаліць праграму, вы павінны аўтарызавацца."
 
@@ -81,17 +81,17 @@ msgstr "Каб усталяваць ці выдаліць праграму, вы
 #. from a high trusted repository that can be explicitely whitelisted.
 #.
 #. The defaults for this action are the same as
-#. "org.debian.apt.install-or-remove-packages".
+#. "org.debian.aptkit.install-or-remove-packages".
 #.
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
 #.
-#: ../data/org.debian.apt.policy.in.h:25
+#: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
 msgstr ""
 
-#: ../data/org.debian.apt.policy.in.h:26
+#: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
 msgstr ""
 
@@ -100,11 +100,11 @@ msgstr ""
 #.
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.debian.apt.policy.in.h:32
+#: ../data/org.debian.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "Дадаць новае сховішча і ўсталяваць пакеты з яго"
 
-#: ../data/org.debian.apt.policy.in.h:33
+#: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
 msgstr "Каб усталяваць праграмы з новай крыніцы, вы павінны аўтарызавацца."
 
@@ -116,39 +116,39 @@ msgstr "Каб усталяваць праграмы з новай крыніц�
 #.
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.debian.apt.policy.in.h:42
+#: ../data/org.debian.aptkit.policy.in.h:42
 msgid "Add a new repository of purchased software and install packages from it"
 msgstr ""
 "Дадаць новае сховішча платнага праграмнага забеспячэння і ўсталяваць пакеты "
 "з яго"
 
-#: ../data/org.debian.apt.policy.in.h:43
+#: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
 msgstr "Каб усталяваць набытыя праграмы, вы павінны аўтарызавацца."
 
-#: ../data/org.debian.apt.policy.in.h:44
+#: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
 msgstr "Абнаўленне пакетаў"
 
-#: ../data/org.debian.apt.policy.in.h:45
+#: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
 msgstr "Для ўсталёўкі абнаўленняў патрабуецца аўтэнтыфікацыя."
 
-#: ../data/org.debian.apt.policy.in.h:46
+#: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
 msgstr "Адмяніць задачу іншага карыстальніка"
 
-#: ../data/org.debian.apt.policy.in.h:47
+#: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
 "Для скасавання не сваіх змен у праграмным забеспячэнні патрабуецца "
 "аўтэнтыфікацыя."
 
-#: ../data/org.debian.apt.policy.in.h:48
+#: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
 msgstr "Усталяваць проксі-сервер для загрузак праграм"
 
-#: ../data/org.debian.apt.policy.in.h:49
+#: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""

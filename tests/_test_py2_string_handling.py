@@ -51,7 +51,7 @@ class TestUnicodeDecoding(AptKitTestCase):
         self.trans = Transaction(None, "role-test", None,
                                  os.getpid(), os.getuid(), os.getgid(),
                                  sys.argv[0],
-                                 "org.debian.apt.test", bus=self.dbus)
+                                 "org.debian.aptkit.test", bus=self.dbus)
 
     def test(self):
         # ensure we don't crash regardless if str or unicode is passed here

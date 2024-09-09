@@ -39,7 +39,7 @@ class DBusTypeTest(test.AptKitTestCase):
         doc = ""
         iface = ""
         for match in re.split(REGEX_IFACE, docu, re.MULTILINE):
-            if match.startswith("org.debian.apt"):
+            if match.startswith("org.debian.aptkit"):
                 iface = match
                 self.ifaces[iface] = {}
                 doc = ""
@@ -139,7 +139,7 @@ class DBusTypeTest(test.AptKitTestCase):
         """Test object properties."""
         trans = core.Transaction(None, enums.ROLE_REMOVE_PACKAGES, None,
                                  os.getpid(), os.getuid(), sys.argv[0],
-                                 "org.debian.apt.test", bus=self.dbus)
+                                 "org.debian.aptkit.test", bus=self.dbus)
         proxy = self.dbus.get_object(core.APTKIT_DBUS_INTERFACE,
                                      trans.tid)
         iface = core.APTKIT_TRANSACTION_DBUS_INTERFACE
@@ -155,12 +155,12 @@ class DBusTypeTest(test.AptKitTestCase):
         """Test signal emittion."""
         trans = core.Transaction(None, enums.ROLE_COMMIT_PACKAGES, None,
                                  os.getpid(), os.getuid(), sys.argv[0],
-                                 "org.debian.apt.test", bus=self.dbus,
+                                 "org.debian.aptkit.test", bus=self.dbus,
                                  packages=[["silly-base"], [], [], [], [], []])
-        proxy = self.dbus.get_object("org.debian.apt", trans.tid)
+        proxy = self.dbus.get_object("org.debian.aptkit", trans.tid)
         proxy.connect_to_signal("PropertyChanged",
                                 self._on_property_changed,
-                                dbus_interface="org.debian.apt.transaction",
+                                dbus_interface="org.debian.aptkit.transaction",
                                 interface_keyword="iface")
         chroot = test.Chroot()
         self.addCleanup(chroot.remove)

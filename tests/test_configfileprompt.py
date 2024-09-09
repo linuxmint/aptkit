@@ -54,7 +54,7 @@ class ConfigFilePromptTestCase(aptkit.test.AptKitTestCase):
                 yield trans.cancel()
             except aptkit.errors.AptKitError as error:
                 self.assertTrue(str(error),
-                                "org.debian.apt: Could not cancel transaction")
+                                "org.debian.aptkit: Could not cancel transaction")
             # Check if we fail correctly on wrong answers
             try:
                 yield trans.resolve_config_file_conflict(config_old,

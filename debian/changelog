@@ -1459,7 +1459,7 @@ aptkit (0.41+bzr604-0ubuntu1) natty; urgency=low
 aptkit (0.41+bzr597-0ubuntu1) natty; urgency=low
 
   * New upstream bzr snapshot:
-    - data/org.debian.apt.policy.in: Drop gettext domain field, it will be
+    - data/org.debian.aptkit.policy.in: Drop gettext domain field, it will be
       added during package build. (LP #690270 upstream task)
   * debian/control, debian/rules: Build with dh_translations. (LP: #690270)
 

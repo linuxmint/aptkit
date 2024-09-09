@@ -17,59 +17,59 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-03-09 23:28+0000\n"
 "X-Generator: Launchpad (build 16523)\n"
 
-#: ../data/org.debian.apt.policy.in.h:1
+#: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
 msgstr "រាយ​បញ្ជី​សោ​​របស់​ក្រុមហ៊ុន​លក់​ដែល​ជឿ​ទុកចិត្ត"
 
-#: ../data/org.debian.apt.policy.in.h:2
+#: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "មើល​បញ្ជី​របស់​​សោ​​​ដែល​ជឿ​ទុកចិត្ត អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
 
-#: ../data/org.debian.apt.policy.in.h:3 ../aptkit/console.py:619
+#: ../data/org.debian.aptkit.policy.in.h:3 ../aptkit/console.py:619
 msgid "Remove downloaded package files"
 msgstr "យក​ឯកសារ​កញ្ចប់​ដែល​បាន​ទាញ​យក​ចេញ"
 
-#: ../data/org.debian.apt.policy.in.h:4
+#: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr "សម្អាត​ឯកសារ​កញ្ចប់​ដែល​បាន​ទាញ​យក អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
 
-#: ../data/org.debian.apt.policy.in.h:5
+#: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
 msgstr "ផ្លាស់ប្ដូរ​ការ​កំណត់​រចនាសម្ព័ន្ធ​ផ្នែកទន់"
 
-#: ../data/org.debian.apt.policy.in.h:6
+#: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
 msgstr "ផ្លាស់ប្ដូរ​ការ​កំណត់​ផ្នែក​ទន់ អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
 
-#: ../data/org.debian.apt.policy.in.h:7
+#: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
 msgstr "ផ្លាស់ប្ដូរ​ឃ្លាំង​ផ្នែកទន់"
 
-#: ../data/org.debian.apt.policy.in.h:8
+#: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr "ផ្លាស់ប្ដូរ​ការ​កំណត់​ឃ្លាំង​ផ្នែក​ទន់ អ្នក​​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
 
-#: ../data/org.debian.apt.policy.in.h:9
+#: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
 msgstr "ដំឡើង​ឯកសារ​កញ្ចប់"
 
-#: ../data/org.debian.apt.policy.in.h:10
+#: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
 msgstr "ដំឡើង​កញ្ចប់​នេះ អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​​ត្រឹមត្រូវ ។"
 
-#: ../data/org.debian.apt.policy.in.h:11
+#: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
 msgstr "ធ្វើ​បច្ចុប្បន្នភាព​ព័ត៌មាន​កញ្ចប់"
 
-#: ../data/org.debian.apt.policy.in.h:12
+#: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
 msgstr "ធ្វើ​បច្ចុប្បន្នភាព​កាតាឡុក​ផ្នែក​ទន់ អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
 
-#: ../data/org.debian.apt.policy.in.h:13
+#: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
 msgstr "ដំឡើង ឬ​យក​កញ្ចប់​ចេញ"
 
-#: ../data/org.debian.apt.policy.in.h:14
+#: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
 msgstr "ដំឡើង ឬ​យក​ផ្នែក​ទន់​ចេញ អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
 
@@ -77,17 +77,17 @@ msgstr "ដំឡើង ឬ​យក​ផ្នែក​ទន់​ចេញ �
 #. from a high trusted repository that can be explicitely whitelisted.
 #.
 #. The defaults for this action are the same as
-#. "org.debian.apt.install-or-remove-packages".
+#. "org.debian.aptkit.install-or-remove-packages".
 #.
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
 #.
-#: ../data/org.debian.apt.policy.in.h:25
+#: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
 msgstr ""
 
-#: ../data/org.debian.apt.policy.in.h:26
+#: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
 msgstr ""
 
@@ -96,11 +96,11 @@ msgstr ""
 #.
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.debian.apt.policy.in.h:32
+#: ../data/org.debian.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "បន្ថែម​ឃ្លាំង​ថ្មី និង​ដំឡើង​កញ្ចប់​ពី​​​​ឃ្លាំង​នេះ"
 
-#: ../data/org.debian.apt.policy.in.h:33
+#: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
 msgstr "ដំឡើង​ផ្នែក​ទន់​ពី​ប្រភព​ថ្មី អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
 
@@ -112,35 +112,35 @@ msgstr "ដំឡើង​ផ្នែក​ទន់​ពី​ប្រភព
 #.
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.debian.apt.policy.in.h:42
+#: ../data/org.debian.aptkit.policy.in.h:42
 msgid "Add a new repository of purchased software and install packages from it"
 msgstr "បន្ថែម​ឃ្លាំង​ថ្មី​នៃ​ផ្នែក​ទន់​ដែល​បាន​ជាវ ហើយ​ដំឡើង​កញ្ចប់​ពី​វា"
 
-#: ../data/org.debian.apt.policy.in.h:43
+#: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
 msgstr "ដំឡើង​ផ្នែក​ទន់​ដែល​បាន​ជាវ អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
 
-#: ../data/org.debian.apt.policy.in.h:44
+#: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
 msgstr "ធ្វើ​ឲ្យ​កញ្ចប់​ប្រសើរ​ឡើង"
 
-#: ../data/org.debian.apt.policy.in.h:45
+#: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
 msgstr "ដំឡើង​ផ្នែក​ទន់​ដែល​បាន​ធ្វើ​បច្ចុប្បន្នភាព អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
 
-#: ../data/org.debian.apt.policy.in.h:46
+#: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
 msgstr "បោះបង់​​កិច្ចការ​របស់​អ្នក​ប្រើ​ផ្សេងទៀត"
 
-#: ../data/org.debian.apt.policy.in.h:47
+#: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr "បោះបង់​ការ​ផ្លាស់ប្ដូរ​ផ្នែក​ទន់​ផ្សេង​ទៀត អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
 
-#: ../data/org.debian.apt.policy.in.h:48
+#: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
 msgstr "កំណត់​ប្រូកស៊ី​សម្រាប់​ការ​ទាញ​យក​ផ្នែក​ទន់"
 
-#: ../data/org.debian.apt.policy.in.h:49
+#: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr "ប្រើ​ម៉ាស៊ីន​បម្រើ​ប្រូកស៊ី​សម្រាប់​​ទាញ​យក​ផ្នែក​ទន់ អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"

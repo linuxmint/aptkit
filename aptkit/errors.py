@@ -42,7 +42,7 @@ class AptKitError(dbus.DBusException):
 
     """Internal error of the aptkit"""
 
-    _dbus_error_name = "org.debian.apt"
+    _dbus_error_name = "org.debian.aptkit"
 
     def __init__(self, message=""):
         message = _convert_unicode(message)
@@ -63,14 +63,14 @@ class TransactionRoleAlreadySet(AptKitError):
 
     """Error if a transaction has already been configured."""
 
-    _dbus_error_name = "org.debian.apt.TransactionRoleAlreadySet"
+    _dbus_error_name = "org.debian.aptkit.TransactionRoleAlreadySet"
 
 
 class TransactionAlreadyRunning(AptKitError):
 
     """Error if a transaction has already been configured."""
 
-    _dbus_error_name = "org.debian.apt.TransactionAlreadyRunning"
+    _dbus_error_name = "org.debian.aptkit.TransactionAlreadyRunning"
 
 
 class TransactionAlreadySimulating(AptKitError):
@@ -79,21 +79,21 @@ class TransactionAlreadySimulating(AptKitError):
     already processed.
     """
 
-    _dbus_error_name = "org.debian.apt.TransactionAlreadySimulating"
+    _dbus_error_name = "org.debian.aptkit.TransactionAlreadySimulating"
 
 
 class ForeignTransaction(AptKitError):
 
     """Error if a transaction was initialized by a different user."""
 
-    _dbus_error_name = "org.debian.apt.TransactionAlreadyRunning"
+    _dbus_error_name = "org.debian.aptkit.TransactionAlreadyRunning"
 
 
 class TransactionFailed(AptKitError):
 
     """Internal error if a transaction could not be processed successfully."""
 
-    _dbus_error_name = "org.debian.apt.TransactionFailed"
+    _dbus_error_name = "org.debian.aptkit.TransactionFailed"
 
     def __init__(self, code, details="", *args):
         if not args:
@@ -122,14 +122,14 @@ class InvalidMetaDataError(AptKitError):
 
     """Invalid meta data given"""
 
-    _dbus_error_name = "org.debian.apt.InvalidMetaData"
+    _dbus_error_name = "org.debian.aptkit.InvalidMetaData"
 
 
 class InvalidProxyError(AptKitError):
 
     """Invalid proxy given"""
 
-    _dbus_error_name = "org.debian.apt.InvalidProxy"
+    _dbus_error_name = "org.debian.aptkit.InvalidProxy"
 
     def __init__(self, proxy):
         AptKitError.__init__(self, "InvalidProxyError: %s" % proxy)
@@ -139,14 +139,14 @@ class TransactionCancelled(AptKitError):
 
     """Internal error if a transaction was cancelled."""
 
-    _dbus_error_name = "org.debian.apt.TransactionCancelled"
+    _dbus_error_name = "org.debian.aptkit.TransactionCancelled"
 
 
 class RepositoryInvalidError(AptKitError):
 
     """The added repository is invalid"""
 
-    _dbus_error_name = "org.debian.apt.RepositoryInvalid"
+    _dbus_error_name = "org.debian.aptkit.RepositoryInvalid"
 
 
 class PolicyKitError(dbus.DBusException):

@@ -117,7 +117,7 @@ class HighTrustRepositoryTestCase(BaseHighTrustTestCase):
         # a high-trust whitelisted pkg and a non-whitelisted one
         trans = Transaction(None, enums.ROLE_INSTALL_PACKAGES, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             packages=[["silly-base", "other-pkg"], [], [], [],
                                       [], []])
         self.worker.simulate(trans)
@@ -129,7 +129,7 @@ class HighTrustRepositoryTestCase(BaseHighTrustTestCase):
         # whitelisted only
         trans = Transaction(None, enums.ROLE_INSTALL_PACKAGES, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             packages=[["silly-base"], [], [], [], [], []])
         self.worker.simulate(trans)
         self.loop.run()

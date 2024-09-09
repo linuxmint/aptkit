@@ -19,60 +19,60 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-03-09 23:28+0000\n"
 "X-Generator: Launchpad (build 16523)\n"
 
-#: ../data/org.debian.apt.policy.in.h:1
+#: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
 msgstr "Lav en liste med nøgler fra betroede udbydere"
 
-#: ../data/org.debian.apt.policy.in.h:2
+#: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "For at se listen af betroede nøgler, skal du først godkende."
 
-#: ../data/org.debian.apt.policy.in.h:3 ../aptkit/console.py:619
+#: ../data/org.debian.aptkit.policy.in.h:3 ../aptkit/console.py:619
 msgid "Remove downloaded package files"
 msgstr "Fjern hentede pakkefiler"
 
-#: ../data/org.debian.apt.policy.in.h:4
+#: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr "Du skal godkende for at rense hentede pakkefiler."
 
-#: ../data/org.debian.apt.policy.in.h:5
+#: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
 msgstr "Ændr programopsætning"
 
-#: ../data/org.debian.apt.policy.in.h:6
+#: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
 msgstr "Du skal godkende for at ændre programindstillinger."
 
-#: ../data/org.debian.apt.policy.in.h:7
+#: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
 msgstr "Skift softwarearkiv"
 
-#: ../data/org.debian.apt.policy.in.h:8
+#: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr ""
 "For at ændre indstillinger for softwarearkiver, skal du først godkende."
 
-#: ../data/org.debian.apt.policy.in.h:9
+#: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
 msgstr "Installér pakkefil"
 
-#: ../data/org.debian.apt.policy.in.h:10
+#: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
 msgstr "For at installere denne pakke, skal du først godkende."
 
-#: ../data/org.debian.apt.policy.in.h:11
+#: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
 msgstr "Opdatér pakkeinformation"
 
-#: ../data/org.debian.apt.policy.in.h:12
+#: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
 msgstr "For at opdatere softwarekataloget, skal du først godkende."
 
-#: ../data/org.debian.apt.policy.in.h:13
+#: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
 msgstr "Installér eller fjern pakker"
 
-#: ../data/org.debian.apt.policy.in.h:14
+#: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
 msgstr "For at installere eller fjerne software, skal du først godkende."
 
@@ -80,17 +80,17 @@ msgstr "For at installere eller fjerne software, skal du først godkende."
 #. from a high trusted repository that can be explicitely whitelisted.
 #.
 #. The defaults for this action are the same as
-#. "org.debian.apt.install-or-remove-packages".
+#. "org.debian.aptkit.install-or-remove-packages".
 #.
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
 #.
-#: ../data/org.debian.apt.policy.in.h:25
+#: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
 msgstr "Installér software fra et hvidlistet, højt pålideligt arkiv."
 
-#: ../data/org.debian.apt.policy.in.h:26
+#: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
 msgstr "Der kræves godkendelse for at installere software."
 
@@ -99,11 +99,11 @@ msgstr "Der kræves godkendelse for at installere software."
 #.
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.debian.apt.policy.in.h:32
+#: ../data/org.debian.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "Tilføj et nyt softwarearkiv og installér pakker fra det"
 
-#: ../data/org.debian.apt.policy.in.h:33
+#: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
 msgstr "Du skal godkende for at kunne installere programmer fra en ny kilde."
 
@@ -115,36 +115,36 @@ msgstr "Du skal godkende for at kunne installere programmer fra en ny kilde."
 #.
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.debian.apt.policy.in.h:42
+#: ../data/org.debian.aptkit.policy.in.h:42
 msgid "Add a new repository of purchased software and install packages from it"
 msgstr ""
 "Tilføj et nyt softwarearkiv med købte programmer og installér pakker fra det"
 
-#: ../data/org.debian.apt.policy.in.h:43
+#: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
 msgstr "Du skal godkende for at kunne installere købte programmer."
 
-#: ../data/org.debian.apt.policy.in.h:44
+#: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
 msgstr "Opgradér pakker"
 
-#: ../data/org.debian.apt.policy.in.h:45
+#: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
 msgstr "For at installere opdateret software, skal du først godkende."
 
-#: ../data/org.debian.apt.policy.in.h:46
+#: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
 msgstr "Afbryd en anden brugers opgave"
 
-#: ../data/org.debian.apt.policy.in.h:47
+#: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr "For at annullere en andens softwareændringer, skal du først godkende."
 
-#: ../data/org.debian.apt.policy.in.h:48
+#: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
 msgstr "Sæt en proxy til indhentning af software"
 
-#: ../data/org.debian.apt.policy.in.h:49
+#: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""

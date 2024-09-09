@@ -1,9 +1,9 @@
 etc/apt/apt.conf.d/20aptkit
-etc/dbus-1/system.d/org.debian.apt.conf
+etc/dbus-1/system.d/org.debian.aptkit.conf
 ../../build/scripts-3.*/aptk /usr/sbin
 ../../build/scripts-3.*/aptkcon /usr/bin
-usr/share/dbus-1/system-services/org.debian.apt.service
-usr/share/polkit-1/actions/org.debian.apt.policy
+usr/share/dbus-1/system-services/org.debian.aptkit.service
+usr/share/polkit-1/actions/org.debian.aptkit.policy
 usr/share/locale
 usr/share/man
 usr/share/apport/package-hooks/aptkit.py

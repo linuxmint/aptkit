@@ -29,14 +29,14 @@ Instead of applying the changes to the system only show a progress. This option 
 .SH FILES
 .TP
 .I /etc/apt/apt.conf.d/20aptkit
-Adds a small post update hook which will emit the org.debian.apt.CacheChanged signal on the system D-Bus to indicate that the cache has been changed and a possible running aptk instance should reloade its internal cache.
+Adds a small post update hook which will emit the org.debian.aptkit.CacheChanged signal on the system D-Bus to indicate that the cache has been changed and a possible running aptk instance should reloade its internal cache.
 .TP
-.I /usr/share/polkit-1/actions/org.debian.apt.policy
+.I /usr/share/polkit-1/actions/org.debian.aptkit.policy
 The PolicyKit definitions of the privileges used by aptkit, e.g. to install packages. To change the privileges please have a look at 
 .BR PolicyKit.conf (1).
 .TP
-.I /etc/dbus-1/system.d/org.debian.apt.conf
-The D-Bus configuration of the org.debian.apt name space.
+.I /etc/dbus-1/system.d/org.debian.aptkit.conf
+The D-Bus configuration of the org.debian.aptkit name space.
 .SH DIAGNOSTICS
 By default aptkit logs to the syslog facility AptKit. Furthermore you 
 can use the -d option to get additional information on the command line.
@@ -49,6 +49,6 @@ https://bugs.launchpad.net/aptkit/+filebug
 Sebastian Heinlein <devel at glatzor dot de>
 .SH SEE ALSO
 .BR aptkcon (1),
-.BR org.debian.apt (7),
-.BR org.debian.apt.transaction (7),
+.BR org.debian.aptkit (7),
+.BR org.debian.aptkit.transaction (7),
 .BR PolicyKit.conf (7)

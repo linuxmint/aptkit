@@ -79,7 +79,7 @@ class WorkerTestCase(aptkit.test.AptKitTestCase):
         trans = Transaction(None, enums.ROLE_UPDATE_CACHE,
                             self.queue, os.getpid(), os.getuid(),
                             os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             kwargs={"sources_list": "test.list"})
         self.worker.simulate(trans)
         self.loop.run()
@@ -102,7 +102,7 @@ class WorkerTestCase(aptkit.test.AptKitTestCase):
         trans = Transaction(None, enums.ROLE_UPGRADE_SYSTEM,
                             self.queue, os.getpid(), os.getgid(),
                             os.getuid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             kwargs={"safe_mode": False})
         self.worker.simulate(trans)
         self.loop.run()
@@ -132,7 +132,7 @@ class WorkerTestCase(aptkit.test.AptKitTestCase):
         # Install the package
         trans = Transaction(None, enums.ROLE_INSTALL_PACKAGES, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             packages=[["silly-base"], [], [], [], [], []])
         self.worker.simulate(trans)
         self.loop.run()
@@ -146,7 +146,7 @@ class WorkerTestCase(aptkit.test.AptKitTestCase):
         # Allow installation of unauthenticated packages
         trans = Transaction(None, enums.ROLE_INSTALL_PACKAGES, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             packages=[["silly-base"], [], [], [], [], []])
         trans.allow_unauthenticated = True
         self.worker.simulate(trans)
@@ -166,7 +166,7 @@ class WorkerTestCase(aptkit.test.AptKitTestCase):
         # Install the package
         trans = Transaction(None, enums.ROLE_INSTALL_PACKAGES, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             packages=[["silly-depend-base"], [], [], [],
                                       [], []])
         self.worker.simulate(trans)
@@ -195,7 +195,7 @@ Architecture: all
 Auto-Installed: 1""")
         trans = Transaction(None, enums.ROLE_REMOVE_PACKAGES, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             packages=[[], [], ["silly-depend-base"], [],
                                       [], []])
         trans.remove_obsoleted_depends = True
@@ -221,7 +221,7 @@ Auto-Installed: 1""")
             self.chroot.install_debfile(os.path.join(REPO_PATH, pkg))
         trans = Transaction(None, enums.ROLE_REMOVE_PACKAGES, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             packages=[[], [], ["silly-base"], [], [], []])
         self.worker.simulate(trans)
         self.loop.run()
@@ -242,7 +242,7 @@ Auto-Installed: 1""")
         # Don't allow to remove essential packages
         trans = Transaction(None, enums.ROLE_REMOVE_PACKAGES, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             packages=[[], [], ["silly-essential"], [], [], []])
         self.worker.run(trans)
         self.loop.run()
@@ -265,7 +265,7 @@ Architecture: all
 Auto-Installed: 1""")
         trans = Transaction(None, enums.ROLE_COMMIT_PACKAGES, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             packages=[[], [], [], [],
                                       ["silly-base=0.1-0update1"], []])
         self.worker.run(trans)
@@ -285,7 +285,7 @@ Auto-Installed: 1""")
         self.chroot.install_debfile(pkg)
         trans = Transaction(None, enums.ROLE_COMMIT_PACKAGES, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             packages=[[], [], [], [], [],
                                       ["silly-base=0.1-0"]])
         self.worker.run(trans)
@@ -303,7 +303,7 @@ Auto-Installed: 1""")
             self.chroot.install_debfile(os.path.join(REPO_PATH, pkg))
         trans = Transaction(None, enums.ROLE_REMOVE_PACKAGES, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             packages=[[], [], [], ["silly-config"], [], []])
         self.worker.run(trans)
         self.loop.run()
@@ -323,7 +323,7 @@ Auto-Installed: 1""")
                            "silly-depend-base_0.1-0_all.deb")
         trans = Transaction(None, enums.ROLE_INSTALL_FILE, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             kwargs={"path": os.path.join(REPO_PATH, pkg),
                                     "force": False})
         self.worker.simulate(trans)
@@ -351,7 +351,7 @@ Auto-Installed: 1""")
         pkg = os.path.join(REPO_PATH, "silly-bully_0.1-0_all.deb")
         trans = Transaction(None, enums.ROLE_INSTALL_FILE, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             kwargs={"path": os.path.join(REPO_PATH, pkg),
                                     "force": True})
         self.worker.simulate(trans)
@@ -371,7 +371,7 @@ Auto-Installed: 1""")
         pkg = os.path.join(REPO_PATH, "silly-base_0.1-0_all.deb")
         trans = Transaction(None, enums.ROLE_INSTALL_FILE, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False,
+                            "org.debian.aptkit.test", connect=False,
                             kwargs={"path": os.path.join(REPO_PATH, pkg),
                                     "force": True})
         self.worker.simulate(trans)
@@ -392,7 +392,7 @@ Auto-Installed: 1""")
             self.chroot.install_debfile(os.path.join(REPO_PATH, pkg), True)
         trans = Transaction(None, enums.ROLE_FIX_BROKEN_DEPENDS, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test", connect=False)
+                            "org.debian.aptkit.test", connect=False)
         self.worker.simulate(trans)
         self.loop.run()
         self.assertEqual(trans.depends[enums.PKGS_REMOVE],
@@ -412,7 +412,7 @@ Auto-Installed: 1""")
         self.chroot.add_test_repository()
         trans = Transaction(None, enums.ROLE_COMMIT_PACKAGES, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test",
+                            "org.debian.aptkit.test",
                             packages=[["silly-broken"], [], [], [], [], []],
                             connect=False)
         self.worker.simulate(trans)
@@ -451,7 +451,7 @@ Auto-Installed: 1""")
         self.chroot.add_test_repository()
         trans = Transaction(None, enums.ROLE_ADD_LICENSE_KEY, self.queue,
                             os.getpid(), os.getuid(), os.getgid(), sys.argv[0],
-                            "org.debian.apt.test",
+                            "org.debian.aptkit.test",
                             kwargs={"pkg_name": "silly-license",
                                     "json_token": "lalelu",
                                     "server_name": "mock"},

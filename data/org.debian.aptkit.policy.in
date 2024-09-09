@@ -8,7 +8,7 @@
   <vendor_url>http://launchpad.net/aptkit/</vendor_url>
   <icon_name>package-x-generic</icon_name>
 
-  <action id="org.debian.apt.get-trusted-vendor-keys">
+  <action id="org.debian.aptkit.get-trusted-vendor-keys">
     <_description>
       List keys of trusted vendors
     </_description>
@@ -22,7 +22,7 @@
     </defaults>
   </action>
 
-  <action id="org.debian.apt.clean">
+  <action id="org.debian.aptkit.clean">
     <_description>
       Remove downloaded package files
     </_description>
@@ -36,7 +36,7 @@
     </defaults>
   </action>
 
-  <action id="org.debian.apt.change-config">
+  <action id="org.debian.aptkit.change-config">
     <_description>
       Change software configuration
     </_description>
@@ -50,7 +50,7 @@
     </defaults>
   </action>
 
-  <action id="org.debian.apt.change-repository">
+  <action id="org.debian.aptkit.change-repository">
     <_description>
       Change software repository 
     </_description>
@@ -64,7 +64,7 @@
     </defaults>
   </action>
 
-  <action id="org.debian.apt.install-file">
+  <action id="org.debian.aptkit.install-file">
     <_description>
       Install package file
     </_description>
@@ -78,7 +78,7 @@
     </defaults>
   </action>
 
-  <action id="org.debian.apt.update-cache">
+  <action id="org.debian.aptkit.update-cache">
     <_description>
       Update package information
     </_description>
@@ -92,7 +92,7 @@
     </defaults>
   </action>
 
-  <action id="org.debian.apt.install-or-remove-packages">
+  <action id="org.debian.aptkit.install-or-remove-packages">
     <_description>
       Install or remove packages
     </_description>
@@ -106,12 +106,12 @@
     </defaults>
   </action>
 
-  <action id="org.debian.apt.install-packages.high-trust-repo">
+  <action id="org.debian.aptkit.install-packages.high-trust-repo">
     <!-- This priviledge will be requested when installing a package
          from a high trusted repository that can be explicitely whitelisted.
          
          The defaults for this action are the same as 
-         "org.debian.apt.install-or-remove-packages".
+         "org.debian.aptkit.install-or-remove-packages".
 
          The admin can override them to e.g. allow passwordless installs for
          leightweight applications like unity-webapps or for packages
@@ -130,7 +130,7 @@
     </defaults>
   </action>
 
-  <action id="org.debian.apt.install-packages-from-new-repo">
+  <action id="org.debian.aptkit.install-packages-from-new-repo">
     <!-- This privilege allows to call AddRepository, UpdateCache(Partially)
 	 and InstallPackages in a row and only authenticating once.
 
@@ -149,7 +149,7 @@
     </defaults>
   </action>
 
-  <action id="org.debian.apt.install-purchased-packages">
+  <action id="org.debian.aptkit.install-purchased-packages">
     <!-- This privilege allows to call AddRepository, UpdateCache(Partially)
 	 and InstallPackages in a row and only authenticating once.
 
@@ -171,7 +171,7 @@
     </defaults>
   </action>
 
-  <action id="org.debian.apt.upgrade-packages">
+  <action id="org.debian.aptkit.upgrade-packages">
     <_description>
       Upgrade packages
     </_description>
@@ -183,7 +183,7 @@
     </defaults>
   </action>
 
-  <action id="org.debian.apt.cancel-foreign">
+  <action id="org.debian.aptkit.cancel-foreign">
     <_description>
       Cancel the task of another user
     </_description>
@@ -197,7 +197,7 @@
     </defaults>
   </action>
 
-  <action id="org.debian.apt.set-proxy">
+  <action id="org.debian.aptkit.set-proxy">
     <_description>
       Set a proxy for software downloads
     </_description>

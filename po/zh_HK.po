@@ -19,59 +19,59 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-03-09 23:28+0000\n"
 "X-Generator: Launchpad (build 16523)\n"
 
-#: ../data/org.debian.apt.policy.in.h:1
+#: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
 msgstr "列出信任廠商的金鑰"
 
-#: ../data/org.debian.apt.policy.in.h:2
+#: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "若要檢視信任金鑰清單，您需要通過認證。"
 
-#: ../data/org.debian.apt.policy.in.h:3 ../aptkit/console.py:619
+#: ../data/org.debian.aptkit.policy.in.h:3 ../aptkit/console.py:619
 msgid "Remove downloaded package files"
 msgstr "移除已下載的套件檔案"
 
-#: ../data/org.debian.apt.policy.in.h:4
+#: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr "若要清空下載的套件檔案，您需要通過認證。"
 
-#: ../data/org.debian.apt.policy.in.h:5
+#: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
 msgstr "變更軟件組態"
 
-#: ../data/org.debian.apt.policy.in.h:6
+#: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
 msgstr "若要變更軟件設定值，您需要通過認證。"
 
-#: ../data/org.debian.apt.policy.in.h:7
+#: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
 msgstr "變更軟件套件庫"
 
-#: ../data/org.debian.apt.policy.in.h:8
+#: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr "若要變更軟件套件庫設定值，您需要通過認證。"
 
-#: ../data/org.debian.apt.policy.in.h:9
+#: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
 msgstr "安裝套件檔案"
 
-#: ../data/org.debian.apt.policy.in.h:10
+#: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
 msgstr "若要安裝此套件，您需要通過認證。"
 
-#: ../data/org.debian.apt.policy.in.h:11
+#: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
 msgstr "更新套件資訊"
 
-#: ../data/org.debian.apt.policy.in.h:12
+#: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
 msgstr "若要更新軟件型錄，您需要通過認證。"
 
-#: ../data/org.debian.apt.policy.in.h:13
+#: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
 msgstr "安裝或移除套件"
 
-#: ../data/org.debian.apt.policy.in.h:14
+#: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
 msgstr "若要安裝或移除軟件，您需要通過認證。"
 
@@ -79,17 +79,17 @@ msgstr "若要安裝或移除軟件，您需要通過認證。"
 #. from a high trusted repository that can be explicitely whitelisted.
 #.
 #. The defaults for this action are the same as
-#. "org.debian.apt.install-or-remove-packages".
+#. "org.debian.aptkit.install-or-remove-packages".
 #.
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
 #.
-#: ../data/org.debian.apt.policy.in.h:25
+#: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
 msgstr "從白名單中高度信任的套件庫安裝軟件"
 
-#: ../data/org.debian.apt.policy.in.h:26
+#: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
 msgstr "若要安裝軟件，您需要先通過身份驗證。"
 
@@ -98,11 +98,11 @@ msgstr "若要安裝軟件，您需要先通過身份驗證。"
 #.
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.debian.apt.policy.in.h:32
+#: ../data/org.debian.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "加入新套件庫並且安裝套件它提供的套件"
 
-#: ../data/org.debian.apt.policy.in.h:33
+#: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
 msgstr "若要從新來源安裝軟件，您需要通過認證。"
 
@@ -114,35 +114,35 @@ msgstr "若要從新來源安裝軟件，您需要通過認證。"
 #.
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.debian.apt.policy.in.h:42
+#: ../data/org.debian.aptkit.policy.in.h:42
 msgid "Add a new repository of purchased software and install packages from it"
 msgstr "加入購買軟件的新套件庫並且安裝它提供的套件"
 
-#: ../data/org.debian.apt.policy.in.h:43
+#: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
 msgstr "若要安裝購買的軟件，您需要通過認證。"
 
-#: ../data/org.debian.apt.policy.in.h:44
+#: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
 msgstr "升級套件"
 
-#: ../data/org.debian.apt.policy.in.h:45
+#: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
 msgstr "若要安裝更新版的軟件，您需要通過認證。"
 
-#: ../data/org.debian.apt.policy.in.h:46
+#: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
 msgstr "取消另一位使用者的任務"
 
-#: ../data/org.debian.apt.policy.in.h:47
+#: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr "若要取消其它人所作出的軟件變更，您需要通過認證。"
 
-#: ../data/org.debian.apt.policy.in.h:48
+#: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
 msgstr "設定用來下載軟件的代理伺服器"
 
-#: ../data/org.debian.apt.policy.in.h:49
+#: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr "若要使用代理伺服器以下載軟件，您需要通過認證。"

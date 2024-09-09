@@ -1,5 +1,5 @@
 [encoding: UTF-8]
-data/org.debian.apt.policy.in
+data/org.debian.aptkit.policy.in
 aptkit/console.py
 aptkit/core.py
 aptkit/enums.py

@@ -38,7 +38,7 @@ class GettextTest(test.AptKitTestCase):
 
         self.trans = core.Transaction(None, enums.ROLE_FIX_BROKEN_DEPENDS,
                                       None, os.getpid(), os.getuid(),
-                                      sys.argv[0], "org.debian.apt.test",
+                                      sys.argv[0], "org.debian.aptkit.test",
                                       connect=False)
         self.codes = utils.IsoCodes("iso_639", tag="iso_639_1_code",
                                     fallback_tag="iso_639_2T_code")

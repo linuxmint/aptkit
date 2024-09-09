@@ -20,60 +20,60 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-03-09 23:28+0000\n"
 "X-Generator: Launchpad (build 16523)\n"
 
-#: ../data/org.debian.apt.policy.in.h:1
+#: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
 msgstr "Lista das chaves dos fornecedores de confianza"
 
-#: ../data/org.debian.apt.policy.in.h:2
+#: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "Para ver a lista de chaves de confianza debe autenticarse."
 
-#: ../data/org.debian.apt.policy.in.h:3 ../aptkit/console.py:619
+#: ../data/org.debian.aptkit.policy.in.h:3 ../aptkit/console.py:619
 msgid "Remove downloaded package files"
 msgstr "Retirar os ficheiros de paquetes descargados"
 
-#: ../data/org.debian.apt.policy.in.h:4
+#: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr ""
 "Para limpar os ficheiros de paquetes descargados necesita autenticarse."
 
-#: ../data/org.debian.apt.policy.in.h:5
+#: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
 msgstr "Cambiar a configuración do software"
 
-#: ../data/org.debian.apt.policy.in.h:6
+#: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
 msgstr "Para cambiar a configuración do software necesita autenticarse."
 
-#: ../data/org.debian.apt.policy.in.h:7
+#: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
 msgstr "Cambiar o repositorio de software"
 
-#: ../data/org.debian.apt.policy.in.h:8
+#: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr "Para cambiar a configuración do repositorio debe autenticarse."
 
-#: ../data/org.debian.apt.policy.in.h:9
+#: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
 msgstr "Instalar un ficheiro de paquetes"
 
-#: ../data/org.debian.apt.policy.in.h:10
+#: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
 msgstr "Para instalar este paquete debe autenticarse"
 
-#: ../data/org.debian.apt.policy.in.h:11
+#: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
 msgstr "Actualizar a información dos paquetes"
 
-#: ../data/org.debian.apt.policy.in.h:12
+#: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
 msgstr "Para actualizar o catálogo de software debe autenticarse."
 
-#: ../data/org.debian.apt.policy.in.h:13
+#: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
 msgstr "Instalar ou desinstalar paquetes"
 
-#: ../data/org.debian.apt.policy.in.h:14
+#: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
 msgstr "Para instalar ou desinstalar paquetes debe autenticarse."
 
@@ -81,19 +81,19 @@ msgstr "Para instalar ou desinstalar paquetes debe autenticarse."
 #. from a high trusted repository that can be explicitely whitelisted.
 #.
 #. The defaults for this action are the same as
-#. "org.debian.apt.install-or-remove-packages".
+#. "org.debian.aptkit.install-or-remove-packages".
 #.
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
 #.
-#: ../data/org.debian.apt.policy.in.h:25
+#: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
 msgstr ""
 "Instalar software desde un repositorio no que se ten moita confianza e que "
 "está nunha lista branca."
 
-#: ../data/org.debian.apt.policy.in.h:26
+#: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
 msgstr "Para instalar software haise que autenticar."
 
@@ -102,11 +102,11 @@ msgstr "Para instalar software haise que autenticar."
 #.
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.debian.apt.policy.in.h:32
+#: ../data/org.debian.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "Engadir un repositorio novo e instalar paquetes desde el"
 
-#: ../data/org.debian.apt.policy.in.h:33
+#: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
 msgstr "Para instalar software desde unha fonte nova necesita autenticarse."
 
@@ -118,36 +118,36 @@ msgstr "Para instalar software desde unha fonte nova necesita autenticarse."
 #.
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.debian.apt.policy.in.h:42
+#: ../data/org.debian.aptkit.policy.in.h:42
 msgid "Add a new repository of purchased software and install packages from it"
 msgstr ""
 "Engadir un repositorio novo de software comprado e instalar paquetes desde el"
 
-#: ../data/org.debian.apt.policy.in.h:43
+#: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
 msgstr "Para instalar software comprado necesita autenticarse."
 
-#: ../data/org.debian.apt.policy.in.h:44
+#: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
 msgstr "Anovar paquetes"
 
-#: ../data/org.debian.apt.policy.in.h:45
+#: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
 msgstr "Para instalar as anovacións de software debe autenticarse."
 
-#: ../data/org.debian.apt.policy.in.h:46
+#: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
 msgstr "Cancelar a tarefa doutro usuario"
 
-#: ../data/org.debian.apt.policy.in.h:47
+#: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr "Para cancelar os cambios de outra persoa debe autenticarse."
 
-#: ../data/org.debian.apt.policy.in.h:48
+#: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
 msgstr "Establecer un proxy para as descargas de software"
 
-#: ../data/org.debian.apt.policy.in.h:49
+#: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr "Para usar un servidor proxy para descargar software debe autenticarse."

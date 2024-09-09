@@ -19,59 +19,59 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-03-09 23:28+0000\n"
 "X-Generator: Launchpad (build 16523)\n"
 
-#: ../data/org.debian.apt.policy.in.h:1
+#: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
 msgstr "විශ්වාසවන්ත විකිණුම්කරුවන්ගේ යතුරු ලැයිස්තුගත කරන්න"
 
-#: ../data/org.debian.apt.policy.in.h:2
+#: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "විශ්වසනීය යතුරු ලැයිස්තුව නැරඹීම සඳහා, ඔබට සත්‍යවත් කිරීමට සිදුවේ."
 
-#: ../data/org.debian.apt.policy.in.h:3 ../aptkit/console.py:619
+#: ../data/org.debian.aptkit.policy.in.h:3 ../aptkit/console.py:619
 msgid "Remove downloaded package files"
 msgstr "බාගත කරන ලද පැකේජ ගොනු ඉවත් කරන්න"
 
-#: ../data/org.debian.apt.policy.in.h:4
+#: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr "බාගත කෙරූ පැකේජ ගොනු පවිත්‍ර කිරීම සඳහා, ඔබට සත්‍යවත් කිරීමට සිදුවේ."
 
-#: ../data/org.debian.apt.policy.in.h:5
+#: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
 msgstr "මෘදුකාංග හැඩහුරුව වෙනස් කරන්න"
 
-#: ../data/org.debian.apt.policy.in.h:6
+#: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
 msgstr "මෘදුකාංග සැකසුම් වෙනස් කිරීම සඳහා, ඔබට සත්‍යවත් කිරීමට සිදුවේ."
 
-#: ../data/org.debian.apt.policy.in.h:7
+#: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
 msgstr "මෘදුකාංග ගබඩාව වෙනස් කරන්න"
 
-#: ../data/org.debian.apt.policy.in.h:8
+#: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr "මෘදුකාංග කෝෂ්ඨාගාර සැකසුම් වෙනස් කිරීම සඳහා, ඔබට සත්‍යවත් කිරීමට සිදුවේ."
 
-#: ../data/org.debian.apt.policy.in.h:9
+#: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
 msgstr "පැකේජ ගොනුවක් ස්ථාපනය කරන්න"
 
-#: ../data/org.debian.apt.policy.in.h:10
+#: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
 msgstr "මෙම පැකේජය ස්ථාපනය කිරීම සඳහා, ඔබට සත්‍යවත් කිරීමට සිදුවේ."
 
-#: ../data/org.debian.apt.policy.in.h:11
+#: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
 msgstr "පැකේජයේ තොරතුරු යාවත්කාලීන කරන්න"
 
-#: ../data/org.debian.apt.policy.in.h:12
+#: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
 msgstr "මෙම මෘදුකාංග නාමාවලිය යාවත්කාලීන කිරීම සඳහා, ඔබට සත්‍යවත් කිරීමට සිදුවේ."
 
-#: ../data/org.debian.apt.policy.in.h:13
+#: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
 msgstr "පැකේජ ස්ථාපනය හෝ අස්ථාපනය කරන්න"
 
-#: ../data/org.debian.apt.policy.in.h:14
+#: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
 msgstr "මෘදුකාංග ස්ථාපනය හෝ ඉවත් කිරීම සඳහා, ඔබට සත්‍යවත් කිරීමට සිදුවේ."
 
@@ -79,17 +79,17 @@ msgstr "මෘදුකාංග ස්ථාපනය හෝ ඉවත් ක�
 #. from a high trusted repository that can be explicitely whitelisted.
 #.
 #. The defaults for this action are the same as
-#. "org.debian.apt.install-or-remove-packages".
+#. "org.debian.aptkit.install-or-remove-packages".
 #.
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
 #.
-#: ../data/org.debian.apt.policy.in.h:25
+#: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
 msgstr ""
 
-#: ../data/org.debian.apt.policy.in.h:26
+#: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
 msgstr ""
 
@@ -98,11 +98,11 @@ msgstr ""
 #.
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.debian.apt.policy.in.h:32
+#: ../data/org.debian.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "අලුත් ගබඩාවක් එකතු කර එමගින් පැකේජ ස්ථාපනය කරන්න"
 
-#: ../data/org.debian.apt.policy.in.h:33
+#: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
 msgstr "නව මූලාශ්‍රයකින් මෘදුකාංග ස්ථාපනය කිරීම සඳහා, ඔබට සත්‍යවත් කිරීමට සිදුවේ."
 
@@ -114,35 +114,35 @@ msgstr "නව මූලාශ්‍රයකින් මෘදුකාංග 
 #.
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.debian.apt.policy.in.h:42
+#: ../data/org.debian.aptkit.policy.in.h:42
 msgid "Add a new repository of purchased software and install packages from it"
 msgstr "මිලදී ගත් මෘදුකාංගවල අලුත් ගබඩාවක් එකතු කර එමගින් පැකේජ ස්ථාපනය කරන්න"
 
-#: ../data/org.debian.apt.policy.in.h:43
+#: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
 msgstr "මිලදීගත් මෘදුකාංග ස්ථාපනය කිරීම සඳහා, ඔබට සත්‍යවත් කිරීමට සිදුවේ."
 
-#: ../data/org.debian.apt.policy.in.h:44
+#: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
 msgstr "පැකේජයන් උසස් කරන්න"
 
-#: ../data/org.debian.apt.policy.in.h:45
+#: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
 msgstr "යාවත්කාලීන කෙරූ මෘදුකාංග ස්ථාපනය කිරීම සඳහා, ඔබට සත්‍යවත් කිරීමට සිදුවේ."
 
-#: ../data/org.debian.apt.policy.in.h:46
+#: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
 msgstr "අනෙත් පරිශීලකගේ කාර්යන් අවලංගු කරන්න"
 
-#: ../data/org.debian.apt.policy.in.h:47
+#: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr "වෙනත් අය විසින් සිදු කෙරූ මෘදුකාංග වෙනස්කම් අහෝසි කිරීම සඳහා, ඔබට සත්‍යවත් කිරීමට සිදුවේ."
 
-#: ../data/org.debian.apt.policy.in.h:48
+#: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
 msgstr "මෘදුකාංග අවපතන සඳහා පෙරකලාසිය සකසන්න"
 
-#: ../data/org.debian.apt.policy.in.h:49
+#: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr "මෘදුකාංග බාගතකිරීමට පෙරකලාසි සර්වරයක් භාවිතා කිරීම සඳහා, ඔබට සත්‍යවත් කිරීමට සිදුවේ."
