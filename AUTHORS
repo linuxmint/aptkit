@@ -1,9 +1,10 @@
-Maintainer:
-  Sebastian Heinlein <devel@glatzor.de>
+Aptkit started as a fork of aptdaemon.
 
-Developers:
-  Michael Vogt <mvo@ubuntu.com>
+Aptdaemon authors:
+  https://launchpad.net/aptdaemon
+  Maintainer: Sebastian Heinlein <devel@glatzor.de>
+  Developers: Michael Vogt <mvo@ubuntu.com>
+  Icon Artits: Mike Langlie <mlanglie@redhat.com> and Richard Hughes <richard@hughsie.com>
 
-Icon Artits:
-  Mike Langlie <mlanglie@redhat.com>
-  Richard Hughes <richard@hughsie.com>
+Since then the authors are listed in git.
+  https://github.com/linuxmint/aptkit/graphs/contributors

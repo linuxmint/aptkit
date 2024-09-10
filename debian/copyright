@@ -1,27 +1,34 @@
 Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?rev=59
-Source: https://launchpad.net/aptkit
+Source: https://github.com/linuxmint/aptkit
 
 Files: *
-Copyright: © 2008-2009 Sebastian Heinlein <devel@glatzor.de>
+Copyright: © 2024 Aptkit developers
 License: GPL-2+
 
-Files: aptkit/client.py
+Files: data/icons/*
+Copyright: © 2008 Mike Langlie <mlanglie@redhat.com>
+           © 2008 Richard Hughes <richard@hughsie.com>
+           © 2024 Aptkit developers
+License: GPL-2+
+
+Files: doc/*
+Copyright: © 2008 Sebastian Heinlein <devel@glatzor.de>
+           © 2024 Aptkit developers
+License: GPL-2+
+
+Files: aptkit/*
 Copyright: © 2008 Canonical Ltd.
            © 2008 Aidan Skinner <aidan@skinner.me.uk>
            © 2008 Martin Pitt <martin.pitt@ubuntu.com>
            © 2008 Tim Lauridsen <timlau@fedoraproject.org>
            © 2008 Sebastian Heinlein <devel@glatzor.de>
+           © 2024 Aptkit developers
 License: GPL-2+
 
 Files: aptkit/debconf.py
 Copyright: © 2009 Sebastian Heinlein <devel@glatzor.de>
            © 2009 Michael Vogt <mvo@ubuntu.com>
-License: GPL-2+
-
-Files: debian/*
-Copyright: © 2008-2009 Sebastian Heinlein <devel@glatzor.de>
-           © 2009 Canonical Ltd.
-           © 2009 Julian Andres Klode <jak@debian.org>
+           © 2024 Aptkit developers
 License: GPL-2+
 
 License: GPL-2+

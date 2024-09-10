@@ -1,24 +1,4 @@
 #!/usr/bin/make -f
 
-#DH_VERBOSE=1
-
-PYTHON3=$(shell py3versions -vr)
-
 %:
-	dh $@ --with=python3,translations --buildsystem=pybuild
-
-override_dh_auto_clean:
-	dh_auto_clean
-	rm -rf build *.egg-info po/aptkit.pot
-
-# ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
-# test-python%:
-# 	# wait until previous xvfb-run has finished
-# 	while [ -e /tmp/.X99-lock ]; do sleep 1; done
-# 	xvfb-run python$* setup.py test -vv
-
-# override_dh_auto_test: $(PYTHON3:%=test-python%)
-# endif
-
-override_dh_auto_test:
-	true
+	dh $@

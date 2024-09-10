@@ -1,5 +1,0 @@
-[D-BUS Service]
-Name=org.freedesktop.PackageKit
-Exec=/usr/sbin/aptk
-User=root
-

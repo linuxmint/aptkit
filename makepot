@@ -1,0 +1,3 @@
+#!/bin/bash
+xgettext data/org.debian.aptkit.policy.in --output=aptkit.pot
+xgettext --language=Python -cTRANSLATORS --keyword=_ --keyword=N_ --join-existing --output=aptkit.pot aptkit/core.py aptkit/enums.py aptkit/gtk3widgets.py aptkit/lock.py aptkit/progress.py aptkit/worker/aptworker.py aptkit/worker/pkworker.py

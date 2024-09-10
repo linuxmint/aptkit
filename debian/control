@@ -1,136 +1,59 @@
 Source: aptkit
 Section: admin
 Priority: extra
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-XSBC-Original-Maintainer: Julian Andres Klode <jak@debian.org>
-Build-Depends: debhelper (>= 7.3),
-               debconf-i18n,
+Maintainer: Linux Mint <root@linuxmint.com>
+Build-Depends: debhelper,
                dbus,
+               debconf-i18n,
                dh-python,
                dh-translations,
-               python3-all,
-               python3-setuptools,
-               python3-distutils-extra,
-               python3-nose,
                gir1.2-glib-2.0,
                gir1.2-gtk-3.0,
-               gir1.2-packagekitglib-1.0 (>= 0.8.9),
+               gir1.2-packagekitglib-1.0,
                gir1.2-vte-2.91,
-               python3-apt (>= 0.8.5~ubuntu1),
-               python3-defer (>= 1.0.6),
+               iso-codes,
+               pycodestyle,
+               python3-all,
+               python3-apt,
                python3-dbus,
+               python3-defer (>= 1.0.6),
+               python3-distutils-extra,
                python3-gi,
                python3-mock,
                python3-pkg-resources,
-               iso-codes,
-               pycodestyle,
+               python3-setuptools,
                xauth,
                xvfb
 Standards-Version: 3.9.6
 Homepage: https://launchpad.net/aptkit
-XS-Original-Vcs-Bzr: nosmart+http://bzr.debian.org/bzr/apt/aptkit/debian-sid
-XS-Original-Vcs-Browser: http://bzr.debian.org/loggerhead/apt/aptkit/debian-sid
-X-Python3-Version: >= 3.2
-XS-Testsuite: autopkgtest
 
 Package: aptkit
 Architecture: all
 Depends: ${misc:Depends},
-         ${python3:Depends},
          gir1.2-glib-2.0,
-         python3-aptkit (= ${binary:Version}),
-         python3-gi,
+         gir1.2-gtk-3.0,
+         gir1.2-packagekitglib-1.0,
+         gir1.2-vte-2.91,
+         iso-codes,
          policykit-1,
-Breaks: software-center (<< 1.1.21), python3-aptkit.pkcompat
-Replaces: python3-aptkit.pkcompat
+         python3-apt,
+         python3-dbus,
+         python3-defer (>= 1.0.6),
+         python3-gi,
+         python3-pkg-resources,
 Description: transaction based package management service
- Aptkit allows normal users to perform package management tasks, e.g. 
- refreshing the cache, upgrading the system, installing or removing software 
+ Aptkit allows users to perform package management tasks,
+ refreshing the cache, upgrading the system, installing or removing software
  packages.
  .
- Currently it comes with the following main features:
+ It provides the following main features:
  .
-  - Programming language independent D-Bus interface, which allows one to
-    write clients in several languages
+  - D-Bus interface to write clients in several languages
+  - Modules and widgets to write clients in Python3/GTK3
+  - CLI tools
   - Runs only if required (D-Bus activation)
   - Fine grained privilege management using PolicyKit, e.g. allowing all
     desktop user to query for updates without entering a password
   - Support for media changes during installation from DVD/CDROM
   - Support for debconf (Debian's package configuration system)
   - Support for attaching a terminal to the underlying dpkg call
- .
- This package contains the aptk script and all the data files required to run
- the daemon. Moreover it contains the aptkcon script, which is a command
- line client for aptkit. The API is not stable yet.
-
-Package: python3-aptkit
-Architecture: all
-Section: python
-Depends: ${misc:Depends},
-         ${python3:Depends},
-         aptkit,
-         gir1.2-glib-2.0,
-         gir1.2-packagekitglib-1.0 (>= 1.1.1),
-         python3-apt (>= 0.8.5~ubuntu1),
-         python3-defer (>= 1.0.6),
-         python3-dbus,
-         python3-gi,
-         python3-pkg-resources,
-         iso-codes,
-Description: Python 3 module for the server and client of aptkit
- Aptkit is a transaction based package management service. It allows 
- normal users to perform package management tasks, e.g. refreshing the 
- cache, upgrading the system, installing or removing software packages.
- .
- This package provides the Python 3 modules required to run aptkit
- and to implement a client. The API is not stable yet.
-
-Package: python3-aptkit.test
-Architecture: all
-Section: python
-Depends: ${misc:Depends},
-         ${python3:Depends},
-         python3-aptkit (= ${binary:Version}),
-Breaks: python-aptkit.test
-Replaces: python-aptkit.test
-Description: Test environment for aptkit clients
- Aptkit is a transaction based package management daemon. It allows 
- normal users to perform package management tasks, e.g. refreshing the 
- cache, upgrading the system, installing or removing software packages.
- .
- This package provides the aptkit.test module and several helper
- scripts and a test repository to write unittests for aptkit
- clients.
-
-Package: aptkit-data
-Architecture: all
-Depends: ${misc:Depends}
-Replaces: python-aptkit-gtk (<= 0.41+bzr580-0ubuntu1)
-Description: data files for clients
- Aptkit is a transaction based package management daemon. It allows 
- normal users to perform package management tasks, e.g. refreshing the 
- cache, upgrading the system, installing or removing software packages.
- .
- This package provides common data files (e.g. icons) for aptkit
- clients.
- 
-Package: python3-aptkit.gtk3widgets
-Architecture: all
-Section: python
-Depends: ${misc:Depends},
-         ${python3:Depends},
-         python3-aptkit (= ${binary:Version}),
-         python3-gi,
-         gir1.2-gtk-3.0,
-         gir1.2-vte-2.91,
-         aptkit-data
-Conflicts: python-aptkit-gtk (<< 0.41+bzr582-0ubuntu1)
-Replaces: python-aptkit-gtk (<< 0.41+bzr582-0ubuntu1)
-Description: Python 3 GTK+ 3 widgets to run an aptkit client
- Aptkit is a transaction based package management daemon. It allows 
- normal users to perform package management tasks, e.g. refreshing the 
- cache, upgrading the system, installing or removing software packages.
- .
- This package provides the Python 3 GTK+ 3 widgets to implement a fully
- working graphical client. The widgets can be used to initiate, to
- monitor and to control a transaction. The API is not stable yet.

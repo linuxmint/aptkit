@@ -1,9 +1,0 @@
-usr/lib/python3*/*-packages/aptkit/test.py
-tests/repo/glatzor.gpg /usr/share/aptkit/tests/repo/
-tests/repo/Packages /usr/share/aptkit/tests/repo/
-tests/repo/Release /usr/share/aptkit/tests/repo/
-tests/repo/Release.gpg /usr/share/aptkit/tests/repo/
-tests/repo/*.deb /usr/share/aptkit/tests/repo/
-tests/dpkg-wrapper.sh /usr/share/aptkit/tests/
-tests/fake-polkitd.py /usr/share/aptkit/tests/
-tests/dbus.conf /usr/share/aptkit/tests/

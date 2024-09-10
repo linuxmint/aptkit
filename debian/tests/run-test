@@ -1,9 +1,0 @@
-#!/bin/sh
-set -e
-
-# clean up old crash reports
-rm -rf /var/crash/* 2>&1 || true
-
-# succeeding test must not write anything to stderr, as per DEP-8
-# work around LP #972324
-env -u TMPDIR xvfb-run python3 setup.py test 2>&1

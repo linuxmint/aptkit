@@ -9,12 +9,12 @@
   <icon_name>package-x-generic</icon_name>
 
   <action id="org.debian.aptkit.get-trusted-vendor-keys">
-    <_description>
+    <description>
       List keys of trusted vendors
-    </_description>
-    <_message>
+    </description>
+    <message>
       To view the list of trusted keys, you need to authenticate.
-    </_message>
+    </message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -23,12 +23,12 @@
   </action>
 
   <action id="org.debian.aptkit.clean">
-    <_description>
+    <description>
       Remove downloaded package files
-    </_description>
-    <_message>
+    </description>
+    <message>
       To clean downloaded package files, you need to authenticate.
-    </_message>
+    </message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -37,12 +37,12 @@
   </action>
 
   <action id="org.debian.aptkit.change-config">
-    <_description>
+    <description>
       Change software configuration
-    </_description>
-    <_message>
+    </description>
+    <message>
       To change software settings, you need to authenticate.
-    </_message>
+    </message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -51,12 +51,12 @@
   </action>
 
   <action id="org.debian.aptkit.change-repository">
-    <_description>
+    <description>
       Change software repository 
-    </_description>
-    <_message>
+    </description>
+    <message>
       To change software repository settings, you need to authenticate.
-    </_message>
+    </message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -65,12 +65,12 @@
   </action>
 
   <action id="org.debian.aptkit.install-file">
-    <_description>
+    <description>
       Install package file
-    </_description>
-    <_message>
+    </description>
+    <message>
       To install this package, you need to authenticate.
-    </_message>
+    </message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -79,12 +79,12 @@
   </action>
 
   <action id="org.debian.aptkit.update-cache">
-    <_description>
+    <description>
       Update package information
-    </_description>
-    <_message>
+    </description>
+    <message>
       To update the software catalog, you need to authenticate.
-    </_message>
+    </message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -93,12 +93,12 @@
   </action>
 
   <action id="org.debian.aptkit.install-or-remove-packages">
-    <_description>
+    <description>
       Install or remove packages
-    </_description>
-    <_message>
+    </description>
+    <message>
       To install or remove software, you need to authenticate.
-    </_message>
+    </message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -109,20 +109,20 @@
   <action id="org.debian.aptkit.install-packages.high-trust-repo">
     <!-- This priviledge will be requested when installing a package
          from a high trusted repository that can be explicitely whitelisted.
-         
-         The defaults for this action are the same as 
+
+         The defaults for this action are the same as
          "org.debian.aptkit.install-or-remove-packages".
 
          The admin can override them to e.g. allow passwordless installs for
          leightweight applications like unity-webapps or for packages
          comming from high trust repositories (like internal repositories)
     -->
-    <_description>
+    <description>
       Install software from a high-trust whitelisted repository.
-    </_description>
-    <_message>
+    </description>
+    <message>
       To install software, you need to authenticate.
-    </_message>
+    </message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -136,12 +136,12 @@
 
          The client has to authenticate for this privilege before calling
 	 the aptkit methods. -->
-    <_description>
+    <description>
       Add a new repository and install packages from it
-    </_description>
-    <_message>
+    </description>
+    <message>
       To install software from a new source, you need to authenticate.
-    </_message>
+    </message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -154,16 +154,16 @@
 	 and InstallPackages in a row and only authenticating once.
 
          The client has to authenticate for this privilege before calling
-	 the aptkit methods. 
-	 
+	 the aptkit methods.
+
 	 The only difference to install-packages-from-new-repo is the wording
 	 of the message. It is required by Ubuntu's Software-Center. -->
-    <_description>
+    <description>
       Add a new repository of purchased software and install packages from it
-    </_description>
-    <_message>
+    </description>
+    <message>
       To install purchased software, you need to authenticate.
-    </_message>
+    </message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -172,10 +172,10 @@
   </action>
 
   <action id="org.debian.aptkit.upgrade-packages">
-    <_description>
+    <description>
       Upgrade packages
-    </_description>
-    <_message>To install updated software, you need to authenticate.</_message>
+    </description>
+    <message>To install updated software, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -184,12 +184,12 @@
   </action>
 
   <action id="org.debian.aptkit.cancel-foreign">
-    <_description>
+    <description>
       Cancel the task of another user
-    </_description>
-    <_message>
+    </description>
+    <message>
       To cancel someone else's software changes, you need to authenticate.
-    </_message>
+    </message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -198,12 +198,12 @@
   </action>
 
   <action id="org.debian.aptkit.set-proxy">
-    <_description>
+    <description>
       Set a proxy for software downloads
-    </_description>
-    <_message>
+    </description>
+    <message>
       To use a proxy server for downloading software, you need to authenticate.
-    </_message>
+    </message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>

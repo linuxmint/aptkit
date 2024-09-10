@@ -1,9 +1,0 @@
-[encoding: UTF-8]
-data/org.debian.aptkit.policy.in
-aptkit/core.py
-aptkit/enums.py
-aptkit/gtk3widgets.py
-aptkit/lock.py
-aptkit/progress.py
-aptkit/worker/aptworker.py
-aptkit/worker/pkworker.py
