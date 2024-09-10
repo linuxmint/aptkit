@@ -6,7 +6,7 @@ Build-Depends: debhelper-compat (= 13),
                meson,
                libpolkit-gobject-1-dev (>= 123) | polkitd (<< 123)
 Standards-Version: 4.6.2
-Homepage: https://launchpad.net/aptkit
+Homepage: https://github.com/linuxmint/aptkit
 
 Package: aptkit
 Architecture: all
