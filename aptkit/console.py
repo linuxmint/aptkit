@@ -451,20 +451,20 @@ class ConsoleClient:
             print("%d NEW packages will be installed:" % len(installs))
             show_packages(installs)
         if upgrades:
-            print("%d packages will be upgraded:" len(upgrades))
+            print("%d packages will be upgraded:" % len(upgrades))
             show_packages(upgrades)
         if removals:
-            print("%d packages will be REMOVED:" len(removals))
+            print("%d packages will be REMOVED:" % len(removals))
             # FIXME: mark purges
             show_packages(removals)
         if downgrades:
-            print("%d packages will be DOWNGRADED:" len(downgrades))
+            print("%d packages will be DOWNGRADED:" % len(downgrades))
             show_packages(downgrades)
         if reinstalls:
-            print("%d packages will be reinstalled:" len(reinstalls))
+            print("%d packages will be reinstalled:" % len(reinstalls))
             show_packages(reinstalls)
         if kepts:
-            print("%d packages will be kept back:" len(kepts))
+            print("%d packages will be kept back:" % len(kepts))
             show_packages(kepts)
 
         if self._transaction.download:
@@ -504,8 +504,8 @@ class ConsoleClient:
 
 def main():
     """Run a command line client for aptkit"""
-    epilog = "To operate on more than one package put the package "
-               "names in quotation marks:\naptkcon --install "
+    epilog = "To operate on more than one package put the package " \
+               "names in quotation marks:\naptkcon --install " \
                "\"foo bar\""
     parser = OptionParser(version=aptkit.__version__, epilog=epilog)
     parser.add_option("-c", "--refresh", default="",
