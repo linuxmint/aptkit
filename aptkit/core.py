@@ -137,24 +137,6 @@ except locale.Error:
     log.warning("Failed to unset LC_ALL. Translations are not available.")
 
 
-def _excepthook(exc_type, exc_obj, exc_tb, apport_excepthook):
-    """Handle exceptions of aptkit and avoid tiggering apport crash
-    reports for valid DBusExceptions that are sent to the client.
-    """
-    # apport registers it's own excepthook as sys.excepthook. So we have to
-    # send exceptions that we don't want to be tracked to Python's
-    # internal excepthook directly
-    if issubclass(exc_type, errors.AptKitError):
-        sys.__excepthook__(exc_type, exc_obj, exc_tb)
-    else:
-        apport_excepthook(exc_type, exc_obj, exc_tb)
-
-if sys.excepthook.__name__ == "apport_excepthook":
-    apport_excepthook = sys.excepthook
-    sys.excepthook = lambda etype, eobj, etb: _excepthook(etype, eobj, etb,
-                                                          apport_excepthook)
-
-
 class DBusObject(dbus.service.Object):
 
     """Enhanced D-Bus object class which supports properties."""

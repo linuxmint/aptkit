@@ -3,7 +3,6 @@ usr/lib/python3*/*-packages/aptkit/client.py
 usr/lib/python3*/*-packages/aptkit/config.py
 usr/lib/python3*/*-packages/aptkit/console.py
 usr/lib/python3*/*-packages/aptkit/core.py
-usr/lib/python3*/*-packages/aptkit/crash.py
 usr/lib/python3*/*-packages/aptkit/debconf.py
 usr/lib/python3*/*-packages/aptkit/enums.py
 usr/lib/python3*/*-packages/aptkit/errors.py

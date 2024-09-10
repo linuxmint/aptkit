@@ -137,13 +137,6 @@ class BaseWorker(GObject.GObject):
             tbk = traceback.format_exc()
             trans.error = errors.TransactionFailed(enums.ERROR_UNKNOWN, tbk)
             trans.exit = enums.EXIT_FAILED
-            try:
-                from . import crash
-            except ImportError:
-                pass
-            else:
-                crash.create_report("%s: %s" % (type(excep), str(excep)),
-                                    tbk, trans)
         else:
             trans.exit = enums.EXIT_SUCCESS
         finally:
@@ -167,13 +160,6 @@ class BaseWorker(GObject.GObject):
         except Exception as excep:
             tbk = traceback.format_exc()
             trans.error = errors.TransactionFailed(enums.ERROR_UNKNOWN, tbk)
-            try:
-                from . import crash
-            except ImportError:
-                pass
-            else:
-                crash.create_report("%s: %s" % (type(excep), str(excep)),
-                                    tbk, trans)
             trans.exit = enums.EXIT_FAILED
         else:
             trans.status = enums.STATUS_SETTING_UP

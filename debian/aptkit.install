@@ -6,4 +6,3 @@ usr/share/dbus-1/system-services/org.debian.aptkit.service
 usr/share/polkit-1/actions/org.debian.aptkit.policy
 usr/share/locale
 usr/share/man
-usr/share/apport/package-hooks/aptkit.py

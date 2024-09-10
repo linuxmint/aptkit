@@ -19,6 +19,5 @@ from Launchpad.
 - Add convenience functions from mintcommon
 - Reduce the scope by removing unnecessary features
 - Add a downgrade function
-- Remove apport support? (Ubuntu-specific)
 - Add support for XApp Window Progress
 - Clean up code and copyrights with a reuse.toml and debian/copyright

@@ -528,8 +528,6 @@ class DaemonForkProgress(object):
             # be called, e.g. the frozen status decorator
             os._exit(apt_pkg.PackageManager.RESULT_FAILED)
         signal.signal(signal.SIGINT, interrupt_handler)
-        # Make sure that exceptions of the child are not caught by apport
-        sys.excepthook = sys.__excepthook__
 
         mainloop.quit()
         # force terminal messages in dpkg to be untranslated, the
