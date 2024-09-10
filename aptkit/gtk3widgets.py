@@ -26,7 +26,7 @@ __author__ = "Sebastian Heinlein <devel@glatzor.de>"
 __all__ = ("AptConfigFileConflictDialog", "AptCancelButton",
            "AptConfirmDialog",
            "AptProgressDialog", "AptTerminalExpander", "AptStatusIcon",
-           "AptRoleIcon", "AptStatusAnimation", "AptRoleLabel",
+           "AptRoleIcon", "AptRoleLabel",
            "AptStatusLabel", "AptMediumRequiredDialog", "AptMessageDialog",
            "AptErrorDialog", "AptProgressBar", "DiffView",
            "AptTerminal"
@@ -121,88 +121,6 @@ class AptRoleIcon(AptStatusIcon):
         if icon_name != self.icon_name:
             self.set_from_icon_name(icon_name, self._icon_size)
             self.icon_name = icon_name
-
-
-class AptStatusAnimation(AptStatusIcon):
-    """
-    Provides a Gtk.Image which shows an animation representing the
-    transaction status
-    """
-    def __init__(self, transaction=None, size=Gtk.IconSize.DIALOG):
-        AptStatusIcon.__init__(self, transaction, size)
-        self.animation = []
-        self.ticker = 0
-        self.frame_counter = 0
-        self.iter = 0
-        name = get_status_animation_name_from_enum(STATUS_WAITING)
-        fallback = get_status_icon_name_from_enum(STATUS_WAITING)
-        self.set_animation(name, fallback)
-
-    def set_animation(self, name, fallback=None, size=None):
-        """Show and start the animation of the given name and size"""
-        if name == self.icon_name:
-            return
-        if size is not None:
-            self._icon_size = size
-        self.stop_animation()
-        animation = []
-        (width, height) = Gtk.icon_size_lookup(self._icon_size)
-        theme = Gtk.IconTheme.get_default()
-        if name is not None and theme.has_icon(name):
-            pixbuf = theme.load_icon(name, width, 0)
-            rows = pixbuf.get_height() / height
-            cols = pixbuf.get_width() / width
-            for r in range(rows):
-                for c in range(cols):
-                    animation.append(pixbuf.subpixbuf(c * width, r * height,
-                                                      width, height))
-            if len(animation) > 0:
-                self.animation = animation
-                self.iter = 0
-                self.set_from_pixbuf(self.animation[0])
-                self.start_animation()
-            else:
-                self.set_from_pixbuf(pixbuf)
-            self.icon_name = name
-        elif fallback is not None and theme.has_icon(fallback):
-            self.set_from_icon_name(fallback, self._icon_size)
-            self.icon_name = fallback
-        else:
-            self.set_from_icon_name(Gtk.STOCK_MISSING_IMAGE)
-
-    def start_animation(self):
-        """Start the animation"""
-        if self.ticker == 0:
-            self.ticker = GLib.timeout_add(200, self._advance)
-
-    def stop_animation(self):
-        """Stop the animation"""
-        if self.ticker != 0:
-            GLib.source_remove(self.ticker)
-            self.ticker = 0
-
-    def _advance(self):
-        """
-        Show the next frame of the animation and stop the animation if the
-        widget is no longer visible
-        """
-        if self.get_property("visible") is False:
-            self.ticker = 0
-            return False
-        self.iter = self.iter + 1
-        if self.iter >= len(self.animation):
-            self.iter = 0
-        self.set_from_pixbuf(self.animation[self.iter])
-        return True
-
-    def _on_status_changed(self, transaction, status):
-        """
-        Set the animation according to the changed status
-        """
-        name = get_status_animation_name_from_enum(status)
-        fallback = get_status_icon_name_from_enum(status)
-        self.set_animation(name, fallback)
-
 
 class AptRoleLabel(Gtk.Label):
     """

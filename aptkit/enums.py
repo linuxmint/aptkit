@@ -58,7 +58,6 @@ __all__ = ("PKGS_INSTALL", "PKGS_REINSTALL", "PKGS_REMOVE", "PKGS_PURGE",
            "PKG_PREPARING_PURGE", "PKG_PREPARING_PURGE", "PKG_INSTALLED",
            "PKG_REMOVED", "PKG_PURGED", "PKG_UNPACKING", "PKG_UNKNOWN",
            "get_status_icon_name_from_enum", "get_role_icon_name_from_enum",
-           "get_status_animation_name_from_enum",
            "get_package_status_from_enum",
            "get_role_localised_past_from_enum", "get_exit_string_from_enum",
            "get_role_localised_present_from_enum", "get_role_error_from_enum",
@@ -321,18 +320,6 @@ _ICONS_ROLE = {
     ROLE_UPGRADE_PACKAGES: 'aptkit-upgrade',
     ROLE_UPGRADE_SYSTEM: 'system-software-update'}
 
-_ANIMATIONS_STATUS = {
-    STATUS_CANCELLING: 'aptkit-action-cleaning-up',
-    STATUS_CLEANING_UP: 'aptkit-action-cleaning-up',
-    STATUS_RESOLVING_DEP: 'aptkit-action-resolving',
-    STATUS_DOWNLOADING: 'aptkit-action-downloading',
-    STATUS_DOWNLOADING_REPO: 'aptkit-action-downloading',
-    STATUS_LOADING_CACHE: 'aptkit-action-updating-cache',
-    STATUS_WAITING: 'aptkit-action-waiting',
-    STATUS_WAITING_LOCK: 'aptkit-action-waiting',
-    STATUS_WAITING_MEDIUM: 'aptkit-action-waiting',
-    STATUS_WAITING_CONFIG_FILE_PROMPT: 'aptkit-action-waiting'}
-
 _PAST_ROLE = {
     ROLE_INSTALL_FILE: _("Installed file"),
     ROLE_INSTALL_PACKAGES: _("Installed packages"),
@@ -594,18 +581,6 @@ def get_role_icon_name_from_enum(enum):
         return _ICONS_ROLE[enum]
     except KeyError:
         return "aptkit-working"
-
-
-def get_status_animation_name_from_enum(enum):
-    """Get an animation to represent a transaction status.
-
-    :param enum: The transaction status enum, e.g. :data:`STATUS_WAITING`.
-    :returns: The animation name string.
-    """
-    try:
-        return _ANIMATIONS_STATUS[enum]
-    except KeyError:
-        return None
 
 
 def get_role_localised_past_from_enum(enum):
