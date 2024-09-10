@@ -7,10 +7,16 @@ maintained and only exists in Ubuntu.
 Aptdaemon was greatly inspired by PackageKit, which doesn't support
 essential features of apt by policy.
 
+# TRANSLATIONS
+
+This project is translated on Launchpad at https://translations.launchpad.net/linuxmint/latest/+pots/aptkit.
+
+Please do not make pull requests to modify `po/` files directly. These are overwritten when we import translations
+from Launchpad.
+
 # TODO
 
 - Add convenience functions from mintcommon
-- Set up makepot and LP translations
 - Reduce the scope by removing unnecessary features
 - Add a downgrade function
 - Remove apport support? (Ubuntu-specific)
