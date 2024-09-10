@@ -1,0 +1,1276 @@
+# Belarusian translation for aptkit
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the aptkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: aptkit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-09 19:27+0100\n"
+"PO-Revision-Date: 2024-09-09 18:34+0000\n"
+"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"Language-Team: Belarusian <be@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2024-09-10 09:08+0000\n"
+"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
+"Language: be\n"
+
+#: ../data/org.debian.aptkit.policy.in.h:1
+msgid "List keys of trusted vendors"
+msgstr "Спіс ключоў давераных пастаўшчыкоў"
+
+#: ../data/org.debian.aptkit.policy.in.h:2
+msgid "To view the list of trusted keys, you need to authenticate."
+msgstr "Для прагляду спісу давераных ключоў патрабуецца аўтэнтыфікацыя."
+
+#: ../data/org.debian.aptkit.policy.in.h:3
+msgid "Remove downloaded package files"
+msgstr "Выдаліць файлы загружаных пакетаў"
+
+#: ../data/org.debian.aptkit.policy.in.h:4
+msgid "To clean downloaded package files, you need to authenticate."
+msgstr "Вам неабходна аўтарызавацца для ачысткі файлаў загружаных пакетаў."
+
+#: ../data/org.debian.aptkit.policy.in.h:5
+msgid "Change software configuration"
+msgstr "Змяніць сховішча з праграмамі"
+
+#: ../data/org.debian.aptkit.policy.in.h:6
+msgid "To change software settings, you need to authenticate."
+msgstr "Вам трэба аўтарызавацца для змены налад праграмнага забеспячэння."
+
+#: ../data/org.debian.aptkit.policy.in.h:7
+msgid "Change software repository"
+msgstr "Змяніць сховішча праграмнага забеспячэння"
+
+#: ../data/org.debian.aptkit.policy.in.h:8
+msgid "To change software repository settings, you need to authenticate."
+msgstr "Каб змяніць налады сховішча, вы павінны аўтарызавацца."
+
+#: ../data/org.debian.aptkit.policy.in.h:9
+msgid "Install package file"
+msgstr "Усталёўка файла пакета"
+
+#: ../data/org.debian.aptkit.policy.in.h:10
+msgid "To install this package, you need to authenticate."
+msgstr "Каб усталяваць гэты пакет, вы павінны аўтарызавацца."
+
+#: ../data/org.debian.aptkit.policy.in.h:11
+msgid "Update package information"
+msgstr "Абнаўленне інфармацыі аб пакетах"
+
+#: ../data/org.debian.aptkit.policy.in.h:12
+msgid "To update the software catalog, you need to authenticate."
+msgstr ""
+"Для абнаўлення каталога праграмнага забеспячэння патрабуецца аўтэнтыфікацыя."
+
+#: ../data/org.debian.aptkit.policy.in.h:13
+msgid "Install or remove packages"
+msgstr "Усталяваць ці выдаліць пакеты"
+
+#: ../data/org.debian.aptkit.policy.in.h:14
+msgid "To install or remove software, you need to authenticate."
+msgstr "Каб усталяваць ці выдаліць праграму, вы павінны аўтарызавацца."
+
+#. This priviledge will be requested when installing a package
+#. from a high trusted repository that can be explicitely whitelisted.
+#. 
+#. The defaults for this action are the same as
+#. "org.debian.aptkit.install-or-remove-packages".
+#. 
+#. The admin can override them to e.g. allow passwordless installs for
+#. leightweight applications like unity-webapps or for packages
+#. comming from high trust repositories (like internal repositories)
+#. 
+#: ../data/org.debian.aptkit.policy.in.h:25
+msgid "Install software from a high-trust whitelisted repository."
+msgstr ""
+"Усталёўка праграмнага забеспячэння са сховішча з высокім узроўнем даверу."
+
+#: ../data/org.debian.aptkit.policy.in.h:26
+msgid "To install software, you need to authenticate."
+msgstr ""
+"Для таго, каб ўсталёўваць праграмнае забеспячэнне трэба аўнтэнтыфікавацца."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#: ../data/org.debian.aptkit.policy.in.h:32
+msgid "Add a new repository and install packages from it"
+msgstr "Дадаць новае сховішча і ўсталяваць пакеты з яго"
+
+#: ../data/org.debian.aptkit.policy.in.h:33
+msgid "To install software from a new source, you need to authenticate."
+msgstr "Каб усталяваць праграмы з новай крыніцы, вы павінны аўтарызавацца."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#. 
+#. The only difference to install-packages-from-new-repo is the wording
+#. of the message. It is required by Ubuntu's Software-Center.
+#: ../data/org.debian.aptkit.policy.in.h:42
+msgid ""
+"Add a new repository of purchased software and install packages from it"
+msgstr ""
+"Дадаць новае сховішча платнага праграмнага забеспячэння і ўсталяваць пакеты "
+"з яго"
+
+#: ../data/org.debian.aptkit.policy.in.h:43
+msgid "To install purchased software, you need to authenticate."
+msgstr "Каб усталяваць набытыя праграмы, вы павінны аўтарызавацца."
+
+#: ../data/org.debian.aptkit.policy.in.h:44
+msgid "Upgrade packages"
+msgstr "Абнаўленне пакетаў"
+
+#: ../data/org.debian.aptkit.policy.in.h:45
+msgid "To install updated software, you need to authenticate."
+msgstr "Для ўсталёўкі абнаўленняў патрабуецца аўтэнтыфікацыя."
+
+#: ../data/org.debian.aptkit.policy.in.h:46
+msgid "Cancel the task of another user"
+msgstr "Адмяніць задачу іншага карыстальніка"
+
+#: ../data/org.debian.aptkit.policy.in.h:47
+msgid "To cancel someone else's software changes, you need to authenticate."
+msgstr ""
+"Для скасавання не сваіх змен у праграмным забеспячэнні патрабуецца "
+"аўтэнтыфікацыя."
+
+#: ../data/org.debian.aptkit.policy.in.h:48
+msgid "Set a proxy for software downloads"
+msgstr "Усталяваць проксі-сервер для загрузак праграм"
+
+#: ../data/org.debian.aptkit.policy.in.h:49
+msgid ""
+"To use a proxy server for downloading software, you need to authenticate."
+msgstr ""
+"Для карыстання з проксі сервера для загрузкі праграмнага забеспячэння "
+"патрабуецца аўтэнтыфікацыя."
+
+#: ../aptkit/core.py:2148
+msgid "Do not shutdown the daemon because of inactivity"
+msgstr "Не выключайце дэман з-за яго неактыўнасці"
+
+#: ../aptkit/core.py:2153
+msgid "Do not load any plugins"
+msgstr "Не загружаць ніякія плагіны"
+
+#: ../aptkit/core.py:2157
+msgid "Show internal processing information"
+msgstr "Паказваць інфармацыю аб унутранай апрацоўцы"
+
+#: ../aptkit/core.py:2162
+msgid "Quit and replace an already running daemon"
+msgstr "Выйсці і замяніць ужо запушчаны дэман"
+
+#: ../aptkit/core.py:2167
+msgid "Listen on the DBus session bus (Only required for testing"
+msgstr "Чакаць на сігнал DBus для агульнай шыны (Толькі для тэставання"
+
+#: ../aptkit/core.py:2171
+msgid "Perform operations in the given chroot"
+msgstr "Праводзіць аперацыі ў дадзеным галоўным каталозе"
+
+#: ../aptkit/core.py:2176
+msgid "Store profile stats in the specified file"
+msgstr "Захоўваць статыстыку ў пазначаным файле"
+
+#: ../aptkit/core.py:2181
+msgid "Do not make any changes to the system (Only of use to developers)"
+msgstr "Не змяняць файлы ў сістэме (карысна толькі распрацоўнікам)"
+
+#: ../aptkit/enums.py:337
+msgid "Installed file"
+msgstr "Усталяваны файл"
+
+#: ../aptkit/enums.py:338
+msgid "Installed packages"
+msgstr "Усталяваныя пакеты"
+
+#: ../aptkit/enums.py:339
+msgid "Added key from file"
+msgstr "Дададзены ключ з файла"
+
+#: ../aptkit/enums.py:340
+msgid "Updated cache"
+msgstr "Кэш абноўлены"
+
+#: ../aptkit/enums.py:341
+msgid "Search done"
+msgstr "Пошук завершаны"
+
+#: ../aptkit/enums.py:342
+msgid "Removed trusted key"
+msgstr "Давяральны ключ выдалены"
+
+#: ../aptkit/enums.py:343
+msgid "Removed packages"
+msgstr "Выдаленыя пакеты"
+
+#: ../aptkit/enums.py:344
+msgid "Updated packages"
+msgstr "Абноўленыя пакеты"
+
+#: ../aptkit/enums.py:345
+msgid "Upgraded system"
+msgstr "Абноўленая сістэма"
+
+#: ../aptkit/enums.py:346
+msgid "Applied changes"
+msgstr "Ужытыя змены"
+
+#: ../aptkit/enums.py:347
+msgid "Repaired incomplete installation"
+msgstr "Выпраўлена няскончаная ўсталёўка"
+
+#: ../aptkit/enums.py:348
+msgid "Repaired broken dependencies"
+msgstr "Выпраўлены зламаныя залежнасці"
+
+#: ../aptkit/enums.py:349
+msgid "Added software source"
+msgstr "Крыніца праграм дададзеная"
+
+#: ../aptkit/enums.py:350
+msgid "Enabled component of the distribution"
+msgstr "Падлучаны кампанент дыстрыбутыва"
+
+#: ../aptkit/enums.py:351
+msgid "Removed downloaded package files"
+msgstr "Сцёртыя файлы загружаных пакетаў"
+
+#: ../aptkit/enums.py:352
+msgid "Reconfigured installed packages"
+msgstr "Нова наладжаныя пакеты"
+
+#: ../aptkit/enums.py:356
+msgid "Successful"
+msgstr "Паспяхова"
+
+#: ../aptkit/enums.py:357
+msgid "Canceled"
+msgstr "Адменена"
+
+#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
+msgid "Failed"
+msgstr "Памылка"
+
+#: ../aptkit/enums.py:361
+msgid "Installing file"
+msgstr "Усталёўка файла"
+
+#: ../aptkit/enums.py:362
+msgid "Installing packages"
+msgstr "Усталёўка пакетаў"
+
+#: ../aptkit/enums.py:363
+msgid "Adding key from file"
+msgstr "Даданне ключа з файла"
+
+#: ../aptkit/enums.py:364
+msgid "Updating cache"
+msgstr "Абнаўленне кэша"
+
+#: ../aptkit/enums.py:365
+msgid "Removing trusted key"
+msgstr "Выдаленне даверанага ключа"
+
+#: ../aptkit/enums.py:366
+msgid "Removing packages"
+msgstr "Выдаленне пакетаў"
+
+#: ../aptkit/enums.py:367
+msgid "Updating packages"
+msgstr "Абнаўленне пакетаў"
+
+#: ../aptkit/enums.py:368
+msgid "Upgrading system"
+msgstr "Абнаўленне сістэмы"
+
+#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
+msgid "Applying changes"
+msgstr "Ужыванне зменаў"
+
+#: ../aptkit/enums.py:370
+msgid "Repairing incomplete installation"
+msgstr "Выпраўленне няскончанай ўсталёўкі"
+
+#: ../aptkit/enums.py:371
+msgid "Repairing installed software"
+msgstr "Аднаўленне усталяванага ПЗ"
+
+#: ../aptkit/enums.py:372
+msgid "Adding software source"
+msgstr "Даданне крыніцы праграм"
+
+#: ../aptkit/enums.py:373
+msgid "Enabling component of the distribution"
+msgstr "Падлучэнне кампанента дыстрыбутыва"
+
+#: ../aptkit/enums.py:374
+msgid "Removing downloaded package files"
+msgstr "Выдаленне файлаў загружаных пакетаў"
+
+#: ../aptkit/enums.py:375
+msgid "Reconfiguring installed packages"
+msgstr "Пераналадка ўсталяваных пакетаў"
+
+#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
+msgid "Searching"
+msgstr "Выконваецца пошук"
+
+#: ../aptkit/enums.py:380
+msgid "Installation of the package file failed"
+msgstr "Не атрымалася ўсталяваць файл пакета"
+
+#: ../aptkit/enums.py:381
+msgid "Installation of software failed"
+msgstr "Не атрымалася ўсталяваць праграмнае забеспячэнне"
+
+#: ../aptkit/enums.py:382
+msgid "Adding the key to the list of trusted software vendors failed"
+msgstr ""
+"Не ўдалося дадаць ключ у спіс давераных пастаўшчыкоў праграмнага забеспячэння"
+
+#: ../aptkit/enums.py:384
+msgid "Refreshing the software list failed"
+msgstr "Не атрымалася абнавіць спіс праграм"
+
+#: ../aptkit/enums.py:385
+msgid "Removing the vendor from the list of trusted ones failed"
+msgstr "Не атрымалася выключыць пастаўніка праграм са спіса давераных"
+
+#: ../aptkit/enums.py:387
+msgid "Removing software failed"
+msgstr "Не атрымалася выдаліць праграмнае забеспячэнне"
+
+#: ../aptkit/enums.py:388
+msgid "Updating software failed"
+msgstr "Не атрымалася абнавіць праграмнае забеспячэнне"
+
+#: ../aptkit/enums.py:389
+msgid "Upgrading the system failed"
+msgstr "Не атрымалася абнавіць сістэму"
+
+#: ../aptkit/enums.py:390
+msgid "Applying software changes failed"
+msgstr "Не атрымалася ўжыць змены ў праграмным забеспячэнні"
+
+#: ../aptkit/enums.py:391
+msgid "Repairing incomplete installation failed"
+msgstr "Не атрымалася выпраўленне няскончанай усталёўкі"
+
+#: ../aptkit/enums.py:393
+msgid "Repairing broken dependencies failed"
+msgstr "Не атрымалася выправіць зламаныя залежнасці"
+
+#: ../aptkit/enums.py:394
+msgid "Adding software source failed"
+msgstr "Не атрымалася дадаць крыніцу праграм"
+
+#: ../aptkit/enums.py:395
+msgid "Enabling component of the distribution failed"
+msgstr "Не атрымалася далучыць кампанент дыстрыбутыва"
+
+#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
+msgid "Removing downloaded package files failed"
+msgstr "Пры выдаленні загружаных файлаў здарылася памылка"
+
+#: ../aptkit/enums.py:399
+msgid "Search failed"
+msgstr "Памылка пошуку"
+
+#: ../aptkit/enums.py:400
+msgid "Adding license key"
+msgstr "Даданне ліцэнзійнага ключа"
+
+#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
+msgid "Check your Internet connection."
+msgstr "Праверце інтэрнэт-злучэнне."
+
+#: ../aptkit/enums.py:406
+msgid ""
+"Check if you are using third party repositories. If so disable them, since "
+"they are a common source of problems.\n"
+"Furthermore run the following command in a Terminal: apt-get install -f"
+msgstr ""
+"Калі Вы выкарыстоўваеце іншыя крыніцы праграм, адключыце іх, паколькі яны "
+"з'яўляюцца частай\n"
+"крыніцай праблем. Пасля гэтага выканайце ў тэрмінале наступную каманду: apt-"
+"get install -f"
+
+#: ../aptkit/enums.py:411
+msgid "The selected file may not be a GPG key file or it might be corrupt."
+msgstr "Выбраны файл можа быць пашкоджаны, альбо не з'яўляецца ключом PGP."
+
+#: ../aptkit/enums.py:413
+msgid ""
+"The selected key couldn't be removed. Check that you provided a valid "
+"fingerprint."
+msgstr ""
+"Абраны ключ немагчыма выдаліць. Праверце, што Вы падалі дакладны лічбавы "
+"подпіс."
+
+#: ../aptkit/enums.py:415
+msgid ""
+"Check if you are currently running another software management tool, e.g. "
+"Synaptic or aptitude. Only one tool is allowed to make changes at a time."
+msgstr ""
+"Праверце, ці не запушчана іншая праграма кіравання праграмамі, напрыклад "
+"Synaptic или aptitude. Толькі адна праграма можа ўносіць змены ў адзін і той "
+"жа час."
+
+#: ../aptkit/enums.py:418
+msgid ""
+"This is a serious problem. Try again later. If this problem appears again, "
+"please report an error to the developers."
+msgstr ""
+"Гэта сур'ёзная праблема. Паспрабуйце паўтарыць пазней. Калі праблема "
+"паўстане зноў, калі ласка, адпраўце справаздачу аб памылцы распрацоўнікам."
+
+#: ../aptkit/enums.py:421
+msgid ""
+"Check the spelling of the package name, and that the appropriate repository "
+"is enabled."
+msgstr ""
+"Праверце ці правільна пазначана назва пакета і ці ўключаны адпаведны "
+"рэпазітар."
+
+#: ../aptkit/enums.py:423
+msgid "There isn't any need for an update."
+msgstr "Няма неабходнасці абнаўлення."
+
+#: ../aptkit/enums.py:424
+msgid "There isn't any need for an installation"
+msgstr "Няма неабходнасці ўсталёўкі."
+
+#: ../aptkit/enums.py:426
+msgid "There isn't any need for a removal."
+msgstr "Няма неабходнасці выдалення."
+
+#: ../aptkit/enums.py:427
+msgid ""
+"You requested to remove a package which is an essential part of your system."
+msgstr ""
+"Вы падалі запыт на выдаленне пакета, які з'яўляецца неад'емнай часткай вашай "
+"сістэмы."
+
+#: ../aptkit/enums.py:430
+msgid ""
+"The connection to the daemon was lost. Most likely the background daemon "
+"crashed."
+msgstr ""
+"Сувязь з дэманам страчана. Хутчэй за ўсё, яго праца нечакана скончылася."
+
+#: ../aptkit/enums.py:432
+msgid "The installation or removal of a software package failed."
+msgstr "Усталёўка ці выдаленне пакетаў праграм не атрымалася."
+
+#: ../aptkit/enums.py:434
+msgid "The requested feature is not supported."
+msgstr "Магчымасць не падтрымліваецца."
+
+#: ../aptkit/enums.py:435
+msgid ""
+"There seems to be a programming error in aptkit, the software that allows "
+"you to install/remove software and to perform other package management "
+"related tasks."
+msgstr ""
+"Мяркуючы па ўсім, у aptkit, праграмным забеспячэнні, якое дазваляе вам "
+"усталёўваць / выдаляць праграмы і выконваць звязаныя з пакетамі задачы, "
+"прысутнічае праграмная памылка."
+
+#: ../aptkit/enums.py:439
+msgid ""
+"This error could be caused by required additional software packages which "
+"are missing or not installable. Furthermore there could be a conflict "
+"between software packages which are not allowed to be installed at the same "
+"time."
+msgstr ""
+"Гэтая памылка магла паўстаць з прычыны дадатковых пакетаў, якія немагчыма "
+"ўсталяваць ці якія адсутнічаюць. Да таго ж можа мець месца канфлікт паміж "
+"пакетамі, якія не могуць быць усталяваныя адначасова."
+
+#: ../aptkit/enums.py:445
+msgid "This requires installing packages from unauthenticated sources."
+msgstr "Гэта патрабуе ўстаноўкі пакетаў з неаўтентыфікаваных крыніц."
+
+#: ../aptkit/enums.py:447
+msgid ""
+"The installation could have failed because of an error in the corresponding "
+"software package or it was cancelled in an unfriendly way. You have to "
+"repair this before you can install or remove any further software."
+msgstr ""
+"Усталёўка магла прайсці няўдала з-за памылкі ў адпаведным пакеце, альбо была "
+"няправільна спыненая. Вам варта выправіць гэта перш чым усталёўваць ці "
+"выдаляць іншыя праграмы."
+
+#: ../aptkit/enums.py:453
+msgid ""
+"Please copy the file to your local computer and check the file permissions."
+msgstr ""
+"Калі ласка, скапіруйце файл на ваш лакальны кампутар і праверце правы на "
+"файл."
+
+#: ../aptkit/enums.py:456
+msgid ""
+"The installation of a package which violates the quality standards isn't "
+"allowed. This could cause serious problems on your computer. Please contact "
+"the person or organisation who provided this package file and include the "
+"details beneath."
+msgstr ""
+"Усталёўка пакета, які не адпавядае стандартам, не дазволена. Гэта можа "
+"прывесці да сур'ёзных памылак на вашым кампутары. Калі ласка, звяжыцеся з "
+"тымі, хто прапанаваў дадзены пакет, зазначыўшы падрабязнасці, змешчаныя "
+"ніжэй."
+
+#: ../aptkit/enums.py:463
+msgid ""
+"The downloaded license key which is required to run this piece of software "
+"is not valid or could not be installed correctly.\n"
+"See the details for more information."
+msgstr ""
+"Атрыманы ліцэнзійны ключ, неабходны для выканання гэтага кампанента праграмы "
+"няправільны, або не можа быць усталяваны належным чынам.\n"
+"Для атрымання дадатковых звестак адчынеце падрабязнасці."
+
+#: ../aptkit/enums.py:469
+msgid "All available upgrades have already been installed."
+msgstr "Усе даступныя абнаўленні ўжо ўсталяваныя."
+
+#: ../aptkit/enums.py:471
+msgid ""
+"The license key which allows you to use this piece of software could not be "
+"downloaded. Please check your network connection."
+msgstr ""
+"Ліцэнзійны ключ, які дазволіць вам выкарыстоўваць гэты кампанент праграмы, "
+"не можа быць атрыманы. Калі ласка, пераканайцеся ў працаздольнасці сеткавага "
+"злучэння."
+
+#: ../aptkit/enums.py:475
+msgid "You don't have the required privileges to perform this action."
+msgstr "У вас няма неабходных правоў для выканання гэтага дзеяння."
+
+#: ../aptkit/enums.py:477
+msgid ""
+"You either provided a wrong password or cancelled the authorization.\n"
+"Furthermore there could also be a technical reason for this error if you "
+"haven't seen a password dialog: your desktop environment doesn't provide a "
+"PolicyKit session agent."
+msgstr ""
+"Прадстаўлены няправільны пароль або аўтарызацыя было адмененая.\n"
+"Таксама памылка магла адбыцца па тэхнічных прычынах, калі не з'яўлялася акно "
+"ўводу пароля: акружэнне стальніцы, якое вы выкарыстоўваеце, не аказала "
+"агента сеансу PolicyKit."
+
+#: ../aptkit/enums.py:485
+msgid "Failed to download package files"
+msgstr "Памылка загрузкі файлаў пакета"
+
+#: ../aptkit/enums.py:486
+msgid "Failed to download repository information"
+msgstr "Памылка пры загрузцы інфармацыі аб крыніцах праграмаў"
+
+#: ../aptkit/enums.py:488
+msgid "Package dependencies cannot be resolved"
+msgstr "Залежнасці пакета ня могуць быць задаволены."
+
+#: ../aptkit/enums.py:489
+msgid "The package system is broken"
+msgstr "Сістэма пакетаў пашкоджана."
+
+#: ../aptkit/enums.py:490
+msgid "Key was not installed"
+msgstr "Ключ ня быў усталяваны"
+
+#: ../aptkit/enums.py:491
+msgid "Key was not removed"
+msgstr "Ключ быў ня выдалены"
+
+#: ../aptkit/enums.py:492
+msgid "Failed to lock the package manager"
+msgstr "Немагчыма заблакаваць мэнэджар пакетаў"
+
+#: ../aptkit/enums.py:493
+msgid "Failed to load the package list"
+msgstr "Ня ўдалося загрузіць спіс пакетаў"
+
+#: ../aptkit/enums.py:494
+msgid "Package does not exist"
+msgstr "Пакет не існуе"
+
+#: ../aptkit/enums.py:495
+msgid "Package is already up to date"
+msgstr "Пакет у актуальным стане"
+
+#: ../aptkit/enums.py:496
+msgid "Package is already installed"
+msgstr "Пакет ужо ўсталяваны"
+
+#: ../aptkit/enums.py:497
+msgid "Package isn't installed"
+msgstr "Пакет не ўсталяваны"
+
+#: ../aptkit/enums.py:498
+msgid "Failed to remove essential system package"
+msgstr "Памылка пры выдаленні важнага сістэмнага пакета"
+
+#: ../aptkit/enums.py:500
+msgid "Task cannot be monitored or controlled"
+msgstr "Заданне ня можа быць пракантралявана"
+
+#: ../aptkit/enums.py:501
+msgid "Package operation failed"
+msgstr "Памылка пакетнай аперацыі"
+
+#: ../aptkit/enums.py:502
+msgid "Requires installation of untrusted packages"
+msgstr "Патрабуецца ўсталёўка нязнойдзеных пакетаў"
+
+#: ../aptkit/enums.py:504
+msgid "Previous installation hasn't been completed"
+msgstr "Папярэдняя ўсталёўка не была скончана"
+
+#: ../aptkit/enums.py:505
+msgid "The package is of bad quality"
+msgstr "Гэты пакет кепскай якасці"
+
+#: ../aptkit/enums.py:506
+msgid "Package file could not be opened"
+msgstr "Не атрымалася адкрыць пакет"
+
+#: ../aptkit/enums.py:507
+msgid "Not supported feature"
+msgstr "Гэтая магчымасць не падтрымліваецца"
+
+#: ../aptkit/enums.py:508
+msgid "Failed to download the license key"
+msgstr "Памылка атрымання ліцэнзійнага ключа"
+
+#: ../aptkit/enums.py:509
+msgid "Failed to install the license key"
+msgstr "Памылка ўсталёўкі ліцэнзійнага ключа"
+
+#: ../aptkit/enums.py:510
+msgid "The system is already up to date"
+msgstr "Сістэма ў актуальным стане"
+
+#: ../aptkit/enums.py:511
+msgid "You could not be authorized"
+msgstr "Аўтарызацыя карыстальніка не можа быць выкананая"
+
+#: ../aptkit/enums.py:512
+msgid "You are not allowed to perform this action"
+msgstr "Вы не можаце выконваць гэта дзеянне"
+
+#: ../aptkit/enums.py:513
+msgid "An unhandlable error occured"
+msgstr "Здарылася непераадольная памылка"
+
+#: ../aptkit/enums.py:516
+msgid "Waiting for service to start"
+msgstr "Чаканне запуска службы"
+
+#: ../aptkit/enums.py:518
+msgid "Waiting"
+msgstr "Чаканне"
+
+#: ../aptkit/enums.py:519
+msgid "Waiting for required medium"
+msgstr "Чаканне на неабходны носьбіт інфармацыі"
+
+#: ../aptkit/enums.py:520
+msgid "Waiting for other software managers to quit"
+msgstr "Чаканне на сканчэнне працы іншых мэнэджараў праграмнага забеспячэння"
+
+#: ../aptkit/enums.py:521
+msgid "Waiting for configuration file prompt"
+msgstr "Чаканне на запыт канфігурацыйнага файла"
+
+#: ../aptkit/enums.py:523
+msgid "Running task"
+msgstr "Запуск задачы"
+
+#: ../aptkit/enums.py:524
+msgid "Downloading"
+msgstr "Ідзе загрузка"
+
+#: ../aptkit/enums.py:525
+msgid "Querying software sources"
+msgstr "Запыт крыніц праграм"
+
+#: ../aptkit/enums.py:526
+msgid "Cleaning up"
+msgstr "Ачышчэнне"
+
+#: ../aptkit/enums.py:527
+msgid "Resolving dependencies"
+msgstr "Вырашэнне залежнасцяў"
+
+#: ../aptkit/enums.py:529
+msgid "Finished"
+msgstr "Скончана"
+
+#: ../aptkit/enums.py:530
+msgid "Cancelling"
+msgstr "Скасавана"
+
+#: ../aptkit/enums.py:531
+msgid "Loading software list"
+msgstr "Загрузка спіса праграмаў"
+
+#: ../aptkit/enums.py:532
+msgid "Waiting for authentication"
+msgstr "Чаканне на аўтэнтыфікацыю"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:536
+#, python-format
+msgid "Installing %s"
+msgstr "Усталёўка %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:538
+#, python-format
+msgid "Configuring %s"
+msgstr "Канфігураванне %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:540
+#, python-format
+msgid "Removing %s"
+msgstr "Выдаленне %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:542
+#, python-format
+msgid "Completely removing %s"
+msgstr "Выконваецца поўнае выдаленне %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:544
+#, python-format
+msgid "Noting disappearance of %s"
+msgstr "Апавяшчэнне аб знікненні %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:546
+#, python-format
+msgid "Running post-installation trigger %s"
+msgstr "Выконваецца пасляўсталёвачны трыгер %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:548
+#, python-format
+msgid "Upgrading %s"
+msgstr "Абнаўленне %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:550
+#, python-format
+msgid "Unpacking %s"
+msgstr "Выманне %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:552
+#, python-format
+msgid "Preparing installation of %s"
+msgstr "Падрыхтоўка да ўсталёўкі %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:554
+#, python-format
+msgid "Preparing configuration of %s"
+msgstr "Падрыхтоўка канфігурацыі %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:556
+#, python-format
+msgid "Preparing removal of %s"
+msgstr "Падрыхтоўка да выдалення%s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:558
+#, python-format
+msgid "Preparing complete removal of %s"
+msgstr "Падрыхтоўка да поўнага выдалення %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:560
+#, python-format
+msgid "Installed %s"
+msgstr "%s усталяваны"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:562
+#, python-format
+msgid "Completely removed %s"
+msgstr "%s цалкам выдалены"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:564
+#, python-format
+msgid "Removed %s"
+msgstr "%s выдалены"
+
+#: ../aptkit/enums.py:567
+msgid "Done"
+msgstr "Выканана"
+
+#: ../aptkit/enums.py:568
+msgid "Authentication failed"
+msgstr "Няўдалая ідэнтыфікацыя"
+
+#: ../aptkit/enums.py:570
+msgid "Fetching"
+msgstr "Атрыманне"
+
+#: ../aptkit/enums.py:571
+msgid "Idle"
+msgstr "Чаканне"
+
+#: ../aptkit/enums.py:572
+msgid "Network isn't available"
+msgstr "Сетка недасяжная"
+
+#: ../aptkit/enums.py:704
+#, python-format
+msgid "Processing %s"
+msgstr "Апрацоўка %s"
+
+#: ../aptkit/gtk3widgets.py:311
+#, python-format
+msgid "Downloaded %sB of %sB at %sB/s"
+msgstr "Загружана %sB з %sB на хуткасці %sB/s"
+
+#: ../aptkit/gtk3widgets.py:316 ../aptkit/gtk3widgets.py:517
+#, python-format
+msgid "Downloaded %sB of %sB"
+msgstr "Загружана %sB з %sB"
+
+#: ../aptkit/gtk3widgets.py:328
+msgid "Details"
+msgstr "Падрабязна"
+
+#: ../aptkit/gtk3widgets.py:481
+msgid "File"
+msgstr "Файл"
+
+#. TRANSLATORS: header of the progress download column
+#: ../aptkit/gtk3widgets.py:486
+msgid "%"
+msgstr "%"
+
+#: ../aptkit/gtk3widgets.py:522
+#, python-format
+msgid "Downloaded %sB"
+msgstr "Загружана %sB"
+
+#: ../aptkit/gtk3widgets.py:525
+msgid "Downloaded"
+msgstr "Загружана"
+
+#. TRANSLATORS: %s represents the name of a CD or DVD
+#: ../aptkit/gtk3widgets.py:860
+#, python-format
+msgid "CD/DVD '%s' is required"
+msgstr "Патрабуецца наяўнасць CD/DVD «%s»"
+
+#. TRANSLATORS: %s is the name of the CD/DVD drive
+#: ../aptkit/gtk3widgets.py:862
+#, python-format
+msgid ""
+"Please insert the above CD/DVD into the drive '%s' to install software "
+"packages from it."
+msgstr ""
+"Устаўце паказаны вышэй CD/DVD у прывад '%s' для ўсталёўкі пакетаў з яго."
+
+#: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
+msgid "C_ontinue"
+msgstr "Пра_цягнуць"
+
+#: ../aptkit/gtk3widgets.py:939
+msgid "Install"
+msgstr "Усталяваць"
+
+#: ../aptkit/gtk3widgets.py:940
+msgid "Reinstall"
+msgstr "Пераўсталяваць"
+
+#: ../aptkit/gtk3widgets.py:941
+msgid "Remove"
+msgstr "Выдаліць"
+
+#: ../aptkit/gtk3widgets.py:942
+msgid "Purge"
+msgstr "Ачысціць"
+
+#: ../aptkit/gtk3widgets.py:943
+msgid "Upgrade"
+msgstr "Абнаўленне"
+
+#: ../aptkit/gtk3widgets.py:944
+msgid "Downgrade"
+msgstr "Панізіць версію"
+
+#: ../aptkit/gtk3widgets.py:945
+msgid "Skip upgrade"
+msgstr "Прапусціць абнаўленне"
+
+#. If there is only one type of changes (e.g. only installs) expand the
+#. tree
+#. FIXME: adapt the title and message accordingly
+#. FIXME: Should we have different modes? Only show dependencies, only
+#. initial packages or both?
+#: ../aptkit/gtk3widgets.py:956
+msgid "Please take a look at the list of changes below."
+msgstr "Калі ласка, паглядзіце на спіс зменаў ніжэй."
+
+#: ../aptkit/gtk3widgets.py:964
+msgid "Additional software has to be installed"
+msgstr "Патрэбна ўсталёўка дадатковых праграм"
+
+#: ../aptkit/gtk3widgets.py:966
+msgid "Additional software has to be re-installed"
+msgstr "Патрэбна паўторная ўсталёўка дадатковых праграм"
+
+#: ../aptkit/gtk3widgets.py:968
+msgid "Additional software has to be removed"
+msgstr "Неабходна выдаленне дадатковых праграм"
+
+#: ../aptkit/gtk3widgets.py:970
+msgid "Additional software has to be purged"
+msgstr "Патрэбна ачыстка ад дадатковых праграм"
+
+#: ../aptkit/gtk3widgets.py:972
+msgid "Additional software has to be upgraded"
+msgstr "Неабходна абнаўленне дадатковых праграм"
+
+#: ../aptkit/gtk3widgets.py:974
+msgid "Additional software has to be downgraded"
+msgstr "Неабходна паніжэнне версіі дадатковых праграм"
+
+#: ../aptkit/gtk3widgets.py:976
+msgid "Updates will be skipped"
+msgstr "Абнаўленні будуць прапушчаны"
+
+#: ../aptkit/gtk3widgets.py:984
+msgid "Additional changes are required"
+msgstr "Патрабуюцца дадатковыя змены"
+
+#: ../aptkit/gtk3widgets.py:989
+#, python-format
+msgid "%sB will be downloaded in total."
+msgstr "%sБ усяго будзе сцягнута"
+
+#: ../aptkit/gtk3widgets.py:993
+#, python-format
+msgid "%sB of disk space will be freed."
+msgstr "%sБ месца на цвёрдым дыску будзе вызвалена."
+
+#: ../aptkit/gtk3widgets.py:997
+#, python-format
+msgid "%sB more disk space will be used."
+msgstr "%sБ дыскавай прасторы будзе занята."
+
+#. TRANSLATORS: %s is a file path
+#: ../aptkit/gtk3widgets.py:1069
+#, python-format
+msgid ""
+"Replace your changes in '%s' with a later version of the configuration file?"
+msgstr "Замяніць файл «%s» з унесенымі Вамі зменамі больш позняй версіяй?"
+
+#: ../aptkit/gtk3widgets.py:1071
+msgid ""
+"If you don't know why the file is there already, it is usually safe to "
+"replace it."
+msgstr ""
+"Калі Вы ня ведаеце, для чаго быў створаны гэты файл, то хутчэй за ўсё яго "
+"можна будзе бяспечна замяніць."
+
+#: ../aptkit/gtk3widgets.py:1080
+msgid "_Changes"
+msgstr "_Змены"
+
+#: ../aptkit/gtk3widgets.py:1083
+msgid "_Keep"
+msgstr "_Пакінуць"
+
+#: ../aptkit/gtk3widgets.py:1084
+msgid "_Replace"
+msgstr "_Замяніць"
+
+#: ../aptkit/gtk3widgets.py:1187
+msgid "_Details"
+msgstr "_Падрабязнасці"
+
+#. TRANSLATORS: %s is the name of a package manager
+#: ../aptkit/lock.py:189
+#, python-format
+msgid "Waiting for %s to exit"
+msgstr "Чаканне на завяршэнне працы %s"
+
+#. TRANSLATORS: %s is a list of package names
+#: ../aptkit/progress.py:168
+#, python-format
+msgid "Downloading %s"
+msgstr "Сьцягваньне %s"
+
+#. TRANSLATORS: the string is used as a fallback if we cannot
+#. get the URI of a local repository
+#: ../aptkit/progress.py:277 ../aptkit/progress.py:314
+msgid "local repository"
+msgstr "лакальны рэпазітар"
+
+#. TRANSLATORS: %s is a list of repository names
+#: ../aptkit/progress.py:280
+#, python-format
+msgid "Downloading from %s"
+msgstr "Загрузка з %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:318
+#, python-format
+msgid "Structure of %s"
+msgstr "Структура «%s»"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:321
+#, python-format
+msgid "Description of %s"
+msgstr "Апісанне %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:324
+#, python-format
+msgid "Description signature of %s"
+msgstr "Подпіс апісання %s"
+
+#: ../aptkit/progress.py:329
+#, python-format
+msgid "Available packages from %s"
+msgstr "Даступныя пакеты з «%s»"
+
+#: ../aptkit/progress.py:333
+#, python-format
+msgid "Available sources from %s"
+msgstr "Даступныя крыніцы з %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:336
+#, python-format
+msgid "Available translations from %s"
+msgstr "Даступныя пераклады з %s"
+
+#: ../aptkit/progress.py:353
+#, python-format
+msgid "Translations for %s (%s) from %s"
+msgstr "Пераклады на %s (%s) з %s"
+
+#. TRANSLATORS: %s is the name of a language. The second one is
+#. the name of the repository
+#: ../aptkit/progress.py:357
+#, python-format
+msgid "Translations for %s from %s"
+msgstr "Пераклады на %s з %s"
+
+#. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
+#. The second one is the name of the repository
+#: ../aptkit/progress.py:362
+#, python-format
+msgid "Translations (%s) from %s"
+msgstr "Пераклад (%s) з %s"
+
+#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
+#: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
+#, python-format
+msgid "Package %s isn't available"
+msgstr "Пакет %s не даступны"
+
+#: ../aptkit/worker/aptworker.py:384 ../aptkit/worker/aptworker.py:682
+#: ../aptkit/worker/aptworker.py:777 ../aptkit/worker/aptworker.py:822
+#, python-format
+msgid "Package %s isn't installed"
+msgstr "Пакет %s не ўсталяваны"
+
+#: ../aptkit/worker/aptworker.py:388
+#, python-format
+msgid "The version %s of %s isn't installed"
+msgstr "Версія %s пакета %s не ўсталявана"
+
+#: ../aptkit/worker/aptworker.py:403
+#, python-format
+msgid "Package %s is already installed"
+msgstr "Пакет %s ужо ўсталяваны"
+
+#: ../aptkit/worker/aptworker.py:410 ../aptkit/worker/aptworker.py:845
+#, python-format
+msgid "The version %s of %s isn't available."
+msgstr "Версія %s пакета %s недаступная"
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptkit/worker/aptworker.py:572
+#, python-format
+msgid "The keyserver URL is invalid: %s"
+msgstr "Памылковы URL-адрас сервера ключоў: %s"
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptkit/worker/aptworker.py:578
+#, python-format
+msgid "Invalid protocol of the server: %s"
+msgstr "Памылковы пратакол сервера: %s"
+
+#. TRANSLATORS: %s is the id of a GnuPG key
+#. e.g. E08ADE95
+#: ../aptkit/worker/aptworker.py:586 ../aptkit/worker/aptworker.py:630
+#, python-format
+msgid "Invalid key id: %s"
+msgstr "Памылковы ідэнтыфікатар ключа: %s"
+
+#: ../aptkit/worker/aptworker.py:594
+#, python-format
+msgid ""
+"Failed to download and install the key %s from %s:\n"
+"%s"
+msgstr ""
+"Не атрымалася загрузіць і ўсталяваць значэнне %s з %s:\n"
+"%s"
+
+#: ../aptkit/worker/aptworker.py:611
+#, python-format
+msgid "Key file %s couldn't be installed: %s"
+msgstr "Ключавы файл %s не можа быць усталяваны: %s"
+
+#: ../aptkit/worker/aptworker.py:635
+#, python-format
+msgid "Key with fingerprint %s couldn't be removed: %s"
+msgstr "Ключ з лічбавым подпісам %s не можа быць выдалены: %s"
+
+#: ../aptkit/worker/aptworker.py:686
+#, python-format
+msgid "Package %s cannot be removed."
+msgstr "Пакет %s не можа быць выдалены."
+
+#: ../aptkit/worker/aptworker.py:690
+#, python-format
+msgid "The version %s of %s is not installed"
+msgstr "Версія %s пакета %s не ўсталяваная"
+
+#: ../aptkit/worker/aptworker.py:785
+#, python-format
+msgid "The former version %s of %s is already installed"
+msgstr "Папярэдняя версія %s пакета %s ужо ўсталяваная"
+
+#: ../aptkit/worker/aptworker.py:790 ../aptkit/worker/aptworker.py:838
+#, python-format
+msgid "The version %s of %s is already installed"
+msgstr "Версія %s пакета %s ужо ўсталяваная"
+
+#: ../aptkit/worker/aptworker.py:797
+#, python-format
+msgid "The version %s of %s isn't available"
+msgstr "Версія %s пакета %s недаступная"
+
+#: ../aptkit/worker/aptworker.py:801
+#, python-format
+msgid "You need to specify a version to downgrade %s to"
+msgstr "Вам неабходна пазначыць версію, каб правесці адкат %s да"
+
+#: ../aptkit/worker/aptworker.py:831
+#, python-format
+msgid "The later version %s of %s is already installed"
+msgstr "Больш новая версія  %s пакета %s ужо ўсталяваная"
+
+#: ../aptkit/worker/aptworker.py:867
+#, python-format
+msgid "The package %s isn't available in the %s release."
+msgstr "Пакет %s  недаступны ў рэлізе %s."
+
+#: ../aptkit/worker/aptworker.py:1052
+#, python-format
+msgid "Package %s cannot be removed"
+msgstr "Пакет %s не можа быць выдалены"
+
+#: ../aptkit/worker/aptworker.py:1154
+msgid ""
+"The package doesn't provide a valid Installed-Size control field. See Debian "
+"Policy 5.6.20."
+msgstr ""
+"У пакеце не пазначана поле \"занятае месца пасля ўсталёўкі\".  Гл. правілы "
+"Debian Policy 5.6.20."
+
+#: ../aptkit/worker/aptworker.py:1293
+msgid "The license key is empty"
+msgstr "Ліцэнзійны ключ не ўтрымлівае даных"
+
+#: ../aptkit/worker/aptworker.py:1309
+msgid "The license key is not allowed to contain executable code."
+msgstr "Ліцэнзійны ключ не павінен утрымоўваць выкананы код."
+
+#: ../aptkit/worker/aptworker.py:1318
+#, python-format
+msgid "The license key path %s is invalid"
+msgstr "Недапушчальнае размяшчэнне ліцэнзійнага ключа %s"
+
+#: ../aptkit/worker/aptworker.py:1322
+#, python-format
+msgid "The license key already exists: %s"
+msgstr "Ліцэнзійны ключ ужо існуе: %s"
+
+#: ../aptkit/worker/aptworker.py:1327
+#, python-format
+msgid ""
+"The location of the license key is unsecure since it contains symbolic "
+"links. The path %s maps to %s"
+msgstr ""
+"Месцазнаходжанне ліцэнзійнага ключа не з'яўляецца бяспечным, так як змяшчае "
+"сімвалічныя спасылкі. Адрас %s спасылаецца на %s"
+
+#: ../aptkit/worker/aptworker.py:1335
+#, python-format
+msgid "The directory where to install the key to doesn't exist yet: %s"
+msgstr "Папка у якую будзе выконвацца ўсталёўка ключа, яшчэ не існуе: %s"
+
+#: ../aptkit/worker/aptworker.py:1346
+#, python-format
+msgid "Failed to write key file to: %s"
+msgstr "Памылка запісу файла ключа ў: %s"
+
+#: ../aptkit/worker/aptworker.py:1381
+msgid "The following packages have unmet dependencies:"
+msgstr "Пакеты, маючыя нездаволеныя залежнасці:"
+
+#: ../aptkit/worker/aptworker.py:1434
+msgid "but it is a virtual package"
+msgstr "але гэта віртуальны пакет"
+
+#: ../aptkit/worker/aptworker.py:1437
+msgid "but it is not installed"
+msgstr "але ён не ўсталяваны"
+
+#: ../aptkit/worker/aptworker.py:1439
+msgid "but it is not going to be installed"
+msgstr "але ён не будзе ўсталяваны"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptkit/worker/aptworker.py:1443
+#, python-format
+msgid "but %s is installed"
+msgstr "але %s ужо ўсталяваны"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptkit/worker/aptworker.py:1447
+#, python-format
+msgid "but %s is to be installed"
+msgstr "але %s будзе ўсталяваны"

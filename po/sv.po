@@ -1,0 +1,1274 @@
+# Swedish translation for aptkit
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the aptkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: aptkit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-09 19:27+0100\n"
+"PO-Revision-Date: 2024-09-09 18:39+0000\n"
+"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2024-09-10 09:08+0000\n"
+"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
+"Language: sv\n"
+
+#: ../data/org.debian.aptkit.policy.in.h:1
+msgid "List keys of trusted vendors"
+msgstr "Lista nycklar för pålitliga leverantörer"
+
+#: ../data/org.debian.aptkit.policy.in.h:2
+msgid "To view the list of trusted keys, you need to authenticate."
+msgstr "Du måste autentisera dig för att visa listan över pålitliga nycklar."
+
+#: ../data/org.debian.aptkit.policy.in.h:3
+msgid "Remove downloaded package files"
+msgstr "Ta bort hämtade paketfiler"
+
+#: ../data/org.debian.aptkit.policy.in.h:4
+msgid "To clean downloaded package files, you need to authenticate."
+msgstr "Du måste autentisera dig för att tömma hämtade paketfiler."
+
+#: ../data/org.debian.aptkit.policy.in.h:5
+msgid "Change software configuration"
+msgstr "Ändra programkonfiguration"
+
+#: ../data/org.debian.aptkit.policy.in.h:6
+msgid "To change software settings, you need to authenticate."
+msgstr "Du måste autentisera dig för att ändra programinställningar."
+
+#: ../data/org.debian.aptkit.policy.in.h:7
+msgid "Change software repository"
+msgstr "Ändra programförråd"
+
+#: ../data/org.debian.aptkit.policy.in.h:8
+msgid "To change software repository settings, you need to authenticate."
+msgstr ""
+"Du måste autentisera dig för att ändra inställningar för programförråd."
+
+#: ../data/org.debian.aptkit.policy.in.h:9
+msgid "Install package file"
+msgstr "Installera paketfil"
+
+#: ../data/org.debian.aptkit.policy.in.h:10
+msgid "To install this package, you need to authenticate."
+msgstr "Du måste autentisera dig för att installera detta paket."
+
+#: ../data/org.debian.aptkit.policy.in.h:11
+msgid "Update package information"
+msgstr "Uppdatera paketinformation"
+
+#: ../data/org.debian.aptkit.policy.in.h:12
+msgid "To update the software catalog, you need to authenticate."
+msgstr "Du måste autentisera dig för att uppdatera programkatalogen."
+
+#: ../data/org.debian.aptkit.policy.in.h:13
+msgid "Install or remove packages"
+msgstr "Installera eller ta bort paket"
+
+#: ../data/org.debian.aptkit.policy.in.h:14
+msgid "To install or remove software, you need to authenticate."
+msgstr "Du måste autentisera dig för att installera eller ta bort program."
+
+#. This priviledge will be requested when installing a package
+#. from a high trusted repository that can be explicitely whitelisted.
+#. 
+#. The defaults for this action are the same as
+#. "org.debian.aptkit.install-or-remove-packages".
+#. 
+#. The admin can override them to e.g. allow passwordless installs for
+#. leightweight applications like unity-webapps or for packages
+#. comming from high trust repositories (like internal repositories)
+#. 
+#: ../data/org.debian.aptkit.policy.in.h:25
+msgid "Install software from a high-trust whitelisted repository."
+msgstr "Installera program från ett mycket pålitligt vitlistat arkiv."
+
+#: ../data/org.debian.aptkit.policy.in.h:26
+msgid "To install software, you need to authenticate."
+msgstr "För att installera program måste du genomgå en behörighetskontroll."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#: ../data/org.debian.aptkit.policy.in.h:32
+msgid "Add a new repository and install packages from it"
+msgstr "Lägg till ett nytt förråd och installera paket från det"
+
+#: ../data/org.debian.aptkit.policy.in.h:33
+msgid "To install software from a new source, you need to authenticate."
+msgstr ""
+"Du måste autentisera dig för att installera program från en ny källa."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#. 
+#. The only difference to install-packages-from-new-repo is the wording
+#. of the message. It is required by Ubuntu's Software-Center.
+#: ../data/org.debian.aptkit.policy.in.h:42
+msgid ""
+"Add a new repository of purchased software and install packages from it"
+msgstr ""
+"Lägg till ett nytt förråd för inköpta program och installera paket från det"
+
+#: ../data/org.debian.aptkit.policy.in.h:43
+msgid "To install purchased software, you need to authenticate."
+msgstr "Du måste autentisera dig för att installera inköpta program."
+
+#: ../data/org.debian.aptkit.policy.in.h:44
+msgid "Upgrade packages"
+msgstr "Uppgradera paket"
+
+#: ../data/org.debian.aptkit.policy.in.h:45
+msgid "To install updated software, you need to authenticate."
+msgstr "Du måste autentisera dig för att installera uppdaterade program."
+
+#: ../data/org.debian.aptkit.policy.in.h:46
+msgid "Cancel the task of another user"
+msgstr "Avbryt åtgärden för en annan användare"
+
+#: ../data/org.debian.aptkit.policy.in.h:47
+msgid "To cancel someone else's software changes, you need to authenticate."
+msgstr ""
+"Du måste autentisera dig för att avbryta någon annans programändringar."
+
+#: ../data/org.debian.aptkit.policy.in.h:48
+msgid "Set a proxy for software downloads"
+msgstr "Ställ in en proxyserver för programhämtningar"
+
+#: ../data/org.debian.aptkit.policy.in.h:49
+msgid ""
+"To use a proxy server for downloading software, you need to authenticate."
+msgstr ""
+"Du måste autentisera dig för att använda en proxyserver för att hämta "
+"program."
+
+#: ../aptkit/core.py:2148
+msgid "Do not shutdown the daemon because of inactivity"
+msgstr "Stäng inte av daemonen på grund av inaktivitet"
+
+#: ../aptkit/core.py:2153
+msgid "Do not load any plugins"
+msgstr "Läs inte in några insticksmoduler"
+
+#: ../aptkit/core.py:2157
+msgid "Show internal processing information"
+msgstr "Visa intern processinformation"
+
+#: ../aptkit/core.py:2162
+msgid "Quit and replace an already running daemon"
+msgstr "Avsluta och ersätt en redan körande demon"
+
+#: ../aptkit/core.py:2167
+msgid "Listen on the DBus session bus (Only required for testing"
+msgstr "Lyssna på DBus-sessionsbussen (krävs endast för tester"
+
+#: ../aptkit/core.py:2171
+msgid "Perform operations in the given chroot"
+msgstr "Genomför åtgärder i angivet chroot-miljö"
+
+#: ../aptkit/core.py:2176
+msgid "Store profile stats in the specified file"
+msgstr "Lagra profilstatistik i angiven fil"
+
+#: ../aptkit/core.py:2181
+msgid "Do not make any changes to the system (Only of use to developers)"
+msgstr "Gör inte några ändringar i systemet (endast för utvecklare)"
+
+#: ../aptkit/enums.py:337
+msgid "Installed file"
+msgstr "Installerade fil"
+
+#: ../aptkit/enums.py:338
+msgid "Installed packages"
+msgstr "Installerade paket"
+
+#: ../aptkit/enums.py:339
+msgid "Added key from file"
+msgstr "Lade till nyckel från fil"
+
+#: ../aptkit/enums.py:340
+msgid "Updated cache"
+msgstr "Uppdaterade cache"
+
+#: ../aptkit/enums.py:341
+msgid "Search done"
+msgstr "Sökningen är färdig"
+
+#: ../aptkit/enums.py:342
+msgid "Removed trusted key"
+msgstr "Tog bort pålitlig nyckel"
+
+#: ../aptkit/enums.py:343
+msgid "Removed packages"
+msgstr "Tog bort paket"
+
+#: ../aptkit/enums.py:344
+msgid "Updated packages"
+msgstr "Uppdaterade paket"
+
+#: ../aptkit/enums.py:345
+msgid "Upgraded system"
+msgstr "Uppgraderade systemet"
+
+#: ../aptkit/enums.py:346
+msgid "Applied changes"
+msgstr "Verkställde ändringar"
+
+#: ../aptkit/enums.py:347
+msgid "Repaired incomplete installation"
+msgstr "Reparerade ofullständig installation"
+
+#: ../aptkit/enums.py:348
+msgid "Repaired broken dependencies"
+msgstr "Reparerade trasiga beroenden"
+
+#: ../aptkit/enums.py:349
+msgid "Added software source"
+msgstr "Lade till programkälla"
+
+#: ../aptkit/enums.py:350
+msgid "Enabled component of the distribution"
+msgstr "Aktiverade komponent för distributionen"
+
+#: ../aptkit/enums.py:351
+msgid "Removed downloaded package files"
+msgstr "Tog bort hämtade paketfiler"
+
+#: ../aptkit/enums.py:352
+msgid "Reconfigured installed packages"
+msgstr "Konfigurera om installerade paket"
+
+#: ../aptkit/enums.py:356
+msgid "Successful"
+msgstr "Lyckades"
+
+#: ../aptkit/enums.py:357
+msgid "Canceled"
+msgstr "Avbruten"
+
+#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
+msgid "Failed"
+msgstr "Misslyckades"
+
+#: ../aptkit/enums.py:361
+msgid "Installing file"
+msgstr "Installerar fil"
+
+#: ../aptkit/enums.py:362
+msgid "Installing packages"
+msgstr "Installerar paket"
+
+#: ../aptkit/enums.py:363
+msgid "Adding key from file"
+msgstr "Lägger till nyckel från fil"
+
+#: ../aptkit/enums.py:364
+msgid "Updating cache"
+msgstr "Uppdaterar cache"
+
+#: ../aptkit/enums.py:365
+msgid "Removing trusted key"
+msgstr "Tar bort pålitlig nyckel"
+
+#: ../aptkit/enums.py:366
+msgid "Removing packages"
+msgstr "Tar bort paket"
+
+#: ../aptkit/enums.py:367
+msgid "Updating packages"
+msgstr "Uppdaterar paket"
+
+#: ../aptkit/enums.py:368
+msgid "Upgrading system"
+msgstr "Uppgraderar systemet"
+
+#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
+msgid "Applying changes"
+msgstr "Verkställer ändringar"
+
+#: ../aptkit/enums.py:370
+msgid "Repairing incomplete installation"
+msgstr "Reparerar ofullständig installation"
+
+#: ../aptkit/enums.py:371
+msgid "Repairing installed software"
+msgstr "Reparerar installerad programvara"
+
+#: ../aptkit/enums.py:372
+msgid "Adding software source"
+msgstr "Lägger till programkälla"
+
+#: ../aptkit/enums.py:373
+msgid "Enabling component of the distribution"
+msgstr "Aktiverar komponent för distributionen"
+
+#: ../aptkit/enums.py:374
+msgid "Removing downloaded package files"
+msgstr "Tar bort hämtade paketfiler"
+
+#: ../aptkit/enums.py:375
+msgid "Reconfiguring installed packages"
+msgstr "Konfigurerar om installerade paket"
+
+#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
+msgid "Searching"
+msgstr "Söker"
+
+#: ../aptkit/enums.py:380
+msgid "Installation of the package file failed"
+msgstr "Installation av paketfilen misslyckades"
+
+#: ../aptkit/enums.py:381
+msgid "Installation of software failed"
+msgstr "Installation av programvaran misslyckades"
+
+#: ../aptkit/enums.py:382
+msgid "Adding the key to the list of trusted software vendors failed"
+msgstr ""
+"Kunde inte lägga till nyckeln i listan över pålitliga programutgivare"
+
+#: ../aptkit/enums.py:384
+msgid "Refreshing the software list failed"
+msgstr "Uppdatering av programlistan misslyckades"
+
+#: ../aptkit/enums.py:385
+msgid "Removing the vendor from the list of trusted ones failed"
+msgstr ""
+"Borttagning av leverantören från listan över pålitliga leverantörer "
+"misslyckades"
+
+#: ../aptkit/enums.py:387
+msgid "Removing software failed"
+msgstr "Borttagning av programvaran misslyckades"
+
+#: ../aptkit/enums.py:388
+msgid "Updating software failed"
+msgstr "Uppdatering av programvaran misslyckades"
+
+#: ../aptkit/enums.py:389
+msgid "Upgrading the system failed"
+msgstr "Uppgradering av systemet misslyckades"
+
+#: ../aptkit/enums.py:390
+msgid "Applying software changes failed"
+msgstr "Verkställandet av programändringar misslyckades"
+
+#: ../aptkit/enums.py:391
+msgid "Repairing incomplete installation failed"
+msgstr "Reparation av ofullständig installation misslyckades"
+
+#: ../aptkit/enums.py:393
+msgid "Repairing broken dependencies failed"
+msgstr "Reparation av trasiga beroenden misslyckades"
+
+#: ../aptkit/enums.py:394
+msgid "Adding software source failed"
+msgstr "Tillägg av programkällan misslyckades"
+
+#: ../aptkit/enums.py:395
+msgid "Enabling component of the distribution failed"
+msgstr "Aktivering av komponent för distributionen misslyckades"
+
+#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
+msgid "Removing downloaded package files failed"
+msgstr "Borttagning av hämtade paketfiler misslyckades"
+
+#: ../aptkit/enums.py:399
+msgid "Search failed"
+msgstr "Sökningen misslyckades"
+
+#: ../aptkit/enums.py:400
+msgid "Adding license key"
+msgstr "Lägger till licensnyckel"
+
+#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
+msgid "Check your Internet connection."
+msgstr "Kontrollera din internetanslutning."
+
+#: ../aptkit/enums.py:406
+msgid ""
+"Check if you are using third party repositories. If so disable them, since "
+"they are a common source of problems.\n"
+"Furthermore run the following command in a Terminal: apt-get install -f"
+msgstr ""
+"Kontrollera om du använder tredjepartsförråd. Inaktivera dem i så fall "
+"eftersom de är en vanlig problemkälla.\n"
+"Kör även följande kommando i en terminal: apt-get install -f"
+
+#: ../aptkit/enums.py:411
+msgid "The selected file may not be a GPG key file or it might be corrupt."
+msgstr ""
+"Den valda filen verkar inte vara en GPG-nyckel eller så är filen trasig."
+
+#: ../aptkit/enums.py:413
+msgid ""
+"The selected key couldn't be removed. Check that you provided a valid "
+"fingerprint."
+msgstr ""
+"Den valda nyckeln kunde inte tas bort. Kontrollera att du angav ett giltigt "
+"fingeravtryck."
+
+#: ../aptkit/enums.py:415
+msgid ""
+"Check if you are currently running another software management tool, e.g. "
+"Synaptic or aptitude. Only one tool is allowed to make changes at a time."
+msgstr ""
+"Kontrollera om du för närvarande kör ett annat verktyg för programhantering, "
+"tex. Synaptic eller aptitude. Endast ett verktyg åt gången tillåts att göra "
+"ändringar."
+
+#: ../aptkit/enums.py:418
+msgid ""
+"This is a serious problem. Try again later. If this problem appears again, "
+"please report an error to the developers."
+msgstr ""
+"Detta är ett allvarligt problem. Försök igen senare. Om problemet sker igen "
+"så rapportera detta som ett fel till utvecklarna."
+
+#: ../aptkit/enums.py:421
+msgid ""
+"Check the spelling of the package name, and that the appropriate repository "
+"is enabled."
+msgstr ""
+"Kontrollera stavningen av paketnamnet och att rätt förråd är aktiverat."
+
+#: ../aptkit/enums.py:423
+msgid "There isn't any need for an update."
+msgstr "Det finns inget behov för en uppdatering."
+
+#: ../aptkit/enums.py:424
+msgid "There isn't any need for an installation"
+msgstr "Det finns inget behov för en installation"
+
+#: ../aptkit/enums.py:426
+msgid "There isn't any need for a removal."
+msgstr "Det finns inget behov för en borttagning."
+
+#: ../aptkit/enums.py:427
+msgid ""
+"You requested to remove a package which is an essential part of your system."
+msgstr ""
+"Du begärde att ta bort ett paket som är en systemkritisk del av ditt system."
+
+#: ../aptkit/enums.py:430
+msgid ""
+"The connection to the daemon was lost. Most likely the background daemon "
+"crashed."
+msgstr ""
+"Anslutningen till demonen tappades. Mest sannolikt är att bakgrundsdemonen "
+"kraschade."
+
+#: ../aptkit/enums.py:432
+msgid "The installation or removal of a software package failed."
+msgstr "Installationen eller borttagningen av ett programpaket misslyckades."
+
+#: ../aptkit/enums.py:434
+msgid "The requested feature is not supported."
+msgstr "Den begärda funktionen stöds inte."
+
+#: ../aptkit/enums.py:435
+msgid ""
+"There seems to be a programming error in aptkit, the software that allows "
+"you to install/remove software and to perform other package management "
+"related tasks."
+msgstr ""
+"Det verkar finnas ett programmeringsfel i aptkit, programvaran som låter dig "
+"installera/ta bort program och genomföra andra åtgärder relaterade till "
+"pakethantering."
+
+#: ../aptkit/enums.py:439
+msgid ""
+"This error could be caused by required additional software packages which "
+"are missing or not installable. Furthermore there could be a conflict "
+"between software packages which are not allowed to be installed at the same "
+"time."
+msgstr ""
+"Detta fel kan orsakas av att ytterligare nödvändiga programpaket saknas "
+"eller inte är installerbara. Det kan även finnas en konflikt mellan "
+"programpaket som inte tillåts att installeras på samma gång."
+
+#: ../aptkit/enums.py:445
+msgid "This requires installing packages from unauthenticated sources."
+msgstr "Detta kräver installation av paket från obehöriga källor."
+
+#: ../aptkit/enums.py:447
+msgid ""
+"The installation could have failed because of an error in the corresponding "
+"software package or it was cancelled in an unfriendly way. You have to "
+"repair this before you can install or remove any further software."
+msgstr ""
+"Installationen kan ha misslyckats på grund av ett fel i programpaketet eller "
+"att den avbröts på ett onormalt sätt. Du måste reparera detta innan du kan "
+"installera eller ta bort ytterligare program."
+
+#: ../aptkit/enums.py:453
+msgid ""
+"Please copy the file to your local computer and check the file permissions."
+msgstr ""
+"Kopiera filen till din lokala dator och kontrollera filrättigheterna."
+
+#: ../aptkit/enums.py:456
+msgid ""
+"The installation of a package which violates the quality standards isn't "
+"allowed. This could cause serious problems on your computer. Please contact "
+"the person or organisation who provided this package file and include the "
+"details beneath."
+msgstr ""
+"Installation av ett paket som strider mot kvalitetsstandarderna tillåts "
+"inte. Detta kan orsaka allvarliga problem på din dator. Kontakta personen "
+"eller organisationen som tillhandahöll denna paketfil och inkludera "
+"nedanstående information."
+
+#: ../aptkit/enums.py:463
+msgid ""
+"The downloaded license key which is required to run this piece of software "
+"is not valid or could not be installed correctly.\n"
+"See the details for more information."
+msgstr ""
+"Den hämtade licensnyckeln som krävs för att köra denna programvara är inte "
+"giltig eller kunde inte installeras korrekt.\n"
+"Se detaljerad information för ytterligare felsökning."
+
+#: ../aptkit/enums.py:469
+msgid "All available upgrades have already been installed."
+msgstr "Alla tillgängliga uppgraderingar har redan installerats."
+
+#: ../aptkit/enums.py:471
+msgid ""
+"The license key which allows you to use this piece of software could not be "
+"downloaded. Please check your network connection."
+msgstr ""
+"Licensnyckeln som låter dig använda denna programvara kunde inte hämtas. "
+"Kontrollera din nätverksanslutning."
+
+#: ../aptkit/enums.py:475
+msgid "You don't have the required privileges to perform this action."
+msgstr "Du har inte rätt privilegier för att utföra åtgärden."
+
+#: ../aptkit/enums.py:477
+msgid ""
+"You either provided a wrong password or cancelled the authorization.\n"
+"Furthermore there could also be a technical reason for this error if you "
+"haven't seen a password dialog: your desktop environment doesn't provide a "
+"PolicyKit session agent."
+msgstr ""
+"Du angav antingen fel lösenord eller avbröt identitetskontrollen.\n"
+"Det kan också finnas en teknisk orsak för felet, om du aldrig såg en "
+"lösenordsprompt: din skrivbordsmiljö tillhandahåller inte någon PolicyKit-"
+"sessionsagent."
+
+#: ../aptkit/enums.py:485
+msgid "Failed to download package files"
+msgstr "Misslyckades med att hämta paketfiler"
+
+#: ../aptkit/enums.py:486
+msgid "Failed to download repository information"
+msgstr "Misslyckades med att hämta förrådsinformation"
+
+#: ../aptkit/enums.py:488
+msgid "Package dependencies cannot be resolved"
+msgstr "Paketberoenden kan inte lösas"
+
+#: ../aptkit/enums.py:489
+msgid "The package system is broken"
+msgstr "Paketsystemet är trasigt"
+
+#: ../aptkit/enums.py:490
+msgid "Key was not installed"
+msgstr "Nyckeln installerades inte"
+
+#: ../aptkit/enums.py:491
+msgid "Key was not removed"
+msgstr "Nyckeln togs inte bort"
+
+#: ../aptkit/enums.py:492
+msgid "Failed to lock the package manager"
+msgstr "Misslyckades med att låsa pakethanteraren"
+
+#: ../aptkit/enums.py:493
+msgid "Failed to load the package list"
+msgstr "Misslyckades med att läsa in paketlistan"
+
+#: ../aptkit/enums.py:494
+msgid "Package does not exist"
+msgstr "Paketet finns inte"
+
+#: ../aptkit/enums.py:495
+msgid "Package is already up to date"
+msgstr "Paketet är redan uppdaterat"
+
+#: ../aptkit/enums.py:496
+msgid "Package is already installed"
+msgstr "Paketet är redan installerat"
+
+#: ../aptkit/enums.py:497
+msgid "Package isn't installed"
+msgstr "Paketet är inte installerat"
+
+#: ../aptkit/enums.py:498
+msgid "Failed to remove essential system package"
+msgstr "Misslyckades med att ta bort ett systemkritiskt paket"
+
+#: ../aptkit/enums.py:500
+msgid "Task cannot be monitored or controlled"
+msgstr "Åtgärden kan inte övervakas eller kontrolleras"
+
+#: ../aptkit/enums.py:501
+msgid "Package operation failed"
+msgstr "Paketåtgärden misslyckades"
+
+#: ../aptkit/enums.py:502
+msgid "Requires installation of untrusted packages"
+msgstr "Kräver installation av ej pålitliga paket"
+
+#: ../aptkit/enums.py:504
+msgid "Previous installation hasn't been completed"
+msgstr "Tidigare installation har inte färdigställts"
+
+#: ../aptkit/enums.py:505
+msgid "The package is of bad quality"
+msgstr "Paketet är av dålig kvalitet"
+
+#: ../aptkit/enums.py:506
+msgid "Package file could not be opened"
+msgstr "Paketfilen kunde inte öppnas"
+
+#: ../aptkit/enums.py:507
+msgid "Not supported feature"
+msgstr "Funktionen stöds inte"
+
+#: ../aptkit/enums.py:508
+msgid "Failed to download the license key"
+msgstr "Misslyckades med att hämta licensnyckeln"
+
+#: ../aptkit/enums.py:509
+msgid "Failed to install the license key"
+msgstr "Misslyckades med att installera licensnyckeln"
+
+#: ../aptkit/enums.py:510
+msgid "The system is already up to date"
+msgstr "Systemet är redan uppdaterat"
+
+#: ../aptkit/enums.py:511
+msgid "You could not be authorized"
+msgstr "Du passerade inte identitetskontrollen"
+
+#: ../aptkit/enums.py:512
+msgid "You are not allowed to perform this action"
+msgstr "Du har inte tillstånd att utföra åtgärden"
+
+#: ../aptkit/enums.py:513
+msgid "An unhandlable error occured"
+msgstr "Ett ohanterat fel inträffade"
+
+#: ../aptkit/enums.py:516
+msgid "Waiting for service to start"
+msgstr "Väntar på att tjänsten ska starta"
+
+#: ../aptkit/enums.py:518
+msgid "Waiting"
+msgstr "Väntar"
+
+#: ../aptkit/enums.py:519
+msgid "Waiting for required medium"
+msgstr "Väntar på nödvändigt media"
+
+#: ../aptkit/enums.py:520
+msgid "Waiting for other software managers to quit"
+msgstr "Väntar på att andra programhanterare ska avslutas"
+
+#: ../aptkit/enums.py:521
+msgid "Waiting for configuration file prompt"
+msgstr "Väntar på prompt för konfigurationsfil"
+
+#: ../aptkit/enums.py:523
+msgid "Running task"
+msgstr "Kör aktivitet"
+
+#: ../aptkit/enums.py:524
+msgid "Downloading"
+msgstr "Hämtar"
+
+#: ../aptkit/enums.py:525
+msgid "Querying software sources"
+msgstr "Kontrollerar programkällor"
+
+#: ../aptkit/enums.py:526
+msgid "Cleaning up"
+msgstr "Rensar upp"
+
+#: ../aptkit/enums.py:527
+msgid "Resolving dependencies"
+msgstr "Löser beroenden"
+
+#: ../aptkit/enums.py:529
+msgid "Finished"
+msgstr "Färdig"
+
+#: ../aptkit/enums.py:530
+msgid "Cancelling"
+msgstr "Avbryter"
+
+#: ../aptkit/enums.py:531
+msgid "Loading software list"
+msgstr "Läser in programlista"
+
+#: ../aptkit/enums.py:532
+msgid "Waiting for authentication"
+msgstr "Väntar på autentisering"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:536
+#, python-format
+msgid "Installing %s"
+msgstr "Installerar %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:538
+#, python-format
+msgid "Configuring %s"
+msgstr "Konfigurerar %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:540
+#, python-format
+msgid "Removing %s"
+msgstr "Tar bort %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:542
+#, python-format
+msgid "Completely removing %s"
+msgstr "Tar fullständigt bort %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:544
+#, python-format
+msgid "Noting disappearance of %s"
+msgstr "Uppmärksammar att %s försvinner"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:546
+#, python-format
+msgid "Running post-installation trigger %s"
+msgstr "Kör efterinstallationsutlösare %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:548
+#, python-format
+msgid "Upgrading %s"
+msgstr "Uppgraderar %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:550
+#, python-format
+msgid "Unpacking %s"
+msgstr "Packar upp %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:552
+#, python-format
+msgid "Preparing installation of %s"
+msgstr "Förbereder installation av %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:554
+#, python-format
+msgid "Preparing configuration of %s"
+msgstr "Förbereder konfiguration av %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:556
+#, python-format
+msgid "Preparing removal of %s"
+msgstr "Förbereder borttagning av %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:558
+#, python-format
+msgid "Preparing complete removal of %s"
+msgstr "Förbereder fullständig borttagning av %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:560
+#, python-format
+msgid "Installed %s"
+msgstr "Installerade %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:562
+#, python-format
+msgid "Completely removed %s"
+msgstr "Tog bort hela %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:564
+#, python-format
+msgid "Removed %s"
+msgstr "Tog bort %s"
+
+#: ../aptkit/enums.py:567
+msgid "Done"
+msgstr "Färdig"
+
+#: ../aptkit/enums.py:568
+msgid "Authentication failed"
+msgstr "Autentisering misslyckades"
+
+#: ../aptkit/enums.py:570
+msgid "Fetching"
+msgstr "Hämtar"
+
+#: ../aptkit/enums.py:571
+msgid "Idle"
+msgstr "Overksam"
+
+#: ../aptkit/enums.py:572
+msgid "Network isn't available"
+msgstr "Nätverket är inte tillgängligt"
+
+#: ../aptkit/enums.py:704
+#, python-format
+msgid "Processing %s"
+msgstr "Behandlar %s"
+
+#: ../aptkit/gtk3widgets.py:311
+#, python-format
+msgid "Downloaded %sB of %sB at %sB/s"
+msgstr "Hämtat %sB av %sB i %sB/s"
+
+#: ../aptkit/gtk3widgets.py:316 ../aptkit/gtk3widgets.py:517
+#, python-format
+msgid "Downloaded %sB of %sB"
+msgstr "Hämtat %sB av %sB"
+
+#: ../aptkit/gtk3widgets.py:328
+msgid "Details"
+msgstr "Detaljer"
+
+#: ../aptkit/gtk3widgets.py:481
+msgid "File"
+msgstr "Fil"
+
+#. TRANSLATORS: header of the progress download column
+#: ../aptkit/gtk3widgets.py:486
+msgid "%"
+msgstr "%"
+
+#: ../aptkit/gtk3widgets.py:522
+#, python-format
+msgid "Downloaded %sB"
+msgstr "Hämtat %sB"
+
+#: ../aptkit/gtk3widgets.py:525
+msgid "Downloaded"
+msgstr "Hämtat"
+
+#. TRANSLATORS: %s represents the name of a CD or DVD
+#: ../aptkit/gtk3widgets.py:860
+#, python-format
+msgid "CD/DVD '%s' is required"
+msgstr "Cd/dvd-skivan \"%s\" krävs"
+
+#. TRANSLATORS: %s is the name of the CD/DVD drive
+#: ../aptkit/gtk3widgets.py:862
+#, python-format
+msgid ""
+"Please insert the above CD/DVD into the drive '%s' to install software "
+"packages from it."
+msgstr ""
+"Mata in ovanstående cd/dvd-skiva i enheten \"%s\" för att installera "
+"programpaket från den."
+
+#: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
+msgid "C_ontinue"
+msgstr "F_ortsätt"
+
+#: ../aptkit/gtk3widgets.py:939
+msgid "Install"
+msgstr "Installera"
+
+#: ../aptkit/gtk3widgets.py:940
+msgid "Reinstall"
+msgstr "Installera om"
+
+#: ../aptkit/gtk3widgets.py:941
+msgid "Remove"
+msgstr "Ta bort"
+
+#: ../aptkit/gtk3widgets.py:942
+msgid "Purge"
+msgstr "Rensa"
+
+#: ../aptkit/gtk3widgets.py:943
+msgid "Upgrade"
+msgstr "Uppgradera"
+
+#: ../aptkit/gtk3widgets.py:944
+msgid "Downgrade"
+msgstr "Nedgradera"
+
+#: ../aptkit/gtk3widgets.py:945
+msgid "Skip upgrade"
+msgstr "Hoppa över uppgradering"
+
+#. If there is only one type of changes (e.g. only installs) expand the
+#. tree
+#. FIXME: adapt the title and message accordingly
+#. FIXME: Should we have different modes? Only show dependencies, only
+#. initial packages or both?
+#: ../aptkit/gtk3widgets.py:956
+msgid "Please take a look at the list of changes below."
+msgstr "Ta en titt på ändringslistan nedan."
+
+#: ../aptkit/gtk3widgets.py:964
+msgid "Additional software has to be installed"
+msgstr "Ytterligare program behöver installeras"
+
+#: ../aptkit/gtk3widgets.py:966
+msgid "Additional software has to be re-installed"
+msgstr "Ytterligare program behöver installeras om"
+
+#: ../aptkit/gtk3widgets.py:968
+msgid "Additional software has to be removed"
+msgstr "Ytterligare program behöver tas bort"
+
+#: ../aptkit/gtk3widgets.py:970
+msgid "Additional software has to be purged"
+msgstr "Ytterligare program behöver rensas bort"
+
+#: ../aptkit/gtk3widgets.py:972
+msgid "Additional software has to be upgraded"
+msgstr "Ytterligare program behöver uppgraderas"
+
+#: ../aptkit/gtk3widgets.py:974
+msgid "Additional software has to be downgraded"
+msgstr "Ytterligare program behöver nedgraderas"
+
+#: ../aptkit/gtk3widgets.py:976
+msgid "Updates will be skipped"
+msgstr "Uppdateringar kommer att hoppas över"
+
+#: ../aptkit/gtk3widgets.py:984
+msgid "Additional changes are required"
+msgstr "Ytterligare ändringar krävs"
+
+#: ../aptkit/gtk3widgets.py:989
+#, python-format
+msgid "%sB will be downloaded in total."
+msgstr "%sB kommer totalt att hämtas."
+
+#: ../aptkit/gtk3widgets.py:993
+#, python-format
+msgid "%sB of disk space will be freed."
+msgstr "%sB diskutrymme kommer att frigöras."
+
+#: ../aptkit/gtk3widgets.py:997
+#, python-format
+msgid "%sB more disk space will be used."
+msgstr "%sB ytterligare diskutrymme kommer att användas."
+
+#. TRANSLATORS: %s is a file path
+#: ../aptkit/gtk3widgets.py:1069
+#, python-format
+msgid ""
+"Replace your changes in '%s' with a later version of the configuration file?"
+msgstr ""
+"Ersätt dina ändringar i \"%s\" med en senare version av konfigurationsfilen?"
+
+#: ../aptkit/gtk3widgets.py:1071
+msgid ""
+"If you don't know why the file is there already, it is usually safe to "
+"replace it."
+msgstr ""
+"Om du inte vet varför filen redan finns där så är det oftast det bästa att "
+"ersätta den."
+
+#: ../aptkit/gtk3widgets.py:1080
+msgid "_Changes"
+msgstr "_Ändringar"
+
+#: ../aptkit/gtk3widgets.py:1083
+msgid "_Keep"
+msgstr "_Behåll"
+
+#: ../aptkit/gtk3widgets.py:1084
+msgid "_Replace"
+msgstr "_Ersätt"
+
+#: ../aptkit/gtk3widgets.py:1187
+msgid "_Details"
+msgstr "_Detaljer"
+
+#. TRANSLATORS: %s is the name of a package manager
+#: ../aptkit/lock.py:189
+#, python-format
+msgid "Waiting for %s to exit"
+msgstr "Väntar på att %s ska avslutas"
+
+#. TRANSLATORS: %s is a list of package names
+#: ../aptkit/progress.py:168
+#, python-format
+msgid "Downloading %s"
+msgstr "Hämtar %s"
+
+#. TRANSLATORS: the string is used as a fallback if we cannot
+#. get the URI of a local repository
+#: ../aptkit/progress.py:277 ../aptkit/progress.py:314
+msgid "local repository"
+msgstr "lokalt förråd"
+
+#. TRANSLATORS: %s is a list of repository names
+#: ../aptkit/progress.py:280
+#, python-format
+msgid "Downloading from %s"
+msgstr "Hämtar från %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:318
+#, python-format
+msgid "Structure of %s"
+msgstr "Struktur för %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:321
+#, python-format
+msgid "Description of %s"
+msgstr "Beskrivning för %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:324
+#, python-format
+msgid "Description signature of %s"
+msgstr "Beskrivningssignatur för %s"
+
+#: ../aptkit/progress.py:329
+#, python-format
+msgid "Available packages from %s"
+msgstr "Tillgängliga paket från %s"
+
+#: ../aptkit/progress.py:333
+#, python-format
+msgid "Available sources from %s"
+msgstr "Tillgängliga källor från %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:336
+#, python-format
+msgid "Available translations from %s"
+msgstr "Tillgängliga översättningar från %s"
+
+#: ../aptkit/progress.py:353
+#, python-format
+msgid "Translations for %s (%s) from %s"
+msgstr "Översättningar till %s (%s) från %s"
+
+#. TRANSLATORS: %s is the name of a language. The second one is
+#. the name of the repository
+#: ../aptkit/progress.py:357
+#, python-format
+msgid "Translations for %s from %s"
+msgstr "Översättningar till %s från %s"
+
+#. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
+#. The second one is the name of the repository
+#: ../aptkit/progress.py:362
+#, python-format
+msgid "Translations (%s) from %s"
+msgstr "Översättningar (%s) från %s"
+
+#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
+#: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
+#, python-format
+msgid "Package %s isn't available"
+msgstr "Paketet %s finns inte tillgängligt"
+
+#: ../aptkit/worker/aptworker.py:384 ../aptkit/worker/aptworker.py:682
+#: ../aptkit/worker/aptworker.py:777 ../aptkit/worker/aptworker.py:822
+#, python-format
+msgid "Package %s isn't installed"
+msgstr "Paketet %s är inte installerat"
+
+#: ../aptkit/worker/aptworker.py:388
+#, python-format
+msgid "The version %s of %s isn't installed"
+msgstr "Version %s av %s är inte installerat"
+
+#: ../aptkit/worker/aptworker.py:403
+#, python-format
+msgid "Package %s is already installed"
+msgstr "Paketet %s är redan installerat"
+
+#: ../aptkit/worker/aptworker.py:410 ../aptkit/worker/aptworker.py:845
+#, python-format
+msgid "The version %s of %s isn't available."
+msgstr "Version %s av %s finns inte tillgänglig."
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptkit/worker/aptworker.py:572
+#, python-format
+msgid "The keyserver URL is invalid: %s"
+msgstr "Nyckelsreverns URL är ogiltig: %s"
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptkit/worker/aptworker.py:578
+#, python-format
+msgid "Invalid protocol of the server: %s"
+msgstr "Ogiltigt protokoll för servern: %s"
+
+#. TRANSLATORS: %s is the id of a GnuPG key
+#. e.g. E08ADE95
+#: ../aptkit/worker/aptworker.py:586 ../aptkit/worker/aptworker.py:630
+#, python-format
+msgid "Invalid key id: %s"
+msgstr "Ogiltigt nyckel-ID: %s"
+
+#: ../aptkit/worker/aptworker.py:594
+#, python-format
+msgid ""
+"Failed to download and install the key %s from %s:\n"
+"%s"
+msgstr ""
+"Misslyckades med att hämta och installera nyckeln %s från %s:\n"
+"%s"
+
+#: ../aptkit/worker/aptworker.py:611
+#, python-format
+msgid "Key file %s couldn't be installed: %s"
+msgstr "Nyckelfilen %s gick inte att installera: %s"
+
+#: ../aptkit/worker/aptworker.py:635
+#, python-format
+msgid "Key with fingerprint %s couldn't be removed: %s"
+msgstr "Nyckeln med fingeravtrycket %s kunde inte tas bort: %s"
+
+#: ../aptkit/worker/aptworker.py:686
+#, python-format
+msgid "Package %s cannot be removed."
+msgstr "Paketet %s kan inte tas bort."
+
+#: ../aptkit/worker/aptworker.py:690
+#, python-format
+msgid "The version %s of %s is not installed"
+msgstr "Version %s av %s är inte installerad"
+
+#: ../aptkit/worker/aptworker.py:785
+#, python-format
+msgid "The former version %s of %s is already installed"
+msgstr "Den tidigare versionen %s av %s är redan installerad"
+
+#: ../aptkit/worker/aptworker.py:790 ../aptkit/worker/aptworker.py:838
+#, python-format
+msgid "The version %s of %s is already installed"
+msgstr "Version %s av %s är redan installerad"
+
+#: ../aptkit/worker/aptworker.py:797
+#, python-format
+msgid "The version %s of %s isn't available"
+msgstr "Version %s av %s finns inte tillgänglig"
+
+#: ../aptkit/worker/aptworker.py:801
+#, python-format
+msgid "You need to specify a version to downgrade %s to"
+msgstr "Du måste ange en version att nedgradera %s till"
+
+#: ../aptkit/worker/aptworker.py:831
+#, python-format
+msgid "The later version %s of %s is already installed"
+msgstr "Den senare versionen %s av %s är redan installerad"
+
+#: ../aptkit/worker/aptworker.py:867
+#, python-format
+msgid "The package %s isn't available in the %s release."
+msgstr "Paketet %s finns inte tillgängligt i utgåvan %s."
+
+#: ../aptkit/worker/aptworker.py:1052
+#, python-format
+msgid "Package %s cannot be removed"
+msgstr "Paketet %s kan inte tas bort"
+
+#: ../aptkit/worker/aptworker.py:1154
+msgid ""
+"The package doesn't provide a valid Installed-Size control field. See Debian "
+"Policy 5.6.20."
+msgstr ""
+"Paketet tillhandahåller inte ett giltigt Installed-Size-kontrollfält. Se "
+"Debian Policy 5.6.20."
+
+#: ../aptkit/worker/aptworker.py:1293
+msgid "The license key is empty"
+msgstr "Licensnyckeln är tom"
+
+#: ../aptkit/worker/aptworker.py:1309
+msgid "The license key is not allowed to contain executable code."
+msgstr "Licensnyckeln får inte innehålla körbar kod."
+
+#: ../aptkit/worker/aptworker.py:1318
+#, python-format
+msgid "The license key path %s is invalid"
+msgstr "Sökvägen till licensnyckeln %s är ogiltig"
+
+#: ../aptkit/worker/aptworker.py:1322
+#, python-format
+msgid "The license key already exists: %s"
+msgstr "Licensnyckeln finns redan: %s"
+
+#: ../aptkit/worker/aptworker.py:1327
+#, python-format
+msgid ""
+"The location of the license key is unsecure since it contains symbolic "
+"links. The path %s maps to %s"
+msgstr ""
+"Licensnyckelns plats är osäker eftersom den innehåller symboliska länkar. "
+"Sökvägen %s mappas till %s"
+
+#: ../aptkit/worker/aptworker.py:1335
+#, python-format
+msgid "The directory where to install the key to doesn't exist yet: %s"
+msgstr "Katalogen där nyckeln ska installeras finns ännu inte: %s"
+
+#: ../aptkit/worker/aptworker.py:1346
+#, python-format
+msgid "Failed to write key file to: %s"
+msgstr "Kunde inte skriva nyckelfilen till: %s"
+
+#: ../aptkit/worker/aptworker.py:1381
+msgid "The following packages have unmet dependencies:"
+msgstr "Följande paket har otillfredsställda beroenden:"
+
+#: ../aptkit/worker/aptworker.py:1434
+msgid "but it is a virtual package"
+msgstr "men det är ett virtuellt paket"
+
+#: ../aptkit/worker/aptworker.py:1437
+msgid "but it is not installed"
+msgstr "men är inte installerat"
+
+#: ../aptkit/worker/aptworker.py:1439
+msgid "but it is not going to be installed"
+msgstr "men kommer inte att installeras"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptkit/worker/aptworker.py:1443
+#, python-format
+msgid "but %s is installed"
+msgstr "men %s är installerat"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptkit/worker/aptworker.py:1447
+#, python-format
+msgid "but %s is to be installed"
+msgstr "men %s kommer att installeras"

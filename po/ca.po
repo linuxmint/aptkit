@@ -1,0 +1,1282 @@
+# Catalan translation for aptkit
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the aptkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: aptkit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-09 19:27+0100\n"
+"PO-Revision-Date: 2024-09-09 18:35+0000\n"
+"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"Language-Team: Catalan <ca@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2024-09-10 09:08+0000\n"
+"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
+"Language: ca\n"
+
+#: ../data/org.debian.aptkit.policy.in.h:1
+msgid "List keys of trusted vendors"
+msgstr "Obtenció d'una llista de claus dels proveïdors de confiança"
+
+#: ../data/org.debian.aptkit.policy.in.h:2
+msgid "To view the list of trusted keys, you need to authenticate."
+msgstr "Cal que us autentiqueu per obtenir la llista de claus de confiança."
+
+#: ../data/org.debian.aptkit.policy.in.h:3
+msgid "Remove downloaded package files"
+msgstr "Supressió dels fitxers de paquet baixats"
+
+#: ../data/org.debian.aptkit.policy.in.h:4
+msgid "To clean downloaded package files, you need to authenticate."
+msgstr ""
+"Cal que us autentiqueu per poder netejar els fitxers de paquet baixats."
+
+#: ../data/org.debian.aptkit.policy.in.h:5
+msgid "Change software configuration"
+msgstr "Canvi de la configuració del programari"
+
+#: ../data/org.debian.aptkit.policy.in.h:6
+msgid "To change software settings, you need to authenticate."
+msgstr ""
+"Cal que us autentiqueu per poder canviar els paràmetres del programari."
+
+#: ../data/org.debian.aptkit.policy.in.h:7
+msgid "Change software repository"
+msgstr "Canvi de dipòsit de programari"
+
+#: ../data/org.debian.aptkit.policy.in.h:8
+msgid "To change software repository settings, you need to authenticate."
+msgstr ""
+"Cal que us autentiqueu per canviar els paràmetres dels dipòsits de "
+"programari."
+
+#: ../data/org.debian.aptkit.policy.in.h:9
+msgid "Install package file"
+msgstr "Instal·lació d'un fitxer de paquet"
+
+#: ../data/org.debian.aptkit.policy.in.h:10
+msgid "To install this package, you need to authenticate."
+msgstr "Cal que us autentiqueu per instal·lar aquest paquet."
+
+#: ../data/org.debian.aptkit.policy.in.h:11
+msgid "Update package information"
+msgstr "Actualització de la informació dels paquets"
+
+#: ../data/org.debian.aptkit.policy.in.h:12
+msgid "To update the software catalog, you need to authenticate."
+msgstr "Cal que us autentiqueu per actualitzar el catàleg de programari."
+
+#: ../data/org.debian.aptkit.policy.in.h:13
+msgid "Install or remove packages"
+msgstr "Instal·lació o supressió de paquets"
+
+#: ../data/org.debian.aptkit.policy.in.h:14
+msgid "To install or remove software, you need to authenticate."
+msgstr "Cal que us autentiqueu per instal·lar o suprimir programari."
+
+#. This priviledge will be requested when installing a package
+#. from a high trusted repository that can be explicitely whitelisted.
+#. 
+#. The defaults for this action are the same as
+#. "org.debian.aptkit.install-or-remove-packages".
+#. 
+#. The admin can override them to e.g. allow passwordless installs for
+#. leightweight applications like unity-webapps or for packages
+#. comming from high trust repositories (like internal repositories)
+#. 
+#: ../data/org.debian.aptkit.policy.in.h:25
+msgid "Install software from a high-trust whitelisted repository."
+msgstr "Instal·lació de programari d'un dipòsit de confiança alta."
+
+#: ../data/org.debian.aptkit.policy.in.h:26
+msgid "To install software, you need to authenticate."
+msgstr "Per instal·lar programari, cal autenticar-se."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#: ../data/org.debian.aptkit.policy.in.h:32
+msgid "Add a new repository and install packages from it"
+msgstr "Addició d'un dipòsit nou i instal·lació de paquets d'aquest"
+
+#: ../data/org.debian.aptkit.policy.in.h:33
+msgid "To install software from a new source, you need to authenticate."
+msgstr "Heu d'autenticar-vos per instal·lar programari d'una font nova."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#. 
+#. The only difference to install-packages-from-new-repo is the wording
+#. of the message. It is required by Ubuntu's Software-Center.
+#: ../data/org.debian.aptkit.policy.in.h:42
+msgid ""
+"Add a new repository of purchased software and install packages from it"
+msgstr ""
+"Addició d'un dipòsit nou de programari que s'hagi comprat i instal·lació de "
+"paquets d'aquest"
+
+#: ../data/org.debian.aptkit.policy.in.h:43
+msgid "To install purchased software, you need to authenticate."
+msgstr "Heu d'autenticar-vos per instal·lar programari que hàgiu comprat."
+
+#: ../data/org.debian.aptkit.policy.in.h:44
+msgid "Upgrade packages"
+msgstr "Actualització dels paquets"
+
+#: ../data/org.debian.aptkit.policy.in.h:45
+msgid "To install updated software, you need to authenticate."
+msgstr "Cal que us autentiqueu per instal·lar programari actualitzat."
+
+#: ../data/org.debian.aptkit.policy.in.h:46
+msgid "Cancel the task of another user"
+msgstr "Cancel·lació de la tasca d'un altre usuari"
+
+#: ../data/org.debian.aptkit.policy.in.h:47
+msgid "To cancel someone else's software changes, you need to authenticate."
+msgstr ""
+"Cal que us autentiqueu per cancel·lar els canvis que algú altre realitzi al "
+"programari."
+
+#: ../data/org.debian.aptkit.policy.in.h:48
+msgid "Set a proxy for software downloads"
+msgstr "Establiment d'un servidor intermediari per baixar programari"
+
+#: ../data/org.debian.aptkit.policy.in.h:49
+msgid ""
+"To use a proxy server for downloading software, you need to authenticate."
+msgstr ""
+"Cal que us autentiqueu per utilitzar un servidor intermediari per baixar "
+"programari."
+
+#: ../aptkit/core.py:2148
+msgid "Do not shutdown the daemon because of inactivity"
+msgstr "No aturis el dimoni per inactivitat"
+
+#: ../aptkit/core.py:2153
+msgid "Do not load any plugins"
+msgstr "No carreguis cap connector"
+
+#: ../aptkit/core.py:2157
+msgid "Show internal processing information"
+msgstr "Mostra la informació interna de processament"
+
+#: ../aptkit/core.py:2162
+msgid "Quit and replace an already running daemon"
+msgstr "Surt i reemplaça un dimoni que s'estigui executant"
+
+#: ../aptkit/core.py:2167
+msgid "Listen on the DBus session bus (Only required for testing"
+msgstr "Escolta en el bus de sessió DBus (només cal per a proves)"
+
+#: ../aptkit/core.py:2171
+msgid "Perform operations in the given chroot"
+msgstr "Realitza les operacions en el chroot especificat"
+
+#: ../aptkit/core.py:2176
+msgid "Store profile stats in the specified file"
+msgstr "Desa estadístiques de perfil en el fitxer especificat"
+
+#: ../aptkit/core.py:2181
+msgid "Do not make any changes to the system (Only of use to developers)"
+msgstr "No facis cap canvi al sistema (només útil per als desenvolupadors)"
+
+#: ../aptkit/enums.py:337
+msgid "Installed file"
+msgstr "Fitxer instal·lat"
+
+#: ../aptkit/enums.py:338
+msgid "Installed packages"
+msgstr "Paquets instal·lats"
+
+#: ../aptkit/enums.py:339
+msgid "Added key from file"
+msgstr "S'ha afegit la clau des d'un fitxer"
+
+#: ../aptkit/enums.py:340
+msgid "Updated cache"
+msgstr "S'ha actualitzat la memòria cau"
+
+#: ../aptkit/enums.py:341
+msgid "Search done"
+msgstr "Ha finalitzat la cerca"
+
+#: ../aptkit/enums.py:342
+msgid "Removed trusted key"
+msgstr "S'ha suprimit la clau de confiança"
+
+#: ../aptkit/enums.py:343
+msgid "Removed packages"
+msgstr "S'han suprimit els paquets"
+
+#: ../aptkit/enums.py:344
+msgid "Updated packages"
+msgstr "S'han actualitzat els paquets"
+
+#: ../aptkit/enums.py:345
+msgid "Upgraded system"
+msgstr "S'ha actualitzat el sistema"
+
+#: ../aptkit/enums.py:346
+msgid "Applied changes"
+msgstr "S'han aplicat els canvis"
+
+#: ../aptkit/enums.py:347
+msgid "Repaired incomplete installation"
+msgstr "Instal·lació incompleta reparada"
+
+#: ../aptkit/enums.py:348
+msgid "Repaired broken dependencies"
+msgstr "Dependències no vàlides reparades"
+
+#: ../aptkit/enums.py:349
+msgid "Added software source"
+msgstr "S'ha afegit una font de programari"
+
+#: ../aptkit/enums.py:350
+msgid "Enabled component of the distribution"
+msgstr "S'ha habilitant un component de la distribució"
+
+#: ../aptkit/enums.py:351
+msgid "Removed downloaded package files"
+msgstr "S'han suprimit els fitxers de paquets baixats"
+
+#: ../aptkit/enums.py:352
+msgid "Reconfigured installed packages"
+msgstr "S'han tornat a configurar els paquets instal·lats"
+
+#: ../aptkit/enums.py:356
+msgid "Successful"
+msgstr "Correcte"
+
+#: ../aptkit/enums.py:357
+msgid "Canceled"
+msgstr "Cancel·lat"
+
+#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
+msgid "Failed"
+msgstr "Ha fallat"
+
+#: ../aptkit/enums.py:361
+msgid "Installing file"
+msgstr "S'està instal·lant un fitxer"
+
+#: ../aptkit/enums.py:362
+msgid "Installing packages"
+msgstr "S'estan instal·lant els paquets"
+
+#: ../aptkit/enums.py:363
+msgid "Adding key from file"
+msgstr "S'està afegint la clau des del fitxer"
+
+#: ../aptkit/enums.py:364
+msgid "Updating cache"
+msgstr "S'està actualitzant la memòria cau"
+
+#: ../aptkit/enums.py:365
+msgid "Removing trusted key"
+msgstr "S'està suprimint la clau de confiança"
+
+#: ../aptkit/enums.py:366
+msgid "Removing packages"
+msgstr "S'estan suprimint els paquets"
+
+#: ../aptkit/enums.py:367
+msgid "Updating packages"
+msgstr "S'estan actualitzant els paquets"
+
+#: ../aptkit/enums.py:368
+msgid "Upgrading system"
+msgstr "S'està actualitzant el sistema"
+
+#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
+msgid "Applying changes"
+msgstr "S'estan aplicant els canvis"
+
+#: ../aptkit/enums.py:370
+msgid "Repairing incomplete installation"
+msgstr "S'està reparant la instal·lació incompleta"
+
+#: ../aptkit/enums.py:371
+msgid "Repairing installed software"
+msgstr "S'està reparant el programari instal·lat"
+
+#: ../aptkit/enums.py:372
+msgid "Adding software source"
+msgstr "S'està afegint la font de programari"
+
+#: ../aptkit/enums.py:373
+msgid "Enabling component of the distribution"
+msgstr "S'està habilitant el component de la distribució"
+
+#: ../aptkit/enums.py:374
+msgid "Removing downloaded package files"
+msgstr "S'estan suprimint els fitxers de paquets baixats"
+
+#: ../aptkit/enums.py:375
+msgid "Reconfiguring installed packages"
+msgstr "S'estan tornant a configurar els paquets instal·lats"
+
+#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
+msgid "Searching"
+msgstr "S'està cercant"
+
+#: ../aptkit/enums.py:380
+msgid "Installation of the package file failed"
+msgstr "Ha fallat la instal·lació del paquet"
+
+#: ../aptkit/enums.py:381
+msgid "Installation of software failed"
+msgstr "Ha fallat la instal·lació del programari"
+
+#: ../aptkit/enums.py:382
+msgid "Adding the key to the list of trusted software vendors failed"
+msgstr "Ha fallat l'addició de proveïdors de programari de confiança"
+
+#: ../aptkit/enums.py:384
+msgid "Refreshing the software list failed"
+msgstr "Ha fallat l'actualització de la llista de programari"
+
+#: ../aptkit/enums.py:385
+msgid "Removing the vendor from the list of trusted ones failed"
+msgstr ""
+"S'ha produït un error en eliminar el proveïdor de la llista de confiança"
+
+#: ../aptkit/enums.py:387
+msgid "Removing software failed"
+msgstr "Ha fallat la supressió del programari"
+
+#: ../aptkit/enums.py:388
+msgid "Updating software failed"
+msgstr "Ha fallat l'actualització del programari"
+
+#: ../aptkit/enums.py:389
+msgid "Upgrading the system failed"
+msgstr "Ha fallat l'actualització del sistema"
+
+#: ../aptkit/enums.py:390
+msgid "Applying software changes failed"
+msgstr "Ha fallat l'aplicació de canvis de programari"
+
+#: ../aptkit/enums.py:391
+msgid "Repairing incomplete installation failed"
+msgstr "Ha fallat la reparació de la instal·lació incompleta"
+
+#: ../aptkit/enums.py:393
+msgid "Repairing broken dependencies failed"
+msgstr "Ha fallat la reparació de dels dependències no vàlides"
+
+#: ../aptkit/enums.py:394
+msgid "Adding software source failed"
+msgstr "Ha fallat l'addició de la font de programari"
+
+#: ../aptkit/enums.py:395
+msgid "Enabling component of the distribution failed"
+msgstr "Ha fallat l'habilitació del component de la distribució"
+
+#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
+msgid "Removing downloaded package files failed"
+msgstr "Ha fallat la supressió dels fitxers de paquets baixats"
+
+#: ../aptkit/enums.py:399
+msgid "Search failed"
+msgstr "Ha fallat la cerca"
+
+#: ../aptkit/enums.py:400
+msgid "Adding license key"
+msgstr "S'està afegint la clau de llicència"
+
+#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
+msgid "Check your Internet connection."
+msgstr "Comproveu la connexió a Internet."
+
+#: ../aptkit/enums.py:406
+msgid ""
+"Check if you are using third party repositories. If so disable them, since "
+"they are a common source of problems.\n"
+"Furthermore run the following command in a Terminal: apt-get install -f"
+msgstr ""
+"Comproveu si esteu utilitzant dipòsits de tercers. Si aquest és el cas, és "
+"recomanable que els inhabiliteu, ja que són una font habitual de problemes.\n"
+"Addicionalment, hauríeu d'executar l'ordre següent en un terminal: apt-get "
+"install -f"
+
+#: ../aptkit/enums.py:411
+msgid "The selected file may not be a GPG key file or it might be corrupt."
+msgstr ""
+"Pot ser que el fitxer que heu seleccionat no sigui un fitxer de clau GPG o "
+"que estigui malmès."
+
+#: ../aptkit/enums.py:413
+msgid ""
+"The selected key couldn't be removed. Check that you provided a valid "
+"fingerprint."
+msgstr ""
+"No s'ha pogut suprimir la clau seleccionada. Comproveu que hàgiu "
+"proporcionat una empremta vàlida."
+
+#: ../aptkit/enums.py:415
+msgid ""
+"Check if you are currently running another software management tool, e.g. "
+"Synaptic or aptitude. Only one tool is allowed to make changes at a time."
+msgstr ""
+"Comproveu si actualment esteu executant una altra eina de gestió del "
+"programari, com ara el Synaptic o l'aptitude. Només es permet utilitzar una "
+"eina a la vegada per fer canvis."
+
+#: ../aptkit/enums.py:418
+msgid ""
+"This is a serious problem. Try again later. If this problem appears again, "
+"please report an error to the developers."
+msgstr ""
+"Aquest es un problema seriós.  Torneu a intentar-ho més tard. Si el problema "
+"reapareix, informeu-ne els desenvolupadors."
+
+#: ../aptkit/enums.py:421
+msgid ""
+"Check the spelling of the package name, and that the appropriate repository "
+"is enabled."
+msgstr ""
+"Comproveu l'ortografia del nom del paquet i que el dipòsit apropiat estigui "
+"activat."
+
+#: ../aptkit/enums.py:423
+msgid "There isn't any need for an update."
+msgstr "No cal fer cap actualització."
+
+#: ../aptkit/enums.py:424
+msgid "There isn't any need for an installation"
+msgstr "No cal fer cap instal·lació."
+
+#: ../aptkit/enums.py:426
+msgid "There isn't any need for a removal."
+msgstr "No cal fer cap supressió."
+
+#: ../aptkit/enums.py:427
+msgid ""
+"You requested to remove a package which is an essential part of your system."
+msgstr ""
+"Heu sol·licitat la supressió d'un paquet que és una part essencial del "
+"sistema."
+
+#: ../aptkit/enums.py:430
+msgid ""
+"The connection to the daemon was lost. Most likely the background daemon "
+"crashed."
+msgstr ""
+"S'ha perdut la connexió amb el dimoni. Segurament el dimoni en segon pla ha "
+"tingut una fallada."
+
+#: ../aptkit/enums.py:432
+msgid "The installation or removal of a software package failed."
+msgstr "Ha fallat la instal·lació o supressió d'un paquet de programari."
+
+#: ../aptkit/enums.py:434
+msgid "The requested feature is not supported."
+msgstr "La funció que s'ha sol·licitat no està implementada."
+
+#: ../aptkit/enums.py:435
+msgid ""
+"There seems to be a programming error in aptkit, the software that allows "
+"you to install/remove software and to perform other package management "
+"related tasks."
+msgstr ""
+"Sembla que s'ha produït un error de programació a l'Aptkit, l'aplicació que "
+"us permet insta·lar i suprimir programari i realitzar altres tasques "
+"relacionades amb la gestió de paquets."
+
+#: ../aptkit/enums.py:439
+msgid ""
+"This error could be caused by required additional software packages which "
+"are missing or not installable. Furthermore there could be a conflict "
+"between software packages which are not allowed to be installed at the same "
+"time."
+msgstr ""
+"Pot ser que aquest error sigui degut al fet que calguin paquets de "
+"programari addicionals que no estan disponibles o no es poden instal·lar. "
+"També podria ser un conflicte entre paquets de programari que no es poden "
+"instal·lar simultàniament."
+
+#: ../aptkit/enums.py:445
+msgid "This requires installing packages from unauthenticated sources."
+msgstr "Aquesta acció requereix la instal·lació de fonts no identificades."
+
+#: ../aptkit/enums.py:447
+msgid ""
+"The installation could have failed because of an error in the corresponding "
+"software package or it was cancelled in an unfriendly way. You have to "
+"repair this before you can install or remove any further software."
+msgstr ""
+"Pot ser que la instal·lació hagi fallat degut a un error en el paquet de "
+"programari corresponent o que fou cancel·lada d'una manera incorrecta. "
+"Haureu de reparar-ho abans de poder instal·lar o eliminar qualsevol "
+"programari."
+
+#: ../aptkit/enums.py:453
+msgid ""
+"Please copy the file to your local computer and check the file permissions."
+msgstr ""
+"Copieu el fitxer a l'ordinador local i comproveu els permisos del fitxer."
+
+#: ../aptkit/enums.py:456
+msgid ""
+"The installation of a package which violates the quality standards isn't "
+"allowed. This could cause serious problems on your computer. Please contact "
+"the person or organisation who provided this package file and include the "
+"details beneath."
+msgstr ""
+"No es permet la instal·lació d'un paquet que no compleix els estàndards de "
+"qualitat. Això podria causar problemes seriosos a l'ordinador. Contacteu amb "
+"la persona o organització que us ha proporcionat aquest fitxer de paquet i "
+"incloeu el detalls de sota."
+
+#: ../aptkit/enums.py:463
+msgid ""
+"The downloaded license key which is required to run this piece of software "
+"is not valid or could not be installed correctly.\n"
+"See the details for more information."
+msgstr ""
+"La clau de llicència que s'ha baixat i que és necessària per executar "
+"aquesta aplicació no és vàlida o no s'ha pogut instal·lar correctament.\n"
+"Vegeu els detalls per obtenir més informació."
+
+#: ../aptkit/enums.py:469
+msgid "All available upgrades have already been installed."
+msgstr "Ja s'han instal·lat totes les actualitzacions disponibles."
+
+#: ../aptkit/enums.py:471
+msgid ""
+"The license key which allows you to use this piece of software could not be "
+"downloaded. Please check your network connection."
+msgstr ""
+"La clau de llicència que és necessaria per executar aquesta aplicació no "
+"s'ha pogut baixar. Comproveu la connexió de xarxa."
+
+#: ../aptkit/enums.py:475
+msgid "You don't have the required privileges to perform this action."
+msgstr "No teniu els permisos necessaris per dur a terme aquesta acció."
+
+#: ../aptkit/enums.py:477
+msgid ""
+"You either provided a wrong password or cancelled the authorization.\n"
+"Furthermore there could also be a technical reason for this error if you "
+"haven't seen a password dialog: your desktop environment doesn't provide a "
+"PolicyKit session agent."
+msgstr ""
+"Heu introduït una contrasenya incorrecta o bé heu cancel·lat "
+"l'autorització.\n"
+"Si no heu vist cap diàleg d'autorització, pot ser que sigui degut a un error "
+"tècnic: en concret, el vostre entorn d'escriptori no proporciona un agent de "
+"sessió del PolicyKit."
+
+#: ../aptkit/enums.py:485
+msgid "Failed to download package files"
+msgstr "Ha fallat la baixada de fitxers de paquets"
+
+#: ../aptkit/enums.py:486
+msgid "Failed to download repository information"
+msgstr "Ha fallat la baixada de la informació del dipòsit"
+
+#: ../aptkit/enums.py:488
+msgid "Package dependencies cannot be resolved"
+msgstr "No es poden resoldre les dependències dels paquets"
+
+#: ../aptkit/enums.py:489
+msgid "The package system is broken"
+msgstr "El sistema de paquets està malmès"
+
+#: ../aptkit/enums.py:490
+msgid "Key was not installed"
+msgstr "No s'ha instal·lat la clau"
+
+#: ../aptkit/enums.py:491
+msgid "Key was not removed"
+msgstr "No s'ha suprimit la clau"
+
+#: ../aptkit/enums.py:492
+msgid "Failed to lock the package manager"
+msgstr "Ha fallat el blocatge del gestor de paquets"
+
+#: ../aptkit/enums.py:493
+msgid "Failed to load the package list"
+msgstr "Ha fallat la càrrega de la llista de paquets"
+
+#: ../aptkit/enums.py:494
+msgid "Package does not exist"
+msgstr "El paquet no existeix"
+
+#: ../aptkit/enums.py:495
+msgid "Package is already up to date"
+msgstr "El paquet ja està actualitzat"
+
+#: ../aptkit/enums.py:496
+msgid "Package is already installed"
+msgstr "El paquet ja està instal·lat"
+
+#: ../aptkit/enums.py:497
+msgid "Package isn't installed"
+msgstr "El paquet no està instal·lat"
+
+#: ../aptkit/enums.py:498
+msgid "Failed to remove essential system package"
+msgstr "Ha fallat la supressió d'un paquet essencial del sistema"
+
+#: ../aptkit/enums.py:500
+msgid "Task cannot be monitored or controlled"
+msgstr "No es pot fer un seguiment o control de la tasca"
+
+#: ../aptkit/enums.py:501
+msgid "Package operation failed"
+msgstr "Ha fallat l'operació amb el paquet"
+
+#: ../aptkit/enums.py:502
+msgid "Requires installation of untrusted packages"
+msgstr "Requereix la instal·lació de paquets que no són de confiança"
+
+#: ../aptkit/enums.py:504
+msgid "Previous installation hasn't been completed"
+msgstr "No s'ha completat la instal·lació anterior"
+
+#: ../aptkit/enums.py:505
+msgid "The package is of bad quality"
+msgstr "El paquet és de mala qualitat"
+
+#: ../aptkit/enums.py:506
+msgid "Package file could not be opened"
+msgstr "No s'ha pogut obrir el fitxer de paquet"
+
+#: ../aptkit/enums.py:507
+msgid "Not supported feature"
+msgstr "La funció no està implementada"
+
+#: ../aptkit/enums.py:508
+msgid "Failed to download the license key"
+msgstr "Ha fallat la baixada de la clau de llicència"
+
+#: ../aptkit/enums.py:509
+msgid "Failed to install the license key"
+msgstr "Ha fallat la instal·lació de la clau de llicència"
+
+#: ../aptkit/enums.py:510
+msgid "The system is already up to date"
+msgstr "El sistema ja està actualitzat"
+
+#: ../aptkit/enums.py:511
+msgid "You could not be authorized"
+msgstr "No ha estat possible donar-vos l'autorització"
+
+#: ../aptkit/enums.py:512
+msgid "You are not allowed to perform this action"
+msgstr "No teniu permís per dur a terme aquesta acció"
+
+#: ../aptkit/enums.py:513
+msgid "An unhandlable error occured"
+msgstr "S'ha produit un error que no es pot gestionar"
+
+#: ../aptkit/enums.py:516
+msgid "Waiting for service to start"
+msgstr "S'està esperant que comenci el servei"
+
+#: ../aptkit/enums.py:518
+msgid "Waiting"
+msgstr "En espera"
+
+#: ../aptkit/enums.py:519
+msgid "Waiting for required medium"
+msgstr "S'està esperant el suport necessari"
+
+#: ../aptkit/enums.py:520
+msgid "Waiting for other software managers to quit"
+msgstr "S'està esperant que altres gestors de programari surtin"
+
+#: ../aptkit/enums.py:521
+msgid "Waiting for configuration file prompt"
+msgstr "S'està esperant el diàleg del fitxer de configuració."
+
+#: ../aptkit/enums.py:523
+msgid "Running task"
+msgstr "S'està executant la tasca"
+
+#: ../aptkit/enums.py:524
+msgid "Downloading"
+msgstr "S'està baixant"
+
+#: ../aptkit/enums.py:525
+msgid "Querying software sources"
+msgstr "S'estan consultant les fonts de programari"
+
+#: ../aptkit/enums.py:526
+msgid "Cleaning up"
+msgstr "S'està netejant"
+
+#: ../aptkit/enums.py:527
+msgid "Resolving dependencies"
+msgstr "S'estan resolent les dependències"
+
+#: ../aptkit/enums.py:529
+msgid "Finished"
+msgstr "S'ha finalitzat"
+
+#: ../aptkit/enums.py:530
+msgid "Cancelling"
+msgstr "S'està cancel·lant"
+
+#: ../aptkit/enums.py:531
+msgid "Loading software list"
+msgstr "S'està carregant la llista de programari"
+
+#: ../aptkit/enums.py:532
+msgid "Waiting for authentication"
+msgstr "S'està esperant l'autenticació"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:536
+#, python-format
+msgid "Installing %s"
+msgstr "S'està instal·lant %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:538
+#, python-format
+msgid "Configuring %s"
+msgstr "S'està configurant %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:540
+#, python-format
+msgid "Removing %s"
+msgstr "S'està suprimint %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:542
+#, python-format
+msgid "Completely removing %s"
+msgstr "S'està suprimint completament el paquet %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:544
+#, python-format
+msgid "Noting disappearance of %s"
+msgstr "S'està anotant la desaparició del paquet %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:546
+#, python-format
+msgid "Running post-installation trigger %s"
+msgstr "S'està executant l'activador de postinstal·lació %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:548
+#, python-format
+msgid "Upgrading %s"
+msgstr "S'està actualitzant %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:550
+#, python-format
+msgid "Unpacking %s"
+msgstr "S'està desempaquetant el paquet %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:552
+#, python-format
+msgid "Preparing installation of %s"
+msgstr "S'està preparant la instal·lació del paquet %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:554
+#, python-format
+msgid "Preparing configuration of %s"
+msgstr "S'està preparant la configuració del paquet %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:556
+#, python-format
+msgid "Preparing removal of %s"
+msgstr "S'està preparant la supressió del paquet %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:558
+#, python-format
+msgid "Preparing complete removal of %s"
+msgstr "S'està preparant la supressió completa del paquet %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:560
+#, python-format
+msgid "Installed %s"
+msgstr "S'ha instaŀlat el paquet %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:562
+#, python-format
+msgid "Completely removed %s"
+msgstr "S'ha suprimit completament el paquet %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:564
+#, python-format
+msgid "Removed %s"
+msgstr "S'ha suprimit el paquet %s"
+
+#: ../aptkit/enums.py:567
+msgid "Done"
+msgstr "Fet"
+
+#: ../aptkit/enums.py:568
+msgid "Authentication failed"
+msgstr "Ha fallat l'autenticació"
+
+#: ../aptkit/enums.py:570
+msgid "Fetching"
+msgstr "S'està recollint"
+
+#: ../aptkit/enums.py:571
+msgid "Idle"
+msgstr "Inactiu"
+
+#: ../aptkit/enums.py:572
+msgid "Network isn't available"
+msgstr "La xarxa no es troba disponible"
+
+#: ../aptkit/enums.py:704
+#, python-format
+msgid "Processing %s"
+msgstr "S'està processant %s"
+
+#: ../aptkit/gtk3widgets.py:311
+#, python-format
+msgid "Downloaded %sB of %sB at %sB/s"
+msgstr "S'han baixat %sB de %sB a %sB/s"
+
+#: ../aptkit/gtk3widgets.py:316 ../aptkit/gtk3widgets.py:517
+#, python-format
+msgid "Downloaded %sB of %sB"
+msgstr "S'han baixat  %sB de %sB"
+
+#: ../aptkit/gtk3widgets.py:328
+msgid "Details"
+msgstr "Detalls"
+
+#: ../aptkit/gtk3widgets.py:481
+msgid "File"
+msgstr "Fitxer"
+
+#. TRANSLATORS: header of the progress download column
+#: ../aptkit/gtk3widgets.py:486
+msgid "%"
+msgstr "%"
+
+#: ../aptkit/gtk3widgets.py:522
+#, python-format
+msgid "Downloaded %sB"
+msgstr "S'han baixat %sB"
+
+#: ../aptkit/gtk3widgets.py:525
+msgid "Downloaded"
+msgstr "Baixat"
+
+#. TRANSLATORS: %s represents the name of a CD or DVD
+#: ../aptkit/gtk3widgets.py:860
+#, python-format
+msgid "CD/DVD '%s' is required"
+msgstr "Cal el CD o DVD «%s»"
+
+#. TRANSLATORS: %s is the name of the CD/DVD drive
+#: ../aptkit/gtk3widgets.py:862
+#, python-format
+msgid ""
+"Please insert the above CD/DVD into the drive '%s' to install software "
+"packages from it."
+msgstr "Inseriu el CD/DVD a la unitat «%s» per instal·lar-ne els paquets."
+
+#: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
+msgid "C_ontinue"
+msgstr "C_ontinua"
+
+#: ../aptkit/gtk3widgets.py:939
+msgid "Install"
+msgstr "Instal·la"
+
+#: ../aptkit/gtk3widgets.py:940
+msgid "Reinstall"
+msgstr "Reinstal·la"
+
+#: ../aptkit/gtk3widgets.py:941
+msgid "Remove"
+msgstr "Suprimeix"
+
+#: ../aptkit/gtk3widgets.py:942
+msgid "Purge"
+msgstr "Neteja"
+
+#: ../aptkit/gtk3widgets.py:943
+msgid "Upgrade"
+msgstr "Actualitza"
+
+#: ../aptkit/gtk3widgets.py:944
+msgid "Downgrade"
+msgstr "Torna a una versió anterior"
+
+#: ../aptkit/gtk3widgets.py:945
+msgid "Skip upgrade"
+msgstr "Omet l'actualització"
+
+#. If there is only one type of changes (e.g. only installs) expand the
+#. tree
+#. FIXME: adapt the title and message accordingly
+#. FIXME: Should we have different modes? Only show dependencies, only
+#. initial packages or both?
+#: ../aptkit/gtk3widgets.py:956
+msgid "Please take a look at the list of changes below."
+msgstr "Comproveu la llista de canvis de més avall."
+
+#: ../aptkit/gtk3widgets.py:964
+msgid "Additional software has to be installed"
+msgstr "Cal instal·lar programari addicional"
+
+#: ../aptkit/gtk3widgets.py:966
+msgid "Additional software has to be re-installed"
+msgstr "Cal tornar a instal·lar programari addicional"
+
+#: ../aptkit/gtk3widgets.py:968
+msgid "Additional software has to be removed"
+msgstr "Cal suprimir programari addicional"
+
+#: ../aptkit/gtk3widgets.py:970
+msgid "Additional software has to be purged"
+msgstr "S'ha de netejar el programari addicional"
+
+#: ../aptkit/gtk3widgets.py:972
+msgid "Additional software has to be upgraded"
+msgstr "Cal actualitzar programari addicional"
+
+#: ../aptkit/gtk3widgets.py:974
+msgid "Additional software has to be downgraded"
+msgstr "Cal tornar a una versió anterior de programari addicional"
+
+#: ../aptkit/gtk3widgets.py:976
+msgid "Updates will be skipped"
+msgstr "S'ometran les actualitzacions"
+
+#: ../aptkit/gtk3widgets.py:984
+msgid "Additional changes are required"
+msgstr "Calen canvis addicionals"
+
+#: ../aptkit/gtk3widgets.py:989
+#, python-format
+msgid "%sB will be downloaded in total."
+msgstr "Es baixaran %sB en total."
+
+#: ../aptkit/gtk3widgets.py:993
+#, python-format
+msgid "%sB of disk space will be freed."
+msgstr "S'alliberaran %sB d'espai de disc."
+
+#: ../aptkit/gtk3widgets.py:997
+#, python-format
+msgid "%sB more disk space will be used."
+msgstr "S'utilitzaran %sB més d'espai de disc."
+
+#. TRANSLATORS: %s is a file path
+#: ../aptkit/gtk3widgets.py:1069
+#, python-format
+msgid ""
+"Replace your changes in '%s' with a later version of the configuration file?"
+msgstr ""
+"Voleu reemplaçar els vostres canvis a «%s» amb l'última versió del fitxer de "
+"configuració?"
+
+#: ../aptkit/gtk3widgets.py:1071
+msgid ""
+"If you don't know why the file is there already, it is usually safe to "
+"replace it."
+msgstr ""
+"Si no sabeu com és que el fitxer ja es troba allí, és més segur que el "
+"reemplaceu."
+
+#: ../aptkit/gtk3widgets.py:1080
+msgid "_Changes"
+msgstr "_Canvis"
+
+#: ../aptkit/gtk3widgets.py:1083
+msgid "_Keep"
+msgstr "_Manté"
+
+#: ../aptkit/gtk3widgets.py:1084
+msgid "_Replace"
+msgstr "_Reemplaça"
+
+#: ../aptkit/gtk3widgets.py:1187
+msgid "_Details"
+msgstr "_Detalls"
+
+#. TRANSLATORS: %s is the name of a package manager
+#: ../aptkit/lock.py:189
+#, python-format
+msgid "Waiting for %s to exit"
+msgstr "S'està esperant al %s per sortir"
+
+#. TRANSLATORS: %s is a list of package names
+#: ../aptkit/progress.py:168
+#, python-format
+msgid "Downloading %s"
+msgstr "S'està baixant %s"
+
+#. TRANSLATORS: the string is used as a fallback if we cannot
+#. get the URI of a local repository
+#: ../aptkit/progress.py:277 ../aptkit/progress.py:314
+msgid "local repository"
+msgstr "dipòsit local"
+
+#. TRANSLATORS: %s is a list of repository names
+#: ../aptkit/progress.py:280
+#, python-format
+msgid "Downloading from %s"
+msgstr "S'està baixant de %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:318
+#, python-format
+msgid "Structure of %s"
+msgstr "Estructura del dipòsit %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:321
+#, python-format
+msgid "Description of %s"
+msgstr "Descripció del dipòsit %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:324
+#, python-format
+msgid "Description signature of %s"
+msgstr "Signatura de la descripció del dipòsit %s"
+
+#: ../aptkit/progress.py:329
+#, python-format
+msgid "Available packages from %s"
+msgstr "Paquets disponibles al dipòsit %s"
+
+#: ../aptkit/progress.py:333
+#, python-format
+msgid "Available sources from %s"
+msgstr "Fonts disponibles al dipòsit %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:336
+#, python-format
+msgid "Available translations from %s"
+msgstr "Traduccions disponibles al dipòsit %s"
+
+#: ../aptkit/progress.py:353
+#, python-format
+msgid "Translations for %s (%s) from %s"
+msgstr "Traduccions en %s (%s) del dipòsit %s"
+
+#. TRANSLATORS: %s is the name of a language. The second one is
+#. the name of the repository
+#: ../aptkit/progress.py:357
+#, python-format
+msgid "Translations for %s from %s"
+msgstr "Traduccions en %s del dipòsit %s"
+
+#. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
+#. The second one is the name of the repository
+#: ../aptkit/progress.py:362
+#, python-format
+msgid "Translations (%s) from %s"
+msgstr "Traduccions (%s) del dipòsit %s"
+
+#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
+#: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
+#, python-format
+msgid "Package %s isn't available"
+msgstr "El paquet %s no està disponible"
+
+#: ../aptkit/worker/aptworker.py:384 ../aptkit/worker/aptworker.py:682
+#: ../aptkit/worker/aptworker.py:777 ../aptkit/worker/aptworker.py:822
+#, python-format
+msgid "Package %s isn't installed"
+msgstr "El paquet %s no està instal·lat"
+
+#: ../aptkit/worker/aptworker.py:388
+#, python-format
+msgid "The version %s of %s isn't installed"
+msgstr "La versió %s de %s no està instal·lada"
+
+#: ../aptkit/worker/aptworker.py:403
+#, python-format
+msgid "Package %s is already installed"
+msgstr "El paquet %s ja està instal·lat"
+
+#: ../aptkit/worker/aptworker.py:410 ../aptkit/worker/aptworker.py:845
+#, python-format
+msgid "The version %s of %s isn't available."
+msgstr "La versió %s de %s no està disponible."
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptkit/worker/aptworker.py:572
+#, python-format
+msgid "The keyserver URL is invalid: %s"
+msgstr "L'URL del servidor de claus no és vàlid: %s"
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptkit/worker/aptworker.py:578
+#, python-format
+msgid "Invalid protocol of the server: %s"
+msgstr "El protocol del servidor no és vàlid: %s"
+
+#. TRANSLATORS: %s is the id of a GnuPG key
+#. e.g. E08ADE95
+#: ../aptkit/worker/aptworker.py:586 ../aptkit/worker/aptworker.py:630
+#, python-format
+msgid "Invalid key id: %s"
+msgstr "L'identificador de la clau no és vàlid: %s"
+
+#: ../aptkit/worker/aptworker.py:594
+#, python-format
+msgid ""
+"Failed to download and install the key %s from %s:\n"
+"%s"
+msgstr ""
+"No s'ha pogut baixar i instal·lar la clau %s de %s:\n"
+"%s"
+
+#: ../aptkit/worker/aptworker.py:611
+#, python-format
+msgid "Key file %s couldn't be installed: %s"
+msgstr "No s'ha pogut instal·lar el fitxer clau %s: %s"
+
+#: ../aptkit/worker/aptworker.py:635
+#, python-format
+msgid "Key with fingerprint %s couldn't be removed: %s"
+msgstr "No s'ha pogut suprimir la clau amb empremta dactilar %s: %s"
+
+#: ../aptkit/worker/aptworker.py:686
+#, python-format
+msgid "Package %s cannot be removed."
+msgstr "No es pot suprimir el paquet %s."
+
+#: ../aptkit/worker/aptworker.py:690
+#, python-format
+msgid "The version %s of %s is not installed"
+msgstr "La versió %s de %s no està instal·lada"
+
+#: ../aptkit/worker/aptworker.py:785
+#, python-format
+msgid "The former version %s of %s is already installed"
+msgstr "L'antiga versió %s de %s ja està instal·lada"
+
+#: ../aptkit/worker/aptworker.py:790 ../aptkit/worker/aptworker.py:838
+#, python-format
+msgid "The version %s of %s is already installed"
+msgstr "La versió %s de %s ja està instal·lada"
+
+#: ../aptkit/worker/aptworker.py:797
+#, python-format
+msgid "The version %s of %s isn't available"
+msgstr "La versió %s de %s no està disponible"
+
+#: ../aptkit/worker/aptworker.py:801
+#, python-format
+msgid "You need to specify a version to downgrade %s to"
+msgstr "Heu d'especificar la versió anterior a la qual ha de tornar %s"
+
+#: ../aptkit/worker/aptworker.py:831
+#, python-format
+msgid "The later version %s of %s is already installed"
+msgstr "L'última versió %s de %s ja està instal·lada"
+
+#: ../aptkit/worker/aptworker.py:867
+#, python-format
+msgid "The package %s isn't available in the %s release."
+msgstr "El paquet %s no està disponible en la versió %s."
+
+#: ../aptkit/worker/aptworker.py:1052
+#, python-format
+msgid "Package %s cannot be removed"
+msgstr "No es pot suprimir el paquet %s"
+
+#: ../aptkit/worker/aptworker.py:1154
+msgid ""
+"The package doesn't provide a valid Installed-Size control field. See Debian "
+"Policy 5.6.20."
+msgstr ""
+"El paquet no proporciona un camp de control de mida d'instal·lació vàlid. "
+"Vegeu la política de Debian 5.6.20."
+
+#: ../aptkit/worker/aptworker.py:1293
+msgid "The license key is empty"
+msgstr "La clau de llicència és buida"
+
+#: ../aptkit/worker/aptworker.py:1309
+msgid "The license key is not allowed to contain executable code."
+msgstr "La clau de llicència no pot contenir codi executable."
+
+#: ../aptkit/worker/aptworker.py:1318
+#, python-format
+msgid "The license key path %s is invalid"
+msgstr "El camí %s de la clau de llicència no és vàlid"
+
+#: ../aptkit/worker/aptworker.py:1322
+#, python-format
+msgid "The license key already exists: %s"
+msgstr "La clau de llicència ja existeix: %s"
+
+#: ../aptkit/worker/aptworker.py:1327
+#, python-format
+msgid ""
+"The location of the license key is unsecure since it contains symbolic "
+"links. The path %s maps to %s"
+msgstr ""
+"La ubicació de la clau de llicència no és segura perquè conté enllaços "
+"simbòlics. El camí %s correspon a %s"
+
+#: ../aptkit/worker/aptworker.py:1335
+#, python-format
+msgid "The directory where to install the key to doesn't exist yet: %s"
+msgstr "El directori on s'ha d'instal·lar la clau encara no existeix: %s"
+
+#: ../aptkit/worker/aptworker.py:1346
+#, python-format
+msgid "Failed to write key file to: %s"
+msgstr "Ha fallat l'escriptura del fitxer de clau a: %s"
+
+#: ../aptkit/worker/aptworker.py:1381
+msgid "The following packages have unmet dependencies:"
+msgstr "Els paquets següents tenen dependències sense satisfer:"
+
+#: ../aptkit/worker/aptworker.py:1434
+msgid "but it is a virtual package"
+msgstr "però és un paquet virtual"
+
+#: ../aptkit/worker/aptworker.py:1437
+msgid "but it is not installed"
+msgstr "però no està instal·lat"
+
+#: ../aptkit/worker/aptworker.py:1439
+msgid "but it is not going to be installed"
+msgstr "però no s'instal·larà"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptkit/worker/aptworker.py:1443
+#, python-format
+msgid "but %s is installed"
+msgstr "però %s està instal·lat"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptkit/worker/aptworker.py:1447
+#, python-format
+msgid "but %s is to be installed"
+msgstr "però %s s'instal·larà"

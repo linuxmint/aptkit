@@ -1,0 +1,1285 @@
+# translation of po_aptkit-km.po to Khmer
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2012.
+# Khmer translation for aptkit
+msgid ""
+msgstr ""
+"Project-Id-Version: po_aptkit-km\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-09 19:27+0100\n"
+"PO-Revision-Date: 2024-09-09 18:05+0000\n"
+"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"Language-Team: Khmer <support@khmeros.info>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2024-09-10 09:08+0000\n"
+"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
+"Language: \n"
+
+#: ../data/org.debian.aptkit.policy.in.h:1
+msgid "List keys of trusted vendors"
+msgstr "រាយ​បញ្ជី​សោ​​របស់​ក្រុមហ៊ុន​លក់​ដែល​ជឿ​ទុកចិត្ត"
+
+#: ../data/org.debian.aptkit.policy.in.h:2
+msgid "To view the list of trusted keys, you need to authenticate."
+msgstr ""
+"មើល​បញ្ជី​របស់​​សោ​​​ដែល​ជឿ​ទុកចិត្ត អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ "
+"។"
+
+#: ../data/org.debian.aptkit.policy.in.h:3
+msgid "Remove downloaded package files"
+msgstr "យក​ឯកសារ​កញ្ចប់​ដែល​បាន​ទាញ​យក​ចេញ"
+
+#: ../data/org.debian.aptkit.policy.in.h:4
+msgid "To clean downloaded package files, you need to authenticate."
+msgstr ""
+"សម្អាត​ឯកសារ​កញ្ចប់​ដែល​បាន​ទាញ​យក អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
+
+#: ../data/org.debian.aptkit.policy.in.h:5
+msgid "Change software configuration"
+msgstr "ផ្លាស់ប្ដូរ​ការ​កំណត់​រចនាសម្ព័ន្ធ​ផ្នែកទន់"
+
+#: ../data/org.debian.aptkit.policy.in.h:6
+msgid "To change software settings, you need to authenticate."
+msgstr ""
+"ផ្លាស់ប្ដូរ​ការ​កំណត់​ផ្នែក​ទន់ អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
+
+#: ../data/org.debian.aptkit.policy.in.h:7
+msgid "Change software repository"
+msgstr "ផ្លាស់ប្ដូរ​ឃ្លាំង​ផ្នែកទន់"
+
+#: ../data/org.debian.aptkit.policy.in.h:8
+msgid "To change software repository settings, you need to authenticate."
+msgstr ""
+"ផ្លាស់ប្ដូរ​ការ​កំណត់​ឃ្លាំង​ផ្នែក​ទន់ "
+"អ្នក​​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
+
+#: ../data/org.debian.aptkit.policy.in.h:9
+msgid "Install package file"
+msgstr "ដំឡើង​ឯកសារ​កញ្ចប់"
+
+#: ../data/org.debian.aptkit.policy.in.h:10
+msgid "To install this package, you need to authenticate."
+msgstr "ដំឡើង​កញ្ចប់​នេះ អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​​ត្រឹមត្រូវ ។"
+
+#: ../data/org.debian.aptkit.policy.in.h:11
+msgid "Update package information"
+msgstr "ធ្វើ​បច្ចុប្បន្នភាព​ព័ត៌មាន​កញ្ចប់"
+
+#: ../data/org.debian.aptkit.policy.in.h:12
+msgid "To update the software catalog, you need to authenticate."
+msgstr ""
+"ធ្វើ​បច្ចុប្បន្នភាព​កាតាឡុក​ផ្នែក​ទន់ "
+"អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
+
+#: ../data/org.debian.aptkit.policy.in.h:13
+msgid "Install or remove packages"
+msgstr "ដំឡើង ឬ​យក​កញ្ចប់​ចេញ"
+
+#: ../data/org.debian.aptkit.policy.in.h:14
+msgid "To install or remove software, you need to authenticate."
+msgstr "ដំឡើង ឬ​យក​ផ្នែក​ទន់​ចេញ អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
+
+#. This priviledge will be requested when installing a package
+#. from a high trusted repository that can be explicitely whitelisted.
+#. 
+#. The defaults for this action are the same as
+#. "org.debian.aptkit.install-or-remove-packages".
+#. 
+#. The admin can override them to e.g. allow passwordless installs for
+#. leightweight applications like unity-webapps or for packages
+#. comming from high trust repositories (like internal repositories)
+#. 
+#: ../data/org.debian.aptkit.policy.in.h:25
+msgid "Install software from a high-trust whitelisted repository."
+msgstr "ដំឡើង​កម្មវិធី​ពី​ឃ្លាំង​បាន​ដាក់​ក្នុង​បញ្ជី​ស​ដែល​ទុកចិត្ត។"
+
+#: ../data/org.debian.aptkit.policy.in.h:26
+msgid "To install software, you need to authenticate."
+msgstr "ដើម្បី​ដំឡើង​កម្មវិធី ដែល​អ្នក​ត្រូវ​ការ​ផ្ទៀងផ្ទាត់។"
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#: ../data/org.debian.aptkit.policy.in.h:32
+msgid "Add a new repository and install packages from it"
+msgstr "បន្ថែម​ឃ្លាំង​ថ្មី និង​ដំឡើង​កញ្ចប់​ពី​​​​ឃ្លាំង​នេះ"
+
+#: ../data/org.debian.aptkit.policy.in.h:33
+msgid "To install software from a new source, you need to authenticate."
+msgstr ""
+"ដំឡើង​ផ្នែក​ទន់​ពី​ប្រភព​ថ្មី អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#. 
+#. The only difference to install-packages-from-new-repo is the wording
+#. of the message. It is required by Ubuntu's Software-Center.
+#: ../data/org.debian.aptkit.policy.in.h:42
+msgid ""
+"Add a new repository of purchased software and install packages from it"
+msgstr "បន្ថែម​ឃ្លាំង​ថ្មី​នៃ​ផ្នែក​ទន់​ដែល​បាន​ជាវ ហើយ​ដំឡើង​កញ្ចប់​ពី​វា"
+
+#: ../data/org.debian.aptkit.policy.in.h:43
+msgid "To install purchased software, you need to authenticate."
+msgstr ""
+"ដំឡើង​ផ្នែក​ទន់​ដែល​បាន​ជាវ អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
+
+#: ../data/org.debian.aptkit.policy.in.h:44
+msgid "Upgrade packages"
+msgstr "ធ្វើ​ឲ្យ​កញ្ចប់​ប្រសើរ​ឡើង"
+
+#: ../data/org.debian.aptkit.policy.in.h:45
+msgid "To install updated software, you need to authenticate."
+msgstr ""
+"ដំឡើង​ផ្នែក​ទន់​ដែល​បាន​ធ្វើ​បច្ចុប្បន្នភាព "
+"អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
+
+#: ../data/org.debian.aptkit.policy.in.h:46
+msgid "Cancel the task of another user"
+msgstr "បោះបង់​​កិច្ចការ​របស់​អ្នក​ប្រើ​ផ្សេងទៀត"
+
+#: ../data/org.debian.aptkit.policy.in.h:47
+msgid "To cancel someone else's software changes, you need to authenticate."
+msgstr ""
+"បោះបង់​ការ​ផ្លាស់ប្ដូរ​ផ្នែក​ទន់​ផ្សេង​ទៀត "
+"អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
+
+#: ../data/org.debian.aptkit.policy.in.h:48
+msgid "Set a proxy for software downloads"
+msgstr "កំណត់​ប្រូកស៊ី​សម្រាប់​ការ​ទាញ​យក​ផ្នែក​ទន់"
+
+#: ../data/org.debian.aptkit.policy.in.h:49
+msgid ""
+"To use a proxy server for downloading software, you need to authenticate."
+msgstr ""
+"ប្រើ​ម៉ាស៊ីន​បម្រើ​ប្រូកស៊ី​សម្រាប់​​ទាញ​យក​ផ្នែក​ទន់ "
+"អ្នក​ចាំបាច់​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។"
+
+#: ../aptkit/core.py:2148
+msgid "Do not shutdown the daemon because of inactivity"
+msgstr "កុំ​បិទ​ដេមិន ដោយសារ​តែ​អសកម្មភាព"
+
+#: ../aptkit/core.py:2153
+msgid "Do not load any plugins"
+msgstr "កុំ​ផ្ទុក​កម្មវិធី​ជំនួយ"
+
+#: ../aptkit/core.py:2157
+msgid "Show internal processing information"
+msgstr "បង្ហាញ​ព័ត៌មាន​អំពី​ដំណើរការ​ខាងក្នុង"
+
+#: ../aptkit/core.py:2162
+msgid "Quit and replace an already running daemon"
+msgstr "បោះបង់ និង​ជំនួស​ដេមិន​ដែល​​ដំណើរការ​រួច​ហើយ"
+
+#: ../aptkit/core.py:2167
+msgid "Listen on the DBus session bus (Only required for testing"
+msgstr "ស្ដាប់​ខ្សែ​បញ្ជូន​សម័យ​របស់ DBus (បាន​ទាមទារ​ឲ្យ​មាន​ការ​សាកល្បង"
+
+#: ../aptkit/core.py:2171
+msgid "Perform operations in the given chroot"
+msgstr "ធ្វើ​ប្រតិបត្តិការ​នៅ​ក្នុង chroot ដែល​បាន​ផ្ដល់"
+
+#: ../aptkit/core.py:2176
+msgid "Store profile stats in the specified file"
+msgstr "រក្សាទុក​ទម្រង់​នៅ​ក្នុង​ឯកសារ​ដែល​បាន​បញ្ជាក់"
+
+#: ../aptkit/core.py:2181
+msgid "Do not make any changes to the system (Only of use to developers)"
+msgstr ""
+"កុំ​ធ្វើ​ការ​ផ្លាស់ប្ដូរ​ទៅ​កាន់​ប្រព័ន្ធ "
+"(ប្រើ​តែ​ចំពោះ​អ្នក​អភិវឌ្ឍន៍​ប៉ុណ្ណោះ)"
+
+#: ../aptkit/enums.py:337
+msgid "Installed file"
+msgstr "បាន​ដំឡើង​ឯកសារ"
+
+#: ../aptkit/enums.py:338
+msgid "Installed packages"
+msgstr "បាន​ដំឡើង​កញ្ចប់"
+
+#: ../aptkit/enums.py:339
+msgid "Added key from file"
+msgstr "បាន​បន្ថែម​សោ​ពី​ឯកសារ"
+
+#: ../aptkit/enums.py:340
+msgid "Updated cache"
+msgstr "បាន​ធ្វើ​បច្ចុប្បន្ន​ឃ្លាំង"
+
+#: ../aptkit/enums.py:341
+msgid "Search done"
+msgstr "ស្វែងរក​រួចហើយ"
+
+#: ../aptkit/enums.py:342
+msgid "Removed trusted key"
+msgstr "បាន​យក​សោ​ដែល​បាន​ជឿ​ទុកចិត្ត​ចេញ"
+
+#: ../aptkit/enums.py:343
+msgid "Removed packages"
+msgstr "បាន​យក​កញ្ចប់​ចេញ"
+
+#: ../aptkit/enums.py:344
+msgid "Updated packages"
+msgstr "បាន​ធ្វើ​បច្ចុប្បន្នភាព​កញ្ចប់"
+
+#: ../aptkit/enums.py:345
+msgid "Upgraded system"
+msgstr "បាន​ធ្វើ​ឲ្យ​ប្រព័ន្ធ​ប្រសើរ"
+
+#: ../aptkit/enums.py:346
+msgid "Applied changes"
+msgstr "បាន​អនុវត្ត​ការ​ផ្លាស់ប្ដូរ"
+
+#: ../aptkit/enums.py:347
+msgid "Repaired incomplete installation"
+msgstr "បាន​ជួសជុល​ការ​ដំឡើង​ដែល​មិន​ទាន់​បាន​បញ្ចប់"
+
+#: ../aptkit/enums.py:348
+msgid "Repaired broken dependencies"
+msgstr "បាន​ជួសជុល​ភាព​អាស្រ័យ​ដែល​ខូច"
+
+#: ../aptkit/enums.py:349
+msgid "Added software source"
+msgstr "បាន​បន្ថែម​ប្រភព​ផ្នែក​ទន់"
+
+#: ../aptkit/enums.py:350
+msgid "Enabled component of the distribution"
+msgstr "បាន​បើក​សមាសភាគ​នៃ​ការ​ចែកចាយ"
+
+#: ../aptkit/enums.py:351
+msgid "Removed downloaded package files"
+msgstr "បាន​យក​ឯកសារ​កញ្ចប់​ដែល​បាន​ទាញ​យក​ចេញ"
+
+#: ../aptkit/enums.py:352
+msgid "Reconfigured installed packages"
+msgstr "បាន​កំណត់​រចនាសម្ព័ន្ធ​កញ្ចប់​ដែល​បាន​ដំឡើង​ឡើងវិញ"
+
+#: ../aptkit/enums.py:356
+msgid "Successful"
+msgstr "ជោគជ័យ"
+
+#: ../aptkit/enums.py:357
+msgid "Canceled"
+msgstr "បាន​បោះបង់"
+
+#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
+msgid "Failed"
+msgstr "បរាជ័យ"
+
+#: ../aptkit/enums.py:361
+msgid "Installing file"
+msgstr "ដំឡើង​ឯកសារ"
+
+#: ../aptkit/enums.py:362
+msgid "Installing packages"
+msgstr "ដំឡើង​កញ្ចប់"
+
+#: ../aptkit/enums.py:363
+msgid "Adding key from file"
+msgstr "បន្ថែម​សោ​ពី​ឯកសារ"
+
+#: ../aptkit/enums.py:364
+msgid "Updating cache"
+msgstr "ធ្វើ​បច្ចុប្បន្នភាព​ឃ្លាំង"
+
+#: ../aptkit/enums.py:365
+msgid "Removing trusted key"
+msgstr "យក​សោ​ដែល​ជឿ​ទុកចិត្តចេញ"
+
+#: ../aptkit/enums.py:366
+msgid "Removing packages"
+msgstr "យក​កញ្ចប់​ចេញ"
+
+#: ../aptkit/enums.py:367
+msgid "Updating packages"
+msgstr "ធ្វើ​បច្ចុប្បន្នភាព​កញ្ចប់"
+
+#: ../aptkit/enums.py:368
+msgid "Upgrading system"
+msgstr "ធ្វើ​ឲ្យ​ប្រព័ន្ធ​ប្រើសើរ"
+
+#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
+msgid "Applying changes"
+msgstr "អនុវត្ត​ការ​ផ្លាស់ប្ដូរ"
+
+#: ../aptkit/enums.py:370
+msgid "Repairing incomplete installation"
+msgstr "ជួសជុល​ការ​ដំឡើង​ដែល​មិន​ទាន់​បាន​បញ្ចប់"
+
+#: ../aptkit/enums.py:371
+msgid "Repairing installed software"
+msgstr "ជួសជុល​ផ្នែក​ទន់​ដែល​បាន​ដំឡើង"
+
+#: ../aptkit/enums.py:372
+msgid "Adding software source"
+msgstr "បន្ថែម​ប្រភព​ផ្នែក​ទន់"
+
+#: ../aptkit/enums.py:373
+msgid "Enabling component of the distribution"
+msgstr "បើក​សមាសភាគ​នៃ​​ការ​ចែកចាយ"
+
+#: ../aptkit/enums.py:374
+msgid "Removing downloaded package files"
+msgstr "យក​ឯកសារ​កញ្ចប់​ដែល​បាន​ទាញ​យក​ចេញ"
+
+#: ../aptkit/enums.py:375
+msgid "Reconfiguring installed packages"
+msgstr "កំណត់​រចនាសម្ព័ន្ធ​កញ្ចប់​ដែល​បាន​ដំឡើង​ឡើងវិញ"
+
+#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
+msgid "Searching"
+msgstr "ស្វែងរក"
+
+#: ../aptkit/enums.py:380
+msgid "Installation of the package file failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ដំឡើង​ឯកសារ​កញ្ចប់"
+
+#: ../aptkit/enums.py:381
+msgid "Installation of software failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ដំឡើង​​ផ្នែក​ទន់"
+
+#: ../aptkit/enums.py:382
+msgid "Adding the key to the list of trusted software vendors failed"
+msgstr "បន្ថែម​សោ​ទៅ​បញ្ជី​អ្នក​លក់​កម្មវិធី​ដែល​ជឿ​ទុកចិត្ត​បាន​បរាជ័យ"
+
+#: ../aptkit/enums.py:384
+msgid "Refreshing the software list failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ធ្វើ​ឲ្យ​បញ្ជី​ផ្នែក​ទន់​ស្រស់"
+
+#: ../aptkit/enums.py:385
+msgid "Removing the vendor from the list of trusted ones failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​យក​ក្រុមហ៊ុន​លក់​ចេញ​ពី​បញ្ជី​ដែល​ជឿ​ទុកចិត្ត"
+
+#: ../aptkit/enums.py:387
+msgid "Removing software failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​យក​ផ្នែក​ទន់​ចេញ"
+
+#: ../aptkit/enums.py:388
+msgid "Updating software failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ធ្វើ​បច្ចុប្បន្នភាព​ផ្នែក​ទន់"
+
+#: ../aptkit/enums.py:389
+msgid "Upgrading the system failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ធ្វើឲ្យ​ប្រព័ន្ធ​ប្រសើរ​ឡើង"
+
+#: ../aptkit/enums.py:390
+msgid "Applying software changes failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​អនុវត្ត​ការ​ផ្លាស់ប្ដូរ​ផ្នែក​ទន់"
+
+#: ../aptkit/enums.py:391
+msgid "Repairing incomplete installation failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ជួសជុល​ការ​ដំឡើង​ដែល​មិន​ទាន់​បាន​បញ្ចប់"
+
+#: ../aptkit/enums.py:393
+msgid "Repairing broken dependencies failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ជួសជុល​ភាព​អាស្រ័យ​ដែល​ខូច"
+
+#: ../aptkit/enums.py:394
+msgid "Adding software source failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បន្ថែម​ប្រភព​ផ្នែក​ទន់"
+
+#: ../aptkit/enums.py:395
+msgid "Enabling component of the distribution failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បើក​សមាសភាគ​​នៃ​ការ​ចែកចាយ"
+
+#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
+msgid "Removing downloaded package files failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​យក​​ឯកសារ​កញ្ចប់​ដែល​បាន​ទាញ​យក​ចេញ"
+
+#: ../aptkit/enums.py:399
+msgid "Search failed"
+msgstr "បាន​បរាជ័យ​​ការ​ស្វែងរក"
+
+#: ../aptkit/enums.py:400
+msgid "Adding license key"
+msgstr "បន្ថែម​សោ​អាជ្ញាប័ណ្ណ"
+
+#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
+msgid "Check your Internet connection."
+msgstr "ពិនិត្យ​មើល​ការ​តភ្ជាប់​អ៊ីនធឺណិត​របស់​អ្នក ។"
+
+#: ../aptkit/enums.py:406
+msgid ""
+"Check if you are using third party repositories. If so disable them, since "
+"they are a common source of problems.\n"
+"Furthermore run the following command in a Terminal: apt-get install -f"
+msgstr ""
+"ពិនិត្យ​មើល ប្រសិនបើ​អ្នក​កំពុង​ប្រើ​ឃ្លាំង​ភាគី​ទី​បី ។ ប្រសិនបើ​បិទ "
+"នៅ​ពេល​ដែល​ពួកវា​មាន​ប្រភព​បញ្ហា ។\n"
+"រត់​​ពាក្យ​បញ្ជា​នៅ​ក្នុង​ស្ថានីយ ៖ apt-get install -f"
+
+#: ../aptkit/enums.py:411
+msgid "The selected file may not be a GPG key file or it might be corrupt."
+msgstr ""
+"ឯកសារ​ដែល​បាន​ជ្រើស​​អាច​មិន​មែន​​ជា​ឯកសារ​សោ​របស់ GPG ឬ​វា​អាច​ខូច ។"
+
+#: ../aptkit/enums.py:413
+msgid ""
+"The selected key couldn't be removed. Check that you provided a valid "
+"fingerprint."
+msgstr ""
+"សោ​ដែល​បាន​ជ្រើស​មិន​អាច​យក​ចេញ​បាន​ទេ ។ "
+"ពិនិត្យ​មើល​ថា​អ្នក​បាន​ផ្ដិត​ម្រាម​ដៃ​ត្រឹមត្រូវ​​ហើយ​ ។"
+
+#: ../aptkit/enums.py:415
+msgid ""
+"Check if you are currently running another software management tool, e.g. "
+"Synaptic or aptitude. Only one tool is allowed to make changes at a time."
+msgstr ""
+"ពិនិត្យមើល "
+"ប្រសិនបើ​​អ្នក​កំពុង​ដំណើរការ​ឧបករណ៍​ការ​គ្រប់គ្រង​ផ្នែក​ទន់​បច្ចុប្បន្ន ឧ. "
+"Synaptic ឬ aptitude ។ "
+"អនុញ្ញាត​ឲ្យ​តែ​ឧបករណ៍​​ប៉ុណ្ណោះ​ធ្វើ​ការ​ផ្លាស់ប្ដូរ​​នៅ​ពេល​តែ​មួយ​បាន ។"
+
+#: ../aptkit/enums.py:418
+msgid ""
+"This is a serious problem. Try again later. If this problem appears again, "
+"please report an error to the developers."
+msgstr ""
+"វា​ជា​បញ្ហា​ធ្ងន់ធ្ងរ ។ ព្យាយាមម្ដងទៀត ។ "
+"ប្រសិនបើ​នៅ​តែ​មាន​បញ្ហា​លេចឡើង​ទៀត​នោះ "
+"សូម​រាយការណ៍​កំហុស​​ទៅ​អ្នក​អភិវឌ្ឍន៍ ។"
+
+#: ../aptkit/enums.py:421
+msgid ""
+"Check the spelling of the package name, and that the appropriate repository "
+"is enabled."
+msgstr ""
+"ពិនិត្យមើល​អក្ខរាវិរុទ្ធ​នៃ​ឈ្មោះ​កញ្ចប់ នោះ​ឃ្លាំង​នឹង​ត្រូវ​បាន​បើក​ ។"
+
+#: ../aptkit/enums.py:423
+msgid "There isn't any need for an update."
+msgstr "មិន​ចាំបាច់​ធ្វើ​បច្ចុប្បន្នភាព​​ឡើយ ។"
+
+#: ../aptkit/enums.py:424
+msgid "There isn't any need for an installation"
+msgstr "មិន​ចាំបាច់​​​​ការ​ដំឡើង​ឡើយ"
+
+#: ../aptkit/enums.py:426
+msgid "There isn't any need for a removal."
+msgstr "មិន​ចាំបាច់​​ការ​យកចេញ​ឡើយ ។"
+
+#: ../aptkit/enums.py:427
+msgid ""
+"You requested to remove a package which is an essential part of your system."
+msgstr ""
+"អ្នក​បាន​ស្នើ​យក​កញ្ចប់​ចេញ​ដែល​ជា​ផ្នែក​ចាំបាច់​របស់​ប្រព័ន្ធ​របស់​អ្នក ។"
+
+#: ../aptkit/enums.py:430
+msgid ""
+"The connection to the daemon was lost. Most likely the background daemon "
+"crashed."
+msgstr "ការ​តភ្ជាប់​ទៅកាន់​ដេមិន​ខូច ។ ភាគច្រើន​ដេមិន​ផ្ទៃខាងក្រោយ​គាំង ។"
+
+#: ../aptkit/enums.py:432
+msgid "The installation or removal of a software package failed."
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​​ដំឡើង ឬ​​ក្នុង​ការ​យក​កញ្ចប់​ផ្នែក​ទន់​ចេញ ។"
+
+#: ../aptkit/enums.py:434
+msgid "The requested feature is not supported."
+msgstr "មិន​គាំទ្រ​លក្ខណ​ពិសេស​ដែល​បាន​ស្នើ​ឡើយ"
+
+#: ../aptkit/enums.py:435
+msgid ""
+"There seems to be a programming error in aptkit, the software that allows "
+"you to install/remove software and to perform other package management "
+"related tasks."
+msgstr ""
+"ហាក់​បី​ដូច​​ជា​​មាន​កំហុស​ក្នុង​ការ​សរសេរ​កម្មវិធី​នៅ​ក្នុង aptkit "
+"ផ្នែក​ទន់​ដែល​អនុញ្ញាត​ឲ្យ​អ្នក ដំឡើង/​យក​ចេញ ផ្នែក​ទន់ "
+"ត្រូវ​ប្រតិបត្តិ​កិច្ចការ​ដែល​ទាក់ទង​ការ​គ្រប់គ្រង​កញ្ចប់​ផ្សេង ។"
+
+#: ../aptkit/enums.py:439
+msgid ""
+"This error could be caused by required additional software packages which "
+"are missing or not installable. Furthermore there could be a conflict "
+"between software packages which are not allowed to be installed at the same "
+"time."
+msgstr ""
+"កំហុស​នេះ​អាច​បណ្ដាល​មក​ពី​​​កញ្ចប់​ផ្នែក​ទន់​​​បន្ថែម​ដែល​បាន​ទាមទារ "
+"ខូច​ឬ​មិន​អាច​ដំឡើង​បាន ។  អាច​ប៉ះ​ទង្គិច​រវាង​កញ្ចប់​ផ្នែក​ទន់ "
+"ដែល​មិន​ត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​ដំឡើង​នៅ​ពេល​តែមួយ ។"
+
+#: ../aptkit/enums.py:445
+msgid "This requires installing packages from unauthenticated sources."
+msgstr "វា​ទាមទារ​​ការ​ដំឡើង​កញ្ចប់​ពី​ប្រភព​ដែល​មិន​បាន​ផ្ទៀងផ្ទាត់។"
+
+#: ../aptkit/enums.py:447
+msgid ""
+"The installation could have failed because of an error in the corresponding "
+"software package or it was cancelled in an unfriendly way. You have to "
+"repair this before you can install or remove any further software."
+msgstr ""
+"ការ​ដំឡើង​អាច​បរាជ័យ "
+"ដោយសារ​តែ​​មាន​កំហុស​នៅ​ក្នុង​កញ្ចប់​ផ្នែក​ទន់​មិន​ត្រូវគ្នា "
+"ឬ​វា​អាច​ត្រូវ​បាន​បោះបង់​ ។ អ្នក​ត្រូវ​ជួសជុល​វា​សិន មុន​ពេល​អ្នក​ដំឡើង "
+"ឬ​យក​ផ្នែក​ទន់​ចេញ ។"
+
+#: ../aptkit/enums.py:453
+msgid ""
+"Please copy the file to your local computer and check the file permissions."
+msgstr ""
+"សូម​ចម្លង​ឯកសារ​ទៅកាន់​កុំព្យូទ័រ​មូលដ្ឋាន​របស់​អ្នក "
+"ហើយ​ពិនិត្យ​មើល​សិទ្ធ​ឯកសារ ។"
+
+#: ../aptkit/enums.py:456
+msgid ""
+"The installation of a package which violates the quality standards isn't "
+"allowed. This could cause serious problems on your computer. Please contact "
+"the person or organisation who provided this package file and include the "
+"details beneath."
+msgstr ""
+"ការ​ដំឡើង​កញ្ចប់​​ដែល​ផ្អាក​ស្តង់ដារ​គុណភាព​មិន​​ត្រូវ​បាន​អនុញ្ញាត​ឡើយ ។ "
+"វា​​អាច​បណ្ដាល​ឲ្យ​មាន​បញ្ហា​ធ្ងន់ធ្ងរ​នៅ​លើ​កុំព្យូទ័រ​របស់​អ្នក ។ "
+"សូម​ទាក់ទង​អង្គភាព ឬ​អ្នក​ដែល​បាន​ផ្ដល់​ឯកសារ​កញ្ចប់​នេះ ។"
+
+#: ../aptkit/enums.py:463
+msgid ""
+"The downloaded license key which is required to run this piece of software "
+"is not valid or could not be installed correctly.\n"
+"See the details for more information."
+msgstr ""
+"សោ​អាជ្ញាប័ណ្ណ​ដែល​បាន​ទាញ​យក​ត្រូវ​បាន​ទាមទារ "
+"ដើម្បី​ដំណើរការ​ផ្នែក​ទន់​​មិន​ត្រឹមត្រូវ "
+"ឬ​មិន​អាច​ត្រូវ​បាន​​​ដំឡើង​​​បច្ចុប្បន្ន ។\n"
+"មើល​សេចក្ដី​លម្អិត​សម្រាប់​ព័ត៌មាន​បន្ថែម ។"
+
+#: ../aptkit/enums.py:469
+msgid "All available upgrades have already been installed."
+msgstr "ការ​ធ្វើ​ឲ្យ​ប្រសើរ​ឡើង​​ដែល​មាន​ទាំងអស់​ត្រូវ​បាន​ដំឡើង​រួច​ហើយ ។"
+
+#: ../aptkit/enums.py:471
+msgid ""
+"The license key which allows you to use this piece of software could not be "
+"downloaded. Please check your network connection."
+msgstr ""
+"សោ​អាជ្ញាប័ណ្ណ​​ដែល​អនុញ្ញាត​ឲ្យ​អ្នក​ប្រើ​ផ្នែក​ទន់​អាច​មិន​ត្រូវ​បាន​ទាញ​យក"
+" ។ សូម​ពិនិត្យ​មើល​ការ​តភ្ជាប់​បណ្ដាញ​របស់​អ្នក ។"
+
+#: ../aptkit/enums.py:475
+msgid "You don't have the required privileges to perform this action."
+msgstr "អ្នក​មិន​​បាន​ទាមទារ​សិទ្ធិ​ដើម្បី​ធ្វើ​សកម្មភាព​នេះ​ទេ។"
+
+#: ../aptkit/enums.py:477
+msgid ""
+"You either provided a wrong password or cancelled the authorization.\n"
+"Furthermore there could also be a technical reason for this error if you "
+"haven't seen a password dialog: your desktop environment doesn't provide a "
+"PolicyKit session agent."
+msgstr ""
+"អ្នក​បាន​ផ្ដល់​ពាក្យ​សម្ងាត់​ខុស ឬ​បាន​បោះបង់​សេចក្ដី​អនុញ្ញាត។\n"
+"ម៉្យាងទៀត​អាច​​ជា​កំហុស​បច្ចេកទេស "
+"ប្រសិនបើ​អ្នក​មិន​អាច​មើល​ឃើញ​ប្រអប់​ពាក្យ​សម្ងាត់៖ "
+"បរិស្ថាន​ផ្ទៃតុ​របស់​អ្នក​មិន​ផ្ដល់​ភ្នាក់ងារ​សម័យ PolicyKit ឡើយ។"
+
+#: ../aptkit/enums.py:485
+msgid "Failed to download package files"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ទាញ​យក​ឯកសារ​កញ្ចប់"
+
+#: ../aptkit/enums.py:486
+msgid "Failed to download repository information"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ទាញ​យក​ព័ត៌មាន​​ឃ្លាំង"
+
+#: ../aptkit/enums.py:488
+msgid "Package dependencies cannot be resolved"
+msgstr "មិន​អាច​ដោះស្រាយ​ភាព​អាស្រ័យ​របស់​កញ្ចប់​ទេ"
+
+#: ../aptkit/enums.py:489
+msgid "The package system is broken"
+msgstr "ខូច​ប្រព័ន្ធ​កញ្ចប់"
+
+#: ../aptkit/enums.py:490
+msgid "Key was not installed"
+msgstr "មិន​បាន​ដំឡើង​សោ​ឡើយ"
+
+#: ../aptkit/enums.py:491
+msgid "Key was not removed"
+msgstr "មិន​បាន​យក​សោ​ចេញ​ឡើយ"
+
+#: ../aptkit/enums.py:492
+msgid "Failed to lock the package manager"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ចាក់សោ​កម្មវិធី​គ្រប់គ្រង​កញ្ចប់"
+
+#: ../aptkit/enums.py:493
+msgid "Failed to load the package list"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ផ្ទុក​បញ្ជី​កញ្ចប់"
+
+#: ../aptkit/enums.py:494
+msgid "Package does not exist"
+msgstr "មិន​មាន​កញ្ចប់​ឡើយ"
+
+#: ../aptkit/enums.py:495
+msgid "Package is already up to date"
+msgstr "កញ្ចប់​ត្រូវ​បាន​ធ្វើ​ឲ្យ​ទាន់សម័យ​រួចហើយ"
+
+#: ../aptkit/enums.py:496
+msgid "Package is already installed"
+msgstr "បាន​ដំឡើង​កញ្ចប់​រួច​ហើយ"
+
+#: ../aptkit/enums.py:497
+msgid "Package isn't installed"
+msgstr "មិន​ទាន់​បាន​ដំឡើង​កញ្ចប់​នៅ​ឡើយ​ទេ"
+
+#: ../aptkit/enums.py:498
+msgid "Failed to remove essential system package"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​យក​កញ្ចប់​ប្រព័ន្ធ​ចេញ"
+
+#: ../aptkit/enums.py:500
+msgid "Task cannot be monitored or controlled"
+msgstr "មិន​អាច​ត្រួតពិនិត្យ​ភារកិច្ច​បាន​ទេ"
+
+#: ../aptkit/enums.py:501
+msgid "Package operation failed"
+msgstr "បាន​បរាជ័យ​ប្រតិបត្តិការ​កញ្ចប់"
+
+#: ../aptkit/enums.py:502
+msgid "Requires installation of untrusted packages"
+msgstr "ទាមទារ​ការ​ដំឡើង​កញ្ចប់​ដែល​មិន​ជឿ​ទុកចិត្ត"
+
+#: ../aptkit/enums.py:504
+msgid "Previous installation hasn't been completed"
+msgstr "ការ​ដំឡើង​មុន​មិន​ទាន់​ត្រូវ​បាន​បញ្ចប់​នៅ​ឡើយ​ទេ"
+
+#: ../aptkit/enums.py:505
+msgid "The package is of bad quality"
+msgstr "កញ្ចប់​គ្មាន​គុណភាព"
+
+#: ../aptkit/enums.py:506
+msgid "Package file could not be opened"
+msgstr "មិន​អាច​បើក​ឯកសារ​កញ្ចប់​បាន​ទេ"
+
+#: ../aptkit/enums.py:507
+msgid "Not supported feature"
+msgstr "គ្មាន​លក្ខណ​ពិសេស​ដែល​បាន​គាំទ្រ​ឡើយ"
+
+#: ../aptkit/enums.py:508
+msgid "Failed to download the license key"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ទាញ​យក​សោ​អាជ្ញាប័ណ្ណ"
+
+#: ../aptkit/enums.py:509
+msgid "Failed to install the license key"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​​ដំឡើង​សោ​អាជ្ញាប័ណ្ណ"
+
+#: ../aptkit/enums.py:510
+msgid "The system is already up to date"
+msgstr "ប្រព័ន្ធ​ហួស​សម័យ​ហើយ"
+
+#: ../aptkit/enums.py:511
+msgid "You could not be authorized"
+msgstr "អ្នក​មិន​អាច​ត្រូវ​បាន​អនុញ្ញាត​ឡើយ"
+
+#: ../aptkit/enums.py:512
+msgid "You are not allowed to perform this action"
+msgstr "អ្នក​មិន​ត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​ធ្វើ​សកម្មភាព​នេះ​ឡើយ"
+
+#: ../aptkit/enums.py:513
+msgid "An unhandlable error occured"
+msgstr "បាន​កើត​ឡើង​កំហុស​ដែល​មិន​អាច​ដោះស្រាយ​បាន"
+
+#: ../aptkit/enums.py:516
+msgid "Waiting for service to start"
+msgstr "កំពុង​រង់​ចាំ​សេវា​ចាប់ផ្ដើម"
+
+#: ../aptkit/enums.py:518
+msgid "Waiting"
+msgstr "រង់ចាំ"
+
+#: ../aptkit/enums.py:519
+msgid "Waiting for required medium"
+msgstr "រង់ចាំ​ទាមទារ​មធ្យម"
+
+#: ../aptkit/enums.py:520
+msgid "Waiting for other software managers to quit"
+msgstr "រង់ចាំ​កម្មវិធី​គ្រប់គ្រង​ផ្នែក​ទន់​ផ្សេងទៀត ដើម្បី​បោះបង់"
+
+#: ../aptkit/enums.py:521
+msgid "Waiting for configuration file prompt"
+msgstr "រង់ចាំ​ប្រអប់​បញ្ចូល​​ឯកសារ​ការ​កំណត់​រចនាសម្ព័ន្ធ"
+
+#: ../aptkit/enums.py:523
+msgid "Running task"
+msgstr "កំពុង​ដំណើរការ​ភារកិច្ច"
+
+#: ../aptkit/enums.py:524
+msgid "Downloading"
+msgstr "ការ​ទាញ​យក"
+
+#: ../aptkit/enums.py:525
+msgid "Querying software sources"
+msgstr "សួរ​ប្រភព​ផ្នែក​ទន់"
+
+#: ../aptkit/enums.py:526
+msgid "Cleaning up"
+msgstr "សម្អាត"
+
+#: ../aptkit/enums.py:527
+msgid "Resolving dependencies"
+msgstr "ដោះស្រាយ​ភាព​អាស្រ័យ"
+
+#: ../aptkit/enums.py:529
+msgid "Finished"
+msgstr "បាន​បញ្ចប់"
+
+#: ../aptkit/enums.py:530
+msgid "Cancelling"
+msgstr "បោះបង់"
+
+#: ../aptkit/enums.py:531
+msgid "Loading software list"
+msgstr "បោះបង់​បញ្ជី​ផ្នែក​ទន់"
+
+#: ../aptkit/enums.py:532
+msgid "Waiting for authentication"
+msgstr "រង់ចាំ​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:536
+#, python-format
+msgid "Installing %s"
+msgstr "ដំឡើង %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:538
+#, python-format
+msgid "Configuring %s"
+msgstr "កំណត់​រចនាសម្ព័ន្ធ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:540
+#, python-format
+msgid "Removing %s"
+msgstr "យកចេញ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:542
+#, python-format
+msgid "Completely removing %s"
+msgstr "យក​ចេញ %s បាន​បញ្ចប់"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:544
+#, python-format
+msgid "Noting disappearance of %s"
+msgstr "សម្គាល់​ភាព​បាត់បង់​នៃ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:546
+#, python-format
+msgid "Running post-installation trigger %s"
+msgstr "ដំណើរការ​ការ​ដំឡើង​ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:548
+#, python-format
+msgid "Upgrading %s"
+msgstr "ធ្វើ​ឲ្យ​ឲ្យ​ប្រសើរ​​ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:550
+#, python-format
+msgid "Unpacking %s"
+msgstr "ស្រាយ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:552
+#, python-format
+msgid "Preparing installation of %s"
+msgstr "រៀបចំ​ការ​ដំឡើង %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:554
+#, python-format
+msgid "Preparing configuration of %s"
+msgstr "រៀបចំ​ការ​កំណត់​រចនាសម្ព័ន្ធ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:556
+#, python-format
+msgid "Preparing removal of %s"
+msgstr "រៀបចំ​ការ​យក​ចេញ​ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:558
+#, python-format
+msgid "Preparing complete removal of %s"
+msgstr "រៀបចំ​ការ​យក​ចេញ​បញ្ចប់​នៃ​​ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:560
+#, python-format
+msgid "Installed %s"
+msgstr "បាន​ដំឡើង %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:562
+#, python-format
+msgid "Completely removed %s"
+msgstr "បាន​យក %s ចេញ​បញ្ចប់​ទាំងស្រុង"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:564
+#, python-format
+msgid "Removed %s"
+msgstr "បាន​យក​ចេញ %s"
+
+#: ../aptkit/enums.py:567
+msgid "Done"
+msgstr "ធ្វើ​រួច"
+
+#: ../aptkit/enums.py:568
+msgid "Authentication failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
+
+#: ../aptkit/enums.py:570
+msgid "Fetching"
+msgstr "ទៅ​ប្រមូល​យក"
+
+#: ../aptkit/enums.py:571
+msgid "Idle"
+msgstr "ទំនេរ"
+
+#: ../aptkit/enums.py:572
+msgid "Network isn't available"
+msgstr "គ្មាន​បណ្ដាញ​ឡើយ"
+
+#: ../aptkit/enums.py:704
+#, python-format
+msgid "Processing %s"
+msgstr "ដំណើរការ %s"
+
+#: ../aptkit/gtk3widgets.py:311
+#, python-format
+msgid "Downloaded %sB of %sB at %sB/s"
+msgstr "បាន​ទាញ​យក %sB of %sB at %sB/s"
+
+#: ../aptkit/gtk3widgets.py:316 ../aptkit/gtk3widgets.py:517
+#, python-format
+msgid "Downloaded %sB of %sB"
+msgstr "ទាញ​យក %sB of %sB"
+
+#: ../aptkit/gtk3widgets.py:328
+msgid "Details"
+msgstr "សេចក្ដី​លម្អិត"
+
+#: ../aptkit/gtk3widgets.py:481
+msgid "File"
+msgstr "ឯកសារ"
+
+#. TRANSLATORS: header of the progress download column
+#: ../aptkit/gtk3widgets.py:486
+msgid "%"
+msgstr "%"
+
+#: ../aptkit/gtk3widgets.py:522
+#, python-format
+msgid "Downloaded %sB"
+msgstr "បាន​ទាញ​យក %sB"
+
+#: ../aptkit/gtk3widgets.py:525
+msgid "Downloaded"
+msgstr "បាន​ទាញ​យក"
+
+#. TRANSLATORS: %s represents the name of a CD or DVD
+#: ../aptkit/gtk3widgets.py:860
+#, python-format
+msgid "CD/DVD '%s' is required"
+msgstr "ទាមទារ ស៊ីឌី​​/ឌីវីឌី '%s'"
+
+#. TRANSLATORS: %s is the name of the CD/DVD drive
+#: ../aptkit/gtk3widgets.py:862
+#, python-format
+msgid ""
+"Please insert the above CD/DVD into the drive '%s' to install software "
+"packages from it."
+msgstr ""
+"សូម​បញ្ចូល​ ស៊ីឌី/ឌីវីឌី ខាងលើ​ទៅ​ក្នុង​ដ្រាយ '%s'  "
+"ដើម្បី​ដំឡើង​កញ្ចប់​ផ្នែក​ទន់​ ។"
+
+#: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
+msgid "C_ontinue"
+msgstr "បន្ត"
+
+#: ../aptkit/gtk3widgets.py:939
+msgid "Install"
+msgstr "ដំឡើង"
+
+#: ../aptkit/gtk3widgets.py:940
+msgid "Reinstall"
+msgstr "ដំឡើង​ឡើងវិញ"
+
+#: ../aptkit/gtk3widgets.py:941
+msgid "Remove"
+msgstr "យកចេញ"
+
+#: ../aptkit/gtk3widgets.py:942
+msgid "Purge"
+msgstr "លុប​បំបាត់"
+
+#: ../aptkit/gtk3widgets.py:943
+msgid "Upgrade"
+msgstr "ធ្វើ​ឲ្យ​ប្រសើរ"
+
+#: ../aptkit/gtk3widgets.py:944
+msgid "Downgrade"
+msgstr "បន្ទាប"
+
+#: ../aptkit/gtk3widgets.py:945
+msgid "Skip upgrade"
+msgstr "រំលង​ការ​ធ្វើ​ឲ្យ​ប្រើសើរ"
+
+#. If there is only one type of changes (e.g. only installs) expand the
+#. tree
+#. FIXME: adapt the title and message accordingly
+#. FIXME: Should we have different modes? Only show dependencies, only
+#. initial packages or both?
+#: ../aptkit/gtk3widgets.py:956
+msgid "Please take a look at the list of changes below."
+msgstr "សូម​មើល​បញ្ជី​សម្រាប់​ការ​ផ្លាស់ប្ដូរ​ខាងក្រោម ។"
+
+#: ../aptkit/gtk3widgets.py:964
+msgid "Additional software has to be installed"
+msgstr "ដំឡើង​ផ្នែក​ទន់​ដែល​​បន្ថែម"
+
+#: ../aptkit/gtk3widgets.py:966
+msgid "Additional software has to be re-installed"
+msgstr "ដំឡើង​ផ្នែក​ទន់​​ដែល​បន្ថែម​ឡើង​វិញ"
+
+#: ../aptkit/gtk3widgets.py:968
+msgid "Additional software has to be removed"
+msgstr "យក​ចេញ​ផ្នែក​ទន់​ដែល​​បន្ថែម"
+
+#: ../aptkit/gtk3widgets.py:970
+msgid "Additional software has to be purged"
+msgstr "លុប​បំបាត់​ផ្នែក​ទន់​ដែល​បន្ថែម"
+
+#: ../aptkit/gtk3widgets.py:972
+msgid "Additional software has to be upgraded"
+msgstr "ធ្វើ​ឲ្យ​​ផ្នែក​ទន់​ដែល​បន្ថែម​ប្រសើរ"
+
+#: ../aptkit/gtk3widgets.py:974
+msgid "Additional software has to be downgraded"
+msgstr "បន្ទាប​ផ្នែក​ទន់​ដែល​បន្ថែម"
+
+#: ../aptkit/gtk3widgets.py:976
+msgid "Updates will be skipped"
+msgstr "រំលង​ការ​ធ្វើ​បច្ចុប្បន្នភាព"
+
+#: ../aptkit/gtk3widgets.py:984
+msgid "Additional changes are required"
+msgstr "ទាមទារ​ការ​ផ្លាស់ប្ដូរ​ដែល​បន្ថែម"
+
+#: ../aptkit/gtk3widgets.py:989
+#, python-format
+msgid "%sB will be downloaded in total."
+msgstr "%sB នឹង​ត្រូវ​បាន​ទាញ​យក​ជា​សរុប ។"
+
+#: ../aptkit/gtk3widgets.py:993
+#, python-format
+msgid "%sB of disk space will be freed."
+msgstr "មាន​ទំហំ​ថា %sB ទំនេរ ។"
+
+#: ../aptkit/gtk3widgets.py:997
+#, python-format
+msgid "%sB more disk space will be used."
+msgstr "ទំហំ​ថាស​​ច្រើន %sB នឹង​ត្រូវ​បាន​ប្រើ ។"
+
+#. TRANSLATORS: %s is a file path
+#: ../aptkit/gtk3widgets.py:1069
+#, python-format
+msgid ""
+"Replace your changes in '%s' with a later version of the configuration file?"
+msgstr ""
+"ជំនួស​ការ​ផ្លាស់ប្ដូរ​របស់​អ្នក​នៅ​ក្នុង '%s' "
+"ជាមួយ​កំណែ​ថ្មី​​របស់​ឯកសារ​ការ​កំណត់​រចនាសម្ព័ន្ធ​ឬ ?"
+
+#: ../aptkit/gtk3widgets.py:1071
+msgid ""
+"If you don't know why the file is there already, it is usually safe to "
+"replace it."
+msgstr ""
+"ប្រសិនបើ​អ្នក​មិន​ស្គាល់​មូលហេតុ​ឯកសារ​នោះ​ទេ "
+"តាម​ធម្មតា​វា​មាន​​សុវត្ថិភាព​ក្នុង​ការ​ជំនួស​វា ។"
+
+#: ../aptkit/gtk3widgets.py:1080
+msgid "_Changes"
+msgstr "ការ​ផ្លាស់ប្ដូរ"
+
+#: ../aptkit/gtk3widgets.py:1083
+msgid "_Keep"
+msgstr "រក្សាទុក"
+
+#: ../aptkit/gtk3widgets.py:1084
+msgid "_Replace"
+msgstr "ជំនួស"
+
+#: ../aptkit/gtk3widgets.py:1187
+msgid "_Details"
+msgstr "សេចក្ដី​លម្អិត"
+
+#. TRANSLATORS: %s is the name of a package manager
+#: ../aptkit/lock.py:189
+#, python-format
+msgid "Waiting for %s to exit"
+msgstr "រង់ចាំ %s ដើម្បី​ចាកចេញ"
+
+#. TRANSLATORS: %s is a list of package names
+#: ../aptkit/progress.py:168
+#, python-format
+msgid "Downloading %s"
+msgstr ""
+
+#. TRANSLATORS: the string is used as a fallback if we cannot
+#. get the URI of a local repository
+#: ../aptkit/progress.py:277 ../aptkit/progress.py:314
+msgid "local repository"
+msgstr "ឃ្លាំង​មូលដ្ឋាន"
+
+#. TRANSLATORS: %s is a list of repository names
+#: ../aptkit/progress.py:280
+#, python-format
+msgid "Downloading from %s"
+msgstr ""
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:318
+#, python-format
+msgid "Structure of %s"
+msgstr "រចនាសម្ព័ន្ធ %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:321
+#, python-format
+msgid "Description of %s"
+msgstr "សេចក្ដី​ពិពណ៌នា​អំពី %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:324
+#, python-format
+msgid "Description signature of %s"
+msgstr "សេចក្ដី​ពិពណ៌នា​អំពី​ហត្ថលេខា %s"
+
+#: ../aptkit/progress.py:329
+#, python-format
+msgid "Available packages from %s"
+msgstr "កញ្ចប់​ដែល​មាន​ពី %s"
+
+#: ../aptkit/progress.py:333
+#, python-format
+msgid "Available sources from %s"
+msgstr "ប្រភព​ដែល​មាន​ពី %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:336
+#, python-format
+msgid "Available translations from %s"
+msgstr "ការ​បកប្រែ​ដែល​មាន​ពី %s"
+
+#: ../aptkit/progress.py:353
+#, python-format
+msgid "Translations for %s (%s) from %s"
+msgstr "ការ​បកប្រែ %s (%s) ពី %s"
+
+#. TRANSLATORS: %s is the name of a language. The second one is
+#. the name of the repository
+#: ../aptkit/progress.py:357
+#, python-format
+msgid "Translations for %s from %s"
+msgstr "ការ​បកប្រែ​ %s ពី %s"
+
+#. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
+#. The second one is the name of the repository
+#: ../aptkit/progress.py:362
+#, python-format
+msgid "Translations (%s) from %s"
+msgstr "ការ​បកប្រែ​ (%s) ពី %s"
+
+#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
+#: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
+#, python-format
+msgid "Package %s isn't available"
+msgstr "គ្មាន​កញ្ចប់ %s ឡើយ"
+
+#: ../aptkit/worker/aptworker.py:384 ../aptkit/worker/aptworker.py:682
+#: ../aptkit/worker/aptworker.py:777 ../aptkit/worker/aptworker.py:822
+#, python-format
+msgid "Package %s isn't installed"
+msgstr "មិន​បាន​ដំឡើង​កញ្ចប់ %s ឡើយ"
+
+#: ../aptkit/worker/aptworker.py:388
+#, python-format
+msgid "The version %s of %s isn't installed"
+msgstr "មិន​បាន​ដំឡើង​កំណែ %s របស់ %s ឡើយ"
+
+#: ../aptkit/worker/aptworker.py:403
+#, python-format
+msgid "Package %s is already installed"
+msgstr "បាន​ដំឡើង​កញ្ចប់ %s រួចហើយ"
+
+#: ../aptkit/worker/aptworker.py:410 ../aptkit/worker/aptworker.py:845
+#, python-format
+msgid "The version %s of %s isn't available."
+msgstr "មិន​មាន​កំណែ %s របស់ %s ឡើយ ។"
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptkit/worker/aptworker.py:572
+#, python-format
+msgid "The keyserver URL is invalid: %s"
+msgstr "URL ម៉ាស៊ីន​មេ​សោ​មិន​ត្រឹមត្រូវ៖ %s"
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptkit/worker/aptworker.py:578
+#, python-format
+msgid "Invalid protocol of the server: %s"
+msgstr "ពិធីការ​ម៉ាស៊ីន​មេ​មិន​ត្រឹមត្រូវ៖ %s"
+
+#. TRANSLATORS: %s is the id of a GnuPG key
+#. e.g. E08ADE95
+#: ../aptkit/worker/aptworker.py:586 ../aptkit/worker/aptworker.py:630
+#, python-format
+msgid "Invalid key id: %s"
+msgstr "លេខ​សម្គាល់​សោ​មិន​ត្រឹមត្រូវ៖ %s"
+
+#: ../aptkit/worker/aptworker.py:594
+#, python-format
+msgid ""
+"Failed to download and install the key %s from %s:\n"
+"%s"
+msgstr ""
+"បាន​បរាជ័យ​​ក្នុង​ការ​ទាញ​យក និង​ដំឡើង​សោ %s ពី %s ៖\n"
+"%s"
+
+#: ../aptkit/worker/aptworker.py:611
+#, python-format
+msgid "Key file %s couldn't be installed: %s"
+msgstr "មិន​អាច​ដំឡើង​ឯកសារ​សោ %s បាន​ទេ ៖ %s"
+
+#: ../aptkit/worker/aptworker.py:635
+#, python-format
+msgid "Key with fingerprint %s couldn't be removed: %s"
+msgstr "មិន​អាច​យក​ចេញ​សោ​ដែល​មាន​​ស្នាម​ផ្ដិត​ម្រាមដៃ %s បាន​ទេ ៖ %s"
+
+#: ../aptkit/worker/aptworker.py:686
+#, python-format
+msgid "Package %s cannot be removed."
+msgstr "មិន​អាច​យក​​​ចេញ​កញ្ចប់ %s ​បាន​ទេ ។"
+
+#: ../aptkit/worker/aptworker.py:690
+#, python-format
+msgid "The version %s of %s is not installed"
+msgstr "មិន​បាន​ដំឡើង​កំណែ %s របស់ %s ឡើយ"
+
+#: ../aptkit/worker/aptworker.py:785
+#, python-format
+msgid "The former version %s of %s is already installed"
+msgstr "បាន​ដំឡើង​កំណែ​មុន %s របស់ %s រួច​ហើយ"
+
+#: ../aptkit/worker/aptworker.py:790 ../aptkit/worker/aptworker.py:838
+#, python-format
+msgid "The version %s of %s is already installed"
+msgstr "បាន​ដំឡើង​កំណែ %s របស់ %s រួច​ហើយ"
+
+#: ../aptkit/worker/aptworker.py:797
+#, python-format
+msgid "The version %s of %s isn't available"
+msgstr "គ្មាន​កំណែ %s របស់ %s ឡើយ"
+
+#: ../aptkit/worker/aptworker.py:801
+#, python-format
+msgid "You need to specify a version to downgrade %s to"
+msgstr "អ្នក​ត្រូវ​បញ្ជាក់​កំណែ​ដែល​ត្រូវ​បន្ទាប %s ទៅ"
+
+#: ../aptkit/worker/aptworker.py:831
+#, python-format
+msgid "The later version %s of %s is already installed"
+msgstr "បាន​ដំឡើង​កំណែ​ថ្មី %s របស់ %s រួច​ហើយ"
+
+#: ../aptkit/worker/aptworker.py:867
+#, python-format
+msgid "The package %s isn't available in the %s release."
+msgstr "គ្មាន​​កញ្ចប់ %s នៅ​ក្នុង​ការ​ចេញ​ផ្សាយ %s ឡើយ ។"
+
+#: ../aptkit/worker/aptworker.py:1052
+#, python-format
+msgid "Package %s cannot be removed"
+msgstr "មិន​អាច​យក​​​ចេញ​​កញ្ចប់​ %s ​បាន​ទេ"
+
+#: ../aptkit/worker/aptworker.py:1154
+msgid ""
+"The package doesn't provide a valid Installed-Size control field. See Debian "
+"Policy 5.6.20."
+msgstr ""
+"កញ្ចប់​ដែល​មិន​បាន​ផ្ដល់​ឲ្យ​វាល​ត្រួតពិនិត្យ​ទំហំ​ដែល​បាន​ដំឡើង​ត្រឹមត្រូវ "
+"។ សូម​មើល​គោលការណ៍​ដេបៀន 5.6.20."
+
+#: ../aptkit/worker/aptworker.py:1293
+msgid "The license key is empty"
+msgstr "សោ​អាជ្ញាប័ណ្ណ​​ទទេ"
+
+#: ../aptkit/worker/aptworker.py:1309
+msgid "The license key is not allowed to contain executable code."
+msgstr ""
+"សោ​អាជ្ញាប័ណ្ណ​មិន​ត្រូវ​បាន​អនុញ្ញាត​​មាន​កូដ​ឯកសារ​ប្រតិបត្តិ​បាន​ទេ ។"
+
+#: ../aptkit/worker/aptworker.py:1318
+#, python-format
+msgid "The license key path %s is invalid"
+msgstr "ផ្លូវ​សោ​អាជ្ញាប័ណ្ណ %s មិន​ត្រឹមត្រូវ​ឡើយ"
+
+#: ../aptkit/worker/aptworker.py:1322
+#, python-format
+msgid "The license key already exists: %s"
+msgstr "សោ​អាជ្ញាប័ណ្ណ​មាន​រួចហើយ ៖ %s"
+
+#: ../aptkit/worker/aptworker.py:1327
+#, python-format
+msgid ""
+"The location of the license key is unsecure since it contains symbolic "
+"links. The path %s maps to %s"
+msgstr ""
+"ទីតាំង​របស់​សោ​អាជ្ញាប័ណ្ណ​គឺ​គ្មាន​សុវត្ថិភាព នៅ​ពេល​វា​មាន​តំណ​ជា​​សញ្ញា ។ "
+"ផ្លូវ %s ទៅកាន់ %s"
+
+#: ../aptkit/worker/aptworker.py:1335
+#, python-format
+msgid "The directory where to install the key to doesn't exist yet: %s"
+msgstr "ថត​ដែល​​ត្រូវ​ដំឡើង​សោ​មិន​ទាន់​មាន​នៅ​ឡើយ​ទេ ៖ %s"
+
+#: ../aptkit/worker/aptworker.py:1346
+#, python-format
+msgid "Failed to write key file to: %s"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​សរសេរ​ឯកសារ​សោ​ទៅកាន់ ៖ %s"
+
+#: ../aptkit/worker/aptworker.py:1381
+msgid "The following packages have unmet dependencies:"
+msgstr "កញ្ចប់​បន្ទាប់​មិន​បាន​​ជួប​ភាព​អាស្រ័យ​ទេ ៖"
+
+#: ../aptkit/worker/aptworker.py:1434
+msgid "but it is a virtual package"
+msgstr "ប៉ុន្តែ​​វា​ជា​កញ្ចប់​និម្មិត"
+
+#: ../aptkit/worker/aptworker.py:1437
+msgid "but it is not installed"
+msgstr "ប៉ុន្តែ​វា​មិន​ត្រូវ​បាន​ដំឡើង​ទេ"
+
+#: ../aptkit/worker/aptworker.py:1439
+msgid "but it is not going to be installed"
+msgstr "ប៉ុន្តែ​វា​នឹង​មិន​ត្រូវ​បាន​ដំឡើង​ឡើយ"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptkit/worker/aptworker.py:1443
+#, python-format
+msgid "but %s is installed"
+msgstr "ប៉ុន្តែ %s ត្រូវ​បាន​ដំឡើង"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptkit/worker/aptworker.py:1447
+#, python-format
+msgid "but %s is to be installed"
+msgstr "ប៉ុន្តែ %s ត្រូវ​បាន​ដំឡើង"

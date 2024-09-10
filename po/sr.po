@@ -1,0 +1,1275 @@
+# Serbian translation for aptkit
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the aptkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 15.12.2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: aptkit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-09 19:27+0100\n"
+"PO-Revision-Date: 2024-09-09 18:39+0000\n"
+"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"Language-Team: Ubuntu serbian Translators\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2024-09-10 09:08+0000\n"
+"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
+"Language: serbian (sr)\n"
+
+#: ../data/org.debian.aptkit.policy.in.h:1
+msgid "List keys of trusted vendors"
+msgstr "Списак кључева поузданих продаваца"
+
+#: ../data/org.debian.aptkit.policy.in.h:2
+msgid "To view the list of trusted keys, you need to authenticate."
+msgstr ""
+"Да бисте видели списак поузданих кључева, требате да потврдите идентитет."
+
+#: ../data/org.debian.aptkit.policy.in.h:3
+msgid "Remove downloaded package files"
+msgstr "Уклони преузете датотеке пакета"
+
+#: ../data/org.debian.aptkit.policy.in.h:4
+msgid "To clean downloaded package files, you need to authenticate."
+msgstr ""
+"Да бисте очистили преузете датотеке пакета, треба да потврдите идентитет."
+
+#: ../data/org.debian.aptkit.policy.in.h:5
+msgid "Change software configuration"
+msgstr "Промени конфигурацију софтвера"
+
+#: ../data/org.debian.aptkit.policy.in.h:6
+msgid "To change software settings, you need to authenticate."
+msgstr "Да бисте изменили поставке софтвера, требате да потврдите идентитет."
+
+#: ../data/org.debian.aptkit.policy.in.h:7
+msgid "Change software repository"
+msgstr "Промени ризницу софтвера"
+
+#: ../data/org.debian.aptkit.policy.in.h:8
+msgid "To change software repository settings, you need to authenticate."
+msgstr ""
+"Да бисте изменили поставке ризнице софтвера, требате да потврдите идентитет."
+
+#: ../data/org.debian.aptkit.policy.in.h:9
+msgid "Install package file"
+msgstr "Инсталирај датотеку пакета"
+
+#: ../data/org.debian.aptkit.policy.in.h:10
+msgid "To install this package, you need to authenticate."
+msgstr "Да бисте инсталирали овај пакет, требате да потврдите идентитет."
+
+#: ../data/org.debian.aptkit.policy.in.h:11
+msgid "Update package information"
+msgstr "Допуни информације о пакету"
+
+#: ../data/org.debian.aptkit.policy.in.h:12
+msgid "To update the software catalog, you need to authenticate."
+msgstr "Да бисте ажурирали каталог софтвера, требате да потврдите идентитет."
+
+#: ../data/org.debian.aptkit.policy.in.h:13
+msgid "Install or remove packages"
+msgstr "Инсталирај или уклони пакете"
+
+#: ../data/org.debian.aptkit.policy.in.h:14
+msgid "To install or remove software, you need to authenticate."
+msgstr ""
+"Да бисте инсталирали или уклонили софтвер, требате да потврдите идентитет."
+
+#. This priviledge will be requested when installing a package
+#. from a high trusted repository that can be explicitely whitelisted.
+#. 
+#. The defaults for this action are the same as
+#. "org.debian.aptkit.install-or-remove-packages".
+#. 
+#. The admin can override them to e.g. allow passwordless installs for
+#. leightweight applications like unity-webapps or for packages
+#. comming from high trust repositories (like internal repositories)
+#. 
+#: ../data/org.debian.aptkit.policy.in.h:25
+msgid "Install software from a high-trust whitelisted repository."
+msgstr ""
+"Инсталирај програме из проверене ризнице која се налази на белом списку."
+
+#: ../data/org.debian.aptkit.policy.in.h:26
+msgid "To install software, you need to authenticate."
+msgstr "Да бисте инсталирали програм, потребно је да се идентификујете."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#: ../data/org.debian.aptkit.policy.in.h:32
+msgid "Add a new repository and install packages from it"
+msgstr "Додај нову ризницу и инсталирај пакете из ње"
+
+#: ../data/org.debian.aptkit.policy.in.h:33
+msgid "To install software from a new source, you need to authenticate."
+msgstr ""
+"Да бисте инсталирали софтвер из новог извора, требате да потврдите идентитет."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#. 
+#. The only difference to install-packages-from-new-repo is the wording
+#. of the message. It is required by Ubuntu's Software-Center.
+#: ../data/org.debian.aptkit.policy.in.h:42
+msgid ""
+"Add a new repository of purchased software and install packages from it"
+msgstr "Додај нову ризницу купљеног софтвера и инсталирај пакете из ње"
+
+#: ../data/org.debian.aptkit.policy.in.h:43
+msgid "To install purchased software, you need to authenticate."
+msgstr ""
+"Да бисте инсталирали купљени софтвер, требате да потврдите идентитет."
+
+#: ../data/org.debian.aptkit.policy.in.h:44
+msgid "Upgrade packages"
+msgstr "Надогради пакете"
+
+#: ../data/org.debian.aptkit.policy.in.h:45
+msgid "To install updated software, you need to authenticate."
+msgstr ""
+"Да бисте инсталирали ажурирани софтвер, требате да потврдите идентитет."
+
+#: ../data/org.debian.aptkit.policy.in.h:46
+msgid "Cancel the task of another user"
+msgstr "Откажи задатак другог корисника"
+
+#: ../data/org.debian.aptkit.policy.in.h:47
+msgid "To cancel someone else's software changes, you need to authenticate."
+msgstr ""
+"Да бисте отказали измене софтвера другог корисника, требате да потврдите "
+"идентитет."
+
+#: ../data/org.debian.aptkit.policy.in.h:48
+msgid "Set a proxy for software downloads"
+msgstr "Постави посредника за преузимање софтвера"
+
+#: ../data/org.debian.aptkit.policy.in.h:49
+msgid ""
+"To use a proxy server for downloading software, you need to authenticate."
+msgstr ""
+"Да бисте користили посреднички сервер за преузимање софтвера, требате да "
+"потврдите идентитет."
+
+#: ../aptkit/core.py:2148
+msgid "Do not shutdown the daemon because of inactivity"
+msgstr "Не гаси демона због неактивности"
+
+#: ../aptkit/core.py:2153
+msgid "Do not load any plugins"
+msgstr "Не учитава никакве прикључке"
+
+#: ../aptkit/core.py:2157
+msgid "Show internal processing information"
+msgstr "Прикажи информације о унутрашњим процесима"
+
+#: ../aptkit/core.py:2162
+msgid "Quit and replace an already running daemon"
+msgstr "Заустави и замени већ започет демон програм"
+
+#: ../aptkit/core.py:2167
+msgid "Listen on the DBus session bus (Only required for testing"
+msgstr "Ослушкује на магистрали ДБус сесије (потребно је само за тестирање)"
+
+#: ../aptkit/core.py:2171
+msgid "Perform operations in the given chroot"
+msgstr "Извршава операције у датом „chroot“-у"
+
+#: ../aptkit/core.py:2176
+msgid "Store profile stats in the specified file"
+msgstr "Сачувај стање профила у посебно одређену датотеку"
+
+#: ../aptkit/core.py:2181
+msgid "Do not make any changes to the system (Only of use to developers)"
+msgstr "Не уноси никакве промене на систему (Корисно је само програмерима)"
+
+#: ../aptkit/enums.py:337
+msgid "Installed file"
+msgstr "Датотека је инсталирана"
+
+#: ../aptkit/enums.py:338
+msgid "Installed packages"
+msgstr "Пакети су инсталирани"
+
+#: ../aptkit/enums.py:339
+msgid "Added key from file"
+msgstr "Кључ из датотеке је додат"
+
+#: ../aptkit/enums.py:340
+msgid "Updated cache"
+msgstr "Кеш је освежен"
+
+#: ../aptkit/enums.py:341
+msgid "Search done"
+msgstr "Претрага је обављена"
+
+#: ../aptkit/enums.py:342
+msgid "Removed trusted key"
+msgstr "Поверљиви кључ је уклоњен"
+
+#: ../aptkit/enums.py:343
+msgid "Removed packages"
+msgstr "Пакети су уклоњени"
+
+#: ../aptkit/enums.py:344
+msgid "Updated packages"
+msgstr "Пакети су унапређени"
+
+#: ../aptkit/enums.py:345
+msgid "Upgraded system"
+msgstr "Систем је надограђен"
+
+#: ../aptkit/enums.py:346
+msgid "Applied changes"
+msgstr "Измене су примењене"
+
+#: ../aptkit/enums.py:347
+msgid "Repaired incomplete installation"
+msgstr "Незавршена инсталација је оправљена"
+
+#: ../aptkit/enums.py:348
+msgid "Repaired broken dependencies"
+msgstr "Оштећене зависности су оправљене"
+
+#: ../aptkit/enums.py:349
+msgid "Added software source"
+msgstr "Извор софтвера је додат"
+
+#: ../aptkit/enums.py:350
+msgid "Enabled component of the distribution"
+msgstr "Компонента дистрибуције је омогућена"
+
+#: ../aptkit/enums.py:351
+msgid "Removed downloaded package files"
+msgstr "Уклоњене преузете датотеке пакета"
+
+#: ../aptkit/enums.py:352
+msgid "Reconfigured installed packages"
+msgstr "Поново подешени инсталирани пакети"
+
+#: ../aptkit/enums.py:356
+msgid "Successful"
+msgstr "Успешно"
+
+#: ../aptkit/enums.py:357
+msgid "Canceled"
+msgstr "Отказано"
+
+#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
+msgid "Failed"
+msgstr "Неуспело"
+
+#: ../aptkit/enums.py:361
+msgid "Installing file"
+msgstr "Инсталирам датотеку"
+
+#: ../aptkit/enums.py:362
+msgid "Installing packages"
+msgstr "Инсталирам пакете"
+
+#: ../aptkit/enums.py:363
+msgid "Adding key from file"
+msgstr "Додајем кључ из датотеке"
+
+#: ../aptkit/enums.py:364
+msgid "Updating cache"
+msgstr "Освежавам кеш"
+
+#: ../aptkit/enums.py:365
+msgid "Removing trusted key"
+msgstr "Уклањам поверљиви кључ"
+
+#: ../aptkit/enums.py:366
+msgid "Removing packages"
+msgstr "Уклањам пакете"
+
+#: ../aptkit/enums.py:367
+msgid "Updating packages"
+msgstr "Освежавам пакете"
+
+#: ../aptkit/enums.py:368
+msgid "Upgrading system"
+msgstr "Надограђујем систем"
+
+#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
+msgid "Applying changes"
+msgstr "Примењујем измене"
+
+#: ../aptkit/enums.py:370
+msgid "Repairing incomplete installation"
+msgstr "Оправљам незавршену инсталацију"
+
+#: ../aptkit/enums.py:371
+msgid "Repairing installed software"
+msgstr "Поправљам инсталиран софтвер"
+
+#: ../aptkit/enums.py:372
+msgid "Adding software source"
+msgstr "Додајем извор софтвера"
+
+#: ../aptkit/enums.py:373
+msgid "Enabling component of the distribution"
+msgstr "Омогућавам компоненту дистрибуције"
+
+#: ../aptkit/enums.py:374
+msgid "Removing downloaded package files"
+msgstr "Поново подешени инсталирани пакети"
+
+#: ../aptkit/enums.py:375
+msgid "Reconfiguring installed packages"
+msgstr "Поново подешавам инсталиране пакете"
+
+#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
+msgid "Searching"
+msgstr "Претраживање"
+
+#: ../aptkit/enums.py:380
+msgid "Installation of the package file failed"
+msgstr "Нисам успео да инсталирам датотеку пакета"
+
+#: ../aptkit/enums.py:381
+msgid "Installation of software failed"
+msgstr "Нисам успео да инсталирам софтвер"
+
+#: ../aptkit/enums.py:382
+msgid "Adding the key to the list of trusted software vendors failed"
+msgstr "Додавање кључа у списак проверених произвођача програма је неуспешно"
+
+#: ../aptkit/enums.py:384
+msgid "Refreshing the software list failed"
+msgstr "Нисам успео да обновим списак софтвера"
+
+#: ../aptkit/enums.py:385
+msgid "Removing the vendor from the list of trusted ones failed"
+msgstr "Нисам успео да уклоним продавца са листе поверљивих"
+
+#: ../aptkit/enums.py:387
+msgid "Removing software failed"
+msgstr "Нисам успео да уклоним софтвер"
+
+#: ../aptkit/enums.py:388
+msgid "Updating software failed"
+msgstr "Нисам успео да освежим софтвер"
+
+#: ../aptkit/enums.py:389
+msgid "Upgrading the system failed"
+msgstr "Нисам успео да надоградим систем"
+
+#: ../aptkit/enums.py:390
+msgid "Applying software changes failed"
+msgstr "Нисам успео да применим измене софтвера"
+
+#: ../aptkit/enums.py:391
+msgid "Repairing incomplete installation failed"
+msgstr "Нисам успео да оправим незавршену инсталацију"
+
+#: ../aptkit/enums.py:393
+msgid "Repairing broken dependencies failed"
+msgstr "Нисам успео да оправим оштећене зависности"
+
+#: ../aptkit/enums.py:394
+msgid "Adding software source failed"
+msgstr "Нисам успео да додам извор софтвера"
+
+#: ../aptkit/enums.py:395
+msgid "Enabling component of the distribution failed"
+msgstr "Нисам успео да омогућим компоненту дистрибуције"
+
+#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
+msgid "Removing downloaded package files failed"
+msgstr "Нисам успео да уклоним преузете датотеке пакета"
+
+#: ../aptkit/enums.py:399
+msgid "Search failed"
+msgstr "Претрага није успела"
+
+#: ../aptkit/enums.py:400
+msgid "Adding license key"
+msgstr "Додајем кључ лиценце"
+
+#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
+msgid "Check your Internet connection."
+msgstr "Проверите вашу интернет везу."
+
+#: ../aptkit/enums.py:406
+msgid ""
+"Check if you are using third party repositories. If so disable them, since "
+"they are a common source of problems.\n"
+"Furthermore run the following command in a Terminal: apt-get install -f"
+msgstr ""
+"Проверите да ли користите незваничне ризнице. Уколико их користите, "
+"искључите их јер су оне често узрок проблема.\n"
+"Касније покрените следећу наредбу у Терминалу: apt-get install -f"
+
+#: ../aptkit/enums.py:411
+msgid "The selected file may not be a GPG key file or it might be corrupt."
+msgstr "Датотека коју сте изабрали је оштећена или не представља ГПГ кључ."
+
+#: ../aptkit/enums.py:413
+msgid ""
+"The selected key couldn't be removed. Check that you provided a valid "
+"fingerprint."
+msgstr ""
+"Не могу да уклоним изабрани кључ. Проверите да ли сте обезбедили важећи "
+"отисак прста."
+
+#: ../aptkit/enums.py:415
+msgid ""
+"Check if you are currently running another software management tool, e.g. "
+"Synaptic or aptitude. Only one tool is allowed to make changes at a time."
+msgstr ""
+"Проверите да тренутно можда нисте покренули неки други алат за управљање "
+"софтвером, нпр. Синаптик или аптитјуд. Допуштено је да само један алат може "
+"да врши измене у исто време."
+
+#: ../aptkit/enums.py:418
+msgid ""
+"This is a serious problem. Try again later. If this problem appears again, "
+"please report an error to the developers."
+msgstr ""
+"Ово је врло озбиљан проблем. Пробајте касније. Ако се исти проблем појави и "
+"касније, молимо Вас пошаљите извештај програмерима."
+
+#: ../aptkit/enums.py:421
+msgid ""
+"Check the spelling of the package name, and that the appropriate repository "
+"is enabled."
+msgstr ""
+"Проверите да ли сте исправно уписали име пакета и да ли сте укључили "
+"одговарајућу ризницу."
+
+#: ../aptkit/enums.py:423
+msgid "There isn't any need for an update."
+msgstr "Нема никакве потребе за освежавањем."
+
+#: ../aptkit/enums.py:424
+msgid "There isn't any need for an installation"
+msgstr "Нема никакве потребе за инсталирањем"
+
+#: ../aptkit/enums.py:426
+msgid "There isn't any need for a removal."
+msgstr "Нема никакве потребе за уклањањем."
+
+#: ../aptkit/enums.py:427
+msgid ""
+"You requested to remove a package which is an essential part of your system."
+msgstr "Затражили сте уклањање пакета који је кључни део Вашег система."
+
+#: ../aptkit/enums.py:430
+msgid ""
+"The connection to the daemon was lost. Most likely the background daemon "
+"crashed."
+msgstr ""
+"Веза са демоном је изгубљена. Највероватније да је позадински демон изненада "
+"прекинуо с радом."
+
+#: ../aptkit/enums.py:432
+msgid "The installation or removal of a software package failed."
+msgstr "Инсталација или уклањање софтверског пакета није успела."
+
+#: ../aptkit/enums.py:434
+msgid "The requested feature is not supported."
+msgstr "Затражена функција није подржана."
+
+#: ../aptkit/enums.py:435
+msgid ""
+"There seems to be a programming error in aptkit, the software that allows "
+"you to install/remove software and to perform other package management "
+"related tasks."
+msgstr ""
+"Изгледа да постоји програмерска грешка у апт позадинцу, програму који вам "
+"омогућава да инсталирате/уклањате програме као и да обављате друге послове у "
+"вези управљања пакетима."
+
+#: ../aptkit/enums.py:439
+msgid ""
+"This error could be caused by required additional software packages which "
+"are missing or not installable. Furthermore there could be a conflict "
+"between software packages which are not allowed to be installed at the same "
+"time."
+msgstr ""
+"Ова грешка може бити изазвана захтевањем додатних софтверских пакета који "
+"недостају или нису инстаљиви. Такође може постојати сукоб између софтверских "
+"пакета којима није дозвољено да буду инсталирани у исто време."
+
+#: ../aptkit/enums.py:445
+msgid "This requires installing packages from unauthenticated sources."
+msgstr "Овај захват укључује инсталирање пакета из непроверених извора."
+
+#: ../aptkit/enums.py:447
+msgid ""
+"The installation could have failed because of an error in the corresponding "
+"software package or it was cancelled in an unfriendly way. You have to "
+"repair this before you can install or remove any further software."
+msgstr ""
+"Инсталација можда није успела због грешке у одговарајућем софтверском пакету "
+"или је отказана на неодговарајући начин. Морате да поправите ово пре него "
+"што будете могли да инсталирате или уклоните будући софтвер."
+
+#: ../aptkit/enums.py:453
+msgid ""
+"Please copy the file to your local computer and check the file permissions."
+msgstr ""
+"Молим умножите датотеку на ваш локални рачунар и проверите овлашћења "
+"датотеке."
+
+#: ../aptkit/enums.py:456
+msgid ""
+"The installation of a package which violates the quality standards isn't "
+"allowed. This could cause serious problems on your computer. Please contact "
+"the person or organisation who provided this package file and include the "
+"details beneath."
+msgstr ""
+"Инсталирање пакета који крше стандарде квалитета није дозвољено. То може "
+"изазвати озбиљне проблеме на вашем рачунару. Молим контактирајте особу или "
+"организацију која је обезбедила овај пакет и укључите детаље испод."
+
+#: ../aptkit/enums.py:463
+msgid ""
+"The downloaded license key which is required to run this piece of software "
+"is not valid or could not be installed correctly.\n"
+"See the details for more information."
+msgstr ""
+"Преузети кључ лиценце који је потребан за покретање овог програма није "
+"исправан или не може бити исправно инсталиран.\n"
+"Погледајте појединости за више података."
+
+#: ../aptkit/enums.py:469
+msgid "All available upgrades have already been installed."
+msgstr "Све доступне надоградње су већ инсталиране."
+
+#: ../aptkit/enums.py:471
+msgid ""
+"The license key which allows you to use this piece of software could not be "
+"downloaded. Please check your network connection."
+msgstr ""
+"Кључ лиценце који вам омогућава да користите овај програм не може бити "
+"преузет. Проверите вашу мрежну везу."
+
+#: ../aptkit/enums.py:475
+msgid "You don't have the required privileges to perform this action."
+msgstr "Немате потребна овлашћења за обављање ове радње."
+
+#: ../aptkit/enums.py:477
+msgid ""
+"You either provided a wrong password or cancelled the authorization.\n"
+"Furthermore there could also be a technical reason for this error if you "
+"haven't seen a password dialog: your desktop environment doesn't provide a "
+"PolicyKit session agent."
+msgstr ""
+"Унели сте погрешну лозинку или сте поништили овлашћивање.\n"
+"Такође, можда је узрок ове грешке техничке природе. Ако нисте видели прозор "
+"за унос лозинке онда ваше графичко окружење нема PolicyKit."
+
+#: ../aptkit/enums.py:485
+msgid "Failed to download package files"
+msgstr "Нисам успео да преузмем датотеке пакета"
+
+#: ../aptkit/enums.py:486
+msgid "Failed to download repository information"
+msgstr "Нисам успео да преузмем информације ризнице"
+
+#: ../aptkit/enums.py:488
+msgid "Package dependencies cannot be resolved"
+msgstr "Зависности пакета не могу бити решене"
+
+#: ../aptkit/enums.py:489
+msgid "The package system is broken"
+msgstr "Систем пакета је оштећен"
+
+#: ../aptkit/enums.py:490
+msgid "Key was not installed"
+msgstr "Кључ није инсталиран"
+
+#: ../aptkit/enums.py:491
+msgid "Key was not removed"
+msgstr "Кључ није уклоњен"
+
+#: ../aptkit/enums.py:492
+msgid "Failed to lock the package manager"
+msgstr "Нисам успео да закључам управника пакета"
+
+#: ../aptkit/enums.py:493
+msgid "Failed to load the package list"
+msgstr "Нисам успео да учитам списак пакета"
+
+#: ../aptkit/enums.py:494
+msgid "Package does not exist"
+msgstr "Пакет не постоји"
+
+#: ../aptkit/enums.py:495
+msgid "Package is already up to date"
+msgstr "Пакет је већ ажуриран"
+
+#: ../aptkit/enums.py:496
+msgid "Package is already installed"
+msgstr "Пакет је већ инсталиран"
+
+#: ../aptkit/enums.py:497
+msgid "Package isn't installed"
+msgstr "Пакет није инсталиран"
+
+#: ../aptkit/enums.py:498
+msgid "Failed to remove essential system package"
+msgstr "Нисам успео да уклоним кључни пакет система"
+
+#: ../aptkit/enums.py:500
+msgid "Task cannot be monitored or controlled"
+msgstr "Задатак не може бити праћен или контролисан"
+
+#: ../aptkit/enums.py:501
+msgid "Package operation failed"
+msgstr "Извршавање задатог није успело"
+
+#: ../aptkit/enums.py:502
+msgid "Requires installation of untrusted packages"
+msgstr "Захтева инсталирање неповерљивих пакета"
+
+#: ../aptkit/enums.py:504
+msgid "Previous installation hasn't been completed"
+msgstr "Претходна инсталација није била завршена"
+
+#: ../aptkit/enums.py:505
+msgid "The package is of bad quality"
+msgstr "Пакет је лошег квалитета"
+
+#: ../aptkit/enums.py:506
+msgid "Package file could not be opened"
+msgstr "Датотека пакета не може бити отворена"
+
+#: ../aptkit/enums.py:507
+msgid "Not supported feature"
+msgstr "Неподржана функција"
+
+#: ../aptkit/enums.py:508
+msgid "Failed to download the license key"
+msgstr "Нисам успео да преузмем кључ лиценце"
+
+#: ../aptkit/enums.py:509
+msgid "Failed to install the license key"
+msgstr "Нисам успео да инсталирам кључ лиценце"
+
+#: ../aptkit/enums.py:510
+msgid "The system is already up to date"
+msgstr "Систем је већ ажуриран"
+
+#: ../aptkit/enums.py:511
+msgid "You could not be authorized"
+msgstr "Неуспех при овлашћивању."
+
+#: ../aptkit/enums.py:512
+msgid "You are not allowed to perform this action"
+msgstr "Нисте овлашћени да извршите овај захват"
+
+#: ../aptkit/enums.py:513
+msgid "An unhandlable error occured"
+msgstr "Дошло је до грешке којом се не може управљати"
+
+#: ../aptkit/enums.py:516
+msgid "Waiting for service to start"
+msgstr "Чекам на услугу да започне"
+
+#: ../aptkit/enums.py:518
+msgid "Waiting"
+msgstr "Чекам"
+
+#: ../aptkit/enums.py:519
+msgid "Waiting for required medium"
+msgstr "Чекам на затражени медијум"
+
+#: ../aptkit/enums.py:520
+msgid "Waiting for other software managers to quit"
+msgstr "Чекам на друге управнике пакета да заврше"
+
+#: ../aptkit/enums.py:521
+msgid "Waiting for configuration file prompt"
+msgstr "Чекам на промпт датотеке подешавања"
+
+#: ../aptkit/enums.py:523
+msgid "Running task"
+msgstr "Извршавам задатак"
+
+#: ../aptkit/enums.py:524
+msgid "Downloading"
+msgstr "Преузимам"
+
+#: ../aptkit/enums.py:525
+msgid "Querying software sources"
+msgstr "Пропитујем изворе софтвера"
+
+#: ../aptkit/enums.py:526
+msgid "Cleaning up"
+msgstr "Чистим"
+
+#: ../aptkit/enums.py:527
+msgid "Resolving dependencies"
+msgstr "Разрешавам зависности"
+
+#: ../aptkit/enums.py:529
+msgid "Finished"
+msgstr "Завршено"
+
+#: ../aptkit/enums.py:530
+msgid "Cancelling"
+msgstr "Отказујем"
+
+#: ../aptkit/enums.py:531
+msgid "Loading software list"
+msgstr "Уносим списак софтвера"
+
+#: ../aptkit/enums.py:532
+msgid "Waiting for authentication"
+msgstr "Чекам на потврђивање идентитета"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:536
+#, python-format
+msgid "Installing %s"
+msgstr "Инсталирам „%s“"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:538
+#, python-format
+msgid "Configuring %s"
+msgstr "Подешавам „%s“"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:540
+#, python-format
+msgid "Removing %s"
+msgstr "Уклањам „%s“"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:542
+#, python-format
+msgid "Completely removing %s"
+msgstr "Уклањам потпуно %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:544
+#, python-format
+msgid "Noting disappearance of %s"
+msgstr "Бележим нестанак за %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:546
+#, python-format
+msgid "Running post-installation trigger %s"
+msgstr "Извршавам пост-инсталационе белешке „%s“"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:548
+#, python-format
+msgid "Upgrading %s"
+msgstr "Надограђујем „%s“"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:550
+#, python-format
+msgid "Unpacking %s"
+msgstr "Распакивам %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:552
+#, python-format
+msgid "Preparing installation of %s"
+msgstr "Припремам „%s“ за инсталацију"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:554
+#, python-format
+msgid "Preparing configuration of %s"
+msgstr "Припремам подешавање за „%s“"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:556
+#, python-format
+msgid "Preparing removal of %s"
+msgstr "Припремам „%s“ за уклањање"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:558
+#, python-format
+msgid "Preparing complete removal of %s"
+msgstr "Припремам „%s“ за потпуно уклањање"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:560
+#, python-format
+msgid "Installed %s"
+msgstr "%s је инсталиран"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:562
+#, python-format
+msgid "Completely removed %s"
+msgstr "%s је уклоњен потпуно"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:564
+#, python-format
+msgid "Removed %s"
+msgstr "Уклоњено %s"
+
+#: ../aptkit/enums.py:567
+msgid "Done"
+msgstr "Урађено"
+
+#: ../aptkit/enums.py:568
+msgid "Authentication failed"
+msgstr "Потврђивање идентитета није успело"
+
+#: ../aptkit/enums.py:570
+msgid "Fetching"
+msgstr "Набављам"
+
+#: ../aptkit/enums.py:571
+msgid "Idle"
+msgstr "Мирујем"
+
+#: ../aptkit/enums.py:572
+msgid "Network isn't available"
+msgstr "Мрежа није доступна"
+
+#: ../aptkit/enums.py:704
+#, python-format
+msgid "Processing %s"
+msgstr "Обрађујем %s"
+
+#: ../aptkit/gtk3widgets.py:311
+#, python-format
+msgid "Downloaded %sB of %sB at %sB/s"
+msgstr "Преузето је %sB од %sB при %sB/s"
+
+#: ../aptkit/gtk3widgets.py:316 ../aptkit/gtk3widgets.py:517
+#, python-format
+msgid "Downloaded %sB of %sB"
+msgstr "Преузето је %sB од %sB"
+
+#: ../aptkit/gtk3widgets.py:328
+msgid "Details"
+msgstr "Детаљи"
+
+#: ../aptkit/gtk3widgets.py:481
+msgid "File"
+msgstr "Датотека"
+
+#. TRANSLATORS: header of the progress download column
+#: ../aptkit/gtk3widgets.py:486
+msgid "%"
+msgstr "%"
+
+#: ../aptkit/gtk3widgets.py:522
+#, python-format
+msgid "Downloaded %sB"
+msgstr "Преузето је %sB"
+
+#: ../aptkit/gtk3widgets.py:525
+msgid "Downloaded"
+msgstr "Преузето је"
+
+#. TRANSLATORS: %s represents the name of a CD or DVD
+#: ../aptkit/gtk3widgets.py:860
+#, python-format
+msgid "CD/DVD '%s' is required"
+msgstr "Потребан је „%s“ ЦД/ДВД диск"
+
+#. TRANSLATORS: %s is the name of the CD/DVD drive
+#: ../aptkit/gtk3widgets.py:862
+#, python-format
+msgid ""
+"Please insert the above CD/DVD into the drive '%s' to install software "
+"packages from it."
+msgstr ""
+"Убаците доле наведени ЦД/ДВД диск у уређај „%s“ да би са њега инсталирали "
+"софтверске пакете."
+
+#: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
+msgid "C_ontinue"
+msgstr "Н_астави"
+
+#: ../aptkit/gtk3widgets.py:939
+msgid "Install"
+msgstr "Инсталирај"
+
+#: ../aptkit/gtk3widgets.py:940
+msgid "Reinstall"
+msgstr "Поново инсталирај"
+
+#: ../aptkit/gtk3widgets.py:941
+msgid "Remove"
+msgstr "Уклони"
+
+#: ../aptkit/gtk3widgets.py:942
+msgid "Purge"
+msgstr "Избаци"
+
+#: ../aptkit/gtk3widgets.py:943
+msgid "Upgrade"
+msgstr "Надогради"
+
+#: ../aptkit/gtk3widgets.py:944
+msgid "Downgrade"
+msgstr "Разгради"
+
+#: ../aptkit/gtk3widgets.py:945
+msgid "Skip upgrade"
+msgstr "Прескочи надоградњу"
+
+#. If there is only one type of changes (e.g. only installs) expand the
+#. tree
+#. FIXME: adapt the title and message accordingly
+#. FIXME: Should we have different modes? Only show dependencies, only
+#. initial packages or both?
+#: ../aptkit/gtk3widgets.py:956
+msgid "Please take a look at the list of changes below."
+msgstr "Молим погледајте списак промена испод."
+
+#: ../aptkit/gtk3widgets.py:964
+msgid "Additional software has to be installed"
+msgstr "Додатни софтвер мора да буде инсталиран"
+
+#: ../aptkit/gtk3widgets.py:966
+msgid "Additional software has to be re-installed"
+msgstr "Додатни софтвер мора да буде поново инсталиран"
+
+#: ../aptkit/gtk3widgets.py:968
+msgid "Additional software has to be removed"
+msgstr "Додатни софтвер мора да буде уклоњен"
+
+#: ../aptkit/gtk3widgets.py:970
+msgid "Additional software has to be purged"
+msgstr "Додатни софтвер мора да буде избачен"
+
+#: ../aptkit/gtk3widgets.py:972
+msgid "Additional software has to be upgraded"
+msgstr "Додатни софтвер мора да буде надограђен"
+
+#: ../aptkit/gtk3widgets.py:974
+msgid "Additional software has to be downgraded"
+msgstr "Додатни софтвер мора да буде разграђен"
+
+#: ../aptkit/gtk3widgets.py:976
+msgid "Updates will be skipped"
+msgstr "Исправке ће бити прескочене"
+
+#: ../aptkit/gtk3widgets.py:984
+msgid "Additional changes are required"
+msgstr "Додатне измене су захтеване"
+
+#: ../aptkit/gtk3widgets.py:989
+#, python-format
+msgid "%sB will be downloaded in total."
+msgstr "%sB укупно ће бити преузето."
+
+#: ../aptkit/gtk3widgets.py:993
+#, python-format
+msgid "%sB of disk space will be freed."
+msgstr "%sB простора на диску биће ослобођено."
+
+#: ../aptkit/gtk3widgets.py:997
+#, python-format
+msgid "%sB more disk space will be used."
+msgstr "%sB простора на диску ће бити још искоришћено."
+
+#. TRANSLATORS: %s is a file path
+#: ../aptkit/gtk3widgets.py:1069
+#, python-format
+msgid ""
+"Replace your changes in '%s' with a later version of the configuration file?"
+msgstr ""
+"Да ли да заменим Ваше измене у „%s“ с најновијом верзијом датотеке "
+"подешавања?"
+
+#: ../aptkit/gtk3widgets.py:1071
+msgid ""
+"If you don't know why the file is there already, it is usually safe to "
+"replace it."
+msgstr ""
+"Ако не знате зашто је датотека већ тамо, обично је сигурно заменити је."
+
+#: ../aptkit/gtk3widgets.py:1080
+msgid "_Changes"
+msgstr "_Измене"
+
+#: ../aptkit/gtk3widgets.py:1083
+msgid "_Keep"
+msgstr "_Задржи"
+
+#: ../aptkit/gtk3widgets.py:1084
+msgid "_Replace"
+msgstr "За_мени"
+
+#: ../aptkit/gtk3widgets.py:1187
+msgid "_Details"
+msgstr "_Детаљи"
+
+#. TRANSLATORS: %s is the name of a package manager
+#: ../aptkit/lock.py:189
+#, python-format
+msgid "Waiting for %s to exit"
+msgstr "Чекам на „%s“ да заврши"
+
+#. TRANSLATORS: %s is a list of package names
+#: ../aptkit/progress.py:168
+#, python-format
+msgid "Downloading %s"
+msgstr "Разграђујем %s"
+
+#. TRANSLATORS: the string is used as a fallback if we cannot
+#. get the URI of a local repository
+#: ../aptkit/progress.py:277 ../aptkit/progress.py:314
+msgid "local repository"
+msgstr "локална ризница"
+
+#. TRANSLATORS: %s is a list of repository names
+#: ../aptkit/progress.py:280
+#, python-format
+msgid "Downloading from %s"
+msgstr "Преузимам са %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:318
+#, python-format
+msgid "Structure of %s"
+msgstr "Структура за %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:321
+#, python-format
+msgid "Description of %s"
+msgstr "Опис за %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:324
+#, python-format
+msgid "Description signature of %s"
+msgstr "Потпис описа за %s"
+
+#: ../aptkit/progress.py:329
+#, python-format
+msgid "Available packages from %s"
+msgstr "Доступни пакети из %s"
+
+#: ../aptkit/progress.py:333
+#, python-format
+msgid "Available sources from %s"
+msgstr "Доступни извори из %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:336
+#, python-format
+msgid "Available translations from %s"
+msgstr "Доступни преводи од %s"
+
+#: ../aptkit/progress.py:353
+#, python-format
+msgid "Translations for %s (%s) from %s"
+msgstr "Преводи за %s (%s) од %s"
+
+#. TRANSLATORS: %s is the name of a language. The second one is
+#. the name of the repository
+#: ../aptkit/progress.py:357
+#, python-format
+msgid "Translations for %s from %s"
+msgstr "Преводи за %s од %s"
+
+#. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
+#. The second one is the name of the repository
+#: ../aptkit/progress.py:362
+#, python-format
+msgid "Translations (%s) from %s"
+msgstr "Преводи (%s) из %s"
+
+#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
+#: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
+#, python-format
+msgid "Package %s isn't available"
+msgstr "Пакет „%s“ није доступан"
+
+#: ../aptkit/worker/aptworker.py:384 ../aptkit/worker/aptworker.py:682
+#: ../aptkit/worker/aptworker.py:777 ../aptkit/worker/aptworker.py:822
+#, python-format
+msgid "Package %s isn't installed"
+msgstr "Пакет „%s“ није инсталиран"
+
+#: ../aptkit/worker/aptworker.py:388
+#, python-format
+msgid "The version %s of %s isn't installed"
+msgstr "Верзија %s „%s“ пакета није инсталирана"
+
+#: ../aptkit/worker/aptworker.py:403
+#, python-format
+msgid "Package %s is already installed"
+msgstr "Пакет „%s“ је већ инсталиран"
+
+#: ../aptkit/worker/aptworker.py:410 ../aptkit/worker/aptworker.py:845
+#, python-format
+msgid "The version %s of %s isn't available."
+msgstr "Верзија %s „%s“ пакета није доступна."
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptkit/worker/aptworker.py:572
+#, python-format
+msgid "The keyserver URL is invalid: %s"
+msgstr "Адреса кључног сервера је неисправна: %s"
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptkit/worker/aptworker.py:578
+#, python-format
+msgid "Invalid protocol of the server: %s"
+msgstr "Неисправан протокол сервера: %s"
+
+#. TRANSLATORS: %s is the id of a GnuPG key
+#. e.g. E08ADE95
+#: ../aptkit/worker/aptworker.py:586 ../aptkit/worker/aptworker.py:630
+#, python-format
+msgid "Invalid key id: %s"
+msgstr "Неважећи ИБ кључа: %s"
+
+#: ../aptkit/worker/aptworker.py:594
+#, python-format
+msgid ""
+"Failed to download and install the key %s from %s:\n"
+"%s"
+msgstr ""
+"Нисам успео да преузмем и да инсталирам кључ „%s“ са „%s“:\n"
+"%s"
+
+#: ../aptkit/worker/aptworker.py:611
+#, python-format
+msgid "Key file %s couldn't be installed: %s"
+msgstr "Датотека кључа „%s“ не може бити инсталирана: %s"
+
+#: ../aptkit/worker/aptworker.py:635
+#, python-format
+msgid "Key with fingerprint %s couldn't be removed: %s"
+msgstr "Кључ са отиском „%s“ не може бити уклоњен: %s"
+
+#: ../aptkit/worker/aptworker.py:686
+#, python-format
+msgid "Package %s cannot be removed."
+msgstr "Пакет „%s“ не може бити уклоњен."
+
+#: ../aptkit/worker/aptworker.py:690
+#, python-format
+msgid "The version %s of %s is not installed"
+msgstr "Верзија %s „%s“ пакета није инсталирана"
+
+#: ../aptkit/worker/aptworker.py:785
+#, python-format
+msgid "The former version %s of %s is already installed"
+msgstr "Бивша верзија %s „%s“ пакета је већ инсталирана"
+
+#: ../aptkit/worker/aptworker.py:790 ../aptkit/worker/aptworker.py:838
+#, python-format
+msgid "The version %s of %s is already installed"
+msgstr "Верзија %s „%s“ пакета је већ инсталирана"
+
+#: ../aptkit/worker/aptworker.py:797
+#, python-format
+msgid "The version %s of %s isn't available"
+msgstr "Верзија %s „%s“ пакета није доступна"
+
+#: ../aptkit/worker/aptworker.py:801
+#, python-format
+msgid "You need to specify a version to downgrade %s to"
+msgstr "Треба да наведете верзију на коју ће „%s“ бити разграђен"
+
+#: ../aptkit/worker/aptworker.py:831
+#, python-format
+msgid "The later version %s of %s is already installed"
+msgstr "Каснија верзија %s „%s“ пакета је већ инсталирана"
+
+#: ../aptkit/worker/aptworker.py:867
+#, python-format
+msgid "The package %s isn't available in the %s release."
+msgstr "Пакет „%s“ није доступан у издању %s."
+
+#: ../aptkit/worker/aptworker.py:1052
+#, python-format
+msgid "Package %s cannot be removed"
+msgstr "Пакет „%s“ не може бити уклоњен"
+
+#: ../aptkit/worker/aptworker.py:1154
+msgid ""
+"The package doesn't provide a valid Installed-Size control field. See Debian "
+"Policy 5.6.20."
+msgstr ""
+"Пакет не обезбеђује исправно поље за контролу инсталиране величине. "
+"Погледајте Дебиан сигурност 5.6.20"
+
+#: ../aptkit/worker/aptworker.py:1293
+msgid "The license key is empty"
+msgstr "Кључ лиценце је празан"
+
+#: ../aptkit/worker/aptworker.py:1309
+msgid "The license key is not allowed to contain executable code."
+msgstr "Није дозвољено да кључ лиценце садржи извршни код."
+
+#: ../aptkit/worker/aptworker.py:1318
+#, python-format
+msgid "The license key path %s is invalid"
+msgstr "Путања кључа лиценце %s није исправна."
+
+#: ../aptkit/worker/aptworker.py:1322
+#, python-format
+msgid "The license key already exists: %s"
+msgstr "Кључ лиценце већ постоји: %s"
+
+#: ../aptkit/worker/aptworker.py:1327
+#, python-format
+msgid ""
+"The location of the license key is unsecure since it contains symbolic "
+"links. The path %s maps to %s"
+msgstr ""
+"Место кључа лиценце није безбедно јер садржи симболичне везе. Путања %s "
+"укаазује на %s"
+
+#: ../aptkit/worker/aptworker.py:1335
+#, python-format
+msgid "The directory where to install the key to doesn't exist yet: %s"
+msgstr "Директоријум за инсталирање кључа не постоји још увек: %s"
+
+#: ../aptkit/worker/aptworker.py:1346
+#, python-format
+msgid "Failed to write key file to: %s"
+msgstr "Нисам успео да запишем датотеку кључа у: %s"
+
+#: ../aptkit/worker/aptworker.py:1381
+msgid "The following packages have unmet dependencies:"
+msgstr "Следећи пакети имају незадовољене међузависности:"
+
+#: ../aptkit/worker/aptworker.py:1434
+msgid "but it is a virtual package"
+msgstr "али то је виртуелни пакет"
+
+#: ../aptkit/worker/aptworker.py:1437
+msgid "but it is not installed"
+msgstr "али није инсталиран"
+
+#: ../aptkit/worker/aptworker.py:1439
+msgid "but it is not going to be installed"
+msgstr "али неће бити инсталиран"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptkit/worker/aptworker.py:1443
+#, python-format
+msgid "but %s is installed"
+msgstr "али инсталиран је „%s“"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptkit/worker/aptworker.py:1447
+#, python-format
+msgid "but %s is to be installed"
+msgstr "али биће инсталиран „%s“"

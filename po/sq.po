@@ -1,0 +1,1284 @@
+# Albanian translation for aptkit
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the aptkit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: aptkit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-09 19:27+0100\n"
+"PO-Revision-Date: 2024-09-09 18:34+0000\n"
+"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"Language-Team: Albanian <sq@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2024-09-10 09:08+0000\n"
+"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
+"Language: sq\n"
+
+#: ../data/org.debian.aptkit.policy.in.h:1
+msgid "List keys of trusted vendors"
+msgstr "Listo çelësat e shitësave të besuar"
+
+#: ../data/org.debian.aptkit.policy.in.h:2
+msgid "To view the list of trusted keys, you need to authenticate."
+msgstr ""
+"Për të shfaqur listën e çelësave të besuar, ju duhet të identifikoheni."
+
+#: ../data/org.debian.aptkit.policy.in.h:3
+msgid "Remove downloaded package files"
+msgstr "Hiq skedarët e paketave të shkarkuara"
+
+#: ../data/org.debian.aptkit.policy.in.h:4
+msgid "To clean downloaded package files, you need to authenticate."
+msgstr ""
+"Për të pastruar skedarët e paketave të shkarkuara, ju duhet t identifikoheni."
+
+#: ../data/org.debian.aptkit.policy.in.h:5
+msgid "Change software configuration"
+msgstr "Ndrysho konfigurimin e programeve"
+
+#: ../data/org.debian.aptkit.policy.in.h:6
+msgid "To change software settings, you need to authenticate."
+msgstr ""
+"Për të ndryshuar parametrat e programeve, ju duhet të identifikoheni."
+
+#: ../data/org.debian.aptkit.policy.in.h:7
+msgid "Change software repository"
+msgstr "Ndrysho magazinën e programeve"
+
+#: ../data/org.debian.aptkit.policy.in.h:8
+msgid "To change software repository settings, you need to authenticate."
+msgstr "Për të ndryshuar parametrat e magazinës, ju duhet të identifikoheni."
+
+#: ../data/org.debian.aptkit.policy.in.h:9
+msgid "Install package file"
+msgstr "Instalo skedarin e paketës"
+
+#: ../data/org.debian.aptkit.policy.in.h:10
+msgid "To install this package, you need to authenticate."
+msgstr "Për të instaluar këtë paketë, ju duhet të identifikoheni."
+
+#: ../data/org.debian.aptkit.policy.in.h:11
+msgid "Update package information"
+msgstr "Përditëso informacionin e paketave"
+
+#: ../data/org.debian.aptkit.policy.in.h:12
+msgid "To update the software catalog, you need to authenticate."
+msgstr ""
+"Për të përditësuar katalogun e programeve, ju duhet të identifikoheni."
+
+#: ../data/org.debian.aptkit.policy.in.h:13
+msgid "Install or remove packages"
+msgstr "Instalo ose hiq paketat"
+
+#: ../data/org.debian.aptkit.policy.in.h:14
+msgid "To install or remove software, you need to authenticate."
+msgstr "Për të instaluar apo hequr programe, ju duhet të identifikoheni."
+
+#. This priviledge will be requested when installing a package
+#. from a high trusted repository that can be explicitely whitelisted.
+#. 
+#. The defaults for this action are the same as
+#. "org.debian.aptkit.install-or-remove-packages".
+#. 
+#. The admin can override them to e.g. allow passwordless installs for
+#. leightweight applications like unity-webapps or for packages
+#. comming from high trust repositories (like internal repositories)
+#. 
+#: ../data/org.debian.aptkit.policy.in.h:25
+msgid "Install software from a high-trust whitelisted repository."
+msgstr ""
+"Instalo programe nga një magazinë shumë e besuar dhe në listën e bardhë."
+
+#: ../data/org.debian.aptkit.policy.in.h:26
+msgid "To install software, you need to authenticate."
+msgstr "Për të instaluar programe, ju duhet të identifikoheni."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#: ../data/org.debian.aptkit.policy.in.h:32
+msgid "Add a new repository and install packages from it"
+msgstr "Shto një magazinë të re dhe shto paketat prej saj"
+
+#: ../data/org.debian.aptkit.policy.in.h:33
+msgid "To install software from a new source, you need to authenticate."
+msgstr ""
+"Për të instaluar programe nga një burim i ri, ju duhet të identifikoheni."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#. 
+#. The only difference to install-packages-from-new-repo is the wording
+#. of the message. It is required by Ubuntu's Software-Center.
+#: ../data/org.debian.aptkit.policy.in.h:42
+msgid ""
+"Add a new repository of purchased software and install packages from it"
+msgstr ""
+"Shto një magazinë të re të programeve të blera dhe instalo paketat prej saj"
+
+#: ../data/org.debian.aptkit.policy.in.h:43
+msgid "To install purchased software, you need to authenticate."
+msgstr "Për të instaluar programet e blera, ju duhet të identiifkoheni."
+
+#: ../data/org.debian.aptkit.policy.in.h:44
+msgid "Upgrade packages"
+msgstr "Përditëso paketat"
+
+#: ../data/org.debian.aptkit.policy.in.h:45
+msgid "To install updated software, you need to authenticate."
+msgstr ""
+"Për të instaluar programet e përditësuara, ju duhet të identifikoheni."
+
+#: ../data/org.debian.aptkit.policy.in.h:46
+msgid "Cancel the task of another user"
+msgstr "Anullo detyrën e një përdoruesi tjetër"
+
+#: ../data/org.debian.aptkit.policy.in.h:47
+msgid "To cancel someone else's software changes, you need to authenticate."
+msgstr ""
+"Për të fshirë ndryshimet e programeve të dikujt tjetër, ju duhet të "
+"identifikoheni."
+
+#: ../data/org.debian.aptkit.policy.in.h:48
+msgid "Set a proxy for software downloads"
+msgstr "Vendos proksi për shkarkimet e programeve"
+
+#: ../data/org.debian.aptkit.policy.in.h:49
+msgid ""
+"To use a proxy server for downloading software, you need to authenticate."
+msgstr "Për të përdorur një server proksi, ju duhet të identifikoheni."
+
+#: ../aptkit/core.py:2148
+msgid "Do not shutdown the daemon because of inactivity"
+msgstr "Mos e mbyll daemon për shkak të mungesës së veprimtarisë"
+
+#: ../aptkit/core.py:2153
+msgid "Do not load any plugins"
+msgstr "Mos ngarko asnjë plugin"
+
+#: ../aptkit/core.py:2157
+msgid "Show internal processing information"
+msgstr "Shfaq informacionin për proçeset e brendshme"
+
+#: ../aptkit/core.py:2162
+msgid "Quit and replace an already running daemon"
+msgstr "Dil dhe zëvendësoje një daemon që është tashmë në gjendje pune"
+
+#: ../aptkit/core.py:2167
+msgid "Listen on the DBus session bus (Only required for testing"
+msgstr "Dëgjoni në bus të seksionit DBus (Kërkohet vetëm për testim)"
+
+#: ../aptkit/core.py:2171
+msgid "Perform operations in the given chroot"
+msgstr "Kryeni verpimin në chroot të dhënë"
+
+#: ../aptkit/core.py:2176
+msgid "Store profile stats in the specified file"
+msgstr "Ruaj gjendjet e profilit në skedarin e përcaktuar"
+
+#: ../aptkit/core.py:2181
+msgid "Do not make any changes to the system (Only of use to developers)"
+msgstr ""
+"Mos bëni asnjë ndryshim në sistem (Vetëm për tu përdorur nga zhvilluesit)"
+
+#: ../aptkit/enums.py:337
+msgid "Installed file"
+msgstr "Skedari i instaluar"
+
+#: ../aptkit/enums.py:338
+msgid "Installed packages"
+msgstr "Paketat e instaluara"
+
+#: ../aptkit/enums.py:339
+msgid "Added key from file"
+msgstr "Çelës i shtuar nga skedari"
+
+#: ../aptkit/enums.py:340
+msgid "Updated cache"
+msgstr "Magazinë e përditësuar"
+
+#: ../aptkit/enums.py:341
+msgid "Search done"
+msgstr "Kërkimi u krye"
+
+#: ../aptkit/enums.py:342
+msgid "Removed trusted key"
+msgstr "Çelës i besueshëm i hequr"
+
+#: ../aptkit/enums.py:343
+msgid "Removed packages"
+msgstr "Paketa të hequra"
+
+#: ../aptkit/enums.py:344
+msgid "Updated packages"
+msgstr "Paketa të përditësuara"
+
+#: ../aptkit/enums.py:345
+msgid "Upgraded system"
+msgstr "Sistem i përditësuar"
+
+#: ../aptkit/enums.py:346
+msgid "Applied changes"
+msgstr "Ndryshimet e kryera"
+
+#: ../aptkit/enums.py:347
+msgid "Repaired incomplete installation"
+msgstr "U riparua instalimi i pa kompletuar"
+
+#: ../aptkit/enums.py:348
+msgid "Repaired broken dependencies"
+msgstr "U riparuan vartësitë e dëmtuara"
+
+#: ../aptkit/enums.py:349
+msgid "Added software source"
+msgstr "U shtua burimi i programit"
+
+#: ../aptkit/enums.py:350
+msgid "Enabled component of the distribution"
+msgstr "Aktivizo përbërësin e versionit"
+
+#: ../aptkit/enums.py:351
+msgid "Removed downloaded package files"
+msgstr "Hiqi skedarët e shkarkuar të paketave"
+
+#: ../aptkit/enums.py:352
+msgid "Reconfigured installed packages"
+msgstr "Paketat e instaluara të konfiguruara sërisht"
+
+#: ../aptkit/enums.py:356
+msgid "Successful"
+msgstr "Me Sukses"
+
+#: ../aptkit/enums.py:357
+msgid "Canceled"
+msgstr "Anulluar"
+
+#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
+msgid "Failed"
+msgstr "Dështoi"
+
+#: ../aptkit/enums.py:361
+msgid "Installing file"
+msgstr "Duke instaluar skedarin"
+
+#: ../aptkit/enums.py:362
+msgid "Installing packages"
+msgstr "Duke instaluar paketat"
+
+#: ../aptkit/enums.py:363
+msgid "Adding key from file"
+msgstr "Duke shtuar çelësin nga skedari"
+
+#: ../aptkit/enums.py:364
+msgid "Updating cache"
+msgstr "Duke përditësuar magazinën"
+
+#: ../aptkit/enums.py:365
+msgid "Removing trusted key"
+msgstr "Duke hequr çelësin e besuar"
+
+#: ../aptkit/enums.py:366
+msgid "Removing packages"
+msgstr "Duke hequr paketat"
+
+#: ../aptkit/enums.py:367
+msgid "Updating packages"
+msgstr "Duke përditësuar paketat"
+
+#: ../aptkit/enums.py:368
+msgid "Upgrading system"
+msgstr "Duke përditësuar sistemin"
+
+#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
+msgid "Applying changes"
+msgstr "Duke aplikuar ndryshimet"
+
+#: ../aptkit/enums.py:370
+msgid "Repairing incomplete installation"
+msgstr "Duke riparuar instalimin e pa kompletuar"
+
+#: ../aptkit/enums.py:371
+msgid "Repairing installed software"
+msgstr "Duke riparuar programet e instaluara"
+
+#: ../aptkit/enums.py:372
+msgid "Adding software source"
+msgstr "Duke shtuar burim programesh"
+
+#: ../aptkit/enums.py:373
+msgid "Enabling component of the distribution"
+msgstr "Duke aktivizuar përbërësin e versionit"
+
+#: ../aptkit/enums.py:374
+msgid "Removing downloaded package files"
+msgstr "Duke hequr paketat e shkarkuara të skedarëve"
+
+#: ../aptkit/enums.py:375
+msgid "Reconfiguring installed packages"
+msgstr "Duke rikonfiguruar paketat e instaluara"
+
+#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
+msgid "Searching"
+msgstr "Duke kërkuar"
+
+#: ../aptkit/enums.py:380
+msgid "Installation of the package file failed"
+msgstr "Instalimi i skedarit të paketës dështoi"
+
+#: ../aptkit/enums.py:381
+msgid "Installation of software failed"
+msgstr "Instalimi i programit dështoi"
+
+#: ../aptkit/enums.py:382
+msgid "Adding the key to the list of trusted software vendors failed"
+msgstr ""
+"Shtimi i çelësit tek lista e shitësve të besueshëm të programeve dështoi"
+
+#: ../aptkit/enums.py:384
+msgid "Refreshing the software list failed"
+msgstr "Rifreskimi i listës së programeve dështoi"
+
+#: ../aptkit/enums.py:385
+msgid "Removing the vendor from the list of trusted ones failed"
+msgstr "Heqja e shitësit nga lista e të besueshmeve dështoi"
+
+#: ../aptkit/enums.py:387
+msgid "Removing software failed"
+msgstr "Heqja e programit dështoi"
+
+#: ../aptkit/enums.py:388
+msgid "Updating software failed"
+msgstr "Përditësimi i programit dështoi"
+
+#: ../aptkit/enums.py:389
+msgid "Upgrading the system failed"
+msgstr "Përditësimi i sistemit dështoi"
+
+#: ../aptkit/enums.py:390
+msgid "Applying software changes failed"
+msgstr "Dështoi aplikimi i ndryshimit të programeve"
+
+#: ../aptkit/enums.py:391
+msgid "Repairing incomplete installation failed"
+msgstr "Riparimi i instalimit të pakompletuar dështoi"
+
+#: ../aptkit/enums.py:393
+msgid "Repairing broken dependencies failed"
+msgstr "Riparimi i vartësive të dëmtuara dështoi"
+
+#: ../aptkit/enums.py:394
+msgid "Adding software source failed"
+msgstr "Shtimi i burimit të skedarëve dështoi"
+
+#: ../aptkit/enums.py:395
+msgid "Enabling component of the distribution failed"
+msgstr "Aktivizimi i përbërësit të distribucionit dështoi"
+
+#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
+msgid "Removing downloaded package files failed"
+msgstr "Heqja e paketave të shkarkuara dështoi"
+
+#: ../aptkit/enums.py:399
+msgid "Search failed"
+msgstr "Kërkimi dështoi"
+
+#: ../aptkit/enums.py:400
+msgid "Adding license key"
+msgstr "Duke shtuar çelësin e liçensës"
+
+#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
+msgid "Check your Internet connection."
+msgstr "Kontrollo lidhjen tënde me internetin."
+
+#: ../aptkit/enums.py:406
+msgid ""
+"Check if you are using third party repositories. If so disable them, since "
+"they are a common source of problems.\n"
+"Furthermore run the following command in a Terminal: apt-get install -f"
+msgstr ""
+"Kontrollo nëse je duke përdorur magazina të palëve të treta. nëse po, "
+"çaktivizoji ato, sepse ato janë një burim i zakonshëm i problemeve.\n"
+"Veç kësaj nis komandën që vijon në një Terminal: apt-get install -f"
+
+#: ../aptkit/enums.py:411
+msgid "The selected file may not be a GPG key file or it might be corrupt."
+msgstr ""
+"E dhëna e zgjedhur sipas të gjitha gjasave nuk është GPG-çelës ose është e "
+"dëmtuar."
+
+#: ../aptkit/enums.py:413
+msgid ""
+"The selected key couldn't be removed. Check that you provided a valid "
+"fingerprint."
+msgstr ""
+"Çelësi i përzgjedhur nuk mund të hiqej. Kontolloni nëse keni dhënë një "
+"gjurmë gishtërinjsh të vlefshme."
+
+#: ../aptkit/enums.py:415
+msgid ""
+"Check if you are currently running another software management tool, e.g. "
+"Synaptic or aptitude. Only one tool is allowed to make changes at a time."
+msgstr ""
+"Kontrolloni nëse keni hapur një mjet tjetër për menaxhimin e programeve, "
+"psh. Synaptic apo aptitude. Vetëm një mjet lejohet të bëjë ndryshime në një "
+"kohë të caktuar."
+
+#: ../aptkit/enums.py:418
+msgid ""
+"This is a serious problem. Try again later. If this problem appears again, "
+"please report an error to the developers."
+msgstr ""
+"Ky është një problem serioz. Provo përsëri më vonë. Nëse problemi shfaqet "
+"përsëri, ju lutemi t'i raportoni një gabim zhvilluesve."
+
+#: ../aptkit/enums.py:421
+msgid ""
+"Check the spelling of the package name, and that the appropriate repository "
+"is enabled."
+msgstr ""
+"Kontrolloni shqiptimin e emrit të paketës dhe shikoni që magazina e duhur të "
+"aktivizohet."
+
+#: ../aptkit/enums.py:423
+msgid "There isn't any need for an update."
+msgstr "Nuk ka nevojë për një përditësim."
+
+#: ../aptkit/enums.py:424
+msgid "There isn't any need for an installation"
+msgstr "Nuk ka nevojë për një instalim"
+
+#: ../aptkit/enums.py:426
+msgid "There isn't any need for a removal."
+msgstr "Nuk ka nevojë për të hequr gjë."
+
+#: ../aptkit/enums.py:427
+msgid ""
+"You requested to remove a package which is an essential part of your system."
+msgstr ""
+"Ju kërkuat të hiqni një paketë e cila është pjesë thelbësore e sistemit tuaj."
+
+#: ../aptkit/enums.py:430
+msgid ""
+"The connection to the daemon was lost. Most likely the background daemon "
+"crashed."
+msgstr ""
+"Lidhja me daemon humbi. Ka shumë mundësi që daemon i sfondit të ketë pasur "
+"një defekt."
+
+#: ../aptkit/enums.py:432
+msgid "The installation or removal of a software package failed."
+msgstr "Instalimi apo heqja e një pakete programesh dështoi."
+
+#: ../aptkit/enums.py:434
+msgid "The requested feature is not supported."
+msgstr "Mjeti i kërkuar nuk suportohet."
+
+#: ../aptkit/enums.py:435
+msgid ""
+"There seems to be a programming error in aptkit, the software that allows "
+"you to install/remove software and to perform other package management "
+"related tasks."
+msgstr ""
+"Duket se ka një gabim programimi në aptkit, programi që ju lejon të "
+"instaloni/hiqni programt dhe për të performuar detyra të tjera të lidhura me "
+"menaxhimin e paketave."
+
+#: ../aptkit/enums.py:439
+msgid ""
+"This error could be caused by required additional software packages which "
+"are missing or not installable. Furthermore there could be a conflict "
+"between software packages which are not allowed to be installed at the same "
+"time."
+msgstr ""
+"Ky gabim mund të jetë shkaktuar nga paketat shtesë të programeve të kërkuara "
+"që mungojnë apo nuk janë të instalueshme. Për më tepër mund të ketë një "
+"konflikt midis paketave të programeve të cilat nuk lejohet të instalohen në "
+"të njëjtën kohë."
+
+#: ../aptkit/enums.py:445
+msgid "This requires installing packages from unauthenticated sources."
+msgstr "Kjo kërkon instalimin e paketave nga burime të paidentifikuara."
+
+#: ../aptkit/enums.py:447
+msgid ""
+"The installation could have failed because of an error in the corresponding "
+"software package or it was cancelled in an unfriendly way. You have to "
+"repair this before you can install or remove any further software."
+msgstr ""
+"Instalimi mund të ketë dështuar për shkak të një gabimi në paketën "
+"korresponduese të programit ose është anulluar në një mënyrë jo miqësore. "
+"Juve ju duhet të riparoni këtë para se të instaloni apo hiqni çdo program të "
+"mëvonshëm."
+
+#: ../aptkit/enums.py:453
+msgid ""
+"Please copy the file to your local computer and check the file permissions."
+msgstr ""
+"Ju lutemi ta kopjoni skedarin në kompjuterin tuaj lokal dhe të kontrolloni "
+"për lejet e skedarit."
+
+#: ../aptkit/enums.py:456
+msgid ""
+"The installation of a package which violates the quality standards isn't "
+"allowed. This could cause serious problems on your computer. Please contact "
+"the person or organisation who provided this package file and include the "
+"details beneath."
+msgstr ""
+"Instalimi i një pakete e cila dhunon standartet e cilësisë nuk lejohet. Kjo "
+"mund të shkaktojë probleme serioze në kompjuterin tuaj. Ju lutemi të "
+"kontaktoni personin apo organizatën që bëri të disponueshme këtë paketë dhe "
+"të përfshini detajet më poshtë."
+
+#: ../aptkit/enums.py:463
+msgid ""
+"The downloaded license key which is required to run this piece of software "
+"is not valid or could not be installed correctly.\n"
+"See the details for more information."
+msgstr ""
+"Çelësi i shkarkuar i liçensës që kërkohet për të nisur këtë program nuk "
+"është i vlefshëm ose nuk mund të instalohet siç duhet.\n"
+"Shikoni detajet për më tepër informacion."
+
+#: ../aptkit/enums.py:469
+msgid "All available upgrades have already been installed."
+msgstr "Të gjitha përditësimet e disponueshme janë instaluar tashmë."
+
+#: ../aptkit/enums.py:471
+msgid ""
+"The license key which allows you to use this piece of software could not be "
+"downloaded. Please check your network connection."
+msgstr ""
+"Çelësi i liçensës që ju mundëson ta nisni këtë program nuk mund të "
+"shkarkohet. Ju lutemi të kontrolloni lidhjen tuaj me rrjetin."
+
+#: ../aptkit/enums.py:475
+msgid "You don't have the required privileges to perform this action."
+msgstr "Ju nuk keni privilegjet e kërkuara për ta bërë këtë veprim."
+
+#: ../aptkit/enums.py:477
+msgid ""
+"You either provided a wrong password or cancelled the authorization.\n"
+"Furthermore there could also be a technical reason for this error if you "
+"haven't seen a password dialog: your desktop environment doesn't provide a "
+"PolicyKit session agent."
+msgstr ""
+"Juve ose keni dhënë një fjalëkalim të gabuar ose anulluat autorizimin.\n"
+"Për më tepër mund të ketë edhe një arsye teknike për këtë gabim nëse nuk "
+"keni parë një dialog për fjalëkalimin: ambienti juaj i desktopit nuk jep një "
+"agjent të seksionit për PolicyKit."
+
+#: ../aptkit/enums.py:485
+msgid "Failed to download package files"
+msgstr "Dështuam në shkarkimin e skedarëve të paketave"
+
+#: ../aptkit/enums.py:486
+msgid "Failed to download repository information"
+msgstr "Dështuam në shkarkimin e informacionit të magazinave"
+
+#: ../aptkit/enums.py:488
+msgid "Package dependencies cannot be resolved"
+msgstr "Vartësitë e paketave nuk mund të zgjidhen"
+
+#: ../aptkit/enums.py:489
+msgid "The package system is broken"
+msgstr "Sistemi i paketave është i dëmtuar"
+
+#: ../aptkit/enums.py:490
+msgid "Key was not installed"
+msgstr "Çelësi nuk është instaluar"
+
+#: ../aptkit/enums.py:491
+msgid "Key was not removed"
+msgstr "Çelësi nuk është hequr"
+
+#: ../aptkit/enums.py:492
+msgid "Failed to lock the package manager"
+msgstr "Dështuam në bllokimin e menaxhuesit të paketave"
+
+#: ../aptkit/enums.py:493
+msgid "Failed to load the package list"
+msgstr "Dështuam në ngarkimin e listës së paketave"
+
+#: ../aptkit/enums.py:494
+msgid "Package does not exist"
+msgstr "Paketa nuk ekziston"
+
+#: ../aptkit/enums.py:495
+msgid "Package is already up to date"
+msgstr "Paketa është e përditësuar tashmë"
+
+#: ../aptkit/enums.py:496
+msgid "Package is already installed"
+msgstr "Paketa është e instaluar tashmë"
+
+#: ../aptkit/enums.py:497
+msgid "Package isn't installed"
+msgstr "Paketa nuk është e instaluar"
+
+#: ../aptkit/enums.py:498
+msgid "Failed to remove essential system package"
+msgstr "Dështuam në heqjen e një pakete thelbësore për sistemin"
+
+#: ../aptkit/enums.py:500
+msgid "Task cannot be monitored or controlled"
+msgstr "Detyra nuk mund të monitorohet apo kontrollohet"
+
+#: ../aptkit/enums.py:501
+msgid "Package operation failed"
+msgstr "Veprimi i paketave dështoi"
+
+#: ../aptkit/enums.py:502
+msgid "Requires installation of untrusted packages"
+msgstr "Kërkon instalimin e paketave të pa kontrolluara"
+
+#: ../aptkit/enums.py:504
+msgid "Previous installation hasn't been completed"
+msgstr "Instalimi i mëparshëm nuk është kompletuar"
+
+#: ../aptkit/enums.py:505
+msgid "The package is of bad quality"
+msgstr "Paketa ka cilësi të keqe"
+
+#: ../aptkit/enums.py:506
+msgid "Package file could not be opened"
+msgstr "Skedari i paketës nuk mund të hapet"
+
+#: ../aptkit/enums.py:507
+msgid "Not supported feature"
+msgstr "Mjet i pa suportuar"
+
+#: ../aptkit/enums.py:508
+msgid "Failed to download the license key"
+msgstr "Dështova në shkarkimin e çelësit të liçensës"
+
+#: ../aptkit/enums.py:509
+msgid "Failed to install the license key"
+msgstr "Dështova në instalimin e çelësit të liçensës"
+
+#: ../aptkit/enums.py:510
+msgid "The system is already up to date"
+msgstr "Sistemi është i përditësuar tashmë"
+
+#: ../aptkit/enums.py:511
+msgid "You could not be authorized"
+msgstr "Nuk mudëm t'iu autorizonim"
+
+#: ../aptkit/enums.py:512
+msgid "You are not allowed to perform this action"
+msgstr "Juve nuk iu lejohet ta kryeni këtë veprim"
+
+#: ../aptkit/enums.py:513
+msgid "An unhandlable error occured"
+msgstr "Ndodhi një gabim i pakorrigjueshëm"
+
+#: ../aptkit/enums.py:516
+msgid "Waiting for service to start"
+msgstr "Duke pritur që shërbimi të rinisë"
+
+#: ../aptkit/enums.py:518
+msgid "Waiting"
+msgstr "Në pritje"
+
+#: ../aptkit/enums.py:519
+msgid "Waiting for required medium"
+msgstr "Duke pritur për median e kërkuar"
+
+#: ../aptkit/enums.py:520
+msgid "Waiting for other software managers to quit"
+msgstr "Duke pritur të dalin menaxhuesit e tjerë të programeve"
+
+#: ../aptkit/enums.py:521
+msgid "Waiting for configuration file prompt"
+msgstr "Duke pritur për daljen e skedarit të konfigurimit"
+
+#: ../aptkit/enums.py:523
+msgid "Running task"
+msgstr "Duke nisur detyrën"
+
+#: ../aptkit/enums.py:524
+msgid "Downloading"
+msgstr "Duke shkarkuar"
+
+#: ../aptkit/enums.py:525
+msgid "Querying software sources"
+msgstr "Duke grumbulluar burimet e programeve"
+
+#: ../aptkit/enums.py:526
+msgid "Cleaning up"
+msgstr "Duke pastruar"
+
+#: ../aptkit/enums.py:527
+msgid "Resolving dependencies"
+msgstr "Duke zgjidhur vartësitë"
+
+#: ../aptkit/enums.py:529
+msgid "Finished"
+msgstr "Përfunduar"
+
+#: ../aptkit/enums.py:530
+msgid "Cancelling"
+msgstr "Duke anulluar"
+
+#: ../aptkit/enums.py:531
+msgid "Loading software list"
+msgstr "Duke ngarkuar listën e programeve"
+
+#: ../aptkit/enums.py:532
+msgid "Waiting for authentication"
+msgstr "Duke pritur për identifikim"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:536
+#, python-format
+msgid "Installing %s"
+msgstr "Duke instaluar %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:538
+#, python-format
+msgid "Configuring %s"
+msgstr "Duke konfiguruar %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:540
+#, python-format
+msgid "Removing %s"
+msgstr "Duke fshirë %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:542
+#, python-format
+msgid "Completely removing %s"
+msgstr "Duke hequr plotësisht %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:544
+#, python-format
+msgid "Noting disappearance of %s"
+msgstr "Njoftoj zhdukjen e %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:546
+#, python-format
+msgid "Running post-installation trigger %s"
+msgstr "Duke kryer veprimet e pas instalimit për %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:548
+#, python-format
+msgid "Upgrading %s"
+msgstr "Duke Përditësuar %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:550
+#, python-format
+msgid "Unpacking %s"
+msgstr "Duke hapur %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:552
+#, python-format
+msgid "Preparing installation of %s"
+msgstr "Duke përgatitur instalimin e %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:554
+#, python-format
+msgid "Preparing configuration of %s"
+msgstr "Duke përgatitur konfigurimin e %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:556
+#, python-format
+msgid "Preparing removal of %s"
+msgstr "Duke përgatitur heqjen e %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:558
+#, python-format
+msgid "Preparing complete removal of %s"
+msgstr "Duke përgatitur heqjen e plotë të %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:560
+#, python-format
+msgid "Installed %s"
+msgstr "U instalua %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:562
+#, python-format
+msgid "Completely removed %s"
+msgstr "U hoq plotësisht %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: ../aptkit/enums.py:564
+#, python-format
+msgid "Removed %s"
+msgstr "U hoq %s"
+
+#: ../aptkit/enums.py:567
+msgid "Done"
+msgstr "U Bë"
+
+#: ../aptkit/enums.py:568
+msgid "Authentication failed"
+msgstr "Identifikimi dështoi"
+
+#: ../aptkit/enums.py:570
+msgid "Fetching"
+msgstr "Duke mbledhur"
+
+#: ../aptkit/enums.py:571
+msgid "Idle"
+msgstr "Në Pritje"
+
+#: ../aptkit/enums.py:572
+msgid "Network isn't available"
+msgstr "Rrjeti nuk është i disponueshëm"
+
+#: ../aptkit/enums.py:704
+#, python-format
+msgid "Processing %s"
+msgstr "Duke përpunuar %s"
+
+#: ../aptkit/gtk3widgets.py:311
+#, python-format
+msgid "Downloaded %sB of %sB at %sB/s"
+msgstr "U Shkarkuan %sB të %sB në %sB/s"
+
+#: ../aptkit/gtk3widgets.py:316 ../aptkit/gtk3widgets.py:517
+#, python-format
+msgid "Downloaded %sB of %sB"
+msgstr "U Shkarkua %sB e %sB"
+
+#: ../aptkit/gtk3widgets.py:328
+msgid "Details"
+msgstr "Detajet"
+
+#: ../aptkit/gtk3widgets.py:481
+msgid "File"
+msgstr "Skedari"
+
+#. TRANSLATORS: header of the progress download column
+#: ../aptkit/gtk3widgets.py:486
+msgid "%"
+msgstr "%"
+
+#: ../aptkit/gtk3widgets.py:522
+#, python-format
+msgid "Downloaded %sB"
+msgstr "U Shkarkuan %sB"
+
+#: ../aptkit/gtk3widgets.py:525
+msgid "Downloaded"
+msgstr "Të shkarkuara"
+
+#. TRANSLATORS: %s represents the name of a CD or DVD
+#: ../aptkit/gtk3widgets.py:860
+#, python-format
+msgid "CD/DVD '%s' is required"
+msgstr "CD/DVD '%s' kërkohet"
+
+#. TRANSLATORS: %s is the name of the CD/DVD drive
+#: ../aptkit/gtk3widgets.py:862
+#, python-format
+msgid ""
+"Please insert the above CD/DVD into the drive '%s' to install software "
+"packages from it."
+msgstr ""
+"Ju lutemi të vendosni CD/DVD e mësipërm në draiv '%s' për të instaluar "
+"paketat e programeve prej tij."
+
+#: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
+msgid "C_ontinue"
+msgstr "Vazhd_o"
+
+#: ../aptkit/gtk3widgets.py:939
+msgid "Install"
+msgstr "Instalo"
+
+#: ../aptkit/gtk3widgets.py:940
+msgid "Reinstall"
+msgstr "Riinstalo"
+
+#: ../aptkit/gtk3widgets.py:941
+msgid "Remove"
+msgstr "Hiqe"
+
+#: ../aptkit/gtk3widgets.py:942
+msgid "Purge"
+msgstr "Pastro"
+
+#: ../aptkit/gtk3widgets.py:943
+msgid "Upgrade"
+msgstr "Përditëso"
+
+#: ../aptkit/gtk3widgets.py:944
+msgid "Downgrade"
+msgstr "Çoje një shkallë më poshtë"
+
+#: ../aptkit/gtk3widgets.py:945
+msgid "Skip upgrade"
+msgstr "Anashkalo përditësimin"
+
+#. If there is only one type of changes (e.g. only installs) expand the
+#. tree
+#. FIXME: adapt the title and message accordingly
+#. FIXME: Should we have different modes? Only show dependencies, only
+#. initial packages or both?
+#: ../aptkit/gtk3widgets.py:956
+msgid "Please take a look at the list of changes below."
+msgstr "Ju lutemi ti hidhni një sy listës së ndryshimeve më poshtë."
+
+#: ../aptkit/gtk3widgets.py:964
+msgid "Additional software has to be installed"
+msgstr "Duhen instaluar programe shtesë"
+
+#: ../aptkit/gtk3widgets.py:966
+msgid "Additional software has to be re-installed"
+msgstr "Duhen riinstaluar programe shtesë"
+
+#: ../aptkit/gtk3widgets.py:968
+msgid "Additional software has to be removed"
+msgstr "Programe shtesë duhet të hiqen"
+
+#: ../aptkit/gtk3widgets.py:970
+msgid "Additional software has to be purged"
+msgstr "Programe shtesë duhen hequr"
+
+#: ../aptkit/gtk3widgets.py:972
+msgid "Additional software has to be upgraded"
+msgstr "Programe shtesë duhen përditësuar"
+
+#: ../aptkit/gtk3widgets.py:974
+msgid "Additional software has to be downgraded"
+msgstr "Programe shtesë do ulen një shkallë më poshtë"
+
+#: ../aptkit/gtk3widgets.py:976
+msgid "Updates will be skipped"
+msgstr "Përditësimet do të anashkalohen"
+
+#: ../aptkit/gtk3widgets.py:984
+msgid "Additional changes are required"
+msgstr "Ndryshime shtesë kërkohen"
+
+#: ../aptkit/gtk3widgets.py:989
+#, python-format
+msgid "%sB will be downloaded in total."
+msgstr "%sB do të shkarkohen në total."
+
+#: ../aptkit/gtk3widgets.py:993
+#, python-format
+msgid "%sB of disk space will be freed."
+msgstr "%sB hapësirë në disk do të lirohet."
+
+#: ../aptkit/gtk3widgets.py:997
+#, python-format
+msgid "%sB more disk space will be used."
+msgstr "%sB më tepër hapësirë në disk do të përdoret."
+
+#. TRANSLATORS: %s is a file path
+#: ../aptkit/gtk3widgets.py:1069
+#, python-format
+msgid ""
+"Replace your changes in '%s' with a later version of the configuration file?"
+msgstr ""
+"Ti zëvendësoj ndryshimet tuaja në '%s' me një version të mëvonshëm të "
+"skedarit të konfigurimit?"
+
+#: ../aptkit/gtk3widgets.py:1071
+msgid ""
+"If you don't know why the file is there already, it is usually safe to "
+"replace it."
+msgstr ""
+"Nëse nuk e didni pse skedari tashmë është aty, zakonisht është i sigurtë "
+"zëvendësimi i tij."
+
+#: ../aptkit/gtk3widgets.py:1080
+msgid "_Changes"
+msgstr "_Ndryshimet"
+
+#: ../aptkit/gtk3widgets.py:1083
+msgid "_Keep"
+msgstr "_Mbaje"
+
+#: ../aptkit/gtk3widgets.py:1084
+msgid "_Replace"
+msgstr "_Zëvendëso"
+
+#: ../aptkit/gtk3widgets.py:1187
+msgid "_Details"
+msgstr "_Detaje"
+
+#. TRANSLATORS: %s is the name of a package manager
+#: ../aptkit/lock.py:189
+#, python-format
+msgid "Waiting for %s to exit"
+msgstr "Duke pritur për %s që të mbyllet"
+
+#. TRANSLATORS: %s is a list of package names
+#: ../aptkit/progress.py:168
+#, python-format
+msgid "Downloading %s"
+msgstr "Duke shkarkuar %s"
+
+#. TRANSLATORS: the string is used as a fallback if we cannot
+#. get the URI of a local repository
+#: ../aptkit/progress.py:277 ../aptkit/progress.py:314
+msgid "local repository"
+msgstr "depozita lokale"
+
+#. TRANSLATORS: %s is a list of repository names
+#: ../aptkit/progress.py:280
+#, python-format
+msgid "Downloading from %s"
+msgstr "Duke shkarkuar nga %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:318
+#, python-format
+msgid "Structure of %s"
+msgstr "Struktura e %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:321
+#, python-format
+msgid "Description of %s"
+msgstr "Përshkrimi i %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:324
+#, python-format
+msgid "Description signature of %s"
+msgstr "Firma përshkruese e %s"
+
+#: ../aptkit/progress.py:329
+#, python-format
+msgid "Available packages from %s"
+msgstr "Paketat e disponueshme nga %s"
+
+#: ../aptkit/progress.py:333
+#, python-format
+msgid "Available sources from %s"
+msgstr "Burimet e disponueshme nga %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: ../aptkit/progress.py:336
+#, python-format
+msgid "Available translations from %s"
+msgstr "Përkthimet e disponueshme nga %s"
+
+#: ../aptkit/progress.py:353
+#, python-format
+msgid "Translations for %s (%s) from %s"
+msgstr "Përkthimet për %s (%s) nga %s"
+
+#. TRANSLATORS: %s is the name of a language. The second one is
+#. the name of the repository
+#: ../aptkit/progress.py:357
+#, python-format
+msgid "Translations for %s from %s"
+msgstr "Përkthimet për %s nga %s"
+
+#. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
+#. The second one is the name of the repository
+#: ../aptkit/progress.py:362
+#, python-format
+msgid "Translations (%s) from %s"
+msgstr "Përkthime (%s) nga %s"
+
+#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
+#: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
+#, python-format
+msgid "Package %s isn't available"
+msgstr "Paketa %s nuk është e disponueshme"
+
+#: ../aptkit/worker/aptworker.py:384 ../aptkit/worker/aptworker.py:682
+#: ../aptkit/worker/aptworker.py:777 ../aptkit/worker/aptworker.py:822
+#, python-format
+msgid "Package %s isn't installed"
+msgstr "paketa %s nuk është instaluar"
+
+#: ../aptkit/worker/aptworker.py:388
+#, python-format
+msgid "The version %s of %s isn't installed"
+msgstr "Versioni %s i %s nuk është instaluar"
+
+#: ../aptkit/worker/aptworker.py:403
+#, python-format
+msgid "Package %s is already installed"
+msgstr "Paketa %s është instaluar tashmë"
+
+#: ../aptkit/worker/aptworker.py:410 ../aptkit/worker/aptworker.py:845
+#, python-format
+msgid "The version %s of %s isn't available."
+msgstr "Versioni %s i %s nuk është i disponueshëm"
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptkit/worker/aptworker.py:572
+#, python-format
+msgid "The keyserver URL is invalid: %s"
+msgstr "URL e serverit të çelësave është e pavlefshme: %s"
+
+#. TRANSLATORS: %s is the URL of GnuPG
+#. keyserver
+#: ../aptkit/worker/aptworker.py:578
+#, python-format
+msgid "Invalid protocol of the server: %s"
+msgstr "Protokoll i pavlefshëm i serverit: %s"
+
+#. TRANSLATORS: %s is the id of a GnuPG key
+#. e.g. E08ADE95
+#: ../aptkit/worker/aptworker.py:586 ../aptkit/worker/aptworker.py:630
+#, python-format
+msgid "Invalid key id: %s"
+msgstr "Identiteti i çelësit nuk është i saktë: %s"
+
+#: ../aptkit/worker/aptworker.py:594
+#, python-format
+msgid ""
+"Failed to download and install the key %s from %s:\n"
+"%s"
+msgstr ""
+"Dështova në shkarkimin e çelësit të instalimit %s nga %s:\n"
+"%s"
+
+#: ../aptkit/worker/aptworker.py:611
+#, python-format
+msgid "Key file %s couldn't be installed: %s"
+msgstr "Skedari i çelësit %s nuk mund të instalohej: %s"
+
+#: ../aptkit/worker/aptworker.py:635
+#, python-format
+msgid "Key with fingerprint %s couldn't be removed: %s"
+msgstr "Çelësi me gjurmën e gishtërinjve %s nuk mund të hiqej: %s"
+
+#: ../aptkit/worker/aptworker.py:686
+#, python-format
+msgid "Package %s cannot be removed."
+msgstr "Paketa %s nuk mund të hiqej."
+
+#: ../aptkit/worker/aptworker.py:690
+#, python-format
+msgid "The version %s of %s is not installed"
+msgstr "Versioni %s i %s nuk është instaluar"
+
+#: ../aptkit/worker/aptworker.py:785
+#, python-format
+msgid "The former version %s of %s is already installed"
+msgstr "Versioni i mëparshëm %s i %s është instaluar tashmë"
+
+#: ../aptkit/worker/aptworker.py:790 ../aptkit/worker/aptworker.py:838
+#, python-format
+msgid "The version %s of %s is already installed"
+msgstr "Versioni %s i %s është instaluar tashmë"
+
+#: ../aptkit/worker/aptworker.py:797
+#, python-format
+msgid "The version %s of %s isn't available"
+msgstr "Versioni %s i %s nuk është i disponueshëm"
+
+#: ../aptkit/worker/aptworker.py:801
+#, python-format
+msgid "You need to specify a version to downgrade %s to"
+msgstr ""
+"Ju nevojitet të specifikoni një version për të ulur një shkallë më poshtë %s"
+
+#: ../aptkit/worker/aptworker.py:831
+#, python-format
+msgid "The later version %s of %s is already installed"
+msgstr "Versioni i fundit %s i %s është instaluar tashmë"
+
+#: ../aptkit/worker/aptworker.py:867
+#, python-format
+msgid "The package %s isn't available in the %s release."
+msgstr "Paketa %s nuk është e disponueshme në versionin %s."
+
+#: ../aptkit/worker/aptworker.py:1052
+#, python-format
+msgid "Package %s cannot be removed"
+msgstr "Paketa %s nuk mund të hiqet"
+
+#: ../aptkit/worker/aptworker.py:1154
+msgid ""
+"The package doesn't provide a valid Installed-Size control field. See Debian "
+"Policy 5.6.20."
+msgstr ""
+"Paketa nuk jep një fushë kontrolli të vlefshme për Përmasën e Instalimit. "
+"Shikoni çertifikatën e Debian 5.6.20."
+
+#: ../aptkit/worker/aptworker.py:1293
+msgid "The license key is empty"
+msgstr "Çelësi i liçensës është bosh"
+
+#: ../aptkit/worker/aptworker.py:1309
+msgid "The license key is not allowed to contain executable code."
+msgstr "Çelësi i liçensës nuk lejohet të mbajë kod të ekzekutueshëm."
+
+#: ../aptkit/worker/aptworker.py:1318
+#, python-format
+msgid "The license key path %s is invalid"
+msgstr "Shtegu i çelësit të liçensës %s është i pavlefshëm"
+
+#: ../aptkit/worker/aptworker.py:1322
+#, python-format
+msgid "The license key already exists: %s"
+msgstr "Çelësi i liçensës ekziston tashmë: %s"
+
+#: ../aptkit/worker/aptworker.py:1327
+#, python-format
+msgid ""
+"The location of the license key is unsecure since it contains symbolic "
+"links. The path %s maps to %s"
+msgstr ""
+"Vendndodhja e çelësit të liçensës është e pasigurtë përderisa përmban lidhje "
+"simbolike. Shtegu %s të drejton tek %s"
+
+#: ../aptkit/worker/aptworker.py:1335
+#, python-format
+msgid "The directory where to install the key to doesn't exist yet: %s"
+msgstr "Drejtoria ku instalon çelësin nuk ekziston tashmë: %s"
+
+#: ../aptkit/worker/aptworker.py:1346
+#, python-format
+msgid "Failed to write key file to: %s"
+msgstr "Dështova në shkrimin e skedarittë çelësit tek: %s"
+
+#: ../aptkit/worker/aptworker.py:1381
+msgid "The following packages have unmet dependencies:"
+msgstr "Paketat që vijojnë kanë vartësi të paplotësuara:"
+
+#: ../aptkit/worker/aptworker.py:1434
+msgid "but it is a virtual package"
+msgstr "Por është një paketë virtuale"
+
+#: ../aptkit/worker/aptworker.py:1437
+msgid "but it is not installed"
+msgstr "Por nuk është instaluar"
+
+#: ../aptkit/worker/aptworker.py:1439
+msgid "but it is not going to be installed"
+msgstr "Por nuk do të instalohet"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptkit/worker/aptworker.py:1443
+#, python-format
+msgid "but %s is installed"
+msgstr "por %s është instaluar"
+
+#. TRANSLATORS: %s is a version number
+#: ../aptkit/worker/aptworker.py:1447
+#, python-format
+msgid "but %s is to be installed"
+msgstr "Por %s do të instalohet"
