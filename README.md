@@ -16,8 +16,6 @@ from Launchpad.
 
 # TODO
 
-- Add convenience functions from mintcommon
-- Reduce the scope by removing unnecessary features
 - Add a downgrade function
-- Add support for XApp Window Progress
+- Add support for XApp Window Progress (already present in SimpleAPTClient)
 - Clean up code and copyrights with a reuse.toml and debian/copyright
