@@ -3,27 +3,8 @@ Section: admin
 Priority: extra
 Maintainer: Linux Mint <root@linuxmint.com>
 Build-Depends: debhelper,
-               dbus,
-               debconf-i18n,
-               dh-python,
-               dh-translations,
-               gir1.2-glib-2.0,
-               gir1.2-gtk-3.0,
-               gir1.2-packagekitglib-1.0,
-               gir1.2-vte-2.91,
-               iso-codes,
-               pycodestyle,
-               python3-all,
-               python3-apt,
-               python3-dbus,
-               python3-defer (>= 1.0.6),
-               python3-distutils-extra,
-               python3-gi,
-               python3-mock,
-               python3-pkg-resources,
-               python3-setuptools,
-               xauth,
-               xvfb
+               meson,
+               libpolkit-gobject-1-dev (>= 123) | polkitd (<< 123)
 Standards-Version: 3.9.6
 Homepage: https://launchpad.net/aptkit
 
