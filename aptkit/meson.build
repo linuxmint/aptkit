@@ -17,7 +17,8 @@ python3.install_sources(
         'pkutils.py',
         'policykit1.py',
         'progress.py',
-        'utils.py'
+        'utils.py',
+        'simpleclient.py'
     ],
     subdir: 'aptkit'
 )
