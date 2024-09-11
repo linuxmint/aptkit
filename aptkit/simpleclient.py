@@ -3,6 +3,7 @@ gi.require_version('Gtk', '3.0')
 gi.require_version('XApp', '1.0')
 from gi.repository import Gtk, XApp
 
+import apt
 import aptkit.client
 import aptkit.enums
 import aptkit.errors
@@ -38,7 +39,25 @@ class SimpleAPTClient(object):
         client = aptkit.client.AptClient()
         client.install_file(path, force=True, wait=False, reply_handler=self._simulate_trans, error_handler=self._on_error)
 
-    def install_packages(self, packages):
+    def install_packages(self, packages, use_apt_resolver=True):
+        if use_apt_resolver:
+            # Use the resolver from python-apt
+            # it works better in complex scenarios
+            # mark the packages as mark_install
+            cache = apt.Cache()
+            for name in packages:
+                try:
+                    pkg = cache[name]
+                    pkg.mark_install()
+                except:
+                    print(f"Package {name} not found in the cache!")
+            # then find out all the resulting installations
+            # via cache.get_changes()
+            changes = cache.get_changes()
+            for pkg in changes:
+                if pkg.marked_install and pkg.name not in packages:
+                    packages.append(pkg.name)
+
         client = aptkit.client.AptClient()
         client.install_packages(packages, reply_handler=self._simulate_trans, error_handler=self._on_error)
 
