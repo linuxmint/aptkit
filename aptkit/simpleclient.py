@@ -65,6 +65,11 @@ class SimpleAPTClient(object):
         client = aptkit.client.AptClient()
         client.remove_packages(packages, reply_handler=self._simulate_trans, error_handler=self._on_error)
 
+    def downgrade_packages(self, versioned_packages):
+        client = aptkit.client.AptClient()
+        client.commit_packages(install=None, reinstall=None, remove=None, purge=None, upgrade=None, downgrade=versioned_packages,
+                               reply_handler=self._simulate_trans, error_handler=self._on_error)
+
     def _run_transaction(self, transaction):
         if self.progress_callback is None:
             dia = aptkit.gtk3widgets.AptProgressDialog(transaction, parent=self.parent_window)
