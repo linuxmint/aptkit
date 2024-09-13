@@ -2,30 +2,32 @@ Source: aptkit
 Section: admin
 Priority: optional
 Maintainer: Linux Mint <root@linuxmint.com>
-Build-Depends: debhelper-compat (= 13),
-               dh-sequence-python3,
-               gettext,
-               meson,
-               libpolkit-gobject-1-dev (>= 123) | polkitd (<< 123)
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-python3,
+ gettext,
+ libpolkit-gobject-1-dev (>= 123) | polkitd (<< 123),
+ meson,
 Standards-Version: 4.6.2
 Homepage: https://github.com/linuxmint/aptkit
 
 Package: aptkit
 Architecture: all
-Depends: ${misc:Depends},
-         ${python3:Depends},
-         gir1.2-glib-2.0,
-         gir1.2-gtk-3.0,
-         gir1.2-packagekitglib-1.0,
-         gir1.2-vte-2.91,
-         gir1.2-xapp-1.0,
-         iso-codes,
-         polkitd,
-         python3-apt,
-         python3-dbus,
-         python3-defer (>= 1.0.6),
-         python3-gi,
-         python3-pkg-resources,
+Depends:
+ gir1.2-glib-2.0,
+ gir1.2-gtk-3.0,
+ gir1.2-packagekitglib-1.0,
+ gir1.2-vte-2.91,
+ gir1.2-xapp-1.0,
+ iso-codes,
+ polkitd,
+ python3-apt,
+ python3-dbus,
+ python3-defer (>= 1.0.6),
+ python3-gi,
+ python3-pkg-resources,
+ ${misc:Depends},
+ ${python3:Depends},
 Description: transaction based package management service
  Aptkit allows users to perform package management tasks,
  refreshing the cache, upgrading the system, installing or removing software
