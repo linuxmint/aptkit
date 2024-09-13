@@ -1,6 +1,6 @@
 Source: aptkit
 Section: admin
-Priority: extra
+Priority: optional
 Maintainer: Linux Mint <root@linuxmint.com>
 Build-Depends: debhelper-compat (= 13),
                gettext,
