@@ -3,6 +3,7 @@ Section: admin
 Priority: extra
 Maintainer: Linux Mint <root@linuxmint.com>
 Build-Depends: debhelper-compat (= 13),
+               gettext,
                meson,
                libpolkit-gobject-1-dev (>= 123) | polkitd (<< 123)
 Standards-Version: 4.6.2
