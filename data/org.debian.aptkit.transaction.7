@@ -56,7 +56,7 @@ raised.
 .BI "Run\t()" 
 .RS
 .PP
-Queue the transaction for processing. Afterwards there cannot be made any further changes to the transaction, e.g. modifing the http proxy.
+Queue the transaction for processing. Afterwards there cannot be made any further changes to the transaction, e.g. modifying the http proxy.
 .RE
 .TP
 .B Cancel
@@ -125,7 +125,7 @@ A clear text message describing the current status.
 The progress of the transaction in percent.
 .TP
 .BR ProgressDownload " read 'sssiis'"
-The last download progress information recieved from APT. It is an array
+The last download progress information received from APT. It is an array
 of the URI, status enum, short description, full size, already downloaded
 size and an error or status message.
 .TP
@@ -145,7 +145,7 @@ method has to be called to calculate the download size.
 The lists of packages which are initially queued to be installed,
 reinstalled, removed, purged, upgraded, downgraded or skipped from upgrading.
 .TP
-.BR Dependenciens " read 'a(a(s)a(s)a(s)a(s)a(s)a(s)a(s))'"
+.BR Dependencies " read 'a(a(s)a(s)a(s)a(s)a(s)a(s)a(s))'"
 The lists of packages which are additionally required to be installed,
 reinstalled, removed, purged, upgraded, downgraded or skipped from upgrading.
 The 
@@ -176,7 +176,7 @@ configuration file.
 The exit state enum of the transaction.
 .TP 
 .BR Error " read 'a(ss)'"
-If an error occured this property provides the
+If an error occurred this property provides the
 .I error enum
 and the 
 .I error message.
@@ -185,7 +185,7 @@ and the
 This is the locale which will be used for translating status and error messages of apt, e.g. de_DE@utf-8.
 .TP
 .BR Terminal " read-write 's'"
-The path to the master pty which will be the controlling terminal of the underlying dpkg call. This allows to have an interactive terminal session.
+The path to the master pty which will be the controlling terminal of the underlying dpkg call. This allows one to have an interactive terminal session.
 .TP
 .BR DebconfSocket " read-write 's'"
 The path to the socket which will be used by the debconf passthrough backend to forward the debconf communication to the user session.

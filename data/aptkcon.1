@@ -7,7 +7,7 @@ aptkcon \- command line client for aptkit
 .RI [ OPTIONS ]
 .SH DESCRIPTION
 .B aptkcon
-allows to perform package management tasks, e.g. installing or removing
+allows one to perform package management tasks, e.g. installing or removing
 software, using aptkit. There isn't any need to be root to run this
 programme.
 .SH OPTIONS
@@ -34,18 +34,18 @@ Try to complete a previously cancelled installation by calling "dpkg --configure
 .IP --fix-depends
 Try to resolve unsatisified dependencies. Attention: Currently you don't get a confirmation of the changes, which makes this method quite dangerous since it could remove a lot of packages.
 .IP "--add-vendor-key PUBLIC_KEY_FILE"
-Install the PUBLIC_KEY_FILE to authenticate and trust packages singed by the
+Install the PUBLIC_KEY_FILE to authenticate and trust packages signed by the
 vendor.
 .IP "--add-vendor-key-from-keyserver PUBLIC_KEY_ID"
 Download and install the PUBLIC_KEY_ID to authenticate and trust packages
-singed by the vendor. Requires the --keyserver to be set.
+signed by the vendor. Requires the --keyserver to be set.
 .IP "--key-server KEYSERVER"
 Download vendor keys from the given KEYSERVER.
 .IP "--remove-vendor-key FINGERPRINT"
 Remove the vendor key of the given FINGERPRINT to no longer trust packages
 from this vendor.
 .IP "--add-repository \'DEB_LINE\'"
-Allow to install software from the repository specified by the given 
+Allow one to install software from the repository specified by the given 
 DEB_LINE. You have to put quotation marks around the DEB_LINE since it
 normally contains spaces:
 .I \'deb http://ftp.de.debian.org/debian unstable main\'
@@ -58,7 +58,7 @@ Show all trusted software vendors and theirs keys.
 .IP --hide-terminal
 Do not attach to the interactive terminal of the underlying dpkg call.
 .IP --allow-unauthenticated
-Allow to install packages which are not from a trusted vendor.
+Allow one to install packages which are not from a trusted vendor.
 .SH EXAMPLES
 The following command will install the package xterm and remove the package eterm in the same run:
 .RS
