@@ -16,6 +16,6 @@ from Launchpad.
 
 # TODO
 
-- Add a downgrade function
+- Document usage and examples
 - Add support for XApp Window Progress (already present in SimpleAPTClient)
 - Clean up code and copyrights with a reuse.toml and debian/copyright
