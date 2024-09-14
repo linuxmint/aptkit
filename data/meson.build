@@ -8,7 +8,7 @@ i18n.merge_file(
 )
 
 install_data(['20aptkit'], install_dir : '/etc/apt/apt.conf.d/')
-install_data(['org.debian.aptkit.conf'], install_dir: '/etc/dbus-1/system.d/')
+install_data(['org.debian.aptkit.conf'], install_dir: datadir / 'dbus-1/system.d/')
 install_data(['org.debian.aptkit.service'], install_dir: datadir / 'dbus-1/system-services/')
 
 install_man('aptk.1')
