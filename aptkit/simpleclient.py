@@ -65,9 +65,15 @@ class SimpleAPTClient(object):
         client = aptkit.client.AptClient()
         client.remove_packages(packages, reply_handler=self._simulate_trans, error_handler=self._on_error)
 
+    def purge_packages(self, packages):
+        self.commit_changes(purge=versioned_packages)
+
     def downgrade_packages(self, versioned_packages):
+        self.commit_changes(downgrade=versioned_packages)
+
+    def commit_changes(self, install=None, reinstall=None, remove=None, purge=None, upgrade=None, downgrade=None):
         client = aptkit.client.AptClient()
-        client.commit_packages(install=None, reinstall=None, remove=None, purge=None, upgrade=None, downgrade=versioned_packages,
+        client.commit_packages(install=install, reinstall=reinstall, remove=remove, purge=purge, upgrade=upgrade, downgrade=downgrade,
                                reply_handler=self._simulate_trans, error_handler=self._on_error)
 
     def _run_transaction(self, transaction):
