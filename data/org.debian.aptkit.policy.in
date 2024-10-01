@@ -4,8 +4,8 @@
  "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
 <policyconfig>
 
-  <vendor>Apt Daemon</vendor>
-  <vendor_url>http://launchpad.net/aptkit/</vendor_url>
+  <vendor>Apt Kit</vendor>
+  <vendor_url>https://github.com/linuxmint/aptkit/</vendor_url>
   <icon_name>package-x-generic</icon_name>
 
   <action id="org.debian.aptkit.get-trusted-vendor-keys">
