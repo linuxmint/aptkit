@@ -1,7 +1,7 @@
 .\" groff -man -Tascii foo.1
-.TH org.debian.aptkit.transaction 7 "December 2009" "aptkit" "D-Bus Interface"
+.TH org.aptkit.transaction 7 "December 2009" "aptkit" "D-Bus Interface"
 .SH NAME
-org.debian.aptkit.transaction \- the main interface of an aptkit transaction
+org.aptkit.transaction \- the main interface of an aptkit transaction
 .SH SYNOPSIS
 Each transaction is represented as an unique D-Bus object, e.g. at the D-Bus path
 .IR /or/debian/apt/transaction/12123-123-123213 .
@@ -208,6 +208,6 @@ The URL of an http proxy which should be used to download repository meta data a
 .BR MetaData " read-write 'a{ss}'"
 A dictonary which allows client application to store additional data in the transaction. The key name has to include an identifier of the client application separated by an unterscore from the key name, e.g. sc_icon for the application icon name stored by software-center. The property cannot be changed anymore after the transaction has been queued.
 .SH SEE ALSO
-.BR org.debian.aptkit.transaction (7),
+.BR org.aptkit.transaction (7),
 .BR aptk (2),
 .BR aptkcon (2)

@@ -40,22 +40,22 @@ from defer import Deferred, inline_callbacks, return_value
 from .errors import NotAuthorizedError, AuthorizationFailed
 
 PK_ACTION_INSTALL_OR_REMOVE_PACKAGES = (
-    "org.debian.aptkit.install-or-remove-packages")
+    "org.aptkit.install-or-remove-packages")
 PK_ACTION_INSTALL_PURCHASED_PACKAGES = (
-    "org.debian.aptkit.install-purchased-packages")
+    "org.aptkit.install-purchased-packages")
 PK_ACTION_INSTALL_PACKAGES_FROM_NEW_REPO = (
-    "org.debian.aptkit.install-packages-from-new-repo")
+    "org.aptkit.install-packages-from-new-repo")
 PK_ACTION_INSTALL_PACKAGES_FROM_HIGH_TRUST_REPO = (
-    "org.debian.aptkit.install-packages.high-trust-repo")
-PK_ACTION_INSTALL_FILE = "org.debian.aptkit.install-file"
-PK_ACTION_UPGRADE_PACKAGES = "org.debian.aptkit.upgrade-packages"
-PK_ACTION_UPDATE_CACHE = "org.debian.aptkit.update-cache"
-PK_ACTION_CANCEL_FOREIGN = "org.debian.aptkit.cancel-foreign"
-PK_ACTION_GET_TRUSTED_VENDOR_KEYS = "org.debian.aptkit.get-trusted-vendor-keys"
-PK_ACTION_CHANGE_REPOSITORY = "org.debian.aptkit.change-repository"
-PK_ACTION_CHANGE_CONFIG = "org.debian.aptkit.change-config"
-PK_ACTION_SET_PROXY = "org.debian.aptkit.set-proxy"
-PK_ACTION_CLEAN = "org.debian.aptkit.clean"
+    "org.aptkit.install-packages.high-trust-repo")
+PK_ACTION_INSTALL_FILE = "org.aptkit.install-file"
+PK_ACTION_UPGRADE_PACKAGES = "org.aptkit.upgrade-packages"
+PK_ACTION_UPDATE_CACHE = "org.aptkit.update-cache"
+PK_ACTION_CANCEL_FOREIGN = "org.aptkit.cancel-foreign"
+PK_ACTION_GET_TRUSTED_VENDOR_KEYS = "org.aptkit.get-trusted-vendor-keys"
+PK_ACTION_CHANGE_REPOSITORY = "org.aptkit.change-repository"
+PK_ACTION_CHANGE_CONFIG = "org.aptkit.change-config"
+PK_ACTION_SET_PROXY = "org.aptkit.set-proxy"
+PK_ACTION_CLEAN = "org.aptkit.clean"
 
 CHECK_AUTH_NONE = 0
 CHECK_AUTH_ALLOW_USER_INTERACTION = 1

@@ -1,10 +1,10 @@
 .\" groff -man -Tascii foo.1
-.TH org.debian.aptkit 7 "December 2009" "aptkit" "D-Bus Interface"
+.TH org.aptkit 7 "December 2009" "aptkit" "D-Bus Interface"
 .SH NAME
-org.debian.aptkit \- the main interface of aptkit
+org.aptkit \- the main interface of aptkit
 .SH SYNOPSIS
 The daemon is accessed through the D-Bus object at
-.IR /org/debian/aptkit .
+.IR /org/aptkit .
 Which provides the following interface.
 .SH DESCRIPTION
 .SS METHODS
@@ -58,9 +58,9 @@ Request the shutdown of the daemon. The daemon will finish a currently running t
 .RE
 .SS TRANSACTION BASED METHODS
 The following methods are handled by transactions. By calling the methods a new transaction will be created for the task. The return value of the method is the D-Bus object path of the corresponding transaction. The transaction can be modified, to use an http proxy or to run in a specific language by setting the corresponding properties on the
-.BR org.debian.aptkit.transaction (7)
+.BR org.aptkit.transaction (7)
 interface. Afterwards the transaction has to be queued for processing by calling its Run method on the
-.BR org.debian.aptkit.transaction (7)
+.BR org.aptkit.transaction (7)
 interface.
 .TP
 .B UpdateCache
@@ -226,6 +226,6 @@ transactions. If there's any active transaction active will be an empty
 string.
 .RE
 .SH SEE ALSO
-.BR org.debian.aptkit.transaction (7),
+.BR org.aptkit.transaction (7),
 .BR aptk (2),
 .BR aptkcon (2)

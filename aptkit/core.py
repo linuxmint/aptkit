@@ -76,11 +76,11 @@ else:
     _gettext_method = "ugettext"
     _ngettext_method = "ungettext"
 
-APTKIT_DBUS_INTERFACE = 'org.debian.aptkit'
-APTKIT_DBUS_PATH = '/org/debian/aptkit'
-APTKIT_DBUS_SERVICE = 'org.debian.aptkit'
+APTKIT_DBUS_INTERFACE = 'org.aptkit'
+APTKIT_DBUS_PATH = '/org/aptkit'
+APTKIT_DBUS_SERVICE = 'org.aptkit'
 
-APTKIT_TRANSACTION_DBUS_INTERFACE = 'org.debian.aptkit.transaction'
+APTKIT_TRANSACTION_DBUS_INTERFACE = 'org.aptkit.transaction'
 
 APTKIT_IDLE_CHECK_INTERVAL = 60
 APTKIT_IDLE_TIMEOUT = 10 * 60
@@ -324,7 +324,7 @@ class Transaction(DBusObject):
         """
         if tid is None:
             tid = uuid.uuid4().hex
-        self.tid = "/org/debian/aptkit/transaction/%s" % tid
+        self.tid = "/org/aptkit/transaction/%s" % tid
         if connect is True:
             self.bus = bus
             if bus is None:
@@ -1528,7 +1528,7 @@ class AptKit(DBusObject):
         """Try to complete cancelled installations. This is equivalent to a
         call of ``dpkg --configure -a``.
 
-        Requires the ``org.debian.aptkit.install-or-remove-packages``
+        Requires the ``org.aptkit.install-or-remove-packages``
         :ref:`PolicyKit privilege <policykit>`.
 
         :returns: The D-Bus path of the new transaction object which
@@ -1544,7 +1544,7 @@ class AptKit(DBusObject):
     def FixBrokenDepends(self, sender):
         """Try to resolve unsatisfied dependencies of installed packages.
 
-        Requires the ``org.debian.aptkit.install-or-remove-packages``
+        Requires the ``org.aptkit.install-or-remove-packages``
         :ref:`PolicyKit privilege <policykit>`.
 
         :returns: The D-Bus path of the new transaction object which
@@ -1561,7 +1561,7 @@ class AptKit(DBusObject):
         """Download the latest information about available packages from the
         repositories and rebuild the package cache.
 
-        Requires the ``org.debian.aptkit.update-cache``
+        Requires the ``org.aptkit.update-cache``
         :ref:`PolicyKit privilege <policykit>`.
 
         :returns: The D-Bus path of the new transaction object which
@@ -1580,7 +1580,7 @@ class AptKit(DBusObject):
         """Update the cache from the repositories defined in the given
         sources.list only.
 
-        Requires the ``org.debian.aptkit.update-cache``
+        Requires the ``org.aptkit.update-cache``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param sources_list: The absolute path to a sources.list, e.g.
@@ -1606,7 +1606,7 @@ class AptKit(DBusObject):
         will be kept by default. Use :func:`CommitPackages()` to also purge the
         configuration files.
 
-        Requires the ``org.debian.aptkit.install-or-packages``
+        Requires the ``org.aptkit.install-or-packages``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param package_names: packages to be removed
@@ -1627,7 +1627,7 @@ class AptKit(DBusObject):
     def UpgradeSystem(self, safe_mode, sender):
         """Apply all available upgrades and try to resolve conflicts.
 
-        Requires the ``org.debian.aptkit.upgrade-packages``
+        Requires the ``org.aptkit.upgrade-packages``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param safe_mode: If True only already installed packages will be
@@ -1655,7 +1655,7 @@ class AptKit(DBusObject):
         installing the version 281.1 of xterm or "xterm/experimental" to
         force installing xterm from the experimental release.
 
-        Requires the ``org.debian.aptkit.install-or-remove-packages``
+        Requires the ``org.aptkit.install-or-remove-packages``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param install: Packages to be installed.
@@ -1709,7 +1709,7 @@ class AptKit(DBusObject):
         installing the version 281.1 of xterm or "xterm/experimental" to
         force installing xterm from the experimental release.
 
-        Requires the ``org.debian.aptkit.install-or-remove-packages``
+        Requires the ``org.aptkit.install-or-remove-packages``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param package_names: Packages to be upgraded
@@ -1735,7 +1735,7 @@ class AptKit(DBusObject):
         installing the version 281.1 of xterm or "xterm/experimental" to
         force installing xterm from the experimental release.
 
-        Requires the ``org.debian.aptkit.upgrade-packages``
+        Requires the ``org.aptkit.upgrade-packages``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param package_names: Packages to be upgraded
@@ -1757,7 +1757,7 @@ class AptKit(DBusObject):
         """Download and install the key of a software vendor. The key is
         used to authenticate packages of the vendor.
 
-        Requires the ``org.debian.aptkit.change-repositories``
+        Requires the ``org.aptkit.change-repositories``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param keyid: The id of the GnuPG key (e.g. 0x0EB12F05)
@@ -1784,7 +1784,7 @@ class AptKit(DBusObject):
         """Install the key file of a software vendor. The key is
         used to authenticate packages of the vendor.
 
-        Requires the ``org.debian.aptkit.change-repositories``
+        Requires the ``org.aptkit.change-repositories``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param path: The absolute path to the key file.
@@ -1805,7 +1805,7 @@ class AptKit(DBusObject):
         """Remove the given key of a software vendor. The key is used to
         authenticate packages of the vendor.
 
-        Requires the ``org.debian.aptkit.change-repositories``
+        Requires the ``org.aptkit.change-repositories``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param fingerprint: The fingerprint of the key.
@@ -1825,7 +1825,7 @@ class AptKit(DBusObject):
     def InstallFile(self, path, force, sender):
         """Install the given local package file.
 
-        Requires the ``org.debian.aptkit.install-file``
+        Requires the ``org.aptkit.install-file``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param path: The absolute path to the package file.
@@ -1852,7 +1852,7 @@ class AptKit(DBusObject):
     def Clean(self, sender):
         """Remove downloaded package files.
 
-        Requires the ``org.debian.aptkit.clean``
+        Requires the ``org.aptkit.clean``
         :ref:`PolicyKit privilege <policykit>`.
 
         :returns: The D-Bus path of the new transaction object which
@@ -1868,7 +1868,7 @@ class AptKit(DBusObject):
     def Reconfigure(self, packages, priority, sender):
         """Reconfigure already installed packages.
 
-        Requires the ``org.debian.aptkit.install-or-remove-packages``
+        Requires the ``org.aptkit.install-or-remove-packages``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param packages: List of package names which should be reconfigure.
@@ -1895,7 +1895,7 @@ class AptKit(DBusObject):
                       sender):
         """Add given repository to the sources list.
 
-        Requires the ``org.debian.aptkit.change-repositories``
+        Requires the ``org.aptkit.change-repositories``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param src_type: The type of the repository (deb, deb-src).
@@ -1938,7 +1938,7 @@ class AptKit(DBusObject):
         for DFSG-free software and non-free for re-distributable but not free
         in the sense of the Debian Free Software Guidelines.
 
-        Requires the ``org.debian.aptkit.change-repositories``
+        Requires the ``org.aptkit.change-repositories``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param component: The component, e,g, main or non-free.
@@ -1958,7 +1958,7 @@ class AptKit(DBusObject):
         """Get the list of the installed vendor keys which are used to
         authenticate packages.
 
-        Requires the ``org.debian.aptkit.get-trusted-vendor-keys``
+        Requires the ``org.aptkit.get-trusted-vendor-keys``
         :ref:`PolicyKit privilege <policykit>`.
 
         :returns: Fingerprints of all installed keys.
@@ -2007,7 +2007,7 @@ class AptKit(DBusObject):
     def AddLicenseKey(self, pkg_name, json_token, server_name, sender):
         """Install a license key to use a piece of proprietary software.
 
-        Requires the ``org.debian.aptkit.install-or-remove-packages``
+        Requires the ``org.aptkit.install-or-remove-packages``
         :ref:`PolicyKit privilege <policykit>`.
 
         :param pkg_name: The name of the package which requires the license

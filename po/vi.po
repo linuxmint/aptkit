@@ -18,60 +18,60 @@ msgstr ""
 "X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
 "Language: vi\n"
 
-#: ../data/org.debian.aptkit.policy.in.h:1
+#: ../data/org.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
 msgstr "Liệt kê khóa của các nhà cung cấp uy tín"
 
-#: ../data/org.debian.aptkit.policy.in.h:2
+#: ../data/org.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "Để xem danh sách các khóa tin tưởng, bạn cần phải xác thực quyền."
 
-#: ../data/org.debian.aptkit.policy.in.h:3
+#: ../data/org.aptkit.policy.in.h:3
 msgid "Remove downloaded package files"
 msgstr "Gỡ bỏ những tập tin của các gói đã tải về"
 
-#: ../data/org.debian.aptkit.policy.in.h:4
+#: ../data/org.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr ""
 "Để xóa sạch những tập tin của các gói đã tải về, bạn cần xác thực quyền."
 
-#: ../data/org.debian.aptkit.policy.in.h:5
+#: ../data/org.aptkit.policy.in.h:5
 msgid "Change software configuration"
 msgstr "Thay đổi cấu hình phần mềm"
 
-#: ../data/org.debian.aptkit.policy.in.h:6
+#: ../data/org.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
 msgstr "Để thay đổi tùy chỉnh của phần mềm, bạn cần xác thực quyền."
 
-#: ../data/org.debian.aptkit.policy.in.h:7
+#: ../data/org.aptkit.policy.in.h:7
 msgid "Change software repository"
 msgstr "Thay đổi kho phần mềm"
 
-#: ../data/org.debian.aptkit.policy.in.h:8
+#: ../data/org.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr "Để thay đổi các cài đặt kho phần mềm, bạn cần phải xác thực quyền."
 
-#: ../data/org.debian.aptkit.policy.in.h:9
+#: ../data/org.aptkit.policy.in.h:9
 msgid "Install package file"
 msgstr "Cài đặt tập tin gói"
 
-#: ../data/org.debian.aptkit.policy.in.h:10
+#: ../data/org.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
 msgstr "Để cài đặt gói này, bạn cần phải xác thực quyền."
 
-#: ../data/org.debian.aptkit.policy.in.h:11
+#: ../data/org.aptkit.policy.in.h:11
 msgid "Update package information"
 msgstr "Cập nhật thông tin gói"
 
-#: ../data/org.debian.aptkit.policy.in.h:12
+#: ../data/org.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
 msgstr "Để cập nhật mục lục phần mềm, bạn cần phải xác thực quyền."
 
-#: ../data/org.debian.aptkit.policy.in.h:13
+#: ../data/org.aptkit.policy.in.h:13
 msgid "Install or remove packages"
 msgstr "Cài đặt hay gỡ bỏ các gói"
 
-#: ../data/org.debian.aptkit.policy.in.h:14
+#: ../data/org.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
 msgstr "Để cài đặt hay gỡ bỏ phần mềm, bạn cần phải xác thực quyền"
 
@@ -79,17 +79,17 @@ msgstr "Để cài đặt hay gỡ bỏ phần mềm, bạn cần phải xác th
 #. from a high trusted repository that can be explicitely whitelisted.
 #. 
 #. The defaults for this action are the same as
-#. "org.debian.aptkit.install-or-remove-packages".
+#. "org.aptkit.install-or-remove-packages".
 #. 
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
 #. 
-#: ../data/org.debian.aptkit.policy.in.h:25
+#: ../data/org.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
 msgstr "Cài đặt phần mềm từ kho chứa uy tín."
 
-#: ../data/org.debian.aptkit.policy.in.h:26
+#: ../data/org.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
 msgstr "Để cài đặt phần mềm, bạn cần phải xác thực."
 
@@ -98,11 +98,11 @@ msgstr "Để cài đặt phần mềm, bạn cần phải xác thực."
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.debian.aptkit.policy.in.h:32
+#: ../data/org.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "Thêm một kho phần mềm mới và cài đặt các gói từ đó"
 
-#: ../data/org.debian.aptkit.policy.in.h:33
+#: ../data/org.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
 msgstr "Để cài đặt phần mềm từ một nguồn mới, bạn cần phải xác thực quyền."
 
@@ -114,38 +114,38 @@ msgstr "Để cài đặt phần mềm từ một nguồn mới, bạn cần ph�
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.debian.aptkit.policy.in.h:42
+#: ../data/org.aptkit.policy.in.h:42
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr "Thêm một kho phần mềm trả phí mới và cài đặt các gói từ đó"
 
-#: ../data/org.debian.aptkit.policy.in.h:43
+#: ../data/org.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
 msgstr "Để cài đặt phần mềm trả phí, bạn cần phải xác thực quyền."
 
-#: ../data/org.debian.aptkit.policy.in.h:44
+#: ../data/org.aptkit.policy.in.h:44
 msgid "Upgrade packages"
 msgstr "Nâng cấp gói"
 
-#: ../data/org.debian.aptkit.policy.in.h:45
+#: ../data/org.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
 msgstr "Để cài đặt các phần mềm cập nhật, bạn cần phải xác thực quyền."
 
-#: ../data/org.debian.aptkit.policy.in.h:46
+#: ../data/org.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
 msgstr "Hủy bỏ nhiệm vụ của một người dùng khác"
 
-#: ../data/org.debian.aptkit.policy.in.h:47
+#: ../data/org.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
 "Để hủy bỏ các thay đổi phần mềm của một ai đó khác, bạn cần phải xác thực "
 "quyền."
 
-#: ../data/org.debian.aptkit.policy.in.h:48
+#: ../data/org.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
 msgstr "Cài đặt một proxy cho việc tải phần mềm"
 
-#: ../data/org.debian.aptkit.policy.in.h:49
+#: ../data/org.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""

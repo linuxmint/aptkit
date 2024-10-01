@@ -3,11 +3,11 @@ The D-Bus API of the aptkit
 
 Aptkit provides two D-Bus interfaces on the system bus.
 
-org.debian.aptkit --- The aptkit interface
+org.aptkit --- The aptkit interface
 ------------------------------------------
 
 This is the main interface which allows you to perform package managing tasks. 
-It is proivded by the aptkit object at ``/org/debian/aptkit``. 
+It is proivded by the aptkit object at ``/org/aptkit``. 
 
 There are two kind of tasks: ones which are performed immediately and ones 
 which are queued up in transaction and performed in a sequence.
@@ -62,7 +62,7 @@ documentation with code examples.
 Signals
 ^^^^^^^
 
-The following singal can be emitted on the org.debian.aptkit interface.
+The following singal can be emitted on the org.aptkit interface.
 
 .. automethod:: aptkit.core.AptKit.ActiveTransactionsChanged(current : string, queued : array(string))
 
@@ -119,14 +119,14 @@ The following properties are available:
     *readonly*
 
 
-org.debian.aptkit.transaction --- The transaction interface
+org.aptkit.transaction --- The transaction interface
 --------------------------------------------------------
 
 This is the main interface of a transaction object. It allows to control and
-monitor the transaction. Transactions are created by using the org.debian.aptkit
+monitor the transaction. Transactions are created by using the org.aptkit
 interface of aptkit.
 
-The path of a transaction object consists of ``/org/debian/aptkit/transaction/`` and an unique identifier.
+The path of a transaction object consists of ``/org/aptkit/transaction/`` and an unique identifier.
 
 Methods
 ^^^^^^^

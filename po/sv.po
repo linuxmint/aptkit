@@ -18,60 +18,60 @@ msgstr ""
 "X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
 "Language: sv\n"
 
-#: ../data/org.debian.aptkit.policy.in.h:1
+#: ../data/org.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
 msgstr "Lista nycklar för pålitliga leverantörer"
 
-#: ../data/org.debian.aptkit.policy.in.h:2
+#: ../data/org.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "Du måste autentisera dig för att visa listan över pålitliga nycklar."
 
-#: ../data/org.debian.aptkit.policy.in.h:3
+#: ../data/org.aptkit.policy.in.h:3
 msgid "Remove downloaded package files"
 msgstr "Ta bort hämtade paketfiler"
 
-#: ../data/org.debian.aptkit.policy.in.h:4
+#: ../data/org.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr "Du måste autentisera dig för att tömma hämtade paketfiler."
 
-#: ../data/org.debian.aptkit.policy.in.h:5
+#: ../data/org.aptkit.policy.in.h:5
 msgid "Change software configuration"
 msgstr "Ändra programkonfiguration"
 
-#: ../data/org.debian.aptkit.policy.in.h:6
+#: ../data/org.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
 msgstr "Du måste autentisera dig för att ändra programinställningar."
 
-#: ../data/org.debian.aptkit.policy.in.h:7
+#: ../data/org.aptkit.policy.in.h:7
 msgid "Change software repository"
 msgstr "Ändra programförråd"
 
-#: ../data/org.debian.aptkit.policy.in.h:8
+#: ../data/org.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr ""
 "Du måste autentisera dig för att ändra inställningar för programförråd."
 
-#: ../data/org.debian.aptkit.policy.in.h:9
+#: ../data/org.aptkit.policy.in.h:9
 msgid "Install package file"
 msgstr "Installera paketfil"
 
-#: ../data/org.debian.aptkit.policy.in.h:10
+#: ../data/org.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
 msgstr "Du måste autentisera dig för att installera detta paket."
 
-#: ../data/org.debian.aptkit.policy.in.h:11
+#: ../data/org.aptkit.policy.in.h:11
 msgid "Update package information"
 msgstr "Uppdatera paketinformation"
 
-#: ../data/org.debian.aptkit.policy.in.h:12
+#: ../data/org.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
 msgstr "Du måste autentisera dig för att uppdatera programkatalogen."
 
-#: ../data/org.debian.aptkit.policy.in.h:13
+#: ../data/org.aptkit.policy.in.h:13
 msgid "Install or remove packages"
 msgstr "Installera eller ta bort paket"
 
-#: ../data/org.debian.aptkit.policy.in.h:14
+#: ../data/org.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
 msgstr "Du måste autentisera dig för att installera eller ta bort program."
 
@@ -79,17 +79,17 @@ msgstr "Du måste autentisera dig för att installera eller ta bort program."
 #. from a high trusted repository that can be explicitely whitelisted.
 #. 
 #. The defaults for this action are the same as
-#. "org.debian.aptkit.install-or-remove-packages".
+#. "org.aptkit.install-or-remove-packages".
 #. 
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
 #. 
-#: ../data/org.debian.aptkit.policy.in.h:25
+#: ../data/org.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
 msgstr "Installera program från ett mycket pålitligt vitlistat arkiv."
 
-#: ../data/org.debian.aptkit.policy.in.h:26
+#: ../data/org.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
 msgstr "För att installera program måste du genomgå en behörighetskontroll."
 
@@ -98,11 +98,11 @@ msgstr "För att installera program måste du genomgå en behörighetskontroll."
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.debian.aptkit.policy.in.h:32
+#: ../data/org.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "Lägg till ett nytt förråd och installera paket från det"
 
-#: ../data/org.debian.aptkit.policy.in.h:33
+#: ../data/org.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
 msgstr ""
 "Du måste autentisera dig för att installera program från en ny källa."
@@ -115,38 +115,38 @@ msgstr ""
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.debian.aptkit.policy.in.h:42
+#: ../data/org.aptkit.policy.in.h:42
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
 "Lägg till ett nytt förråd för inköpta program och installera paket från det"
 
-#: ../data/org.debian.aptkit.policy.in.h:43
+#: ../data/org.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
 msgstr "Du måste autentisera dig för att installera inköpta program."
 
-#: ../data/org.debian.aptkit.policy.in.h:44
+#: ../data/org.aptkit.policy.in.h:44
 msgid "Upgrade packages"
 msgstr "Uppgradera paket"
 
-#: ../data/org.debian.aptkit.policy.in.h:45
+#: ../data/org.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
 msgstr "Du måste autentisera dig för att installera uppdaterade program."
 
-#: ../data/org.debian.aptkit.policy.in.h:46
+#: ../data/org.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
 msgstr "Avbryt åtgärden för en annan användare"
 
-#: ../data/org.debian.aptkit.policy.in.h:47
+#: ../data/org.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
 "Du måste autentisera dig för att avbryta någon annans programändringar."
 
-#: ../data/org.debian.aptkit.policy.in.h:48
+#: ../data/org.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
 msgstr "Ställ in en proxyserver för programhämtningar"
 
-#: ../data/org.debian.aptkit.policy.in.h:49
+#: ../data/org.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""

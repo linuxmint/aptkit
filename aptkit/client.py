@@ -536,10 +536,10 @@ class AptTransaction(GObject.Object):
         # Connect the signal handlers to the DBus iface
         if not bus:
             bus = dbus.SystemBus()
-        self._proxy = bus.get_object("org.debian.aptkit", tid)
-        self._iface = dbus.Interface(self._proxy, "org.debian.aptkit.transaction")
+        self._proxy = bus.get_object("org.aptkit", tid)
+        self._iface = dbus.Interface(self._proxy, "org.aptkit.transaction")
         # Watch for a crashed daemon which orphaned the dbus object
-        self._owner_watcher = bus.watch_name_owner("org.debian.aptkit",
+        self._owner_watcher = bus.watch_name_owner("org.aptkit",
                                                    self._on_name_owner_changed)
         # main signals
         self._signal_matcher = \
@@ -675,13 +675,13 @@ class AptTransaction(GObject.Object):
             if reply_handler:
                 reply_handler(self)
         if reply_handler and error_handler:
-            self._proxy.GetAll("org.debian.aptkit.transaction",
+            self._proxy.GetAll("org.aptkit.transaction",
                                dbus_interface=dbus.PROPERTIES_IFACE,
                                reply_handler=sync_properties,
                                error_handler=error_handler)
         else:
             properties = self._proxy.GetAll(
-                "org.debian.aptkit.transaction",
+                "org.aptkit.transaction",
                 dbus_interface=dbus.PROPERTIES_IFACE)
             sync_properties(properties)
 
@@ -798,7 +798,7 @@ class AptTransaction(GObject.Object):
             _reply_handler = lambda: reply_handler(self)
         else:
             _reply_handler = None
-        self._proxy.Set("org.debian.aptkit.transaction", "HttpProxy", proxy,
+        self._proxy.Set("org.aptkit.transaction", "HttpProxy", proxy,
                         dbus_interface=dbus.PROPERTIES_IFACE,
                         reply_handler=_reply_handler,
                         error_handler=error_handler)
@@ -825,7 +825,7 @@ class AptTransaction(GObject.Object):
             _reply_handler = lambda: reply_handler(self)
         else:
             _reply_handler = None
-        self._proxy.Set("org.debian.aptkit.transaction",
+        self._proxy.Set("org.aptkit.transaction",
                         "RemoveObsoletedDepends", remove_obsoleted_depends,
                         dbus_interface=dbus.PROPERTIES_IFACE,
                         reply_handler=_reply_handler,
@@ -855,7 +855,7 @@ class AptTransaction(GObject.Object):
             _reply_handler = lambda: reply_handler(self)
         else:
             _reply_handler = None
-        self._proxy.Set("org.debian.aptkit.transaction",
+        self._proxy.Set("org.aptkit.transaction",
                         "AllowUnauthenticated", allow_unauthenticated,
                         dbus_interface=dbus.PROPERTIES_IFACE,
                         reply_handler=_reply_handler,
@@ -891,7 +891,7 @@ class AptTransaction(GObject.Object):
 
         pk_socket = "/run/user/%d/pk-debconf-socket" % os.getuid()
         if os.path.exists(pk_socket):
-            self._proxy.Set("org.debian.aptkit.transaction", "DebconfSocket",
+            self._proxy.Set("org.aptkit.transaction", "DebconfSocket",
                 pk_socket,
                 dbus_interface=dbus.PROPERTIES_IFACE,
                 reply_handler=_reply_handler,
@@ -899,7 +899,7 @@ class AptTransaction(GObject.Object):
             return
 
         self._debconf_helper = debconf.DebconfProxy(frontend)
-        self._proxy.Set("org.debian.aptkit.transaction", "DebconfSocket",
+        self._proxy.Set("org.aptkit.transaction", "DebconfSocket",
                         self._debconf_helper.socket_path,
                         dbus_interface=dbus.PROPERTIES_IFACE,
                         reply_handler=_reply_handler,
@@ -936,7 +936,7 @@ class AptTransaction(GObject.Object):
         else:
             _reply_handler = None
         meta_data = dbus.Dictionary(kwargs, signature="sv")
-        self._proxy.Set("org.debian.aptkit.transaction", "MetaData", meta_data,
+        self._proxy.Set("org.aptkit.transaction", "MetaData", meta_data,
                         dbus_interface=dbus.PROPERTIES_IFACE,
                         reply_handler=_reply_handler,
                         error_handler=error_handler)
@@ -966,7 +966,7 @@ class AptTransaction(GObject.Object):
             _reply_handler = lambda: reply_handler(self)
         else:
             _reply_handler = None
-        self._proxy.Set("org.debian.aptkit.transaction", "Terminal", ttyname,
+        self._proxy.Set("org.aptkit.transaction", "Terminal", ttyname,
                         dbus_interface=dbus.PROPERTIES_IFACE,
                         reply_handler=_reply_handler,
                         error_handler=error_handler)
@@ -996,7 +996,7 @@ class AptTransaction(GObject.Object):
             _reply_handler = lambda: reply_handler(self)
         else:
             _reply_handler = None
-        self._proxy.Set("org.debian.aptkit.transaction", "Locale", locale_name,
+        self._proxy.Set("org.aptkit.transaction", "Locale", locale_name,
                         dbus_interface=dbus.PROPERTIES_IFACE,
                         reply_handler=_reply_handler,
                         error_handler=error_handler)
@@ -1657,7 +1657,7 @@ def get_transaction(tid, bus=None, reply_handler=None, error_handler=None):
     """Get an existing transaction by its identifier.
 
     :param tid: The identifer and D-Bus path of the transaction
-        e.g. /org/debian/aptkit/transaction/78904e5f9fa34098879e768032789109
+        e.g. /org/aptkit/transaction/78904e5f9fa34098879e768032789109
     :param bus: Optionally the D-Bus on which aptkit listens. Defaults
         to the system bus.
 
@@ -1706,9 +1706,9 @@ def get_aptkit(bus=None):
     """
     if not bus:
         bus = dbus.SystemBus()
-    return dbus.Interface(bus.get_object("org.debian.aptkit",
-                                         "/org/debian/aptkit",
+    return dbus.Interface(bus.get_object("org.aptkit",
+                                         "/org/aptkit",
                                          False),
-                          "org.debian.aptkit")
+                          "org.aptkit")
 
 # vim:ts=4:sw=4:et
