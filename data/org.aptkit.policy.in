@@ -4,7 +4,7 @@
  "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
 <policyconfig>
 
-  <vendor>Apt Kit</vendor>
+  <vendor>AptKit</vendor>
   <vendor_url>https://github.com/linuxmint/aptkit/</vendor_url>
   <icon_name>package-x-generic</icon_name>
 
