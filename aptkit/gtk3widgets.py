@@ -679,9 +679,11 @@ class AptProgressDialog(Gtk.Dialog):
         if close:
             self.hide()
         if status == EXIT_FAILED and show_error:
-            err_dia = AptErrorDialog(self._transaction.error, self)
-            err_dia.run()
-            err_dia.hide()
+            error = self._transaction.error
+            if error.code != ERROR_NOT_AUTHORIZED:
+                err_dia = AptErrorDialog(error, self)
+                err_dia.run()
+                err_dia.hide()
         self.emit("finished")
 
 
