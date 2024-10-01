@@ -801,6 +801,7 @@ class AptConfirmDialog(Gtk.Dialog):
         parent -- set the dialog transient for the given Gtk.Window
         """
         Gtk.Dialog.__init__(self, parent=parent)
+        self.set_title("")
         self.add_button(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
         self.add_button(_("C_ontinue"), Gtk.ResponseType.OK)
         self.cache = cache
