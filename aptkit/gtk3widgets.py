@@ -834,14 +834,9 @@ class AptConfirmDialog(Gtk.Dialog):
         self.treeview.set_rules_hint(True)
         self.column = Gtk.TreeViewColumn()
         self.treeview.append_column(self.column)
-        cell_icon = Gtk.CellRendererPixbuf()
-        self.column.pack_start(cell_icon, False)
-        self.column.set_cell_data_func(cell_icon, self.render_package_icon,
-                                       None)
         cell_desc = Gtk.CellRendererText()
         self.column.pack_start(cell_desc, True)
-        self.column.set_cell_data_func(cell_desc, self.render_package_desc,
-                                       None)
+        self.column.set_cell_data_func(cell_desc, self.render_package_desc, None)
         self.scrolled = Gtk.ScrolledWindow()
         self.scrolled.set_policy(Gtk.PolicyType.AUTOMATIC,
                                  Gtk.PolicyType.AUTOMATIC)
@@ -850,6 +845,7 @@ class AptConfirmDialog(Gtk.Dialog):
         self.scrolled.add(self.treeview)
         vbox_left.pack_start(self.scrolled, True, True, 0)
         self.set_default_response(Gtk.ResponseType.CANCEL)
+        self.treestore.set_sort_column_id(0, Gtk.SortType.ASCENDING)
 
     def _show_changes(self):
         """Show a message and the dependencies in the dialog."""
@@ -926,19 +922,6 @@ class AptConfirmDialog(Gtk.Dialog):
         in the treeview.
         """
         return [pkg]
-
-    def render_package_icon(self, column, cell, model, iter, data):
-        """Data func for the Gtk.CellRendererPixbuf which shows the package.
-
-        Override this method if you want to show custom icons for
-        a package or map it to applications.
-        """
-        path = model.get_path(iter)
-        if path.get_depth() == 0:
-            cell.props.visible = False
-        else:
-            cell.props.visible = True
-        cell.props.icon_name = "applications-other"
 
     def render_package_desc(self, column, cell, model, iter, data):
         """Data func for the Gtk.CellRendererText which shows the package.
