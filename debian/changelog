@@ -1,3 +1,42 @@
+aptkit (1.0.1) xia; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Packaging :Update build dependencies
+
+  [ Fabio Fantoni ]
+  * debian: switch to debhelper-compat and compat 13
+  * d/control: bump standard-version to 4.6.2
+  * debian/control: change homepage to github repository
+  * debian/copyright: fix and complete headers fields
+
+  [ Clement Lefebvre ]
+  * Add SimpleAPTClient
+  * Update README
+  * simpleclient: Use python-apt resolver when installing pkgs
+  * simpleclient: Add the ability to downgrade packages
+  * man: Fix lintian warnings
+  * icons: Fix icon size on 48x48 aptkit-wait.png
+  * dbus: Move policy file to /usr/share/dbus-1/system.d
+
+  [ Fabio Fantoni ]
+  * d/control: add missed gettext to build-deps
+  * d/control: replace obsolete policykit-1 with polkitd
+  * d/control: replace deprecated priority extra with optional
+
+  [ Clement Lefebvre ]
+  * d/control: wrap and sort
+  * dbus: Specify send_destination/send_interface
+  * Update README
+  * simpleclient: Add purge_packages() and commit_changes()
+  * AptConfirmDialog: Sort pkgs, remove icons
+  * AptConfirmDialog: Clear the dialog title
+  * Remove outdated info/links
+  * Rename org.debian.aptkit to org.aptkit
+  * pkit: Simplify vendor name
+  * gtk3widgets: Ignore not-authorized errors
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 20 Nov 2024 15:46:58 +0000
+
 aptkit (1.0.0) wilma; urgency=medium
 
   * Initial release
