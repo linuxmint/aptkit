@@ -8,71 +8,71 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-09-09 18:41+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"PO-Revision-Date: 2024-09-14 09:31+0000\n"
+"Last-Translator: Divya kalra <Unknown>\n"
 "Language-Team: Hindi <hi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2024-09-10 09:08+0000\n"
-"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
+"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
+"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
 "Language: hi\n"
 
-#: ../data/org.aptkit.policy.in.h:1
+#: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
 msgstr "विश्वसनीय विक्रेता का कुँजी सूची"
 
-#: ../data/org.aptkit.policy.in.h:2
+#: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr ""
 "विश्वसनीय कुँजी की सूची को देखने के लिए, आपको सत्यापन की आवश्यकता है."
 
-#: ../data/org.aptkit.policy.in.h:3
+#: ../data/org.debian.aptkit.policy.in.h:3
 msgid "Remove downloaded package files"
 msgstr "डाउनलोड पैकज संचिका हटाएँ"
 
-#: ../data/org.aptkit.policy.in.h:4
+#: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr ""
 "डाउनलोड पैकेज संचिका को साफ करने के लिए आपको प्राधिकार की आवश्यकता है"
 
-#: ../data/org.aptkit.policy.in.h:5
+#: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
 msgstr "सॉफ्टवेयर विन्यास बदलें"
 
-#: ../data/org.aptkit.policy.in.h:6
+#: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
 msgstr "सॉफ्टवेयर विन्यास हेतु, आपको प्राधिकार की आवश्यकता है."
 
-#: ../data/org.aptkit.policy.in.h:7
+#: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
 msgstr "सॉफ्टवेयर भंडार बदले"
 
-#: ../data/org.aptkit.policy.in.h:8
+#: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr "सॉफ्टवेयर भंडार विन्यास को बदलने हेतु, आपको सत्यापन की आवश्यकता है."
 
-#: ../data/org.aptkit.policy.in.h:9
+#: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
 msgstr "पैकेज संचिका को संस्थापित करें"
 
-#: ../data/org.aptkit.policy.in.h:10
+#: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
 msgstr "इस पैकेज को संस्थापित करने के लिए, आपको सत्यापन की आवश्यकता है."
 
-#: ../data/org.aptkit.policy.in.h:11
+#: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
 msgstr "पैकेज सूचना को अद्यतन करें"
 
-#: ../data/org.aptkit.policy.in.h:12
+#: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
 msgstr "सॉफ्टवेयर नामावली के अद्यतन के लिए, आपको सत्यापन की आवश्यकता है."
 
-#: ../data/org.aptkit.policy.in.h:13
+#: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
 msgstr "पैकेज संस्थापित करें या हटाएँ"
 
-#: ../data/org.aptkit.policy.in.h:14
+#: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
 msgstr ""
 "सॉफ्टवेयर को संस्थापित करने या हटाने के लिए आपको सत्यापन की आवश्यकता है."
@@ -81,17 +81,17 @@ msgstr ""
 #. from a high trusted repository that can be explicitely whitelisted.
 #. 
 #. The defaults for this action are the same as
-#. "org.aptkit.install-or-remove-packages".
+#. "org.debian.aptkit.install-or-remove-packages".
 #. 
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
 #. 
-#: ../data/org.aptkit.policy.in.h:25
+#: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
 msgstr "उच्च-विश्वसनीय श्वेतसूची वाले रिपॉजिटरी से सॉफ़्टवेयर स्थापित करें."
 
-#: ../data/org.aptkit.policy.in.h:26
+#: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
 msgstr "सॉफ़्टवेयर स्थापित करने के लिए, आपको प्रमाणित करने की आवश्यकता है."
 
@@ -100,11 +100,11 @@ msgstr "सॉफ़्टवेयर स्थापित करने के
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.aptkit.policy.in.h:32
+#: ../data/org.debian.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "एक नया भंडार जोड़े तथा इससे पैकेज संस्थापित करें"
 
-#: ../data/org.aptkit.policy.in.h:33
+#: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
 msgstr ""
 "नए स्रोत से सॉफ्टवेयर संस्थापित करने के लिए, आपको सत्यापन की आवश्यकता है."
@@ -117,41 +117,41 @@ msgstr ""
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.aptkit.policy.in.h:42
+#: ../data/org.debian.aptkit.policy.in.h:42
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
 "एक नया सॉफ्टवेयर खरीदारी का भंडार जोड़े तथा इससे पैकेज संस्थापित करें"
 
-#: ../data/org.aptkit.policy.in.h:43
+#: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
 msgstr ""
 "खरीदे गए सॉफ्टवेयर को संस्थापित करने के लिए, आपको सत्यापन की आवश्यकता है."
 
-#: ../data/org.aptkit.policy.in.h:44
+#: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
 msgstr "अद्यतन पैकेज"
 
-#: ../data/org.aptkit.policy.in.h:45
+#: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
 msgstr ""
 "अद्यतन सॉफ्टवेयर को संस्थापित करने के लिए, आपको सत्यापन की आवश्यकता है."
 
-#: ../data/org.aptkit.policy.in.h:46
+#: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
 msgstr "दूसरे प्रयोक्ता के कार्य को रद्द करें"
 
-#: ../data/org.aptkit.policy.in.h:47
+#: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
 "किसी और के द्वारा सॉफ्टवयेर परिवर्तन को निरस्त करने हेतु, आपको सत्यापन की "
 "आवश्यकता है."
 
-#: ../data/org.aptkit.policy.in.h:48
+#: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
 msgstr "सॉफ्टवेयर डाउनलोड करने हेतु प्रॉक्सी नियत करें"
 
-#: ../data/org.aptkit.policy.in.h:49
+#: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
@@ -1037,54 +1037,54 @@ msgstr "%s से डाउनलोड हो रहा है"
 #: ../aptkit/progress.py:318
 #, python-format
 msgid "Structure of %s"
-msgstr ""
+msgstr "%s की संरचना"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:321
 #, python-format
 msgid "Description of %s"
-msgstr ""
+msgstr "%s का विवरण"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:324
 #, python-format
 msgid "Description signature of %s"
-msgstr ""
+msgstr "%s का वर्णन हस्ताक्षर"
 
 #: ../aptkit/progress.py:329
 #, python-format
 msgid "Available packages from %s"
-msgstr ""
+msgstr "%s से उपलब्ध पैकेज"
 
 #: ../aptkit/progress.py:333
 #, python-format
 msgid "Available sources from %s"
-msgstr ""
+msgstr "%s से उपलब्ध स्रोत"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:336
 #, python-format
 msgid "Available translations from %s"
-msgstr ""
+msgstr "%s से उपलब्ध अनुवाद"
 
 #: ../aptkit/progress.py:353
 #, python-format
 msgid "Translations for %s (%s) from %s"
-msgstr ""
+msgstr "%s से %s (%s) के लिए अनुवाद"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
 #: ../aptkit/progress.py:357
 #, python-format
 msgid "Translations for %s from %s"
-msgstr ""
+msgstr "%s से %s के लिए अनुवाद"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
 #: ../aptkit/progress.py:362
 #, python-format
 msgid "Translations (%s) from %s"
-msgstr ""
+msgstr "%s से अनुवाद (%s)"
 
 #: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
 #: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
@@ -1118,14 +1118,14 @@ msgstr "यह संस्करण %s जो %s का है उपलब्�
 #: ../aptkit/worker/aptworker.py:572
 #, python-format
 msgid "The keyserver URL is invalid: %s"
-msgstr ""
+msgstr "कीसर्वर URL अमान्य है: %s"
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
 #: ../aptkit/worker/aptworker.py:578
 #, python-format
 msgid "Invalid protocol of the server: %s"
-msgstr ""
+msgstr "सर्वर का अमान्य प्रोटोकॉल: %s"
 
 #. TRANSLATORS: %s is the id of a GnuPG key
 #. e.g. E08ADE95
@@ -1207,21 +1207,22 @@ msgstr ""
 
 #: ../aptkit/worker/aptworker.py:1293
 msgid "The license key is empty"
-msgstr ""
+msgstr "लायसेंस कुंजी रिक्त है"
 
 #: ../aptkit/worker/aptworker.py:1309
 msgid "The license key is not allowed to contain executable code."
 msgstr ""
+"निष्पादन योग्य कोड शामिल करने के लिए लाइसेंस कुंजी की अनुमति नहीं है।"
 
 #: ../aptkit/worker/aptworker.py:1318
 #, python-format
 msgid "The license key path %s is invalid"
-msgstr ""
+msgstr "लायसेंस कुंजी पथ %s अमान्य है"
 
 #: ../aptkit/worker/aptworker.py:1322
 #, python-format
 msgid "The license key already exists: %s"
-msgstr ""
+msgstr "लाइसेंस कुंजी पहले से मौजूद है: %s"
 
 #: ../aptkit/worker/aptworker.py:1327
 #, python-format
@@ -1229,16 +1230,18 @@ msgid ""
 "The location of the license key is unsecure since it contains symbolic "
 "links. The path %s maps to %s"
 msgstr ""
+"लाइसेंस कुंजी का स्थान असुरक्षित है क्योंकि इसमें प्रतीकात्मक लिंक हैं। पथ "
+"%s को %s से मैप करता है"
 
 #: ../aptkit/worker/aptworker.py:1335
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
-msgstr ""
+msgstr "वह निर्देशिका जहाँ कुंजी स्थापित करनी है अभी तक मौजूद नहीं है: %s"
 
 #: ../aptkit/worker/aptworker.py:1346
 #, python-format
 msgid "Failed to write key file to: %s"
-msgstr ""
+msgstr "कुंजी फ़ाइल को इस पर लिखने में विफल: %s"
 
 #: ../aptkit/worker/aptworker.py:1381
 msgid "The following packages have unmet dependencies:"

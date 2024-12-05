@@ -8,102 +8,103 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-09-09 17:33+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"PO-Revision-Date: 2024-09-25 15:54+0000\n"
+"Last-Translator: Rhoslyn Prys <Unknown>\n"
 "Language-Team: Welsh <cy@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2024-09-10 09:08+0000\n"
-"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
+"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
+"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
 "Language: cy\n"
 
-#: ../data/org.aptkit.policy.in.h:1
+#: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
-msgstr ""
+msgstr "Rhestrwch allweddi gwerthwyr dibynadwy"
 
-#: ../data/org.aptkit.policy.in.h:2
+#: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
-msgstr ""
+msgstr "I weld y rhestr o allweddi dibynadwy, mae angen i chi ddilysu."
 
-#: ../data/org.aptkit.policy.in.h:3
+#: ../data/org.debian.aptkit.policy.in.h:3
 msgid "Remove downloaded package files"
-msgstr ""
+msgstr "Dileu ffeiliau pecyn wedi'u llwytho i lawr"
 
-#: ../data/org.aptkit.policy.in.h:4
+#: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr ""
+"I lanhau ffeiliau pecyn wedi'u llwytho i lawr, mae angen i chi ddilysu."
 
-#: ../data/org.aptkit.policy.in.h:5
+#: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
-msgstr ""
+msgstr "Newid ffurfweddiad meddalwedd"
 
-#: ../data/org.aptkit.policy.in.h:6
+#: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
-msgstr ""
+msgstr "I newid gosodiadau meddalwedd, mae angen i chi ddilysu."
 
-#: ../data/org.aptkit.policy.in.h:7
+#: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
-msgstr "Newid cronfa meddalwedd"
+msgstr "Newid ystorfa feddalwedd"
 
-#: ../data/org.aptkit.policy.in.h:8
+#: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
-msgstr ""
+msgstr "I newid gosodiadau storfa meddalwedd, mae angen i chi ddilysu."
 
-#: ../data/org.aptkit.policy.in.h:9
+#: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
 msgstr "Gosod ffeil pecyn"
 
-#: ../data/org.aptkit.policy.in.h:10
+#: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
-msgstr ""
+msgstr "I osod y pecyn hwn, mae angen i chi ddilysu."
 
-#: ../data/org.aptkit.policy.in.h:11
+#: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
-msgstr ""
+msgstr "Diweddaru manylion pecyn"
 
-#: ../data/org.aptkit.policy.in.h:12
+#: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
-msgstr ""
+msgstr "I ddiweddaru'r catalog meddalwedd, mae angen i chi ddilysu."
 
-#: ../data/org.aptkit.policy.in.h:13
+#: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
 msgstr "Gosod neu dynnu pecynnau"
 
-#: ../data/org.aptkit.policy.in.h:14
+#: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
-msgstr ""
+msgstr "I osod neu ddileu meddalwedd, mae angen i chi ddilysu."
 
 #. This priviledge will be requested when installing a package
 #. from a high trusted repository that can be explicitely whitelisted.
 #. 
 #. The defaults for this action are the same as
-#. "org.aptkit.install-or-remove-packages".
+#. "org.debian.aptkit.install-or-remove-packages".
 #. 
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
 #. 
-#: ../data/org.aptkit.policy.in.h:25
+#: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
-msgstr ""
+msgstr "Gosod meddalwedd o storfeydd rhestr wen, o ymddiriedaeth uchel."
 
-#: ../data/org.aptkit.policy.in.h:26
+#: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
-msgstr ""
+msgstr "I osod meddalwedd, mae angen i chi ddilysu."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.aptkit.policy.in.h:32
+#: ../data/org.debian.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "Ychwanegu cronfa newydd a gosod pecynnau ohoni"
 
-#: ../data/org.aptkit.policy.in.h:33
+#: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
-msgstr ""
+msgstr "I osod meddalwedd o ffynhonnell newydd, mae angen i chi ddilysu."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -113,144 +114,149 @@ msgstr ""
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.aptkit.policy.in.h:42
+#: ../data/org.debian.aptkit.policy.in.h:42
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
 "Ychwanegu cronfa newydd o feddalwedd wedi prynu a gosod pecynnau ohoni"
 
-#: ../data/org.aptkit.policy.in.h:43
+#: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
-msgstr ""
+msgstr "I osod meddalwedd wedi ei brynu, rhaid dilysu."
 
-#: ../data/org.aptkit.policy.in.h:44
+#: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
-msgstr ""
+msgstr "Uwchraddio pecynnau"
 
-#: ../data/org.aptkit.policy.in.h:45
+#: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
-msgstr ""
+msgstr "I osod meddalwedd wedi'i ddiweddaru, mae angen i chi ddilysu."
 
-#: ../data/org.aptkit.policy.in.h:46
+#: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
-msgstr "Canslo tasg defnyddiwr arall"
+msgstr "Diddymu tasg defnyddiwr arall"
 
-#: ../data/org.aptkit.policy.in.h:47
+#: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
+"I ddiddymu newidiadau meddalwedd rhywun arall, mae angen i chi ddilysu."
 
-#: ../data/org.aptkit.policy.in.h:48
+#: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
-msgstr ""
+msgstr "Gosod dirprwy am lwythi meddalwedd"
 
-#: ../data/org.aptkit.policy.in.h:49
+#: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
+"I ddefnyddio gweinydd dirprwy ar gyfer llwytho meddalwedd i lawr, mae angen "
+"dilysu."
 
 #: ../aptkit/core.py:2148
 msgid "Do not shutdown the daemon because of inactivity"
-msgstr ""
+msgstr "Peidio â chau'r daemon oherwydd diffyg gweithgaredd"
 
 #: ../aptkit/core.py:2153
 msgid "Do not load any plugins"
-msgstr ""
+msgstr "Peidio â llwytho unrhyw ategion"
 
 #: ../aptkit/core.py:2157
 msgid "Show internal processing information"
-msgstr ""
+msgstr "Dangos gwybodaeth prosesu mewnol"
 
 #: ../aptkit/core.py:2162
 msgid "Quit and replace an already running daemon"
-msgstr ""
+msgstr "Gadael ac amnewid daemon sydd eisoes yn rhedeg"
 
 #: ../aptkit/core.py:2167
 msgid "Listen on the DBus session bus (Only required for testing"
-msgstr ""
+msgstr "Gwrando ar y bws sesiwn DBus (Dim ond ei angen ar gyfer profi"
 
 #: ../aptkit/core.py:2171
 msgid "Perform operations in the given chroot"
-msgstr ""
+msgstr "Cyflawni gweithrediadau yn y chroot hwn"
 
 #: ../aptkit/core.py:2176
 msgid "Store profile stats in the specified file"
-msgstr ""
+msgstr "Cadw ystadegau proffil yn y ffeil benodol"
 
 #: ../aptkit/core.py:2181
 msgid "Do not make any changes to the system (Only of use to developers)"
 msgstr ""
+"Peidiwch â gwneud unrhyw newidiadau i'r system (Dim ond o ddefnydd i "
+"ddatblygwyr)"
 
 #: ../aptkit/enums.py:337
 msgid "Installed file"
-msgstr ""
+msgstr "Ffeil wedi'i gosod"
 
 #: ../aptkit/enums.py:338
 msgid "Installed packages"
-msgstr ""
+msgstr "Pecynnau wedi'u gosod"
 
 #: ../aptkit/enums.py:339
 msgid "Added key from file"
-msgstr ""
+msgstr "Ychwanegwyd allwedd o'r ffeil"
 
 #: ../aptkit/enums.py:340
 msgid "Updated cache"
-msgstr ""
+msgstr "Storfa wedi'i ddiweddaru"
 
 #: ../aptkit/enums.py:341
 msgid "Search done"
-msgstr ""
+msgstr "Chwilio wedi'i gwblhau"
 
 #: ../aptkit/enums.py:342
 msgid "Removed trusted key"
-msgstr ""
+msgstr "Tynnwyd yr allwedd ymddiriedig"
 
 #: ../aptkit/enums.py:343
 msgid "Removed packages"
-msgstr ""
+msgstr "Pecynnau wedi'u tynnu"
 
 #: ../aptkit/enums.py:344
 msgid "Updated packages"
-msgstr ""
+msgstr "Pecynnau wedi'u diweddaru"
 
 #: ../aptkit/enums.py:345
 msgid "Upgraded system"
-msgstr ""
+msgstr "System wedi'i huwchraddio"
 
 #: ../aptkit/enums.py:346
 msgid "Applied changes"
-msgstr ""
+msgstr "Newidiadau â osodwyd"
 
 #: ../aptkit/enums.py:347
 msgid "Repaired incomplete installation"
-msgstr ""
+msgstr "Wedi trwsio gosodiad anghyflawn"
 
 #: ../aptkit/enums.py:348
 msgid "Repaired broken dependencies"
-msgstr ""
+msgstr "Wedi trwsio dibyniaethau toredig"
 
 #: ../aptkit/enums.py:349
 msgid "Added software source"
-msgstr ""
+msgstr "Ychwanegwyd ffynhonnell o feddalwedd"
 
 #: ../aptkit/enums.py:350
 msgid "Enabled component of the distribution"
-msgstr ""
+msgstr "Galluogwyd cydran o'r dosbarthiad"
 
 #: ../aptkit/enums.py:351
 msgid "Removed downloaded package files"
-msgstr ""
+msgstr "Wedi tynnu ffeiliau pecyn wedi'u llwytho i lawr"
 
 #: ../aptkit/enums.py:352
 msgid "Reconfigured installed packages"
-msgstr ""
+msgstr "Wedi ail ffurfweddu pecynnau wedi'u gosod"
 
 #: ../aptkit/enums.py:356
 msgid "Successful"
-msgstr ""
+msgstr "Llwyddiannus"
 
 #: ../aptkit/enums.py:357
 msgid "Canceled"
-msgstr ""
+msgstr "Wedi diddymu"
 
 #: ../aptkit/enums.py:358 ../aptkit/enums.py:569
 msgid "Failed"
@@ -258,135 +264,136 @@ msgstr "Wedi Methu"
 
 #: ../aptkit/enums.py:361
 msgid "Installing file"
-msgstr "Gosod ffeil"
+msgstr "Yn gosod ffeil"
 
 #: ../aptkit/enums.py:362
 msgid "Installing packages"
-msgstr ""
+msgstr "Yn gosod pecynnau"
 
 #: ../aptkit/enums.py:363
 msgid "Adding key from file"
-msgstr ""
+msgstr "Yn ychwanegu allwedd o'r ffeil"
 
 #: ../aptkit/enums.py:364
 msgid "Updating cache"
-msgstr ""
+msgstr "Yn diweddaru'r storfa"
 
 #: ../aptkit/enums.py:365
 msgid "Removing trusted key"
-msgstr ""
+msgstr "Yn dileu allwedd dibynadwy"
 
 #: ../aptkit/enums.py:366
 msgid "Removing packages"
-msgstr ""
+msgstr "Yn dileu pecynnau"
 
 #: ../aptkit/enums.py:367
 msgid "Updating packages"
-msgstr ""
+msgstr "Yn diweddaru pecynnau"
 
 #: ../aptkit/enums.py:368
 msgid "Upgrading system"
-msgstr ""
+msgstr "Yn diweddaru'r system"
 
 #: ../aptkit/enums.py:369 ../aptkit/enums.py:528
 msgid "Applying changes"
-msgstr ""
+msgstr "Yn gosod newidiadau"
 
 #: ../aptkit/enums.py:370
 msgid "Repairing incomplete installation"
-msgstr ""
+msgstr "Yn atgyweirio gosodiad anghyflawn"
 
 #: ../aptkit/enums.py:371
 msgid "Repairing installed software"
-msgstr ""
+msgstr "Yn atgyweirio meddalwedd wedi'i osod"
 
 #: ../aptkit/enums.py:372
 msgid "Adding software source"
-msgstr ""
+msgstr "Yn ychwanegu ffynhonnell o feddalwedd"
 
 #: ../aptkit/enums.py:373
 msgid "Enabling component of the distribution"
-msgstr ""
+msgstr "Yn galluogi cydran o'r dosbarthiad"
 
 #: ../aptkit/enums.py:374
 msgid "Removing downloaded package files"
-msgstr ""
+msgstr "Yn tynnu ffeiliau pecyn wedi'u llwytho i lawr"
 
 #: ../aptkit/enums.py:375
 msgid "Reconfiguring installed packages"
-msgstr ""
+msgstr "Yn ail ffurfweddu pecynnau wedi'u gosod"
 
 #: ../aptkit/enums.py:376 ../aptkit/enums.py:517
 msgid "Searching"
-msgstr ""
+msgstr "Yn chwilio"
 
 #: ../aptkit/enums.py:380
 msgid "Installation of the package file failed"
-msgstr ""
+msgstr "Methwyd gosod y ffeil pecyn"
 
 #: ../aptkit/enums.py:381
 msgid "Installation of software failed"
-msgstr ""
+msgstr "Methodd gosod y feddalwedd"
 
 #: ../aptkit/enums.py:382
 msgid "Adding the key to the list of trusted software vendors failed"
 msgstr ""
+"Methodd ychwanegu'r allwedd at y rhestr o werthwyr meddalwedd dibynadwy"
 
 #: ../aptkit/enums.py:384
 msgid "Refreshing the software list failed"
-msgstr ""
+msgstr "Methodd adnewyddu'r rhestr feddalwedd"
 
 #: ../aptkit/enums.py:385
 msgid "Removing the vendor from the list of trusted ones failed"
-msgstr ""
+msgstr "Methodd tynnu'r gwerthwr o'r rhestr o rai dibynadwy"
 
 #: ../aptkit/enums.py:387
 msgid "Removing software failed"
-msgstr ""
+msgstr "Methodd tynnu'r feddalwedd"
 
 #: ../aptkit/enums.py:388
 msgid "Updating software failed"
-msgstr ""
+msgstr "Methodd diweddaru'r feddalwedd"
 
 #: ../aptkit/enums.py:389
 msgid "Upgrading the system failed"
-msgstr ""
+msgstr "Methodd diweddaru'r system"
 
 #: ../aptkit/enums.py:390
 msgid "Applying software changes failed"
-msgstr ""
+msgstr "Methodd gosod y newidiadau meddalwedd"
 
 #: ../aptkit/enums.py:391
 msgid "Repairing incomplete installation failed"
-msgstr ""
+msgstr "Methwyd trwsio gosodiad anghyflawn"
 
 #: ../aptkit/enums.py:393
 msgid "Repairing broken dependencies failed"
-msgstr ""
+msgstr "Methodd atgyweirio dibyniaethau toredig"
 
 #: ../aptkit/enums.py:394
 msgid "Adding software source failed"
-msgstr ""
+msgstr "Methodd ychwanegu ffynhonnell o feddalwedd"
 
 #: ../aptkit/enums.py:395
 msgid "Enabling component of the distribution failed"
-msgstr ""
+msgstr "Methodd galluogi cydran o'r dosbarthiad"
 
 #: ../aptkit/enums.py:397 ../aptkit/enums.py:398
 msgid "Removing downloaded package files failed"
-msgstr ""
+msgstr "Methodd tynnu'r ffeiliau pecyn a llwythwyd i lawr"
 
 #: ../aptkit/enums.py:399
 msgid "Search failed"
-msgstr ""
+msgstr "Methodd y chwilio"
 
 #: ../aptkit/enums.py:400
 msgid "Adding license key"
-msgstr ""
+msgstr "Yn ychwanegu allwedd trwydded"
 
 #: ../aptkit/enums.py:404 ../aptkit/enums.py:405
 msgid "Check your Internet connection."
-msgstr ""
+msgstr "Gwiriwch eich cysylltiad Rhyngrwyd."
 
 #: ../aptkit/enums.py:406
 msgid ""
@@ -394,65 +401,80 @@ msgid ""
 "they are a common source of problems.\n"
 "Furthermore run the following command in a Terminal: apt-get install -f"
 msgstr ""
+"Gwiriwch a ydych chi'n defnyddio storfeydd trydydd parti. Os felly "
+"analluogwch nhw, gan eu bod yn ffynhonnell gyffredin o broblemau.\n"
+"Hefyd, rhedwch y gorchymyn canlynol mewn Terfynell: apt-get install -f"
 
 #: ../aptkit/enums.py:411
 msgid "The selected file may not be a GPG key file or it might be corrupt."
 msgstr ""
+"Efallai mai nid ffeil allwedd GPG yw'r un ddewiswyd neu gall fod wedi'i "
+"lygru."
 
 #: ../aptkit/enums.py:413
 msgid ""
 "The selected key couldn't be removed. Check that you provided a valid "
 "fingerprint."
 msgstr ""
+"Nid oedd modd tynnu'r allwedd a ddewiswyd. Gwiriwch eich bod wedi darparu "
+"olion bysedd dilys."
 
 #: ../aptkit/enums.py:415
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
 msgstr ""
+"Gwiriwch a ydych yn rhedeg teclyn rheoli meddalwedd arall ar hyn o bryd, "
+"e.e. Synaptig neu aptitude. Dim ond un teclyn sy'n cael gwneud newidiadau ar "
+"y tro."
 
 #: ../aptkit/enums.py:418
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
 msgstr ""
+"Mae hon yn broblem ddifrifol. Rhowch gynnig arall arni yn nes ymlaen. Os "
+"yw'r broblem hon yn ymddangos eto, adroddwch wall i'r datblygwyr."
 
 #: ../aptkit/enums.py:421
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
 msgstr ""
+"Gwiriwch sillafu enw'r pecyn, a bod y storfa briodol wedi'i galluogi."
 
 #: ../aptkit/enums.py:423
 msgid "There isn't any need for an update."
-msgstr ""
+msgstr "Nid oes angen diweddariad."
 
 #: ../aptkit/enums.py:424
 msgid "There isn't any need for an installation"
-msgstr ""
+msgstr "Nid oes angen gosodiad"
 
 #: ../aptkit/enums.py:426
 msgid "There isn't any need for a removal."
-msgstr ""
+msgstr "Nid oes angen tynnu."
 
 #: ../aptkit/enums.py:427
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr ""
+"Rydych wedi gofyn am gael gwared ar becyn sy'n rhan hanfodol o'ch system."
 
 #: ../aptkit/enums.py:430
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
 msgstr ""
+"Collwyd y cysylltiad â'r daemon. Yn fwyaf tebyg, chwalodd daemon y cefndir."
 
 #: ../aptkit/enums.py:432
 msgid "The installation or removal of a software package failed."
-msgstr ""
+msgstr "Methodd gosod neu dynnu pecyn meddalwedd."
 
 #: ../aptkit/enums.py:434
 msgid "The requested feature is not supported."
-msgstr ""
+msgstr "Nid yw'r nodwedd y gofynnwyd amdani yn cael ei chefnogi."
 
 #: ../aptkit/enums.py:435
 msgid ""
@@ -460,6 +482,8 @@ msgid ""
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
+"Mae'n ymddangos bod gwall rhaglennu yn aptkit, y feddalwedd sy'n eich "
+"galluogi i osod/dileu meddalwedd a chyflawni tasgau rheoli pecynnau eraill."
 
 #: ../aptkit/enums.py:439
 msgid ""
@@ -468,10 +492,13 @@ msgid ""
 "between software packages which are not allowed to be installed at the same "
 "time."
 msgstr ""
+"Gall y gwall hwn fod wedi cael ei achosi gan becynnau meddalwedd ychwanegol "
+"angenrheidiol sydd ar goll neu nad oes modd eu gosod. At hynny, gall fod "
+"gwrthdaro rhwng pecynnau meddalwedd nad oes caniatâd i'w gosod ar yr un pryd."
 
 #: ../aptkit/enums.py:445
 msgid "This requires installing packages from unauthenticated sources."
-msgstr ""
+msgstr "Mae hyn yn gofyn am osod pecynnau o ffynonellau heb eu dilysu."
 
 #: ../aptkit/enums.py:447
 msgid ""
@@ -479,11 +506,14 @@ msgid ""
 "software package or it was cancelled in an unfriendly way. You have to "
 "repair this before you can install or remove any further software."
 msgstr ""
+"Gall y gosodiad fod wedi methu oherwydd gwall yn y pecyn meddalwedd "
+"cyfatebol neu cafodd ei ddiddymu mewn ffordd anghyfeillgar. Mae'n rhaid i "
+"chi drwsio hyn cyn y gallwch chi osod neu dynnu unrhyw feddalwedd bellach."
 
 #: ../aptkit/enums.py:453
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
-msgstr ""
+msgstr "Copïwch y ffeil i'ch cyfrifiadur lleol a gwiriwch caniatâd y ffeil."
 
 #: ../aptkit/enums.py:456
 msgid ""
@@ -492,6 +522,9 @@ msgid ""
 "the person or organisation who provided this package file and include the "
 "details beneath."
 msgstr ""
+"Nid yw gosod pecyn sy'n torri'r safonau ansawdd yn cael ei ganiatáu. Gallai "
+"hyn achosi problemau difrifol ar eich cyfrifiadur. Cysylltwch â'r person "
+"neu'r sefydliad a ddarparodd y ffeil pecyn hon gan gynnwys y manylion isod."
 
 #: ../aptkit/enums.py:463
 msgid ""
@@ -499,20 +532,25 @@ msgid ""
 "is not valid or could not be installed correctly.\n"
 "See the details for more information."
 msgstr ""
+"Nid yw'r allwedd trwydded sydd wedi'i lwytho i lwr ac sy'n ofynnol i redeg y "
+"darn yma o feddalwedd yn ddilys neu nid oes modd ei gosod yn gywir.\n"
+"Gweler y manylion am ragor o wybodaeth."
 
 #: ../aptkit/enums.py:469
 msgid "All available upgrades have already been installed."
-msgstr ""
+msgstr "Mae'r holl ddiweddariadau sydd ar gael eisoes wedi'u gosod."
 
 #: ../aptkit/enums.py:471
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
 msgstr ""
+"Nid oes modd llwytho allwedd y drwydded i lawr, sy'n caniatáu i chi "
+"ddefnyddio'r darn hwn o feddalwedd. Gwiriwch eich cysylltiad rhwydwaith."
 
 #: ../aptkit/enums.py:475
 msgid "You don't have the required privileges to perform this action."
-msgstr ""
+msgstr "Nid oes gennych y breintiau angenrheidiol i gyflawni'r weithred hon."
 
 #: ../aptkit/enums.py:477
 msgid ""
@@ -521,319 +559,324 @@ msgid ""
 "haven't seen a password dialog: your desktop environment doesn't provide a "
 "PolicyKit session agent."
 msgstr ""
+"Fe wnaethoch naill ai ddarparu cyfrinair anghywir neu ddiddymu'r "
+"awdurdodiad.\n"
+"Hefyd, gall fod rheswm technegol dros y gwall hwn. Os nad ydych wedi gweld "
+"deialog cyfrinair: nid yw eich amgylchedd bwrdd gwaith yn darparu asiant "
+"sesiwn PolicyKit."
 
 #: ../aptkit/enums.py:485
 msgid "Failed to download package files"
-msgstr ""
+msgstr "Wedi methu llwytho i lawr ffeiliau pecyn"
 
 #: ../aptkit/enums.py:486
 msgid "Failed to download repository information"
-msgstr ""
+msgstr "Wedi methu llwytho i lawr manylion y storfa"
 
 #: ../aptkit/enums.py:488
 msgid "Package dependencies cannot be resolved"
-msgstr ""
+msgstr "Wedi methu datrys dibyniaethau'r pecyn"
 
 #: ../aptkit/enums.py:489
 msgid "The package system is broken"
-msgstr ""
+msgstr "Mae'r system becyn wedi torri"
 
 #: ../aptkit/enums.py:490
 msgid "Key was not installed"
-msgstr ""
+msgstr "Nid yw'r allwedd wedi'i osod"
 
 #: ../aptkit/enums.py:491
 msgid "Key was not removed"
-msgstr ""
+msgstr "Allwedd heb ei dynnu"
 
 #: ../aptkit/enums.py:492
 msgid "Failed to lock the package manager"
-msgstr ""
+msgstr "Wedi methu cloi'r rheolwr pecyn"
 
 #: ../aptkit/enums.py:493
 msgid "Failed to load the package list"
-msgstr ""
+msgstr "Wedi methu llwytho'r rhestr becynnau"
 
 #: ../aptkit/enums.py:494
 msgid "Package does not exist"
-msgstr ""
+msgstr "Nid yw pecyn yn bodoli"
 
 #: ../aptkit/enums.py:495
 msgid "Package is already up to date"
-msgstr ""
+msgstr "Mae'r pecyn eisoes yn gyfredol"
 
 #: ../aptkit/enums.py:496
 msgid "Package is already installed"
-msgstr ""
+msgstr "Mae'r pecyn eisoes wedi'i osod"
 
 #: ../aptkit/enums.py:497
 msgid "Package isn't installed"
-msgstr ""
+msgstr "Nid yw'r pecyn wedi'i osod"
 
 #: ../aptkit/enums.py:498
 msgid "Failed to remove essential system package"
-msgstr ""
+msgstr "Wedi methu tynnu pecyn system hanfodol"
 
 #: ../aptkit/enums.py:500
 msgid "Task cannot be monitored or controlled"
-msgstr ""
+msgstr "Nid oes modd monitro na rheoli'r dasg"
 
 #: ../aptkit/enums.py:501
 msgid "Package operation failed"
-msgstr ""
+msgstr "Methodd gweithrediad y pecyn"
 
 #: ../aptkit/enums.py:502
 msgid "Requires installation of untrusted packages"
-msgstr ""
+msgstr "Yn gofyn am osod pecynnau anymddiriedig"
 
 #: ../aptkit/enums.py:504
 msgid "Previous installation hasn't been completed"
-msgstr ""
+msgstr "Nid yw gosodiad blaenorol wedi'i gwblhau"
 
 #: ../aptkit/enums.py:505
 msgid "The package is of bad quality"
-msgstr ""
+msgstr "Mae'r pecyn o ansawdd gwael"
 
 #: ../aptkit/enums.py:506
 msgid "Package file could not be opened"
-msgstr ""
+msgstr "Methu agor ffeil y pecyn"
 
 #: ../aptkit/enums.py:507
 msgid "Not supported feature"
-msgstr ""
+msgstr "Nodwedd heb ei chefnogi"
 
 #: ../aptkit/enums.py:508
 msgid "Failed to download the license key"
-msgstr ""
+msgstr "Wedi methu llwytho allwedd y drwydded i lawr"
 
 #: ../aptkit/enums.py:509
 msgid "Failed to install the license key"
-msgstr ""
+msgstr "Wedi methu gosod allwedd y drwydded"
 
 #: ../aptkit/enums.py:510
 msgid "The system is already up to date"
-msgstr ""
+msgstr "Mae'r system eisoes yn gyfredol"
 
 #: ../aptkit/enums.py:511
 msgid "You could not be authorized"
-msgstr ""
+msgstr "Nid oedd modd eich awdurdodi"
 
 #: ../aptkit/enums.py:512
 msgid "You are not allowed to perform this action"
-msgstr ""
+msgstr "Ni chaniateir i chi gyflawni'r weithred hon"
 
 #: ../aptkit/enums.py:513
 msgid "An unhandlable error occured"
-msgstr ""
+msgstr "Digwyddodd gwall nad oes modd ei drin"
 
 #: ../aptkit/enums.py:516
 msgid "Waiting for service to start"
-msgstr ""
+msgstr "Yn aros i'r gwasanaeth ddechrau"
 
 #: ../aptkit/enums.py:518
 msgid "Waiting"
-msgstr ""
+msgstr "Yn aros"
 
 #: ../aptkit/enums.py:519
 msgid "Waiting for required medium"
-msgstr ""
+msgstr "Yn aros am y cyfrwng angenrheidiol"
 
 #: ../aptkit/enums.py:520
 msgid "Waiting for other software managers to quit"
-msgstr ""
+msgstr "Yn aros i'r rheolwyr meddalwedd eraill orffen"
 
 #: ../aptkit/enums.py:521
 msgid "Waiting for configuration file prompt"
-msgstr ""
+msgstr "Yn aros am anogwr y ffeil ffurfweddu"
 
 #: ../aptkit/enums.py:523
 msgid "Running task"
-msgstr ""
+msgstr "Yn rhedeg y dasg"
 
 #: ../aptkit/enums.py:524
 msgid "Downloading"
-msgstr ""
+msgstr "Yn llwytho i lawr"
 
 #: ../aptkit/enums.py:525
 msgid "Querying software sources"
-msgstr ""
+msgstr "Holi ffynonellau meddalwedd"
 
 #: ../aptkit/enums.py:526
 msgid "Cleaning up"
-msgstr ""
+msgstr "Glanhau"
 
 #: ../aptkit/enums.py:527
 msgid "Resolving dependencies"
-msgstr ""
+msgstr "Yn datrys dibyniaethau"
 
 #: ../aptkit/enums.py:529
 msgid "Finished"
-msgstr ""
+msgstr "Gorffenwyd"
 
 #: ../aptkit/enums.py:530
 msgid "Cancelling"
-msgstr ""
+msgstr "Wrthi'n diddymu"
 
 #: ../aptkit/enums.py:531
 msgid "Loading software list"
-msgstr ""
+msgstr "Yn llwytho'r rhestr meddalwedd"
 
 #: ../aptkit/enums.py:532
 msgid "Waiting for authentication"
-msgstr ""
+msgstr "Yn aros am ddilysiad"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:536
 #, python-format
 msgid "Installing %s"
-msgstr ""
+msgstr "Yn gosod %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:538
 #, python-format
 msgid "Configuring %s"
-msgstr ""
+msgstr "Yn ffurfweddu %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:540
 #, python-format
 msgid "Removing %s"
-msgstr ""
+msgstr "Yn tynnu: %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:542
 #, python-format
 msgid "Completely removing %s"
-msgstr ""
+msgstr "Yn tynnu %s yn llwyr"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:544
 #, python-format
 msgid "Noting disappearance of %s"
-msgstr ""
+msgstr "Yn nodi diflaniad %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:546
 #, python-format
 msgid "Running post-installation trigger %s"
-msgstr ""
+msgstr "Yn rhedeg sbardun ôl-osod %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:548
 #, python-format
 msgid "Upgrading %s"
-msgstr ""
+msgstr "Yn diweddaru %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:550
 #, python-format
 msgid "Unpacking %s"
-msgstr ""
+msgstr "Yn dadbacio %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:552
 #, python-format
 msgid "Preparing installation of %s"
-msgstr ""
+msgstr "Yn paratoi i osod %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:554
 #, python-format
 msgid "Preparing configuration of %s"
-msgstr ""
+msgstr "Yn paratoi i ffurfweddu %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:556
 #, python-format
 msgid "Preparing removal of %s"
-msgstr ""
+msgstr "Yn paratoi i dynnu %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:558
 #, python-format
 msgid "Preparing complete removal of %s"
-msgstr ""
+msgstr "Yn paratoi i dynnu %s yn llwyr"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:560
 #, python-format
 msgid "Installed %s"
-msgstr ""
+msgstr "Wedi gosod %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:562
 #, python-format
 msgid "Completely removed %s"
-msgstr ""
+msgstr "Wedi tynnu %s yn llwyr"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:564
 #, python-format
 msgid "Removed %s"
-msgstr ""
+msgstr "Wedi tynnu %s"
 
 #: ../aptkit/enums.py:567
 msgid "Done"
-msgstr ""
+msgstr "Wedi gwneud"
 
 #: ../aptkit/enums.py:568
 msgid "Authentication failed"
-msgstr ""
+msgstr "Methodd y dilysu"
 
 #: ../aptkit/enums.py:570
 msgid "Fetching"
-msgstr ""
+msgstr "Yn cyrchu"
 
 #: ../aptkit/enums.py:571
 msgid "Idle"
-msgstr ""
+msgstr "Yn segur"
 
 #: ../aptkit/enums.py:572
 msgid "Network isn't available"
-msgstr ""
+msgstr "Nid yw'r rhwydwaith ar gael"
 
 #: ../aptkit/enums.py:704
 #, python-format
 msgid "Processing %s"
-msgstr ""
+msgstr "Yn prosesu %s"
 
 #: ../aptkit/gtk3widgets.py:311
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
-msgstr ""
+msgstr "Wedi llwytho i lawr %sB o %sB yn %sB/s"
 
 #: ../aptkit/gtk3widgets.py:316 ../aptkit/gtk3widgets.py:517
 #, python-format
 msgid "Downloaded %sB of %sB"
-msgstr "Llwythwyd %sB o %sB"
+msgstr "Llwythwyd %sB i lawr o %sB"
 
 #: ../aptkit/gtk3widgets.py:328
 msgid "Details"
-msgstr ""
+msgstr "Manylion"
 
 #: ../aptkit/gtk3widgets.py:481
 msgid "File"
-msgstr ""
+msgstr "Ffeil"
 
 #. TRANSLATORS: header of the progress download column
 #: ../aptkit/gtk3widgets.py:486
 msgid "%"
-msgstr ""
+msgstr "%"
 
 #: ../aptkit/gtk3widgets.py:522
 #, python-format
 msgid "Downloaded %sB"
-msgstr ""
+msgstr "Wedi llwytho i lawr %sB"
 
 #: ../aptkit/gtk3widgets.py:525
 msgid "Downloaded"
-msgstr ""
+msgstr "Wedi llwytho i lawr"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
 #: ../aptkit/gtk3widgets.py:860
 #, python-format
 msgid "CD/DVD '%s' is required"
-msgstr ""
+msgstr "Mae angen y CD/DVD '%s'"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
 #: ../aptkit/gtk3widgets.py:862
@@ -842,38 +885,40 @@ msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
 "packages from it."
 msgstr ""
+"Mewnosodwch y CD/DVD uchod yn y gyriant '%s' i osod pecynnau meddalwedd "
+"ohono."
 
 #: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
 msgid "C_ontinue"
-msgstr ""
+msgstr "_Parhau"
 
 #: ../aptkit/gtk3widgets.py:939
 msgid "Install"
-msgstr ""
+msgstr "Gosod"
 
 #: ../aptkit/gtk3widgets.py:940
 msgid "Reinstall"
-msgstr ""
+msgstr "Ailosod"
 
 #: ../aptkit/gtk3widgets.py:941
 msgid "Remove"
-msgstr ""
+msgstr "Tynnu"
 
 #: ../aptkit/gtk3widgets.py:942
 msgid "Purge"
-msgstr ""
+msgstr "Clirio"
 
 #: ../aptkit/gtk3widgets.py:943
 msgid "Upgrade"
-msgstr ""
+msgstr "Uwchraddio"
 
 #: ../aptkit/gtk3widgets.py:944
 msgid "Downgrade"
-msgstr ""
+msgstr "Israddio"
 
 #: ../aptkit/gtk3widgets.py:945
 msgid "Skip upgrade"
-msgstr ""
+msgstr "Hepgor y diweddaru"
 
 #. If there is only one type of changes (e.g. only installs) expand the
 #. tree
@@ -882,54 +927,54 @@ msgstr ""
 #. initial packages or both?
 #: ../aptkit/gtk3widgets.py:956
 msgid "Please take a look at the list of changes below."
-msgstr ""
+msgstr "Cymerwch olwg ar y rhestr o newidiadau isod."
 
 #: ../aptkit/gtk3widgets.py:964
 msgid "Additional software has to be installed"
-msgstr ""
+msgstr "Rhaid gosod meddalwedd ychwanegol"
 
 #: ../aptkit/gtk3widgets.py:966
 msgid "Additional software has to be re-installed"
-msgstr ""
+msgstr "Rhaid ail-osod meddalwedd ychwanegol"
 
 #: ../aptkit/gtk3widgets.py:968
 msgid "Additional software has to be removed"
-msgstr ""
+msgstr "Rhaid dileu meddalwedd ychwanegol"
 
 #: ../aptkit/gtk3widgets.py:970
 msgid "Additional software has to be purged"
-msgstr ""
+msgstr "Rhaid tynnu meddalwedd ychwanegol"
 
 #: ../aptkit/gtk3widgets.py:972
 msgid "Additional software has to be upgraded"
-msgstr ""
+msgstr "Rhaid diweddaru meddalwedd ychwanegol"
 
 #: ../aptkit/gtk3widgets.py:974
 msgid "Additional software has to be downgraded"
-msgstr ""
+msgstr "Mae'n rhaid israddio meddalwedd ychwanegol"
 
 #: ../aptkit/gtk3widgets.py:976
 msgid "Updates will be skipped"
-msgstr ""
+msgstr "Bydd diweddariadau'n cael eu hepgor"
 
 #: ../aptkit/gtk3widgets.py:984
 msgid "Additional changes are required"
-msgstr ""
+msgstr "Mae angen newidiadau ychwanegol"
 
 #: ../aptkit/gtk3widgets.py:989
 #, python-format
 msgid "%sB will be downloaded in total."
-msgstr ""
+msgstr "Bydd %sB yn cael ei lwytho i lawr i gyd."
 
 #: ../aptkit/gtk3widgets.py:993
 #, python-format
 msgid "%sB of disk space will be freed."
-msgstr ""
+msgstr "Bydd %sB o ofod disg yn cael ei ryddhau."
 
 #: ../aptkit/gtk3widgets.py:997
 #, python-format
 msgid "%sB more disk space will be used."
-msgstr ""
+msgstr "Bydd %sB yn rhagor o ofod ar y ddisg yn cael ei ddefnyddio."
 
 #. TRANSLATORS: %s is a file path
 #: ../aptkit/gtk3widgets.py:1069
@@ -937,153 +982,157 @@ msgstr ""
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
 msgstr ""
+"Amnewid eich newidiadau yn '%s' gyda fersiwn diweddarach o'r ffeil "
+"ffurfweddu?"
 
 #: ../aptkit/gtk3widgets.py:1071
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
 msgstr ""
+"Os nad ydych yn gwybod pam mae'r ffeil yno'n barod, mae'n ddiogel fel arfer "
+"ei hamnewid."
 
 #: ../aptkit/gtk3widgets.py:1080
 msgid "_Changes"
-msgstr ""
+msgstr "_Newidiadau"
 
 #: ../aptkit/gtk3widgets.py:1083
 msgid "_Keep"
-msgstr ""
+msgstr "_Cadwch"
 
 #: ../aptkit/gtk3widgets.py:1084
 msgid "_Replace"
-msgstr ""
+msgstr "_Amnewid"
 
 #: ../aptkit/gtk3widgets.py:1187
 msgid "_Details"
-msgstr ""
+msgstr "_Manylion"
 
 #. TRANSLATORS: %s is the name of a package manager
 #: ../aptkit/lock.py:189
 #, python-format
 msgid "Waiting for %s to exit"
-msgstr ""
+msgstr "Yn aros i %s adael"
 
 #. TRANSLATORS: %s is a list of package names
 #: ../aptkit/progress.py:168
 #, python-format
 msgid "Downloading %s"
-msgstr ""
+msgstr "Wrthi'n llwytho %s i lawr"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
 #: ../aptkit/progress.py:277 ../aptkit/progress.py:314
 msgid "local repository"
-msgstr ""
+msgstr "storfa leol"
 
 #. TRANSLATORS: %s is a list of repository names
 #: ../aptkit/progress.py:280
 #, python-format
 msgid "Downloading from %s"
-msgstr ""
+msgstr "Yn llwytho i lawr o %s"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:318
 #, python-format
 msgid "Structure of %s"
-msgstr ""
+msgstr "Strwythur %s"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:321
 #, python-format
 msgid "Description of %s"
-msgstr ""
+msgstr "Disgrifiad o %s"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:324
 #, python-format
 msgid "Description signature of %s"
-msgstr ""
+msgstr "Llofnod disgrifiad %s"
 
 #: ../aptkit/progress.py:329
 #, python-format
 msgid "Available packages from %s"
-msgstr ""
+msgstr "Y pecynnau sydd ar gael o %s"
 
 #: ../aptkit/progress.py:333
 #, python-format
 msgid "Available sources from %s"
-msgstr ""
+msgstr "Ffynonellau sydd ar gael o %s"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:336
 #, python-format
 msgid "Available translations from %s"
-msgstr ""
+msgstr "Y cyfieithiadau sydd ar gael o %s"
 
 #: ../aptkit/progress.py:353
 #, python-format
 msgid "Translations for %s (%s) from %s"
-msgstr ""
+msgstr "Cyfieithiadau ar gyfer %s (%s) o %s"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
 #: ../aptkit/progress.py:357
 #, python-format
 msgid "Translations for %s from %s"
-msgstr ""
+msgstr "Cyfieithiadau ar gyfer %s o %s"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
 #: ../aptkit/progress.py:362
 #, python-format
 msgid "Translations (%s) from %s"
-msgstr ""
+msgstr "Cyfieithiadau (%s) o %s"
 
 #: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
 #: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
 #, python-format
 msgid "Package %s isn't available"
-msgstr ""
+msgstr "Nid yw pecyn %s ar gael"
 
 #: ../aptkit/worker/aptworker.py:384 ../aptkit/worker/aptworker.py:682
 #: ../aptkit/worker/aptworker.py:777 ../aptkit/worker/aptworker.py:822
 #, python-format
 msgid "Package %s isn't installed"
-msgstr ""
+msgstr "Nid yw pecyn %s wedi'i osod"
 
 #: ../aptkit/worker/aptworker.py:388
 #, python-format
 msgid "The version %s of %s isn't installed"
-msgstr ""
+msgstr "Nid yw'r fersiwn %s o %s wedi'i osod"
 
 #: ../aptkit/worker/aptworker.py:403
 #, python-format
 msgid "Package %s is already installed"
-msgstr ""
+msgstr "Mae pecyn %s eisoes wedi'i osod"
 
 #: ../aptkit/worker/aptworker.py:410 ../aptkit/worker/aptworker.py:845
 #, python-format
 msgid "The version %s of %s isn't available."
-msgstr ""
+msgstr "Nid yw'r fersiwn %s o %s ar gael."
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
 #: ../aptkit/worker/aptworker.py:572
 #, python-format
 msgid "The keyserver URL is invalid: %s"
-msgstr ""
+msgstr "Mae URL y gweinydd allwedd yn annilys: %s"
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
 #: ../aptkit/worker/aptworker.py:578
 #, python-format
 msgid "Invalid protocol of the server: %s"
-msgstr ""
+msgstr "Protocol annilys y gweinydd: %s"
 
 #. TRANSLATORS: %s is the id of a GnuPG key
 #. e.g. E08ADE95
 #: ../aptkit/worker/aptworker.py:586 ../aptkit/worker/aptworker.py:630
 #, python-format
 msgid "Invalid key id: %s"
-msgstr ""
+msgstr "ID allwedd annilys: %s"
 
 #: ../aptkit/worker/aptworker.py:594
 #, python-format
@@ -1091,85 +1140,89 @@ msgid ""
 "Failed to download and install the key %s from %s:\n"
 "%s"
 msgstr ""
+"Wedi methu llwytho i lawr a gosod yr allwedd %s o %s:\n"
+"%s"
 
 #: ../aptkit/worker/aptworker.py:611
 #, python-format
 msgid "Key file %s couldn't be installed: %s"
-msgstr ""
+msgstr "Nid oedd modd gosod ffeil allwedd %s: %s"
 
 #: ../aptkit/worker/aptworker.py:635
 #, python-format
 msgid "Key with fingerprint %s couldn't be removed: %s"
-msgstr ""
+msgstr "Nid oedd modd tynnu allwedd ag ôl bys %s: %s"
 
 #: ../aptkit/worker/aptworker.py:686
 #, python-format
 msgid "Package %s cannot be removed."
-msgstr ""
+msgstr "Nid oes modd tynnu pecyn %s."
 
 #: ../aptkit/worker/aptworker.py:690
 #, python-format
 msgid "The version %s of %s is not installed"
-msgstr ""
+msgstr "Nid yw'r fersiwn %s o %s wedi'i osod"
 
 #: ../aptkit/worker/aptworker.py:785
 #, python-format
 msgid "The former version %s of %s is already installed"
-msgstr ""
+msgstr "Mae'r fersiwn flaenorol %s o %s eisoes wedi'i osod"
 
 #: ../aptkit/worker/aptworker.py:790 ../aptkit/worker/aptworker.py:838
 #, python-format
 msgid "The version %s of %s is already installed"
-msgstr ""
+msgstr "Mae fersiwn %s o %s eisoes wedi'i gosod"
 
 #: ../aptkit/worker/aptworker.py:797
 #, python-format
 msgid "The version %s of %s isn't available"
-msgstr ""
+msgstr "Nid yw'r fersiwn %s o %s ar gael"
 
 #: ../aptkit/worker/aptworker.py:801
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
-msgstr ""
+msgstr "Mae angen i chi bennu fersiwn i israddio %s iddo"
 
 #: ../aptkit/worker/aptworker.py:831
 #, python-format
 msgid "The later version %s of %s is already installed"
-msgstr ""
+msgstr "Mae fersiwn diweddarach %s o %s eisoes wedi'i gosod"
 
 #: ../aptkit/worker/aptworker.py:867
 #, python-format
 msgid "The package %s isn't available in the %s release."
-msgstr ""
+msgstr "Nid yw'r pecyn %s ar gael yn y ryddhad %s."
 
 #: ../aptkit/worker/aptworker.py:1052
 #, python-format
 msgid "Package %s cannot be removed"
-msgstr ""
+msgstr "Nid oes modd tynnu pecyn %s"
 
 #: ../aptkit/worker/aptworker.py:1154
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
 msgstr ""
+"Nid yw'r pecyn yn darparu maes rheoli Maint Gosod dilys. Gweler Polisi "
+"Debian 5.6.20."
 
 #: ../aptkit/worker/aptworker.py:1293
 msgid "The license key is empty"
-msgstr ""
+msgstr "Mae allwedd y drwydded yn wag"
 
 #: ../aptkit/worker/aptworker.py:1309
 msgid "The license key is not allowed to contain executable code."
-msgstr ""
+msgstr "Nid oes caniatâd i allwedd y drwydded gynnwys cod gweithredadwy."
 
 #: ../aptkit/worker/aptworker.py:1318
 #, python-format
 msgid "The license key path %s is invalid"
-msgstr ""
+msgstr "Mae llwybr bysell y drwydded %s yn annilys"
 
 #: ../aptkit/worker/aptworker.py:1322
 #, python-format
 msgid "The license key already exists: %s"
-msgstr ""
+msgstr "Mae allwedd y drwydded yn bodoli'n barod: %s"
 
 #: ../aptkit/worker/aptworker.py:1327
 #, python-format
@@ -1177,41 +1230,43 @@ msgid ""
 "The location of the license key is unsecure since it contains symbolic "
 "links. The path %s maps to %s"
 msgstr ""
+"Mae lleoliad allwedd y drwydded yn anniogel gan ei fod yn cynnwys dolenni "
+"symbolaidd. Mae'r llwybr %s yn mapio i %s"
 
 #: ../aptkit/worker/aptworker.py:1335
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
-msgstr ""
+msgstr "Nid yw'r cyfeiriadur i osod yr allwedd iddo yn bodoli eto: %s"
 
 #: ../aptkit/worker/aptworker.py:1346
 #, python-format
 msgid "Failed to write key file to: %s"
-msgstr ""
+msgstr "Wedi methu ysgrifennu'r ffeil allwedd i: %s"
 
 #: ../aptkit/worker/aptworker.py:1381
 msgid "The following packages have unmet dependencies:"
-msgstr ""
+msgstr "Mae gan y pecynnau canlynol ddibyniaethau heb eu bodloni:"
 
 #: ../aptkit/worker/aptworker.py:1434
 msgid "but it is a virtual package"
-msgstr ""
+msgstr "ond mae'n becyn rhithwir"
 
 #: ../aptkit/worker/aptworker.py:1437
 msgid "but it is not installed"
-msgstr ""
+msgstr "ond nid yw wedi ei osod."
 
 #: ../aptkit/worker/aptworker.py:1439
 msgid "but it is not going to be installed"
-msgstr ""
+msgstr "ond nid yw'n mynd i gael ei osod"
 
 #. TRANSLATORS: %s is a version number
 #: ../aptkit/worker/aptworker.py:1443
 #, python-format
 msgid "but %s is installed"
-msgstr ""
+msgstr "ond mae %s wedi'i osod"
 
 #. TRANSLATORS: %s is a version number
 #: ../aptkit/worker/aptworker.py:1447
 #, python-format
 msgid "but %s is to be installed"
-msgstr ""
+msgstr "ond mae %s i'w osod"

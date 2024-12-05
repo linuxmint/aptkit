@@ -8,107 +8,105 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-09-09 18:40+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"PO-Revision-Date: 2024-09-21 10:56+0000\n"
+"Last-Translator: Asier Iturralde Sarasola <Unknown>\n"
 "Language-Team: Basque <eu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2024-09-10 09:08+0000\n"
-"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
+"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
+"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
 "Language: eu\n"
 
-#: ../data/org.aptkit.policy.in.h:1
+#: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
-msgstr "Konfidantzazko saltzaileak"
+msgstr "Zerrendatu konfiantzazko saltzaileen gakoak"
 
-#: ../data/org.aptkit.policy.in.h:2
+#: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
-msgstr "Konfidantzazko gakoen zerrenda ikusteko autentikatu egin behar duzu"
+msgstr "Konfiantzazko gakoen zerrenda ikusteko, autentifikatu beharra duzu."
 
-#: ../data/org.aptkit.policy.in.h:3
+#: ../data/org.debian.aptkit.policy.in.h:3
 msgid "Remove downloaded package files"
 msgstr "Kendu deskargatutako pakete-fitxategiak"
 
-#: ../data/org.aptkit.policy.in.h:4
+#: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr ""
-"Deskargatutako pakete-fitxategiak garbitzeko, autentikatu beharra duzu"
+"Deskargatutako pakete-fitxategiak garbitzeko, autentifikatu beharra duzu"
 
-#: ../data/org.aptkit.policy.in.h:5
+#: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
 msgstr "Aldatu software-konfigurazioa"
 
-#: ../data/org.aptkit.policy.in.h:6
+#: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
 msgstr "Software-ezarpenak aldatzeko, autentifikatu behar duzu"
 
-#: ../data/org.aptkit.policy.in.h:7
+#: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
 msgstr "Aldatu softwarearen errepositorioa"
 
-#: ../data/org.aptkit.policy.in.h:8
+#: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr ""
-"Software errepositorioaren ezarpenak aldatzeko autentikatu egin behar zara"
+"Software-errepositorioaren ezarpenak aldatzeko autentifikatu egin behar zara."
 
-#: ../data/org.aptkit.policy.in.h:9
+#: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
-msgstr "Pakete-fitxategia instalatu"
+msgstr "Instalatu pakete-fitxategia"
 
-#: ../data/org.aptkit.policy.in.h:10
+#: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
-msgstr "Pakete hau instalatzeko zure burua identifikatu behar duzu"
+msgstr "Pakete hau instalatzeko autentifikatu behar duzu."
 
-#: ../data/org.aptkit.policy.in.h:11
+#: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
-msgstr "Pakete-informazioa eguneratu"
+msgstr "Eguneratu pakete-informazioa"
 
-#: ../data/org.aptkit.policy.in.h:12
+#: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
-msgstr "Software katalogoa eguneratzeko autentikatu egin behar zara"
+msgstr "Software katalogoa eguneratzeko autentifikatu behar duzu."
 
-#: ../data/org.aptkit.policy.in.h:13
+#: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
-msgstr "Paketeak gehitu edo kendu"
+msgstr "Instalatu edo kendu paketeak"
 
-#: ../data/org.aptkit.policy.in.h:14
+#: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
-msgstr "Softwarea instalatu edo kentzeko, zure burua identifikatu behar duzu"
+msgstr "Softwarea instalatu edo kentzeko autentifikatu behar duzu."
 
 #. This priviledge will be requested when installing a package
 #. from a high trusted repository that can be explicitely whitelisted.
 #. 
 #. The defaults for this action are the same as
-#. "org.aptkit.install-or-remove-packages".
+#. "org.debian.aptkit.install-or-remove-packages".
 #. 
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
 #. 
-#: ../data/org.aptkit.policy.in.h:25
+#: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
 msgstr ""
-"Instalatu softwarea zerrenda zuriko errepositorio erabat fidagarritik."
+"Instalatu softwarea zerrenda zuriko fidagarritasun handiko gordailutik."
 
-#: ../data/org.aptkit.policy.in.h:26
+#: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
-msgstr "Softwarea instalatzeko autentifikatu beharra daukazu."
+msgstr "Softwarea instalatzeko autentifikatu behar duzu."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.aptkit.policy.in.h:32
+#: ../data/org.debian.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "Gehitu errepositorio berria eta instalatu paketeak bertatik"
 
-#: ../data/org.aptkit.policy.in.h:33
+#: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
-msgstr ""
-"Iturri berri bateko softwarea instalatzeko, zure burua identifikatu behar "
-"duzu"
+msgstr "Iturri berri bateko softwarea instalatzeko autentifikatu behar duzu"
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -118,45 +116,43 @@ msgstr ""
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.aptkit.policy.in.h:42
+#: ../data/org.debian.aptkit.policy.in.h:42
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
-"Erositako softwarearentzako errepositorio berria gehitu eta instalatu "
-"paketeak bertatik"
+"Gehitu erositako softwarearen gordailu berria eta instalatu paketeak bertatik"
 
-#: ../data/org.aptkit.policy.in.h:43
+#: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
-msgstr "Erositako softwarea instalatzeko autentikatu egin behar zara"
+msgstr "Erositako softwarea instalatzeko autentifikatu behar zara"
 
-#: ../data/org.aptkit.policy.in.h:44
+#: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
-msgstr "Paketeak bertsio-berritu"
+msgstr "Bertsio-berritu paketeak"
 
-#: ../data/org.aptkit.policy.in.h:45
+#: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
-msgstr ""
-"Eguneratutako softwarea instalatzeko zure burua identifikatu behar duzu"
+msgstr "Eguneratutako softwarea instalatzeko autentifikatu behar duzu."
 
-#: ../data/org.aptkit.policy.in.h:46
+#: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
-msgstr "Beste erabiltzaile baten ataza ezeztatu"
+msgstr "Ezeztatu beste erabiltzaile baten ataza"
 
-#: ../data/org.aptkit.policy.in.h:47
+#: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
-"Beste norbaiten softwarea aldaketak ezeztatzeko autentikatu egin behar zara"
+"Beste norbaiten software aldaketak ezeztatzeko autentifikatu behar duzu."
 
-#: ../data/org.aptkit.policy.in.h:48
+#: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
-msgstr "Softwarea deskargatzeko proxy bat ezarri."
+msgstr "Ezarri proxy bat softwarea deskargatzeko"
 
-#: ../data/org.aptkit.policy.in.h:49
+#: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
-"Softwarea deskargatzeko proxy zerbitzari bat erabiltzeko autentikatu egin "
-"behar duzu"
+"Softwarea deskargatzeko proxy zerbitzari bat erabiltzeko autentifikatu behar "
+"duzu."
 
 #: ../aptkit/core.py:2148
 msgid "Do not shutdown the daemon because of inactivity"
@@ -168,23 +164,23 @@ msgstr "Ez kargatu pluginik"
 
 #: ../aptkit/core.py:2157
 msgid "Show internal processing information"
-msgstr "Barneko prozesu-informazioa erakutsi"
+msgstr "Erakutsi barneko prozesatze-informazioa"
 
 #: ../aptkit/core.py:2162
 msgid "Quit and replace an already running daemon"
-msgstr "Jadanik martxan dagoen daemon bat itxi eta ordezkatu"
+msgstr "Itxi eta ordezkatu dagoeneko martxan dagoen daemon-a"
 
 #: ../aptkit/core.py:2167
 msgid "Listen on the DBus session bus (Only required for testing"
-msgstr "DBus saioko bus-ean entzun (Probak egiteko bakarrik beharrezkoa"
+msgstr "Entzun DBus saioko bus-ean (probak egiteko soilik beharrezkoa)"
 
 #: ../aptkit/core.py:2171
 msgid "Perform operations in the given chroot"
-msgstr "Burutu eragiketak chroot-ean"
+msgstr "Burutu eragiketak emandako chroot-ean"
 
 #: ../aptkit/core.py:2176
 msgid "Store profile stats in the specified file"
-msgstr "Profilaren estatistikak zehaztutako fitxategian gorde"
+msgstr "Gorde profilaren estatistikak zehaztutako fitxategian"
 
 #: ../aptkit/core.py:2181
 msgid "Do not make any changes to the system (Only of use to developers)"
@@ -192,7 +188,7 @@ msgstr "Ez egin aldaketarik sistemari (garatzaileek erabiltzeko soilik)"
 
 #: ../aptkit/enums.py:337
 msgid "Installed file"
-msgstr "Instalatu den fitxategia"
+msgstr "Fitxategia instalatuta"
 
 #: ../aptkit/enums.py:338
 msgid "Installed packages"
@@ -200,7 +196,7 @@ msgstr "Paketeak instalatuta"
 
 #: ../aptkit/enums.py:339
 msgid "Added key from file"
-msgstr "Fitxategiko gakoa gehituta"
+msgstr "Fitxategitik gakoa gehituta"
 
 #: ../aptkit/enums.py:340
 msgid "Updated cache"
@@ -240,23 +236,23 @@ msgstr "Hautsitako menpekotasunak konponduta"
 
 #: ../aptkit/enums.py:349
 msgid "Added software source"
-msgstr "Software-jatorria gehitu da"
+msgstr "Software-jatorria gehituta"
 
 #: ../aptkit/enums.py:350
 msgid "Enabled component of the distribution"
-msgstr "Distribuzioko gaitutako osagaia"
+msgstr "Banaketaren osagaia gaituta"
 
 #: ../aptkit/enums.py:351
 msgid "Removed downloaded package files"
-msgstr "Deskargatutako pakete-fitxategiak ezabatu dira"
+msgstr "Deskargatutako pakete-fitxategiak kenduta"
 
 #: ../aptkit/enums.py:352
 msgid "Reconfigured installed packages"
-msgstr "Instalatutako paketeak berkonfiguratu dira"
+msgstr "Instalatutako paketeak berkonfiguratuta"
 
 #: ../aptkit/enums.py:356
 msgid "Successful"
-msgstr "Arrakasta"
+msgstr "Arrakastatsua"
 
 #: ../aptkit/enums.py:357
 msgid "Canceled"
@@ -264,7 +260,7 @@ msgstr "Ezeztatuta"
 
 #: ../aptkit/enums.py:358 ../aptkit/enums.py:569
 msgid "Failed"
-msgstr "Huts egin du"
+msgstr "Huts eginda"
 
 #: ../aptkit/enums.py:361
 msgid "Installing file"
@@ -276,7 +272,7 @@ msgstr "Paketeak instalatzen"
 
 #: ../aptkit/enums.py:363
 msgid "Adding key from file"
-msgstr "Fitxategiko gakoa gehitzen"
+msgstr "Gakoa fitxategitik gehitzen"
 
 #: ../aptkit/enums.py:364
 msgid "Updating cache"
@@ -324,7 +320,7 @@ msgstr "Deskargatutako pakete-fitxategiak ezabatzen"
 
 #: ../aptkit/enums.py:375
 msgid "Reconfiguring installed packages"
-msgstr "Instalatutako paketeak berkonfiguratzen"
+msgstr "Instalatutako paketeak berriro konfiguratzen"
 
 #: ../aptkit/enums.py:376 ../aptkit/enums.py:517
 msgid "Searching"
@@ -332,11 +328,11 @@ msgstr "Bilatzen"
 
 #: ../aptkit/enums.py:380
 msgid "Installation of the package file failed"
-msgstr "Pakete-fitxategiaren instalazioak huts egin du"
+msgstr "Huts egin du pakete-fitxategiaren instalazioak"
 
 #: ../aptkit/enums.py:381
 msgid "Installation of software failed"
-msgstr "Softwarearen instalazioak huts egin du"
+msgstr "Huts egin du softwarearen instalazioak"
 
 #: ../aptkit/enums.py:382
 msgid "Adding the key to the list of trusted software vendors failed"
@@ -345,49 +341,49 @@ msgstr ""
 
 #: ../aptkit/enums.py:384
 msgid "Refreshing the software list failed"
-msgstr "Software-zerrenda berritzeak huts egin du"
+msgstr "Huts egin du software-zerrenda berritzean"
 
 #: ../aptkit/enums.py:385
 msgid "Removing the vendor from the list of trusted ones failed"
 msgstr ""
-"Software-hornitzaile fidagarrien zerrendatik hornitzailea kentzeak huts egin "
-"du"
+"Huts egin du software-hornitzaile fidagarrien zerrendatik hornitzailea "
+"kentzean"
 
 #: ../aptkit/enums.py:387
 msgid "Removing software failed"
-msgstr "Softwarea ezabatzeak huts egin du"
+msgstr "Huts egin du softwarea ezabatzeak"
 
 #: ../aptkit/enums.py:388
 msgid "Updating software failed"
-msgstr "Softwarea eguneratzeak huts egin du"
+msgstr "Huts egin du softwarea eguneratzean"
 
 #: ../aptkit/enums.py:389
 msgid "Upgrading the system failed"
-msgstr "Sistema bertsio-berritzeak huts egin du"
+msgstr "Huts egin du sistema bertsio-berritzean"
 
 #: ../aptkit/enums.py:390
 msgid "Applying software changes failed"
-msgstr "Software-aldaketak aplikatzeak huts egin du"
+msgstr "Huts egin du software-aldaketak aplikatzean"
 
 #: ../aptkit/enums.py:391
 msgid "Repairing incomplete installation failed"
-msgstr "Osatu gabeko instalazioa konpontzean huts egin du"
+msgstr "Huts egin du osatu gabeko instalazioa konpontzean"
 
 #: ../aptkit/enums.py:393
 msgid "Repairing broken dependencies failed"
-msgstr "Hautsitako menpekotasunak instalatzeak huts egin du"
+msgstr "Huts egin du hautsitako menpekotasunak instalatzean"
 
 #: ../aptkit/enums.py:394
 msgid "Adding software source failed"
-msgstr "Huts egin du software-jatorria gehitzeak"
+msgstr "Huts egin du software-jatorria gehitzean"
 
 #: ../aptkit/enums.py:395
 msgid "Enabling component of the distribution failed"
-msgstr "Banaketaren osagaia gaitzeak huts egin du"
+msgstr "Huts egin du banaketaren osagaia gaitzean"
 
 #: ../aptkit/enums.py:397 ../aptkit/enums.py:398
 msgid "Removing downloaded package files failed"
-msgstr "Huts egin du deskargatutako pakete-fitxategiak ezabatzeak"
+msgstr "Huts egin du deskargatutako pakete-fitxategiak ezabatzean"
 
 #: ../aptkit/enums.py:399
 msgid "Search failed"
@@ -407,20 +403,20 @@ msgid ""
 "they are a common source of problems.\n"
 "Furthermore run the following command in a Terminal: apt-get install -f"
 msgstr ""
-"Egiaztatu hirugarrengoen errepositorioak darabiltzazun. Hala bada, ezgaitu "
+"Egiaztatu hirugarrengoen gordailuak darabiltzazun. Hala bada, desgaitu "
 "itzazu, arazoak ekarri ohi dituzte eta.\n"
 "Honez gain, exekutatu agindu hau terminal batean: apt-get install -f"
 
 #: ../aptkit/enums.py:411
 msgid "The selected file may not be a GPG key file or it might be corrupt."
-msgstr "Hautatutako fitxategia ez da GPG gako-fitxategia edo apurtuta dago."
+msgstr "Hautatutako fitxategia ez da GPG gako-fitxategia edo hondatuta dago."
 
 #: ../aptkit/enums.py:413
 msgid ""
 "The selected key couldn't be removed. Check that you provided a valid "
 "fingerprint."
 msgstr ""
-"Hautatutako gakoa ezin izan da kendu. Egiaztatu baliozko hatz-marka bat "
+"Ezin izan da kendu hautatutako gakoa. Egiaztatu baliozko hatz-marka bat "
 "sartu duzula."
 
 #: ../aptkit/enums.py:415
@@ -445,7 +441,7 @@ msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
 msgstr ""
-"Egiaztatu pakete-izena ondo idatzi duzula, eta errepositorio egokia gaituta "
+"Egiaztatu pakete-izena ondo idatzi duzula, eta gordailu egokia gaituta "
 "dagoela."
 
 #: ../aptkit/enums.py:423
@@ -464,7 +460,7 @@ msgstr "Ez dago ezabatzeko beharrik."
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr ""
-"Zure sistemarentzat funtsezkoa den pakete bat ezabatzeko eskatu duzu."
+"Zure sistemaren funtsezko osagaia den pakete bat ezabatzeko eskatu duzu."
 
 #: ../aptkit/enums.py:430
 msgid ""
@@ -479,7 +475,7 @@ msgstr "Huts egin du software-pakete bat instalatu edo ezabatzeak."
 
 #: ../aptkit/enums.py:434
 msgid "The requested feature is not supported."
-msgstr "Eskatutako ezaugarria ez da sostengatzen."
+msgstr "Eskatutako ezaugarriak ez du euskarririk."
 
 #: ../aptkit/enums.py:435
 msgid ""
@@ -487,6 +483,9 @@ msgid ""
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
+"Badirudi programazio-errore bat dagoela aptkit-en, softwarea instalatzeko "
+"edo ezabatzeko eta paketeak kudeatzeko beste zeregin batzuk egiteko aukera "
+"ematen duen softwarean."
 
 #: ../aptkit/enums.py:439
 msgid ""

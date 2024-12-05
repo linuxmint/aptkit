@@ -14,72 +14,72 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2024-09-10 09:08+0000\n"
-"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
+"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
+"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
 "Language: ml\n"
 
-#: ../data/org.aptkit.policy.in.h:1
+#: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
 msgstr "വിശ്വസ്തമായ വസ്തു ഉടമകളുടെ കീ പട്ടിക"
 
-#: ../data/org.aptkit.policy.in.h:2
+#: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr ""
 
-#: ../data/org.aptkit.policy.in.h:3
+#: ../data/org.debian.aptkit.policy.in.h:3
 msgid "Remove downloaded package files"
 msgstr "ഡൗണ്‍ലോഡ് ചെയ്ത ഭണ്ഡാരങ്ങള്‍ നീക്കം ചെയ്യുക"
 
-#: ../data/org.aptkit.policy.in.h:4
+#: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr ""
 "ഡൌണ്‍ലോഡ് ചെയ്ത പാക്കേജ് ഫയലുകള്‍ നീക്കം ചെയ്യാന്‍ താങ്കളുടെ വിശ്വാസ്യയോഗ്യത "
 "തെളിയിക്കുക"
 
-#: ../data/org.aptkit.policy.in.h:5
+#: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
 msgstr "സോഫ്റ്റ്‌വെയര്‍ കോണ്‍ഫിഗറേഷന്‍ മാറ്റുക"
 
-#: ../data/org.aptkit.policy.in.h:6
+#: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
 msgstr ""
 "സോഫ്റ്റ്‌വെയര്‍ ക്രമീകരണത്തില്‍ വ്യത്യാസം വരുത്താന്‍ താങ്കളുടെ "
 "വിശ്വാസ്യയോഗ്യത തെളിയിക്കുക"
 
-#: ../data/org.aptkit.policy.in.h:7
+#: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
 msgstr "സോഫ്റ്റ്‌വെയര്‍ ഭണ്ഡാരം മാറ്റുക"
 
-#: ../data/org.aptkit.policy.in.h:8
+#: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr ""
 "സോഫ്റ്റ്‌വെയര്‍ ഭണ്ടാര ക്രമീകരണത്തില്‍ വ്യത്യാസം വരുത്താന്‍ താങ്കളുടെ "
 "വിശ്വാസ്യയോഗ്യത തെളിയിക്കുക"
 
-#: ../data/org.aptkit.policy.in.h:9
+#: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
 msgstr "ഇന്‍സ്റ്റോള്‍ പാക്കേജ് ഫയല്‍"
 
-#: ../data/org.aptkit.policy.in.h:10
+#: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
 msgstr ""
 "ഈ ഭണ്ഡാരം ഇന്‍സ്റ്റോള്‍ ചെയ്യാന്‍ താങ്കളുടെ വിശ്വാസ്യയോഗ്യത തെളിയിക്കുക"
 
-#: ../data/org.aptkit.policy.in.h:11
+#: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
 msgstr ""
 
-#: ../data/org.aptkit.policy.in.h:12
+#: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
 msgstr ""
 "സോഫ്റ്റ്‌വെയര്‍ കാറ്റലോഗ് പരിഷ്കരിക്കാന്‍ താങ്കളുടെ വിശ്വാസ്യയോഗ്യത "
 "തെളിയിക്കുക"
 
-#: ../data/org.aptkit.policy.in.h:13
+#: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
 msgstr "ഭണ്ഡാരം ഇന്‍സ്റ്റോള്‍ ചെയ്യുകയോ നീക്കം ചെയ്യുകയോ ചെയ്യുക"
 
-#: ../data/org.aptkit.policy.in.h:14
+#: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
 msgstr ""
 "ഡൌണ്‍ലോഡ് ഇന്‍സ്റ്റോള്‍ ചെയ്യണോ നീക്കം ചെയ്യണോ താങ്കളുടെ വിശ്വാസ്യയോഗ്യത "
@@ -89,17 +89,17 @@ msgstr ""
 #. from a high trusted repository that can be explicitely whitelisted.
 #. 
 #. The defaults for this action are the same as
-#. "org.aptkit.install-or-remove-packages".
+#. "org.debian.aptkit.install-or-remove-packages".
 #. 
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
 #. 
-#: ../data/org.aptkit.policy.in.h:25
+#: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
 msgstr ""
 
-#: ../data/org.aptkit.policy.in.h:26
+#: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
 msgstr ""
 
@@ -108,13 +108,13 @@ msgstr ""
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.aptkit.policy.in.h:32
+#: ../data/org.debian.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr ""
 "ഒരു പുതിയ ഭണ്ഡാരം കൂട്ടിച്ചേര്‍ക്കുകയും അതില്‍ നിന്നും പുതിയ പാക്കേജ് "
 "ഇന്‍സ്റ്റോള്‍ ചെയ്യുകയും ചെയ്യുക"
 
-#: ../data/org.aptkit.policy.in.h:33
+#: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
 msgstr ""
 "മറ്റൊരു ഉറവിടത്തില്‍ നിന്നുള്ള സോഫ്റ്റ്‌വെയര്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യാന്‍ "
@@ -128,7 +128,7 @@ msgstr ""
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.aptkit.policy.in.h:42
+#: ../data/org.debian.aptkit.policy.in.h:42
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
@@ -136,37 +136,37 @@ msgstr ""
 "കൂട്ടിച്ചേര്‍ക്കുകയും അതില്‍ നിന്നും പുതിയ പാക്കേജ് ഇന്‍സ്റ്റോള്‍ ചെയ്യുകയും "
 "ചെയ്യുക"
 
-#: ../data/org.aptkit.policy.in.h:43
+#: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
 msgstr ""
 "വിലയ്ക്ക് വാങ്ങിയ സോഫ്റ്റ്‌വെയര്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യാന്‍ താങ്കളുടെ "
 "വിശ്വാസ്യയോഗ്യത തെളിയിക്കുക"
 
-#: ../data/org.aptkit.policy.in.h:44
+#: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
 msgstr ""
 
-#: ../data/org.aptkit.policy.in.h:45
+#: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
 msgstr ""
 "പരിഷ്കരിച്ച സോഫ്റ്റ്‌വെയര്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യാന്‍ താങ്കളുടെ "
 "വിശ്വാസ്യയോഗ്യത തെളിയിക്കുക"
 
-#: ../data/org.aptkit.policy.in.h:46
+#: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
 msgstr "മറ്റു ഉഭയോക്താവിന്റെ കാര്യങ്ങള്‍ നിര്‍ത്തുക"
 
-#: ../data/org.aptkit.policy.in.h:47
+#: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
 "മറ്റുള്ളവരുടെ സോഫ്റ്റ്‌വെയര്‍ മാറ്റങ്ങള്‍ റദ്ദാക്കാന്‍ താങ്കളുടെ "
 "വിശ്വാസ്യയോഗ്യത തെളിയിക്കുക"
 
-#: ../data/org.aptkit.policy.in.h:48
+#: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
 msgstr ""
 
-#: ../data/org.aptkit.policy.in.h:49
+#: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""

@@ -8,70 +8,70 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-09-09 18:39+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"PO-Revision-Date: 2024-09-17 23:29+0000\n"
+"Last-Translator: Jan-Olof Svensson <jan-olof.svensson@abc.se>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2024-09-10 09:08+0000\n"
-"X-Generator: Launchpad (build 1b1ed1ad2dbfc71ee62b5c5491c975135a771bf0)\n"
+"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
+"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
 "Language: sv\n"
 
-#: ../data/org.aptkit.policy.in.h:1
+#: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
 msgstr "Lista nycklar för pålitliga leverantörer"
 
-#: ../data/org.aptkit.policy.in.h:2
+#: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "Du måste autentisera dig för att visa listan över pålitliga nycklar."
 
-#: ../data/org.aptkit.policy.in.h:3
+#: ../data/org.debian.aptkit.policy.in.h:3
 msgid "Remove downloaded package files"
 msgstr "Ta bort hämtade paketfiler"
 
-#: ../data/org.aptkit.policy.in.h:4
+#: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr "Du måste autentisera dig för att tömma hämtade paketfiler."
 
-#: ../data/org.aptkit.policy.in.h:5
+#: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
 msgstr "Ändra programkonfiguration"
 
-#: ../data/org.aptkit.policy.in.h:6
+#: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
 msgstr "Du måste autentisera dig för att ändra programinställningar."
 
-#: ../data/org.aptkit.policy.in.h:7
+#: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
 msgstr "Ändra programförråd"
 
-#: ../data/org.aptkit.policy.in.h:8
+#: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr ""
 "Du måste autentisera dig för att ändra inställningar för programförråd."
 
-#: ../data/org.aptkit.policy.in.h:9
+#: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
 msgstr "Installera paketfil"
 
-#: ../data/org.aptkit.policy.in.h:10
+#: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
 msgstr "Du måste autentisera dig för att installera detta paket."
 
-#: ../data/org.aptkit.policy.in.h:11
+#: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
 msgstr "Uppdatera paketinformation"
 
-#: ../data/org.aptkit.policy.in.h:12
+#: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
 msgstr "Du måste autentisera dig för att uppdatera programkatalogen."
 
-#: ../data/org.aptkit.policy.in.h:13
+#: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
 msgstr "Installera eller ta bort paket"
 
-#: ../data/org.aptkit.policy.in.h:14
+#: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
 msgstr "Du måste autentisera dig för att installera eller ta bort program."
 
@@ -79,17 +79,17 @@ msgstr "Du måste autentisera dig för att installera eller ta bort program."
 #. from a high trusted repository that can be explicitely whitelisted.
 #. 
 #. The defaults for this action are the same as
-#. "org.aptkit.install-or-remove-packages".
+#. "org.debian.aptkit.install-or-remove-packages".
 #. 
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
 #. 
-#: ../data/org.aptkit.policy.in.h:25
+#: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
 msgstr "Installera program från ett mycket pålitligt vitlistat arkiv."
 
-#: ../data/org.aptkit.policy.in.h:26
+#: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
 msgstr "För att installera program måste du genomgå en behörighetskontroll."
 
@@ -98,11 +98,11 @@ msgstr "För att installera program måste du genomgå en behörighetskontroll."
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.aptkit.policy.in.h:32
+#: ../data/org.debian.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
 msgstr "Lägg till ett nytt förråd och installera paket från det"
 
-#: ../data/org.aptkit.policy.in.h:33
+#: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
 msgstr ""
 "Du måste autentisera dig för att installera program från en ny källa."
@@ -115,38 +115,38 @@ msgstr ""
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.aptkit.policy.in.h:42
+#: ../data/org.debian.aptkit.policy.in.h:42
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
 "Lägg till ett nytt förråd för inköpta program och installera paket från det"
 
-#: ../data/org.aptkit.policy.in.h:43
+#: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
 msgstr "Du måste autentisera dig för att installera inköpta program."
 
-#: ../data/org.aptkit.policy.in.h:44
+#: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
 msgstr "Uppgradera paket"
 
-#: ../data/org.aptkit.policy.in.h:45
+#: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
 msgstr "Du måste autentisera dig för att installera uppdaterade program."
 
-#: ../data/org.aptkit.policy.in.h:46
+#: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
 msgstr "Avbryt åtgärden för en annan användare"
 
-#: ../data/org.aptkit.policy.in.h:47
+#: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
 "Du måste autentisera dig för att avbryta någon annans programändringar."
 
-#: ../data/org.aptkit.policy.in.h:48
+#: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
 msgstr "Ställ in en proxyserver för programhämtningar"
 
-#: ../data/org.aptkit.policy.in.h:49
+#: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
@@ -155,7 +155,7 @@ msgstr ""
 
 #: ../aptkit/core.py:2148
 msgid "Do not shutdown the daemon because of inactivity"
-msgstr "Stäng inte av daemonen på grund av inaktivitet"
+msgstr "Stäng inte av tjänsten på grund av inaktivitet"
 
 #: ../aptkit/core.py:2153
 msgid "Do not load any plugins"
@@ -167,15 +167,15 @@ msgstr "Visa intern processinformation"
 
 #: ../aptkit/core.py:2162
 msgid "Quit and replace an already running daemon"
-msgstr "Avsluta och ersätt en redan körande demon"
+msgstr "Avsluta och ersätt en redan pågående tjänst"
 
 #: ../aptkit/core.py:2167
 msgid "Listen on the DBus session bus (Only required for testing"
-msgstr "Lyssna på DBus-sessionsbussen (krävs endast för tester"
+msgstr "Lyssna på DBus-sessionsbussen (krävs endast för testning"
 
 #: ../aptkit/core.py:2171
 msgid "Perform operations in the given chroot"
-msgstr "Genomför åtgärder i angivet chroot-miljö"
+msgstr "Genomför åtgärder i angiven chroot-miljö"
 
 #: ../aptkit/core.py:2176
 msgid "Store profile stats in the specified file"
@@ -275,7 +275,7 @@ msgstr "Lägger till nyckel från fil"
 
 #: ../aptkit/enums.py:364
 msgid "Updating cache"
-msgstr "Uppdaterar cache"
+msgstr "Uppdaterar cache-minnet"
 
 #: ../aptkit/enums.py:365
 msgid "Removing trusted key"
@@ -303,7 +303,7 @@ msgstr "Reparerar ofullständig installation"
 
 #: ../aptkit/enums.py:371
 msgid "Repairing installed software"
-msgstr "Reparerar installerad programvara"
+msgstr "Reparerar installerat program"
 
 #: ../aptkit/enums.py:372
 msgid "Adding software source"
@@ -331,7 +331,7 @@ msgstr "Installation av paketfilen misslyckades"
 
 #: ../aptkit/enums.py:381
 msgid "Installation of software failed"
-msgstr "Installation av programvaran misslyckades"
+msgstr "Installationen av programmet misslyckades"
 
 #: ../aptkit/enums.py:382
 msgid "Adding the key to the list of trusted software vendors failed"
@@ -350,15 +350,15 @@ msgstr ""
 
 #: ../aptkit/enums.py:387
 msgid "Removing software failed"
-msgstr "Borttagning av programvaran misslyckades"
+msgstr "Borttagningen av programmet misslyckades"
 
 #: ../aptkit/enums.py:388
 msgid "Updating software failed"
-msgstr "Uppdatering av programvaran misslyckades"
+msgstr "Uppdateringen av programmet misslyckades"
 
 #: ../aptkit/enums.py:389
 msgid "Upgrading the system failed"
-msgstr "Uppgradering av systemet misslyckades"
+msgstr "Uppgraderingen av systemet misslyckades"
 
 #: ../aptkit/enums.py:390
 msgid "Applying software changes failed"
@@ -425,7 +425,7 @@ msgid ""
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
 msgstr ""
 "Kontrollera om du för närvarande kör ett annat verktyg för programhantering, "
-"tex. Synaptic eller aptitude. Endast ett verktyg åt gången tillåts att göra "
+"tex. Synaptic eller aptitude. Endast ett verktyg åt gången tillåts göra "
 "ändringar."
 
 #: ../aptkit/enums.py:418
@@ -433,8 +433,8 @@ msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
 msgstr ""
-"Detta är ett allvarligt problem. Försök igen senare. Om problemet sker igen "
-"så rapportera detta som ett fel till utvecklarna."
+"Detta är ett allvarligt problem. Försök igen senare. Om problemet uppstår "
+"igen så rapportera detta som ett fel till utvecklarna."
 
 #: ../aptkit/enums.py:421
 msgid ""
@@ -445,29 +445,30 @@ msgstr ""
 
 #: ../aptkit/enums.py:423
 msgid "There isn't any need for an update."
-msgstr "Det finns inget behov för en uppdatering."
+msgstr "Det finns inget behov av en uppdatering."
 
 #: ../aptkit/enums.py:424
 msgid "There isn't any need for an installation"
-msgstr "Det finns inget behov för en installation"
+msgstr "Det finns inget behov av en installation"
 
 #: ../aptkit/enums.py:426
 msgid "There isn't any need for a removal."
-msgstr "Det finns inget behov för en borttagning."
+msgstr "Det finns inget behov av en borttagning."
 
 #: ../aptkit/enums.py:427
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr ""
-"Du begärde att ta bort ett paket som är en systemkritisk del av ditt system."
+"Du begärde borttagning av ett paket som är en systemkritisk del av ditt "
+"system."
 
 #: ../aptkit/enums.py:430
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
 msgstr ""
-"Anslutningen till demonen tappades. Mest sannolikt är att bakgrundsdemonen "
-"kraschade."
+"Anslutningen till tjänsten förlorades. Mest sannolikt är att "
+"bakgrundstjänsten kraschade."
 
 #: ../aptkit/enums.py:432
 msgid "The installation or removal of a software package failed."
@@ -483,7 +484,7 @@ msgid ""
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
-"Det verkar finnas ett programmeringsfel i aptkit, programvaran som låter dig "
+"Det verkar finnas ett programmeringsfel i aptkit, programmet som låter dig "
 "installera/ta bort program och genomföra andra åtgärder relaterade till "
 "pakethantering."
 
@@ -496,7 +497,7 @@ msgid ""
 msgstr ""
 "Detta fel kan orsakas av att ytterligare nödvändiga programpaket saknas "
 "eller inte är installerbara. Det kan även finnas en konflikt mellan "
-"programpaket som inte tillåts att installeras på samma gång."
+"programpaket som inte får installeras på samma gång."
 
 #: ../aptkit/enums.py:445
 msgid "This requires installing packages from unauthenticated sources."
@@ -525,10 +526,10 @@ msgid ""
 "the person or organisation who provided this package file and include the "
 "details beneath."
 msgstr ""
-"Installation av ett paket som strider mot kvalitetsstandarderna tillåts "
-"inte. Detta kan orsaka allvarliga problem på din dator. Kontakta personen "
-"eller organisationen som tillhandahöll denna paketfil och inkludera "
-"nedanstående information."
+"Installation av paket som strider mot kvalitetsstandarderna tillåts inte. "
+"Detta kan orsaka allvarliga problem i din dator. Kontakta personen eller "
+"organisationen som tillhandahöll denna paketfil och inkludera nedanstående "
+"information."
 
 #: ../aptkit/enums.py:463
 msgid ""
@@ -536,7 +537,7 @@ msgid ""
 "is not valid or could not be installed correctly.\n"
 "See the details for more information."
 msgstr ""
-"Den hämtade licensnyckeln som krävs för att köra denna programvara är inte "
+"Den hämtade licensnyckeln som krävs för att köra detta program är inte "
 "giltig eller kunde inte installeras korrekt.\n"
 "Se detaljerad information för ytterligare felsökning."
 
@@ -549,7 +550,7 @@ msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
 msgstr ""
-"Licensnyckeln som låter dig använda denna programvara kunde inte hämtas. "
+"Licensnyckeln som låter dig använda detta program kunde inte hämtas. "
 "Kontrollera din nätverksanslutning."
 
 #: ../aptkit/enums.py:475
@@ -564,8 +565,8 @@ msgid ""
 "PolicyKit session agent."
 msgstr ""
 "Du angav antingen fel lösenord eller avbröt identitetskontrollen.\n"
-"Det kan också finnas en teknisk orsak för felet, om du aldrig såg en "
-"lösenordsprompt: din skrivbordsmiljö tillhandahåller inte någon PolicyKit-"
+"Det kan också finnas en teknisk orsak till felet: om du aldrig såg en "
+"lösenordsprompt så tillhandahåller din skrivbordsmiljö inte någon PolicyKit-"
 "sessionsagent."
 
 #: ../aptkit/enums.py:485
@@ -879,7 +880,7 @@ msgstr "Hämtat"
 #: ../aptkit/gtk3widgets.py:860
 #, python-format
 msgid "CD/DVD '%s' is required"
-msgstr "Cd/dvd-skivan \"%s\" krävs"
+msgstr "CD/DVD-skivan \"%s\" krävs"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
 #: ../aptkit/gtk3widgets.py:862
@@ -888,7 +889,7 @@ msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
 "packages from it."
 msgstr ""
-"Mata in ovanstående cd/dvd-skiva i enheten \"%s\" för att installera "
+"Mata in ovanstående CD/DVD-skiva i enheten \"%s\" för att installera "
 "programpaket från den."
 
 #: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
@@ -992,7 +993,7 @@ msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
 msgstr ""
-"Om du inte vet varför filen redan finns där så är det oftast det bästa att "
+"Om du inte vet varför filen redan finns där så är det vanligtvis säkert att "
 "ersätta den."
 
 #: ../aptkit/gtk3widgets.py:1080
@@ -1045,7 +1046,7 @@ msgstr "Struktur för %s"
 #: ../aptkit/progress.py:321
 #, python-format
 msgid "Description of %s"
-msgstr "Beskrivning för %s"
+msgstr "Beskrivning av %s"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:324
@@ -1103,7 +1104,7 @@ msgstr "Paketet %s är inte installerat"
 #: ../aptkit/worker/aptworker.py:388
 #, python-format
 msgid "The version %s of %s isn't installed"
-msgstr "Version %s av %s är inte installerat"
+msgstr "Version %s av %s är inte installerad"
 
 #: ../aptkit/worker/aptworker.py:403
 #, python-format
@@ -1120,7 +1121,7 @@ msgstr "Version %s av %s finns inte tillgänglig."
 #: ../aptkit/worker/aptworker.py:572
 #, python-format
 msgid "The keyserver URL is invalid: %s"
-msgstr "Nyckelsreverns URL är ogiltig: %s"
+msgstr "Nyckelserverns URL är ogiltig: %s"
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
@@ -1238,7 +1239,7 @@ msgstr ""
 #: ../aptkit/worker/aptworker.py:1335
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
-msgstr "Katalogen där nyckeln ska installeras finns ännu inte: %s"
+msgstr "Mappen där nyckeln ska installeras finns ännu inte: %s"
 
 #: ../aptkit/worker/aptworker.py:1346
 #, python-format
