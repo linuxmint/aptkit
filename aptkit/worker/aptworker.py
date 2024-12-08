@@ -1181,7 +1181,7 @@ class AptWorker(BaseWorker):
         # get the additional dependencies
         for pkg in changes:
             if (pkg.marked_upgrade and pkg.is_installed and
-                    pkg.name not in upgrades):
+                    pkg.name not in upgrades and pkg.name not in installs):
                 pkg_str = "%s=%s" % (pkg.name, pkg.candidate.version)
                 depends[PKGS_UPGRADE].append(pkg_str)
             elif pkg.marked_reinstall and pkg.name not in reinstalls:
