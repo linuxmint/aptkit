@@ -1,3 +1,9 @@
+aptkit (1.0.3) xia; urgency=medium
+
+  * Don't add an upgraded pkg as dependency when it's marked for install
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 08 Dec 2024 16:38:44 +0000
+
 aptkit (1.0.2) xia; urgency=medium
 
   * l10n: Update translations
