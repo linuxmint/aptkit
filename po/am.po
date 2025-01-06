@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-09-09 17:24+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"PO-Revision-Date: 2024-12-30 21:56+0000\n"
+"Last-Translator: samson <Unknown>\n"
 "Language-Team: Amharic <am@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
-"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+"X-Launchpad-Export-Date: 2025-01-06 12:02+0000\n"
+"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
 "Language: am\n"
 
 #: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
-msgstr ""
+msgstr "የሚታመኑ ሻጮች ዝርዝር ቁልፎች"
 
 #: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
-msgstr ""
+msgstr "የሚታመኑ ሻጮች ዝርዝር ቁልፎችን ለመመልከት ማረጋገጫ ያስፈልጋል"
 
 #: ../data/org.debian.aptkit.policy.in.h:3
 msgid "Remove downloaded package files"
@@ -32,19 +32,19 @@ msgstr "የወረዱ ጥቅል ፋይሎችን ማስወገጃ"
 
 #: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
-msgstr ""
+msgstr "የ ወረዱ ጥቅል ፋይሎችን ለማጽዳት ማረጋገጫ ያስፈልጋል"
 
 #: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
-msgstr ""
+msgstr "የ ሶፍትዌር ማዋቀሪያ መቀየሪያ"
 
 #: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
-msgstr ""
+msgstr "የ ሶፍትዌር ማዋቀሪያን ለመቀየር ማረጋገጫ ያስፈልጋል"
 
 #: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
-msgstr ""
+msgstr "የ ሶፍትዌር ማጠራቀሚያ መቀየሪያ"
 
 #: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
@@ -64,7 +64,7 @@ msgstr "የጥቅል መረጃዎችን ማሻሻል"
 
 #: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
-msgstr ""
+msgstr "የ ሶፍትዌር መዝገብ ለማሻሻል ማረጋገጫ ያስፈልጋል"
 
 #: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
@@ -86,11 +86,11 @@ msgstr "ሶፍትዌርን ለመግጠም ወይም ለማስወገድ ማረ�
 #. 
 #: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
-msgstr ""
+msgstr "ሶፍትዌር ይግጠሙ በ ከፍተኛ-ከሚታመኑ የ ነጭ ዝርዝር ማጣራቀሚያ ውስጥ"
 
 #: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
-msgstr ""
+msgstr "ሶፍትዌር ለመግጠም ማረጋገጫ ያስፈልጋል"
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -99,7 +99,7 @@ msgstr ""
 #. the aptkit methods.
 #: ../data/org.debian.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
-msgstr ""
+msgstr "አዲስ ማጠራቀሚያ መጨመሪያ እና ጥቅሎች ከ ውስጡ መግጠሚያ"
 
 #: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
@@ -116,7 +116,7 @@ msgstr "ሶፍትዌርን ከሌላ ምንጭ ለመግጠም ማረጋገጫ �
 #: ../data/org.debian.aptkit.policy.in.h:42
 msgid ""
 "Add a new repository of purchased software and install packages from it"
-msgstr ""
+msgstr "አዲስ ማጠራቀሚያ መጨመሪያ እና የተገዙ ሶፍትዌር ጥቅሎች ከ ውስጡ መግጠሚያ"
 
 #: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
@@ -140,20 +140,20 @@ msgstr "የሌላ ተጠቃሚን ሶፍትዌር ለመሰረዝ ማረጋገ�
 
 #: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
-msgstr ""
+msgstr "ለ ሳፍትዌር ማውረጃ ወኪል ማሰናጃ"
 
 #: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
-msgstr ""
+msgstr "ለ ሳፍትዌር ማውረጃ ወኪል ለማሰናዳት ማረጋገጫ ያስፈልጋል"
 
 #: ../aptkit/core.py:2148
 msgid "Do not shutdown the daemon because of inactivity"
-msgstr ""
+msgstr "ምንም እንቅስቃሴ ባይታይዎትም አያጥፉ"
 
 #: ../aptkit/core.py:2153
 msgid "Do not load any plugins"
-msgstr ""
+msgstr "ምንም ተሰኪ አይጫኑ"
 
 #: ../aptkit/core.py:2157
 msgid "Show internal processing information"
@@ -161,23 +161,23 @@ msgstr "የውስጥ ሂደቱን መረጃ ማሳያ"
 
 #: ../aptkit/core.py:2162
 msgid "Quit and replace an already running daemon"
-msgstr ""
+msgstr "መውጫ እና መቀየሪያ እየሄደ ያለውን ፕሮግራም"
 
 #: ../aptkit/core.py:2167
 msgid "Listen on the DBus session bus (Only required for testing"
-msgstr ""
+msgstr "ያድምጡ የ DBus session bus (የሚፈለገው ለ መሞከሪያ ብቻ ነው)"
 
 #: ../aptkit/core.py:2171
 msgid "Perform operations in the given chroot"
-msgstr ""
+msgstr "በ ተሰጠው chroot ውስጥ ተግባሮች መፈጸሚያ"
 
 #: ../aptkit/core.py:2176
 msgid "Store profile stats in the specified file"
-msgstr ""
+msgstr "የ ገጽታ ሁኔታዎችን በ ተወሰነ ፋይል ውስጥ ያስቀምጡ"
 
 #: ../aptkit/core.py:2181
 msgid "Do not make any changes to the system (Only of use to developers)"
-msgstr ""
+msgstr "በ ስርአቱ ላይ ምንም ለውጥ አይፈጽሙ (ይህ ለ አበልጻጊዎች ብቻ ነው)"
 
 #: ../aptkit/enums.py:337
 msgid "Installed file"
@@ -193,15 +193,15 @@ msgstr "ከፋይል የተጨመረ ቁልፍ"
 
 #: ../aptkit/enums.py:340
 msgid "Updated cache"
-msgstr ""
+msgstr "cache ማሻሻያ"
 
 #: ../aptkit/enums.py:341
 msgid "Search done"
-msgstr ""
+msgstr "ፍለጋው ተጠናቋል"
 
 #: ../aptkit/enums.py:342
 msgid "Removed trusted key"
-msgstr ""
+msgstr "የ ተወገዱ የሚታመኑ ቁልፎች"
 
 #: ../aptkit/enums.py:343
 msgid "Removed packages"
@@ -221,27 +221,27 @@ msgstr "የተተገበሩ ለውጦች"
 
 #: ../aptkit/enums.py:347
 msgid "Repaired incomplete installation"
-msgstr ""
+msgstr "ያልተጨረሰ መግጠሚያ ተጠግኗል"
 
 #: ../aptkit/enums.py:348
 msgid "Repaired broken dependencies"
-msgstr ""
+msgstr "የ ተሰበሩ ጥገኞች ተጠግነዋል"
 
 #: ../aptkit/enums.py:349
 msgid "Added software source"
-msgstr ""
+msgstr "የተጨመሩ የ ሶፍትዌር ምንጮች"
 
 #: ../aptkit/enums.py:350
 msgid "Enabled component of the distribution"
-msgstr ""
+msgstr "ለ ስርጭቱ የ ታቻሉ አካላቶች"
 
 #: ../aptkit/enums.py:351
 msgid "Removed downloaded package files"
-msgstr ""
+msgstr "የ ተወገዱ የ ወረዱ ጥቅል ፋይሎች"
 
 #: ../aptkit/enums.py:352
 msgid "Reconfigured installed packages"
-msgstr ""
+msgstr "የ ተገጠሙ ጥቅሎች እንደገና ማሰናጃ"
 
 #: ../aptkit/enums.py:356
 msgid "Successful"
@@ -269,11 +269,11 @@ msgstr "ከፋይል ቁልፍ በመጨመር ላይ"
 
 #: ../aptkit/enums.py:364
 msgid "Updating cache"
-msgstr ""
+msgstr "cache በማሻሻል ላይ"
 
 #: ../aptkit/enums.py:365
 msgid "Removing trusted key"
-msgstr ""
+msgstr "የሚታመኑ ቁልፎች በማስወገድ ላይ"
 
 #: ../aptkit/enums.py:366
 msgid "Removing packages"
@@ -293,31 +293,31 @@ msgstr "ለውጦችን በመተግበር ላይ"
 
 #: ../aptkit/enums.py:370
 msgid "Repairing incomplete installation"
-msgstr ""
+msgstr "ያልተሟሉ መግጠሚያዎችን በ መጠገን ላይ"
 
 #: ../aptkit/enums.py:371
 msgid "Repairing installed software"
-msgstr ""
+msgstr "የተገጠሙ ሶፍትዌሮችን በ መጠገን ላይ"
 
 #: ../aptkit/enums.py:372
 msgid "Adding software source"
-msgstr ""
+msgstr "የ ሶፍትዌር ምንጮችን በ መጨመር ላይ"
 
 #: ../aptkit/enums.py:373
 msgid "Enabling component of the distribution"
-msgstr ""
+msgstr "የ ስርጭቱን አካላቶች በማስቻል ላይ"
 
 #: ../aptkit/enums.py:374
 msgid "Removing downloaded package files"
-msgstr ""
+msgstr "የ ወረዱ ጥቅል ፋይሎችን በ ማስወገድ ላይ"
 
 #: ../aptkit/enums.py:375
 msgid "Reconfiguring installed packages"
-msgstr ""
+msgstr "የ ተገጠሙ ጥቅሎችን እንደገና በ ማሰናዳት ላይ"
 
 #: ../aptkit/enums.py:376 ../aptkit/enums.py:517
 msgid "Searching"
-msgstr ""
+msgstr "በ መፈለግ ላይ"
 
 #: ../aptkit/enums.py:380
 msgid "Installation of the package file failed"
@@ -329,7 +329,7 @@ msgstr "ሶፍትዌሩን መግጠም አልተሳካም"
 
 #: ../aptkit/enums.py:382
 msgid "Adding the key to the list of trusted software vendors failed"
-msgstr ""
+msgstr "ቁልፍ ወደ ታመኑ የ ሶፍትዌር ሻጮች ዝርዝር ውስጥ መጨመር አልተቻለም"
 
 #: ../aptkit/enums.py:384
 msgid "Refreshing the software list failed"
@@ -337,7 +337,7 @@ msgstr "ሶፍትዌሩን ማነቃቃት አልተሳካም"
 
 #: ../aptkit/enums.py:385
 msgid "Removing the vendor from the list of trusted ones failed"
-msgstr ""
+msgstr "ቁልፍ ከ ታመኑ የ ሶፍትዌር ሻጮች ዝርዝር ውስጥ ማስወገድ አልተቻለም"
 
 #: ../aptkit/enums.py:387
 msgid "Removing software failed"
@@ -357,31 +357,31 @@ msgstr "የሶፍትዌር ለውጦቹን መተግበር አልተሳካም"
 
 #: ../aptkit/enums.py:391
 msgid "Repairing incomplete installation failed"
-msgstr ""
+msgstr "ያልተጨረሰውን መግጠሚያ መጠገን አልተቻለም"
 
 #: ../aptkit/enums.py:393
 msgid "Repairing broken dependencies failed"
-msgstr ""
+msgstr "የ ተሰበሩ ጥገኞችን መጠገን አልተሳካም"
 
 #: ../aptkit/enums.py:394
 msgid "Adding software source failed"
-msgstr ""
+msgstr "የ ሶፍትዌር ምንጮችን መጨመር ወድቋል"
 
 #: ../aptkit/enums.py:395
 msgid "Enabling component of the distribution failed"
-msgstr ""
+msgstr "የ ስርጭቱን አካላት ማስቻል አልተቻለም"
 
 #: ../aptkit/enums.py:397 ../aptkit/enums.py:398
 msgid "Removing downloaded package files failed"
-msgstr ""
+msgstr "ዝቅ የ ተደረጉ ጥቅል ፋይሎችን ማስወገድ አልተቻለም"
 
 #: ../aptkit/enums.py:399
 msgid "Search failed"
-msgstr ""
+msgstr "ፍለጋው አልተሳካም"
 
 #: ../aptkit/enums.py:400
 msgid "Adding license key"
-msgstr ""
+msgstr "የ ፍቃድ ቁልፍ በ መጨመር ላይ"
 
 #: ../aptkit/enums.py:404 ../aptkit/enums.py:405
 msgid "Check your Internet connection."
@@ -393,6 +393,8 @@ msgid ""
 "they are a common source of problems.\n"
 "Furthermore run the following command in a Terminal: apt-get install -f"
 msgstr ""
+"እርስዎ የ ሶስተኛ አካል ማጠራቀሚያ ይጠቀሙ እንደሆን ይመርምሩ: ይህ ከሆነ ያሰናክሉት: እነዚህ መደበኛ የ ችግር ምንጮች "
+"ናቸው: በበለጠ እባክዎን የሚቀጥለውን ትእዛዝ ያስኪዱ በ ተርሚናል ውስጥ: apt-get install -f"
 
 #: ../aptkit/enums.py:411
 msgid "The selected file may not be a GPG key file or it might be corrupt."
@@ -402,25 +404,29 @@ msgstr "የተመረጠው ፋይል ምናልባት የጂፒጂ ቁልፍ ፋ�
 msgid ""
 "The selected key couldn't be removed. Check that you provided a valid "
 "fingerprint."
-msgstr ""
+msgstr "የ ተመረጠውን ቁልፍ ማስወገድ አልተቻለም: ይመርምሩ ትክክለኛ የ ጣት አሻራ ማቅረብዎትን"
 
 #: ../aptkit/enums.py:415
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
 msgstr ""
+"እርስዎ ሌላ የ ሶፍትዌር አስተዳዳሪ መሳሪያ ይጠቀሙ እንደሆን ይመርምሩ: ለምሳሌ: Synaptic ወይንም aptitude. "
+"አንድ መሳሪያ ብቻ ነው የሚፈቀደው በ አንድ ጊዘ ለውጥ ለ መፈጸም"
 
 #: ../aptkit/enums.py:418
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
 msgstr ""
+"ይህ አደገኛ ችግር ነው: ትንሽ ቆይተው እንደገና ይሞክሩ: ይህ ችግር እንደገና ከታየ: እባክዎን ችግሩን ለ አበልፃጊዎቹ "
+"ያሳውቁ"
 
 #: ../aptkit/enums.py:421
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
-msgstr ""
+msgstr "የ ጥቅል ስም ፊደል ትክክል መሆኑን ይመርምሩ እና ተገቢውን ማጠራቀሚያ ያስችሉ"
 
 #: ../aptkit/enums.py:423
 msgid "There isn't any need for an update."
@@ -437,13 +443,13 @@ msgstr "ማስወገድ አይስፈልጎትም"
 #: ../aptkit/enums.py:427
 msgid ""
 "You requested to remove a package which is an essential part of your system."
-msgstr ""
+msgstr "እርስዎ ለ ማስወገድ የጠየቁት ጥቅል ለ እርስዎ ስርአት በጣም አስፈላጊ ነው"
 
 #: ../aptkit/enums.py:430
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
-msgstr ""
+msgstr "ወደ እረዳት ግንኙነት ተቋርጧል: ምናልባት ከ በስተ ጀርባ እረዳቱ ተጋጭቶ ይሆናል"
 
 #: ../aptkit/enums.py:432
 msgid "The installation or removal of a software package failed."
@@ -451,7 +457,7 @@ msgstr "የሶፍትዌር ጥቅል መግጠም ወይም ማስወገድ ወ�
 
 #: ../aptkit/enums.py:434
 msgid "The requested feature is not supported."
-msgstr ""
+msgstr "የ ተጠየቀው ገጽታ የ ተደገፈ አይደለም"
 
 #: ../aptkit/enums.py:435
 msgid ""
@@ -467,10 +473,12 @@ msgid ""
 "between software packages which are not allowed to be installed at the same "
 "time."
 msgstr ""
+"ይህ ስህተት የሚፈጠረው ተጨማሪ የ ሶፍትዌር ጥቅል በ መፈለግ የ ተነሳ ነው: ይህ አካል ጎድሏል ወይንም አልተገጠመም: በ "
+"ተጨማሪ ግጭት ሊፈጥር ይችላል በ ጥቅል ሶፍትዌሮች በ ተመሳሳይ ጊዜ መገጠም የሌለባቸው"
 
 #: ../aptkit/enums.py:445
 msgid "This requires installing packages from unauthenticated sources."
-msgstr ""
+msgstr "ይህ ያልተረጋገጡ ምንጮችን ጥቅል መግጠም ያስፈልጋል"
 
 #: ../aptkit/enums.py:447
 msgid ""
@@ -478,11 +486,13 @@ msgid ""
 "software package or it was cancelled in an unfriendly way. You have to "
 "repair this before you can install or remove any further software."
 msgstr ""
+"መግጠሙ የ ተሰናከለበት ምክንያት ስህተት ስለ ተፈጠረ ነው በ ተመሳሳይ ሶፍትዌር ጥቅል ውስጥ ወይንም ተስማሚ ስላልሆነ "
+"ተሰርዟል: እርስዎ ይህን መጠገን ወይንም ማስወገድ አለብዎት ሌላ ሶፍትዌር ከ መግጠምዎ በፊት"
 
 #: ../aptkit/enums.py:453
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
-msgstr ""
+msgstr "እባክዎን ፋይሉን በ እርስዎ ኮምፒዩተር ውስጥ ያስቀምጡ እና የ ፋይሉን ፍቃድ ይመርምሩ"
 
 #: ../aptkit/enums.py:456
 msgid ""
@@ -491,6 +501,9 @@ msgid ""
 "the person or organisation who provided this package file and include the "
 "details beneath."
 msgstr ""
+"የ ጥቅል መግጠሚያ የ ጥራት ደረጃውን የ ጠበቀ ስላልሆነ አይፈቀደም: ይህ በ እርስዎ ኮምፒዩተር ላይ ትልቅ ችግር ሊፈጥር "
+"ይችላል: እባክዎን ይህን የ ጥቅል ፋይል የሚያቀርበውን ግለሰብ ወይንም ድርጅት ይገናኙ እና ዝርዝሩን እዚህ ከ ታች በኩል "
+"ያያይዙ"
 
 #: ../aptkit/enums.py:463
 msgid ""
@@ -498,20 +511,23 @@ msgid ""
 "is not valid or could not be installed correctly.\n"
 "See the details for more information."
 msgstr ""
+"የ ወረደው የ ፍቃድ ቁልፍ ይህን ሶፍትዌር ለ ማስኬድ የሚያስችለው ዋጋ ያለው አይደለም ወይንም በ ትክክል መግጠም "
+"አይቻልም: ለ በለጠ መረጃ ይህን ይመልከቱ"
 
 #: ../aptkit/enums.py:469
 msgid "All available upgrades have already been installed."
-msgstr ""
+msgstr "ሁሉም ዝግጁ ማሻሻያዎች ቀደም ብለው ተገጥመዋል"
 
 #: ../aptkit/enums.py:471
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
 msgstr ""
+"የ ፍቃድ ቁልፍ እርስዎን ሶፍትዌር እንዲገጥሙ የሚያስችሎትን ማውረድ አልተቻለም: እባክዎን የ እርስዎን ኔትዎርክ ይመርምሩ"
 
 #: ../aptkit/enums.py:475
 msgid "You don't have the required privileges to perform this action."
-msgstr ""
+msgstr "ይህን ለ መፈጸም እርስዎ በቂ ፍቃድ የሎትም"
 
 #: ../aptkit/enums.py:477
 msgid ""
@@ -520,6 +536,9 @@ msgid ""
 "haven't seen a password dialog: your desktop environment doesn't provide a "
 "PolicyKit session agent."
 msgstr ""
+"እርስዎ ያቀረቡት የ መግቢያ ቃል የ ተሳሳተ ነው ወይንም ማረጋገጫውን ሰርዘዋል\n"
+"በተጨማሪ የ ቴክኒካል ስህተት ሊኖር ይችላል: እርስዎ የ መግቢያ ቃል ንግግር ካልታየዎት: የ እርስዎ ዴስክቶፕ አካባቢ "
+"ይህን የ PolicyKit ክፍለ ጊዜ ወኪል አያቀርብም"
 
 #: ../aptkit/enums.py:485
 msgid "Failed to download package files"
@@ -531,11 +550,11 @@ msgstr "የማስቀመጫ መረጃ ማውረድ ወድቋል"
 
 #: ../aptkit/enums.py:488
 msgid "Package dependencies cannot be resolved"
-msgstr ""
+msgstr "ለ ጥቅል ጥገኞች መፍትሄ መስጠት አልተቻለም"
 
 #: ../aptkit/enums.py:489
 msgid "The package system is broken"
-msgstr ""
+msgstr "የ ስርአቱ ጥቅል ተሰብሯል"
 
 #: ../aptkit/enums.py:490
 msgid "Key was not installed"
@@ -559,7 +578,7 @@ msgstr "ጥቅሉ አልተገኘም"
 
 #: ../aptkit/enums.py:495
 msgid "Package is already up to date"
-msgstr ""
+msgstr "ጥቅሉ ዘመናዊ ነው"
 
 #: ../aptkit/enums.py:496
 msgid "Package is already installed"
@@ -571,7 +590,7 @@ msgstr "ጥቅሉ አልተገጠመም"
 
 #: ../aptkit/enums.py:498
 msgid "Failed to remove essential system package"
-msgstr ""
+msgstr "አስፈላጊ የ ስርአት ጥቅል ማስወገድ አልተቻለም"
 
 #: ../aptkit/enums.py:500
 msgid "Task cannot be monitored or controlled"
@@ -579,7 +598,7 @@ msgstr "ስራዎቹን መመልከት ወይም መቆጣጠር አልተቻ�
 
 #: ../aptkit/enums.py:501
 msgid "Package operation failed"
-msgstr ""
+msgstr "የ ጥቅል ተግባር ወድቋል"
 
 #: ../aptkit/enums.py:502
 msgid "Requires installation of untrusted packages"
@@ -587,43 +606,43 @@ msgstr "ያልታመኑ ጥቅሎችን መግጠም ያስፈልጋል"
 
 #: ../aptkit/enums.py:504
 msgid "Previous installation hasn't been completed"
-msgstr ""
+msgstr "ያለፈው መግጠሚያ አልጨረሰም"
 
 #: ../aptkit/enums.py:505
 msgid "The package is of bad quality"
-msgstr ""
+msgstr "የ ጥቅሉ ጥራት ጥሩ አይደለም"
 
 #: ../aptkit/enums.py:506
 msgid "Package file could not be opened"
-msgstr ""
+msgstr "የ ጥቅሉን ፋይል መክፈት አልተቻለም"
 
 #: ../aptkit/enums.py:507
 msgid "Not supported feature"
-msgstr ""
+msgstr "የ ተደገፈ ገጽታ አይደለም"
 
 #: ../aptkit/enums.py:508
 msgid "Failed to download the license key"
-msgstr ""
+msgstr "የ ፍቃድ ቁልፍ ማውረድ አልተቻለም"
 
 #: ../aptkit/enums.py:509
 msgid "Failed to install the license key"
-msgstr ""
+msgstr "የ ፍቃድ ቁልፍ መግጠም አልተቻለም"
 
 #: ../aptkit/enums.py:510
 msgid "The system is already up to date"
-msgstr ""
+msgstr "ስርአቱ ዘመናዊ ነው"
 
 #: ../aptkit/enums.py:511
 msgid "You could not be authorized"
-msgstr ""
+msgstr "እርስዎ በቂ ፍቃድ የሎትም"
 
 #: ../aptkit/enums.py:512
 msgid "You are not allowed to perform this action"
-msgstr ""
+msgstr "እርስዎ ይህን ተግባር መፈጸም አይችሉም"
 
 #: ../aptkit/enums.py:513
 msgid "An unhandlable error occured"
-msgstr ""
+msgstr "ትልቅ ችግር ተፈጥሯል"
 
 #: ../aptkit/enums.py:516
 msgid "Waiting for service to start"
@@ -631,19 +650,19 @@ msgstr "ግልጋሎቱን ለመጀመር በመጠበቅ ላይ"
 
 #: ../aptkit/enums.py:518
 msgid "Waiting"
-msgstr ""
+msgstr "በመጠበቅ ላይ"
 
 #: ../aptkit/enums.py:519
 msgid "Waiting for required medium"
-msgstr ""
+msgstr "የሚፈለገውን መገናኛ በ መጠበቅ ላይ"
 
 #: ../aptkit/enums.py:520
 msgid "Waiting for other software managers to quit"
-msgstr ""
+msgstr "ሌሎች የ ሶፍትዌር አስተዳዳሪዎች እስኪወጡ በ መጠበቅ ላይ"
 
 #: ../aptkit/enums.py:521
 msgid "Waiting for configuration file prompt"
-msgstr ""
+msgstr "የ ማሰናጃ ፋይል በ መጠበቅ ላይ"
 
 #: ../aptkit/enums.py:523
 msgid "Running task"
@@ -655,7 +674,7 @@ msgstr "በማውረድ ላይ"
 
 #: ../aptkit/enums.py:525
 msgid "Querying software sources"
-msgstr ""
+msgstr "የ ሶፍትዌር ምንጮች በ መጠየቅ ላይ"
 
 #: ../aptkit/enums.py:526
 msgid "Cleaning up"
@@ -663,7 +682,7 @@ msgstr "በማጽዳት ላይ"
 
 #: ../aptkit/enums.py:527
 msgid "Resolving dependencies"
-msgstr ""
+msgstr "ጥገኝነትን በ ማስወገድ ላይ"
 
 #: ../aptkit/enums.py:529
 msgid "Finished"
@@ -679,7 +698,7 @@ msgstr "የሶፍትዌር ዝርዝሮችን በመጫን ላይ"
 
 #: ../aptkit/enums.py:532
 msgid "Waiting for authentication"
-msgstr ""
+msgstr "ማረጋገጫ በ መጠበቅ ላይ"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:536
@@ -703,19 +722,19 @@ msgstr "በማስወገድ ላይ %s"
 #: ../aptkit/enums.py:542
 #, python-format
 msgid "Completely removing %s"
-msgstr ""
+msgstr "በሙሉ በ ማስወገድ ላይ %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:544
 #, python-format
 msgid "Noting disappearance of %s"
-msgstr ""
+msgstr "ምንም አልጠፋም ከ %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:546
 #, python-format
 msgid "Running post-installation trigger %s"
-msgstr ""
+msgstr "በ ማስኬድ ላይ መጀመሪያ ከ-መግጠሚያ ማስነሻ በፊት%s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:548
@@ -727,49 +746,49 @@ msgstr "በማሻሻል ላይ %s"
 #: ../aptkit/enums.py:550
 #, python-format
 msgid "Unpacking %s"
-msgstr ""
+msgstr "በ ማራገፍ ላይ %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:552
 #, python-format
 msgid "Preparing installation of %s"
-msgstr ""
+msgstr "ለ መግጠም በ መሰናዳት ላይ የ %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:554
 #, python-format
 msgid "Preparing configuration of %s"
-msgstr ""
+msgstr "ማሰናጃ በ መሰናዳት ላይ ለ %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:556
 #, python-format
 msgid "Preparing removal of %s"
-msgstr ""
+msgstr "ለ ማስወገድ በ መሰናዳት ላይ %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:558
 #, python-format
 msgid "Preparing complete removal of %s"
-msgstr ""
+msgstr "በሙሉ ለ ማስወገድ በ መሰናዳት ላይ %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:560
 #, python-format
 msgid "Installed %s"
-msgstr ""
+msgstr "ተገጥሟል %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:562
 #, python-format
 msgid "Completely removed %s"
-msgstr ""
+msgstr "በሙሉ ተወግዷል %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:564
 #, python-format
 msgid "Removed %s"
-msgstr ""
+msgstr "ተወግዷል %s"
 
 #: ../aptkit/enums.py:567
 msgid "Done"
