@@ -318,7 +318,7 @@ _ICONS_ROLE = {
     ROLE_UPDATE_CACHE: 'aptkit-update-cache',
     ROLE_REMOVE_PACKAGES: 'aptkit-delete',
     ROLE_UPGRADE_PACKAGES: 'aptkit-upgrade',
-    ROLE_UPGRADE_SYSTEM: 'system-software-update'}
+    ROLE_UPGRADE_SYSTEM: 'aptkit-upgrade'}
 
 _PAST_ROLE = {
     ROLE_INSTALL_FILE: _("Installed file"),
