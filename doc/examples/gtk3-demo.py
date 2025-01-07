@@ -116,7 +116,7 @@ class AptKitDemo(object):
         self.win.set_title("Aptkit Demo")
         icon_theme = Gtk.IconTheme.get_default()
         try:
-            Gtk.window_set_default_icon(icon_theme.load_icon("aptkit-setup",
+            Gtk.window_set_default_icon(icon_theme.load_icon("aptkit-working",
                                                               32, 0))
         except (GLib.GError, AttributeError):
             pass
