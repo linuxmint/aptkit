@@ -503,7 +503,8 @@ class AptProgressDialog(Gtk.Dialog):
         hbox = Gtk.HBox()
         hbox.set_spacing(12)
         hbox.set_border_width(6)
-        self.icon = AptRoleIcon()
+        self.icon = Gtk.Image()
+        self.icon.set_from_icon_name("package-x-generic", Gtk.IconSize.DIALOG)
         hbox.pack_start(self.icon, False, True, 0)
         vbox = Gtk.VBox()
         vbox.set_spacing(12)
@@ -652,7 +653,6 @@ class AptProgressDialog(Gtk.Dialog):
                              self._on_config_file_conflict))
         self._on_role_changed(transaction, transaction.role)
         self.progress.set_transaction(transaction)
-        self.icon.set_transaction(transaction)
         self.label.set_transaction(transaction)
         self.expander.set_transaction(transaction)
         self._transaction = transaction
