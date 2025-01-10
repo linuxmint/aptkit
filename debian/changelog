@@ -1,3 +1,12 @@
+aptkit (1.0.4) xia; urgency=medium
+
+  * l10n: Update translations
+  * icons: Fix wrong icon name
+  * icons: Switch to aptkit icon name
+  * gtk3widgets: Use a generic package icon name
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 10 Jan 2025 11:27:40 +0000
+
 aptkit (1.0.3) xia; urgency=medium
 
   * Don't add an upgraded pkg as dependency when it's marked for install
