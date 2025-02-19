@@ -45,7 +45,6 @@ except ImportError:
     from ConfigParser import ConfigParser
 
 import apt
-import apt.auth
 import apt.cache
 import apt.debfile
 import apt_pkg
@@ -562,6 +561,10 @@ class AptWorker(BaseWorker):
         keyserver - the keyserver (e.g. keyserver.ubuntu.com)
         """
         log.info("Adding vendor key from keyserver: %s %s", keyid, keyserver)
+
+        if True:
+            return
+
         # Perform some sanity checks
         try:
             res = urlsplit(keyserver)
@@ -602,6 +605,10 @@ class AptWorker(BaseWorker):
         path -- absolute path to the key file
         """
         log.info("Adding vendor key from file: %s", path)
+
+        if True:
+            return
+
         trans.progress = 101
         trans.status = STATUS_COMMITTING
         with DaemonForkProgress(trans) as progress:
@@ -619,6 +626,10 @@ class AptWorker(BaseWorker):
         fingerprint -- fingerprint of the key to remove
         """
         log.info("Removing vendor key: %s", fingerprint)
+
+        if True:
+            return
+
         trans.progress = 101
         trans.status = STATUS_COMMITTING
         try:
@@ -1531,7 +1542,7 @@ class AptWorker(BaseWorker):
 
     def get_trusted_vendor_keys(self):
         """Return a list of trusted GPG keys."""
-        return [key.keyid for key in apt.auth.list_keys()]
+        return []
 
 
 # vim:ts=4:sw=4:et
