@@ -204,7 +204,6 @@ class AptPackageKitWorker(aptworker.AptWorker):
                                           pk.FilterEnum.NEWEST)
         self.groups = bitfield_summarize(*SECTION_GROUP_MAP.values())
         # FIXME: Add support for Plugins
-        self.provides = (pk.ProvidesEnum.ANY)
         self.mime_types = ["application/x-deb"]
 
     def _run_transaction(self, trans):
@@ -927,7 +926,7 @@ class AptPackageKitWorker(aptworker.AptWorker):
                     # keep supported_type as False
                     pass
 
-        if not supported_type and provides_type != pk.ProvidesEnum.ANY:
+        if not supported_type:
             # none of the plugins felt responsible for this type
             raise TransactionFailed(aptkit_enums.ERROR_NOT_SUPPORTED,
                                     "Query type '%s' is not supported" %
