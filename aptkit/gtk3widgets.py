@@ -189,6 +189,7 @@ class AptProgressBar(Gtk.ProgressBar):
     """
     def __init__(self, transaction=None):
         Gtk.ProgressBar.__init__(self)
+        self.set_show_text(True)
         self.set_ellipsize(Pango.EllipsizeMode.END)
         self.set_text(" ")
         self.set_pulse_step(0.05)
