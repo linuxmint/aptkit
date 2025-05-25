@@ -93,12 +93,12 @@ TRANSACTION_DEL_TIMEOUT = 30
 
 # regexp for the pkgname and optional arch, for details see
 #   http://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Source
-REGEX_VALID_PACKAGENAME = "^[a-z0-9][a-z0-9\-+.]+(:[a-z0-9]+)?$"
+REGEX_VALID_PACKAGENAME = r"^[a-z0-9][a-z0-9\-+.]+(:[a-z0-9]+)?$"
 # regexp for the version number, for details see:
 #   http://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Version
-REGEX_VALID_VERSION = "^[0-9][0-9.+\-A-Za-z:~]*$"
+REGEX_VALID_VERSION = r"^[0-9][0-9.+\-A-Za-z:~]*$"
 # regexp for the archive (Suite) as found in the Release file
-REGEX_VALID_RELEASE = "^[a-zA-Z0-9_\-\.]+$"
+REGEX_VALID_RELEASE = r"^[a-zA-Z0-9_\-\.]+$"
 
 # Setup the DBus main loop
 dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)

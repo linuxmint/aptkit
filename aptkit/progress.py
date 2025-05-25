@@ -54,7 +54,7 @@ MAP_DPKG_STAGE = {"install": enums.PKG_INSTALLING,
                   "disappear": enums.PKG_DISAPPEARING,
                   "upgrade": enums.PKG_UPGRADING}
 
-REGEX_ANSI_ESCAPE_CODE = chr(27) + "\[[;?0-9]*[A-Za-z]"
+REGEX_ANSI_ESCAPE_CODE = chr(27) + r"\[[;?0-9]*[A-Za-z]"
 
 
 class DaemonOpenProgress(apt.progress.base.OpProgress):
@@ -657,7 +657,7 @@ class DaemonInstallProgress(DaemonForkProgress):
         elif status == "pmconffile":
             # we get a string like this:
             # 'current-conffile' 'new-conffile' useredited distedited
-            match = re.match("\s*\'(.*)\'\s*\'(.*)\'.*", message_raw)
+            match = re.match(r"\s*\'(.*)\'\s*\'(.*)\'.*", message_raw)
             if match:
                 new, old = match.group(1), match.group(2)
                 self._conffile(new, old)
@@ -781,7 +781,7 @@ class DaemonDpkgInstallProgress(DaemonInstallProgress):
             if status[2] == "error":
                 self._error(status[1], status[3])
             elif status[2] == "conffile":
-                match = re.match("\s*\'(.*)\'\s*\'(.*)\'.*", status[3])
+                match = re.match(r"\s*\'(.*)\'\s*\'(.*)\'.*", status[3])
                 if match:
                     new, old = match.group(1), match.group(2)
                     self._conffile(new, old)
