@@ -90,7 +90,7 @@ MATCH_BUG_CLOSES_UBUNTU = r"lp:\s+\#\d+(?:,\s*\#\d+)*"
 HREF_BUG_UBUNTU = "https://bugs.launchpad.net/bugs/%s"
 
 # Regular expression to find cve references
-MATCH_CVE = "CVE-\d{4}-\d{4}"
+MATCH_CVE = r"CVE-\d{4}-\d{4}"
 HREF_CVE = "http://web.nvd.nist.gov/view/vuln/detail?vulnId=%s"
 
 # Map Debian sections to the PackageKit group name space
@@ -326,9 +326,9 @@ class AptPackageKitWorker(aptworker.AptWorker):
             filenames_regex = []
             for filename in values:
                 if filename.startswith("/"):
-                    pattern = "^%s$" % filename[1:].replace("/", "\/")
+                    pattern = "^%s$" % filename[1:].replace("/", r"\/")
                 else:
-                    pattern = "\/%s$" % filename
+                    pattern = r"\/%s$" % filename
                 filenames_regex.append(pattern)
             cmd = ["/usr/bin/apt-file", "--regexp", "--non-interactive",
                    "--package-only", "find", "|".join(filenames_regex)]
@@ -351,9 +351,9 @@ class AptPackageKitWorker(aptworker.AptWorker):
         filenames_regex = []
         for filename in values:
             if filename.startswith("/"):
-                pattern = "^%s$" % filename.replace("/", "\/")
+                pattern = "^%s$" % filename.replace("/", r"\/")
             else:
-                pattern = ".*\/%s$" % filename
+                pattern = r".*\/%s$" % filename
             filenames_regex.append(pattern)
         files_pattern = re.compile("|".join(filenames_regex))
         for pkg in self._iterate_packages():
@@ -661,8 +661,8 @@ class AptPackageKitWorker(aptworker.AptWorker):
                 elif line.startswith(" --"):
                     # FIXME: Add %z for the time zone - requires Python 2.6
                     update_text += "  \n"
-                    match = re.match("^ -- (?P<maintainer>.+) (?P<mail><.+>)  "
-                                     "(?P<date>.+) (?P<offset>[-\+][0-9]+)$",
+                    match = re.match(r"^ -- (?P<maintainer>.+) (?P<mail><.+>)  "
+                                     r"(?P<date>.+) (?P<offset>[-\+][0-9]+)$",
                                      line)
                     if not match:
                         continue

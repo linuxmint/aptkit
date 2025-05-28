@@ -459,7 +459,7 @@ class AptWorker(BaseWorker):
         else:
             sourcesfile = None
         # Store any private login information in a separate auth.conf file
-        if re.match("(http|https|ftp)://\S+?:\S+?@\S+", uri):
+        if re.match(r"(http|https|ftp)://\S+?:\S+?@\S+", uri):
             uri = self._store_and_strip_password_from_uri(uri)
             auth_conf_path = apt_pkg.config.find_file("Dir::etc::netrc")
             if not comment:
