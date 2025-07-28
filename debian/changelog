@@ -1,3 +1,16 @@
+aptkit (1.0.5) zara; urgency=medium
+
+  [ Bardia Moshiri ]
+  * pkworker: drop the usage of ProvidesEnum
+
+  [ Michael Webster ]
+  * gtk3widgets.py: Show numeric progress and speed during operations.
+
+  [ Bardia Moshiri ]
+  * aptkit: fix syntax warning errors in python 3.12 and 3.13
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 28 Jul 2025 13:41:07 +0200
+
 aptkit (1.0.4) xia; urgency=medium
 
   * l10n: Update translations
