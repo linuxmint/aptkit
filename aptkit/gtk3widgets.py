@@ -909,7 +909,7 @@ class AptConfirmDialog(Gtk.Dialog):
         if self.trans.space < 0:
             msg += "\n"
             msg += (_("%sB of disk space will be freed.") %
-                    client.get_size_string(self.trans.space))
+                    client.get_size_string(abs(self.trans.space)))
         elif self.trans.space > 0:
             msg += "\n"
             msg += (_("%sB more disk space will be used.") %
