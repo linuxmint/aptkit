@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-09-09 18:06+0000\n"
-"Last-Translator: Praveen Illa <mail2ipn@gmail.com>\n"
+"PO-Revision-Date: 2025-06-24 06:10+0000\n"
+"Last-Translator: Honey Pallakonda <Unknown>\n"
 "Language-Team: Telugu <te@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-01-06 12:02+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-07-31 09:26+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
 "Language: te\n"
 
 #: ../data/org.debian.aptkit.policy.in.h:1
@@ -89,10 +89,12 @@ msgstr ""
 #: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
 msgstr ""
+"అధిక విశ్వసనీయ వైట్‌లిస్ట్ చేయబడిన రిపోజిటరీ నుండి సాఫ్ట్‌వేర్‌ను ఇన్‌స్టాల్ "
+"చేయండి."
 
 #: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
-msgstr ""
+msgstr "సాఫ్ట్‌వేర్‌ను ఇన్‌స్టాల్ చేయడానికి, మీరు ప్రామాణీకరించాలి."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -156,11 +158,11 @@ msgstr ""
 
 #: ../aptkit/core.py:2148
 msgid "Do not shutdown the daemon because of inactivity"
-msgstr ""
+msgstr "నిష్క్రియాత్మకత కారణంగా డెమోన్‌ను షట్‌డౌన్ చేయవద్దు."
 
 #: ../aptkit/core.py:2153
 msgid "Do not load any plugins"
-msgstr ""
+msgstr "ఏ ప్లగిన్‌లను లోడ్ చేయవద్దు"
 
 #: ../aptkit/core.py:2157
 msgid "Show internal processing information"
@@ -168,11 +170,11 @@ msgstr "అంతర్గతంగా జరుగుతున్న ప్ర�
 
 #: ../aptkit/core.py:2162
 msgid "Quit and replace an already running daemon"
-msgstr ""
+msgstr "ఇప్పటికే నడుస్తున్న డెమోన్‌ను నిష్క్రమించి భర్తీ చేయండి"
 
 #: ../aptkit/core.py:2167
 msgid "Listen on the DBus session bus (Only required for testing"
-msgstr ""
+msgstr "DBus సెషన్ బస్‌లో వినండి (పరీక్షకు మాత్రమే అవసరం"
 
 #: ../aptkit/core.py:2171
 msgid "Perform operations in the given chroot"
@@ -180,11 +182,12 @@ msgstr "ఇవ్వబడిన chroot లో ఆపరేషన్‌లను
 
 #: ../aptkit/core.py:2176
 msgid "Store profile stats in the specified file"
-msgstr ""
+msgstr "పేర్కొన్న ఫైల్‌లో ప్రొఫైల్ గణాంకాలను నిల్వ చేయండి"
 
 #: ../aptkit/core.py:2181
 msgid "Do not make any changes to the system (Only of use to developers)"
 msgstr ""
+"సిస్టమ్‌లో ఎటువంటి మార్పులు చేయవద్దు (డెవలపర్‌లకు మాత్రమే ఉపయోగపడుతుంది)"
 
 #: ../aptkit/enums.py:337
 msgid "Installed file"
@@ -204,7 +207,7 @@ msgstr "క్యాచీ నవీకరించబడింది"
 
 #: ../aptkit/enums.py:341
 msgid "Search done"
-msgstr ""
+msgstr "శోధన పూర్తయింది"
 
 #: ../aptkit/enums.py:342
 msgid "Removed trusted key"
@@ -240,7 +243,7 @@ msgstr "సాఫ్ట్‍వేర్ మూలాధారం జతచే�
 
 #: ../aptkit/enums.py:350
 msgid "Enabled component of the distribution"
-msgstr ""
+msgstr "పంపిణీ యొక్క ప్రారంభించబడిన భాగం"
 
 #: ../aptkit/enums.py:351
 msgid "Removed downloaded package files"
@@ -304,7 +307,7 @@ msgstr "అసంపూర్ణ స్థాపనను బాగుచేస�
 
 #: ../aptkit/enums.py:371
 msgid "Repairing installed software"
-msgstr ""
+msgstr "ఇన్‌స్టాల్ చేసిన సాఫ్ట్‌వేర్‌ను రిపేర్ చేస్తోంది"
 
 #: ../aptkit/enums.py:372
 msgid "Adding software source"
@@ -312,7 +315,7 @@ msgstr "సాఫ్ట్‍వేర్ మూలాధారం జతచే�
 
 #: ../aptkit/enums.py:373
 msgid "Enabling component of the distribution"
-msgstr ""
+msgstr "పంపిణీ యొక్క ఎనేబుల్ కాంపోనెంట్"
 
 #: ../aptkit/enums.py:374
 msgid "Removing downloaded package files"
@@ -324,7 +327,7 @@ msgstr "స్థాపించబడిన ప్యాకేజీలు ప�
 
 #: ../aptkit/enums.py:376 ../aptkit/enums.py:517
 msgid "Searching"
-msgstr ""
+msgstr "శోధిస్తున్నది"
 
 #: ../aptkit/enums.py:380
 msgid "Installation of the package file failed"
@@ -336,7 +339,7 @@ msgstr "సాఫ్ట్‍వేర్ స్థాపన విఫలమై�
 
 #: ../aptkit/enums.py:382
 msgid "Adding the key to the list of trusted software vendors failed"
-msgstr ""
+msgstr "విశ్వసనీయ సాఫ్ట్‌వేర్ విక్రేతల జాబితాకు కీని జోడించడం విఫలమైంది."
 
 #: ../aptkit/enums.py:384
 msgid "Refreshing the software list failed"
@@ -344,7 +347,7 @@ msgstr "సాఫ్ట్‍వేర్ జాబితాను తాజా�
 
 #: ../aptkit/enums.py:385
 msgid "Removing the vendor from the list of trusted ones failed"
-msgstr ""
+msgstr "విశ్వసనీయ జాబితా నుండి విక్రేతను తొలగించడం విఫలమైంది."
 
 #: ../aptkit/enums.py:387
 msgid "Removing software failed"
@@ -376,7 +379,7 @@ msgstr "సాఫ్ట్‍వేర్ మూలాధారం జతచే�
 
 #: ../aptkit/enums.py:395
 msgid "Enabling component of the distribution failed"
-msgstr ""
+msgstr "పంపిణీ యొక్క భాగాన్ని ప్రారంభించడం విఫలమైంది."
 
 #: ../aptkit/enums.py:397 ../aptkit/enums.py:398
 msgid "Removing downloaded package files failed"
@@ -384,11 +387,11 @@ msgstr "డౌన్‌లోడుచేసిన ప్యాకేజీ ఫ�
 
 #: ../aptkit/enums.py:399
 msgid "Search failed"
-msgstr ""
+msgstr "శోధన క్షేత్రం"
 
 #: ../aptkit/enums.py:400
 msgid "Adding license key"
-msgstr ""
+msgstr "లైసెన్స్ కీని జోడిస్తోంది"
 
 #: ../aptkit/enums.py:404 ../aptkit/enums.py:405
 msgid "Check your Internet connection."
@@ -400,42 +403,54 @@ msgid ""
 "they are a common source of problems.\n"
 "Furthermore run the following command in a Terminal: apt-get install -f"
 msgstr ""
+"మీరు థర్డ్ పార్టీ రిపోజిటరీలను ఉపయోగిస్తున్నారో లేదో తనిఖీ చేయండి. అలా అయితే "
+"వాటిని నిలిపివేయండి, ఎందుకంటే అవి సమస్యలకు సాధారణ మూలం.\n"
+"ఇంకా టెర్మినల్‌లో కింది ఆదేశాన్ని అమలు చేయండి: apt-get install -f"
 
 #: ../aptkit/enums.py:411
 msgid "The selected file may not be a GPG key file or it might be corrupt."
-msgstr ""
+msgstr "ఎంచుకున్న ఫైల్ GPG కీ ఫైల్ కాకపోవచ్చు లేదా అది పాడై ఉండొచ్చు."
 
 #: ../aptkit/enums.py:413
 msgid ""
 "The selected key couldn't be removed. Check that you provided a valid "
 "fingerprint."
 msgstr ""
+"ఎంచుకున్న కీని తీసివేయడం సాధ్యం కాలేదు. మీరు చెల్లుబాటు అయ్యే వేలిముద్రను "
+"అందించారో లేదో తనిఖీ చేయండి."
 
 #: ../aptkit/enums.py:415
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
 msgstr ""
+"మీరు ప్రస్తుతం మరొక సాఫ్ట్‌వేర్ నిర్వహణ సాధనాన్ని ఉపయోగిస్తున్నారో లేదో "
+"తనిఖీ చేయండి, ఉదా. సినాప్టిక్ లేదా ఆప్టిట్యూడ్. ఒకేసారి ఒక సాధనం మాత్రమే "
+"మార్పులు చేయడానికి అనుమతించబడుతుంది."
 
 #: ../aptkit/enums.py:418
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
 msgstr ""
+"ఇది చాలా తీవ్రమైన సమస్య. తర్వాత మళ్ళీ ప్రయత్నించండి. ఈ సమస్య మళ్ళీ "
+"కనిపిస్తే, దయచేసి డెవలపర్‌లకు ఎర్రర్‌ను నివేదించండి."
 
 #: ../aptkit/enums.py:421
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
 msgstr ""
+"ప్యాకేజీ పేరు యొక్క స్పెల్లింగ్‌ను మరియు తగిన రిపోజిటరీ ప్రారంభించబడిందో "
+"లేదో తనిఖీ చేయండి."
 
 #: ../aptkit/enums.py:423
 msgid "There isn't any need for an update."
-msgstr ""
+msgstr "అప్‌డేట్ అవసరం లేదు."
 
 #: ../aptkit/enums.py:424
 msgid "There isn't any need for an installation"
-msgstr ""
+msgstr "సంస్థాపన అవసరం లేదు"
 
 #: ../aptkit/enums.py:426
 msgid "There isn't any need for a removal."
@@ -445,20 +460,22 @@ msgstr "తొలగించడానికి అక్కడ ఏదీ లే
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr ""
+"మీ సిస్టమ్‌లో ముఖ్యమైన భాగమైన ప్యాకేజీని తొలగించమని మీరు అభ్యర్థించారు."
 
 #: ../aptkit/enums.py:430
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
 msgstr ""
+"డెమోన్‌తో కనెక్షన్ పోయింది. బ్యాక్‌గ్రౌండ్ డెమోన్ క్రాష్ అయి ఉండవచ్చు."
 
 #: ../aptkit/enums.py:432
 msgid "The installation or removal of a software package failed."
-msgstr ""
+msgstr "సాఫ్ట్‌వేర్ ప్యాకేజీ యొక్క సంస్థాపన లేదా తొలగింపు విఫలమైంది."
 
 #: ../aptkit/enums.py:434
 msgid "The requested feature is not supported."
-msgstr ""
+msgstr "అభ్యర్థించిన ఫీచర్‌కు మద్దతు లేదు."
 
 #: ../aptkit/enums.py:435
 msgid ""
@@ -466,6 +483,9 @@ msgid ""
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
+"సాఫ్ట్‌వేర్‌ను ఇన్‌స్టాల్ చేయడానికి/తీసివేయడానికి మరియు ఇతర ప్యాకేజీ నిర్వహణ "
+"సంబంధిత పనులను నిర్వహించడానికి మిమ్మల్ని అనుమతించే సాఫ్ట్‌వేర్ అయిన aptkit "
+"లో ప్రోగ్రామింగ్ లోపం ఉన్నట్లు కనిపిస్తోంది."
 
 #: ../aptkit/enums.py:439
 msgid ""
@@ -474,10 +494,14 @@ msgid ""
 "between software packages which are not allowed to be installed at the same "
 "time."
 msgstr ""
+"ఈ ఎర్రర్ అవసరమైన అదనపు సాఫ్ట్‌వేర్ ప్యాకేజీలు లేకపోవడం లేదా ఇన్‌స్టాల్ "
+"చేయలేకపోవడం వల్ల సంభవించవచ్చు. అంతేకాకుండా, ఒకే సమయంలో ఇన్‌స్టాల్ చేయడానికి "
+"అనుమతించబడని సాఫ్ట్‌వేర్ ప్యాకేజీల మధ్య వైరుధ్యం ఉండవచ్చు."
 
 #: ../aptkit/enums.py:445
 msgid "This requires installing packages from unauthenticated sources."
 msgstr ""
+"దీనికి ప్రామాణీకరించని మూలాల నుండి ప్యాకేజీలను ఇన్‌స్టాల్ చేయడం అవసరం."
 
 #: ../aptkit/enums.py:447
 msgid ""
@@ -485,11 +509,17 @@ msgid ""
 "software package or it was cancelled in an unfriendly way. You have to "
 "repair this before you can install or remove any further software."
 msgstr ""
+"సంబంధిత సాఫ్ట్‌వేర్ ప్యాకేజీలోని లోపం వల్ల ఇన్‌స్టాలేషన్ విఫలమై ఉండవచ్చు "
+"లేదా అది ప్రతికూలమైన రీతిలో రద్దు చేయబడి ఉండవచ్చు. మీరు ఏదైనా ఇతర "
+"సాఫ్ట్‌వేర్‌ను ఇన్‌స్టాల్ చేయడానికి లేదా తీసివేయడానికి ముందు దీన్ని రిపేర్ "
+"చేయాలి."
 
 #: ../aptkit/enums.py:453
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
 msgstr ""
+"దయచేసి ఫైల్‌ను మీ స్థానిక కంప్యూటర్‌లోకి కాపీ చేసి, ఫైల్ అనుమతులను తనిఖీ "
+"చేయండి."
 
 #: ../aptkit/enums.py:456
 msgid ""
@@ -498,6 +528,9 @@ msgid ""
 "the person or organisation who provided this package file and include the "
 "details beneath."
 msgstr ""
+"నాణ్యతా ప్రమాణాలను ఉల్లంఘించే ప్యాకేజీని ఇన్‌స్టాల్ చేయడం అనుమతించబడదు. దీని "
+"వలన మీ కంప్యూటర్‌లో తీవ్రమైన సమస్యలు తలెత్తవచ్చు. దయచేసి ఈ ప్యాకేజీ ఫైల్‌ను "
+"అందించిన వ్యక్తి లేదా సంస్థను సంప్రదించండి మరియు వివరాలను క్రింద చేర్చండి."
 
 #: ../aptkit/enums.py:463
 msgid ""
@@ -505,20 +538,25 @@ msgid ""
 "is not valid or could not be installed correctly.\n"
 "See the details for more information."
 msgstr ""
+"ఈ సాఫ్ట్‌వేర్‌ను అమలు చేయడానికి అవసరమైన డౌన్‌లోడ్ చేసిన లైసెన్స్ కీ చెల్లదు "
+"లేదా సరిగ్గా ఇన్‌స్టాల్ చేయబడలేదు.\n"
+"మరిన్ని వివరాల కోసం వివరాలను చూడండి."
 
 #: ../aptkit/enums.py:469
 msgid "All available upgrades have already been installed."
-msgstr ""
+msgstr "అందుబాటులో ఉన్న అన్ని అప్‌గ్రేడ్‌లు ఇప్పటికే ఇన్‌స్టాల్ చేయబడ్డాయి."
 
 #: ../aptkit/enums.py:471
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
 msgstr ""
+"ఈ సాఫ్ట్‌వేర్‌ను ఉపయోగించడానికి మిమ్మల్ని అనుమతించే లైసెన్స్ కీని డౌన్‌లోడ్ "
+"చేయడం సాధ్యం కాలేదు. దయచేసి మీ నెట్‌వర్క్ కనెక్షన్‌ను తనిఖీ చేయండి."
 
 #: ../aptkit/enums.py:475
 msgid "You don't have the required privileges to perform this action."
-msgstr ""
+msgstr "ఈ చర్యను నిర్వహించడానికి మీకు అవసరమైన అధికారాలు లేవు."
 
 #: ../aptkit/enums.py:477
 msgid ""
@@ -527,6 +565,9 @@ msgid ""
 "haven't seen a password dialog: your desktop environment doesn't provide a "
 "PolicyKit session agent."
 msgstr ""
+"మీరు తప్పు పాస్‌వర్డ్‌ను అందించారు లేదా అధికారాన్ని రద్దు చేసారు.\n"
+"ఇంకా, మీరు పాస్‌వర్డ్ డైలాగ్‌ను చూడకపోతే ఈ ఎర్రర్‌కు సాంకేతిక కారణం కూడా "
+"ఉండవచ్చు: మీ డెస్క్‌టాప్ వాతావరణం PolicyKit సెషన్ ఏజెంట్‌ను అందించదు."
 
 #: ../aptkit/enums.py:485
 msgid "Failed to download package files"
@@ -538,7 +579,7 @@ msgstr "భాండాగార సమాచారాన్ని డౌన్�
 
 #: ../aptkit/enums.py:488
 msgid "Package dependencies cannot be resolved"
-msgstr ""
+msgstr "ప్యాకేజీ ఆధారపడటాలను పరిష్కరించలేము"
 
 #: ../aptkit/enums.py:489
 msgid "The package system is broken"
@@ -566,7 +607,7 @@ msgstr "ప్యాకేజీ ఉనికిలోలేదు"
 
 #: ../aptkit/enums.py:495
 msgid "Package is already up to date"
-msgstr ""
+msgstr "ప్యాకేజీ ఇప్పటికే తాజాగా ఉంది."
 
 #: ../aptkit/enums.py:496
 msgid "Package is already installed"
@@ -582,7 +623,7 @@ msgstr "ముఖ్యమైన వ్యవస్థ ప్యాకేజీ�
 
 #: ../aptkit/enums.py:500
 msgid "Task cannot be monitored or controlled"
-msgstr ""
+msgstr "పనిని పర్యవేక్షించడం లేదా నియంత్రించడం సాధ్యం కాదు."
 
 #: ../aptkit/enums.py:501
 msgid "Package operation failed"
@@ -590,11 +631,11 @@ msgstr "ప్యాకేజీ ఆపరేషన్ విఫలమైంద�
 
 #: ../aptkit/enums.py:502
 msgid "Requires installation of untrusted packages"
-msgstr ""
+msgstr "నమ్మదగని ప్యాకేజీల సంస్థాపన అవసరం"
 
 #: ../aptkit/enums.py:504
 msgid "Previous installation hasn't been completed"
-msgstr ""
+msgstr "మునుపటి ఇన్‌స్టాలేషన్ పూర్తి కాలేదు."
 
 #: ../aptkit/enums.py:505
 msgid "The package is of bad quality"
@@ -606,27 +647,27 @@ msgstr "ప్యాకేజీ ఫైల్ తెరువలేము"
 
 #: ../aptkit/enums.py:507
 msgid "Not supported feature"
-msgstr ""
+msgstr "ఫీచర్ మద్దతు లేదు"
 
 #: ../aptkit/enums.py:508
 msgid "Failed to download the license key"
-msgstr ""
+msgstr "లైసెన్స్ కీని డౌన్‌లోడ్ చేయడంలో విఫలమైంది."
 
 #: ../aptkit/enums.py:509
 msgid "Failed to install the license key"
-msgstr ""
+msgstr "లైసెన్స్ కీని ఇన్‌స్టాల్ చేయడంలో విఫలమైంది."
 
 #: ../aptkit/enums.py:510
 msgid "The system is already up to date"
-msgstr ""
+msgstr "ఈ వ్యవస్థ ఇప్పటికే తాజాగా ఉంది."
 
 #: ../aptkit/enums.py:511
 msgid "You could not be authorized"
-msgstr ""
+msgstr "మీకు అధికారం ఇవ్వబడలేదు."
 
 #: ../aptkit/enums.py:512
 msgid "You are not allowed to perform this action"
-msgstr ""
+msgstr "ఈ చర్యను చేయడానికి మీకు అనుమతి లేదు."
 
 #: ../aptkit/enums.py:513
 msgid "An unhandlable error occured"
@@ -634,7 +675,7 @@ msgstr "ఒక వ్యవహరించలేని దోషం సంభవ
 
 #: ../aptkit/enums.py:516
 msgid "Waiting for service to start"
-msgstr ""
+msgstr "సేవ ప్రారంభం కోసం వేచి ఉంది"
 
 #: ../aptkit/enums.py:518
 msgid "Waiting"
@@ -650,7 +691,7 @@ msgstr "నిష్క్రమించడానికి ఇతర సాఫ�
 
 #: ../aptkit/enums.py:521
 msgid "Waiting for configuration file prompt"
-msgstr ""
+msgstr "కాన్ఫిగరేషన్ ఫైల్ ప్రాంప్ట్ కోసం వేచి ఉంది"
 
 #: ../aptkit/enums.py:523
 msgid "Running task"
@@ -662,7 +703,7 @@ msgstr "డౌన్‌లోడ్‌చేస్తోంది"
 
 #: ../aptkit/enums.py:525
 msgid "Querying software sources"
-msgstr ""
+msgstr "సాఫ్ట్‌వేర్ వనరులను ప్రశ్నించడం"
 
 #: ../aptkit/enums.py:526
 msgid "Cleaning up"
@@ -710,19 +751,19 @@ msgstr "%s తొలగించబడుతోంది"
 #: ../aptkit/enums.py:542
 #, python-format
 msgid "Completely removing %s"
-msgstr ""
+msgstr "%s ని పూర్తిగా తొలగిస్తోంది"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:544
 #, python-format
 msgid "Noting disappearance of %s"
-msgstr ""
+msgstr "%s అదృశ్యం కావడం గమనించడం"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:546
 #, python-format
 msgid "Running post-installation trigger %s"
-msgstr ""
+msgstr "ఇన్‌స్టాలేషన్ తర్వాత ట్రిగ్గర్ %s అమలు చేయబడుతోంది"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:548
@@ -734,49 +775,49 @@ msgstr "%s ఉన్నతీకరించబడుతోంది"
 #: ../aptkit/enums.py:550
 #, python-format
 msgid "Unpacking %s"
-msgstr ""
+msgstr "%s ని అన్‌ప్యాక్ చేస్తోంది"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:552
 #, python-format
 msgid "Preparing installation of %s"
-msgstr ""
+msgstr "%s యొక్క ఇన్‌స్టాలేషన్‌ను సిద్ధం చేస్తోంది"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:554
 #, python-format
 msgid "Preparing configuration of %s"
-msgstr ""
+msgstr "%s యొక్క కాన్ఫిగరేషన్‌ను సిద్ధం చేస్తోంది"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:556
 #, python-format
 msgid "Preparing removal of %s"
-msgstr ""
+msgstr "%s తొలగింపును సిద్ధం చేస్తోంది"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:558
 #, python-format
 msgid "Preparing complete removal of %s"
-msgstr ""
+msgstr "%s యొక్క పూర్తి తొలగింపును సిద్ధం చేస్తోంది"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:560
 #, python-format
 msgid "Installed %s"
-msgstr ""
+msgstr "%s ఇన్‌స్టాల్ చేయబడింది"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:562
 #, python-format
 msgid "Completely removed %s"
-msgstr ""
+msgstr "%s పూర్తిగా తీసివేయబడింది"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:564
 #, python-format
 msgid "Removed %s"
-msgstr ""
+msgstr "%s తొలగించబడింది"
 
 #: ../aptkit/enums.py:567
 msgid "Done"
@@ -801,17 +842,17 @@ msgstr "నెట్‌వర్కు అందుబాటులోలేద�
 #: ../aptkit/enums.py:704
 #, python-format
 msgid "Processing %s"
-msgstr ""
+msgstr "%s ని ప్రాసెస్ చేస్తోంది"
 
 #: ../aptkit/gtk3widgets.py:311
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
-msgstr ""
+msgstr "%sB/s వద్ద %sB లో %sB డౌన్‌లోడ్ చేయబడింది"
 
 #: ../aptkit/gtk3widgets.py:316 ../aptkit/gtk3widgets.py:517
 #, python-format
 msgid "Downloaded %sB of %sB"
-msgstr ""
+msgstr "%sB,(మొత్తము  %sB) పొందబడింది"
 
 #: ../aptkit/gtk3widgets.py:328
 msgid "Details"
@@ -848,6 +889,8 @@ msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
 "packages from it."
 msgstr ""
+"దయచేసి పై CD/DVD ని '%s' డ్రైవ్ నుండి సాఫ్ట్‌వేర్ ప్యాకేజీలను ఇన్‌స్టాల్ "
+"చేయడానికి దానిలోకి చొప్పించండి."
 
 #: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
 msgid "C_ontinue"
@@ -867,7 +910,7 @@ msgstr "తొలగించు"
 
 #: ../aptkit/gtk3widgets.py:942
 msgid "Purge"
-msgstr ""
+msgstr "ప్రక్షాళన చేయండి"
 
 #: ../aptkit/gtk3widgets.py:943
 msgid "Upgrade"
@@ -888,7 +931,7 @@ msgstr "ఉన్నతీకరణ దాటవేయి"
 #. initial packages or both?
 #: ../aptkit/gtk3widgets.py:956
 msgid "Please take a look at the list of changes below."
-msgstr ""
+msgstr "దయచేసి దిగువ మార్పుల జాబితాను పరిశీలించండి."
 
 #: ../aptkit/gtk3widgets.py:964
 msgid "Additional software has to be installed"
@@ -904,7 +947,7 @@ msgstr "అదనపు సాఫ్ట్‍వేర్‌ను తొలగ�
 
 #: ../aptkit/gtk3widgets.py:970
 msgid "Additional software has to be purged"
-msgstr ""
+msgstr "అదనపు సాఫ్ట్‌వేర్‌ను తొలగించాలి."
 
 #: ../aptkit/gtk3widgets.py:972
 msgid "Additional software has to be upgraded"
@@ -912,7 +955,7 @@ msgstr "అదనపు సాఫ్ట్‍వేర్‌ను ఉన్న�
 
 #: ../aptkit/gtk3widgets.py:974
 msgid "Additional software has to be downgraded"
-msgstr ""
+msgstr "అదనపు సాఫ్ట్‌వేర్‌ను డౌన్‌గ్రేడ్ చేయాలి"
 
 #: ../aptkit/gtk3widgets.py:976
 msgid "Updates will be skipped"
@@ -925,17 +968,17 @@ msgstr "అదనపు మార్పులు అవసరం"
 #: ../aptkit/gtk3widgets.py:989
 #, python-format
 msgid "%sB will be downloaded in total."
-msgstr ""
+msgstr "%sB మొత్తం డౌన్‌లోడ్ చేయబడుతుంది."
 
 #: ../aptkit/gtk3widgets.py:993
 #, python-format
 msgid "%sB of disk space will be freed."
-msgstr ""
+msgstr "%sB డిస్క్ స్థలం ఖాళీ అవుతుంది."
 
 #: ../aptkit/gtk3widgets.py:997
 #, python-format
 msgid "%sB more disk space will be used."
-msgstr ""
+msgstr "%sB ఎక్కువ డిస్క్ స్థలం ఉపయోగించబడుతుంది."
 
 #. TRANSLATORS: %s is a file path
 #: ../aptkit/gtk3widgets.py:1069
@@ -943,12 +986,15 @@ msgstr ""
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
 msgstr ""
+"'%s' లోని మీ మార్పులను ఆకృతీకరణ ఫైల్ యొక్క తరువాతి వెర్షన్‌తో భర్తీ చేయాలా?"
 
 #: ../aptkit/gtk3widgets.py:1071
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
 msgstr ""
+"ఆ ఫైల్ ఇప్పటికే అక్కడ ఎందుకు ఉందో మీకు తెలియకపోతే, దానిని భర్తీ చేయడం "
+"సాధారణంగా సురక్షితం."
 
 #: ../aptkit/gtk3widgets.py:1080
 msgid "_Changes"
@@ -970,78 +1016,78 @@ msgstr "వివరాలు (_D)"
 #: ../aptkit/lock.py:189
 #, python-format
 msgid "Waiting for %s to exit"
-msgstr ""
+msgstr "%s నిష్క్రమించడానికి వేచి ఉంది"
 
 #. TRANSLATORS: %s is a list of package names
 #: ../aptkit/progress.py:168
 #, python-format
 msgid "Downloading %s"
-msgstr ""
+msgstr "%s డౌన్‌లోడ్ అవుతోంది"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
 #: ../aptkit/progress.py:277 ../aptkit/progress.py:314
 msgid "local repository"
-msgstr ""
+msgstr "స్థానిక రిపోజిటరీ"
 
 #. TRANSLATORS: %s is a list of repository names
 #: ../aptkit/progress.py:280
 #, python-format
 msgid "Downloading from %s"
-msgstr ""
+msgstr "%s నుండి డౌన్‌లోడ్ చేస్తోంది"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:318
 #, python-format
 msgid "Structure of %s"
-msgstr ""
+msgstr "%s యొక్క నిర్మాణం"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:321
 #, python-format
 msgid "Description of %s"
-msgstr ""
+msgstr "%s యొక్క వివరణ"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:324
 #, python-format
 msgid "Description signature of %s"
-msgstr ""
+msgstr "%s యొక్క వివరణ సంతకం"
 
 #: ../aptkit/progress.py:329
 #, python-format
 msgid "Available packages from %s"
-msgstr ""
+msgstr "%s నుండి అందుబాటులో ఉన్న ప్యాకేజీలు"
 
 #: ../aptkit/progress.py:333
 #, python-format
 msgid "Available sources from %s"
-msgstr ""
+msgstr "%s నుండి అందుబాటులో ఉన్న మూలాలు"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:336
 #, python-format
 msgid "Available translations from %s"
-msgstr ""
+msgstr "%s నుండి అందుబాటులో ఉన్న అనువాదాలు"
 
 #: ../aptkit/progress.py:353
 #, python-format
 msgid "Translations for %s (%s) from %s"
-msgstr ""
+msgstr "%s నుండి %s (%s) కు అనువాదాలు"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
 #: ../aptkit/progress.py:357
 #, python-format
 msgid "Translations for %s from %s"
-msgstr ""
+msgstr "%s నుండి %s కి అనువాదాలు"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
 #: ../aptkit/progress.py:362
 #, python-format
 msgid "Translations (%s) from %s"
-msgstr ""
+msgstr "%s నుండి అనువాదాలు (%s)"
 
 #: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
 #: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
@@ -1058,7 +1104,7 @@ msgstr "%s ప్యాకేజీ స్థాపించబడలేదు"
 #: ../aptkit/worker/aptworker.py:388
 #, python-format
 msgid "The version %s of %s isn't installed"
-msgstr ""
+msgstr "%s యొక్క %s వెర్షన్ ఇన్‌స్టాల్ చేయబడలేదు."
 
 #: ../aptkit/worker/aptworker.py:403
 #, python-format
@@ -1068,28 +1114,28 @@ msgstr "%s ప్యాకేజీ ఇదివరకే స్థాపిం�
 #: ../aptkit/worker/aptworker.py:410 ../aptkit/worker/aptworker.py:845
 #, python-format
 msgid "The version %s of %s isn't available."
-msgstr ""
+msgstr "%s యొక్క వెర్షన్ %s అందుబాటులో లేదు."
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
 #: ../aptkit/worker/aptworker.py:572
 #, python-format
 msgid "The keyserver URL is invalid: %s"
-msgstr ""
+msgstr "కీసర్వర్ URL చెల్లదు: %s"
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
 #: ../aptkit/worker/aptworker.py:578
 #, python-format
 msgid "Invalid protocol of the server: %s"
-msgstr ""
+msgstr "సర్వర్ యొక్క చెల్లని ప్రోటోకాల్: %s"
 
 #. TRANSLATORS: %s is the id of a GnuPG key
 #. e.g. E08ADE95
 #: ../aptkit/worker/aptworker.py:586 ../aptkit/worker/aptworker.py:630
 #, python-format
 msgid "Invalid key id: %s"
-msgstr ""
+msgstr "చెల్లని కీ ఐడి: %s"
 
 #: ../aptkit/worker/aptworker.py:594
 #, python-format
@@ -1097,16 +1143,18 @@ msgid ""
 "Failed to download and install the key %s from %s:\n"
 "%s"
 msgstr ""
+"%s నుండి కీ %s ని డౌన్‌లోడ్ చేసి ఇన్‌స్టాల్ చేయడంలో విఫలమైంది:\n"
+"%s"
 
 #: ../aptkit/worker/aptworker.py:611
 #, python-format
 msgid "Key file %s couldn't be installed: %s"
-msgstr ""
+msgstr "కీ ఫైల్ %s ను ఇన్‌స్టాల్ చేయడం సాధ్యం కాలేదు: %s"
 
 #: ../aptkit/worker/aptworker.py:635
 #, python-format
 msgid "Key with fingerprint %s couldn't be removed: %s"
-msgstr ""
+msgstr "%s వేలిముద్ర ఉన్న కీని తీసివేయడం సాధ్యం కాలేదు: %s"
 
 #: ../aptkit/worker/aptworker.py:686
 #, python-format
@@ -1116,37 +1164,37 @@ msgstr "%s ప్యాకేజీని తొలగించుట సాధ�
 #: ../aptkit/worker/aptworker.py:690
 #, python-format
 msgid "The version %s of %s is not installed"
-msgstr ""
+msgstr "%s యొక్క %s వెర్షన్ ఇన్‌స్టాల్ చేయబడలేదు."
 
 #: ../aptkit/worker/aptworker.py:785
 #, python-format
 msgid "The former version %s of %s is already installed"
-msgstr ""
+msgstr "%s యొక్క మునుపటి వెర్షన్ %s ఇప్పటికే ఇన్‌స్టాల్ చేయబడింది."
 
 #: ../aptkit/worker/aptworker.py:790 ../aptkit/worker/aptworker.py:838
 #, python-format
 msgid "The version %s of %s is already installed"
-msgstr ""
+msgstr "%s యొక్క %s వెర్షన్ ఇప్పటికే ఇన్‌స్టాల్ చేయబడింది."
 
 #: ../aptkit/worker/aptworker.py:797
 #, python-format
 msgid "The version %s of %s isn't available"
-msgstr ""
+msgstr "%s యొక్క వెర్షన్ %s అందుబాటులో లేదు."
 
 #: ../aptkit/worker/aptworker.py:801
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
-msgstr ""
+msgstr "%s ను డౌన్‌గ్రేడ్ చేయడానికి మీరు ఒక వెర్షన్‌ను పేర్కొనాలి"
 
 #: ../aptkit/worker/aptworker.py:831
 #, python-format
 msgid "The later version %s of %s is already installed"
-msgstr ""
+msgstr "%s యొక్క తరువాతి వెర్షన్ %s ఇప్పటికే ఇన్‌స్టాల్ చేయబడింది."
 
 #: ../aptkit/worker/aptworker.py:867
 #, python-format
 msgid "The package %s isn't available in the %s release."
-msgstr ""
+msgstr "%s విడుదలలో %s ప్యాకేజీ అందుబాటులో లేదు."
 
 #: ../aptkit/worker/aptworker.py:1052
 #, python-format
@@ -1158,24 +1206,26 @@ msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
 msgstr ""
+"ప్యాకేజీ చెల్లుబాటు అయ్యే ఇన్‌స్టాల్డ్-సైజ్ కంట్రోల్ ఫీల్డ్‌ను అందించదు. "
+"డెబియన్ పాలసీ 5.6.20 చూడండి."
 
 #: ../aptkit/worker/aptworker.py:1293
 msgid "The license key is empty"
-msgstr ""
+msgstr "లైసెన్స్ కీ ఖాళీగా ఉంది."
 
 #: ../aptkit/worker/aptworker.py:1309
 msgid "The license key is not allowed to contain executable code."
-msgstr ""
+msgstr "లైసెన్స్ కీ అమలు చేయగల కోడ్‌ను కలిగి ఉండటానికి అనుమతి లేదు."
 
 #: ../aptkit/worker/aptworker.py:1318
 #, python-format
 msgid "The license key path %s is invalid"
-msgstr ""
+msgstr "లైసెన్స్ కీ పాత్ %s చెల్లదు."
 
 #: ../aptkit/worker/aptworker.py:1322
 #, python-format
 msgid "The license key already exists: %s"
-msgstr ""
+msgstr "లైసెన్స్ కీ ఇప్పటికే ఉంది: %s"
 
 #: ../aptkit/worker/aptworker.py:1327
 #, python-format
@@ -1183,41 +1233,43 @@ msgid ""
 "The location of the license key is unsecure since it contains symbolic "
 "links. The path %s maps to %s"
 msgstr ""
+"లైసెన్స్ కీ యొక్క స్థానం సురక్షితం కాదు ఎందుకంటే ఇది సింబాలిక్ లింక్‌లను "
+"కలిగి ఉంది. %s మార్గం %s కు మ్యాప్ చేస్తుంది."
 
 #: ../aptkit/worker/aptworker.py:1335
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
-msgstr ""
+msgstr "కీని ఇన్‌స్టాల్ చేయాల్సిన డైరెక్టరీ ఇంకా లేదు: %s"
 
 #: ../aptkit/worker/aptworker.py:1346
 #, python-format
 msgid "Failed to write key file to: %s"
-msgstr ""
+msgstr "కీ ఫైల్‌ను %s కి వ్రాయడంలో విఫలమైంది."
 
 #: ../aptkit/worker/aptworker.py:1381
 msgid "The following packages have unmet dependencies:"
-msgstr ""
+msgstr "కింది ప్యాకేజీలు అన్‌మెట్ డిపెండెన్సీలను కలిగి ఉన్నాయి:"
 
 #: ../aptkit/worker/aptworker.py:1434
 msgid "but it is a virtual package"
-msgstr ""
+msgstr "కానీ అది ఒక వర్చువల్ ప్యాకేజీ."
 
 #: ../aptkit/worker/aptworker.py:1437
 msgid "but it is not installed"
-msgstr ""
+msgstr "కానీ అది ఇన్‌స్టాల్ కాలేదు"
 
 #: ../aptkit/worker/aptworker.py:1439
 msgid "but it is not going to be installed"
-msgstr ""
+msgstr "కానీ అది ఇన్‌స్టాల్ చేయబడదు."
 
 #. TRANSLATORS: %s is a version number
 #: ../aptkit/worker/aptworker.py:1443
 #, python-format
 msgid "but %s is installed"
-msgstr ""
+msgstr "కానీ %s ఇన్‌స్టాల్ చేయబడింది"
 
 #. TRANSLATORS: %s is a version number
 #: ../aptkit/worker/aptworker.py:1447
 #, python-format
 msgid "but %s is to be installed"
-msgstr ""
+msgstr "కానీ %s ఇన్‌స్టాల్ చేయబడాలి"

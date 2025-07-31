@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-09-09 18:02+0000\n"
+"PO-Revision-Date: 2025-01-09 10:30+0000\n"
 "Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
 "Language-Team: Norwegian Nynorsk <nn@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-01-06 12:02+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-07-31 09:26+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
 "Language: nn\n"
 
 #: ../data/org.debian.aptkit.policy.in.h:1
@@ -87,11 +87,11 @@ msgstr "Du må autentisera deg for å installera eller fjerna programvare."
 #. 
 #: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
-msgstr ""
+msgstr "Installer programvare frå eit trygt, kvitelista pakkearkiv."
 
 #: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
-msgstr ""
+msgstr "Du må autentisera deg for å installera programvare."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -157,7 +157,7 @@ msgstr "Ikkje avslutt daemon om han er inaktiv"
 
 #: ../aptkit/core.py:2153
 msgid "Do not load any plugins"
-msgstr ""
+msgstr "Ikkje last nokon programtillegg"
 
 #: ../aptkit/core.py:2157
 msgid "Show internal processing information"
@@ -169,11 +169,11 @@ msgstr "Avslutt og erstatt ein allereie køyrande daemon"
 
 #: ../aptkit/core.py:2167
 msgid "Listen on the DBus session bus (Only required for testing"
-msgstr ""
+msgstr "Lytt til Dbus-øktbussen (Krevjast kun for testing"
 
 #: ../aptkit/core.py:2171
 msgid "Perform operations in the given chroot"
-msgstr ""
+msgstr "Utfør operasjonar i angjeven chroot"
 
 #: ../aptkit/core.py:2176
 msgid "Store profile stats in the specified file"
@@ -201,7 +201,7 @@ msgstr "Oppdaterte hurtiglageret"
 
 #: ../aptkit/enums.py:341
 msgid "Search done"
-msgstr ""
+msgstr "Søket er utført"
 
 #: ../aptkit/enums.py:342
 msgid "Removed trusted key"
@@ -229,23 +229,23 @@ msgstr "Reparerte ein ufullstendig installasjon"
 
 #: ../aptkit/enums.py:348
 msgid "Repaired broken dependencies"
-msgstr ""
+msgstr "Reparerte øydelagde avhengnader."
 
 #: ../aptkit/enums.py:349
 msgid "Added software source"
-msgstr ""
+msgstr "La til programvarekjelde"
 
 #: ../aptkit/enums.py:350
 msgid "Enabled component of the distribution"
-msgstr ""
+msgstr "Aktivert distribusjonskomponent"
 
 #: ../aptkit/enums.py:351
 msgid "Removed downloaded package files"
-msgstr ""
+msgstr "Fjerna nedlasta pakkefiler"
 
 #: ../aptkit/enums.py:352
 msgid "Reconfigured installed packages"
-msgstr ""
+msgstr "Satt opp installerte pakkar på nytt"
 
 #: ../aptkit/enums.py:356
 msgid "Successful"
@@ -269,7 +269,7 @@ msgstr "Installerer pakkar"
 
 #: ../aptkit/enums.py:363
 msgid "Adding key from file"
-msgstr "Legg til nøkkel frå fil"
+msgstr "Legg åt nøkkel frå fil"
 
 #: ../aptkit/enums.py:364
 msgid "Updating cache"
@@ -301,95 +301,96 @@ msgstr "Reparerar ufullstendig installasjon"
 
 #: ../aptkit/enums.py:371
 msgid "Repairing installed software"
-msgstr ""
+msgstr "Reparerar installert programvare"
 
 #: ../aptkit/enums.py:372
 msgid "Adding software source"
-msgstr ""
+msgstr "Legg til programvarekjelde"
 
 #: ../aptkit/enums.py:373
 msgid "Enabling component of the distribution"
-msgstr ""
+msgstr "Aktiverar distribusjonskomponent"
 
 #: ../aptkit/enums.py:374
 msgid "Removing downloaded package files"
-msgstr ""
+msgstr "Fjernar nedlasta pakkefiler"
 
 #: ../aptkit/enums.py:375
 msgid "Reconfiguring installed packages"
-msgstr ""
+msgstr "Sett opp installerte pakkar på ny"
 
 #: ../aptkit/enums.py:376 ../aptkit/enums.py:517
 msgid "Searching"
-msgstr ""
+msgstr "Søkjer"
 
 #: ../aptkit/enums.py:380
 msgid "Installation of the package file failed"
-msgstr "Klarte ikkje å installera pakkefil"
+msgstr "Mislukkast å installera pakkefil"
 
 #: ../aptkit/enums.py:381
 msgid "Installation of software failed"
-msgstr "Klarte ikkje å installera programvara"
+msgstr "Mislukkast å installera programvara"
 
 #: ../aptkit/enums.py:382
 msgid "Adding the key to the list of trusted software vendors failed"
 msgstr ""
+"Mislukkast å leggja til nøkkelen åt lista over truverdige programvaretenarar"
 
 #: ../aptkit/enums.py:384
 msgid "Refreshing the software list failed"
-msgstr "Klarte ikkje å oppdatera programvarelista"
+msgstr "Mislukkast å oppdatera programvarelista"
 
 #: ../aptkit/enums.py:385
 msgid "Removing the vendor from the list of trusted ones failed"
-msgstr "Klarte ikkje å fjerna programvareutgjevaren frå lista"
+msgstr "Mislukkast å fjerna programvareutgjevaren frå lista"
 
 #: ../aptkit/enums.py:387
 msgid "Removing software failed"
-msgstr "Klarte ikkje å fjerna programvara"
+msgstr "Mislukkast å fjerna programvara"
 
 #: ../aptkit/enums.py:388
 msgid "Updating software failed"
-msgstr "Klarte ikkje å oppdatera programvara"
+msgstr "Mislukkast å oppdatera programvara"
 
 #: ../aptkit/enums.py:389
 msgid "Upgrading the system failed"
-msgstr "Klarte ikkje å oppgradera systemet"
+msgstr "Mislukkast å oppgradera systemet"
 
 #: ../aptkit/enums.py:390
 msgid "Applying software changes failed"
-msgstr "Klarte ikkje å uføra programvareendringar"
+msgstr "Mislukkast å uføra programvareendringar"
 
 #: ../aptkit/enums.py:391
 msgid "Repairing incomplete installation failed"
-msgstr "Klarte ikkje å reparera den ufullstendige installasjonen"
+msgstr "Mislukkast å reparera den ufullstendige installasjonen"
 
 #: ../aptkit/enums.py:393
 msgid "Repairing broken dependencies failed"
-msgstr ""
+msgstr "Mislukkast å reparera øydelagde avhengnader"
 
 #: ../aptkit/enums.py:394
 msgid "Adding software source failed"
-msgstr ""
+msgstr "Mislukkast å leggja til programvarekjelde"
 
 #: ../aptkit/enums.py:395
 msgid "Enabling component of the distribution failed"
-msgstr ""
+msgstr "Mislukkast å aktivera distribusjonskomponent"
 
 #: ../aptkit/enums.py:397 ../aptkit/enums.py:398
 msgid "Removing downloaded package files failed"
-msgstr ""
+msgstr "Mislukkast å fjerne nedlasta pakkefiler"
 
 #: ../aptkit/enums.py:399
 msgid "Search failed"
-msgstr ""
+msgstr "Søk mislukka"
 
 #: ../aptkit/enums.py:400
 msgid "Adding license key"
-msgstr ""
+msgstr "Legg til lisensnøkkel"
 
 #: ../aptkit/enums.py:404 ../aptkit/enums.py:405
 msgid "Check your Internet connection."
-msgstr "Undersøk Internettkoplinga di"
+msgstr "Undersøk Internettkoplinga di."
 
 #: ../aptkit/enums.py:406
 msgid ""
@@ -410,12 +411,16 @@ msgid ""
 "The selected key couldn't be removed. Check that you provided a valid "
 "fingerprint."
 msgstr ""
+"Den valte nøkkelen kan ikkje fjernast. Kontroller at du oppgjev eit gyldig "
+"fingeravtrykk."
 
 #: ../aptkit/enums.py:415
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
 msgstr ""
+"Kontroller om du kjøyrer eit anna programvareverktøy, t.d. Synaptic eller "
+"aptitude. Berre ett verktøy kan gjera endringar om gongen."
 
 #: ../aptkit/enums.py:418
 msgid ""
@@ -430,6 +435,8 @@ msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
 msgstr ""
+"Kontroller staving av pakkenamnet og at det rette programvarearkivet er "
+"aktivert."
 
 #: ../aptkit/enums.py:423
 msgid "There isn't any need for an update."
@@ -437,7 +444,7 @@ msgstr "Oppdatering trengs ikkje."
 
 #: ../aptkit/enums.py:424
 msgid "There isn't any need for an installation"
-msgstr "Installasjon trengs ikkje."
+msgstr "Installasjon trengs ikkje"
 
 #: ../aptkit/enums.py:426
 msgid "There isn't any need for a removal."
@@ -453,15 +460,15 @@ msgstr ""
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
-msgstr ""
+msgstr "Mysta koplinga til daemon. Truleg krasja bakgrunns-daemonen."
 
 #: ../aptkit/enums.py:432
 msgid "The installation or removal of a software package failed."
-msgstr "Klarte ikkje å installera eller fjerna ein programvarepakke."
+msgstr "Mislukkast å installera eller fjerna ein programvarepakke."
 
 #: ../aptkit/enums.py:434
 msgid "The requested feature is not supported."
-msgstr ""
+msgstr "Den etterspurde funksjonen støttast ikkje."
 
 #: ../aptkit/enums.py:435
 msgid ""
@@ -469,6 +476,9 @@ msgid ""
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
+"Det lata til å være ein programmeringsfeil i aptkit, programvara som lar deg "
+"installera/fjerne programvare og utføra andre pakkehandteringsrelaterte "
+"oppgåver."
 
 #: ../aptkit/enums.py:439
 msgid ""
@@ -477,10 +487,14 @@ msgid ""
 "between software packages which are not allowed to be installed at the same "
 "time."
 msgstr ""
+"Denne feilen kan skuldast tilleggsprogramvare som mangler eller ikkje kan "
+"installerast. Den kan óg være ei konflikt mellom programvarepakkar som ikkje "
+"kan være installert samstundes."
 
 #: ../aptkit/enums.py:445
 msgid "This requires installing packages from unauthenticated sources."
 msgstr ""
+"Dette krevjar at du installerar pakkar frå ikkje-autoriserte kjelder."
 
 #: ../aptkit/enums.py:447
 msgid ""
@@ -488,11 +502,14 @@ msgid ""
 "software package or it was cancelled in an unfriendly way. You have to "
 "repair this before you can install or remove any further software."
 msgstr ""
+"Installasjonen kan ha mislukkast grunna ein feil i den tilsvarande "
+"programvarepakken, eller at den blei avbrote på ugunstig vis. Du må ordna "
+"dette før du kan installera eller fjerne fleire program."
 
 #: ../aptkit/enums.py:453
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
-msgstr ""
+msgstr "Ver vennleg og kopier fila til datamaskina og kontroller filrettane."
 
 #: ../aptkit/enums.py:456
 msgid ""
@@ -501,6 +518,10 @@ msgid ""
 "the person or organisation who provided this package file and include the "
 "details beneath."
 msgstr ""
+"Det er ikkje tillate å installera ein pakke som bryt med "
+"kvalitetsstandardane. Dette kan føra til alvorlege problem på datamaskina. "
+"Ver vennleg og ta kontakt med dei som har gitt ut denne pakkefila, og legg "
+"ved detaljane under."
 
 #: ../aptkit/enums.py:463
 msgid ""
@@ -508,20 +529,25 @@ msgid ""
 "is not valid or could not be installed correctly.\n"
 "See the details for more information."
 msgstr ""
+"Lisensnøkkelen som krevjast for å køyra dette programmet er ikkje gyldig. "
+"Noko kan ha gått gale under nedlasting eller installasjon.\n"
+"Sjå detaljane for meir informasjon."
 
 #: ../aptkit/enums.py:469
 msgid "All available upgrades have already been installed."
-msgstr ""
+msgstr "Alle tilgjengelege oppgraderingar har allereie vorte installerte."
 
 #: ../aptkit/enums.py:471
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
 msgstr ""
+"Mislukkast å laste ned lisensnøkkelen som tillèt deg å bruka dette "
+"programmet. Kontroller nettverkstilkoplinga di."
 
 #: ../aptkit/enums.py:475
 msgid "You don't have the required privileges to perform this action."
-msgstr ""
+msgstr "Du manglar løyve(r) til å utføra denne handlinga."
 
 #: ../aptkit/enums.py:477
 msgid ""
@@ -530,18 +556,21 @@ msgid ""
 "haven't seen a password dialog: your desktop environment doesn't provide a "
 "PolicyKit session agent."
 msgstr ""
+"Du har anten skrive inn feil passord, eller avbrote autorisasjonen.\n"
+"Om du ikkje fekk spørsmål om passord før denne meldinga, kan feilen komma av "
+"at skrivebordsmiljøet ditt manglar ein Policykit-sesjonsagent."
 
 #: ../aptkit/enums.py:485
 msgid "Failed to download package files"
-msgstr "Klarte ikkje å laste ned pakkefiler"
+msgstr "Mislukkast å laste ned pakkefiler"
 
 #: ../aptkit/enums.py:486
 msgid "Failed to download repository information"
-msgstr "Klarte ikkje å laste ned informasjon om pakkearkiva"
+msgstr "Mislukkast å laste ned informasjon om pakkearkiva"
 
 #: ../aptkit/enums.py:488
 msgid "Package dependencies cannot be resolved"
-msgstr ""
+msgstr "Pakkeavhengnader kunne ikkje løysast"
 
 #: ../aptkit/enums.py:489
 msgid "The package system is broken"
@@ -557,11 +586,11 @@ msgstr "Nøkkelen vart ikkje fjerna"
 
 #: ../aptkit/enums.py:492
 msgid "Failed to lock the package manager"
-msgstr "Klarte ikkje å låsa pakkehandsamaren"
+msgstr "Mislukkast å låsa pakkehandsamaren"
 
 #: ../aptkit/enums.py:493
 msgid "Failed to load the package list"
-msgstr "Klarte ikkje å lasta pakkelista"
+msgstr "Mislukkast å lasta pakkelista"
 
 #: ../aptkit/enums.py:494
 msgid "Package does not exist"
@@ -569,7 +598,7 @@ msgstr "Pakken fins ikkje"
 
 #: ../aptkit/enums.py:495
 msgid "Package is already up to date"
-msgstr ""
+msgstr "Pakken er allereie oppdatert"
 
 #: ../aptkit/enums.py:496
 msgid "Package is already installed"
@@ -581,7 +610,7 @@ msgstr "Pakken er ikkje installert"
 
 #: ../aptkit/enums.py:498
 msgid "Failed to remove essential system package"
-msgstr "Klarte ikkje å fjerna ein grunnleggande systempakke"
+msgstr "Mislukkast å fjerna ein grunnleggande systempakke"
 
 #: ../aptkit/enums.py:500
 msgid "Task cannot be monitored or controlled"
@@ -589,7 +618,7 @@ msgstr "Denne oppgåva kan verken overvakast eller kontrollerast"
 
 #: ../aptkit/enums.py:501
 msgid "Package operation failed"
-msgstr "Klarte ikkje å gjennomføra pakkeoperasjonen"
+msgstr "Mislukkast å gjennomføra pakkeoperasjonen"
 
 #: ../aptkit/enums.py:502
 msgid "Requires installation of untrusted packages"
@@ -601,39 +630,39 @@ msgstr "Den førre installasjonen er ikkje fullført"
 
 #: ../aptkit/enums.py:505
 msgid "The package is of bad quality"
-msgstr ""
+msgstr "Pakken er i dårleg forfatning"
 
 #: ../aptkit/enums.py:506
 msgid "Package file could not be opened"
-msgstr ""
+msgstr "Pakkefila kunne ikkje opnast"
 
 #: ../aptkit/enums.py:507
 msgid "Not supported feature"
-msgstr ""
+msgstr "Ikkje støtta funksjon"
 
 #: ../aptkit/enums.py:508
 msgid "Failed to download the license key"
-msgstr ""
+msgstr "Mislukkast å laste ned lisensnøkkelen"
 
 #: ../aptkit/enums.py:509
 msgid "Failed to install the license key"
-msgstr ""
+msgstr "Mislukkast å installera lisensnøkkelen"
 
 #: ../aptkit/enums.py:510
 msgid "The system is already up to date"
-msgstr ""
+msgstr "Systemet er allereie oppdatert"
 
 #: ../aptkit/enums.py:511
 msgid "You could not be authorized"
-msgstr ""
+msgstr "Du kunne ikkje bli"
 
 #: ../aptkit/enums.py:512
 msgid "You are not allowed to perform this action"
-msgstr ""
+msgstr "Du har ikkje løyve til å utføra handlinga"
 
 #: ../aptkit/enums.py:513
 msgid "An unhandlable error occured"
-msgstr ""
+msgstr "Ein uhandterleg feil oppstod"
 
 #: ../aptkit/enums.py:516
 msgid "Waiting for service to start"
@@ -645,7 +674,7 @@ msgstr "Ventar"
 
 #: ../aptkit/enums.py:519
 msgid "Waiting for required medium"
-msgstr ""
+msgstr "Ventar på påkravd medium"
 
 #: ../aptkit/enums.py:520
 msgid "Waiting for other software managers to quit"
@@ -653,7 +682,7 @@ msgstr "Ventar på at ein annan programvarehandsamar skal avslutte"
 
 #: ../aptkit/enums.py:521
 msgid "Waiting for configuration file prompt"
-msgstr ""
+msgstr "Ventar på dialog for oppsettfil"
 
 #: ../aptkit/enums.py:523
 msgid "Running task"
@@ -665,7 +694,7 @@ msgstr "Lastar ned"
 
 #: ../aptkit/enums.py:525
 msgid "Querying software sources"
-msgstr ""
+msgstr "Spør programvarekjelder"
 
 #: ../aptkit/enums.py:526
 msgid "Cleaning up"
@@ -673,7 +702,7 @@ msgstr "Ryddar opp"
 
 #: ../aptkit/enums.py:527
 msgid "Resolving dependencies"
-msgstr "Ordnar opp i bindingar"
+msgstr "Ordnar opp i avhengnader"
 
 #: ../aptkit/enums.py:529
 msgid "Finished"
@@ -689,7 +718,7 @@ msgstr "Lastar programvareliste"
 
 #: ../aptkit/enums.py:532
 msgid "Waiting for authentication"
-msgstr ""
+msgstr "Ventar på autentisering"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:536
@@ -713,19 +742,19 @@ msgstr "Fjernar %s"
 #: ../aptkit/enums.py:542
 #, python-format
 msgid "Completely removing %s"
-msgstr ""
+msgstr "Fjernar %s fullstendig"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:544
 #, python-format
 msgid "Noting disappearance of %s"
-msgstr ""
+msgstr "Legger merke til at %s forsvinn"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:546
 #, python-format
 msgid "Running post-installation trigger %s"
-msgstr ""
+msgstr "Køyrer etter-installasjonsutløysar %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:548
@@ -737,74 +766,74 @@ msgstr "Oppgraderar %s"
 #: ../aptkit/enums.py:550
 #, python-format
 msgid "Unpacking %s"
-msgstr ""
+msgstr "Pakkar ut %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:552
 #, python-format
 msgid "Preparing installation of %s"
-msgstr ""
+msgstr "Førebur installasjonen av %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:554
 #, python-format
 msgid "Preparing configuration of %s"
-msgstr ""
+msgstr "Førebur konfigurering av %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:556
 #, python-format
 msgid "Preparing removal of %s"
-msgstr ""
+msgstr "Førebur fjerning av %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:558
 #, python-format
 msgid "Preparing complete removal of %s"
-msgstr ""
+msgstr "Førebur fullstendig fjerning av %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:560
 #, python-format
 msgid "Installed %s"
-msgstr ""
+msgstr "%s vart installert"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:562
 #, python-format
 msgid "Completely removed %s"
-msgstr ""
+msgstr "%s vart fullstendig fjerna"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:564
 #, python-format
 msgid "Removed %s"
-msgstr ""
+msgstr "%s vart fjerna"
 
 #: ../aptkit/enums.py:567
 msgid "Done"
-msgstr ""
+msgstr "Fullført"
 
 #: ../aptkit/enums.py:568
 msgid "Authentication failed"
-msgstr ""
+msgstr "Autentisering mislukkast"
 
 #: ../aptkit/enums.py:570
 msgid "Fetching"
-msgstr ""
+msgstr "Hentar"
 
 #: ../aptkit/enums.py:571
 msgid "Idle"
-msgstr ""
+msgstr "Klar"
 
 #: ../aptkit/enums.py:572
 msgid "Network isn't available"
-msgstr ""
+msgstr "Nettverk ikkje tilgjengeleg"
 
 #: ../aptkit/enums.py:704
 #, python-format
 msgid "Processing %s"
-msgstr ""
+msgstr "Behandlar %s"
 
 #: ../aptkit/gtk3widgets.py:311
 #, python-format
@@ -822,27 +851,27 @@ msgstr "Detaljar"
 
 #: ../aptkit/gtk3widgets.py:481
 msgid "File"
-msgstr ""
+msgstr "Fil"
 
 #. TRANSLATORS: header of the progress download column
 #: ../aptkit/gtk3widgets.py:486
 msgid "%"
-msgstr ""
+msgstr "%"
 
 #: ../aptkit/gtk3widgets.py:522
 #, python-format
 msgid "Downloaded %sB"
-msgstr ""
+msgstr "Lasta ned %sB"
 
 #: ../aptkit/gtk3widgets.py:525
 msgid "Downloaded"
-msgstr ""
+msgstr "Nedlasta"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
 #: ../aptkit/gtk3widgets.py:860
 #, python-format
 msgid "CD/DVD '%s' is required"
-msgstr "Treng CD- eller DVD-plata '%s'"
+msgstr "Krevjar CD- eller DVD-plata '%s'"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
 #: ../aptkit/gtk3widgets.py:862
@@ -851,38 +880,40 @@ msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
 "packages from it."
 msgstr ""
+"Ver vennleg og set inn angitt CD/DVD i ’%s’ for å installera programvare frå "
+"den."
 
 #: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
 msgid "C_ontinue"
-msgstr ""
+msgstr "F_ortsett"
 
 #: ../aptkit/gtk3widgets.py:939
 msgid "Install"
-msgstr ""
+msgstr "Installer"
 
 #: ../aptkit/gtk3widgets.py:940
 msgid "Reinstall"
-msgstr ""
+msgstr "Installer på ny"
 
 #: ../aptkit/gtk3widgets.py:941
 msgid "Remove"
-msgstr ""
+msgstr "Fjerna"
 
 #: ../aptkit/gtk3widgets.py:942
 msgid "Purge"
-msgstr ""
+msgstr "Slett"
 
 #: ../aptkit/gtk3widgets.py:943
 msgid "Upgrade"
-msgstr ""
+msgstr "Oppgrader"
 
 #: ../aptkit/gtk3widgets.py:944
 msgid "Downgrade"
-msgstr ""
+msgstr "Nedgrader"
 
 #: ../aptkit/gtk3widgets.py:945
 msgid "Skip upgrade"
-msgstr ""
+msgstr "Hopp over oppgradering"
 
 #. If there is only one type of changes (e.g. only installs) expand the
 #. tree
@@ -891,54 +922,54 @@ msgstr ""
 #. initial packages or both?
 #: ../aptkit/gtk3widgets.py:956
 msgid "Please take a look at the list of changes below."
-msgstr ""
+msgstr "Ver vennleg og sjå over lista over endringar nedanfor."
 
 #: ../aptkit/gtk3widgets.py:964
 msgid "Additional software has to be installed"
-msgstr ""
+msgstr "Tilleggsprogramvare må óg installerast"
 
 #: ../aptkit/gtk3widgets.py:966
 msgid "Additional software has to be re-installed"
-msgstr ""
+msgstr "Tilleggsprogramvare må installerast på ny"
 
 #: ../aptkit/gtk3widgets.py:968
 msgid "Additional software has to be removed"
-msgstr ""
+msgstr "Tilleggsprogramvare må fjernast"
 
 #: ../aptkit/gtk3widgets.py:970
 msgid "Additional software has to be purged"
-msgstr ""
+msgstr "Tilleggsprogramvare må slettast"
 
 #: ../aptkit/gtk3widgets.py:972
 msgid "Additional software has to be upgraded"
-msgstr ""
+msgstr "Tilleggsprogramvare må oppgraderast"
 
 #: ../aptkit/gtk3widgets.py:974
 msgid "Additional software has to be downgraded"
-msgstr ""
+msgstr "Tilleggsprogramvare må nedgraderast"
 
 #: ../aptkit/gtk3widgets.py:976
 msgid "Updates will be skipped"
-msgstr ""
+msgstr "Hoppar over oppdateringar"
 
 #: ../aptkit/gtk3widgets.py:984
 msgid "Additional changes are required"
-msgstr ""
+msgstr "Ytterlegare endringar må gjerast"
 
 #: ../aptkit/gtk3widgets.py:989
 #, python-format
 msgid "%sB will be downloaded in total."
-msgstr ""
+msgstr "%sB vil bli lasta ned totalt."
 
 #: ../aptkit/gtk3widgets.py:993
 #, python-format
 msgid "%sB of disk space will be freed."
-msgstr ""
+msgstr "%sB diskplass vil frigjerast."
 
 #: ../aptkit/gtk3widgets.py:997
 #, python-format
 msgid "%sB more disk space will be used."
-msgstr ""
+msgstr "%sB meir diskplass vil bli nytta."
 
 #. TRANSLATORS: %s is a file path
 #: ../aptkit/gtk3widgets.py:1069
@@ -959,230 +990,232 @@ msgstr ""
 
 #: ../aptkit/gtk3widgets.py:1080
 msgid "_Changes"
-msgstr ""
+msgstr "_Endringar"
 
 #: ../aptkit/gtk3widgets.py:1083
 msgid "_Keep"
-msgstr ""
+msgstr "_Behald"
 
 #: ../aptkit/gtk3widgets.py:1084
 msgid "_Replace"
-msgstr ""
+msgstr "_Erstatt"
 
 #: ../aptkit/gtk3widgets.py:1187
 msgid "_Details"
-msgstr ""
+msgstr "_Detaljar"
 
 #. TRANSLATORS: %s is the name of a package manager
 #: ../aptkit/lock.py:189
 #, python-format
 msgid "Waiting for %s to exit"
-msgstr ""
+msgstr "Ventar på at %s skal avsluttast"
 
 #. TRANSLATORS: %s is a list of package names
 #: ../aptkit/progress.py:168
 #, python-format
 msgid "Downloading %s"
-msgstr ""
+msgstr "Lastar ned %s"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
 #: ../aptkit/progress.py:277 ../aptkit/progress.py:314
 msgid "local repository"
-msgstr ""
+msgstr "lokalt mellomlager"
 
 #. TRANSLATORS: %s is a list of repository names
 #: ../aptkit/progress.py:280
 #, python-format
 msgid "Downloading from %s"
-msgstr ""
+msgstr "Lastar ned frå %s"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:318
 #, python-format
 msgid "Structure of %s"
-msgstr ""
+msgstr "Struktur av %s"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:321
 #, python-format
 msgid "Description of %s"
-msgstr ""
+msgstr "Skildring av %s"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:324
 #, python-format
 msgid "Description signature of %s"
-msgstr ""
+msgstr "Skildringsignatur av %s"
 
 #: ../aptkit/progress.py:329
 #, python-format
 msgid "Available packages from %s"
-msgstr ""
+msgstr "Tilgjengelege pakkar frå %s"
 
 #: ../aptkit/progress.py:333
 #, python-format
 msgid "Available sources from %s"
-msgstr ""
+msgstr "Tilgjengelege kjelder frå %s"
 
 #. TRANSLATORS: repo is the name of a repository
 #: ../aptkit/progress.py:336
 #, python-format
 msgid "Available translations from %s"
-msgstr ""
+msgstr "Tilgjengelege omsettingar frå %s"
 
 #: ../aptkit/progress.py:353
 #, python-format
 msgid "Translations for %s (%s) from %s"
-msgstr ""
+msgstr "Omsettingar for %s (%s) frå %s"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
 #: ../aptkit/progress.py:357
 #, python-format
 msgid "Translations for %s from %s"
-msgstr ""
+msgstr "Omsettingar for %s frå %s"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
 #: ../aptkit/progress.py:362
 #, python-format
 msgid "Translations (%s) from %s"
-msgstr ""
+msgstr "Omsettingar (%s) frå %s"
 
 #: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
 #: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
 #, python-format
 msgid "Package %s isn't available"
-msgstr ""
+msgstr "Pakke %s er ikkje tilgjengeleg"
 
 #: ../aptkit/worker/aptworker.py:384 ../aptkit/worker/aptworker.py:682
 #: ../aptkit/worker/aptworker.py:777 ../aptkit/worker/aptworker.py:822
 #, python-format
 msgid "Package %s isn't installed"
-msgstr ""
+msgstr "Pakke %s er ikkje installert"
 
 #: ../aptkit/worker/aptworker.py:388
 #, python-format
 msgid "The version %s of %s isn't installed"
-msgstr ""
+msgstr "Versjon %s av %s er ikkje installert"
 
 #: ../aptkit/worker/aptworker.py:403
 #, python-format
 msgid "Package %s is already installed"
-msgstr ""
+msgstr "Pakke %s er allereie installert"
 
 #: ../aptkit/worker/aptworker.py:410 ../aptkit/worker/aptworker.py:845
 #, python-format
 msgid "The version %s of %s isn't available."
-msgstr ""
+msgstr "Versjon %s av %s er ikkje tilgjengeleg."
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
 #: ../aptkit/worker/aptworker.py:572
 #, python-format
 msgid "The keyserver URL is invalid: %s"
-msgstr ""
+msgstr "Nøkkeltenar-URL er ikkje gyldig: %s"
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
 #: ../aptkit/worker/aptworker.py:578
 #, python-format
 msgid "Invalid protocol of the server: %s"
-msgstr ""
+msgstr "Ugyldig tenarprotokoll på: %s"
 
 #. TRANSLATORS: %s is the id of a GnuPG key
 #. e.g. E08ADE95
 #: ../aptkit/worker/aptworker.py:586 ../aptkit/worker/aptworker.py:630
 #, python-format
 msgid "Invalid key id: %s"
-msgstr ""
+msgstr "Ugyldig nøkkel-ID: %s"
 
 #: ../aptkit/worker/aptworker.py:594
 #, python-format
 msgid ""
 "Failed to download and install the key %s from %s:\n"
 "%s"
-msgstr ""
+msgstr "Mislukkast nedlasting og installasjon av nøkkel %s frå %s:%s"
 
 #: ../aptkit/worker/aptworker.py:611
 #, python-format
 msgid "Key file %s couldn't be installed: %s"
-msgstr ""
+msgstr "Nøkkelfil %s kunne ikkje installerast: %s"
 
 #: ../aptkit/worker/aptworker.py:635
 #, python-format
 msgid "Key with fingerprint %s couldn't be removed: %s"
-msgstr ""
+msgstr "Nøkkel med fingeravtrykk %s kunne ikkje fjernast: %s"
 
 #: ../aptkit/worker/aptworker.py:686
 #, python-format
 msgid "Package %s cannot be removed."
-msgstr ""
+msgstr "Pakken %s kan ikkje fjernast."
 
 #: ../aptkit/worker/aptworker.py:690
 #, python-format
 msgid "The version %s of %s is not installed"
-msgstr ""
+msgstr "Versjon %s av %s er ikkje installert"
 
 #: ../aptkit/worker/aptworker.py:785
 #, python-format
 msgid "The former version %s of %s is already installed"
-msgstr ""
+msgstr "Tidlegare versjon %s av %s er allereie installert"
 
 #: ../aptkit/worker/aptworker.py:790 ../aptkit/worker/aptworker.py:838
 #, python-format
 msgid "The version %s of %s is already installed"
-msgstr ""
+msgstr "Versjon %s av %s er allereie installert"
 
 #: ../aptkit/worker/aptworker.py:797
 #, python-format
 msgid "The version %s of %s isn't available"
-msgstr ""
+msgstr "Versjon %s av %s er ikkje tilgjengeleg"
 
 #: ../aptkit/worker/aptworker.py:801
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
-msgstr ""
+msgstr "Du må angi ein versjon som %s skal nedgraderast til"
 
 #: ../aptkit/worker/aptworker.py:831
 #, python-format
 msgid "The later version %s of %s is already installed"
-msgstr ""
+msgstr "Den nyare versjonen %s av %s er allereie installert"
 
 #: ../aptkit/worker/aptworker.py:867
 #, python-format
 msgid "The package %s isn't available in the %s release."
-msgstr ""
+msgstr "Pakken %s er ikkje tilgjengeleg i %s-utgivelsen."
 
 #: ../aptkit/worker/aptworker.py:1052
 #, python-format
 msgid "Package %s cannot be removed"
-msgstr ""
+msgstr "Pakke %s kan ikkje fjernast"
 
 #: ../aptkit/worker/aptworker.py:1154
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
 msgstr ""
+"Pakken manglar gyldig kontrollfelt for «Installed-size». Sjå 5.6.20 i Debian "
+"Policy-bruksrettleiinga."
 
 #: ../aptkit/worker/aptworker.py:1293
 msgid "The license key is empty"
-msgstr ""
+msgstr "Lisensnøkkelen er tom"
 
 #: ../aptkit/worker/aptworker.py:1309
 msgid "The license key is not allowed to contain executable code."
-msgstr ""
+msgstr "Lisensnøkkelen kan ikkje innehalde kjørbar kode."
 
 #: ../aptkit/worker/aptworker.py:1318
 #, python-format
 msgid "The license key path %s is invalid"
-msgstr ""
+msgstr "Lisensnøkkelens sti %s er ugyldig"
 
 #: ../aptkit/worker/aptworker.py:1322
 #, python-format
 msgid "The license key already exists: %s"
-msgstr ""
+msgstr "Lisensnøkkelen eksisterer allereie: %s"
 
 #: ../aptkit/worker/aptworker.py:1327
 #, python-format
@@ -1190,41 +1223,43 @@ msgid ""
 "The location of the license key is unsecure since it contains symbolic "
 "links. The path %s maps to %s"
 msgstr ""
+"Plasseringa av lisensnøkkelen er usikker, fordi ho inneheld symbolske "
+"lenkjer. Stien %s peikar mot %s"
 
 #: ../aptkit/worker/aptworker.py:1335
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
-msgstr ""
+msgstr "Mappa der du installerer nøkkelen eksisterer ikkje enno: %s"
 
 #: ../aptkit/worker/aptworker.py:1346
 #, python-format
 msgid "Failed to write key file to: %s"
-msgstr ""
+msgstr "Klarte ikkje å skriva nøkkel til %s"
 
 #: ../aptkit/worker/aptworker.py:1381
 msgid "The following packages have unmet dependencies:"
-msgstr ""
+msgstr "Følgjande pakkar har krav som ikkje er oppfylt:"
 
 #: ../aptkit/worker/aptworker.py:1434
 msgid "but it is a virtual package"
-msgstr ""
+msgstr "men er ein virtuell pakke"
 
 #: ../aptkit/worker/aptworker.py:1437
 msgid "but it is not installed"
-msgstr ""
+msgstr "men er ikkje installert"
 
 #: ../aptkit/worker/aptworker.py:1439
 msgid "but it is not going to be installed"
-msgstr ""
+msgstr "men vil ikkje bli installert"
 
 #. TRANSLATORS: %s is a version number
 #: ../aptkit/worker/aptworker.py:1443
 #, python-format
 msgid "but %s is installed"
-msgstr ""
+msgstr "men %s er installert"
 
 #. TRANSLATORS: %s is a version number
 #: ../aptkit/worker/aptworker.py:1447
 #, python-format
 msgid "but %s is to be installed"
-msgstr ""
+msgstr "men %s skal installerast"

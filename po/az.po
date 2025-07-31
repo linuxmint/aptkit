@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-12-22 18:38+0000\n"
+"PO-Revision-Date: 2025-01-19 20:26+0000\n"
 "Last-Translator: Oktay Imanzade <Unknown>\n"
 "Language-Team: Azerbaijani <az@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-01-06 12:02+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-07-31 09:25+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
 "Language: az\n"
 
 #: ../data/org.debian.aptkit.policy.in.h:1
@@ -25,6 +25,7 @@ msgstr "İnanılmış vendorların açar siyahısı"
 #: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr ""
+"Etibarlı açarların siyahısına baxmaq üçün autentifikasiya etməlisiniz."
 
 #: ../data/org.debian.aptkit.policy.in.h:3
 msgid "Remove downloaded package files"
@@ -33,6 +34,7 @@ msgstr "Yüklənmiş paket fayllarını sil"
 #: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr ""
+"Yüklənmiş paket fayllarını təmizləmək üçün autentifikasiya etməlisiniz."
 
 #: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
@@ -40,7 +42,7 @@ msgstr "Proqram təminatının konfiqurasiyasını dəyiş"
 
 #: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
-msgstr ""
+msgstr "Proqram parametrlərini dəyişdirmək üçün autentifikasiya etməlisiniz."
 
 #: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
@@ -49,6 +51,7 @@ msgstr "Proqram təminatı repositorunu dəyiş"
 #: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr ""
+"Proqram deposunun parametrlərini dəyişmək üçün autentifikasiya etməlisiniz."
 
 #: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
@@ -60,11 +63,11 @@ msgstr "Bu paketi quraşdırmaq üçün, həqiqiliyinizi təsdiq etməlisiniz."
 
 #: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
-msgstr ""
+msgstr "Paket məlumatını yeniləyin"
 
 #: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
-msgstr ""
+msgstr "Proqram kataloqunu yeniləmək üçün autentifikasiya etməlisiniz."
 
 #: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
@@ -72,7 +75,7 @@ msgstr "Paketləri yüklə və ya sil"
 
 #: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
-msgstr ""
+msgstr "Proqramı quraşdırmaq və ya silmək üçün autentifikasiya etməlisiniz."
 
 #. This priviledge will be requested when installing a package
 #. from a high trusted repository that can be explicitely whitelisted.
@@ -86,11 +89,11 @@ msgstr ""
 #. 
 #: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
-msgstr ""
+msgstr "Proqramı yüksək etibarlı ağ siyahıya alınmış depodan quraşdırın."
 
 #: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
-msgstr ""
+msgstr "Proqramı quraşdırmaq üçün autentifikasiya etməlisiniz."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -103,7 +106,7 @@ msgstr "Yeni repositor əlavə et və ordan paketlər yüklə"
 
 #: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
-msgstr ""
+msgstr "Proqramı yeni mənbədən quraşdırmaq üçün autentifikasiya etməlisiniz."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.

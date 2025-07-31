@@ -8,31 +8,33 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-09-09 18:40+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"PO-Revision-Date: 2025-01-08 16:28+0000\n"
+"Last-Translator: GoldenVadim <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-01-06 12:02+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-07-31 09:25+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
 "Language: uk\n"
 
 #: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
-msgstr "Перелік ключів надійних постачальників ПЗ"
+msgstr "Перелік ключів довірених постачальників ПЗ"
 
 #: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
-msgstr "Щоб переглянути перелік довірених ключів, треба автентифікуватись."
+msgstr ""
+"Щоби переглянути перелік надійних ключів, вам потрібно автентифікуватись."
 
 #: ../data/org.debian.aptkit.policy.in.h:3
 msgid "Remove downloaded package files"
-msgstr "Вилучити завантажені пакунки"
+msgstr "Вилучити завантажені файли пакунків"
 
 #: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
-msgstr "Для вилучення завантажених пакунків треба автентифікуватись."
+msgstr ""
+"Для очищення завантажених файлів пакунків, вам потрібно автентифікуватись."
 
 #: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
@@ -41,7 +43,7 @@ msgstr "Змінити налаштування програмного забе�
 #: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
 msgstr ""
-"Щоб мати змогу змінювати налаштування програм, треба автентифікуватись."
+"Щоб мати змогу змінювати налаштування програм, потрібно автентифікуватись."
 
 #: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
@@ -49,7 +51,8 @@ msgstr "Змінити сховище програм"
 
 #: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
-msgstr "Для зміни налаштувань сховищ програм, вам треба автентифікуватися."
+msgstr ""
+"Для зміни налаштувань сховищ програм, вам потрібно автентифікуватися."
 
 #: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
@@ -57,7 +60,7 @@ msgstr "Встановлення файла пакунка"
 
 #: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
-msgstr "Щоб встановити цей пакунок, треба автентифікуватись."
+msgstr "Щоб встановити цей пакунок, потрібно автентифікуватися."
 
 #: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
@@ -65,7 +68,7 @@ msgstr "Оновлення інформації про пакунки"
 
 #: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
-msgstr "Щоб оновити перелік програм, треба автентифікуватись."
+msgstr "Щоб оновити перелік програм, потрібно автентифікуватись."
 
 #: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
@@ -73,7 +76,7 @@ msgstr "Встановити чи вилучити пакунки"
 
 #: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
-msgstr "Для встановлення і вилучення програм, треба автентифікуватися."
+msgstr "Для встановлення і вилучення програм, потрібно автентифікуватися."
 
 #. This priviledge will be requested when installing a package
 #. from a high trusted repository that can be explicitely whitelisted.
@@ -120,11 +123,11 @@ msgstr "Щоб встановити програми з нового джере�
 #: ../data/org.debian.aptkit.policy.in.h:42
 msgid ""
 "Add a new repository of purchased software and install packages from it"
-msgstr "Додати сховище для платних програм і встановити з нього пакунки"
+msgstr "Додати сховище придбаного ПЗ і встановити з нього пакунки"
 
 #: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
-msgstr "Щоб встановити платні програми, треба автентифікуватись."
+msgstr "Щоб встановити придбані програми, потрібно автентифікуватись."
 
 #: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
@@ -132,7 +135,7 @@ msgstr "Оновлення пакунків"
 
 #: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
-msgstr "Щоб встановити оновлення, требя автентифікуватись"
+msgstr "Щоб встановити оновлення, треба автентифікуватись"
 
 #: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
@@ -140,7 +143,7 @@ msgstr "Скасувати завдання іншого користувача"
 
 #: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
-msgstr "Щоб скасувати чужі зміни в ПЗ, треба автентифікуватися."
+msgstr "Щоб скасувати чужі зміни в ПЗ, потрібно автентифікуватися."
 
 #: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
@@ -159,7 +162,7 @@ msgstr "Не вимикайте фонову службу через її неа
 
 #: ../aptkit/core.py:2153
 msgid "Do not load any plugins"
-msgstr "Не завантажувати жодних втулків"
+msgstr "Не завантажувати жодних втулок"
 
 #: ../aptkit/core.py:2157
 msgid "Show internal processing information"
@@ -167,7 +170,7 @@ msgstr "Показувати інформацію про внутрішню об
 
 #: ../aptkit/core.py:2162
 msgid "Quit and replace an already running daemon"
-msgstr "Вийти і замінити вже запущену службу"
+msgstr "Вийти й замінити вже запущену фонову службу"
 
 #: ../aptkit/core.py:2167
 msgid "Listen on the DBus session bus (Only required for testing"
@@ -183,7 +186,7 @@ msgstr "Зберігати статистику профілю у вказано
 
 #: ../aptkit/core.py:2181
 msgid "Do not make any changes to the system (Only of use to developers)"
-msgstr "Не вносьте жодних змін до системи (тільки для розробників)"
+msgstr "Не вносьте жодних змін до системи (лише для розробників)"
 
 #: ../aptkit/enums.py:337
 msgid "Installed file"
@@ -195,11 +198,11 @@ msgstr "Встановлені пакунки"
 
 #: ../aptkit/enums.py:339
 msgid "Added key from file"
-msgstr "Доданий з файла ключ"
+msgstr "Доданий ключ з файлу"
 
 #: ../aptkit/enums.py:340
 msgid "Updated cache"
-msgstr "Кэш оновлений"
+msgstr "Оновлений кеш"
 
 #: ../aptkit/enums.py:341
 msgid "Search done"
@@ -219,7 +222,7 @@ msgstr "Оновлені пакунки"
 
 #: ../aptkit/enums.py:345
 msgid "Upgraded system"
-msgstr "Система оновлена"
+msgstr "Оновлена система"
 
 #: ../aptkit/enums.py:346
 msgid "Applied changes"
@@ -231,7 +234,7 @@ msgstr "Виправлене незавершене встановлення"
 
 #: ../aptkit/enums.py:348
 msgid "Repaired broken dependencies"
-msgstr "Виправлені порушені залежності"
+msgstr "Виправлено пошкоджені залежності"
 
 #: ../aptkit/enums.py:349
 msgid "Added software source"
@@ -243,7 +246,7 @@ msgstr "Увімкнено компонент дистрибутива"
 
 #: ../aptkit/enums.py:351
 msgid "Removed downloaded package files"
-msgstr "Вилучені файли завантажених пакунків"
+msgstr "Вилучені завантажені файли пакунку"
 
 #: ../aptkit/enums.py:352
 msgid "Reconfigured installed packages"
@@ -307,7 +310,7 @@ msgstr "Виправлення встановленого програмного
 
 #: ../aptkit/enums.py:372
 msgid "Adding software source"
-msgstr "Додавання джерела программного забезпечення"
+msgstr "Додавання джерела програмного забезпечення"
 
 #: ../aptkit/enums.py:373
 msgid "Enabling component of the distribution"
@@ -315,7 +318,7 @@ msgstr "Вмикання компоненту дистрибутива"
 
 #: ../aptkit/enums.py:374
 msgid "Removing downloaded package files"
-msgstr "ВИлучення завантажених файлів пакунків"
+msgstr "Вилучення завантажених файлів пакунка"
 
 #: ../aptkit/enums.py:375
 msgid "Reconfiguring installed packages"
@@ -345,9 +348,7 @@ msgstr "Збій оновлення списку програмного забе
 
 #: ../aptkit/enums.py:385
 msgid "Removing the vendor from the list of trusted ones failed"
-msgstr ""
-"Збій вилучення елемента  зі списку надійних розповсюджувачів програмного "
-"забезпечення"
+msgstr "Збій вилучення постачальника зі списку довірених"
 
 #: ../aptkit/enums.py:387
 msgid "Removing software failed"
@@ -371,7 +372,7 @@ msgstr "Збій виправлення незавершеного встано�
 
 #: ../aptkit/enums.py:393
 msgid "Repairing broken dependencies failed"
-msgstr "Не вдалося задовольнити порушені залежності"
+msgstr "Не вдалося зремонтувати пошкоджені залежності"
 
 #: ../aptkit/enums.py:394
 msgid "Adding software source failed"
@@ -403,20 +404,20 @@ msgid ""
 "they are a common source of problems.\n"
 "Furthermore run the following command in a Terminal: apt-get install -f"
 msgstr ""
-"Якщо Ви використовуєте сторонні джерела програм, відключіть їх, оскільки "
-"вони часто є джерелом проблем.\n"
-"Потім виконайте в терміналі наступну команду: apt-get install -f"
+"Перевірте чи Ви використовуєте сторонні сховища. Якщо що вимкніть їх, "
+"оскільки вони є поширеним джерелом проблем. Крім того запустіть наступну "
+"команду в терміналі: sudo apt-get install -f"
 
 #: ../aptkit/enums.py:411
 msgid "The selected file may not be a GPG key file or it might be corrupt."
-msgstr "Вибраний файл, можливо, не є файлом GPG ключа або він пошкоджений."
+msgstr "Обраний файл, можливо, не є файлом GPG ключа або він пошкоджений."
 
 #: ../aptkit/enums.py:413
 msgid ""
 "The selected key couldn't be removed. Check that you provided a valid "
 "fingerprint."
 msgstr ""
-"Не вдалося вилучити вибраний ключ. Переконайтесь, що вказано коректний "
+"Не вдалося вилучити обраний ключ. Переконайтеся, що вказано коректний "
 "цифровий підпис."
 
 #: ../aptkit/enums.py:415
@@ -424,8 +425,9 @@ msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
 msgstr ""
-"Перевірте чи не запущено іншу програму керування пакунками, наприклад "
-"Synaptic чи aptitude. Не можна використовувати кілька програм одночасно."
+"Перевірте чи не запущено інший інструмент керування пакунками, наприклад "
+"Synaptic чи aptitude. Тільки один інструмент дозволено щоб робити зміни "
+"одночасно."
 
 #: ../aptkit/enums.py:418
 msgid ""
@@ -439,17 +441,15 @@ msgstr ""
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
-msgstr ""
-"Перевірте написання назви пакунку і що відповідне сховище дозволено "
-"використовувати."
+msgstr "Перевірте написання назви пакунку і що відповідне сховище включене."
 
 #: ../aptkit/enums.py:423
 msgid "There isn't any need for an update."
-msgstr "Немає потреби в оновленні."
+msgstr "Немає потреби у оновленні."
 
 #: ../aptkit/enums.py:424
 msgid "There isn't any need for an installation"
-msgstr "Немає потреби в установці."
+msgstr "Немає потреби у встановленні."
 
 #: ../aptkit/enums.py:426
 msgid "There isn't any need for a removal."
@@ -458,7 +458,8 @@ msgstr "Немає потреби у вилученні."
 #: ../aptkit/enums.py:427
 msgid ""
 "You requested to remove a package which is an essential part of your system."
-msgstr "Ви запросили вилучення пакунка, який є невід’ємною частиною системи."
+msgstr ""
+"Ви попросили видалити пакунок, який є важливою частиною вашої системи."
 
 #: ../aptkit/enums.py:430
 msgid ""
@@ -472,7 +473,7 @@ msgstr "Збій під час встановлення або вилученн�
 
 #: ../aptkit/enums.py:434
 msgid "The requested feature is not supported."
-msgstr "Запитаний параметр не підтримується."
+msgstr "Запитана особистість не підтримується."
 
 #: ../aptkit/enums.py:435
 msgid ""
@@ -480,9 +481,9 @@ msgid ""
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
-"Схоже, виникла програмна помилка  в aptkit — програмі, що дозволяє "
+"Схоже, виникла програмна помилка в aptkit — програмі, що дозволяє "
 "встановлювати/вилучати програмне забезпечення та виконати інші пов’язані з "
-"ним завдання"
+"ним завдання."
 
 #: ../aptkit/enums.py:439
 msgid ""

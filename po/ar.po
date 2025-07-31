@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-09-10 08:50+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"PO-Revision-Date: 2025-06-07 22:32+0000\n"
+"Last-Translator: Abdualrahman Hasan <Unknown>\n"
 "Language-Team: Arabic <ar@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-01-06 12:02+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-07-31 09:25+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
 "Language: ar\n"
 
 #: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
-msgstr "قائمه بمفاتيح  البائعين الموثوقين"
+msgstr "عرض قائمة مفاتيح البائعين الموثوفين"
 
 #: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
-msgstr "لعرض قائمه بالمفاتيح الموثوقة، تحتاج للاستيثاق."
+msgstr "لعرض قائمة المفاتيح الموثوقة، تحتاج للمصادقة."
 
 #: ../data/org.debian.aptkit.policy.in.h:3
 msgid "Remove downloaded package files"
@@ -32,7 +32,7 @@ msgstr "إزالة ملفات الحزم المنزّلة"
 
 #: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
-msgstr "لمسح ملفات الحزم المنزّلة، تحتاج للاستيثاق"
+msgstr "لتنظيف ملفات الحزم المنزّلة، تحتاج للمصادقة."
 
 #: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
@@ -40,7 +40,7 @@ msgstr "تغيير تكوين البرنامج"
 
 #: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
-msgstr "لتغيير إعدادات البرنامج، تحتاج للاستيثاق."
+msgstr "لتغيير إعدادات البرنامج، تحتاج للمصادقة."
 
 #: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
@@ -48,7 +48,7 @@ msgstr "تغيير مستودع البرنامج"
 
 #: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
-msgstr "لتغيير إعدادات مستودعات البرمجيات، تحتاج للاستيثاق."
+msgstr "لتغيير إعدادات مستودعات البرامج، تحتاج للمصادقة."
 
 #: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
@@ -56,7 +56,7 @@ msgstr "تثبيت ملف الحزمة"
 
 #: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
-msgstr "لتثبيت هذه الحزمة، تحتاج للاستيثاق."
+msgstr "لتثبيت هذه الحزمة، تحتاج للمصادقة."
 
 #: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
@@ -64,7 +64,7 @@ msgstr "تحديث معلومات الحزم"
 
 #: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
-msgstr "لتحديث  فهرس البرمجيات, تحتاج للاستيثاق."
+msgstr "لتحديث لائحة البرامج, تحتاج للمصادقة."
 
 #: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
@@ -72,7 +72,7 @@ msgstr "تثبيت أو إزالة حزم"
 
 #: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
-msgstr "لتثبيت أو إزالة البرمجيات، تحتاج للاستيثاق."
+msgstr "لتثبيت أو إزالة البرامج، تحتاج للمصادقة."
 
 #. This priviledge will be requested when installing a package
 #. from a high trusted repository that can be explicitely whitelisted.
@@ -86,11 +86,11 @@ msgstr "لتثبيت أو إزالة البرمجيات، تحتاج للاست�
 #. 
 #: ../data/org.debian.aptkit.policy.in.h:25
 msgid "Install software from a high-trust whitelisted repository."
-msgstr "تثبيت البرنامج من مستودع عالي الثقة."
+msgstr "تثبيت البرامج من مستودع ذو ثقة عالية ومقبول."
 
 #: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
-msgstr "لتثبيت برنامج، تحتاج للاستيثاق."
+msgstr "لتثبيت برنامج، تحتاج للمصادقة."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -99,11 +99,11 @@ msgstr "لتثبيت برنامج، تحتاج للاستيثاق."
 #. the aptkit methods.
 #: ../data/org.debian.aptkit.policy.in.h:32
 msgid "Add a new repository and install packages from it"
-msgstr "أضِف مصدرا جديدا وثبّت الحزم من خلاله"
+msgstr "أضِف مستودعا جديدا وثبت الحزم من خلاله"
 
 #: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
-msgstr "لتثبيت برمجيات من مصادر جديدة، تحتاج للاستيثاق."
+msgstr "لتثبيت برمجيات من مصدر جديدة، تحتاج للمصادقة."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -116,11 +116,11 @@ msgstr "لتثبيت برمجيات من مصادر جديدة، تحتاج لل
 #: ../data/org.debian.aptkit.policy.in.h:42
 msgid ""
 "Add a new repository of purchased software and install packages from it"
-msgstr "أضِف مستودعا جديدا للبرمجيات المشتراة وثبّت الحزم من خلاله"
+msgstr "أضِف مستودعا جديدا للبرامج المشتراة وثبّت الحزم من خلاله"
 
 #: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
-msgstr "لتثبيت البرمجيات المشتراة، تحتاج للاستيثاق."
+msgstr "لتثبيت البرامج  المشتراة، تحتاج للمصادقة."
 
 #: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
@@ -128,7 +128,7 @@ msgstr "ترقية الحزم"
 
 #: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
-msgstr "لتثبيت البرمجيات المُحدّثة، تحتاج للاستيثاق."
+msgstr "لتثبيت البرمجيات المُحدّثة، تحتاج للمصادقة."
 
 #: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
@@ -136,20 +136,20 @@ msgstr "إلغاء المهمة لمستخدم آخر"
 
 #: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
-msgstr "لإلغاء التغيرات البرمجية لشخص آخر، تحتاج للاستيثاق."
+msgstr "لإلغاء التغيرات البرمجية لشخص آخر، تحتاج للمصادقة."
 
 #: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
-msgstr "تعيين وسيط تنزيل لتنزيل البرمجيات"
+msgstr "تعيين وسيط تنزيل لتنزيل البرامج"
 
 #: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
-msgstr "لاستخدام خادوم وسيط لتنزيل البرمجيات، تحتاج للاستيثاق."
+msgstr "لاستخدام خادوم وسيط لتنزيل البرامج، تحتاج للمصادقة."
 
 #: ../aptkit/core.py:2148
 msgid "Do not shutdown the daemon because of inactivity"
-msgstr "لا تقم بإطفاء الديمون بسبب عدم النشاط"
+msgstr "لا تقم بإطفاء العملية الخلفية بسبب عدم النشاط"
 
 #: ../aptkit/core.py:2153
 msgid "Do not load any plugins"
@@ -161,15 +161,15 @@ msgstr "عرض معلومات المعالجة الداخلية"
 
 #: ../aptkit/core.py:2162
 msgid "Quit and replace an already running daemon"
-msgstr "أغلق و إستبدل ديمون  يعمل حاليا"
+msgstr "أغلق واستبدل العملية الخلفية الحالية"
 
 #: ../aptkit/core.py:2167
 msgid "Listen on the DBus session bus (Only required for testing"
-msgstr ""
+msgstr "راقب قناة الاتصال الخاصة بجلسة نظام DBus (هذا مطلوب فقط لغرض التجربة"
 
 #: ../aptkit/core.py:2171
 msgid "Perform operations in the given chroot"
-msgstr "نفذ المهمة بإستعمال chroot"
+msgstr "تنفيذ العمليات في بيئة chroot المحددة"
 
 #: ../aptkit/core.py:2176
 msgid "Store profile stats in the specified file"
@@ -177,7 +177,7 @@ msgstr "خزن إحصائيات ملف الإحصائيات في الملف ال
 
 #: ../aptkit/core.py:2181
 msgid "Do not make any changes to the system (Only of use to developers)"
-msgstr "لا تقوم بأي تغييرات على النظام (فقط لاستخدام المطورين)"
+msgstr "لا تقم بأي تغييرات على النظام (مخصص للمطوريين فقط)"
 
 #: ../aptkit/enums.py:337
 msgid "Installed file"
@@ -193,7 +193,7 @@ msgstr "أضف مفتاحا من ملف"
 
 #: ../aptkit/enums.py:340
 msgid "Updated cache"
-msgstr "حدّث الخبيئة"
+msgstr "حدثت الذاكرة المخبئية"
 
 #: ../aptkit/enums.py:341
 msgid "Search done"
@@ -269,7 +269,7 @@ msgstr "إضافة مفتاح من ملف"
 
 #: ../aptkit/enums.py:364
 msgid "Updating cache"
-msgstr "تحديث الخبيئة"
+msgstr "تحديث الذاكرة المخبيئة"
 
 #: ../aptkit/enums.py:365
 msgid "Removing trusted key"
@@ -497,7 +497,7 @@ msgstr ""
 #: ../aptkit/enums.py:453
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
-msgstr "رجاءً انسخ الملف إلى حاسوبك وتفقّد تصاريح الملف."
+msgstr "رجاءً إنسخ الملف إلى حاسوبك المحلي وتحقق من أذونات الملف."
 
 #: ../aptkit/enums.py:456
 msgid ""
@@ -507,8 +507,8 @@ msgid ""
 "details beneath."
 msgstr ""
 "لا يُسمح بتثبيت الحزم التي تنتهك معايير الجودة. قد يتسبب ذلك في حدوث مشكلات "
-"خطيرة على حاسوبك. رجاءً اتصل بالشخص أو المنظمة التي تقدم هذه الحزمة وضمّن "
-"التفاصيل أدناه."
+"خطيرة على حاسوبك. رجاءً اتصل بالشخص أو المنظمة التي وفرت هذه الحزمة وقم "
+"بإرفاق التفاصيل أدناه."
 
 #: ../aptkit/enums.py:463
 msgid ""
@@ -516,20 +516,25 @@ msgid ""
 "is not valid or could not be installed correctly.\n"
 "See the details for more information."
 msgstr ""
+"مفتاح الترخيص المنزل المطلوب لتشغيل هذا البرنامج غير صالح أو لم يتم تثبيه "
+"بشكل صحيح.\n"
+"أنظر إلى التفاصيل للمزيد من المعلومات."
 
 #: ../aptkit/enums.py:469
 msgid "All available upgrades have already been installed."
-msgstr "كل الترقيات المتوفرة مثبتة بشكل مسبق"
+msgstr "كل الترقيات المتوفرة تم تثبيتها مسبقا."
 
 #: ../aptkit/enums.py:471
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
 msgstr ""
+"مفتاح الترخيص الذي يسمح لك باستعمال هذا البرنامج لم يمكن تحميله. رجاءا تحقق "
+"من اتصالك بالشبكة."
 
 #: ../aptkit/enums.py:475
 msgid "You don't have the required privileges to perform this action."
-msgstr "لا تملك الصلاحيات المطلوبة للقيام بهذه المهمة"
+msgstr "لا تمتلك الصلاحيات المطلوبة للقيام بهذا الإجراء."
 
 #: ../aptkit/enums.py:477
 msgid ""
@@ -538,6 +543,9 @@ msgid ""
 "haven't seen a password dialog: your desktop environment doesn't provide a "
 "PolicyKit session agent."
 msgstr ""
+"ربما قدمت رمزا سريا خاطئا أو ألغيت التوثيق.\n"
+"بالإضافة إلى أنه يمكن أن يكون هنالك سبب تقني لهذا الخطأ لو لم ترى مربع حوار "
+"الرمز السري: بيئة سطح المكتب خاصتك لا توفر عميل جلسة Policykit."
 
 #: ../aptkit/enums.py:485
 msgid "Failed to download package files"
@@ -657,7 +665,7 @@ msgstr "في انتظار الوسيط المطلوب"
 
 #: ../aptkit/enums.py:520
 msgid "Waiting for other software managers to quit"
-msgstr "في انتظار مديرو البرمجيات الأخرى حتى تنتهي"
+msgstr "في انتظار مديري البرامج الأخرى للإنتهاء"
 
 #: ../aptkit/enums.py:521
 msgid "Waiting for configuration file prompt"
@@ -697,7 +705,7 @@ msgstr "يحمّل قائمة البرمجيات"
 
 #: ../aptkit/enums.py:532
 msgid "Waiting for authentication"
-msgstr "في انتظار الاستيثاق"
+msgstr "في انتظار المصادقة"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:536
@@ -733,7 +741,7 @@ msgstr "يدون تبعيات  %s"
 #: ../aptkit/enums.py:546
 #, python-format
 msgid "Running post-installation trigger %s"
-msgstr ""
+msgstr "تشغيل زناد مابعد التثبيت %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:548
@@ -826,7 +834,7 @@ msgstr "تم تنزيل %sب من %sب"
 
 #: ../aptkit/gtk3widgets.py:328
 msgid "Details"
-msgstr "تفاصيل"
+msgstr "التّفاصيل"
 
 #: ../aptkit/gtk3widgets.py:481
 msgid "File"
@@ -850,7 +858,7 @@ msgstr "تم التنزيل"
 #: ../aptkit/gtk3widgets.py:860
 #, python-format
 msgid "CD/DVD '%s' is required"
-msgstr ""
+msgstr "CD/DVD '%s' مطلوب"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
 #: ../aptkit/gtk3widgets.py:862
@@ -859,6 +867,7 @@ msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
 "packages from it."
 msgstr ""
+"رجاءا أدخل ال CD/DVD العلوي في المحرك '%s' لتثبيت حزم البرامج من عليه."
 
 #: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
 msgid "C_ontinue"
@@ -927,11 +936,11 @@ msgstr "يتوجب تخفيض برنامج إضافي"
 
 #: ../aptkit/gtk3widgets.py:976
 msgid "Updates will be skipped"
-msgstr "تم تخطي التحديث"
+msgstr "يستم تخطي التحديثات"
 
 #: ../aptkit/gtk3widgets.py:984
 msgid "Additional changes are required"
-msgstr "يتطلب ذلك برمجيات إضافية"
+msgstr "يلزم إجراء تغييرات إضافية"
 
 #: ../aptkit/gtk3widgets.py:989
 #, python-format
@@ -941,33 +950,33 @@ msgstr "سيتم تنزيل ما مجموعه %sب"
 #: ../aptkit/gtk3widgets.py:993
 #, python-format
 msgid "%sB of disk space will be freed."
-msgstr ""
+msgstr "سيتم تفريغ %sB من مساحة القرص."
 
 #: ../aptkit/gtk3widgets.py:997
 #, python-format
 msgid "%sB more disk space will be used."
-msgstr "%sب من المساحة الفارغة سوف تُستخدم."
+msgstr "سوف يتم استخدام %sB من مساحة القرص."
 
 #. TRANSLATORS: %s is a file path
 #: ../aptkit/gtk3widgets.py:1069
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
-msgstr ""
+msgstr "استبدل تغييراتك في '%s' بإصدار لاحق من ملف التكوين؟"
 
 #: ../aptkit/gtk3widgets.py:1071
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
-msgstr ""
+msgstr "إذا لم تعلم السبب في وجود الملف هناك حاليا، من الآمن عادة إستبداله."
 
 #: ../aptkit/gtk3widgets.py:1080
 msgid "_Changes"
-msgstr "ال_تعديلات"
+msgstr "_تغييرات"
 
 #: ../aptkit/gtk3widgets.py:1083
 msgid "_Keep"
-msgstr "أ_بقِ"
+msgstr "_احتفاظ"
 
 #: ../aptkit/gtk3widgets.py:1084
 msgid "_Replace"
@@ -975,7 +984,7 @@ msgstr "_إستبدِل"
 
 #: ../aptkit/gtk3widgets.py:1187
 msgid "_Details"
-msgstr "_تفاصيل"
+msgstr "_التفاصيل"
 
 #. TRANSLATORS: %s is the name of a package manager
 #: ../aptkit/lock.py:189
@@ -1017,7 +1026,7 @@ msgstr "وصف ال %s"
 #: ../aptkit/progress.py:324
 #, python-format
 msgid "Description signature of %s"
-msgstr "نوع توقيع  ال  %s"
+msgstr "وصف توقيع ال %s"
 
 #: ../aptkit/progress.py:329
 #, python-format
@@ -1038,7 +1047,7 @@ msgstr "الترجمات المتوفرة من %s"
 #: ../aptkit/progress.py:353
 #, python-format
 msgid "Translations for %s (%s) from %s"
-msgstr ""
+msgstr "الترجمات ل %s (%s) من %s"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
@@ -1052,7 +1061,7 @@ msgstr "ترجمات %s من %s"
 #: ../aptkit/progress.py:362
 #, python-format
 msgid "Translations (%s) from %s"
-msgstr "ترجمات(%s) من %s"
+msgstr "ترجمات (%s) من %s"
 
 #: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
 #: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
@@ -1074,26 +1083,26 @@ msgstr "النسخة  %s من  %s غير مثبتة"
 #: ../aptkit/worker/aptworker.py:403
 #, python-format
 msgid "Package %s is already installed"
-msgstr "الحزمة  %s مثبتة بشكل مسبق"
+msgstr "الحزمة  %s تم تثبيتها مسبقا"
 
 #: ../aptkit/worker/aptworker.py:410 ../aptkit/worker/aptworker.py:845
 #, python-format
 msgid "The version %s of %s isn't available."
-msgstr ""
+msgstr "الإصدار %s من %s غير متوفر."
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
 #: ../aptkit/worker/aptworker.py:572
 #, python-format
 msgid "The keyserver URL is invalid: %s"
-msgstr ""
+msgstr "عنوان خادم مفتاح GnuPG غير صالح: %s"
 
 #. TRANSLATORS: %s is the URL of GnuPG
 #. keyserver
 #: ../aptkit/worker/aptworker.py:578
 #, python-format
 msgid "Invalid protocol of the server: %s"
-msgstr ""
+msgstr "برتوكول غير صالح لخادم GnuPG : %s"
 
 #. TRANSLATORS: %s is the id of a GnuPG key
 #. e.g. E08ADE95
@@ -1107,17 +1116,17 @@ msgstr "معرّف مفتاح غير صالح: %s"
 msgid ""
 "Failed to download and install the key %s from %s:\n"
 "%s"
-msgstr ""
+msgstr "فشل تنزيل وتثبيت المفتاح %s من %s: %s"
 
 #: ../aptkit/worker/aptworker.py:611
 #, python-format
 msgid "Key file %s couldn't be installed: %s"
-msgstr ""
+msgstr "ملف المفتاح %s لم يمكن تثبيته: %s"
 
 #: ../aptkit/worker/aptworker.py:635
 #, python-format
 msgid "Key with fingerprint %s couldn't be removed: %s"
-msgstr ""
+msgstr "مفتاح مع بصمة إصبع %s لم يمكن حذفه: %s"
 
 #: ../aptkit/worker/aptworker.py:686
 #, python-format
@@ -1127,22 +1136,22 @@ msgstr "الحزمة  %s لا يمكن إزالتها"
 #: ../aptkit/worker/aptworker.py:690
 #, python-format
 msgid "The version %s of %s is not installed"
-msgstr ""
+msgstr "الإصدار %s من %s غير مثبت"
 
 #: ../aptkit/worker/aptworker.py:785
 #, python-format
 msgid "The former version %s of %s is already installed"
-msgstr "النسخة السابقة من  %s التابعة ل  %s مثبتة بشكل مسبق"
+msgstr "الإصدار السابق من  %s التابع ل  %s مثبت مسبقا"
 
 #: ../aptkit/worker/aptworker.py:790 ../aptkit/worker/aptworker.py:838
 #, python-format
 msgid "The version %s of %s is already installed"
-msgstr ""
+msgstr "الإصدار %s من %s تم تثبيته مسبقا"
 
 #: ../aptkit/worker/aptworker.py:797
 #, python-format
 msgid "The version %s of %s isn't available"
-msgstr ""
+msgstr "الإصدار %s من %s غير متوفر"
 
 #: ../aptkit/worker/aptworker.py:801
 #, python-format
@@ -1152,7 +1161,7 @@ msgstr "يجب أن تختار الإصدار السابق من %s ليتم اس
 #: ../aptkit/worker/aptworker.py:831
 #, python-format
 msgid "The later version %s of %s is already installed"
-msgstr ""
+msgstr "الإصدار التالي %s من %s مثبت حاليا"
 
 #: ../aptkit/worker/aptworker.py:867
 #, python-format
@@ -1195,11 +1204,12 @@ msgid ""
 "The location of the license key is unsecure since it contains symbolic "
 "links. The path %s maps to %s"
 msgstr ""
+"موقع مفتاح الترخيص غير آمن لأنه يحتوي على روابط رمزية. الطريق %s يوصل إلى %s"
 
 #: ../aptkit/worker/aptworker.py:1335
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
-msgstr "مسار ننصيب مفتاح التفعيل غير موجود: %s"
+msgstr "المجلد الذي يتم تثبيت المفتاح إليه غير موجود حاليا: %s"
 
 #: ../aptkit/worker/aptworker.py:1346
 #, python-format

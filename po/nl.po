@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-09-14 18:26+0000\n"
+"PO-Revision-Date: 2025-06-06 18:35+0000\n"
 "Last-Translator: Pjotr12345 <Unknown>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-01-06 12:02+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-07-31 09:26+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
 "Language: nl\n"
 
 #: ../data/org.debian.aptkit.policy.in.h:1
@@ -25,8 +25,7 @@ msgstr "Toon sleutels van vertrouwde leveranciers"
 #: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr ""
-"Uw authenticatie is vereist als u de lijst met vertrouwde sleutels wilt "
-"inzien."
+"Authenticatie is vereist als u de lijst met vertrouwde sleutels wilt inzien."
 
 #: ../data/org.debian.aptkit.policy.in.h:3
 msgid "Remove downloaded package files"
@@ -54,8 +53,7 @@ msgstr "Pakketbron wijzigen"
 #: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
 msgstr ""
-"Uw authenticatie is vereist als u instellingen van pakketbronnen wilt "
-"wijzigen."
+"Authenticatie is vereist als u instellingen van pakketbronnen wilt wijzigen."
 
 #: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
@@ -63,7 +61,7 @@ msgstr "Pakketbestand installeren"
 
 #: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
-msgstr "Uw authenticatie is vereist als u dit pakket wilt installeren."
+msgstr "Authenticatie is vereist als u dit pakket wilt installeren."
 
 #: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
@@ -71,8 +69,7 @@ msgstr "Pakketinformatie bijwerken"
 
 #: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
-msgstr ""
-"Uw authenticatie is vereist om de programmatuurcatalogus bij te werken."
+msgstr "Authenticatie is vereist om de programmatuurcatalogus bij te werken."
 
 #: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
@@ -81,8 +78,7 @@ msgstr "Pakketten installeren of verwijderen"
 #: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
 msgstr ""
-"Uw authenticatie is vereist als u programmatuur wilt verwijderen of "
-"installeren."
+"Authenticatie is vereist als u programmatuur wilt verwijderen of installeren."
 
 #. This priviledge will be requested when installing a package
 #. from a high trusted repository that can be explicitely whitelisted.
@@ -145,7 +141,7 @@ msgstr "Pakketten opwaarderen"
 #: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
 msgstr ""
-"Uw authenticatie is vereist als u bijgewerkte programmatuur wilt installeren."
+"Authenticatie is vereist als u bijgewerkte programmatuur wilt installeren."
 
 #: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
@@ -154,7 +150,7 @@ msgstr "De taak van een andere gebruiker beëindigen"
 #: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
-"Uw authenticatie is vereist als u de programmatuurwijzigingen van een andere "
+"Authenticatie is vereist als u de programmatuurwijzigingen van een andere "
 "gebruiker ongedaan wilt maken."
 
 #: ../data/org.debian.aptkit.policy.in.h:48
@@ -165,7 +161,7 @@ msgstr "Een proxy instellen voor het binnenhalen van programmatuur"
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
-"Uw authenticatie is vereist als u een proxy-server wilt gebruiken voor het "
+"Authenticatie is vereist als u een proxy-server wilt gebruiken voor het "
 "binnenhalen van programmatuur."
 
 #: ../aptkit/core.py:2148
@@ -227,11 +223,11 @@ msgstr "Vertrouwde sleutel verwijderd"
 
 #: ../aptkit/enums.py:343
 msgid "Removed packages"
-msgstr "Pakketten verwijderd"
+msgstr "Verwijderde pakketten"
 
 #: ../aptkit/enums.py:344
 msgid "Updated packages"
-msgstr "Pakketten bijgewerkt"
+msgstr "Bijgewerkte pakketten"
 
 #: ../aptkit/enums.py:345
 msgid "Upgraded system"
@@ -255,7 +251,7 @@ msgstr "Pakketbron toegevoegd"
 
 #: ../aptkit/enums.py:350
 msgid "Enabled component of the distribution"
-msgstr "Onderdeel van de distributie ingeschakeld"
+msgstr "Ingeschakeld onderdeel van de distributie"
 
 #: ../aptkit/enums.py:351
 msgid "Removed downloaded package files"
@@ -749,7 +745,7 @@ msgstr "Programmatuurlijst laden"
 
 #: ../aptkit/enums.py:532
 msgid "Waiting for authentication"
-msgstr "Wachten op authenticatie"
+msgstr "Wachtend op authenticatie"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:536

@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-12-09 11:01+0000\n"
+"PO-Revision-Date: 2025-05-11 09:13+0000\n"
 "Last-Translator: Avi Markovitz <avi.markovitz@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-01-06 12:02+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-07-31 09:25+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
 "Language: he\n"
 
 #: ../data/org.debian.aptkit.policy.in.h:1
 msgid "List keys of trusted vendors"
-msgstr "הצגת מפתחות של ספקים מהימנים"
+msgstr "רשימת מפתחות של ספקים מהימנים"
 
 #: ../data/org.debian.aptkit.policy.in.h:2
 msgid "To view the list of trusted keys, you need to authenticate."
-msgstr "לצפיה ברשימת המפתחות המהימנים, נדרש להזדהות."
+msgstr "לצפיה ברשימת המפתחות המהימנים, נדרש אימות זהות."
 
 #: ../data/org.debian.aptkit.policy.in.h:3
 msgid "Remove downloaded package files"
@@ -32,7 +32,7 @@ msgstr "להסיר קובצי חבילות שהורדו"
 
 #: ../data/org.debian.aptkit.policy.in.h:4
 msgid "To clean downloaded package files, you need to authenticate."
-msgstr "לניקוי  קובצי חבילות שהורדו, נדרש להזדהות."
+msgstr "לניקוי  קובצי חבילות שהורדו, נדרש אימות זהות."
 
 #: ../data/org.debian.aptkit.policy.in.h:5
 msgid "Change software configuration"
@@ -40,7 +40,7 @@ msgstr "שינוי תצורת התכנה"
 
 #: ../data/org.debian.aptkit.policy.in.h:6
 msgid "To change software settings, you need to authenticate."
-msgstr "לשינוי הגדרות תכנה, נדרש להזדהות."
+msgstr "לשינוי הגדרות תוכנה, נדרש אימות זהות."
 
 #: ../data/org.debian.aptkit.policy.in.h:7
 msgid "Change software repository"
@@ -48,7 +48,7 @@ msgstr "שינוי מאגר תוכנה"
 
 #: ../data/org.debian.aptkit.policy.in.h:8
 msgid "To change software repository settings, you need to authenticate."
-msgstr "לשינוי הגדרות מאגרי תוכנה, נדרש להזדהות."
+msgstr "לשינוי הגדרות מאגרי תוכנה, נדרש אימות זהות."
 
 #: ../data/org.debian.aptkit.policy.in.h:9
 msgid "Install package file"
@@ -56,7 +56,7 @@ msgstr "להתקין קובץ חבילה"
 
 #: ../data/org.debian.aptkit.policy.in.h:10
 msgid "To install this package, you need to authenticate."
-msgstr "להתקנת חבילה זו, נדרש להזדהות."
+msgstr "להתקנת חבילה זו, נדרש אימות זהות."
 
 #: ../data/org.debian.aptkit.policy.in.h:11
 msgid "Update package information"
@@ -64,7 +64,7 @@ msgstr "עדכון נתוני חבילה"
 
 #: ../data/org.debian.aptkit.policy.in.h:12
 msgid "To update the software catalog, you need to authenticate."
-msgstr "לעדכון קטלוג התוכנה, נדרש להזדהות."
+msgstr "לעדכון קטלוג התוכנה, נדרש אימות זהות."
 
 #: ../data/org.debian.aptkit.policy.in.h:13
 msgid "Install or remove packages"
@@ -72,7 +72,7 @@ msgstr "התקנת או הסרת חבילות"
 
 #: ../data/org.debian.aptkit.policy.in.h:14
 msgid "To install or remove software, you need to authenticate."
-msgstr "להתקנת או הסרת תוכנה, נדרש להזדהות."
+msgstr "להתקנת או הסרת תוכנה, נדרש אימות זהות."
 
 #. This priviledge will be requested when installing a package
 #. from a high trusted repository that can be explicitely whitelisted.
@@ -90,7 +90,7 @@ msgstr "התקנת תוכנה ממאגר רשימה לבנה ומהימן ביו
 
 #: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
-msgstr "להתקנת תוכנות, נדרש להזדהות."
+msgstr "להתקנת תוכנות, נדרש אימות זהות."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -103,7 +103,7 @@ msgstr "הוספת מאגר חדש והתקנת חבילות ממנו"
 
 #: ../data/org.debian.aptkit.policy.in.h:33
 msgid "To install software from a new source, you need to authenticate."
-msgstr "להתקנת תוכנה ממקור חדש, נדרש להזדהות."
+msgstr "להתקנת תוכנה ממקור חדש, נדרש אימות זהות."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -120,7 +120,7 @@ msgstr "הוספת מאגר חדש של תוכנות שנרכשו והתקנת �
 
 #: ../data/org.debian.aptkit.policy.in.h:43
 msgid "To install purchased software, you need to authenticate."
-msgstr "להתקנת תוכנה שנרכשה נדרש להזדהות."
+msgstr "להתקנת תוכנה שנרכשה, נדרש אימות זהות."
 
 #: ../data/org.debian.aptkit.policy.in.h:44
 msgid "Upgrade packages"
@@ -128,7 +128,7 @@ msgstr "לשדרג חבילות"
 
 #: ../data/org.debian.aptkit.policy.in.h:45
 msgid "To install updated software, you need to authenticate."
-msgstr "להתקנת תוכנה עדכנית, נדרש להזדהות."
+msgstr "להתקנת תוכנה עדכנית, נדרש אימות זהות."
 
 #: ../data/org.debian.aptkit.policy.in.h:46
 msgid "Cancel the task of another user"
@@ -136,16 +136,16 @@ msgstr "ביטול משימה של משתמש אחר"
 
 #: ../data/org.debian.aptkit.policy.in.h:47
 msgid "To cancel someone else's software changes, you need to authenticate."
-msgstr "לביטול שינויים שביצע מישהו אחר בתוכנה, נדרש להזדהות."
+msgstr "לביטול שינויים שביצע מישהו אחר בתוכנה, נדרש אימות זהות."
 
 #: ../data/org.debian.aptkit.policy.in.h:48
 msgid "Set a proxy for software downloads"
-msgstr "הגדרת מתווך להורדות תכנה"
+msgstr "הגדרת מתווך להורדות תוכנה"
 
 #: ../data/org.debian.aptkit.policy.in.h:49
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
-msgstr "לשימוש בשרת מתווך להורדת תוכנה, נדרש להזדהות."
+msgstr "לשימוש בשרת מתווך להורדת תוכנה, נדרש אימות זהות."
 
 #: ../aptkit/core.py:2148
 msgid "Do not shutdown the daemon because of inactivity"
@@ -482,7 +482,7 @@ msgstr ""
 
 #: ../aptkit/enums.py:445
 msgid "This requires installing packages from unauthenticated sources."
-msgstr "נדרשת התקנת חבילות ממקורות לא מאומתים."
+msgstr "מצריך התקנת חבילות ממקורות לא מאומתים."
 
 #: ../aptkit/enums.py:447
 msgid ""
@@ -703,7 +703,7 @@ msgstr "רשימת התוכנות נטענת"
 
 #: ../aptkit/enums.py:532
 msgid "Waiting for authentication"
-msgstr "Waiting for authentication"
+msgstr "המתנה לאימות"
 
 #. TRANSLATORS: %s is the name of a package
 #: ../aptkit/enums.py:536
@@ -910,27 +910,27 @@ msgstr "נא להביט ברשימת השינויים שלהלן."
 
 #: ../aptkit/gtk3widgets.py:964
 msgid "Additional software has to be installed"
-msgstr "יש להתקין תכנה נוספת"
+msgstr "נדרש להתקין תוכנה נוספת"
 
 #: ../aptkit/gtk3widgets.py:966
 msgid "Additional software has to be re-installed"
-msgstr "יש להתקין תכנה נוספת מחדש"
+msgstr "נדרש להתקין תוכנה נוספת מחדש"
 
 #: ../aptkit/gtk3widgets.py:968
 msgid "Additional software has to be removed"
-msgstr "יש להסיר תכנה נוספת"
+msgstr "נדרש להסיר תוכנה נוספת"
 
 #: ../aptkit/gtk3widgets.py:970
 msgid "Additional software has to be purged"
-msgstr "יש למחוק לחלוטין תכנה נוספת"
+msgstr "נדשר למחוק לחלוטין תוכנה נוספת"
 
 #: ../aptkit/gtk3widgets.py:972
 msgid "Additional software has to be upgraded"
-msgstr "יש לשדרג תכנה נוספת"
+msgstr "נדרש לשדרג תוכנה נוספת"
 
 #: ../aptkit/gtk3widgets.py:974
 msgid "Additional software has to be downgraded"
-msgstr "יש לשדרג מטה תכנה נוספת"
+msgstr "נדרש לשנמך תוכנה נוספת"
 
 #: ../aptkit/gtk3widgets.py:976
 msgid "Updates will be skipped"

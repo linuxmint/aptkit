@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-09-10 08:36+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"PO-Revision-Date: 2025-05-03 17:10+0000\n"
+"Last-Translator: Parham <Unknown>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-01-06 12:02+0000\n"
-"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
+"X-Launchpad-Export-Date: 2025-07-31 09:25+0000\n"
+"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
 "Language: fa\n"
 
 #: ../data/org.debian.aptkit.policy.in.h:1
@@ -249,131 +249,131 @@ msgstr "پیکربندی مجدد بسته های نصب شده"
 
 #: ../aptkit/enums.py:356
 msgid "Successful"
-msgstr ""
+msgstr "با موفقیت انجام شد"
 
 #: ../aptkit/enums.py:357
 msgid "Canceled"
-msgstr ""
+msgstr "لغو شد"
 
 #: ../aptkit/enums.py:358 ../aptkit/enums.py:569
 msgid "Failed"
-msgstr ""
+msgstr "شکست خورد"
 
 #: ../aptkit/enums.py:361
 msgid "Installing file"
-msgstr ""
+msgstr "در حال نصب پرونده"
 
 #: ../aptkit/enums.py:362
 msgid "Installing packages"
-msgstr ""
+msgstr "در حال نصب بسته‌ها"
 
 #: ../aptkit/enums.py:363
 msgid "Adding key from file"
-msgstr ""
+msgstr "در حال افزودن کلید از پرونده"
 
 #: ../aptkit/enums.py:364
 msgid "Updating cache"
-msgstr ""
+msgstr "به روزرسانی حافظه پنهان"
 
 #: ../aptkit/enums.py:365
 msgid "Removing trusted key"
-msgstr ""
+msgstr "در حال حذف کلید معتبر"
 
 #: ../aptkit/enums.py:366
 msgid "Removing packages"
-msgstr ""
+msgstr "در حال حذف بسته ها"
 
 #: ../aptkit/enums.py:367
 msgid "Updating packages"
-msgstr ""
+msgstr "در حال بروزرسانی بسته ها"
 
 #: ../aptkit/enums.py:368
 msgid "Upgrading system"
-msgstr ""
+msgstr "در حال ارتقا سیستم"
 
 #: ../aptkit/enums.py:369 ../aptkit/enums.py:528
 msgid "Applying changes"
-msgstr ""
+msgstr "در حال اعمال تغییرات"
 
 #: ../aptkit/enums.py:370
 msgid "Repairing incomplete installation"
-msgstr ""
+msgstr "در حال تعمیر نصب های ناقص"
 
 #: ../aptkit/enums.py:371
 msgid "Repairing installed software"
-msgstr ""
+msgstr "در حال تعمیر نرم‌افزار های نصب شده"
 
 #: ../aptkit/enums.py:372
 msgid "Adding software source"
-msgstr ""
+msgstr "در حال اضافه کردن منبع نرم‌افزار"
 
 #: ../aptkit/enums.py:373
 msgid "Enabling component of the distribution"
-msgstr ""
+msgstr "در حال فعال کردن جزء ای از توزیع"
 
 #: ../aptkit/enums.py:374
 msgid "Removing downloaded package files"
-msgstr ""
+msgstr "در حال حذف فایل‌های بسته دانلود شده"
 
 #: ../aptkit/enums.py:375
 msgid "Reconfiguring installed packages"
-msgstr ""
+msgstr "در حال پیکربندی مجدد بسته های نصب شده"
 
 #: ../aptkit/enums.py:376 ../aptkit/enums.py:517
 msgid "Searching"
-msgstr ""
+msgstr "درحال جست‌وجو"
 
 #: ../aptkit/enums.py:380
 msgid "Installation of the package file failed"
-msgstr ""
+msgstr "نصب پرونده مربوط به بسته نصب نشد"
 
 #: ../aptkit/enums.py:381
 msgid "Installation of software failed"
-msgstr ""
+msgstr "نرم‌افزار نصب نشد"
 
 #: ../aptkit/enums.py:382
 msgid "Adding the key to the list of trusted software vendors failed"
-msgstr ""
+msgstr "افزودن کلید به لیست توزیع‌کنندگان معتبر نرم افزار انجام نشد"
 
 #: ../aptkit/enums.py:384
 msgid "Refreshing the software list failed"
-msgstr ""
+msgstr "به‌روزرسانی فهرست نرم‌افزارها با شکست مواجه شد"
 
 #: ../aptkit/enums.py:385
 msgid "Removing the vendor from the list of trusted ones failed"
-msgstr ""
+msgstr "حذف توزیع‌کننده از لیست توزیع‌کنندگان معتبر انجام نشد"
 
 #: ../aptkit/enums.py:387
 msgid "Removing software failed"
-msgstr ""
+msgstr "حذف نرم‌افزار انجام نشد"
 
 #: ../aptkit/enums.py:388
 msgid "Updating software failed"
-msgstr ""
+msgstr "بروزرسانی نرم‌افزار انجام نشد"
 
 #: ../aptkit/enums.py:389
 msgid "Upgrading the system failed"
-msgstr ""
+msgstr "ارتقا سیستم انجام نشد"
 
 #: ../aptkit/enums.py:390
 msgid "Applying software changes failed"
-msgstr ""
+msgstr "اعمال تغییرات نرم افزار انجام نشد"
 
 #: ../aptkit/enums.py:391
 msgid "Repairing incomplete installation failed"
-msgstr ""
+msgstr "تعمیر نصب های ناقص انجام نشد"
 
 #: ../aptkit/enums.py:393
 msgid "Repairing broken dependencies failed"
-msgstr ""
+msgstr "تعمیر وابستگی های خراب انجام نشد"
 
 #: ../aptkit/enums.py:394
 msgid "Adding software source failed"
-msgstr ""
+msgstr "افزودن منبع نرم‌افزار انجام نشد"
 
 #: ../aptkit/enums.py:395
 msgid "Enabling component of the distribution failed"
-msgstr ""
+msgstr "فعال کردن جزء ای از توزیع انجام نشد"
 
 #: ../aptkit/enums.py:397 ../aptkit/enums.py:398
 msgid "Removing downloaded package files failed"
@@ -381,15 +381,15 @@ msgstr ""
 
 #: ../aptkit/enums.py:399
 msgid "Search failed"
-msgstr ""
+msgstr "جست‌وجو شکست خورد"
 
 #: ../aptkit/enums.py:400
 msgid "Adding license key"
-msgstr ""
+msgstr "در حال افزودن کلید گواهینامه"
 
 #: ../aptkit/enums.py:404 ../aptkit/enums.py:405
 msgid "Check your Internet connection."
-msgstr ""
+msgstr "اتصال اینترنت خود را بررسی نمایید."
 
 #: ../aptkit/enums.py:406
 msgid ""
@@ -397,65 +397,77 @@ msgid ""
 "they are a common source of problems.\n"
 "Furthermore run the following command in a Terminal: apt-get install -f"
 msgstr ""
+"بررسی کنید که آیا از مخازن شخص‌ ثالث استفاده می‌کنید یا نه. در صورت استفاده، "
+"آن‌ها را غیرفعال کنید، زیرا این مخازن اغلب منبع رایجی برای بروز مشکلات "
+"هستند. سپس دستور زیر را در ترمینال اجرا کنید: apt-get install -f"
 
 #: ../aptkit/enums.py:411
 msgid "The selected file may not be a GPG key file or it might be corrupt."
-msgstr ""
+msgstr "پرونده انتخاب شده ممکن است یک فایل کلید GPG نباشد یا خراب باشد."
 
 #: ../aptkit/enums.py:413
 msgid ""
 "The selected key couldn't be removed. Check that you provided a valid "
 "fingerprint."
 msgstr ""
+"کلید انتخاب شده قابل حذف نیست. بررسی کنید که اثر انگشت معتبر را ارائه داده "
+"اید."
 
 #: ../aptkit/enums.py:415
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
 msgstr ""
+"بررسی کنید آیا در حال حاضر از ابزار مدیریت نرم افزار دیگری استفاده می کنید ، "
+"به عنوان مثال Synaptic یا aptitude. فقط یک ابزار مجاز به ایجاد تغییر در یک "
+"زمان است."
 
 #: ../aptkit/enums.py:418
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
 msgstr ""
+"این یک مشکل جدی است. بعدا دوباره تلاش کنید. اگر این مشکل دوباره ظاهر شد ، "
+"لطفا خطا را به توسعه دهندگان گزارش دهید."
 
 #: ../aptkit/enums.py:421
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
-msgstr ""
+msgstr "املاء نام بسته را بررسی کنید و اینکه مخزن مناسب فعال باشد."
 
 #: ../aptkit/enums.py:423
 msgid "There isn't any need for an update."
-msgstr ""
+msgstr "نیازی به بروزرسانی نیست."
 
 #: ../aptkit/enums.py:424
 msgid "There isn't any need for an installation"
-msgstr ""
+msgstr "نیازی به نصب نیست"
 
 #: ../aptkit/enums.py:426
 msgid "There isn't any need for a removal."
-msgstr ""
+msgstr "نیازی به حذف نیست."
 
 #: ../aptkit/enums.py:427
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr ""
+"شما درخواست حذف بسته ای را کرده اید که یک قسمت اساسی از سیستم شما است."
 
 #: ../aptkit/enums.py:430
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
 msgstr ""
+"ارتباط با سرویس پس‌زمینه از دست رفت. احتمالاً این سرویس از کار افتاده است."
 
 #: ../aptkit/enums.py:432
 msgid "The installation or removal of a software package failed."
-msgstr ""
+msgstr "نصب یا حذف یک بسته نرم افزاری انجام نشد."
 
 #: ../aptkit/enums.py:434
 msgid "The requested feature is not supported."
-msgstr ""
+msgstr "ویژگی درخواستی پشتیبانی نمی شود."
 
 #: ../aptkit/enums.py:435
 msgid ""
@@ -463,6 +475,9 @@ msgid ""
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
+"به‌ نظر می‌رسد خطای برنامه‌نویسی‌ای در aptkit وجود دارد؛ نرم‌افزاری که به "
+"شما امکان نصب/حذف نرم‌افزار و انجام سایر وظایف مرتبط با مدیریت بسته‌ها را "
+"می‌دهد."
 
 #: ../aptkit/enums.py:439
 msgid ""
@@ -471,10 +486,13 @@ msgid ""
 "between software packages which are not allowed to be installed at the same "
 "time."
 msgstr ""
+"این خطا ممکن است به‌دلیل نبودن یا غیرقابل نصب بودن بسته‌های نرم‌افزاری مورد "
+"نیاز ایجاد شده باشد. همچنین ممکن است بین بسته‌های نرم‌افزاری تداخلی وجود "
+"داشته باشد که نصب هم‌زمان آن‌ها مجاز نیست."
 
 #: ../aptkit/enums.py:445
 msgid "This requires installing packages from unauthenticated sources."
-msgstr ""
+msgstr "این امر نیاز به نصب بسته از منابع غیرمجاز دارد."
 
 #: ../aptkit/enums.py:447
 msgid ""
@@ -482,11 +500,15 @@ msgid ""
 "software package or it was cancelled in an unfriendly way. You have to "
 "repair this before you can install or remove any further software."
 msgstr ""
+"نصب ممکن است به‌دلیل خطا در بستهٔ نرم‌افزاری مربوطه انجام نشده باشد یا "
+"به‌صورت نادرست و ناگهانی لغو شده باشد. لازم است این مشکل را برطرف کنید تا "
+"بتوانید نرم‌افزارهای دیگری را نصب یا حذف کنید."
 
 #: ../aptkit/enums.py:453
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
 msgstr ""
+"لطفا پرونده را در رایانه محلی خود کپی کرده و دسترسی های پرونده را بررسی کنید."
 
 #: ../aptkit/enums.py:456
 msgid ""
@@ -495,6 +517,10 @@ msgid ""
 "the person or organisation who provided this package file and include the "
 "details beneath."
 msgstr ""
+"نصب بسته‌ای که با استانداردهای کیفی سازگار نیست مجاز نمی‌باشد. این کار ممکن "
+"است باعث بروز مشکلات جدی در رایانهٔ شما شود. لطفاً با شخص یا سازمانی که این "
+"فایل بسته را در اختیار شما قرار داده است تماس بگیرید و جزئیات زیر را نیز به "
+"آن‌ها ارائه دهید."
 
 #: ../aptkit/enums.py:463
 msgid ""
