@@ -1,3 +1,13 @@
+aptkit (1.0.6) zara; urgency=medium
+
+  [ Michael Webster ]
+  * gtk3widgets.py: Fix get_size_string() argument for freed space.
+
+  [ Clement Lefebvre ]
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 31 Jul 2025 11:31:50 +0200
+
 aptkit (1.0.5) zara; urgency=medium
 
   [ Bardia Moshiri ]
