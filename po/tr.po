@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-09 19:27+0100\n"
-"PO-Revision-Date: 2024-12-22 09:08+0000\n"
+"PO-Revision-Date: 2025-08-07 07:49+0000\n"
 "Last-Translator: Butterfly <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-07-31 09:26+0000\n"
-"X-Generator: Launchpad (build 647c49fc7f614412c17a151d8ba4fadd90c06a00)\n"
+"X-Launchpad-Export-Date: 2025-08-26 15:26+0000\n"
+"X-Generator: Launchpad (build 919009172d854f2b8e4e8262db447f12f11d25eb)\n"
 "Language: tr\n"
 
 #: ../data/org.debian.aptkit.policy.in.h:1
@@ -93,7 +93,7 @@ msgstr "Yüksek güvenilirlikli ve beyaz listedeki bir depodan yazılım kurun."
 
 #: ../data/org.debian.aptkit.policy.in.h:26
 msgid "To install software, you need to authenticate."
-msgstr "Yazılımını yüklemek için, kimlik doğrulaması gerekiyor."
+msgstr "Yazılımı yüklemek için, kimlik doğrulaması gerekiyor."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -845,12 +845,12 @@ msgstr "%s işleniyor"
 #: ../aptkit/gtk3widgets.py:311
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
-msgstr "%sB of %sB at %sB/s İndirildi"
+msgstr "indirilen %sB / boyut %sB / hız %sB/s"
 
 #: ../aptkit/gtk3widgets.py:316 ../aptkit/gtk3widgets.py:517
 #, python-format
 msgid "Downloaded %sB of %sB"
-msgstr "Downloaded %sB of %sB"
+msgstr "indirilen %sB / boyut %sB"
 
 #: ../aptkit/gtk3widgets.py:328
 msgid "Details"
@@ -1214,7 +1214,7 @@ msgstr "Lisans anahtarı boş"
 
 #: ../aptkit/worker/aptworker.py:1309
 msgid "The license key is not allowed to contain executable code."
-msgstr "Lisans anahtarı çalıştırılabilir kod içeremez"
+msgstr "Lisans anahtarı çalıştırılabilir kod içeremez."
 
 #: ../aptkit/worker/aptworker.py:1318
 #, python-format
