@@ -1,3 +1,9 @@
+aptkit (1.0.8) gigi; urgency=medium
+
+  * Remove key management
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 06 Sep 2025 14:00:18 +0100
+
 aptkit (1.0.7) zara; urgency=medium
 
   * l10n: Update translations
