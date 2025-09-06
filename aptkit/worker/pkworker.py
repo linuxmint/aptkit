@@ -182,7 +182,6 @@ class AptPackageKitWorker(aptworker.AptWorker):
                                         pk.RoleEnum.SEARCH_FILE,
                                         pk.RoleEnum.WHAT_PROVIDES,
                                         pk.RoleEnum.REPO_ENABLE,
-                                        pk.RoleEnum.INSTALL_SIGNATURE,
                                         pk.RoleEnum.REPAIR_SYSTEM,
                                         pk.RoleEnum.CANCEL,
                                         pk.RoleEnum.DOWNLOAD_PACKAGES)
@@ -298,8 +297,6 @@ class AptPackageKitWorker(aptworker.AptWorker):
             self.what_provides(trans, **trans.kwargs)
         elif trans.pktrans.role == pk.RoleEnum.REPO_ENABLE:
             self.repo_enable(trans, **trans.kwargs)
-        elif trans.pktrans.role == pk.RoleEnum.INSTALL_SIGNATURE:
-            self.install_signature(trans, **trans.kwargs)
         else:
             raise TransactionFailed(aptkit_enums.ERROR_UNKNOWN,
                                     "Role %s isn't supported",
@@ -947,20 +944,6 @@ class AptPackageKitWorker(aptworker.AptWorker):
 
         self.add_repository(trans, fields[0], fields[1], fields[2],
                             fields[3:], '', None)
-
-    def install_signature(self, trans, sig_type, key_id, package_id):
-        """Install an archive key."""
-        if sig_type != pk.SigTypeEnum.GPG:
-            raise TransactionFailed(aptkit_enums.ERROR_NOT_SUPPORTED,
-                                    "Type %s is not supported" % sig_type)
-        try:
-            keyserver = os.environ["APTKIT_KEYSERVER"]
-        except KeyError:
-            if platform.dist()[0] == "Ubuntu":
-                keyserver = "hkp://keyserver.ubuntu.com:80"
-            else:
-                keyserver = "hkp://keys.gnupg.net"
-        self.add_vendor_key_from_keyserver(trans, key_id, keyserver)
 
     # Helpers
 

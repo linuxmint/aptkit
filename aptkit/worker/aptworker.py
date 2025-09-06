@@ -45,7 +45,6 @@ except ImportError:
     from ConfigParser import ConfigParser
 
 import apt
-import apt.auth
 import apt.cache
 import apt.debfile
 import apt_pkg
@@ -236,13 +235,7 @@ class AptWorker(BaseWorker):
                     not self.is_dpkg_journal_clean()):
                 self.fix_incomplete_install(trans)
             # Process transaction which don't require a cache
-            if trans.role == ROLE_ADD_VENDOR_KEY_FILE:
-                self.add_vendor_key_from_file(trans, **trans.kwargs)
-            elif trans.role == ROLE_ADD_VENDOR_KEY_FROM_KEYSERVER:
-                self.add_vendor_key_from_keyserver(trans, **trans.kwargs)
-            elif trans.role == ROLE_REMOVE_VENDOR_KEY:
-                self.remove_vendor_key(trans, **trans.kwargs)
-            elif trans.role == ROLE_ADD_REPOSITORY:
+            if trans.role == ROLE_ADD_REPOSITORY:
                 self.add_repository(trans, **trans.kwargs)
             elif trans.role == ROLE_ENABLE_DISTRO_COMP:
                 self.enable_distro_comp(trans, **trans.kwargs)
@@ -551,90 +544,6 @@ class AptWorker(BaseWorker):
         # Return URI without user/pass
         return urlunsplit((res.scheme, netloc_public, res.path, res.query,
                            res.fragment))
-
-    def add_vendor_key_from_keyserver(self, trans, keyid, keyserver):
-        """Add the signing key from the given (keyid, keyserver) to the
-        trusted vendors.
-
-        Keyword argument:
-        trans -- the corresponding transaction
-        keyid - the keyid of the key (e.g. 0x0EB12F05)
-        keyserver - the keyserver (e.g. keyserver.ubuntu.com)
-        """
-        log.info("Adding vendor key from keyserver: %s %s", keyid, keyserver)
-        # Perform some sanity checks
-        try:
-            res = urlsplit(keyserver)
-        except ValueError:
-            raise TransactionFailed(ERROR_KEY_NOT_INSTALLED,
-                                    # TRANSLATORS: %s is the URL of GnuPG
-                                    #             keyserver
-                                    _("The keyserver URL is invalid: %s"),
-                                    keyserver)
-        if res.scheme not in ["hkp", "ldap", "ldaps", "http", "https"]:
-            raise TransactionFailed(ERROR_KEY_NOT_INSTALLED,
-                                    # TRANSLATORS: %s is the URL of GnuPG
-                                    #             keyserver
-                                    _("Invalid protocol of the server: %s"),
-                                    keyserver)
-        try:
-            int(keyid, 16)
-        except ValueError:
-            raise TransactionFailed(ERROR_KEY_NOT_INSTALLED,
-                                    # TRANSLATORS: %s is the id of a GnuPG key
-                                    #             e.g. E08ADE95
-                                    _("Invalid key id: %s"), keyid)
-        trans.status = STATUS_DOWNLOADING
-        trans.progress = 101
-        with DaemonForkProgress(trans) as progress:
-            progress.run(apt.auth.add_key_from_keyserver, keyid, keyserver)
-        if progress._child_exit != 0:
-            # TRANSLATORS: The first %s is the key id and the second the server
-            raise TransactionFailed(ERROR_KEY_NOT_INSTALLED,
-                                    _("Failed to download and install the key "
-                                      "%s from %s:\n%s"),
-                                    keyid, keyserver, progress.output)
-
-    def add_vendor_key_from_file(self, trans, path):
-        """Add the signing key from the given file to the trusted vendors.
-
-        Keyword argument:
-        path -- absolute path to the key file
-        """
-        log.info("Adding vendor key from file: %s", path)
-        trans.progress = 101
-        trans.status = STATUS_COMMITTING
-        with DaemonForkProgress(trans) as progress:
-            progress.run(apt.auth.add_key_from_file, path)
-        if progress._child_exit != 0:
-            raise TransactionFailed(ERROR_KEY_NOT_INSTALLED,
-                                    _("Key file %s couldn't be installed: %s"),
-                                    path, progress.output)
-
-    def remove_vendor_key(self, trans, fingerprint):
-        """Remove repository key.
-
-        Keyword argument:
-        trans -- the corresponding transaction
-        fingerprint -- fingerprint of the key to remove
-        """
-        log.info("Removing vendor key: %s", fingerprint)
-        trans.progress = 101
-        trans.status = STATUS_COMMITTING
-        try:
-            int(fingerprint, 16)
-        except ValueError:
-            raise TransactionFailed(ERROR_KEY_NOT_REMOVED,
-                                    # TRANSLATORS: %s is the id of a GnuPG key
-                                    #             e.g. E08ADE95
-                                    _("Invalid key id: %s"), fingerprint)
-        with DaemonForkProgress(trans) as progress:
-            progress.run(apt.auth.remove_key, fingerprint)
-        if progress._child_exit != 0:
-            raise TransactionFailed(ERROR_KEY_NOT_REMOVED,
-                                    _("Key with fingerprint %s couldn't be "
-                                      "removed: %s"),
-                                    fingerprint, progress.output)
 
     def install_file(self, trans, path, force, simulate=False):
         """Install local package file.
@@ -1528,10 +1437,5 @@ class AptWorker(BaseWorker):
             if match and match[0] == "yes":
                 return True
         return False
-
-    def get_trusted_vendor_keys(self):
-        """Return a list of trusted GPG keys."""
-        return [key.keyid for key in apt.auth.list_keys()]
-
 
 # vim:ts=4:sw=4:et

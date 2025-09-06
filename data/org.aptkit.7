@@ -35,13 +35,6 @@ Optionally a comment and an alternative sources.list file can be specified.
 Enable a component for all distro repositories, e.g. main or universe.
 .RE
 .TP
-.B GetTrustedVendorKeys
-.BI "GetTrustedVendorKeys\t(out 'as' " keys )
-.RS
-.PP
-Return the GnuPG keys which are used to authenticate packages.
-.RE
-.TP
 .B GetAtiveTransactions
 .BI "GetActiveTransactions\t(out 'as' " tids )
 .RS
@@ -161,43 +154,6 @@ are lists of package names.
 Optionally the version of the to be removed packages or the version of the
 package which should be installed can be specified by
 appending a "=" and the version to the package name, e.g. "xterm=256-1".
-.RE
-.TP
-.B AddVendorKeyFromFile
-.BI "AddVendorKeyFromFile\t(in 's' " path ,
-.br
-.BI "\t\t\tout 's' " tid )
-.RS
-.PP
-Return the id of a newly created transaction which will install the public GnuPG key at the given
-.I path
-to the list of trusted software vendors. The list will be used to authenticate packages.
-.RE
-.TP
-.B AddVendorKeyFromKeyserver
-.BI "AddVendorKeyFromKeyserver\t(in 's' " keyid ,
-.br
-.BI "\t\t\tin 's' " keyserver,
-.br
-.BI "\t\t\tout 's' " tid )
-.RS
-.PP
-Return the id of a newly created transaction which will download and install the public GnuPG key of the
-.I keyid
-from the given
-.I keyserver
-to the list of trusted software vendors. The list will be used to authenticate packages.
-.RE
-.TP
-.B RemoveVendorKey
-.BI "RemoveVendorKey\t(in 's' " fingerprint ,
-.br
-.BI "\t\t\tout 's' " tid )
-.RS
-.PP
-Return the id of a newly created transaction which will remove the public GnuPG key with the given
-.I fingerprint
-from the list of trusted software vendors. The list will be used to authenticate packages.
 .RE
 .TP
 .B FixBrokenDepends

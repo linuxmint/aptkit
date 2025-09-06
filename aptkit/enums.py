@@ -24,7 +24,7 @@ __all__ = ("PKGS_INSTALL", "PKGS_REINSTALL", "PKGS_REMOVE", "PKGS_PURGE",
            "EXIT_SUCCESS", "EXIT_CANCELLED", "EXIT_FAILED", "EXIT_UNFINISHED",
            "ERROR_PACKAGE_DOWNLOAD_FAILED", "ERROR_REPO_DOWNLOAD_FAILED",
            "ERROR_DEP_RESOLUTION_FAILED",
-           "ERROR_KEY_NOT_INSTALLED", "ERROR_KEY_NOT_REMOVED", "ERROR_NO_LOCK",
+           "ERROR_NO_LOCK",
            "ERROR_NO_CACHE", "ERROR_NO_PACKAGE", "ERROR_PACKAGE_UPTODATE",
            "ERROR_PACKAGE_NOT_INSTALLED", "ERROR_PACKAGE_ALREADY_INSTALLED",
            "ERROR_NOT_REMOVE_ESSENTIAL_PACKAGE", "ERROR_DAEMON_DIED",
@@ -45,8 +45,7 @@ __all__ = ("PKGS_INSTALL", "PKGS_REINSTALL", "PKGS_REMOVE", "PKGS_PURGE",
            "ROLE_UNSET", "ROLE_INSTALL_PACKAGES", "ROLE_INSTALL_FILE",
            "ROLE_UPGRADE_PACKAGES", "ROLE_UPGRADE_SYSTEM", "ROLE_UPDATE_CACHE",
            "ROLE_REMOVE_PACKAGES", "ROLE_COMMIT_PACKAGES",
-           "ROLE_ADD_VENDOR_KEY_FILE", "ROLE_ADD_VENDOR_KEY_FROM_KEYSERVER",
-           "ROLE_REMOVE_VENDOR_KEY", "ROLE_FIX_INCOMPLETE_INSTALL",
+           "ROLE_FIX_INCOMPLETE_INSTALL",
            "ROLE_FIX_BROKEN_DEPENDS", "ROLE_ADD_REPOSITORY",
            "ROLE_ENABLE_DISTRO_COMP", "ROLE_CLEAN", "ROLE_RECONFIGURE",
            "ROLE_PK_QUERY", "ROLE_ADD_LICENSE_KEY",
@@ -112,10 +111,6 @@ ERROR_PACKAGE_DOWNLOAD_FAILED = "error-package-download-failed"
 ERROR_REPO_DOWNLOAD_FAILED = "error-repo-download-failed"
 #: Failed to satisfy the dependencies or conflicts of packages.
 ERROR_DEP_RESOLUTION_FAILED = "error-dep-resolution-failed"
-#: The requested vendor key is not installed.
-ERROR_KEY_NOT_INSTALLED = "error-key-not-installed"
-#: The requested vendor could not be removed.
-ERROR_KEY_NOT_REMOVED = "error-key-not-removed"
 #: The package management system could not be locked. Eventually another
 #: package manager is running.
 ERROR_NO_LOCK = "error-no-lock"
@@ -256,14 +251,6 @@ ROLE_REMOVE_PACKAGES = "role-remove-packages"
 #: The transaction will perform a combined install, remove, upgrade or
 #: downgrade action.
 ROLE_COMMIT_PACKAGES = "role-commit-packages"
-#: The transaction will add a local vendor key file to authenticate packages.
-ROLE_ADD_VENDOR_KEY_FILE = "role-add-vendor-key-file"
-#: The transaction will download vendor key to authenticate packages from
-#: a keyserver.
-ROLE_ADD_VENDOR_KEY_FROM_KEYSERVER = "role-add-vendor-key-from-keyserver"
-#: The transaction will remove a vendor key which was used to authenticate
-#: packages.
-ROLE_REMOVE_VENDOR_KEY = "role-remove-vendor-key"
 #: The transaction will try to finish a previous aborted installation.
 ROLE_FIX_INCOMPLETE_INSTALL = "role-fix-incomplete-install"
 #: The transaction will to resolve broken dependencies of already installed
@@ -323,10 +310,8 @@ _ICONS_ROLE = {
 _PAST_ROLE = {
     ROLE_INSTALL_FILE: _("Installed file"),
     ROLE_INSTALL_PACKAGES: _("Installed packages"),
-    ROLE_ADD_VENDOR_KEY_FILE: _("Added key from file"),
     ROLE_UPDATE_CACHE: _("Updated cache"),
     ROLE_PK_QUERY: _("Search done"),
-    ROLE_REMOVE_VENDOR_KEY: _("Removed trusted key"),
     ROLE_REMOVE_PACKAGES: _("Removed packages"),
     ROLE_UPGRADE_PACKAGES: _("Updated packages"),
     ROLE_UPGRADE_SYSTEM: _("Upgraded system"),
@@ -347,9 +332,7 @@ _STRING_EXIT = {
 _PRESENT_ROLE = {
     ROLE_INSTALL_FILE: _("Installing file"),
     ROLE_INSTALL_PACKAGES: _("Installing packages"),
-    ROLE_ADD_VENDOR_KEY_FILE: _("Adding key from file"),
     ROLE_UPDATE_CACHE: _("Updating cache"),
-    ROLE_REMOVE_VENDOR_KEY: _("Removing trusted key"),
     ROLE_REMOVE_PACKAGES: _("Removing packages"),
     ROLE_UPGRADE_PACKAGES: _("Updating packages"),
     ROLE_UPGRADE_SYSTEM: _("Upgrading system"),
@@ -366,11 +349,7 @@ _PRESENT_ROLE = {
 _ERROR_ROLE = {
     ROLE_INSTALL_FILE: _("Installation of the package file failed"),
     ROLE_INSTALL_PACKAGES: _("Installation of software failed"),
-    ROLE_ADD_VENDOR_KEY_FILE: _("Adding the key to the list of trusted "
-                                "software vendors failed"),
     ROLE_UPDATE_CACHE: _("Refreshing the software list failed"),
-    ROLE_REMOVE_VENDOR_KEY: _("Removing the vendor from the list of trusted "
-                              "ones failed"),
     ROLE_REMOVE_PACKAGES: _("Removing software failed"),
     ROLE_UPGRADE_PACKAGES: _("Updating software failed"),
     ROLE_UPGRADE_SYSTEM: _("Upgrading the system failed"),
@@ -395,10 +374,6 @@ _DESCS_ERROR = {
                           "they are a common source of problems.\n"
                           "Furthermore run the following command in a "
                           "Terminal: apt-get install -f"),
-    ERROR_KEY_NOT_INSTALLED: _("The selected file may not be a GPG key file "
-                               "or it might be corrupt."),
-    ERROR_KEY_NOT_REMOVED: _("The selected key couldn't be removed. "
-                             "Check that you provided a valid fingerprint."),
     ERROR_NO_LOCK: _("Check if you are currently running another "
                      "software management tool, e.g. Synaptic or aptitude. "
                      "Only one tool is allowed to make changes at a time."),
@@ -474,8 +449,6 @@ _STRINGS_ERROR = {
                                   "information"),
     ERROR_DEP_RESOLUTION_FAILED: _("Package dependencies cannot be resolved"),
     ERROR_CACHE_BROKEN: _("The package system is broken"),
-    ERROR_KEY_NOT_INSTALLED: _("Key was not installed"),
-    ERROR_KEY_NOT_REMOVED: _("Key was not removed"),
     ERROR_NO_LOCK: _("Failed to lock the package manager"),
     ERROR_NO_CACHE: _("Failed to load the package list"),
     ERROR_NO_PACKAGE: _("Package does not exist"),

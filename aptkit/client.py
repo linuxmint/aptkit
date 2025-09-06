@@ -1061,27 +1061,6 @@ class AptClient(object):
             self._locale = None
         self.terminal = None
 
-    @convert_dbus_exception
-    def get_trusted_vendor_keys(self, reply_handler=None, error_handler=None):
-        """Get the list of the installed vendor keys which are used to
-        authenticate packages.
-
-        :param reply_handler: Callback function. If specified in combination
-            with error_handler the method will be called asynchrounsouly.
-        :param error_handler: Errback function. In case of an error the given
-            callback gets the corresponding exception instance.
-        :param defer: Run the method asynchrounsly and return a defer.Deferred.
-            This options is only available as a keyword.
-
-        :raises: dbus.DBusException
-
-        :returns: Fingerprints of all installed vendor keys.
-        """
-        daemon = get_aptkit(self.bus)
-        keys = daemon.GetTrustedVendorKeys(reply_handler=reply_handler,
-                                           error_handler=error_handler)
-        return keys
-
     @deferable
     @convert_dbus_exception
     def upgrade_system(self, safe_mode=True, wait=False, reply_handler=None,
@@ -1173,87 +1152,6 @@ class AptClient(object):
         return self._run_transaction("AddRepository",
                                      [src_type, uri, dist, comps, comment,
                                       sourcesfile],
-                                     wait, reply_handler, error_handler)
-
-    @deferable
-    @convert_dbus_exception
-    def add_vendor_key_from_keyserver(self, keyid, keyserver, wait=False,
-                                      reply_handler=None, error_handler=None):
-        """Create a new transaction to download and install the key of a
-        software vendor. The key is used to authenticate packages of the
-        vendor.
-
-        :param keyid: The id of the GnuPG key (e.g. 0x0EB12F05)
-        :param keyserver: The server to get the key from (e.g.
-            keyserver.ubuntu.com)
-
-        :param wait: if True run the transaction immediately and return its
-            exit state instead of the transaction itself.
-        :param reply_handler: Callback function. If specified in combination
-            with error_handler the method will be called asynchrounsouly.
-        :param error_handler: Errback function. In case of an error the given
-            callback gets the corresponding exception instance.
-        :param defer: Run the method asynchrounsly and return a defer.Deferred.
-            This options is only available as a keyword.
-
-        :raises: dbus.DBusException
-
-        :returns: An AptTransaction instance.
-        """
-        return self._run_transaction("AddVendorKeyFromKeyserver",
-                                     [keyid, keyserver],
-                                     wait, reply_handler, error_handler)
-
-    @deferable
-    @convert_dbus_exception
-    def add_vendor_key_from_file(self, path, wait=False, reply_handler=None,
-                                 error_handler=None):
-        """Create a new transaction to install the key file of a software
-        vendor. The key is used to authenticate packages of the vendor.
-
-        :param path: The absolute path to the key file.
-
-        :param wait: if True run the transaction immediately and return its
-            exit state instead of the transaction itself.
-        :param reply_handler: Callback function. If specified in combination
-            with error_handler the method will be called asynchrounsouly.
-        :param error_handler: Errback function. In case of an error the given
-            callback gets the corresponding exception instance.
-        :param defer: Run the method asynchrounsly and return a defer.Deferred.
-            This options is only available as a keyword.
-
-        :raises: dbus.DBusException
-
-        :returns: An AptTransaction instance.
-        """
-        return self._run_transaction("AddVendorKeyFromFile", [path],
-                                     wait, reply_handler, error_handler)
-
-    @deferable
-    @convert_dbus_exception
-    def remove_vendor_key(self, fingerprint, wait=False, reply_handler=None,
-                          error_handler=None):
-        """Create a new transaction to remove the key of a software vendor
-        from the list of trusted ones.
-
-        The key is used to authenticate the origin of packages.
-
-        :param fingerprint: The fingerprint of the key.
-
-        :param wait: if True run the transaction immediately and return its
-            exit state instead of the transaction itself.
-        :param reply_handler: Callback function. If specified in combination
-            with error_handler the method will be called asynchrounsouly.
-        :param error_handler: Errback function. In case of an error the given
-            callback gets the corresponding exception instance.
-        :param defer: Run the method asynchrounsly and return a defer.Deferred.
-            This options is only available as a keyword.
-
-        :raises: dbus.DBusException
-
-        :returns: An AptTransaction instance.
-        """
-        return self._run_transaction("RemoveVendorKey", [fingerprint],
                                      wait, reply_handler, error_handler)
 
     @deferable

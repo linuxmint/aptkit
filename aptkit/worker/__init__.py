@@ -216,10 +216,6 @@ class BaseWorker(GObject.GObject):
         This method needs to be implemented by the backends."""
         raise NotImplementedError
 
-    def get_trusted_vendor_keys(self):
-        """This method needs to be implemented by the backends."""
-        return []
-
     def is_reboot_required(self):
         """This method needs to be implemented by the backends."""
         return False

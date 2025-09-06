@@ -91,39 +91,10 @@ class ConsoleClient:
                                     reply_handler=self._run_transaction,
                                     error_handler=self._on_exception)
 
-    def add_vendor_key_from_file(self, path):
-        """Install repository key file."""
-        self._client.add_vendor_key_from_file(
-            path,
-            reply_handler=self._run_transaction,
-            error_handler=self._on_exception)
-
-    def add_vendor_key_from_keyserver(self, keyid, keyserver):
-        """Install repository key file."""
-        self._client.add_vendor_key_from_keyserver(
-            keyid, keyserver,
-            reply_handler=self._run_transaction,
-            error_handler=self._on_exception)
-
-    def remove_vendor_key(self, fingerprint):
-        """Remove repository key."""
-        self._client.remove_vendor_key(fingerprint,
-                                       reply_handler=self._run_transaction,
-                                       error_handler=self._on_exception)
-
     def install_file(self, path):
         """Install package file."""
         self._client.install_file(path, reply_handler=self._run_transaction,
                                   error_handler=self._on_exception)
-
-    def list_trusted_vendor_keys(self):
-        """List the keys of the trusted vendors."""
-        def on_done(keys):
-            for key in keys:
-                print(key)
-            self._loop.quit()
-        self._client.get_trusted_vendor_keys(reply_handler=on_done,
-                                             error_handler=self._on_exception)
 
     def commit_packages(self, install, reinstall, remove, purge, upgrade,
                         downgrade):
@@ -394,9 +365,6 @@ class ConsoleClient:
         self._set_transaction(trans)
         self._stop_custom_progress()
         if self._transaction.role in [enums.ROLE_UPDATE_CACHE,
-                                      enums.ROLE_ADD_VENDOR_KEY_FILE,
-                                      enums.ROLE_ADD_VENDOR_KEY_FROM_KEYSERVER,
-                                      enums.ROLE_REMOVE_VENDOR_KEY,
                                       enums.ROLE_FIX_INCOMPLETE_INSTALL]:
             self._progress_id = GLib.timeout_add(250,
                                                  self._update_custom_progress,
@@ -550,17 +518,6 @@ def main():
                       action="store_true", dest="full_upgrade",
                       help="Upgrade the system, possibly installing and "
                              "removing packages")
-    parser.add_option("", "--add-vendor-key", default="",
-                      action="store", type="string", dest="add_vendor_key",
-                      help="Add the vendor to the trusted ones")
-    parser.add_option("", "--add-vendor-key-from-keyserver", default="",
-                      action="store", type="string",
-                      help="Add the vendor keyid (also needs "
-                             "--keyserver)")
-    parser.add_option("", "--keyserver", default="",
-                      action="store", type="string",
-                      help="Use the given keyserver for looking up "
-                             "keys")
     parser.add_option("", "--add-repository", default="",
                       action="store", type="string", dest="add_repository",
                       help="Add new repository from the given "
@@ -569,13 +526,6 @@ def main():
                       type="string", dest="sources_file",
                       help="Specify an alternative sources.list.d file to "
                              "which repositories should be added.")
-    parser.add_option("", "--list-trusted-vendors", default="",
-                      action="store_true", dest="list_trusted_vendor_keys",
-                      help="List trusted vendor keys")
-    parser.add_option("", "--remove-vendor-key", default="",
-                      action="store", type="string", dest="remove_vendor_key",
-                      help="Remove the trusted key of the given "
-                             "fingerprint")
     parser.add_option("", "--clean",
                       action="store_true", dest="clean",
                       help="Remove downloaded package files")
@@ -630,17 +580,6 @@ def main():
                             options.downgrade.split())
     elif options.add_repository:
         con.add_repository(options.add_repository, options.sources_file)
-    elif options.add_vendor_key:
-        # FIXME: Should detect if from stdin or file
-        con.add_vendor_key_from_file(options.add_vendor_key)
-    elif options.add_vendor_key_from_keyserver and options.keyserver:
-        con.add_vendor_key_from_keyserver(
-            options.add_vendor_key_from_keyserver,
-            options.keyserver)
-    elif options.remove_vendor_key:
-        con.remove_vendor_key(options.remove_vendor_key)
-    elif options.list_trusted_vendor_keys:
-        con.list_trusted_vendor_keys()
     else:
         parser.print_help()
         sys.exit(1)

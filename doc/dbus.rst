@@ -15,8 +15,6 @@ which are queued up in transaction and performed in a sequence.
 Non-transaction based methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. automethod:: aptkit.core.AptKit.GetTrustedVendorKeys() -> array(string)
-
 .. automethod:: aptkit.core.AptKit.Quit()
 
 
@@ -53,10 +51,6 @@ documentation with code examples.
 .. automethod:: aptkit.core.AptKit.FixIncompleteInstall() -> string
 
 .. automethod:: aptkit.core.AptKit.FixBrokenDepends() -> string
-
-.. automethod:: aptkit.core.AptKit.AddVendorKeyFromKeyserver(keyid : string, keyserver : string) -> string
-
-.. automethod:: aptkit.core.AptKit.AddVendorKeyFromFile(path : string) -> string
 
 
 Signals

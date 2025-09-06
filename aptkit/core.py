@@ -281,12 +281,6 @@ class Transaction(DBusObject):
             policykit1.PK_ACTION_UPDATE_CACHE),
         enums.ROLE_COMMIT_PACKAGES: (
             policykit1.PK_ACTION_INSTALL_OR_REMOVE_PACKAGES),
-        enums.ROLE_ADD_VENDOR_KEY_FILE: (
-            policykit1.PK_ACTION_CHANGE_REPOSITORY),
-        enums.ROLE_ADD_VENDOR_KEY_FROM_KEYSERVER: (
-            policykit1.PK_ACTION_CHANGE_REPOSITORY),
-        enums.ROLE_REMOVE_VENDOR_KEY: (
-            policykit1.PK_ACTION_CHANGE_REPOSITORY),
         enums.ROLE_FIX_INCOMPLETE_INSTALL: (
             policykit1.PK_ACTION_INSTALL_OR_REMOVE_PACKAGES),
         enums.ROLE_FIX_BROKEN_DEPENDS: (
@@ -972,7 +966,6 @@ class Transaction(DBusObject):
         has been granted.
         """
         if self.role not in [enums.ROLE_ADD_REPOSITORY,
-                             enums.ROLE_ADD_VENDOR_KEY_FROM_KEYSERVER,
                              enums.ROLE_UPDATE_CACHE,
                              enums.ROLE_INSTALL_PACKAGES,
                              enums.ROLE_ADD_LICENSE_KEY]:
@@ -1751,75 +1744,6 @@ class AptKit(DBusObject):
 
     # pylint: disable-msg=C0103,C0322
     @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
-                          in_signature="ss", out_signature="s",
-                          sender_keyword="sender")
-    def AddVendorKeyFromKeyserver(self, keyid, keyserver, sender):
-        """Download and install the key of a software vendor. The key is
-        used to authenticate packages of the vendor.
-
-        Requires the ``org.aptkit.change-repositories``
-        :ref:`PolicyKit privilege <policykit>`.
-
-        :param keyid: The id of the GnuPG key (e.g. 0x0EB12F05)
-        :param keyserver: The server to get the key from (e.g.
-            keyserver.ubuntu.com)
-
-        :type keyid: s
-        :type keyserver: s
-
-        :returns: The D-Bus path of the new transaction object which
-            performs this action.
-        """
-        log.info("InstallVendorKeyFromKeyserver() was called: %s %s",
-                 keyid, keyserver)
-        return self._create_trans(enums.ROLE_ADD_VENDOR_KEY_FROM_KEYSERVER,
-                                  sender, kwargs={"keyid": keyid,
-                                                  "keyserver": keyserver})
-
-    # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
-                          in_signature="s", out_signature="s",
-                          sender_keyword="sender")
-    def AddVendorKeyFromFile(self, path, sender):
-        """Install the key file of a software vendor. The key is
-        used to authenticate packages of the vendor.
-
-        Requires the ``org.aptkit.change-repositories``
-        :ref:`PolicyKit privilege <policykit>`.
-
-        :param path: The absolute path to the key file.
-        :type path: s
-
-        :returns: The D-Bus path of the new transaction object which
-            performs this action.
-        """
-        log.info("InstallVendorKeyFile() was called: %s" % path)
-        return self._create_trans(enums.ROLE_ADD_VENDOR_KEY_FILE,
-                                  sender, kwargs={"path": path})
-
-    # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
-                          in_signature="s", out_signature="s",
-                          sender_keyword="sender")
-    def RemoveVendorKey(self, fingerprint, sender):
-        """Remove the given key of a software vendor. The key is used to
-        authenticate packages of the vendor.
-
-        Requires the ``org.aptkit.change-repositories``
-        :ref:`PolicyKit privilege <policykit>`.
-
-        :param fingerprint: The fingerprint of the key.
-        :type fingerprint: s
-
-        :returns: The D-Bus path of the new transaction object which
-            performs this action.
-        """
-        log.info("RemoveVendorKey() was called: %s" % fingerprint)
-        return self._create_trans(enums.ROLE_REMOVE_VENDOR_KEY,
-                                  sender, kwargs={"fingerprint": fingerprint})
-
-    # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
                           in_signature="sb", out_signature="s",
                           sender_keyword="sender")
     def InstallFile(self, path, force, sender):
@@ -1949,30 +1873,6 @@ class AptKit(DBusObject):
         log.info("EnableComponent() was called: component='%s' ", component)
         return self._create_trans(enums.ROLE_ENABLE_DISTRO_COMP, sender,
                                   kwargs={"component": component})
-
-    # pylint: disable-msg=C0103,C0322
-    @dbus_deferred_method(APTKIT_DBUS_INTERFACE,
-                          in_signature="", out_signature="as",
-                          sender_keyword="sender")
-    def GetTrustedVendorKeys(self, sender):
-        """Get the list of the installed vendor keys which are used to
-        authenticate packages.
-
-        Requires the ``org.aptkit.get-trusted-vendor-keys``
-        :ref:`PolicyKit privilege <policykit>`.
-
-        :returns: Fingerprints of all installed keys.
-        """
-        log.info("GetTrustedVendorKeys() was called")
-        return self._get_trusted_vendor_keys(sender)
-
-    @inline_callbacks
-    def _get_trusted_vendor_keys(self, sender):
-        action = policykit1.PK_ACTION_GET_TRUSTED_VENDOR_KEYS
-        yield policykit1.check_authorization_by_name(sender, action,
-                                                     bus=self.bus)
-        fingerprints = self.worker.get_trusted_vendor_keys()
-        return_value(fingerprints)
 
     # pylint: disable-msg=C0103,C0322
     @dbus.service.method(APTKIT_DBUS_INTERFACE,

@@ -22,10 +22,9 @@ __author__ = "Sebastian Heinlein <devel@glatzor.de>"
 __all__ = ("check_authorization_by_name", "check_authorization_by_pid",
            "get_pid_from_dbus_name", "get_uid_from_dbus_name",
            "CHECK_AUTH_ALLOW_USER_INTERACTION", "CHECK_AUTH_NONE",
-           "PK_ACTION_ADD_REMOVE_VENDOR_KEY", "PK_ACTION_CANCEL_FOREIGN",
+           "PK_ACTION_CANCEL_FOREIGN",
            "PK_ACTION_CHANGE_REPOSITORY",
            "PK_ACTION_CHANGE_CONIFG",
-           "PK_ACTION_GET_TRUSTED_VENDOR_KEYS",
            "PK_ACTION_INSTALL_FILE",
            "PK_ACTION_INSTALL_OR_REMOVE_PACKAGES",
            "PK_ACTION_INSTALL_PACKAGES_FROM_NEW_REPO",
@@ -51,7 +50,6 @@ PK_ACTION_INSTALL_FILE = "org.aptkit.install-file"
 PK_ACTION_UPGRADE_PACKAGES = "org.aptkit.upgrade-packages"
 PK_ACTION_UPDATE_CACHE = "org.aptkit.update-cache"
 PK_ACTION_CANCEL_FOREIGN = "org.aptkit.cancel-foreign"
-PK_ACTION_GET_TRUSTED_VENDOR_KEYS = "org.aptkit.get-trusted-vendor-keys"
 PK_ACTION_CHANGE_REPOSITORY = "org.aptkit.change-repository"
 PK_ACTION_CHANGE_CONFIG = "org.aptkit.change-config"
 PK_ACTION_SET_PROXY = "org.aptkit.set-proxy"
