@@ -501,9 +501,12 @@ class AptProgressDialog(Gtk.Dialog):
         self.button_cancel = AptCancelButton(transaction)
         self.get_action_area().pack_start(self.button_cancel, False, False, 0)
         # Setup the status icon, label and progressbar
+        vbox_base = Gtk.VBox()
+        vbox_base.set_spacing(12)
         hbox = Gtk.HBox()
         hbox.set_spacing(12)
         hbox.set_border_width(6)
+        vbox_base.pack_start(hbox, False, True, 0)
         self.icon = Gtk.Image()
         self.icon.set_from_icon_name("package-x-generic", Gtk.IconSize.DIALOG)
         hbox.pack_start(self.icon, False, True, 0)
@@ -523,8 +526,8 @@ class AptProgressDialog(Gtk.Dialog):
         hbox.pack_start(vbox, True, True, 0)
         self.expander = AptDetailsExpander(terminal=terminal)
         self.expander.connect("notify::expanded", self._on_expanded)
-        vbox.pack_start(self.expander, True, True, 0)
-        self.get_content_area().pack_start(hbox, True, True, 0)
+        vbox_base.pack_start(self.expander, True, True, 0)
+        self.get_content_area().pack_start(vbox_base, True, True, 0)
         self._transaction = None
         self._signals = []
         self.set_title("")
@@ -718,9 +721,12 @@ class _ExpandableDialog(Gtk.Dialog):
             stock_type = Gtk.STOCK_DIALOG_QUESTION
         icon = Gtk.Image.new_from_stock(stock_type, Gtk.IconSize.DIALOG)
         icon.set_alignment(0, 0)
+        vbox_base = Gtk.VBox()
+        vbox_base.set_spacing(12)
         hbox_base = Gtk.HBox()
         hbox_base.set_spacing(12)
         hbox_base.set_border_width(6)
+        vbox_base.pack_start(hbox_base, False, True, 0)
         vbox_left = Gtk.VBox()
         vbox_left.set_spacing(12)
         hbox_base.pack_start(icon, False, True, 0)
@@ -730,14 +736,14 @@ class _ExpandableDialog(Gtk.Dialog):
         self.label.set_alignment(0, 0)
         self.label.set_line_wrap(True)
         vbox_left.pack_start(self.label, False, True, 0)
-        self.get_content_area().pack_start(hbox_base, True, True, 0)
+        self.get_content_area().pack_start(vbox_base, True, True, 0)
         # The expander widget
         self.expander = Gtk.Expander(label=expander_label)
         self.expander.set_spacing(6)
         self.expander.set_use_underline(True)
         self.expander.connect("notify::expanded", self._on_expanded)
         self._expanded_size = None
-        vbox_left.pack_start(self.expander, True, True, 0)
+        vbox_base.pack_start(self.expander, True, True, 0)
         # Set some initial data
         text = ""
         if title:
@@ -820,9 +826,12 @@ class AptConfirmDialog(Gtk.Dialog):
         icon = Gtk.Image.new_from_stock(Gtk.STOCK_DIALOG_QUESTION,
                                         Gtk.IconSize.DIALOG)
         icon.set_alignment(0, 0)
+        vbox_base = Gtk.VBox()
+        vbox_base.set_spacing(12)
         hbox_base = Gtk.HBox()
         hbox_base.set_spacing(12)
         hbox_base.set_border_width(6)
+        vbox_base.pack_start(hbox_base, False, True, 0)
         vbox_left = Gtk.VBox()
         vbox_left.set_spacing(12)
         hbox_base.pack_start(icon, False, True, 0)
@@ -831,7 +840,7 @@ class AptConfirmDialog(Gtk.Dialog):
         self.label.set_selectable(True)
         self.label.set_alignment(0, 0)
         vbox_left.pack_start(self.label, False, True, 0)
-        self.get_content_area().pack_start(hbox_base, True, True, 0)
+        self.get_content_area().pack_start(vbox_base, True, True, 0)
         self.treestore = Gtk.TreeStore(GObject.TYPE_STRING)
         self.treeview = Gtk.TreeView.new_with_model(self.treestore)
         self.treeview.set_headers_visible(False)
@@ -847,7 +856,7 @@ class AptConfirmDialog(Gtk.Dialog):
         self.scrolled.set_shadow_type(Gtk.ShadowType.ETCHED_IN)
         self.scrolled.set_min_content_height(200)
         self.scrolled.add(self.treeview)
-        vbox_left.pack_start(self.scrolled, True, True, 0)
+        vbox_base.pack_start(self.scrolled, True, True, 0)
         self.set_default_response(Gtk.ResponseType.CANCEL)
         self.treestore.set_sort_column_id(0, Gtk.SortType.ASCENDING)
 
