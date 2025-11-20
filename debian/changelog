@@ -1,3 +1,13 @@
+aptkit (1.0.9) zena; urgency=medium
+
+  [ chowette ]
+  * Refactor dialog layouts to use one additional top level VBox. (#11)
+
+  [ Clement Lefebvre ]
+  * l10n: Update POT
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 20 Nov 2025 14:48:19 +0000
+
 aptkit (1.0.8) gigi; urgency=medium
 
   * Remove key management
