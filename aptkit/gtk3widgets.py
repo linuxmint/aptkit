@@ -389,6 +389,7 @@ class AptDownloadsView(Gtk.TreeView):
         model = Gtk.ListStore(GObject.TYPE_STRING, GObject.TYPE_INT,
                               GObject.TYPE_STRING)
         self.set_model(model)
+        self.set_vexpand(True)
         self.props.headers_visible = False
         self.set_rules_hint(True)
         self._download_map = {}
