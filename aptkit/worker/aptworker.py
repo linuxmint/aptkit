@@ -688,13 +688,17 @@ class AptWorker(BaseWorker):
             auto = pkg.is_auto_installed
 
             if pkg_ver:
-                if pkg.installed and pkg.installed.version < pkg_ver:
+                if (pkg.installed and
+                    apt_pkg.version_compare(pkg.installed.version,
+                                            pkg_ver) == -1):
                     # FIXME: We need a new error enum
                     raise TransactionFailed(ERROR_NO_PACKAGE,
                                             _("The former version %s of %s "
                                               "is already installed"),
                                             pkg.installed.version, pkg.name)
-                elif pkg.installed and pkg.installed.version == pkg_ver:
+                elif (pkg.installed and
+                      apt_pkg.version_compare(pkg.installed.version,
+                                              pkg_ver) == 0):
                     raise TransactionFailed(ERROR_PACKAGE_ALREADY_INSTALLED,
                                             _("The version %s of %s "
                                               "is already installed"),
