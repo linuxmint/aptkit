@@ -7,74 +7,74 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-09 19:27+0100\n"
+"POT-Creation-Date: 2025-11-20 14:47+0000\n"
 "PO-Revision-Date: 2024-09-09 18:38+0000\n"
 "Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
 "Language-Team: Malay <ms@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-08-26 15:26+0000\n"
-"X-Generator: Launchpad (build 919009172d854f2b8e4e8262db447f12f11d25eb)\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 "Language: ms\n"
 
-#: ../data/org.debian.aptkit.policy.in.h:1
+#: data/org.aptkit.policy.in:12
 msgid "List keys of trusted vendors"
 msgstr "Senarai kekunci vendor yang dipercayai"
 
-#: ../data/org.debian.aptkit.policy.in.h:2
+#: data/org.aptkit.policy.in:15
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr ""
 "Untuk paparkan senarai kekunci dipercayai, anda perlukan pengsahihan."
 
-#: ../data/org.debian.aptkit.policy.in.h:3
+#: data/org.aptkit.policy.in:26
 msgid "Remove downloaded package files"
 msgstr "Buang fail pakej yang dimuat turunkan"
 
-#: ../data/org.debian.aptkit.policy.in.h:4
+#: data/org.aptkit.policy.in:29
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr ""
 "Untuk membersihkan fail pakej yang dimuat turun, anda perlu dapatkan "
 "pengesahihan."
 
-#: ../data/org.debian.aptkit.policy.in.h:5
+#: data/org.aptkit.policy.in:40
 msgid "Change software configuration"
 msgstr "Ubah konfigurasi perisian"
 
-#: ../data/org.debian.aptkit.policy.in.h:6
+#: data/org.aptkit.policy.in:43
 msgid "To change software settings, you need to authenticate."
 msgstr "Untuk mengubah tetapan perisian, anda perlu dapatkan pengesahihan."
 
-#: ../data/org.debian.aptkit.policy.in.h:7
+#: data/org.aptkit.policy.in:54
 msgid "Change software repository"
 msgstr "Ubah repositori perisian"
 
-#: ../data/org.debian.aptkit.policy.in.h:8
+#: data/org.aptkit.policy.in:57
 msgid "To change software repository settings, you need to authenticate."
 msgstr ""
 "Untuk mengubah tetapan repositori perisian, anda perlukan pengsahihan."
 
-#: ../data/org.debian.aptkit.policy.in.h:9
+#: data/org.aptkit.policy.in:68
 msgid "Install package file"
 msgstr "Pasang fail pakej"
 
-#: ../data/org.debian.aptkit.policy.in.h:10
+#: data/org.aptkit.policy.in:71
 msgid "To install this package, you need to authenticate."
 msgstr "Untuk memasang pakej ini, anda perlukan pengsahihan."
 
-#: ../data/org.debian.aptkit.policy.in.h:11
+#: data/org.aptkit.policy.in:82
 msgid "Update package information"
 msgstr "Kemaskini informasi pakej"
 
-#: ../data/org.debian.aptkit.policy.in.h:12
+#: data/org.aptkit.policy.in:85
 msgid "To update the software catalog, you need to authenticate."
 msgstr "Untuk mengemakini katalog perisian, anda perlukan pengsahihan."
 
-#: ../data/org.debian.aptkit.policy.in.h:13
+#: data/org.aptkit.policy.in:96
 msgid "Install or remove packages"
 msgstr "Pasang atau buang pakej"
 
-#: ../data/org.debian.aptkit.policy.in.h:14
+#: data/org.aptkit.policy.in:99
 msgid "To install or remove software, you need to authenticate."
 msgstr "Untuk memasang atau membuang perisian, anda perlukan pengsahihan."
 
@@ -82,18 +82,17 @@ msgstr "Untuk memasang atau membuang perisian, anda perlukan pengsahihan."
 #. from a high trusted repository that can be explicitely whitelisted.
 #. 
 #. The defaults for this action are the same as
-#. "org.debian.aptkit.install-or-remove-packages".
+#. "org.aptkit.install-or-remove-packages".
 #. 
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
-#. 
-#: ../data/org.debian.aptkit.policy.in.h:25
+#: data/org.aptkit.policy.in:120
 msgid "Install software from a high-trust whitelisted repository."
 msgstr ""
 "Pasang perisian dari repositori tersenarai putih yang sangat-dipercayai."
 
-#: ../data/org.debian.aptkit.policy.in.h:26
+#: data/org.aptkit.policy.in:123
 msgid "To install software, you need to authenticate."
 msgstr "Untuk memasang perisian, anda perlu sahihkan."
 
@@ -102,11 +101,11 @@ msgstr "Untuk memasang perisian, anda perlu sahihkan."
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.debian.aptkit.policy.in.h:32
+#: data/org.aptkit.policy.in:139
 msgid "Add a new repository and install packages from it"
 msgstr "Tambah repositori baru dan pasang pakej darinya"
 
-#: ../data/org.debian.aptkit.policy.in.h:33
+#: data/org.aptkit.policy.in:142
 msgid "To install software from a new source, you need to authenticate."
 msgstr "Untuk memasang dari sumber baru, anda perlukan pengsahihan."
 
@@ -118,289 +117,263 @@ msgstr "Untuk memasang dari sumber baru, anda perlukan pengsahihan."
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.debian.aptkit.policy.in.h:42
+#: data/org.aptkit.policy.in:161
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
 "Tambah repositori baru bagi perisian yang dibeli dan pasang pakej darinya"
 
-#: ../data/org.debian.aptkit.policy.in.h:43
+#: data/org.aptkit.policy.in:164
 msgid "To install purchased software, you need to authenticate."
 msgstr "Untuk memasang perisian, anda perlukan pengsahihan."
 
-#: ../data/org.debian.aptkit.policy.in.h:44
+#: data/org.aptkit.policy.in:175
 msgid "Upgrade packages"
 msgstr "Tingkatkan pakej-pakej"
 
-#: ../data/org.debian.aptkit.policy.in.h:45
+#: data/org.aptkit.policy.in:178
 msgid "To install updated software, you need to authenticate."
 msgstr "Untuk memasang kemaskini perisian, anda perlukan pengsahihan."
 
-#: ../data/org.debian.aptkit.policy.in.h:46
+#: data/org.aptkit.policy.in:187
 msgid "Cancel the task of another user"
 msgstr "Batalkan tugas pengguna lain"
 
-#: ../data/org.debian.aptkit.policy.in.h:47
+#: data/org.aptkit.policy.in:190
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
 "Untuk membatalkan perubahan perisian orang lain, anda perlukan pengsahihan."
 
-#: ../data/org.debian.aptkit.policy.in.h:48
+#: data/org.aptkit.policy.in:201
 msgid "Set a proxy for software downloads"
 msgstr "Tetapkan proksi untuk memuat turun perisian"
 
-#: ../data/org.debian.aptkit.policy.in.h:49
+#: data/org.aptkit.policy.in:204
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
 "Untuk gunakan pelayan proksi bagi tujuan memuat turun perisian, anda "
 "perlukan pengsahihan."
 
-#: ../aptkit/core.py:2148
+#: aptkit/core.py:2030
 msgid "Do not shutdown the daemon because of inactivity"
 msgstr "Jangan menutup daemon disebabkan ketiadaaan aktviti"
 
-#: ../aptkit/core.py:2153
+#: aptkit/core.py:2035
 msgid "Do not load any plugins"
 msgstr "Jangan muat apa-apa pemalam"
 
-#: ../aptkit/core.py:2157
+#: aptkit/core.py:2039
 msgid "Show internal processing information"
 msgstr "Tunjukkan informasi pemprosesan dalam"
 
-#: ../aptkit/core.py:2162
+#: aptkit/core.py:2044
 msgid "Quit and replace an already running daemon"
 msgstr "Tutup dan gantikan sebuah daemon yang sedang berjalan"
 
-#: ../aptkit/core.py:2167
+#: aptkit/core.py:2049
 msgid "Listen on the DBus session bus (Only required for testing"
 msgstr "Dengar bus sesi DBUS (Hanya diperlukan untuk pengujian"
 
-#: ../aptkit/core.py:2171
+#: aptkit/core.py:2053
 msgid "Perform operations in the given chroot"
 msgstr "Lakukan operasi didalam chroot yang diberikan"
 
-#: ../aptkit/core.py:2176
+#: aptkit/core.py:2058
 msgid "Store profile stats in the specified file"
 msgstr "Simpan stat profil dalam fail yang ditentukan"
 
-#: ../aptkit/core.py:2181
+#: aptkit/core.py:2063
 msgid "Do not make any changes to the system (Only of use to developers)"
 msgstr ""
 "Jangan membuat apa-apa perubahan kepada sistem (Hanya berguna kepada "
 "pembangun)"
 
-#: ../aptkit/enums.py:337
+#: aptkit/enums.py:311
 msgid "Installed file"
 msgstr "Fail dipasang"
 
-#: ../aptkit/enums.py:338
+#: aptkit/enums.py:312
 msgid "Installed packages"
 msgstr "Pakej dipasang"
 
-#: ../aptkit/enums.py:339
-msgid "Added key from file"
-msgstr "Telah menambah kunci daripada fail"
-
-#: ../aptkit/enums.py:340
+#: aptkit/enums.py:313
 msgid "Updated cache"
 msgstr "Telah kemaskini cache"
 
-#: ../aptkit/enums.py:341
+#: aptkit/enums.py:314
 msgid "Search done"
 msgstr "Gelintar selesai"
 
-#: ../aptkit/enums.py:342
-msgid "Removed trusted key"
-msgstr "Telah membuang kunci dipercayai"
-
-#: ../aptkit/enums.py:343
+#: aptkit/enums.py:315
 msgid "Removed packages"
 msgstr "Pakej-pakej yang telah dibuang"
 
-#: ../aptkit/enums.py:344
+#: aptkit/enums.py:316
 msgid "Updated packages"
 msgstr "Pakej-pakej yang telah dikemaskini"
 
-#: ../aptkit/enums.py:345
+#: aptkit/enums.py:317
 msgid "Upgraded system"
 msgstr "Sistem yang telah ditingkatkan"
 
-#: ../aptkit/enums.py:346
+#: aptkit/enums.py:318
 msgid "Applied changes"
 msgstr "Perubahan yang telah digunakan"
 
-#: ../aptkit/enums.py:347
+#: aptkit/enums.py:319
 msgid "Repaired incomplete installation"
 msgstr "Pemasangan tidak lengkap telah dibaiki"
 
-#: ../aptkit/enums.py:348
+#: aptkit/enums.py:320
 msgid "Repaired broken dependencies"
 msgstr "Keperluan rosak telah dibaiki"
 
-#: ../aptkit/enums.py:349
+#: aptkit/enums.py:321
 msgid "Added software source"
 msgstr "Sumber perisian tambahan"
 
-#: ../aptkit/enums.py:350
+#: aptkit/enums.py:322
 msgid "Enabled component of the distribution"
 msgstr "Membenarkan komponen distribusi"
 
-#: ../aptkit/enums.py:351
+#: aptkit/enums.py:323
 msgid "Removed downloaded package files"
 msgstr "Buang fail pakej yang dimuat turun"
 
-#: ../aptkit/enums.py:352
+#: aptkit/enums.py:324
 msgid "Reconfigured installed packages"
 msgstr "Konfigur semula pakej yang dipasang"
 
-#: ../aptkit/enums.py:356
+#: aptkit/enums.py:328
 msgid "Successful"
 msgstr "Berjaya"
 
-#: ../aptkit/enums.py:357
+#: aptkit/enums.py:329
 msgid "Canceled"
 msgstr "Dibatalkan"
 
-#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
+#: aptkit/enums.py:330 aptkit/enums.py:529
 msgid "Failed"
 msgstr "Gagal"
 
-#: ../aptkit/enums.py:361
+#: aptkit/enums.py:333
 msgid "Installing file"
 msgstr "Memasang fail"
 
-#: ../aptkit/enums.py:362
+#: aptkit/enums.py:334
 msgid "Installing packages"
 msgstr "Memasang pakej-pakej"
 
-#: ../aptkit/enums.py:363
-msgid "Adding key from file"
-msgstr "Menambah kunci daripada fail"
-
-#: ../aptkit/enums.py:364
+#: aptkit/enums.py:335
 msgid "Updating cache"
 msgstr "Mengemaskini cache"
 
-#: ../aptkit/enums.py:365
-msgid "Removing trusted key"
-msgstr "Membuang kunci dipercayai"
-
-#: ../aptkit/enums.py:366
+#: aptkit/enums.py:336
 msgid "Removing packages"
 msgstr "Membuang pakej-pakej"
 
-#: ../aptkit/enums.py:367
+#: aptkit/enums.py:337
 msgid "Updating packages"
 msgstr "Mengemaskini pakej-pakej"
 
-#: ../aptkit/enums.py:368
+#: aptkit/enums.py:338
 msgid "Upgrading system"
 msgstr "Meningkatkan sistem"
 
-#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
+#: aptkit/enums.py:339 aptkit/enums.py:488
 msgid "Applying changes"
 msgstr "Menerapkan perubahan"
 
-#: ../aptkit/enums.py:370
+#: aptkit/enums.py:340
 msgid "Repairing incomplete installation"
 msgstr "Membaiki pemasangan tidak lengkap"
 
-#: ../aptkit/enums.py:371
+#: aptkit/enums.py:341
 msgid "Repairing installed software"
 msgstr "Membaiki perisian terpasang"
 
-#: ../aptkit/enums.py:372
+#: aptkit/enums.py:342
 msgid "Adding software source"
 msgstr "Menambah sumber perisian"
 
-#: ../aptkit/enums.py:373
+#: aptkit/enums.py:343
 msgid "Enabling component of the distribution"
 msgstr "Membenarkan komponen distribusi"
 
-#: ../aptkit/enums.py:374
+#: aptkit/enums.py:344
 msgid "Removing downloaded package files"
 msgstr "Membuang fail pakej yang dimuat turun"
 
-#: ../aptkit/enums.py:375
+#: aptkit/enums.py:345
 msgid "Reconfiguring installed packages"
 msgstr "Menkonfigurasi semula pakej yang dipasang"
 
-#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
+#: aptkit/enums.py:346 aptkit/enums.py:477
 msgid "Searching"
 msgstr "Menggelintar"
 
-#: ../aptkit/enums.py:380
+#: aptkit/enums.py:350
 msgid "Installation of the package file failed"
 msgstr "Pemasangan fail pakej telah gagal"
 
-#: ../aptkit/enums.py:381
+#: aptkit/enums.py:351
 msgid "Installation of software failed"
 msgstr "Pemasangan perisian telah gagal"
 
-#: ../aptkit/enums.py:382
-msgid "Adding the key to the list of trusted software vendors failed"
-msgstr ""
-"Menambah kunci ke senarai pembekal perisian yang dipercayai mengalami "
-"kegagalan"
-
-#: ../aptkit/enums.py:384
+#: aptkit/enums.py:352
 msgid "Refreshing the software list failed"
 msgstr "Menyegarkan senarai perisian telah gagal"
 
-#: ../aptkit/enums.py:385
-msgid "Removing the vendor from the list of trusted ones failed"
-msgstr "Membuang penjaja daripada senarai penjaja dipercaya telah gagal"
-
-#: ../aptkit/enums.py:387
+#: aptkit/enums.py:353
 msgid "Removing software failed"
 msgstr "Membuang perisian telah gagal"
 
-#: ../aptkit/enums.py:388
+#: aptkit/enums.py:354
 msgid "Updating software failed"
 msgstr "Mengemaskini perisian telah gagal"
 
-#: ../aptkit/enums.py:389
+#: aptkit/enums.py:355
 msgid "Upgrading the system failed"
 msgstr "Meningkatkan sistem telah gagal"
 
-#: ../aptkit/enums.py:390
+#: aptkit/enums.py:356
 msgid "Applying software changes failed"
 msgstr "Menerapkan perubahan perisian telah gagal"
 
-#: ../aptkit/enums.py:391
+#: aptkit/enums.py:357
 msgid "Repairing incomplete installation failed"
 msgstr "Membaiki pemasangan tidak lengkap telah gagal"
 
-#: ../aptkit/enums.py:393
+#: aptkit/enums.py:359
 msgid "Repairing broken dependencies failed"
 msgstr "Membaiki keperluan rosak telah gagal"
 
-#: ../aptkit/enums.py:394
+#: aptkit/enums.py:360
 msgid "Adding software source failed"
 msgstr "Penambahan sumber perisian gagal"
 
-#: ../aptkit/enums.py:395
+#: aptkit/enums.py:361
 msgid "Enabling component of the distribution failed"
 msgstr "Penambajan komponen distribusi gagal"
 
-#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
+#: aptkit/enums.py:363 aptkit/enums.py:364
 msgid "Removing downloaded package files failed"
 msgstr "Pembuangan fail pakej yang dimuat turun gagal"
 
-#: ../aptkit/enums.py:399
+#: aptkit/enums.py:365
 msgid "Search failed"
 msgstr "Gelintar gagal"
 
-#: ../aptkit/enums.py:400
+#: aptkit/enums.py:366
 msgid "Adding license key"
 msgstr "Menambah kunci lesen"
 
-#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
+#: aptkit/enums.py:370 aptkit/enums.py:371
 msgid "Check your Internet connection."
 msgstr "Periksa sambungan Internet anda."
 
-#: ../aptkit/enums.py:406
+#: aptkit/enums.py:372
 msgid ""
 "Check if you are using third party repositories. If so disable them, since "
 "they are a common source of problems.\n"
@@ -410,20 +383,7 @@ msgstr ""
 "nyahbolehkan mereka, kerana mereka adalah penyebab masalah biasa.\n"
 "Apalagi jalankan arahan berikut didalam satu Terminal: apt-get install -f"
 
-#: ../aptkit/enums.py:411
-msgid "The selected file may not be a GPG key file or it might be corrupt."
-msgstr ""
-"Fail yang dipilih mungkin bukan fail kekunci GPG atau fail mungkin buruk."
-
-#: ../aptkit/enums.py:413
-msgid ""
-"The selected key couldn't be removed. Check that you provided a valid "
-"fingerprint."
-msgstr ""
-"kekunci pilihan tidak dapat dibuangkan. Semak sama ada anda telah masukkan "
-"fingerprint yang sah."
-
-#: ../aptkit/enums.py:415
+#: aptkit/enums.py:377
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
@@ -431,7 +391,7 @@ msgstr ""
 "Semak sama ada anda sedang jalankan alat pengurusan perisian yang lain, cth. "
 "Sypnatic atau aptitude. Hanya satu alat dibenarkan untuk membuat perubahan."
 
-#: ../aptkit/enums.py:418
+#: aptkit/enums.py:380
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
@@ -439,31 +399,31 @@ msgstr ""
 "Ini adalah masalah penting. Cuba lagi kemudian. Jika masalah ini muncul "
 "semula, sila laporkan ralat kepada pembangun."
 
-#: ../aptkit/enums.py:421
+#: aptkit/enums.py:383
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
 msgstr "Semak ejaan nama pakej, dan repositori tersebut dibenarkan."
 
-#: ../aptkit/enums.py:423
+#: aptkit/enums.py:385
 msgid "There isn't any need for an update."
 msgstr "Tiada keperluan untuk kemaskini."
 
-#: ../aptkit/enums.py:424
+#: aptkit/enums.py:386
 msgid "There isn't any need for an installation"
 msgstr "Tiada keperluan untuk pemasangan"
 
-#: ../aptkit/enums.py:426
+#: aptkit/enums.py:388
 msgid "There isn't any need for a removal."
 msgstr "Tiada keperluan untuk membuang."
 
-#: ../aptkit/enums.py:427
+#: aptkit/enums.py:389
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr ""
 "Anda meminta untuk membuang sebuah pakej yang penting kepada sistem anda."
 
-#: ../aptkit/enums.py:430
+#: aptkit/enums.py:392
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
@@ -471,15 +431,15 @@ msgstr ""
 "Sambungan kepada daemon telah hilang. Kemungkinan besar daemon latarbelakang "
 "telah mati."
 
-#: ../aptkit/enums.py:432
+#: aptkit/enums.py:394
 msgid "The installation or removal of a software package failed."
 msgstr "Pemasangan atau pembuangan sebuah pakej perisian telah gagal."
 
-#: ../aptkit/enums.py:434
+#: aptkit/enums.py:396
 msgid "The requested feature is not supported."
 msgstr "Fitur dipinta tidak disokong."
 
-#: ../aptkit/enums.py:435
+#: aptkit/enums.py:397
 msgid ""
 "There seems to be a programming error in aptkit, the software that allows "
 "you to install/remove software and to perform other package management "
@@ -489,7 +449,7 @@ msgstr ""
 "memasang/membuang perisian dan lakukan tugas berkaitan dengan pengurusan "
 "pakej."
 
-#: ../aptkit/enums.py:439
+#: aptkit/enums.py:401
 msgid ""
 "This error could be caused by required additional software packages which "
 "are missing or not installable. Furthermore there could be a conflict "
@@ -500,11 +460,11 @@ msgstr ""
 "atau tidak dipasang. Tambahan pula mungkin terdapat konflik antara pakej "
 "perisian yang tidak membenarkannya dipasang pada masa yang sama."
 
-#: ../aptkit/enums.py:445
+#: aptkit/enums.py:407
 msgid "This requires installing packages from unauthenticated sources."
 msgstr "Ia perlukan pemasangan pakej dari sumber tidak disahihkan."
 
-#: ../aptkit/enums.py:447
+#: aptkit/enums.py:409
 msgid ""
 "The installation could have failed because of an error in the corresponding "
 "software package or it was cancelled in an unfriendly way. You have to "
@@ -514,12 +474,12 @@ msgstr ""
 "selaras dengannya atau ia dibatalkan didalam cara yang dipaksa. Anda perlu "
 "membaiki ini sebelum anda boleh memasang atau membuang perisian lagi."
 
-#: ../aptkit/enums.py:453
+#: aptkit/enums.py:415
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
 msgstr "Sila salin fail ke komputer setempat anda dan semak kebenaran fail."
 
-#: ../aptkit/enums.py:456
+#: aptkit/enums.py:418
 msgid ""
 "The installation of a package which violates the quality standards isn't "
 "allowed. This could cause serious problems on your computer. Please contact "
@@ -530,7 +490,7 @@ msgstr ""
 "akan menyebabkan masalah pada komputer anda. Sila hubungi individu atai "
 "organisasi yang menyediakan fail pakej ini termasuklah perincian dibawah."
 
-#: ../aptkit/enums.py:463
+#: aptkit/enums.py:425
 msgid ""
 "The downloaded license key which is required to run this piece of software "
 "is not valid or could not be installed correctly.\n"
@@ -540,11 +500,11 @@ msgstr ""
 "sah atau tidak dapat dipasang dengan betul.\n"
 "Rujuk perincian untuk maklumat lanjut."
 
-#: ../aptkit/enums.py:469
+#: aptkit/enums.py:431
 msgid "All available upgrades have already been installed."
 msgstr "Semua penataran yang ada telah dipasang."
 
-#: ../aptkit/enums.py:471
+#: aptkit/enums.py:433
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
@@ -552,12 +512,12 @@ msgstr ""
 "Kunci lesen yang membenarkan anda gunakan perisian ini tidak dapat dimuat "
 "turun. Sila semak sambungan rangkaian anda."
 
-#: ../aptkit/enums.py:475
+#: aptkit/enums.py:437
 msgid "You don't have the required privileges to perform this action."
 msgstr ""
 "Anda tidak mempunyai keistimewaan yang diperlukan untuk membuat tindakan ini."
 
-#: ../aptkit/enums.py:477
+#: aptkit/enums.py:439
 msgid ""
 "You either provided a wrong password or cancelled the authorization.\n"
 "Furthermore there could also be a technical reason for this error if you "
@@ -569,321 +529,313 @@ msgstr ""
 "tidak dapat lihat dialog kata laluan: persekitaran dekstop anda tidak "
 "menyediakan ejen sesi Kit Polisi."
 
-#: ../aptkit/enums.py:485
+#: aptkit/enums.py:447
 msgid "Failed to download package files"
 msgstr "Gagal untuk memuat-turun fail-fail pakej"
 
-#: ../aptkit/enums.py:486
+#: aptkit/enums.py:448
 msgid "Failed to download repository information"
 msgstr "Gagal untuk memuat-turun informasi repositori"
 
-#: ../aptkit/enums.py:488
+#: aptkit/enums.py:450
 msgid "Package dependencies cannot be resolved"
 msgstr "Keperluan pakej tidak dapat diselesaikan"
 
-#: ../aptkit/enums.py:489
+#: aptkit/enums.py:451
 msgid "The package system is broken"
 msgstr "Sistem pakej adalah rosak"
 
-#: ../aptkit/enums.py:490
-msgid "Key was not installed"
-msgstr "Kunci tidak dipasang"
-
-#: ../aptkit/enums.py:491
-msgid "Key was not removed"
-msgstr "Kunci tidak dibuang"
-
-#: ../aptkit/enums.py:492
+#: aptkit/enums.py:452
 msgid "Failed to lock the package manager"
 msgstr "Gagal untuk mengunci pengurus pakej"
 
-#: ../aptkit/enums.py:493
+#: aptkit/enums.py:453
 msgid "Failed to load the package list"
 msgstr "Gagal untuk memuat senarai pakej"
 
-#: ../aptkit/enums.py:494
+#: aptkit/enums.py:454
 msgid "Package does not exist"
 msgstr "Pakej tidak wujud"
 
-#: ../aptkit/enums.py:495
+#: aptkit/enums.py:455
 msgid "Package is already up to date"
 msgstr "Pakej sudah dikemaskini"
 
-#: ../aptkit/enums.py:496
+#: aptkit/enums.py:456
 msgid "Package is already installed"
 msgstr "Pakej sudah dipasang"
 
-#: ../aptkit/enums.py:497
+#: aptkit/enums.py:457
 msgid "Package isn't installed"
 msgstr "Pakej tidak dipasang"
 
-#: ../aptkit/enums.py:498
+#: aptkit/enums.py:458
 msgid "Failed to remove essential system package"
 msgstr "Gagal untuk membuang pakej sistem yang diperlukan"
 
-#: ../aptkit/enums.py:500
+#: aptkit/enums.py:460
 msgid "Task cannot be monitored or controlled"
 msgstr "Tugas tidak dapat diperhatikan atau dikawal"
 
-#: ../aptkit/enums.py:501
+#: aptkit/enums.py:461
 msgid "Package operation failed"
 msgstr "Operasi pakej telah gagal"
 
-#: ../aptkit/enums.py:502
+#: aptkit/enums.py:462
 msgid "Requires installation of untrusted packages"
 msgstr "Memerlukan pemasangan pakej-pakej yang tidak dipercayai"
 
-#: ../aptkit/enums.py:504
+#: aptkit/enums.py:464
 msgid "Previous installation hasn't been completed"
 msgstr "Pemasangan yang dahulu belum diselesaikan lagi"
 
-#: ../aptkit/enums.py:505
+#: aptkit/enums.py:465
 msgid "The package is of bad quality"
 msgstr "Pakej berkualiti rendah"
 
-#: ../aptkit/enums.py:506
+#: aptkit/enums.py:466
 msgid "Package file could not be opened"
 msgstr "Fail pakej tidak boleh dibuka"
 
-#: ../aptkit/enums.py:507
+#: aptkit/enums.py:467
 msgid "Not supported feature"
 msgstr "Fitur tidak disokong"
 
-#: ../aptkit/enums.py:508
+#: aptkit/enums.py:468
 msgid "Failed to download the license key"
 msgstr "Gagal memuat turun kunci lesen"
 
-#: ../aptkit/enums.py:509
+#: aptkit/enums.py:469
 msgid "Failed to install the license key"
 msgstr "Gagal memasang kunci lesen"
 
-#: ../aptkit/enums.py:510
+#: aptkit/enums.py:470
 msgid "The system is already up to date"
 msgstr "Sistem sudah dikemakini"
 
-#: ../aptkit/enums.py:511
+#: aptkit/enums.py:471
 msgid "You could not be authorized"
 msgstr "Anda tidak diizinkan"
 
-#: ../aptkit/enums.py:512
+#: aptkit/enums.py:472
 msgid "You are not allowed to perform this action"
 msgstr "Anda tidak dibenarkan membuat tindakan ini"
 
-#: ../aptkit/enums.py:513
+#: aptkit/enums.py:473
 msgid "An unhandlable error occured"
 msgstr "Ralat yang tidak boleh dikendalikan berlaku"
 
-#: ../aptkit/enums.py:516
+#: aptkit/enums.py:476
 msgid "Waiting for service to start"
 msgstr "Menunggu untuk servis bermula"
 
-#: ../aptkit/enums.py:518
+#: aptkit/enums.py:478
 msgid "Waiting"
 msgstr "Menunggu"
 
-#: ../aptkit/enums.py:519
+#: aptkit/enums.py:479
 msgid "Waiting for required medium"
 msgstr "Menunggu untuk medium yang diperlukan"
 
-#: ../aptkit/enums.py:520
+#: aptkit/enums.py:480
 msgid "Waiting for other software managers to quit"
 msgstr "Menunggu untuk pengurus perisian lain untuk tutup"
 
-#: ../aptkit/enums.py:521
+#: aptkit/enums.py:481
 msgid "Waiting for configuration file prompt"
 msgstr "Menunggu untuk prompt fail konfigurasi"
 
-#: ../aptkit/enums.py:523
+#: aptkit/enums.py:483
 msgid "Running task"
 msgstr "Menjalankan tugas"
 
-#: ../aptkit/enums.py:524
+#: aptkit/enums.py:484
 msgid "Downloading"
 msgstr "Sedang dimuat-turun"
 
-#: ../aptkit/enums.py:525
+#: aptkit/enums.py:485
 msgid "Querying software sources"
 msgstr "Menanya sumber perisian"
 
-#: ../aptkit/enums.py:526
+#: aptkit/enums.py:486
 msgid "Cleaning up"
 msgstr "Sedang membersihkan"
 
-#: ../aptkit/enums.py:527
+#: aptkit/enums.py:487
 msgid "Resolving dependencies"
 msgstr "Menghuraikan keperluan"
 
-#: ../aptkit/enums.py:529
+#: aptkit/enums.py:489
 msgid "Finished"
 msgstr "Selesai"
 
-#: ../aptkit/enums.py:530
+#: aptkit/enums.py:490
 msgid "Cancelling"
 msgstr "Sedang membatalkan"
 
-#: ../aptkit/enums.py:531
+#: aptkit/enums.py:491
 msgid "Loading software list"
 msgstr "Memuat senarai perisian"
 
-#: ../aptkit/enums.py:532
+#: aptkit/enums.py:492
 msgid "Waiting for authentication"
 msgstr "Menunggu pengsahihan"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:536
+#: aptkit/enums.py:496
 #, python-format
 msgid "Installing %s"
 msgstr "Sedang memasang %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:538
+#: aptkit/enums.py:498
 #, python-format
 msgid "Configuring %s"
 msgstr "Mengubahsuai %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:540
+#: aptkit/enums.py:500
 #, python-format
 msgid "Removing %s"
 msgstr "Membuang %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:542
+#: aptkit/enums.py:502
 #, python-format
 msgid "Completely removing %s"
 msgstr "membuang sepenuhnya %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:544
+#: aptkit/enums.py:504
 #, python-format
 msgid "Noting disappearance of %s"
 msgstr "Khidmat kehilangan %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:546
+#: aptkit/enums.py:506
 #, python-format
 msgid "Running post-installation trigger %s"
 msgstr "Menjalankan pemetik sebelum-pemasangan %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:548
+#: aptkit/enums.py:508
 #, python-format
 msgid "Upgrading %s"
 msgstr "Meningkatkan %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:550
+#: aptkit/enums.py:510
 #, python-format
 msgid "Unpacking %s"
 msgstr "Membuka %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:552
+#: aptkit/enums.py:512
 #, python-format
 msgid "Preparing installation of %s"
 msgstr "Menyediakan pemasangan %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:554
+#: aptkit/enums.py:514
 #, python-format
 msgid "Preparing configuration of %s"
 msgstr "Menyediakan konfigurasi %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:556
+#: aptkit/enums.py:516
 #, python-format
 msgid "Preparing removal of %s"
 msgstr "Menyediakan pembuangan %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:558
+#: aptkit/enums.py:518
 #, python-format
 msgid "Preparing complete removal of %s"
 msgstr "Menyediakan pembuangan lengkap %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:560
+#: aptkit/enums.py:520
 #, python-format
 msgid "Installed %s"
 msgstr "Pasang %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:562
+#: aptkit/enums.py:522
 #, python-format
 msgid "Completely removed %s"
 msgstr "Buang sepenuhnya %s"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:564
+#: aptkit/enums.py:524
 #, python-format
 msgid "Removed %s"
 msgstr "Buang %s"
 
-#: ../aptkit/enums.py:567
+#: aptkit/enums.py:527
 msgid "Done"
 msgstr "Selesai"
 
-#: ../aptkit/enums.py:568
+#: aptkit/enums.py:528
 msgid "Authentication failed"
 msgstr "Penyahihan gagal"
 
-#: ../aptkit/enums.py:570
+#: aptkit/enums.py:530
 msgid "Fetching"
 msgstr "Memperoleh"
 
-#: ../aptkit/enums.py:571
+#: aptkit/enums.py:531
 msgid "Idle"
 msgstr "Melahu"
 
-#: ../aptkit/enums.py:572
+#: aptkit/enums.py:532
 msgid "Network isn't available"
 msgstr "Rangkaian tiada"
 
-#: ../aptkit/enums.py:704
+#: aptkit/enums.py:652
 #, python-format
 msgid "Processing %s"
 msgstr "Memproses %s"
 
-#: ../aptkit/gtk3widgets.py:311
+#: aptkit/gtk3widgets.py:230
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
 msgstr "Telah memuat-turun %sB dari %sB pada %sB/s"
 
-#: ../aptkit/gtk3widgets.py:316 ../aptkit/gtk3widgets.py:517
+#: aptkit/gtk3widgets.py:235 aptkit/gtk3widgets.py:436
 #, python-format
 msgid "Downloaded %sB of %sB"
 msgstr "Telah memuat-turun %sB daripada %sB"
 
-#: ../aptkit/gtk3widgets.py:328
+#: aptkit/gtk3widgets.py:247
 msgid "Details"
 msgstr "Butiran"
 
-#: ../aptkit/gtk3widgets.py:481
+#: aptkit/gtk3widgets.py:400
 msgid "File"
 msgstr "Fail"
 
 #. TRANSLATORS: header of the progress download column
-#: ../aptkit/gtk3widgets.py:486
+#: aptkit/gtk3widgets.py:405
 msgid "%"
 msgstr "%"
 
-#: ../aptkit/gtk3widgets.py:522
+#: aptkit/gtk3widgets.py:441
 #, python-format
 msgid "Downloaded %sB"
 msgstr "Memuat Turun %sB"
 
-#: ../aptkit/gtk3widgets.py:525
+#: aptkit/gtk3widgets.py:444
 msgid "Downloaded"
 msgstr "Dimuat turun"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: ../aptkit/gtk3widgets.py:860
+#: aptkit/gtk3widgets.py:787
 #, python-format
 msgid "CD/DVD '%s' is required"
 msgstr "CD/DVD '%s' diperlukan"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: ../aptkit/gtk3widgets.py:862
+#: aptkit/gtk3widgets.py:789
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
@@ -892,96 +844,91 @@ msgstr ""
 "Sila masukkan CD/DVD kedalam pemacu '%s' untuk memasang pakej perisian "
 "didalamnya."
 
-#: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
+#: aptkit/gtk3widgets.py:793 aptkit/gtk3widgets.py:815
 msgid "C_ontinue"
 msgstr "T_eruskan"
 
-#: ../aptkit/gtk3widgets.py:939
+#: aptkit/gtk3widgets.py:866
 msgid "Install"
 msgstr "Pasang"
 
-#: ../aptkit/gtk3widgets.py:940
+#: aptkit/gtk3widgets.py:867
 msgid "Reinstall"
 msgstr "Pasang Semula"
 
-#: ../aptkit/gtk3widgets.py:941
+#: aptkit/gtk3widgets.py:868
 msgid "Remove"
 msgstr "Buang"
 
-#: ../aptkit/gtk3widgets.py:942
+#: aptkit/gtk3widgets.py:869
 msgid "Purge"
 msgstr "Singkirkan"
 
-#: ../aptkit/gtk3widgets.py:943
+#: aptkit/gtk3widgets.py:870
 msgid "Upgrade"
 msgstr "Tatar"
 
-#: ../aptkit/gtk3widgets.py:944
+#: aptkit/gtk3widgets.py:871
 msgid "Downgrade"
 msgstr "Turun Taraf"
 
-#: ../aptkit/gtk3widgets.py:945
+#: aptkit/gtk3widgets.py:872
 msgid "Skip upgrade"
 msgstr "Langkau tatar"
 
-#. If there is only one type of changes (e.g. only installs) expand the
-#. tree
-#. FIXME: adapt the title and message accordingly
-#. FIXME: Should we have different modes? Only show dependencies, only
-#. initial packages or both?
-#: ../aptkit/gtk3widgets.py:956
+#: aptkit/gtk3widgets.py:883
 msgid "Please take a look at the list of changes below."
 msgstr "Sila lihat senarai perubahan dibawah."
 
-#: ../aptkit/gtk3widgets.py:964
+#: aptkit/gtk3widgets.py:891
 msgid "Additional software has to be installed"
 msgstr "Perisian tambahan yang perlu dipasangkan"
 
-#: ../aptkit/gtk3widgets.py:966
+#: aptkit/gtk3widgets.py:893
 msgid "Additional software has to be re-installed"
 msgstr "Perisian tambahan yang perlu dipasang semula"
 
-#: ../aptkit/gtk3widgets.py:968
+#: aptkit/gtk3widgets.py:895
 msgid "Additional software has to be removed"
 msgstr "Perisian tambahan yang perlu dibuang"
 
-#: ../aptkit/gtk3widgets.py:970
+#: aptkit/gtk3widgets.py:897
 msgid "Additional software has to be purged"
 msgstr "Perisian tambahan yang perlu disingkirkan"
 
-#: ../aptkit/gtk3widgets.py:972
+#: aptkit/gtk3widgets.py:899
 msgid "Additional software has to be upgraded"
 msgstr "Perisian tambahan yang perlu ditatarkan"
 
-#: ../aptkit/gtk3widgets.py:974
+#: aptkit/gtk3widgets.py:901
 msgid "Additional software has to be downgraded"
 msgstr "Perisian tambahan yang perlu diturun taraf"
 
-#: ../aptkit/gtk3widgets.py:976
+#: aptkit/gtk3widgets.py:903
 msgid "Updates will be skipped"
 msgstr "Kemaskini akan dilangkau"
 
-#: ../aptkit/gtk3widgets.py:984
+#: aptkit/gtk3widgets.py:911
 msgid "Additional changes are required"
 msgstr "Perubahan tambahan diperlukan"
 
-#: ../aptkit/gtk3widgets.py:989
+#: aptkit/gtk3widgets.py:916
 #, python-format
 msgid "%sB will be downloaded in total."
 msgstr "%sB akan dimuat turun secara keseluruhan."
 
-#: ../aptkit/gtk3widgets.py:993
+#: aptkit/gtk3widgets.py:920
 #, python-format
 msgid "%sB of disk space will be freed."
 msgstr "%sB ruang cakera akan dibebaskan."
 
-#: ../aptkit/gtk3widgets.py:997
+#: aptkit/gtk3widgets.py:924
 #, python-format
 msgid "%sB more disk space will be used."
 msgstr "%sB ruang cakera akan digunakan."
 
 #. TRANSLATORS: %s is a file path
-#: ../aptkit/gtk3widgets.py:1069
+#: aptkit/gtk3widgets.py:983
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
@@ -989,7 +936,7 @@ msgstr ""
 "Gantikkan pertukaran yang anda buat didalam '%s' dengan versi kemudian fail "
 "konfigurasi tersebut?"
 
-#: ../aptkit/gtk3widgets.py:1071
+#: aptkit/gtk3widgets.py:985
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
@@ -997,212 +944,172 @@ msgstr ""
 "Jika anda tidak mengetahui kenapa fail tersebut sudah berada disitu, ia "
 "biasanya sudah selamat untuk menggantikannya."
 
-#: ../aptkit/gtk3widgets.py:1080
+#: aptkit/gtk3widgets.py:994
 msgid "_Changes"
 msgstr "_Pertukaran"
 
-#: ../aptkit/gtk3widgets.py:1083
+#: aptkit/gtk3widgets.py:997
 msgid "_Keep"
 msgstr "_Simpan"
 
-#: ../aptkit/gtk3widgets.py:1084
+#: aptkit/gtk3widgets.py:998
 msgid "_Replace"
 msgstr "_Gantikan"
 
-#: ../aptkit/gtk3widgets.py:1187
+#: aptkit/gtk3widgets.py:1101
 msgid "_Details"
 msgstr "_Butiran"
 
 #. TRANSLATORS: %s is the name of a package manager
-#: ../aptkit/lock.py:189
+#: aptkit/lock.py:189
 #, python-format
 msgid "Waiting for %s to exit"
 msgstr "Menunggu %s untuk keluar"
 
 #. TRANSLATORS: %s is a list of package names
-#: ../aptkit/progress.py:168
+#: aptkit/progress.py:168
 #, python-format
 msgid "Downloading %s"
 msgstr "Memuat Turun %s"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: ../aptkit/progress.py:277 ../aptkit/progress.py:314
+#: aptkit/progress.py:277 aptkit/progress.py:314
 msgid "local repository"
 msgstr "repositori setempat"
 
 #. TRANSLATORS: %s is a list of repository names
-#: ../aptkit/progress.py:280
+#: aptkit/progress.py:280
 #, python-format
 msgid "Downloading from %s"
 msgstr "Memuat turun dari %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:318
+#: aptkit/progress.py:318
 #, python-format
 msgid "Structure of %s"
 msgstr "Struktur bagi %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:321
+#: aptkit/progress.py:321
 #, python-format
 msgid "Description of %s"
 msgstr "Keterangan %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:324
+#: aptkit/progress.py:324
 #, python-format
 msgid "Description signature of %s"
 msgstr "Tandatangan keterangan %s"
 
-#: ../aptkit/progress.py:329
+#: aptkit/progress.py:329
 #, python-format
 msgid "Available packages from %s"
 msgstr "Pakej tersedia dari %s"
 
-#: ../aptkit/progress.py:333
+#: aptkit/progress.py:333
 #, python-format
 msgid "Available sources from %s"
 msgstr "Sumber tersedia dari %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:336
+#: aptkit/progress.py:336
 #, python-format
 msgid "Available translations from %s"
 msgstr "Terjemahan tersedia dari %s"
 
-#: ../aptkit/progress.py:353
+#: aptkit/progress.py:353
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr "Terjemahan untuk %s (%s) dari %s"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: ../aptkit/progress.py:357
+#: aptkit/progress.py:357
 #, python-format
 msgid "Translations for %s from %s"
 msgstr "Terjemahan untuk %s dari %s"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: ../aptkit/progress.py:362
+#: aptkit/progress.py:362
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr "Terjemahan (%s) dari %s"
 
-#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
-#: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
+#: aptkit/worker/aptworker.py:372 aptkit/worker/aptworker.py:587
+#: aptkit/worker/aptworker.py:682 aptkit/worker/aptworker.py:727
 #, python-format
 msgid "Package %s isn't available"
 msgstr "Pakej %s tiada"
 
-#: ../aptkit/worker/aptworker.py:384 ../aptkit/worker/aptworker.py:682
-#: ../aptkit/worker/aptworker.py:777 ../aptkit/worker/aptworker.py:822
+#: aptkit/worker/aptworker.py:377 aptkit/worker/aptworker.py:591
+#: aptkit/worker/aptworker.py:686 aptkit/worker/aptworker.py:731
 #, python-format
 msgid "Package %s isn't installed"
 msgstr "Pakej %s tidak dipasang"
 
-#: ../aptkit/worker/aptworker.py:388
+#: aptkit/worker/aptworker.py:381
 #, python-format
 msgid "The version %s of %s isn't installed"
 msgstr "Versi %s dari %s tidak dipasang"
 
-#: ../aptkit/worker/aptworker.py:403
+#: aptkit/worker/aptworker.py:396
 #, python-format
 msgid "Package %s is already installed"
 msgstr "Pakej %s sudah dipasang"
 
-#: ../aptkit/worker/aptworker.py:410 ../aptkit/worker/aptworker.py:845
+#: aptkit/worker/aptworker.py:403 aptkit/worker/aptworker.py:754
 #, python-format
 msgid "The version %s of %s isn't available."
 msgstr "Versi %s dari %s tiada."
 
-#. TRANSLATORS: %s is the URL of GnuPG
-#. keyserver
-#: ../aptkit/worker/aptworker.py:572
-#, python-format
-msgid "The keyserver URL is invalid: %s"
-msgstr "URL pelayan kunci tidak sah: %s"
-
-#. TRANSLATORS: %s is the URL of GnuPG
-#. keyserver
-#: ../aptkit/worker/aptworker.py:578
-#, python-format
-msgid "Invalid protocol of the server: %s"
-msgstr "Protokol pelayan tidak sah: %s"
-
-#. TRANSLATORS: %s is the id of a GnuPG key
-#. e.g. E08ADE95
-#: ../aptkit/worker/aptworker.py:586 ../aptkit/worker/aptworker.py:630
-#, python-format
-msgid "Invalid key id: %s"
-msgstr "Id kekunci tidak sah: %s"
-
-#: ../aptkit/worker/aptworker.py:594
-#, python-format
-msgid ""
-"Failed to download and install the key %s from %s:\n"
-"%s"
-msgstr ""
-"Gagal memuat turun dan pasang kekunci %s dari %s:\n"
-"%s"
-
-#: ../aptkit/worker/aptworker.py:611
-#, python-format
-msgid "Key file %s couldn't be installed: %s"
-msgstr "Fail kekunci %s tidak dapat dipasang: %s"
-
-#: ../aptkit/worker/aptworker.py:635
-#, python-format
-msgid "Key with fingerprint %s couldn't be removed: %s"
-msgstr "Kekunci dengan cap jari %s tidak dapat dibuang: %s"
-
-#: ../aptkit/worker/aptworker.py:686
+#: aptkit/worker/aptworker.py:595
 #, python-format
 msgid "Package %s cannot be removed."
 msgstr "Pakej %s tidak dapat dibuang."
 
-#: ../aptkit/worker/aptworker.py:690
+#: aptkit/worker/aptworker.py:599
 #, python-format
 msgid "The version %s of %s is not installed"
 msgstr "Versi %s dari %s tidak dapat dipasang"
 
-#: ../aptkit/worker/aptworker.py:785
+#: aptkit/worker/aptworker.py:694
 #, python-format
 msgid "The former version %s of %s is already installed"
 msgstr "Versi  lama %s dari %s sudah pun dipasang"
 
-#: ../aptkit/worker/aptworker.py:790 ../aptkit/worker/aptworker.py:838
+#: aptkit/worker/aptworker.py:699 aptkit/worker/aptworker.py:747
 #, python-format
 msgid "The version %s of %s is already installed"
 msgstr "Versi %s dari %s sudah pun dipasang"
 
-#: ../aptkit/worker/aptworker.py:797
+#: aptkit/worker/aptworker.py:706
 #, python-format
 msgid "The version %s of %s isn't available"
 msgstr "Versi %s dari %s tiada"
 
-#: ../aptkit/worker/aptworker.py:801
+#: aptkit/worker/aptworker.py:710
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
 msgstr "Anda perlu tentukan versi untuk turun taraf %s ke"
 
-#: ../aptkit/worker/aptworker.py:831
+#: aptkit/worker/aptworker.py:740
 #, python-format
 msgid "The later version %s of %s is already installed"
 msgstr "Versi %s lama dari %s sudah pun dipasang"
 
-#: ../aptkit/worker/aptworker.py:867
+#: aptkit/worker/aptworker.py:776
 #, python-format
 msgid "The package %s isn't available in the %s release."
 msgstr "Pakej %s tiada didalam keluaran %s."
 
-#: ../aptkit/worker/aptworker.py:1052
+#: aptkit/worker/aptworker.py:961
 #, python-format
 msgid "Package %s cannot be removed"
 msgstr "Pakej %s tidak dapat dibuang"
 
-#: ../aptkit/worker/aptworker.py:1154
+#: aptkit/worker/aptworker.py:1063
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
@@ -1210,25 +1117,25 @@ msgstr ""
 "Pakej tidak menyediakan medan kawalan Saiz-Terpasang yang sah. Rujuk Polisi "
 "Debian 5.6.20."
 
-#: ../aptkit/worker/aptworker.py:1293
+#: aptkit/worker/aptworker.py:1202
 msgid "The license key is empty"
 msgstr "Kunci lesen kosong"
 
-#: ../aptkit/worker/aptworker.py:1309
+#: aptkit/worker/aptworker.py:1218
 msgid "The license key is not allowed to contain executable code."
 msgstr "kunci lesen tidak dibenarkan mengandungi kod boleh laku."
 
-#: ../aptkit/worker/aptworker.py:1318
+#: aptkit/worker/aptworker.py:1227
 #, python-format
 msgid "The license key path %s is invalid"
 msgstr "Laluan kunci lesen %s tidak sah"
 
-#: ../aptkit/worker/aptworker.py:1322
+#: aptkit/worker/aptworker.py:1231
 #, python-format
 msgid "The license key already exists: %s"
 msgstr "Kunci lesen sudah wujud: %s"
 
-#: ../aptkit/worker/aptworker.py:1327
+#: aptkit/worker/aptworker.py:1236
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
@@ -1237,40 +1144,40 @@ msgstr ""
 "Lokasi kunci lesen tidak selamat semenjak ia mengandungi pautan simbolik. "
 "Laluan %s dipetakan ke %s"
 
-#: ../aptkit/worker/aptworker.py:1335
+#: aptkit/worker/aptworker.py:1244
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
 msgstr "Direktori untuk memasang kunci tidak wujud lagi: %s"
 
-#: ../aptkit/worker/aptworker.py:1346
+#: aptkit/worker/aptworker.py:1255
 #, python-format
 msgid "Failed to write key file to: %s"
 msgstr "Gagal menulis fail kunci ke: %s"
 
-#: ../aptkit/worker/aptworker.py:1381
+#: aptkit/worker/aptworker.py:1290
 msgid "The following packages have unmet dependencies:"
 msgstr "Pakej berikut mempunyai dependensi yang tidak menepati syarat:"
 
-#: ../aptkit/worker/aptworker.py:1434
+#: aptkit/worker/aptworker.py:1343
 msgid "but it is a virtual package"
 msgstr "tetapi ianya pakej maya"
 
-#: ../aptkit/worker/aptworker.py:1437
+#: aptkit/worker/aptworker.py:1346
 msgid "but it is not installed"
 msgstr "tetapi ianya tidak dipasang"
 
-#: ../aptkit/worker/aptworker.py:1439
+#: aptkit/worker/aptworker.py:1348
 msgid "but it is not going to be installed"
 msgstr "tetapi ianya tidak akan dipasang"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptkit/worker/aptworker.py:1443
+#: aptkit/worker/aptworker.py:1352
 #, python-format
 msgid "but %s is installed"
 msgstr "tetapi %s yang terpasang."
 
 #. TRANSLATORS: %s is a version number
-#: ../aptkit/worker/aptworker.py:1447
+#: aptkit/worker/aptworker.py:1356
 #, python-format
 msgid "but %s is to be installed"
 msgstr "tetapi %s yang akan dipasang"

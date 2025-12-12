@@ -7,71 +7,71 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-09 19:27+0100\n"
+"POT-Creation-Date: 2025-11-20 14:47+0000\n"
 "PO-Revision-Date: 2024-09-09 18:37+0000\n"
 "Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-08-26 15:26+0000\n"
-"X-Generator: Launchpad (build 919009172d854f2b8e4e8262db447f12f11d25eb)\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 "Language: hu\n"
 
-#: ../data/org.debian.aptkit.policy.in.h:1
+#: data/org.aptkit.policy.in:12
 msgid "List keys of trusted vendors"
 msgstr "Megbízható szállítók kulcsainak felsorolása"
 
-#: ../data/org.debian.aptkit.policy.in.h:2
+#: data/org.aptkit.policy.in:15
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr ""
 "Hitelesítés szükséges a megbízható kulcsok listájának megjelenítéséhez."
 
-#: ../data/org.debian.aptkit.policy.in.h:3
+#: data/org.aptkit.policy.in:26
 msgid "Remove downloaded package files"
 msgstr "Letöltött csomagok eltávolítása"
 
-#: ../data/org.debian.aptkit.policy.in.h:4
+#: data/org.aptkit.policy.in:29
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr "A letöltött csomagok törléséhez hitelesítésre van szükség."
 
-#: ../data/org.debian.aptkit.policy.in.h:5
+#: data/org.aptkit.policy.in:40
 msgid "Change software configuration"
 msgstr "Szoftverbeállítások megváltoztatása"
 
-#: ../data/org.debian.aptkit.policy.in.h:6
+#: data/org.aptkit.policy.in:43
 msgid "To change software settings, you need to authenticate."
 msgstr "A szoftverbeállítások megváltoztatásához hitelesítésre van szükség."
 
-#: ../data/org.debian.aptkit.policy.in.h:7
+#: data/org.aptkit.policy.in:54
 msgid "Change software repository"
 msgstr "Szoftvertároló módosítása"
 
-#: ../data/org.debian.aptkit.policy.in.h:8
+#: data/org.aptkit.policy.in:57
 msgid "To change software repository settings, you need to authenticate."
 msgstr "Hitelesítés szükséges a szoftvertároló-beállítások módosításához."
 
-#: ../data/org.debian.aptkit.policy.in.h:9
+#: data/org.aptkit.policy.in:68
 msgid "Install package file"
 msgstr "Csomagfájl telepítése"
 
-#: ../data/org.debian.aptkit.policy.in.h:10
+#: data/org.aptkit.policy.in:71
 msgid "To install this package, you need to authenticate."
 msgstr "A csomag telepítéséhez hitelesítés szükséges."
 
-#: ../data/org.debian.aptkit.policy.in.h:11
+#: data/org.aptkit.policy.in:82
 msgid "Update package information"
 msgstr "Csomaginformációk frissítése"
 
-#: ../data/org.debian.aptkit.policy.in.h:12
+#: data/org.aptkit.policy.in:85
 msgid "To update the software catalog, you need to authenticate."
 msgstr "A szoftverkatalógus frissítéséhez hitelesítés szükséges."
 
-#: ../data/org.debian.aptkit.policy.in.h:13
+#: data/org.aptkit.policy.in:96
 msgid "Install or remove packages"
 msgstr "Csomagok telepítése vagy eltávolítása"
 
-#: ../data/org.debian.aptkit.policy.in.h:14
+#: data/org.aptkit.policy.in:99
 msgid "To install or remove software, you need to authenticate."
 msgstr "Hitelesítés szükséges szoftver telepítéséhez vagy eltávolításához."
 
@@ -79,17 +79,16 @@ msgstr "Hitelesítés szükséges szoftver telepítéséhez vagy eltávolítás�
 #. from a high trusted repository that can be explicitely whitelisted.
 #. 
 #. The defaults for this action are the same as
-#. "org.debian.aptkit.install-or-remove-packages".
+#. "org.aptkit.install-or-remove-packages".
 #. 
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
-#. 
-#: ../data/org.debian.aptkit.policy.in.h:25
+#: data/org.aptkit.policy.in:120
 msgid "Install software from a high-trust whitelisted repository."
 msgstr "Szoftver telepítése megbízható, fehérlistán szereplő tárolóból."
 
-#: ../data/org.debian.aptkit.policy.in.h:26
+#: data/org.aptkit.policy.in:123
 msgid "To install software, you need to authenticate."
 msgstr "A szoftver telepítéséhez hitelesítés szükséges."
 
@@ -98,11 +97,11 @@ msgstr "A szoftver telepítéséhez hitelesítés szükséges."
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.debian.aptkit.policy.in.h:32
+#: data/org.aptkit.policy.in:139
 msgid "Add a new repository and install packages from it"
 msgstr "Új tároló hozzáadása, és abból csomagok telepítése"
 
-#: ../data/org.debian.aptkit.policy.in.h:33
+#: data/org.aptkit.policy.in:142
 msgid "To install software from a new source, you need to authenticate."
 msgstr "Hitelesítés szükséges a szoftverek új forrásból való telepítéséhez."
 
@@ -114,286 +113,262 @@ msgstr "Hitelesítés szükséges a szoftverek új forrásból való telepítés
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.debian.aptkit.policy.in.h:42
+#: data/org.aptkit.policy.in:161
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
 "Új, megvásárolt csomagokat tartalmazó tároló hozzáadása, és abból csomagok "
 "telepítése"
 
-#: ../data/org.debian.aptkit.policy.in.h:43
+#: data/org.aptkit.policy.in:164
 msgid "To install purchased software, you need to authenticate."
 msgstr "Hitelesítés szükséges a megvásárolt szoftverek telepítéséhez."
 
-#: ../data/org.debian.aptkit.policy.in.h:44
+#: data/org.aptkit.policy.in:175
 msgid "Upgrade packages"
 msgstr "Csomagok frissítése"
 
-#: ../data/org.debian.aptkit.policy.in.h:45
+#: data/org.aptkit.policy.in:178
 msgid "To install updated software, you need to authenticate."
 msgstr "Frissített szoftver telepítéséhez hitelesítés szükséges."
 
-#: ../data/org.debian.aptkit.policy.in.h:46
+#: data/org.aptkit.policy.in:187
 msgid "Cancel the task of another user"
 msgstr "Másik felhasználó feladatának megszakítása"
 
-#: ../data/org.debian.aptkit.policy.in.h:47
+#: data/org.aptkit.policy.in:190
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
 "Hitelesítés szükséges másik felhasználó szoftvermódosításainak "
 "megszakításához."
 
-#: ../data/org.debian.aptkit.policy.in.h:48
+#: data/org.aptkit.policy.in:201
 msgid "Set a proxy for software downloads"
 msgstr "Proxy beállítása szoftverletöltésekhez"
 
-#: ../data/org.debian.aptkit.policy.in.h:49
+#: data/org.aptkit.policy.in:204
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
 "A szoftver letöltéséhez proxy kiszolgáló használatához hitelesítés szükséges."
 
-#: ../aptkit/core.py:2148
+#: aptkit/core.py:2030
 msgid "Do not shutdown the daemon because of inactivity"
 msgstr "Ne álljon le a démon inaktivitás miatt"
 
-#: ../aptkit/core.py:2153
+#: aptkit/core.py:2035
 msgid "Do not load any plugins"
 msgstr "Ne töltsön be semmilyen bővítményt"
 
-#: ../aptkit/core.py:2157
+#: aptkit/core.py:2039
 msgid "Show internal processing information"
 msgstr "Belső feldolgozási információk megjelenítése"
 
-#: ../aptkit/core.py:2162
+#: aptkit/core.py:2044
 msgid "Quit and replace an already running daemon"
 msgstr "Kilépés és meglévő démon cseréje"
 
-#: ../aptkit/core.py:2167
+#: aptkit/core.py:2049
 msgid "Listen on the DBus session bus (Only required for testing"
 msgstr "A D-Bus munkamenetbusz figyelése (csak teszteléshez)"
 
-#: ../aptkit/core.py:2171
+#: aptkit/core.py:2053
 msgid "Perform operations in the given chroot"
 msgstr "Műveletek végrehajtása a megadott „chroot”-on belül"
 
-#: ../aptkit/core.py:2176
+#: aptkit/core.py:2058
 msgid "Store profile stats in the specified file"
 msgstr "Profilstatisztikák tárolása a megadott fájlban"
 
-#: ../aptkit/core.py:2181
+#: aptkit/core.py:2063
 msgid "Do not make any changes to the system (Only of use to developers)"
 msgstr "Ne változtasson meg semmit a rendszeren (csak fejlesztőknek)"
 
-#: ../aptkit/enums.py:337
+#: aptkit/enums.py:311
 msgid "Installed file"
 msgstr "Fájl telepítve"
 
-#: ../aptkit/enums.py:338
+#: aptkit/enums.py:312
 msgid "Installed packages"
 msgstr "Csomagok telepítve"
 
-#: ../aptkit/enums.py:339
-msgid "Added key from file"
-msgstr "Kulcs felvéve a fájlból"
-
-#: ../aptkit/enums.py:340
+#: aptkit/enums.py:313
 msgid "Updated cache"
 msgstr "Gyorsítótár frissítve"
 
-#: ../aptkit/enums.py:341
+#: aptkit/enums.py:314
 msgid "Search done"
 msgstr "Keresés kész"
 
-#: ../aptkit/enums.py:342
-msgid "Removed trusted key"
-msgstr "Megbízható kulcs eltávolítva"
-
-#: ../aptkit/enums.py:343
+#: aptkit/enums.py:315
 msgid "Removed packages"
 msgstr "Csomagok eltávolítva"
 
-#: ../aptkit/enums.py:344
+#: aptkit/enums.py:316
 msgid "Updated packages"
 msgstr "Csomagok frissítve"
 
-#: ../aptkit/enums.py:345
+#: aptkit/enums.py:317
 msgid "Upgraded system"
 msgstr "Rendszer frissítve"
 
-#: ../aptkit/enums.py:346
+#: aptkit/enums.py:318
 msgid "Applied changes"
 msgstr "Változtatások alkalmazva"
 
-#: ../aptkit/enums.py:347
+#: aptkit/enums.py:319
 msgid "Repaired incomplete installation"
 msgstr "Befejezetlen telepítések javítva"
 
-#: ../aptkit/enums.py:348
+#: aptkit/enums.py:320
 msgid "Repaired broken dependencies"
 msgstr "Törött függőségek javítva"
 
-#: ../aptkit/enums.py:349
+#: aptkit/enums.py:321
 msgid "Added software source"
 msgstr "Szoftverforrás hozzáadva"
 
-#: ../aptkit/enums.py:350
+#: aptkit/enums.py:322
 msgid "Enabled component of the distribution"
 msgstr "A disztribúció összetevője engedélyezve"
 
-#: ../aptkit/enums.py:351
+#: aptkit/enums.py:323
 msgid "Removed downloaded package files"
 msgstr "Eltávolított letöltött csomagfájlok"
 
-#: ../aptkit/enums.py:352
+#: aptkit/enums.py:324
 msgid "Reconfigured installed packages"
 msgstr "Újrakonfigurált telepített csomagok"
 
-#: ../aptkit/enums.py:356
+#: aptkit/enums.py:328
 msgid "Successful"
 msgstr "Sikeres"
 
-#: ../aptkit/enums.py:357
+#: aptkit/enums.py:329
 msgid "Canceled"
 msgstr "Megszakítva"
 
-#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
+#: aptkit/enums.py:330 aptkit/enums.py:529
 msgid "Failed"
 msgstr "Sikertelen"
 
-#: ../aptkit/enums.py:361
+#: aptkit/enums.py:333
 msgid "Installing file"
 msgstr "Fájl telepítése"
 
-#: ../aptkit/enums.py:362
+#: aptkit/enums.py:334
 msgid "Installing packages"
 msgstr "Csomagok telepítése"
 
-#: ../aptkit/enums.py:363
-msgid "Adding key from file"
-msgstr "Kulcs hozzáadása fájlból"
-
-#: ../aptkit/enums.py:364
+#: aptkit/enums.py:335
 msgid "Updating cache"
 msgstr "Gyorsítótár frissítése"
 
-#: ../aptkit/enums.py:365
-msgid "Removing trusted key"
-msgstr "Megbízható kulcs eltávolítása"
-
-#: ../aptkit/enums.py:366
+#: aptkit/enums.py:336
 msgid "Removing packages"
 msgstr "Csomagok eltávolítása"
 
-#: ../aptkit/enums.py:367
+#: aptkit/enums.py:337
 msgid "Updating packages"
 msgstr "Csomagok frissítése"
 
-#: ../aptkit/enums.py:368
+#: aptkit/enums.py:338
 msgid "Upgrading system"
 msgstr "Rendszer frissítése"
 
-#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
+#: aptkit/enums.py:339 aptkit/enums.py:488
 msgid "Applying changes"
 msgstr "Módosítások alkalmazása"
 
-#: ../aptkit/enums.py:370
+#: aptkit/enums.py:340
 msgid "Repairing incomplete installation"
 msgstr "Befejezetlen telepítések javítása"
 
-#: ../aptkit/enums.py:371
+#: aptkit/enums.py:341
 msgid "Repairing installed software"
 msgstr "Telepített szoftverek javítása"
 
-#: ../aptkit/enums.py:372
+#: aptkit/enums.py:342
 msgid "Adding software source"
 msgstr "Szoftverforrás engedélyezése"
 
-#: ../aptkit/enums.py:373
+#: aptkit/enums.py:343
 msgid "Enabling component of the distribution"
 msgstr "A disztribúció összetevőjének engedélyezése"
 
-#: ../aptkit/enums.py:374
+#: aptkit/enums.py:344
 msgid "Removing downloaded package files"
 msgstr "Letöltött csomagfájlok eltávolítása"
 
-#: ../aptkit/enums.py:375
+#: aptkit/enums.py:345
 msgid "Reconfiguring installed packages"
 msgstr "Telepített csomagok újrakonfigurálása"
 
-#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
+#: aptkit/enums.py:346 aptkit/enums.py:477
 msgid "Searching"
 msgstr "Keresés"
 
-#: ../aptkit/enums.py:380
+#: aptkit/enums.py:350
 msgid "Installation of the package file failed"
 msgstr "A csomagfájl telepítése meghiúsult"
 
-#: ../aptkit/enums.py:381
+#: aptkit/enums.py:351
 msgid "Installation of software failed"
 msgstr "A szoftver telepítése meghiúsult"
 
-#: ../aptkit/enums.py:382
-msgid "Adding the key to the list of trusted software vendors failed"
-msgstr "A kulcs hozzáadása a megbízható szállítók listájához meghiúsult"
-
-#: ../aptkit/enums.py:384
+#: aptkit/enums.py:352
 msgid "Refreshing the software list failed"
 msgstr "A csomaglisták frissítése meghiúsult"
 
-#: ../aptkit/enums.py:385
-msgid "Removing the vendor from the list of trusted ones failed"
-msgstr "A gyártó eltávolítása a megbízható gyártók listájáról meghiúsult"
-
-#: ../aptkit/enums.py:387
+#: aptkit/enums.py:353
 msgid "Removing software failed"
 msgstr "A szoftver eltávolítása meghiúsult"
 
-#: ../aptkit/enums.py:388
+#: aptkit/enums.py:354
 msgid "Updating software failed"
 msgstr "A csomag frissítése meghiúsult"
 
-#: ../aptkit/enums.py:389
+#: aptkit/enums.py:355
 msgid "Upgrading the system failed"
 msgstr "A rendszer frissítése meghiúsult"
 
-#: ../aptkit/enums.py:390
+#: aptkit/enums.py:356
 msgid "Applying software changes failed"
 msgstr "A csomagok változásainak jóváhagyása meghiúsult"
 
-#: ../aptkit/enums.py:391
+#: aptkit/enums.py:357
 msgid "Repairing incomplete installation failed"
 msgstr "A befejezetlen telepítések javítása meghiúsult"
 
-#: ../aptkit/enums.py:393
+#: aptkit/enums.py:359
 msgid "Repairing broken dependencies failed"
 msgstr "A törött függőségek javítása meghiúsult"
 
-#: ../aptkit/enums.py:394
+#: aptkit/enums.py:360
 msgid "Adding software source failed"
 msgstr "A szoftverforrás hozzáadása meghiúsult"
 
-#: ../aptkit/enums.py:395
+#: aptkit/enums.py:361
 msgid "Enabling component of the distribution failed"
 msgstr "A disztribúció összetevőjének engedélyezése meghiúsult"
 
-#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
+#: aptkit/enums.py:363 aptkit/enums.py:364
 msgid "Removing downloaded package files failed"
 msgstr "Letöltött csomagfájlok eltávolítása sikertelen"
 
-#: ../aptkit/enums.py:399
+#: aptkit/enums.py:365
 msgid "Search failed"
 msgstr "A keresés sikertelen"
 
-#: ../aptkit/enums.py:400
+#: aptkit/enums.py:366
 msgid "Adding license key"
 msgstr "Licenc-kulcs hozzáadása"
 
-#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
+#: aptkit/enums.py:370 aptkit/enums.py:371
 msgid "Check your Internet connection."
 msgstr "Ellenőrizze internetkapcsolatát."
 
-#: ../aptkit/enums.py:406
+#: aptkit/enums.py:372
 msgid ""
 "Check if you are using third party repositories. If so disable them, since "
 "they are a common source of problems.\n"
@@ -403,19 +378,7 @@ msgstr ""
 "tiltsa le ezeket, mivel gyakran problémák forrásai.\n"
 "Ezen kívül futtassa a „sudo apt-get install -f” parancsot terminálban."
 
-#: ../aptkit/enums.py:411
-msgid "The selected file may not be a GPG key file or it might be corrupt."
-msgstr "A kiválasztott fájl nem GPG kulcsfájl, vagy sérült."
-
-#: ../aptkit/enums.py:413
-msgid ""
-"The selected key couldn't be removed. Check that you provided a valid "
-"fingerprint."
-msgstr ""
-"A kiválasztott kulcs nem távolítható el. Ellenőrizze, hogy érvényes "
-"ujjlenyomatot adott-e meg."
-
-#: ../aptkit/enums.py:415
+#: aptkit/enums.py:377
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
@@ -423,7 +386,7 @@ msgstr ""
 "Ellenőrizze, hogy nem fut-e jelenleg másik szoftverkezelő eszköz, például a "
 "Synaptic vagy az aptitude. Egyszerre csak egy eszköz végezhet módosításokat."
 
-#: ../aptkit/enums.py:418
+#: aptkit/enums.py:380
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
@@ -431,7 +394,7 @@ msgstr ""
 "Ez egy komoly probléma. Próbálja újra később. Ha ez a probléma újra előáll, "
 "jelentse be hibaként a fejlesztőknek."
 
-#: ../aptkit/enums.py:421
+#: aptkit/enums.py:383
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
@@ -439,39 +402,39 @@ msgstr ""
 "Ellenőrizze a csomagnév helyesírását, és hogy a megfelelő tároló "
 "engedélyezve van-e."
 
-#: ../aptkit/enums.py:423
+#: aptkit/enums.py:385
 msgid "There isn't any need for an update."
 msgstr "Nincs szükség frissítésre."
 
-#: ../aptkit/enums.py:424
+#: aptkit/enums.py:386
 msgid "There isn't any need for an installation"
 msgstr "Nincs szükség telepítésre."
 
-#: ../aptkit/enums.py:426
+#: aptkit/enums.py:388
 msgid "There isn't any need for a removal."
 msgstr "Nincs szükség eltávolításra."
 
-#: ../aptkit/enums.py:427
+#: aptkit/enums.py:389
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr "A rendszer alapvető részét képező csomag eltávolítását kérte."
 
-#: ../aptkit/enums.py:430
+#: aptkit/enums.py:392
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
 msgstr ""
 "A kapcsolat elveszett a démonnal. Valószínűleg összeomlott a háttérdémon."
 
-#: ../aptkit/enums.py:432
+#: aptkit/enums.py:394
 msgid "The installation or removal of a software package failed."
 msgstr "Egy szoftvercsomag telepítése vagy eltávolítása meghiúsult."
 
-#: ../aptkit/enums.py:434
+#: aptkit/enums.py:396
 msgid "The requested feature is not supported."
 msgstr "A kért funkció nem támogatott."
 
-#: ../aptkit/enums.py:435
+#: aptkit/enums.py:397
 msgid ""
 "There seems to be a programming error in aptkit, the software that allows "
 "you to install/remove software and to perform other package management "
@@ -481,7 +444,7 @@ msgstr ""
 "eltávolítását, valamint más csomagkezelési műveletek végrehajtását lehetővé "
 "tevő szoftverben."
 
-#: ../aptkit/enums.py:439
+#: aptkit/enums.py:401
 msgid ""
 "This error could be caused by required additional software packages which "
 "are missing or not installable. Furthermore there could be a conflict "
@@ -492,11 +455,11 @@ msgstr ""
 "szoftvercsomagok okozhatják. Továbbá ütközés lehet olyan szoftvercsomagok "
 "között, amelyek egyszerre nem lehetnek telepítve."
 
-#: ../aptkit/enums.py:445
+#: aptkit/enums.py:407
 msgid "This requires installing packages from unauthenticated sources."
 msgstr "Ez megbízhatatlan forrásból származó csomagok telepítését igényli."
 
-#: ../aptkit/enums.py:447
+#: aptkit/enums.py:409
 msgid ""
 "The installation could have failed because of an error in the corresponding "
 "software package or it was cancelled in an unfriendly way. You have to "
@@ -506,14 +469,14 @@ msgstr ""
 "barátságtalan módon megszakították. Ezt ki kell javítania, mielőtt további "
 "szoftvereket telepítene vagy eltávolítana."
 
-#: ../aptkit/enums.py:453
+#: aptkit/enums.py:415
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
 msgstr ""
 "Kérjük másolja át a fájlt a helyi gépére és ellenőrizze a "
 "fájljogosultságokat."
 
-#: ../aptkit/enums.py:456
+#: aptkit/enums.py:418
 msgid ""
 "The installation of a package which violates the quality standards isn't "
 "allowed. This could cause serious problems on your computer. Please contact "
@@ -525,7 +488,7 @@ msgstr ""
 "azzal a személlyel vagy szervezettel akitől a csomagfájl származik, és "
 "mellékelje a részleteit."
 
-#: ../aptkit/enums.py:463
+#: aptkit/enums.py:425
 msgid ""
 "The downloaded license key which is required to run this piece of software "
 "is not valid or could not be installed correctly.\n"
@@ -535,11 +498,11 @@ msgstr ""
 "telepíthető megfelelően.\n"
 "További információkért nézze meg a részleteket."
 
-#: ../aptkit/enums.py:469
+#: aptkit/enums.py:431
 msgid "All available upgrades have already been installed."
 msgstr "Az összes elérhető frissítés már telepítve van."
 
-#: ../aptkit/enums.py:471
+#: aptkit/enums.py:433
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
@@ -547,11 +510,11 @@ msgstr ""
 "A szoftver használatát lehetővé tevő licenckulcs nem tölthető le. "
 "Ellenőrizze a hálózati kapcsolatot."
 
-#: ../aptkit/enums.py:475
+#: aptkit/enums.py:437
 msgid "You don't have the required privileges to perform this action."
 msgstr "Nincs jogosultsága ezen művelet végrehajtásához."
 
-#: ../aptkit/enums.py:477
+#: aptkit/enums.py:439
 msgid ""
 "You either provided a wrong password or cancelled the authorization.\n"
 "Furthermore there could also be a technical reason for this error if you "
@@ -562,321 +525,313 @@ msgstr ""
 "Ezen kívül technikai oka is lehet ennek a hibának, ha nem látott jelszókérő "
 "ablakot: az asztali környezete nem biztosít PolicyKit munkamenetügynököt."
 
-#: ../aptkit/enums.py:485
+#: aptkit/enums.py:447
 msgid "Failed to download package files"
 msgstr "A csomagfájlok letöltése meghiúsult"
 
-#: ../aptkit/enums.py:486
+#: aptkit/enums.py:448
 msgid "Failed to download repository information"
 msgstr "A tárolóinformációk letöltése meghiúsult"
 
-#: ../aptkit/enums.py:488
+#: aptkit/enums.py:450
 msgid "Package dependencies cannot be resolved"
 msgstr "A csomagfüggőségek nem oldhatók fel"
 
-#: ../aptkit/enums.py:489
+#: aptkit/enums.py:451
 msgid "The package system is broken"
 msgstr "A csomagrendszer sérült"
 
-#: ../aptkit/enums.py:490
-msgid "Key was not installed"
-msgstr "Nincs telepítve a kulcs"
-
-#: ../aptkit/enums.py:491
-msgid "Key was not removed"
-msgstr "A kulcs nem került eltávolításra"
-
-#: ../aptkit/enums.py:492
+#: aptkit/enums.py:452
 msgid "Failed to lock the package manager"
 msgstr "A csomagkezelő zárolása meghiúsult"
 
-#: ../aptkit/enums.py:493
+#: aptkit/enums.py:453
 msgid "Failed to load the package list"
 msgstr "A csomaglista betöltése meghiúsult"
 
-#: ../aptkit/enums.py:494
+#: aptkit/enums.py:454
 msgid "Package does not exist"
 msgstr "A csomag nem létezik"
 
-#: ../aptkit/enums.py:495
+#: aptkit/enums.py:455
 msgid "Package is already up to date"
 msgstr "A csomag már a legfrissebb verziójú"
 
-#: ../aptkit/enums.py:496
+#: aptkit/enums.py:456
 msgid "Package is already installed"
 msgstr "A csomag már telepítve van"
 
-#: ../aptkit/enums.py:497
+#: aptkit/enums.py:457
 msgid "Package isn't installed"
 msgstr "A csomag nincs telepítve"
 
-#: ../aptkit/enums.py:498
+#: aptkit/enums.py:458
 msgid "Failed to remove essential system package"
 msgstr "Az alapvető rendszercsomag eltávolítása meghiúsult"
 
-#: ../aptkit/enums.py:500
+#: aptkit/enums.py:460
 msgid "Task cannot be monitored or controlled"
 msgstr "A feladat nem figyelhető meg vagy nem irányítható"
 
-#: ../aptkit/enums.py:501
+#: aptkit/enums.py:461
 msgid "Package operation failed"
 msgstr "A csomagművelet meghiúsult"
 
-#: ../aptkit/enums.py:502
+#: aptkit/enums.py:462
 msgid "Requires installation of untrusted packages"
 msgstr "Nem megbízható csomagok telepítését igényli"
 
-#: ../aptkit/enums.py:504
+#: aptkit/enums.py:464
 msgid "Previous installation hasn't been completed"
 msgstr "Egy korábbi telepítés nem fejeződött be"
 
-#: ../aptkit/enums.py:505
+#: aptkit/enums.py:465
 msgid "The package is of bad quality"
 msgstr "A csomag rossz minőségű"
 
-#: ../aptkit/enums.py:506
+#: aptkit/enums.py:466
 msgid "Package file could not be opened"
 msgstr "A csomagfájl nem nyitható meg"
 
-#: ../aptkit/enums.py:507
+#: aptkit/enums.py:467
 msgid "Not supported feature"
 msgstr "Nem támogatott funkció"
 
-#: ../aptkit/enums.py:508
+#: aptkit/enums.py:468
 msgid "Failed to download the license key"
 msgstr "A licenc-kulcs letöltése nem sikerült"
 
-#: ../aptkit/enums.py:509
+#: aptkit/enums.py:469
 msgid "Failed to install the license key"
 msgstr "A licenc-kulcs telepítése sikertelen"
 
-#: ../aptkit/enums.py:510
+#: aptkit/enums.py:470
 msgid "The system is already up to date"
 msgstr "A rendszer már naprakész"
 
-#: ../aptkit/enums.py:511
+#: aptkit/enums.py:471
 msgid "You could not be authorized"
 msgstr "Nem hitelesíthető"
 
-#: ../aptkit/enums.py:512
+#: aptkit/enums.py:472
 msgid "You are not allowed to perform this action"
 msgstr "Nem hajthatja végre ezt a műveletet"
 
-#: ../aptkit/enums.py:513
+#: aptkit/enums.py:473
 msgid "An unhandlable error occured"
 msgstr "Nem kezelhető hiba történt"
 
-#: ../aptkit/enums.py:516
+#: aptkit/enums.py:476
 msgid "Waiting for service to start"
 msgstr "Várakozás a szolgáltatás elindulására"
 
-#: ../aptkit/enums.py:518
+#: aptkit/enums.py:478
 msgid "Waiting"
 msgstr "Várakozás"
 
-#: ../aptkit/enums.py:519
+#: aptkit/enums.py:479
 msgid "Waiting for required medium"
 msgstr "Várakozás a szükséges adathordozóra"
 
-#: ../aptkit/enums.py:520
+#: aptkit/enums.py:480
 msgid "Waiting for other software managers to quit"
 msgstr "Várakozás más szoftverkezelők kilépésére"
 
-#: ../aptkit/enums.py:521
+#: aptkit/enums.py:481
 msgid "Waiting for configuration file prompt"
 msgstr "Várakozás a beállítófájl parancssorára"
 
-#: ../aptkit/enums.py:523
+#: aptkit/enums.py:483
 msgid "Running task"
 msgstr "Feladat futtatása"
 
-#: ../aptkit/enums.py:524
+#: aptkit/enums.py:484
 msgid "Downloading"
 msgstr "Letöltés"
 
-#: ../aptkit/enums.py:525
+#: aptkit/enums.py:485
 msgid "Querying software sources"
 msgstr "Szoftverforrások lekérdezése"
 
-#: ../aptkit/enums.py:526
+#: aptkit/enums.py:486
 msgid "Cleaning up"
 msgstr "Frissítés befejezése"
 
-#: ../aptkit/enums.py:527
+#: aptkit/enums.py:487
 msgid "Resolving dependencies"
 msgstr "Függőségek feloldása"
 
-#: ../aptkit/enums.py:529
+#: aptkit/enums.py:489
 msgid "Finished"
 msgstr "Befejezve"
 
-#: ../aptkit/enums.py:530
+#: aptkit/enums.py:490
 msgid "Cancelling"
 msgstr "Megszakítás"
 
-#: ../aptkit/enums.py:531
+#: aptkit/enums.py:491
 msgid "Loading software list"
 msgstr "Szoftverlista betöltése"
 
-#: ../aptkit/enums.py:532
+#: aptkit/enums.py:492
 msgid "Waiting for authentication"
 msgstr "Várakozás hitelesítésre"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:536
+#: aptkit/enums.py:496
 #, python-format
 msgid "Installing %s"
 msgstr "%s telepítése"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:538
+#: aptkit/enums.py:498
 #, python-format
 msgid "Configuring %s"
 msgstr "%s konfigurálása"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:540
+#: aptkit/enums.py:500
 #, python-format
 msgid "Removing %s"
 msgstr "%s eltávolítása"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:542
+#: aptkit/enums.py:502
 #, python-format
 msgid "Completely removing %s"
 msgstr "%s teljes eltávolítása"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:544
+#: aptkit/enums.py:504
 #, python-format
 msgid "Noting disappearance of %s"
 msgstr "„%s” eltűnése feljegyezve"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:546
+#: aptkit/enums.py:506
 #, python-format
 msgid "Running post-installation trigger %s"
 msgstr "A(z) %s telepítés utáni trigger futtatása"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:548
+#: aptkit/enums.py:508
 #, python-format
 msgid "Upgrading %s"
 msgstr "%s frissítése"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:550
+#: aptkit/enums.py:510
 #, python-format
 msgid "Unpacking %s"
 msgstr "%s kicsomagolása"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:552
+#: aptkit/enums.py:512
 #, python-format
 msgid "Preparing installation of %s"
 msgstr "%s telepítésének előkészítése"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:554
+#: aptkit/enums.py:514
 #, python-format
 msgid "Preparing configuration of %s"
 msgstr "%s beállításának előkészítése"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:556
+#: aptkit/enums.py:516
 #, python-format
 msgid "Preparing removal of %s"
 msgstr "%s eltávolításának előkészítése"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:558
+#: aptkit/enums.py:518
 #, python-format
 msgid "Preparing complete removal of %s"
 msgstr "%s teljes eltávolításának előkészítése"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:560
+#: aptkit/enums.py:520
 #, python-format
 msgid "Installed %s"
 msgstr "%s telepítve"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:562
+#: aptkit/enums.py:522
 #, python-format
 msgid "Completely removed %s"
 msgstr "%s teljesen eltávolítva"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:564
+#: aptkit/enums.py:524
 #, python-format
 msgid "Removed %s"
 msgstr "%s eltávolítva"
 
-#: ../aptkit/enums.py:567
+#: aptkit/enums.py:527
 msgid "Done"
 msgstr "Kész"
 
-#: ../aptkit/enums.py:568
+#: aptkit/enums.py:528
 msgid "Authentication failed"
 msgstr "Sikertelen hitelesítés"
 
-#: ../aptkit/enums.py:570
+#: aptkit/enums.py:530
 msgid "Fetching"
 msgstr "Letöltés"
 
-#: ../aptkit/enums.py:571
+#: aptkit/enums.py:531
 msgid "Idle"
 msgstr "Üresjárat"
 
-#: ../aptkit/enums.py:572
+#: aptkit/enums.py:532
 msgid "Network isn't available"
 msgstr "A hálózat nem érhető el"
 
-#: ../aptkit/enums.py:704
+#: aptkit/enums.py:652
 #, python-format
 msgid "Processing %s"
 msgstr "%s feldolgozása"
 
-#: ../aptkit/gtk3widgets.py:311
+#: aptkit/gtk3widgets.py:230
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
 msgstr "Letöltve: %sB/%sB, sebesség: %sB/s"
 
-#: ../aptkit/gtk3widgets.py:316 ../aptkit/gtk3widgets.py:517
+#: aptkit/gtk3widgets.py:235 aptkit/gtk3widgets.py:436
 #, python-format
 msgid "Downloaded %sB of %sB"
 msgstr "Letöltve: %sB/%sB"
 
-#: ../aptkit/gtk3widgets.py:328
+#: aptkit/gtk3widgets.py:247
 msgid "Details"
 msgstr "Részletek"
 
-#: ../aptkit/gtk3widgets.py:481
+#: aptkit/gtk3widgets.py:400
 msgid "File"
 msgstr "Fájl"
 
 #. TRANSLATORS: header of the progress download column
-#: ../aptkit/gtk3widgets.py:486
+#: aptkit/gtk3widgets.py:405
 msgid "%"
 msgstr "%"
 
-#: ../aptkit/gtk3widgets.py:522
+#: aptkit/gtk3widgets.py:441
 #, python-format
 msgid "Downloaded %sB"
 msgstr "%sB letöltve"
 
-#: ../aptkit/gtk3widgets.py:525
+#: aptkit/gtk3widgets.py:444
 msgid "Downloaded"
 msgstr "Letöltve"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: ../aptkit/gtk3widgets.py:860
+#: aptkit/gtk3widgets.py:787
 #, python-format
 msgid "CD/DVD '%s' is required"
 msgstr "„%s” CD/DVD szükséges"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: ../aptkit/gtk3widgets.py:862
+#: aptkit/gtk3widgets.py:789
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
@@ -885,96 +840,91 @@ msgstr ""
 "Helyezze be a fenti CD-t/DVD-t a(z) „%s” meghajtóba a rajta lévő "
 "szoftvercsomagok telepítéséhez."
 
-#: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
+#: aptkit/gtk3widgets.py:793 aptkit/gtk3widgets.py:815
 msgid "C_ontinue"
 msgstr "_Folytatás"
 
-#: ../aptkit/gtk3widgets.py:939
+#: aptkit/gtk3widgets.py:866
 msgid "Install"
 msgstr "Telepítés"
 
-#: ../aptkit/gtk3widgets.py:940
+#: aptkit/gtk3widgets.py:867
 msgid "Reinstall"
 msgstr "Újratelepítés"
 
-#: ../aptkit/gtk3widgets.py:941
+#: aptkit/gtk3widgets.py:868
 msgid "Remove"
 msgstr "Eltávolítás"
 
-#: ../aptkit/gtk3widgets.py:942
+#: aptkit/gtk3widgets.py:869
 msgid "Purge"
 msgstr "Törlés"
 
-#: ../aptkit/gtk3widgets.py:943
+#: aptkit/gtk3widgets.py:870
 msgid "Upgrade"
 msgstr "Frissítés"
 
-#: ../aptkit/gtk3widgets.py:944
+#: aptkit/gtk3widgets.py:871
 msgid "Downgrade"
 msgstr "Visszafejlesztés"
 
-#: ../aptkit/gtk3widgets.py:945
+#: aptkit/gtk3widgets.py:872
 msgid "Skip upgrade"
 msgstr "Frissítés kihagyása"
 
-#. If there is only one type of changes (e.g. only installs) expand the
-#. tree
-#. FIXME: adapt the title and message accordingly
-#. FIXME: Should we have different modes? Only show dependencies, only
-#. initial packages or both?
-#: ../aptkit/gtk3widgets.py:956
+#: aptkit/gtk3widgets.py:883
 msgid "Please take a look at the list of changes below."
 msgstr "Nézze meg a változtatások alábbi listáját."
 
-#: ../aptkit/gtk3widgets.py:964
+#: aptkit/gtk3widgets.py:891
 msgid "Additional software has to be installed"
 msgstr "További szoftvereket kell telepíteni"
 
-#: ../aptkit/gtk3widgets.py:966
+#: aptkit/gtk3widgets.py:893
 msgid "Additional software has to be re-installed"
 msgstr "További szoftvereket kell újratelepíteni"
 
-#: ../aptkit/gtk3widgets.py:968
+#: aptkit/gtk3widgets.py:895
 msgid "Additional software has to be removed"
 msgstr "További szoftvereket kell eltávolítani"
 
-#: ../aptkit/gtk3widgets.py:970
+#: aptkit/gtk3widgets.py:897
 msgid "Additional software has to be purged"
 msgstr "További szoftvereket kell törölni"
 
-#: ../aptkit/gtk3widgets.py:972
+#: aptkit/gtk3widgets.py:899
 msgid "Additional software has to be upgraded"
 msgstr "További szoftvereket kell frissíteni"
 
-#: ../aptkit/gtk3widgets.py:974
+#: aptkit/gtk3widgets.py:901
 msgid "Additional software has to be downgraded"
 msgstr "További szoftvereket kell visszafejleszteni"
 
-#: ../aptkit/gtk3widgets.py:976
+#: aptkit/gtk3widgets.py:903
 msgid "Updates will be skipped"
 msgstr "A frissítések kihagyásra kerülnek"
 
-#: ../aptkit/gtk3widgets.py:984
+#: aptkit/gtk3widgets.py:911
 msgid "Additional changes are required"
 msgstr "További változtatások szükségesek"
 
-#: ../aptkit/gtk3widgets.py:989
+#: aptkit/gtk3widgets.py:916
 #, python-format
 msgid "%sB will be downloaded in total."
 msgstr "Összesen %sB kerül letöltésre."
 
-#: ../aptkit/gtk3widgets.py:993
+#: aptkit/gtk3widgets.py:920
 #, python-format
 msgid "%sB of disk space will be freed."
 msgstr "%s B lemezhely szabadul fel."
 
-#: ../aptkit/gtk3widgets.py:997
+#: aptkit/gtk3widgets.py:924
 #, python-format
 msgid "%sB more disk space will be used."
 msgstr "Még %sB lemezhely kerül felhasználásra."
 
 #. TRANSLATORS: %s is a file path
-#: ../aptkit/gtk3widgets.py:1069
+#: aptkit/gtk3widgets.py:983
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
@@ -982,219 +932,179 @@ msgstr ""
 "Lecseréli a változtatásait a(z) „%s” fájlban a beállítófájl egy újabb "
 "verziójával?"
 
-#: ../aptkit/gtk3widgets.py:1071
+#: aptkit/gtk3widgets.py:985
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
 msgstr ""
 "Ha nem tudja, miért létezik már a fájl, általában nyugodtan lecserélheti."
 
-#: ../aptkit/gtk3widgets.py:1080
+#: aptkit/gtk3widgets.py:994
 msgid "_Changes"
 msgstr "_Változtatások"
 
-#: ../aptkit/gtk3widgets.py:1083
+#: aptkit/gtk3widgets.py:997
 msgid "_Keep"
 msgstr "_Megtartás"
 
-#: ../aptkit/gtk3widgets.py:1084
+#: aptkit/gtk3widgets.py:998
 msgid "_Replace"
 msgstr "_Csere"
 
-#: ../aptkit/gtk3widgets.py:1187
+#: aptkit/gtk3widgets.py:1101
 msgid "_Details"
 msgstr "_Részletek"
 
 #. TRANSLATORS: %s is the name of a package manager
-#: ../aptkit/lock.py:189
+#: aptkit/lock.py:189
 #, python-format
 msgid "Waiting for %s to exit"
 msgstr "Várakozás %s kilépésére"
 
 #. TRANSLATORS: %s is a list of package names
-#: ../aptkit/progress.py:168
+#: aptkit/progress.py:168
 #, python-format
 msgid "Downloading %s"
 msgstr "%s letöltése"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: ../aptkit/progress.py:277 ../aptkit/progress.py:314
+#: aptkit/progress.py:277 aptkit/progress.py:314
 msgid "local repository"
 msgstr "helyi tároló"
 
 #. TRANSLATORS: %s is a list of repository names
-#: ../aptkit/progress.py:280
+#: aptkit/progress.py:280
 #, python-format
 msgid "Downloading from %s"
 msgstr "Letöltés innen: %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:318
+#: aptkit/progress.py:318
 #, python-format
 msgid "Structure of %s"
 msgstr "%s szerkezete"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:321
+#: aptkit/progress.py:321
 #, python-format
 msgid "Description of %s"
 msgstr "%s leírása"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:324
+#: aptkit/progress.py:324
 #, python-format
 msgid "Description signature of %s"
 msgstr "%s leíró aláírása"
 
-#: ../aptkit/progress.py:329
+#: aptkit/progress.py:329
 #, python-format
 msgid "Available packages from %s"
 msgstr "Elérhető csomagok innen: %s"
 
-#: ../aptkit/progress.py:333
+#: aptkit/progress.py:333
 #, python-format
 msgid "Available sources from %s"
 msgstr "Elérhető források innen: %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:336
+#: aptkit/progress.py:336
 #, python-format
 msgid "Available translations from %s"
 msgstr "Elérhető fordítások innen: %s"
 
-#: ../aptkit/progress.py:353
+#: aptkit/progress.py:353
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr "%s nyelv (%s) fordításai innen: %s"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: ../aptkit/progress.py:357
+#: aptkit/progress.py:357
 #, python-format
 msgid "Translations for %s from %s"
 msgstr "%s nyelv fordításai innen: %s"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: ../aptkit/progress.py:362
+#: aptkit/progress.py:362
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr "Fordítások (%s) innen: %s"
 
-#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
-#: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
+#: aptkit/worker/aptworker.py:372 aptkit/worker/aptworker.py:587
+#: aptkit/worker/aptworker.py:682 aptkit/worker/aptworker.py:727
 #, python-format
 msgid "Package %s isn't available"
 msgstr "A(z) %s csomag nem elérhető"
 
-#: ../aptkit/worker/aptworker.py:384 ../aptkit/worker/aptworker.py:682
-#: ../aptkit/worker/aptworker.py:777 ../aptkit/worker/aptworker.py:822
+#: aptkit/worker/aptworker.py:377 aptkit/worker/aptworker.py:591
+#: aptkit/worker/aptworker.py:686 aptkit/worker/aptworker.py:731
 #, python-format
 msgid "Package %s isn't installed"
 msgstr "A(z) %s csomag nincs telepítve"
 
-#: ../aptkit/worker/aptworker.py:388
+#: aptkit/worker/aptworker.py:381
 #, python-format
 msgid "The version %s of %s isn't installed"
 msgstr "%s csomag %s verziója nincs telepítve"
 
-#: ../aptkit/worker/aptworker.py:403
+#: aptkit/worker/aptworker.py:396
 #, python-format
 msgid "Package %s is already installed"
 msgstr "%s csomag már telepítve van"
 
-#: ../aptkit/worker/aptworker.py:410 ../aptkit/worker/aptworker.py:845
+#: aptkit/worker/aptworker.py:403 aptkit/worker/aptworker.py:754
 #, python-format
 msgid "The version %s of %s isn't available."
 msgstr "%s csomag %s verziója nem érhető el."
 
-#. TRANSLATORS: %s is the URL of GnuPG
-#. keyserver
-#: ../aptkit/worker/aptworker.py:572
-#, python-format
-msgid "The keyserver URL is invalid: %s"
-msgstr "A kulcskiszolgáló URL-je érvénytelen: %s"
-
-#. TRANSLATORS: %s is the URL of GnuPG
-#. keyserver
-#: ../aptkit/worker/aptworker.py:578
-#, python-format
-msgid "Invalid protocol of the server: %s"
-msgstr "A kiszolgálóprotokoll érvénytelen: %s"
-
-#. TRANSLATORS: %s is the id of a GnuPG key
-#. e.g. E08ADE95
-#: ../aptkit/worker/aptworker.py:586 ../aptkit/worker/aptworker.py:630
-#, python-format
-msgid "Invalid key id: %s"
-msgstr "Érvénytelen kulcsazonosító: %s"
-
-#: ../aptkit/worker/aptworker.py:594
-#, python-format
-msgid ""
-"Failed to download and install the key %s from %s:\n"
-"%s"
-msgstr ""
-"Nem sikerült letölteni a(z) %s kulcsfájlt, a következő helyről: %s:\n"
-"%s"
-
-#: ../aptkit/worker/aptworker.py:611
-#, python-format
-msgid "Key file %s couldn't be installed: %s"
-msgstr "%s kulcsfájl nem telepíthető: %s"
-
-#: ../aptkit/worker/aptworker.py:635
-#, python-format
-msgid "Key with fingerprint %s couldn't be removed: %s"
-msgstr "%s ujjlenyomatú kulcs nem távolítható el: %s"
-
-#: ../aptkit/worker/aptworker.py:686
+#: aptkit/worker/aptworker.py:595
 #, python-format
 msgid "Package %s cannot be removed."
 msgstr "A(z) %s csomag nem távolítható el."
 
-#: ../aptkit/worker/aptworker.py:690
+#: aptkit/worker/aptworker.py:599
 #, python-format
 msgid "The version %s of %s is not installed"
 msgstr "A(z) %s verziójú %s nincs telepítve"
 
-#: ../aptkit/worker/aptworker.py:785
+#: aptkit/worker/aptworker.py:694
 #, python-format
 msgid "The former version %s of %s is already installed"
 msgstr "A(z) %s korábbi verziójú %s már telepítve van"
 
-#: ../aptkit/worker/aptworker.py:790 ../aptkit/worker/aptworker.py:838
+#: aptkit/worker/aptworker.py:699 aptkit/worker/aptworker.py:747
 #, python-format
 msgid "The version %s of %s is already installed"
 msgstr "A(z) %s verziójú %s már telepítve van"
 
-#: ../aptkit/worker/aptworker.py:797
+#: aptkit/worker/aptworker.py:706
 #, python-format
 msgid "The version %s of %s isn't available"
 msgstr "A(z) %s verziójú %s nem érhető el"
 
-#: ../aptkit/worker/aptworker.py:801
+#: aptkit/worker/aptworker.py:710
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
 msgstr "Meg kell határoznia, hogy %s milyen verzióra legyen visszafejlesztve"
 
-#: ../aptkit/worker/aptworker.py:831
+#: aptkit/worker/aptworker.py:740
 #, python-format
 msgid "The later version %s of %s is already installed"
 msgstr "A(z) %s újabb verziójú %s már telepítve van"
 
-#: ../aptkit/worker/aptworker.py:867
+#: aptkit/worker/aptworker.py:776
 #, python-format
 msgid "The package %s isn't available in the %s release."
 msgstr "%s csomag nem érhető el a(z) %s kiadásban."
 
-#: ../aptkit/worker/aptworker.py:1052
+#: aptkit/worker/aptworker.py:961
 #, python-format
 msgid "Package %s cannot be removed"
 msgstr "A(z) %s csomag nem eltávolítható."
 
-#: ../aptkit/worker/aptworker.py:1154
+#: aptkit/worker/aptworker.py:1063
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
@@ -1202,25 +1112,25 @@ msgstr ""
 "A csomag nem ad érvényes Installed-Size vezérlőmező-értéket. Részletekért "
 "tekintse át a Debian Policy 5.6.20. fejezetét."
 
-#: ../aptkit/worker/aptworker.py:1293
+#: aptkit/worker/aptworker.py:1202
 msgid "The license key is empty"
 msgstr "A licenckulcs üres"
 
-#: ../aptkit/worker/aptworker.py:1309
+#: aptkit/worker/aptworker.py:1218
 msgid "The license key is not allowed to contain executable code."
 msgstr "A licenckulcs nem tartalmazhat végrehajtható kódot."
 
-#: ../aptkit/worker/aptworker.py:1318
+#: aptkit/worker/aptworker.py:1227
 #, python-format
 msgid "The license key path %s is invalid"
 msgstr "A(z) %s licenckulcsútvonal érvénytelen"
 
-#: ../aptkit/worker/aptworker.py:1322
+#: aptkit/worker/aptworker.py:1231
 #, python-format
 msgid "The license key already exists: %s"
 msgstr "A licenckulcs már létezik: %s"
 
-#: ../aptkit/worker/aptworker.py:1327
+#: aptkit/worker/aptworker.py:1236
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
@@ -1229,40 +1139,40 @@ msgstr ""
 "A licenckulcs helye nem biztonságos, mivel szimbolikus linkeket tartalmaz. "
 "A(z) %s útvonal ennek felel meg: %s"
 
-#: ../aptkit/worker/aptworker.py:1335
+#: aptkit/worker/aptworker.py:1244
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
 msgstr "A kulcsfájl telepítéséhez használandó könyvtár még nem létezik: %s"
 
-#: ../aptkit/worker/aptworker.py:1346
+#: aptkit/worker/aptworker.py:1255
 #, python-format
 msgid "Failed to write key file to: %s"
 msgstr "A kulcsfájl kiírása sikertelen ide: %s"
 
-#: ../aptkit/worker/aptworker.py:1381
+#: aptkit/worker/aptworker.py:1290
 msgid "The following packages have unmet dependencies:"
 msgstr "A következő csomagoknak teljesítetlen függőségei vannak:"
 
-#: ../aptkit/worker/aptworker.py:1434
+#: aptkit/worker/aptworker.py:1343
 msgid "but it is a virtual package"
 msgstr "de ez egy virtuális csomag"
 
-#: ../aptkit/worker/aptworker.py:1437
+#: aptkit/worker/aptworker.py:1346
 msgid "but it is not installed"
 msgstr "de nincs telepítve"
 
-#: ../aptkit/worker/aptworker.py:1439
+#: aptkit/worker/aptworker.py:1348
 msgid "but it is not going to be installed"
 msgstr "de nincs telepítésre jelölve"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptkit/worker/aptworker.py:1443
+#: aptkit/worker/aptworker.py:1352
 #, python-format
 msgid "but %s is installed"
 msgstr "de %s verzió van telepítve"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptkit/worker/aptworker.py:1447
+#: aptkit/worker/aptworker.py:1356
 #, python-format
 msgid "but %s is to be installed"
 msgstr "de %s verziót kellene telepíteni"

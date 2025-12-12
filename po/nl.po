@@ -7,75 +7,75 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-09 19:27+0100\n"
+"POT-Creation-Date: 2025-11-20 14:47+0000\n"
 "PO-Revision-Date: 2025-06-06 18:35+0000\n"
 "Last-Translator: Pjotr12345 <Unknown>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-08-26 15:26+0000\n"
-"X-Generator: Launchpad (build 919009172d854f2b8e4e8262db447f12f11d25eb)\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 "Language: nl\n"
 
-#: ../data/org.debian.aptkit.policy.in.h:1
+#: data/org.aptkit.policy.in:12
 msgid "List keys of trusted vendors"
 msgstr "Toon sleutels van vertrouwde leveranciers"
 
-#: ../data/org.debian.aptkit.policy.in.h:2
+#: data/org.aptkit.policy.in:15
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr ""
 "Authenticatie is vereist als u de lijst met vertrouwde sleutels wilt inzien."
 
-#: ../data/org.debian.aptkit.policy.in.h:3
+#: data/org.aptkit.policy.in:26
 msgid "Remove downloaded package files"
 msgstr "Binnengehaalde pakketbestanden verwijderen"
 
-#: ../data/org.debian.aptkit.policy.in.h:4
+#: data/org.aptkit.policy.in:29
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr ""
 "Om binnengehaalde pakketbestanden te verwijderen dient u zich te "
 "authenticeren."
 
-#: ../data/org.debian.aptkit.policy.in.h:5
+#: data/org.aptkit.policy.in:40
 msgid "Change software configuration"
 msgstr "Programmatuurinstellingen wijzigen"
 
-#: ../data/org.debian.aptkit.policy.in.h:6
+#: data/org.aptkit.policy.in:43
 msgid "To change software settings, you need to authenticate."
 msgstr ""
 "Om programmatuurinstellingen te wijzigen dient u zich te authenticeren."
 
-#: ../data/org.debian.aptkit.policy.in.h:7
+#: data/org.aptkit.policy.in:54
 msgid "Change software repository"
 msgstr "Pakketbron wijzigen"
 
-#: ../data/org.debian.aptkit.policy.in.h:8
+#: data/org.aptkit.policy.in:57
 msgid "To change software repository settings, you need to authenticate."
 msgstr ""
 "Authenticatie is vereist als u instellingen van pakketbronnen wilt wijzigen."
 
-#: ../data/org.debian.aptkit.policy.in.h:9
+#: data/org.aptkit.policy.in:68
 msgid "Install package file"
 msgstr "Pakketbestand installeren"
 
-#: ../data/org.debian.aptkit.policy.in.h:10
+#: data/org.aptkit.policy.in:71
 msgid "To install this package, you need to authenticate."
 msgstr "Authenticatie is vereist als u dit pakket wilt installeren."
 
-#: ../data/org.debian.aptkit.policy.in.h:11
+#: data/org.aptkit.policy.in:82
 msgid "Update package information"
 msgstr "Pakketinformatie bijwerken"
 
-#: ../data/org.debian.aptkit.policy.in.h:12
+#: data/org.aptkit.policy.in:85
 msgid "To update the software catalog, you need to authenticate."
 msgstr "Authenticatie is vereist om de programmatuurcatalogus bij te werken."
 
-#: ../data/org.debian.aptkit.policy.in.h:13
+#: data/org.aptkit.policy.in:96
 msgid "Install or remove packages"
 msgstr "Pakketten installeren of verwijderen"
 
-#: ../data/org.debian.aptkit.policy.in.h:14
+#: data/org.aptkit.policy.in:99
 msgid "To install or remove software, you need to authenticate."
 msgstr ""
 "Authenticatie is vereist als u programmatuur wilt verwijderen of installeren."
@@ -84,19 +84,18 @@ msgstr ""
 #. from a high trusted repository that can be explicitely whitelisted.
 #. 
 #. The defaults for this action are the same as
-#. "org.debian.aptkit.install-or-remove-packages".
+#. "org.aptkit.install-or-remove-packages".
 #. 
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
-#. 
-#: ../data/org.debian.aptkit.policy.in.h:25
+#: data/org.aptkit.policy.in:120
 msgid "Install software from a high-trust whitelisted repository."
 msgstr ""
 "Installeer programmatuur vanuit een zeer vertrouwde en uitdrukkelijk "
 "goedgekeurde pakketbron."
 
-#: ../data/org.debian.aptkit.policy.in.h:26
+#: data/org.aptkit.policy.in:123
 msgid "To install software, you need to authenticate."
 msgstr "Om programmatuur te installeren dient u zich te authenticeren."
 
@@ -105,11 +104,11 @@ msgstr "Om programmatuur te installeren dient u zich te authenticeren."
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: ../data/org.debian.aptkit.policy.in.h:32
+#: data/org.aptkit.policy.in:139
 msgid "Add a new repository and install packages from it"
 msgstr "Voeg een nieuwe pakketbron toe en installeer daaruit pakketten"
 
-#: ../data/org.debian.aptkit.policy.in.h:33
+#: data/org.aptkit.policy.in:142
 msgid "To install software from a new source, you need to authenticate."
 msgstr ""
 "Authenticatie is vereist om programmatuur uit een nieuwe bron te installeren."
@@ -122,292 +121,266 @@ msgstr ""
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: ../data/org.debian.aptkit.policy.in.h:42
+#: data/org.aptkit.policy.in:161
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
 "Voeg een nieuwe pakketbron toe voor aangekochte programmatuur en installeer "
 "daaruit pakketten"
 
-#: ../data/org.debian.aptkit.policy.in.h:43
+#: data/org.aptkit.policy.in:164
 msgid "To install purchased software, you need to authenticate."
 msgstr ""
 "Authenticatie is vereist om aangekochte programmatuur te installeren."
 
-#: ../data/org.debian.aptkit.policy.in.h:44
+#: data/org.aptkit.policy.in:175
 msgid "Upgrade packages"
 msgstr "Pakketten opwaarderen"
 
-#: ../data/org.debian.aptkit.policy.in.h:45
+#: data/org.aptkit.policy.in:178
 msgid "To install updated software, you need to authenticate."
 msgstr ""
 "Authenticatie is vereist als u bijgewerkte programmatuur wilt installeren."
 
-#: ../data/org.debian.aptkit.policy.in.h:46
+#: data/org.aptkit.policy.in:187
 msgid "Cancel the task of another user"
 msgstr "De taak van een andere gebruiker beëindigen"
 
-#: ../data/org.debian.aptkit.policy.in.h:47
+#: data/org.aptkit.policy.in:190
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
 "Authenticatie is vereist als u de programmatuurwijzigingen van een andere "
 "gebruiker ongedaan wilt maken."
 
-#: ../data/org.debian.aptkit.policy.in.h:48
+#: data/org.aptkit.policy.in:201
 msgid "Set a proxy for software downloads"
 msgstr "Een proxy instellen voor het binnenhalen van programmatuur"
 
-#: ../data/org.debian.aptkit.policy.in.h:49
+#: data/org.aptkit.policy.in:204
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
 "Authenticatie is vereist als u een proxy-server wilt gebruiken voor het "
 "binnenhalen van programmatuur."
 
-#: ../aptkit/core.py:2148
+#: aptkit/core.py:2030
 msgid "Do not shutdown the daemon because of inactivity"
 msgstr "Sluit de achtergronddienst niet af wegens inactiviteit"
 
-#: ../aptkit/core.py:2153
+#: aptkit/core.py:2035
 msgid "Do not load any plugins"
 msgstr "Geen invoegtoepassingen laden"
 
-#: ../aptkit/core.py:2157
+#: aptkit/core.py:2039
 msgid "Show internal processing information"
 msgstr "Interne verwerkingsinformatie weergeven"
 
-#: ../aptkit/core.py:2162
+#: aptkit/core.py:2044
 msgid "Quit and replace an already running daemon"
 msgstr "Sluit af en vervang een reeds draaiende achtergronddienst"
 
-#: ../aptkit/core.py:2167
+#: aptkit/core.py:2049
 msgid "Listen on the DBus session bus (Only required for testing"
 msgstr "Luisteren op de DBus-sessiebus (alleen vereist voor uitproberen)"
 
-#: ../aptkit/core.py:2171
+#: aptkit/core.py:2053
 msgid "Perform operations in the given chroot"
 msgstr "Acties uitvoeren in de opgegeven chroot"
 
-#: ../aptkit/core.py:2176
+#: aptkit/core.py:2058
 msgid "Store profile stats in the specified file"
 msgstr "Profielstatistieken opslaan in het opgegeven bestand"
 
-#: ../aptkit/core.py:2181
+#: aptkit/core.py:2063
 msgid "Do not make any changes to the system (Only of use to developers)"
 msgstr ""
 "Geen wijzigingen in het systeem aanbrengen (alleen nuttig voor ontwikkelaars)"
 
-#: ../aptkit/enums.py:337
+#: aptkit/enums.py:311
 msgid "Installed file"
 msgstr "Geïnstalleerd bestand"
 
-#: ../aptkit/enums.py:338
+#: aptkit/enums.py:312
 msgid "Installed packages"
 msgstr "Geïnstalleerde pakketten"
 
-#: ../aptkit/enums.py:339
-msgid "Added key from file"
-msgstr "Sleutel uit bestand toegevoegd"
-
-#: ../aptkit/enums.py:340
+#: aptkit/enums.py:313
 msgid "Updated cache"
 msgstr "Tijdelijke opslag bijgewerkt"
 
-#: ../aptkit/enums.py:341
+#: aptkit/enums.py:314
 msgid "Search done"
 msgstr "Doorzoeking voltooid"
 
-#: ../aptkit/enums.py:342
-msgid "Removed trusted key"
-msgstr "Vertrouwde sleutel verwijderd"
-
-#: ../aptkit/enums.py:343
+#: aptkit/enums.py:315
 msgid "Removed packages"
 msgstr "Verwijderde pakketten"
 
-#: ../aptkit/enums.py:344
+#: aptkit/enums.py:316
 msgid "Updated packages"
 msgstr "Bijgewerkte pakketten"
 
-#: ../aptkit/enums.py:345
+#: aptkit/enums.py:317
 msgid "Upgraded system"
 msgstr "Systeem opgewaardeerd"
 
-#: ../aptkit/enums.py:346
+#: aptkit/enums.py:318
 msgid "Applied changes"
 msgstr "Wijzigingen toegepast"
 
-#: ../aptkit/enums.py:347
+#: aptkit/enums.py:319
 msgid "Repaired incomplete installation"
 msgstr "Onvolledige installatie hersteld"
 
-#: ../aptkit/enums.py:348
+#: aptkit/enums.py:320
 msgid "Repaired broken dependencies"
 msgstr "Kapotte afhankelijkheden hersteld"
 
-#: ../aptkit/enums.py:349
+#: aptkit/enums.py:321
 msgid "Added software source"
 msgstr "Pakketbron toegevoegd"
 
-#: ../aptkit/enums.py:350
+#: aptkit/enums.py:322
 msgid "Enabled component of the distribution"
 msgstr "Ingeschakeld onderdeel van de distributie"
 
-#: ../aptkit/enums.py:351
+#: aptkit/enums.py:323
 msgid "Removed downloaded package files"
 msgstr "Binnengehaalde pakketten verwijderd"
 
-#: ../aptkit/enums.py:352
+#: aptkit/enums.py:324
 msgid "Reconfigured installed packages"
 msgstr "Geïnstalleerde pakketten opnieuw ingesteld"
 
-#: ../aptkit/enums.py:356
+#: aptkit/enums.py:328
 msgid "Successful"
 msgstr "Geslaagd"
 
-#: ../aptkit/enums.py:357
+#: aptkit/enums.py:329
 msgid "Canceled"
 msgstr "Geannuleerd"
 
-#: ../aptkit/enums.py:358 ../aptkit/enums.py:569
+#: aptkit/enums.py:330 aptkit/enums.py:529
 msgid "Failed"
 msgstr "Mislukt"
 
-#: ../aptkit/enums.py:361
+#: aptkit/enums.py:333
 msgid "Installing file"
 msgstr "Bestand installeren"
 
-#: ../aptkit/enums.py:362
+#: aptkit/enums.py:334
 msgid "Installing packages"
 msgstr "Pakketten installeren"
 
-#: ../aptkit/enums.py:363
-msgid "Adding key from file"
-msgstr "Sleutel uit bestand toevoegen"
-
-#: ../aptkit/enums.py:364
+#: aptkit/enums.py:335
 msgid "Updating cache"
 msgstr "Tijdelijke opslag bijwerken"
 
-#: ../aptkit/enums.py:365
-msgid "Removing trusted key"
-msgstr "Vertrouwde sleutel verwijderen"
-
-#: ../aptkit/enums.py:366
+#: aptkit/enums.py:336
 msgid "Removing packages"
 msgstr "Pakketten verwijderen"
 
-#: ../aptkit/enums.py:367
+#: aptkit/enums.py:337
 msgid "Updating packages"
 msgstr "Pakketten bijwerken"
 
-#: ../aptkit/enums.py:368
+#: aptkit/enums.py:338
 msgid "Upgrading system"
 msgstr "Systeem opwaarderen"
 
-#: ../aptkit/enums.py:369 ../aptkit/enums.py:528
+#: aptkit/enums.py:339 aptkit/enums.py:488
 msgid "Applying changes"
 msgstr "Wijzigingen toepassen"
 
-#: ../aptkit/enums.py:370
+#: aptkit/enums.py:340
 msgid "Repairing incomplete installation"
 msgstr "Onvolledige installatie herstellen"
 
-#: ../aptkit/enums.py:371
+#: aptkit/enums.py:341
 msgid "Repairing installed software"
 msgstr "Geïnstalleerde programmatuur herstellen"
 
-#: ../aptkit/enums.py:372
+#: aptkit/enums.py:342
 msgid "Adding software source"
 msgstr "Pakketbron toevoegen"
 
-#: ../aptkit/enums.py:373
+#: aptkit/enums.py:343
 msgid "Enabling component of the distribution"
 msgstr "Onderdeel van de distributie inschakelen"
 
-#: ../aptkit/enums.py:374
+#: aptkit/enums.py:344
 msgid "Removing downloaded package files"
 msgstr "Binnengehaalde pakketbestanden verwijderen"
 
-#: ../aptkit/enums.py:375
+#: aptkit/enums.py:345
 msgid "Reconfiguring installed packages"
 msgstr "Geïnstalleerde pakketten opnieuw instellen"
 
-#: ../aptkit/enums.py:376 ../aptkit/enums.py:517
+#: aptkit/enums.py:346 aptkit/enums.py:477
 msgid "Searching"
 msgstr "Zoeken"
 
-#: ../aptkit/enums.py:380
+#: aptkit/enums.py:350
 msgid "Installation of the package file failed"
 msgstr "Installatie van het pakketbestand is mislukt"
 
-#: ../aptkit/enums.py:381
+#: aptkit/enums.py:351
 msgid "Installation of software failed"
 msgstr "Installatie van programmatuur is mislukt"
 
-#: ../aptkit/enums.py:382
-msgid "Adding the key to the list of trusted software vendors failed"
-msgstr ""
-"Toevoegen van de sleutel aan de lijst met vertrouwde "
-"programmatuurleveranciers is mislukt"
-
-#: ../aptkit/enums.py:384
+#: aptkit/enums.py:352
 msgid "Refreshing the software list failed"
 msgstr "Verversen van de programmatuurlijst is mislukt"
 
-#: ../aptkit/enums.py:385
-msgid "Removing the vendor from the list of trusted ones failed"
-msgstr "Verwijderen van de leverancier uit de vertrouwde lijst is mislukt"
-
-#: ../aptkit/enums.py:387
+#: aptkit/enums.py:353
 msgid "Removing software failed"
 msgstr "Verwijderen van programmatuur is mislukt"
 
-#: ../aptkit/enums.py:388
+#: aptkit/enums.py:354
 msgid "Updating software failed"
 msgstr "Bijwerken van programmatuur is mislukt"
 
-#: ../aptkit/enums.py:389
+#: aptkit/enums.py:355
 msgid "Upgrading the system failed"
 msgstr "Opwaarderen van het systeem is mislukt"
 
-#: ../aptkit/enums.py:390
+#: aptkit/enums.py:356
 msgid "Applying software changes failed"
 msgstr "Toepassen van programmatuurwijzigingen is mislukt"
 
-#: ../aptkit/enums.py:391
+#: aptkit/enums.py:357
 msgid "Repairing incomplete installation failed"
 msgstr "Herstellen van onvolledige installatie is mislukt"
 
-#: ../aptkit/enums.py:393
+#: aptkit/enums.py:359
 msgid "Repairing broken dependencies failed"
 msgstr "Herstellen van kapotte afhankelijkheden is mislukt"
 
-#: ../aptkit/enums.py:394
+#: aptkit/enums.py:360
 msgid "Adding software source failed"
 msgstr "Toevoegen van pakketbron is mislukt"
 
-#: ../aptkit/enums.py:395
+#: aptkit/enums.py:361
 msgid "Enabling component of the distribution failed"
 msgstr "Inschakelen van onderdeel van de distributie is mislukt"
 
-#: ../aptkit/enums.py:397 ../aptkit/enums.py:398
+#: aptkit/enums.py:363 aptkit/enums.py:364
 msgid "Removing downloaded package files failed"
 msgstr "Verwijderen van binnengehaalde pakketgestanden is mislukt"
 
-#: ../aptkit/enums.py:399
+#: aptkit/enums.py:365
 msgid "Search failed"
 msgstr "Doorzoeking is mislukt"
 
-#: ../aptkit/enums.py:400
+#: aptkit/enums.py:366
 msgid "Adding license key"
 msgstr "Licentiesleutel toevoegen"
 
-#: ../aptkit/enums.py:404 ../aptkit/enums.py:405
+#: aptkit/enums.py:370 aptkit/enums.py:371
 msgid "Check your Internet connection."
 msgstr "Kijk uw internetverbinding na."
 
-#: ../aptkit/enums.py:406
+#: aptkit/enums.py:372
 msgid ""
 "Check if you are using third party repositories. If so disable them, since "
 "they are a common source of problems.\n"
@@ -418,19 +391,7 @@ msgstr ""
 "Voer ook de volgende opdracht uit in een terminalvenster: sudo apt-get "
 "install -f"
 
-#: ../aptkit/enums.py:411
-msgid "The selected file may not be a GPG key file or it might be corrupt."
-msgstr "Het gekozen bestand is misschien geen GPG-sleutel of beschadigd."
-
-#: ../aptkit/enums.py:413
-msgid ""
-"The selected key couldn't be removed. Check that you provided a valid "
-"fingerprint."
-msgstr ""
-"De gekozen sleutel kon niet verwijderd worden. Kijk na of u een geldige "
-"vingerafdruk hebt opgegeven."
-
-#: ../aptkit/enums.py:415
+#: aptkit/enums.py:377
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
@@ -439,7 +400,7 @@ msgstr ""
 "Synaptic of aptitude. Er kan altijd slechts één pakketbeheerder wijzigingen "
 "doorvoeren."
 
-#: ../aptkit/enums.py:418
+#: aptkit/enums.py:380
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
@@ -447,7 +408,7 @@ msgstr ""
 "Dit is een ernstig probleem. Probeer het later opnieuw. Als dit probleem "
 "nogmaals optreedt, meld dan a.u.b. deze fout aan de ontwikkelaars."
 
-#: ../aptkit/enums.py:421
+#: aptkit/enums.py:383
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
@@ -455,26 +416,26 @@ msgstr ""
 "Kijk na of de pakketnaam juist gespeld is en of de juiste pakketbron "
 "ingeschakeld is."
 
-#: ../aptkit/enums.py:423
+#: aptkit/enums.py:385
 msgid "There isn't any need for an update."
 msgstr "Er hoeft niets te worden bijgewerkt."
 
-#: ../aptkit/enums.py:424
+#: aptkit/enums.py:386
 msgid "There isn't any need for an installation"
 msgstr "Er hoeft niets te worden geïnstalleerd"
 
-#: ../aptkit/enums.py:426
+#: aptkit/enums.py:388
 msgid "There isn't any need for a removal."
 msgstr "Er hoeft niets te worden verwijderd."
 
-#: ../aptkit/enums.py:427
+#: aptkit/enums.py:389
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr ""
 "U hebt verzocht om een pakket verwijderen dat een essentieel onderdeel is "
 "van uw systeem."
 
-#: ../aptkit/enums.py:430
+#: aptkit/enums.py:392
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
@@ -482,16 +443,16 @@ msgstr ""
 "De verbinding met de achtergronddienst is verloren gegaan. Waarschijnlijk is "
 "hij vastgelopen."
 
-#: ../aptkit/enums.py:432
+#: aptkit/enums.py:394
 msgid "The installation or removal of a software package failed."
 msgstr ""
 "De installatie of verwijdering van een programmatuurpakket is mislukt."
 
-#: ../aptkit/enums.py:434
+#: aptkit/enums.py:396
 msgid "The requested feature is not supported."
 msgstr "De gevraagde functie wordt niet ondersteund."
 
-#: ../aptkit/enums.py:435
+#: aptkit/enums.py:397
 msgid ""
 "There seems to be a programming error in aptkit, the software that allows "
 "you to install/remove software and to perform other package management "
@@ -501,7 +462,7 @@ msgstr ""
 "waarmee u programmatuur kunt installeren/verwijderen en andere "
 "pakketbeheertaken kunt uitvoeren."
 
-#: ../aptkit/enums.py:439
+#: aptkit/enums.py:401
 msgid ""
 "This error could be caused by required additional software packages which "
 "are missing or not installable. Furthermore there could be a conflict "
@@ -513,12 +474,12 @@ msgstr ""
 "er een conflict kunnen zijn tussen programmatuurpakketten die niet "
 "tegelijkertijd geïnstalleerd kunnen zijn."
 
-#: ../aptkit/enums.py:445
+#: aptkit/enums.py:407
 msgid "This requires installing packages from unauthenticated sources."
 msgstr ""
 "Dit vereist het installeren van pakketten uit niet-geauthenticeerde bronnen."
 
-#: ../aptkit/enums.py:447
+#: aptkit/enums.py:409
 msgid ""
 "The installation could have failed because of an error in the corresponding "
 "software package or it was cancelled in an unfriendly way. You have to "
@@ -529,14 +490,14 @@ msgstr ""
 "werd afgebroken. Deze fout dient hersteld te worden alvorens u andere "
 "programmatuur kunt installeren of verwijderen."
 
-#: ../aptkit/enums.py:453
+#: aptkit/enums.py:415
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
 msgstr ""
 "Kopieer a.u.b. het bestand naar uw lokale computer en controleer de "
 "bestandstoegangsrechten."
 
-#: ../aptkit/enums.py:456
+#: aptkit/enums.py:418
 msgid ""
 "The installation of a package which violates the quality standards isn't "
 "allowed. This could cause serious problems on your computer. Please contact "
@@ -548,7 +509,7 @@ msgstr ""
 "veroorzaken. Neem a.u.b. contact op met de persoon of organisatie die dit "
 "pakketbestand geleverd heeft en verstrek onderstaande bijzonderheden."
 
-#: ../aptkit/enums.py:463
+#: aptkit/enums.py:425
 msgid ""
 "The downloaded license key which is required to run this piece of software "
 "is not valid or could not be installed correctly.\n"
@@ -558,11 +519,11 @@ msgstr ""
 "draaien is ongeldig of kon niet juist worden geïnstalleerd.\n"
 "Zie de bijzonderheden voor meer informatie."
 
-#: ../aptkit/enums.py:469
+#: aptkit/enums.py:431
 msgid "All available upgrades have already been installed."
 msgstr "Alle beschikbare opwaarderingen zijn reeds geïnstalleerd."
 
-#: ../aptkit/enums.py:471
+#: aptkit/enums.py:433
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
@@ -570,11 +531,11 @@ msgstr ""
 "De licentiesleutel waarmee u deze programmatuur kunt gebruiken kon niet "
 "worden binnengehaald. Kijk a.u.b. uw netwerkverbinding na."
 
-#: ../aptkit/enums.py:475
+#: aptkit/enums.py:437
 msgid "You don't have the required privileges to perform this action."
 msgstr "U heeft niet de benodigde rechten om deze actie uit te voeren."
 
-#: ../aptkit/enums.py:477
+#: aptkit/enums.py:439
 msgid ""
 "You either provided a wrong password or cancelled the authorization.\n"
 "Furthermore there could also be a technical reason for this error if you "
@@ -587,321 +548,313 @@ msgstr ""
 "wachtwoorddialoogvenster heeft gezien: uw bureaubladomgeving heeft geen "
 "PolicyKit-sessieagent."
 
-#: ../aptkit/enums.py:485
+#: aptkit/enums.py:447
 msgid "Failed to download package files"
 msgstr "Pakketbestanden binnenhalen is mislukt"
 
-#: ../aptkit/enums.py:486
+#: aptkit/enums.py:448
 msgid "Failed to download repository information"
 msgstr "Pakketbroninformatie binnenhalen is mislukt"
 
-#: ../aptkit/enums.py:488
+#: aptkit/enums.py:450
 msgid "Package dependencies cannot be resolved"
 msgstr "Pakketafhankelijkheden kunnen niet opgelost worden"
 
-#: ../aptkit/enums.py:489
+#: aptkit/enums.py:451
 msgid "The package system is broken"
 msgstr "Het pakketsysteem is kapot"
 
-#: ../aptkit/enums.py:490
-msgid "Key was not installed"
-msgstr "Sleutel werd niet geïnstalleerd"
-
-#: ../aptkit/enums.py:491
-msgid "Key was not removed"
-msgstr "Sleutel werd niet verwijderd"
-
-#: ../aptkit/enums.py:492
+#: aptkit/enums.py:452
 msgid "Failed to lock the package manager"
 msgstr "Kon de pakketbeheerder niet vergrendelen"
 
-#: ../aptkit/enums.py:493
+#: aptkit/enums.py:453
 msgid "Failed to load the package list"
 msgstr "Kon de pakkettenlijst niet laden"
 
-#: ../aptkit/enums.py:494
+#: aptkit/enums.py:454
 msgid "Package does not exist"
 msgstr "Pakket bestaat niet"
 
-#: ../aptkit/enums.py:495
+#: aptkit/enums.py:455
 msgid "Package is already up to date"
 msgstr "Pakket is al bijgewerkt"
 
-#: ../aptkit/enums.py:496
+#: aptkit/enums.py:456
 msgid "Package is already installed"
 msgstr "Pakket is al geïnstalleerd"
 
-#: ../aptkit/enums.py:497
+#: aptkit/enums.py:457
 msgid "Package isn't installed"
 msgstr "Pakket is niet geïnstalleerd"
 
-#: ../aptkit/enums.py:498
+#: aptkit/enums.py:458
 msgid "Failed to remove essential system package"
 msgstr "Kon essentieel systeempakket niet verwijderen"
 
-#: ../aptkit/enums.py:500
+#: aptkit/enums.py:460
 msgid "Task cannot be monitored or controlled"
 msgstr "Taak kan niet worden bijgehouden of beheerst"
 
-#: ../aptkit/enums.py:501
+#: aptkit/enums.py:461
 msgid "Package operation failed"
 msgstr "Pakketbewerking is mislukt"
 
-#: ../aptkit/enums.py:502
+#: aptkit/enums.py:462
 msgid "Requires installation of untrusted packages"
 msgstr "Vereist installatie van niet-vertrouwde pakketten"
 
-#: ../aptkit/enums.py:504
+#: aptkit/enums.py:464
 msgid "Previous installation hasn't been completed"
 msgstr "Vorige installatie is niet voltooid"
 
-#: ../aptkit/enums.py:505
+#: aptkit/enums.py:465
 msgid "The package is of bad quality"
 msgstr "Het pakket is van slechte kwaliteit"
 
-#: ../aptkit/enums.py:506
+#: aptkit/enums.py:466
 msgid "Package file could not be opened"
 msgstr "Pakketbestand kon niet worden geopend"
 
-#: ../aptkit/enums.py:507
+#: aptkit/enums.py:467
 msgid "Not supported feature"
 msgstr "Niet-ondersteunde functie"
 
-#: ../aptkit/enums.py:508
+#: aptkit/enums.py:468
 msgid "Failed to download the license key"
 msgstr "Binnenhalen van de licentiesleutel is mislukt"
 
-#: ../aptkit/enums.py:509
+#: aptkit/enums.py:469
 msgid "Failed to install the license key"
 msgstr "Installeren van de licentiesleutel is mislukt"
 
-#: ../aptkit/enums.py:510
+#: aptkit/enums.py:470
 msgid "The system is already up to date"
 msgstr "Het systeem is al bijgewerkt"
 
-#: ../aptkit/enums.py:511
+#: aptkit/enums.py:471
 msgid "You could not be authorized"
 msgstr "U kon niet worden geautoriseerd"
 
-#: ../aptkit/enums.py:512
+#: aptkit/enums.py:472
 msgid "You are not allowed to perform this action"
 msgstr "U mag deze actie niet uitvoeren"
 
-#: ../aptkit/enums.py:513
+#: aptkit/enums.py:473
 msgid "An unhandlable error occured"
 msgstr "Er is een onhandelbare fout opgetreden"
 
-#: ../aptkit/enums.py:516
+#: aptkit/enums.py:476
 msgid "Waiting for service to start"
 msgstr "Wachten op het starten van de dienst"
 
-#: ../aptkit/enums.py:518
+#: aptkit/enums.py:478
 msgid "Waiting"
 msgstr "Wachten"
 
-#: ../aptkit/enums.py:519
+#: aptkit/enums.py:479
 msgid "Waiting for required medium"
 msgstr "Wachten op vereist medium"
 
-#: ../aptkit/enums.py:520
+#: aptkit/enums.py:480
 msgid "Waiting for other software managers to quit"
 msgstr "Wachten totdat andere programmatuurbeheerders zijn afgesloten"
 
-#: ../aptkit/enums.py:521
+#: aptkit/enums.py:481
 msgid "Waiting for configuration file prompt"
 msgstr "Wachten op de dialoog van het configuratiebestand"
 
-#: ../aptkit/enums.py:523
+#: aptkit/enums.py:483
 msgid "Running task"
 msgstr "Taak uitvoeren"
 
-#: ../aptkit/enums.py:524
+#: aptkit/enums.py:484
 msgid "Downloading"
 msgstr "Binnenhalen"
 
-#: ../aptkit/enums.py:525
+#: aptkit/enums.py:485
 msgid "Querying software sources"
 msgstr "Pakketbronnen doorzoeken"
 
-#: ../aptkit/enums.py:526
+#: aptkit/enums.py:486
 msgid "Cleaning up"
 msgstr "Opruimen"
 
-#: ../aptkit/enums.py:527
+#: aptkit/enums.py:487
 msgid "Resolving dependencies"
 msgstr "Afhankelijkheden oplossen"
 
-#: ../aptkit/enums.py:529
+#: aptkit/enums.py:489
 msgid "Finished"
 msgstr "Gereed"
 
-#: ../aptkit/enums.py:530
+#: aptkit/enums.py:490
 msgid "Cancelling"
 msgstr "Annuleren"
 
-#: ../aptkit/enums.py:531
+#: aptkit/enums.py:491
 msgid "Loading software list"
 msgstr "Programmatuurlijst laden"
 
-#: ../aptkit/enums.py:532
+#: aptkit/enums.py:492
 msgid "Waiting for authentication"
 msgstr "Wachtend op authenticatie"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:536
+#: aptkit/enums.py:496
 #, python-format
 msgid "Installing %s"
 msgstr "%s installeren"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:538
+#: aptkit/enums.py:498
 #, python-format
 msgid "Configuring %s"
 msgstr "%s configureren"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:540
+#: aptkit/enums.py:500
 #, python-format
 msgid "Removing %s"
 msgstr "%s verwijderen"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:542
+#: aptkit/enums.py:502
 #, python-format
 msgid "Completely removing %s"
 msgstr "%s wordt volledig verwijderd"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:544
+#: aptkit/enums.py:504
 #, python-format
 msgid "Noting disappearance of %s"
 msgstr "De verdwijning van %s wordt genoteerd"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:546
+#: aptkit/enums.py:506
 #, python-format
 msgid "Running post-installation trigger %s"
 msgstr "Post-installatiehandeling %s uitvoeren"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:548
+#: aptkit/enums.py:508
 #, python-format
 msgid "Upgrading %s"
 msgstr "%s upgraden"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:550
+#: aptkit/enums.py:510
 #, python-format
 msgid "Unpacking %s"
 msgstr "%s wordt uitgepakt"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:552
+#: aptkit/enums.py:512
 #, python-format
 msgid "Preparing installation of %s"
 msgstr "Installatie van %s wordt voorbereid"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:554
+#: aptkit/enums.py:514
 #, python-format
 msgid "Preparing configuration of %s"
 msgstr "Configuratie van %s wordt voorbereid"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:556
+#: aptkit/enums.py:516
 #, python-format
 msgid "Preparing removal of %s"
 msgstr "Verwijdering van %s voorbereiden"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:558
+#: aptkit/enums.py:518
 #, python-format
 msgid "Preparing complete removal of %s"
 msgstr "Volledige verwijdering van %s voorbereiden"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:560
+#: aptkit/enums.py:520
 #, python-format
 msgid "Installed %s"
 msgstr "%s is geïnstalleerd"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:562
+#: aptkit/enums.py:522
 #, python-format
 msgid "Completely removed %s"
 msgstr "%s is volledig verwijderd"
 
 #. TRANSLATORS: %s is the name of a package
-#: ../aptkit/enums.py:564
+#: aptkit/enums.py:524
 #, python-format
 msgid "Removed %s"
 msgstr "%s is verwijderd"
 
-#: ../aptkit/enums.py:567
+#: aptkit/enums.py:527
 msgid "Done"
 msgstr "Gereed"
 
-#: ../aptkit/enums.py:568
+#: aptkit/enums.py:528
 msgid "Authentication failed"
 msgstr "Authenticatie mislukt"
 
-#: ../aptkit/enums.py:570
+#: aptkit/enums.py:530
 msgid "Fetching"
 msgstr "Ophalen"
 
-#: ../aptkit/enums.py:571
+#: aptkit/enums.py:531
 msgid "Idle"
 msgstr "Inactief"
 
-#: ../aptkit/enums.py:572
+#: aptkit/enums.py:532
 msgid "Network isn't available"
 msgstr "Netwerk is niet beschikbaar"
 
-#: ../aptkit/enums.py:704
+#: aptkit/enums.py:652
 #, python-format
 msgid "Processing %s"
 msgstr "%s verwerken"
 
-#: ../aptkit/gtk3widgets.py:311
+#: aptkit/gtk3widgets.py:230
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
 msgstr "%sB van %sB binnengehaald met %sB/s"
 
-#: ../aptkit/gtk3widgets.py:316 ../aptkit/gtk3widgets.py:517
+#: aptkit/gtk3widgets.py:235 aptkit/gtk3widgets.py:436
 #, python-format
 msgid "Downloaded %sB of %sB"
 msgstr "%sB van %sB binnengehaald"
 
-#: ../aptkit/gtk3widgets.py:328
+#: aptkit/gtk3widgets.py:247
 msgid "Details"
 msgstr "Bijzonderheden"
 
-#: ../aptkit/gtk3widgets.py:481
+#: aptkit/gtk3widgets.py:400
 msgid "File"
 msgstr "Bestand"
 
 #. TRANSLATORS: header of the progress download column
-#: ../aptkit/gtk3widgets.py:486
+#: aptkit/gtk3widgets.py:405
 msgid "%"
 msgstr "%"
 
-#: ../aptkit/gtk3widgets.py:522
+#: aptkit/gtk3widgets.py:441
 #, python-format
 msgid "Downloaded %sB"
 msgstr "%sB binnengehaald"
 
-#: ../aptkit/gtk3widgets.py:525
+#: aptkit/gtk3widgets.py:444
 msgid "Downloaded"
 msgstr "Binnengehaald"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: ../aptkit/gtk3widgets.py:860
+#: aptkit/gtk3widgets.py:787
 #, python-format
 msgid "CD/DVD '%s' is required"
 msgstr "CD/DVD '%s' is nodig"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: ../aptkit/gtk3widgets.py:862
+#: aptkit/gtk3widgets.py:789
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
@@ -910,96 +863,91 @@ msgstr ""
 "Plaats a.u.b. de bovengenoemde CD/DVD in station '%s' om daar vanaf "
 "programmatuurpakketten te installeren."
 
-#: ../aptkit/gtk3widgets.py:866 ../aptkit/gtk3widgets.py:887
+#: aptkit/gtk3widgets.py:793 aptkit/gtk3widgets.py:815
 msgid "C_ontinue"
 msgstr "_Verder"
 
-#: ../aptkit/gtk3widgets.py:939
+#: aptkit/gtk3widgets.py:866
 msgid "Install"
 msgstr "Installeren"
 
-#: ../aptkit/gtk3widgets.py:940
+#: aptkit/gtk3widgets.py:867
 msgid "Reinstall"
 msgstr "Herinstalleren"
 
-#: ../aptkit/gtk3widgets.py:941
+#: aptkit/gtk3widgets.py:868
 msgid "Remove"
 msgstr "Verwijderen"
 
-#: ../aptkit/gtk3widgets.py:942
+#: aptkit/gtk3widgets.py:869
 msgid "Purge"
 msgstr "Volledig verwijderen"
 
-#: ../aptkit/gtk3widgets.py:943
+#: aptkit/gtk3widgets.py:870
 msgid "Upgrade"
 msgstr "Opwaarderen"
 
-#: ../aptkit/gtk3widgets.py:944
+#: aptkit/gtk3widgets.py:871
 msgid "Downgrade"
 msgstr "Afwaarderen"
 
-#: ../aptkit/gtk3widgets.py:945
+#: aptkit/gtk3widgets.py:872
 msgid "Skip upgrade"
 msgstr "Opwaardering overslaan"
 
-#. If there is only one type of changes (e.g. only installs) expand the
-#. tree
-#. FIXME: adapt the title and message accordingly
-#. FIXME: Should we have different modes? Only show dependencies, only
-#. initial packages or both?
-#: ../aptkit/gtk3widgets.py:956
+#: aptkit/gtk3widgets.py:883
 msgid "Please take a look at the list of changes below."
 msgstr "Bekijk a.u.b. de onderstaande lijst van wijzigingen."
 
-#: ../aptkit/gtk3widgets.py:964
+#: aptkit/gtk3widgets.py:891
 msgid "Additional software has to be installed"
 msgstr "Er dient extra programmatuur geïnstalleerd te worden"
 
-#: ../aptkit/gtk3widgets.py:966
+#: aptkit/gtk3widgets.py:893
 msgid "Additional software has to be re-installed"
 msgstr "Er dient extra programmatuur opnieuw geïnstalleerd te worden"
 
-#: ../aptkit/gtk3widgets.py:968
+#: aptkit/gtk3widgets.py:895
 msgid "Additional software has to be removed"
 msgstr "Er dient extra programmatuur verwijderd te worden"
 
-#: ../aptkit/gtk3widgets.py:970
+#: aptkit/gtk3widgets.py:897
 msgid "Additional software has to be purged"
 msgstr "Er dient extra programmatuur volledig verwijderd te worden"
 
-#: ../aptkit/gtk3widgets.py:972
+#: aptkit/gtk3widgets.py:899
 msgid "Additional software has to be upgraded"
 msgstr "Er dient extra programmatuur opgewaardeerd te worden"
 
-#: ../aptkit/gtk3widgets.py:974
+#: aptkit/gtk3widgets.py:901
 msgid "Additional software has to be downgraded"
 msgstr "Er dient extra programmatuur te worden afgewaardeerd"
 
-#: ../aptkit/gtk3widgets.py:976
+#: aptkit/gtk3widgets.py:903
 msgid "Updates will be skipped"
 msgstr "Actualiseringen zullen worden overgeslagen"
 
-#: ../aptkit/gtk3widgets.py:984
+#: aptkit/gtk3widgets.py:911
 msgid "Additional changes are required"
 msgstr "Er moeten extra wijzigingen worden aangebracht"
 
-#: ../aptkit/gtk3widgets.py:989
+#: aptkit/gtk3widgets.py:916
 #, python-format
 msgid "%sB will be downloaded in total."
 msgstr "Er zal in totaal %sB binnengehaald worden."
 
-#: ../aptkit/gtk3widgets.py:993
+#: aptkit/gtk3widgets.py:920
 #, python-format
 msgid "%sB of disk space will be freed."
 msgstr "Er zal %sB aan schijfruimte vrijkomen."
 
-#: ../aptkit/gtk3widgets.py:997
+#: aptkit/gtk3widgets.py:924
 #, python-format
 msgid "%sB more disk space will be used."
 msgstr "Er zal %sB extra schijfruimte gebruikt worden."
 
 #. TRANSLATORS: %s is a file path
-#: ../aptkit/gtk3widgets.py:1069
+#: aptkit/gtk3widgets.py:983
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
@@ -1007,7 +955,7 @@ msgstr ""
 "Uw aanpassingen in '%s' overschrijven met een nieuwere versie van het "
 "instellingenbestand?"
 
-#: ../aptkit/gtk3widgets.py:1071
+#: aptkit/gtk3widgets.py:985
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
@@ -1015,212 +963,172 @@ msgstr ""
 "Als u niet weet waarom het bestand al bestaat is het gewoonlijk veilig om "
 "het te vervangen."
 
-#: ../aptkit/gtk3widgets.py:1080
+#: aptkit/gtk3widgets.py:994
 msgid "_Changes"
 msgstr "_Veranderingen"
 
-#: ../aptkit/gtk3widgets.py:1083
+#: aptkit/gtk3widgets.py:997
 msgid "_Keep"
 msgstr "_Behouden"
 
-#: ../aptkit/gtk3widgets.py:1084
+#: aptkit/gtk3widgets.py:998
 msgid "_Replace"
 msgstr "Ve_rvangen"
 
-#: ../aptkit/gtk3widgets.py:1187
+#: aptkit/gtk3widgets.py:1101
 msgid "_Details"
 msgstr "Bij_zonderheden"
 
 #. TRANSLATORS: %s is the name of a package manager
-#: ../aptkit/lock.py:189
+#: aptkit/lock.py:189
 #, python-format
 msgid "Waiting for %s to exit"
 msgstr "Wachten tot %s wordt afgesloten"
 
 #. TRANSLATORS: %s is a list of package names
-#: ../aptkit/progress.py:168
+#: aptkit/progress.py:168
 #, python-format
 msgid "Downloading %s"
 msgstr "%s binnenhalen"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: ../aptkit/progress.py:277 ../aptkit/progress.py:314
+#: aptkit/progress.py:277 aptkit/progress.py:314
 msgid "local repository"
 msgstr "lokale pakketbron"
 
 #. TRANSLATORS: %s is a list of repository names
-#: ../aptkit/progress.py:280
+#: aptkit/progress.py:280
 #, python-format
 msgid "Downloading from %s"
 msgstr "Binnenhalen vanuit %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:318
+#: aptkit/progress.py:318
 #, python-format
 msgid "Structure of %s"
 msgstr "Structuur van %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:321
+#: aptkit/progress.py:321
 #, python-format
 msgid "Description of %s"
 msgstr "Beschrijving van %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:324
+#: aptkit/progress.py:324
 #, python-format
 msgid "Description signature of %s"
 msgstr "Beschrijving handtekening van %s"
 
-#: ../aptkit/progress.py:329
+#: aptkit/progress.py:329
 #, python-format
 msgid "Available packages from %s"
 msgstr "Beschikbare pakketten van %s"
 
-#: ../aptkit/progress.py:333
+#: aptkit/progress.py:333
 #, python-format
 msgid "Available sources from %s"
 msgstr "Beschikbare bronnen van %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: ../aptkit/progress.py:336
+#: aptkit/progress.py:336
 #, python-format
 msgid "Available translations from %s"
 msgstr "Beschikbare vertalingen van %s"
 
-#: ../aptkit/progress.py:353
+#: aptkit/progress.py:353
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr "Vertalingen voor %s (%s) van %s"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: ../aptkit/progress.py:357
+#: aptkit/progress.py:357
 #, python-format
 msgid "Translations for %s from %s"
 msgstr "Vertalingen voor %s van %s"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: ../aptkit/progress.py:362
+#: aptkit/progress.py:362
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr "Vertalingen (%s) van %s"
 
-#: ../aptkit/worker/aptworker.py:379 ../aptkit/worker/aptworker.py:678
-#: ../aptkit/worker/aptworker.py:773 ../aptkit/worker/aptworker.py:818
+#: aptkit/worker/aptworker.py:372 aptkit/worker/aptworker.py:587
+#: aptkit/worker/aptworker.py:682 aptkit/worker/aptworker.py:727
 #, python-format
 msgid "Package %s isn't available"
 msgstr "Pakket %s is niet beschikbaar"
 
-#: ../aptkit/worker/aptworker.py:384 ../aptkit/worker/aptworker.py:682
-#: ../aptkit/worker/aptworker.py:777 ../aptkit/worker/aptworker.py:822
+#: aptkit/worker/aptworker.py:377 aptkit/worker/aptworker.py:591
+#: aptkit/worker/aptworker.py:686 aptkit/worker/aptworker.py:731
 #, python-format
 msgid "Package %s isn't installed"
 msgstr "Pakket %s is niet geïnstalleerd"
 
-#: ../aptkit/worker/aptworker.py:388
+#: aptkit/worker/aptworker.py:381
 #, python-format
 msgid "The version %s of %s isn't installed"
 msgstr "Versie %s van %s is niet geïnstalleerd"
 
-#: ../aptkit/worker/aptworker.py:403
+#: aptkit/worker/aptworker.py:396
 #, python-format
 msgid "Package %s is already installed"
 msgstr "Pakket %s is al geïnstalleerd"
 
-#: ../aptkit/worker/aptworker.py:410 ../aptkit/worker/aptworker.py:845
+#: aptkit/worker/aptworker.py:403 aptkit/worker/aptworker.py:754
 #, python-format
 msgid "The version %s of %s isn't available."
 msgstr "Versie %s van %s is niet beschikbaar."
 
-#. TRANSLATORS: %s is the URL of GnuPG
-#. keyserver
-#: ../aptkit/worker/aptworker.py:572
-#, python-format
-msgid "The keyserver URL is invalid: %s"
-msgstr "Het webadres van de sleutelserver is ongeldig: %s"
-
-#. TRANSLATORS: %s is the URL of GnuPG
-#. keyserver
-#: ../aptkit/worker/aptworker.py:578
-#, python-format
-msgid "Invalid protocol of the server: %s"
-msgstr "Ongeldig protocol van de server: %s"
-
-#. TRANSLATORS: %s is the id of a GnuPG key
-#. e.g. E08ADE95
-#: ../aptkit/worker/aptworker.py:586 ../aptkit/worker/aptworker.py:630
-#, python-format
-msgid "Invalid key id: %s"
-msgstr "Ongeldige identificatie van sleutel: %s"
-
-#: ../aptkit/worker/aptworker.py:594
-#, python-format
-msgid ""
-"Failed to download and install the key %s from %s:\n"
-"%s"
-msgstr ""
-"Binnenhalen en installeren van de sleutel %s van %s is mislukt:\n"
-"%s"
-
-#: ../aptkit/worker/aptworker.py:611
-#, python-format
-msgid "Key file %s couldn't be installed: %s"
-msgstr "Sleutelbestand %s kon niet worden geïnstalleerd: %s"
-
-#: ../aptkit/worker/aptworker.py:635
-#, python-format
-msgid "Key with fingerprint %s couldn't be removed: %s"
-msgstr "Sleutel met vingerafdruk %s kon niet worden verwijderd: %s"
-
-#: ../aptkit/worker/aptworker.py:686
+#: aptkit/worker/aptworker.py:595
 #, python-format
 msgid "Package %s cannot be removed."
 msgstr "Pakket %s kan niet worden verwijderd."
 
-#: ../aptkit/worker/aptworker.py:690
+#: aptkit/worker/aptworker.py:599
 #, python-format
 msgid "The version %s of %s is not installed"
 msgstr "Versie %s van %s is niet geïnstalleerd"
 
-#: ../aptkit/worker/aptworker.py:785
+#: aptkit/worker/aptworker.py:694
 #, python-format
 msgid "The former version %s of %s is already installed"
 msgstr "De vorige versie %s van %s is al geïnstalleerd"
 
-#: ../aptkit/worker/aptworker.py:790 ../aptkit/worker/aptworker.py:838
+#: aptkit/worker/aptworker.py:699 aptkit/worker/aptworker.py:747
 #, python-format
 msgid "The version %s of %s is already installed"
 msgstr "Versie %s van %s is al geïnstalleerd"
 
-#: ../aptkit/worker/aptworker.py:797
+#: aptkit/worker/aptworker.py:706
 #, python-format
 msgid "The version %s of %s isn't available"
 msgstr "Versie %s van %s is niet beschikbaar"
 
-#: ../aptkit/worker/aptworker.py:801
+#: aptkit/worker/aptworker.py:710
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
 msgstr "U dient op te geven naar welke versie %s moet worden afgewaardeerd"
 
-#: ../aptkit/worker/aptworker.py:831
+#: aptkit/worker/aptworker.py:740
 #, python-format
 msgid "The later version %s of %s is already installed"
 msgstr "De nieuwere versie %s van %s is al geïnstalleerd"
 
-#: ../aptkit/worker/aptworker.py:867
+#: aptkit/worker/aptworker.py:776
 #, python-format
 msgid "The package %s isn't available in the %s release."
 msgstr "Het pakket %s is niet beschikbaar in de uitgave %s."
 
-#: ../aptkit/worker/aptworker.py:1052
+#: aptkit/worker/aptworker.py:961
 #, python-format
 msgid "Package %s cannot be removed"
 msgstr "Pakket %s kan niet worden verwijderd"
 
-#: ../aptkit/worker/aptworker.py:1154
+#: aptkit/worker/aptworker.py:1063
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
@@ -1228,25 +1136,25 @@ msgstr ""
 "Dit pakket bevat geen geldig 'controleveld voor geïnstalleerde grootte'. Zie "
 "Debian Policy, artikel 5.6.20."
 
-#: ../aptkit/worker/aptworker.py:1293
+#: aptkit/worker/aptworker.py:1202
 msgid "The license key is empty"
 msgstr "De licentiesleutel is leeg"
 
-#: ../aptkit/worker/aptworker.py:1309
+#: aptkit/worker/aptworker.py:1218
 msgid "The license key is not allowed to contain executable code."
 msgstr "De licentiesleutel mag geen uitvoerbare code bevatten."
 
-#: ../aptkit/worker/aptworker.py:1318
+#: aptkit/worker/aptworker.py:1227
 #, python-format
 msgid "The license key path %s is invalid"
 msgstr "Het licentiesleutelpad %s is ongeldig"
 
-#: ../aptkit/worker/aptworker.py:1322
+#: aptkit/worker/aptworker.py:1231
 #, python-format
 msgid "The license key already exists: %s"
 msgstr "De licentiesleutel bestaat reeds: %s"
 
-#: ../aptkit/worker/aptworker.py:1327
+#: aptkit/worker/aptworker.py:1236
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
@@ -1255,41 +1163,41 @@ msgstr ""
 "De locatie van de licentiesleutel is onbeveiligd omdat zij symbolische "
 "koppelingen bevat. Pad %s verwijst naar %s"
 
-#: ../aptkit/worker/aptworker.py:1335
+#: aptkit/worker/aptworker.py:1244
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
 msgstr ""
 "De map waar de sleutel geïnstalleerd moet worden bestaat nog niet: %s"
 
-#: ../aptkit/worker/aptworker.py:1346
+#: aptkit/worker/aptworker.py:1255
 #, python-format
 msgid "Failed to write key file to: %s"
 msgstr "Schrijven van sleutelbestand naar %s is mislukt"
 
-#: ../aptkit/worker/aptworker.py:1381
+#: aptkit/worker/aptworker.py:1290
 msgid "The following packages have unmet dependencies:"
 msgstr "De volgende pakketten hebben niet-beschikbare afhankelijkheden:"
 
-#: ../aptkit/worker/aptworker.py:1434
+#: aptkit/worker/aptworker.py:1343
 msgid "but it is a virtual package"
 msgstr "maar het is een virtueel pakket"
 
-#: ../aptkit/worker/aptworker.py:1437
+#: aptkit/worker/aptworker.py:1346
 msgid "but it is not installed"
 msgstr "maar het is niet geïnstalleerd"
 
-#: ../aptkit/worker/aptworker.py:1439
+#: aptkit/worker/aptworker.py:1348
 msgid "but it is not going to be installed"
 msgstr "maar het zal niet worden geïnstalleerd"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptkit/worker/aptworker.py:1443
+#: aptkit/worker/aptworker.py:1352
 #, python-format
 msgid "but %s is installed"
 msgstr "maar %s is geïnstalleerd"
 
 #. TRANSLATORS: %s is a version number
-#: ../aptkit/worker/aptworker.py:1447
+#: aptkit/worker/aptworker.py:1356
 #, python-format
 msgid "but %s is to be installed"
 msgstr "maar %s zal worden geïnstalleerd"

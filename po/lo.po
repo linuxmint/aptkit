@@ -1,0 +1,1169 @@
+# Lao translation for linuxmint
+# Copyright (c) 2025 Rosetta Contributors and Canonical Ltd 2025
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2025-11-20 14:47+0000\n"
+"PO-Revision-Date: 2025-10-11 12:30+0000\n"
+"Last-Translator: boneni <Unknown>\n"
+"Language-Team: Lao <lo@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
+
+#: data/org.aptkit.policy.in:12
+msgid "List keys of trusted vendors"
+msgstr "ລາຍການຄີຂອງຜູ້ຂາຍທີ່ເຊື່ອຖືໄດ້"
+
+#: data/org.aptkit.policy.in:15
+msgid "To view the list of trusted keys, you need to authenticate."
+msgstr "ເພື່ອເບິ່ງລາຍການຄີທີ່ເຊື່ອຖືໄດ້, ທ່ານຈຳເປັນຕ້ອງຢືນຢັນຕົວຕົນ."
+
+#: data/org.aptkit.policy.in:26
+msgid "Remove downloaded package files"
+msgstr "ລຶບໄຟລ໌ແພັກເກັດທີ່ດາວໂຫຼດແລ້ວ"
+
+#: data/org.aptkit.policy.in:29
+msgid "To clean downloaded package files, you need to authenticate."
+msgstr "ເພື່ອລຶບໄຟລ໌ແພັກເກັດທີ່ດາວໂຫຼດແລ້ວ, ທ່ານຈຳເປັນຕ້ອງຢືນຢັນຕົວຕົນ."
+
+#: data/org.aptkit.policy.in:40
+msgid "Change software configuration"
+msgstr "ປ່ຽນການຕັ້ງຄ່າຊອບແວ"
+
+#: data/org.aptkit.policy.in:43
+msgid "To change software settings, you need to authenticate."
+msgstr "ເພື່ອປ່ຽນການຕັ້ງຄ່າຊອບແວ, ທ່ານຈຳເປັນຕ້ອງຢືນຢັນຕົວຕົນ."
+
+#: data/org.aptkit.policy.in:54
+msgid "Change software repository"
+msgstr "ປ່ຽນຄັງຊອບແວ"
+
+#: data/org.aptkit.policy.in:57
+msgid "To change software repository settings, you need to authenticate."
+msgstr "ເພື່ອປ່ຽນການຕັ້ງຄ່າຄັງຊອບແວ, ທ່ານຈຳເປັນຕ້ອງຢືນຢັນຕົວຕົນ."
+
+#: data/org.aptkit.policy.in:68
+msgid "Install package file"
+msgstr "ຕິດຕັ້ງໄຟລ໌ແພັກເກັດ"
+
+#: data/org.aptkit.policy.in:71
+msgid "To install this package, you need to authenticate."
+msgstr "ເພື່ອຕິດຕັ້ງແພັກເກັດນີ້, ທ່ານຈຳເປັນຕ້ອງຢືນຢັນຕົວຕົນ."
+
+#: data/org.aptkit.policy.in:82
+msgid "Update package information"
+msgstr "ອັບເດດຂໍ້ມູນແພັກເກັດ"
+
+#: data/org.aptkit.policy.in:85
+msgid "To update the software catalog, you need to authenticate."
+msgstr "ເພື່ອອັບເດດລາຍການຊອບແວ, ທ່ານຈຳເປັນຕ້ອງຢືນຢັນຕົວຕົນ."
+
+#: data/org.aptkit.policy.in:96
+msgid "Install or remove packages"
+msgstr "ຕິດຕັ້ງ ຫຼື ລຶບແພັກເກັດ"
+
+#: data/org.aptkit.policy.in:99
+msgid "To install or remove software, you need to authenticate."
+msgstr "ເພື່ອຕິດຕັ້ງ ຫຼື ລຶບຊອບແວ, ທ່ານຈຳເປັນຕ້ອງຢືນຢັນຕົວຕົນ."
+
+#. This priviledge will be requested when installing a package
+#. from a high trusted repository that can be explicitely whitelisted.
+#. 
+#. The defaults for this action are the same as
+#. "org.aptkit.install-or-remove-packages".
+#. 
+#. The admin can override them to e.g. allow passwordless installs for
+#. leightweight applications like unity-webapps or for packages
+#. comming from high trust repositories (like internal repositories)
+#: data/org.aptkit.policy.in:120
+msgid "Install software from a high-trust whitelisted repository."
+msgstr "ຕິດຕັ້ງຊອບແວຈາກຄັງທີ່ໄດ້ຮັບອະນຸຍາດ ແລະ ເຊື່ອຖືໄດ້ສູງ."
+
+#: data/org.aptkit.policy.in:123
+msgid "To install software, you need to authenticate."
+msgstr "ເພື່ອຕິດຕັ້ງຊອບແວ, ທ່ານຈຳເປັນຕ້ອງຢືນຢັນຕົວຕົນ."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#: data/org.aptkit.policy.in:139
+msgid "Add a new repository and install packages from it"
+msgstr "ເພີ່ມຄັງໃໝ່ ແລະ ຕິດຕັ້ງແພັກເກັດຈາກມັນ"
+
+#: data/org.aptkit.policy.in:142
+msgid "To install software from a new source, you need to authenticate."
+msgstr "ເພື່ອຕິດຕັ້ງຊອບແວຈາກແຫຼ່ງໃໝ່, ທ່ານຈຳເປັນຕ້ອງຢືນຢັນຕົວຕົນ."
+
+#. This privilege allows to call AddRepository, UpdateCache(Partially)
+#. and InstallPackages in a row and only authenticating once.
+#. 
+#. The client has to authenticate for this privilege before calling
+#. the aptkit methods.
+#. 
+#. The only difference to install-packages-from-new-repo is the wording
+#. of the message. It is required by Ubuntu's Software-Center.
+#: data/org.aptkit.policy.in:161
+msgid ""
+"Add a new repository of purchased software and install packages from it"
+msgstr "ເພີ່ມຄັງໃໝ່ຂອງຊອບແວທີ່ຊື້ມາ ແລະ ຕິດຕັ້ງແພັກເກັດຈາກມັນ"
+
+#: data/org.aptkit.policy.in:164
+msgid "To install purchased software, you need to authenticate."
+msgstr "ເພື່ອຕິດຕັ້ງຊອບແວທີ່ຊື້ມາ, ທ່ານຈຳເປັນຕ້ອງຢືນຢັນຕົວຕົນ."
+
+#: data/org.aptkit.policy.in:175
+msgid "Upgrade packages"
+msgstr "ອັບເກຣດແພັກເກັດ"
+
+#: data/org.aptkit.policy.in:178
+msgid "To install updated software, you need to authenticate."
+msgstr "ເພື່ອຕິດຕັ້ງຊອບແວທີ່ອັບເດດແລ້ວ, ທ່ານຈຳເປັນຕ້ອງຢືນຢັນຕົວຕົນ."
+
+#: data/org.aptkit.policy.in:187
+msgid "Cancel the task of another user"
+msgstr "ຍົກເລີກໜ້າວຽກຂອງຜູ້ໃຊ້ອື່ນ"
+
+#: data/org.aptkit.policy.in:190
+msgid "To cancel someone else's software changes, you need to authenticate."
+msgstr "ເພື່ອຍົກເລີກການປ່ຽນແປງຊອບແວຂອງຄົນອື່ນ, ທ່ານຈຳເປັນຕ້ອງຢືນຢັນຕົວຕົນ."
+
+#: data/org.aptkit.policy.in:201
+msgid "Set a proxy for software downloads"
+msgstr "ຕັ້ງຄ່າພຣັອກຊີສຳລັບການດາວໂຫຼດຊອບແວ"
+
+#: data/org.aptkit.policy.in:204
+msgid ""
+"To use a proxy server for downloading software, you need to authenticate."
+msgstr "ເພື່ອໃຊ້ເຊີບເວີພຣັອກຊີໃນການດາວໂຫຼດຊອບແວ, ທ່ານຈຳເປັນຕ້ອງຢືນຢັນຕົວຕົນ."
+
+#: aptkit/core.py:2030
+msgid "Do not shutdown the daemon because of inactivity"
+msgstr "ບໍ່ໃຫ້ປິດການເຮັດວຽກຂອງເດມອນເນື່ອງຈາກບໍ່ມີການເຄື່ອນໄຫວ"
+
+#: aptkit/core.py:2035
+msgid "Do not load any plugins"
+msgstr "ບໍ່ຕ້ອງໂຫຼດປລັກອິນໃດໆ"
+
+#: aptkit/core.py:2039
+msgid "Show internal processing information"
+msgstr "ສະແດງຂໍ້ມູນການປະມວນຜົນພາຍໃນ"
+
+#: aptkit/core.py:2044
+msgid "Quit and replace an already running daemon"
+msgstr "ອອກ ແລະ ແທນທີ່ເດມອນທີ່ກຳລັງເຮັດວຽກຢູ່"
+
+#: aptkit/core.py:2049
+msgid "Listen on the DBus session bus (Only required for testing"
+msgstr "ຟັງຢູ່ເທິງບັສເຊດຊັນ DBus (ຕ້ອງການສຳລັບການທົດສອບເທົ່ານັ້ນ"
+
+#: aptkit/core.py:2053
+msgid "Perform operations in the given chroot"
+msgstr "ປະຕິບັດງານໃນ chroot ທີ່ກຳນົດໃຫ້"
+
+#: aptkit/core.py:2058
+msgid "Store profile stats in the specified file"
+msgstr "ເກັບສະຖິຕິໂປຣໄຟລ໌ໃນໄຟລ໌ທີ່ລະບຸ"
+
+#: aptkit/core.py:2063
+msgid "Do not make any changes to the system (Only of use to developers)"
+msgstr "ບໍ່ໃຫ້ມີການປ່ຽນແປງໃດໆຕໍ່ລະບົບ (ໃຊ້ສຳລັບນັກພັດທະນາເທົ່ານັ້ນ)"
+
+#: aptkit/enums.py:311
+msgid "Installed file"
+msgstr "ໄຟລ໌ທີ່ຕິດຕັ້ງແລ້ວ"
+
+#: aptkit/enums.py:312
+msgid "Installed packages"
+msgstr "ແພັກເກັດທີ່ຕິດຕັ້ງແລ້ວ"
+
+#: aptkit/enums.py:313
+msgid "Updated cache"
+msgstr "ອັບເດດແຄດແລ້ວ"
+
+#: aptkit/enums.py:314
+msgid "Search done"
+msgstr "ຄົ້ນຫາສຳເລັດ"
+
+#: aptkit/enums.py:315
+msgid "Removed packages"
+msgstr "ລຶບແພັກເກັດ"
+
+#: aptkit/enums.py:316
+msgid "Updated packages"
+msgstr "ອັບເດດແພັກເກັດ"
+
+#: aptkit/enums.py:317
+msgid "Upgraded system"
+msgstr "ອັບເກຣດລະບົບ"
+
+#: aptkit/enums.py:318
+msgid "Applied changes"
+msgstr "ນຳໃຊ້ການປ່ຽນແປງ"
+
+#: aptkit/enums.py:319
+msgid "Repaired incomplete installation"
+msgstr "ສ້ອມແປງການຕິດຕັ້ງທີ່ບໍ່ສົມບູນ"
+
+#: aptkit/enums.py:320
+msgid "Repaired broken dependencies"
+msgstr "ສ້ອມແປງສ່ວນປະກອບທີ່ຂາດຫາຍ"
+
+#: aptkit/enums.py:321
+msgid "Added software source"
+msgstr "ເພີ່ມແຫຼ່ງຊອບແວ"
+
+#: aptkit/enums.py:322
+msgid "Enabled component of the distribution"
+msgstr "ເປີດໃຊ້ສ່ວນປະກອບຂອງການແຈກຢາຍ"
+
+#: aptkit/enums.py:323
+msgid "Removed downloaded package files"
+msgstr "ລຶບໄຟລ໌ແພັກເກັດທີ່ດາວໂຫຼດແລ້ວ"
+
+#: aptkit/enums.py:324
+msgid "Reconfigured installed packages"
+msgstr "ຕັ້ງຄ່າແພັກເກັດທີ່ຕິດຕັ້ງແລ້ວໃໝ່"
+
+#: aptkit/enums.py:328
+msgid "Successful"
+msgstr "ສຳເລັດ"
+
+#: aptkit/enums.py:329
+msgid "Canceled"
+msgstr "ຍົກເລີກ"
+
+#: aptkit/enums.py:330 aptkit/enums.py:529
+msgid "Failed"
+msgstr "ລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:333
+msgid "Installing file"
+msgstr "ກຳລັງຕິດຕັ້ງໄຟລ໌"
+
+#: aptkit/enums.py:334
+msgid "Installing packages"
+msgstr "ກຳລັງຕິດຕັ້ງແພັກເກັດ"
+
+#: aptkit/enums.py:335
+msgid "Updating cache"
+msgstr "ກຳລັງອັບເດດແຄດ"
+
+#: aptkit/enums.py:336
+msgid "Removing packages"
+msgstr "ກຳລັງລຶບແພັກເກັດ"
+
+#: aptkit/enums.py:337
+msgid "Updating packages"
+msgstr "ກຳລັງອັບເດດແພັກເກັດ"
+
+#: aptkit/enums.py:338
+msgid "Upgrading system"
+msgstr "ກຳລັງອັບເກຣດລະບົບ"
+
+#: aptkit/enums.py:339 aptkit/enums.py:488
+msgid "Applying changes"
+msgstr "ກຳລັງນຳໃຊ້ການປ່ຽນແປງ"
+
+#: aptkit/enums.py:340
+msgid "Repairing incomplete installation"
+msgstr "ກຳລັງສ້ອມແປງການຕິດຕັ້ງທີ່ບໍ່ສົມບູນ"
+
+#: aptkit/enums.py:341
+msgid "Repairing installed software"
+msgstr "ກຳລັງສ້ອມແປງຊອບແວທີ່ຕິດຕັ້ງແລ້ວ"
+
+#: aptkit/enums.py:342
+msgid "Adding software source"
+msgstr "ກຳລັງເພີ່ມແຫຼ່ງຊອບແວ"
+
+#: aptkit/enums.py:343
+msgid "Enabling component of the distribution"
+msgstr "ກຳລັງເປີດໃຊ້ສ່ວນປະກອບຂອງການແຈກຢາຍ"
+
+#: aptkit/enums.py:344
+msgid "Removing downloaded package files"
+msgstr "ກຳລັງລຶບໄຟລ໌ແພັກເກັດທີ່ດາວໂຫຼດແລ້ວ"
+
+#: aptkit/enums.py:345
+msgid "Reconfiguring installed packages"
+msgstr "ກຳລັງຕັ້ງຄ່າແພັກເກັດທີ່ຕິດຕັ້ງແລ້ວໃໝ່"
+
+#: aptkit/enums.py:346 aptkit/enums.py:477
+msgid "Searching"
+msgstr "ກຳລັງຄົ້ນຫາ"
+
+#: aptkit/enums.py:350
+msgid "Installation of the package file failed"
+msgstr "ການຕິດຕັ້ງໄຟລ໌ແພັກເກັດລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:351
+msgid "Installation of software failed"
+msgstr "ການຕິດຕັ້ງຊອບແວລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:352
+msgid "Refreshing the software list failed"
+msgstr "ການໂຫຼດລາຍການຊອບແວໃໝ່ລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:353
+msgid "Removing software failed"
+msgstr "ການລຶບຊອບແວລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:354
+msgid "Updating software failed"
+msgstr "ການອັບເດດຊອບແວລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:355
+msgid "Upgrading the system failed"
+msgstr "ການອັບເກຣດລະບົບລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:356
+msgid "Applying software changes failed"
+msgstr "ການນຳໃຊ້ການປ່ຽນແປງຊອບແວລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:357
+msgid "Repairing incomplete installation failed"
+msgstr "ການສ້ອມແປງການຕິດຕັ້ງທີ່ບໍ່ສົມບູນລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:359
+msgid "Repairing broken dependencies failed"
+msgstr "ການສ້ອມແປງສ່ວນປະກອບທີ່ຂາດຫາຍລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:360
+msgid "Adding software source failed"
+msgstr "ການເພີ່ມແຫຼ່ງຊອບແວລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:361
+msgid "Enabling component of the distribution failed"
+msgstr "ການເປີດໃຊ້ສ່ວນປະກອບຂອງການແຈກຢາຍລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:363 aptkit/enums.py:364
+msgid "Removing downloaded package files failed"
+msgstr "ການລຶບໄຟລ໌ແພັກເກັດທີ່ດາວໂຫຼດແລ້ວລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:365
+msgid "Search failed"
+msgstr "ການຄົ້ນຫາລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:366
+msgid "Adding license key"
+msgstr "ກຳລັງເພີ່ມຄີໃບອະນຸຍາດ"
+
+#: aptkit/enums.py:370 aptkit/enums.py:371
+msgid "Check your Internet connection."
+msgstr "ກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດຂອງທ່ານ."
+
+#: aptkit/enums.py:372
+msgid ""
+"Check if you are using third party repositories. If so disable them, since "
+"they are a common source of problems.\n"
+"Furthermore run the following command in a Terminal: apt-get install -f"
+msgstr ""
+"ກວດສອບເບິ່ງວ່າທ່ານກຳລັງໃຊ້ຄັງຊອບແວຂອງບຸກຄົນທີສາມຫຼືບໍ່. ຖ້າແມ່ນ, "
+"ໃຫ້ປິດມັນໄວ້ ເພາະມັນມັກເປັນສາເຫດຂອງບັນຫາ.\n"
+"ນອກຈາກນີ້, ໃຫ້ແລ່ນຄຳສັ່ງຕໍ່ໄປນີ້ໃນ Terminal: apt-get install -f"
+
+#: aptkit/enums.py:377
+msgid ""
+"Check if you are currently running another software management tool, e.g. "
+"Synaptic or aptitude. Only one tool is allowed to make changes at a time."
+msgstr ""
+"ກວດສອບເບິ່ງວ່າທ່ານກຳລັງເປີດໃຊ້ເຄື່ອງມືຈັດການຊອບແວອື່ນຢູ່ຫຼືບໍ່, ເຊັ່ນ "
+"Synaptic ຫຼື aptitude. "
+"ສາມາດມີພຽງເຄື່ອງມືດຽວເທົ່ານັ້ນທີ່ສາມາດປ່ຽນແປງໄດ້ໃນແຕ່ລະຄັ້ງ."
+
+#: aptkit/enums.py:380
+msgid ""
+"This is a serious problem. Try again later. If this problem appears again, "
+"please report an error to the developers."
+msgstr ""
+"ນີ້ແມ່ນບັນຫາທີ່ຮ້າຍແຮງ. ກະລຸນາລອງໃໝ່ອີກຄັ້ງພາຍຫຼັງ. "
+"ຖ້າບັນຫານີ້ຍັງເກີດຂຶ້ນອີກ, ກະລຸນາລາຍງານຂໍ້ຜິດພາດໃຫ້ນັກພັດທະນາຮັບຊາບ."
+
+#: aptkit/enums.py:383
+msgid ""
+"Check the spelling of the package name, and that the appropriate repository "
+"is enabled."
+msgstr ""
+"ກວດສອບການສະກົດຊື່ແພັກເກັດ ແລະ "
+"ກວດສອບວ່າຄັງຊອບແວທີ່ເໝາະສົມໄດ້ຖືກເປີດໃຊ້ງານແລ້ວ."
+
+#: aptkit/enums.py:385
+msgid "There isn't any need for an update."
+msgstr "ບໍ່ມີຄວາມຈຳເປັນຕ້ອງອັບເດດ."
+
+#: aptkit/enums.py:386
+msgid "There isn't any need for an installation"
+msgstr "ບໍ່ມີຄວາມຈຳເປັນຕ້ອງຕິດຕັ້ງ"
+
+#: aptkit/enums.py:388
+msgid "There isn't any need for a removal."
+msgstr "ບໍ່ມີຄວາມຈຳເປັນຕ້ອງລຶບ."
+
+#: aptkit/enums.py:389
+msgid ""
+"You requested to remove a package which is an essential part of your system."
+msgstr "ທ່ານໄດ້ຮ້ອງຂໍໃຫ້ລຶບແພັກເກັດທີ່ເປັນສ່ວນສຳຄັນຂອງລະບົບຂອງທ່ານ."
+
+#: aptkit/enums.py:392
+msgid ""
+"The connection to the daemon was lost. Most likely the background daemon "
+"crashed."
+msgstr ""
+"ການເຊື່ອມຕໍ່ກັບເດມອນໄດ້ຂາດຫາຍໄປ. "
+"ເປັນໄປໄດ້ວ່າເດມອນທີ່ເຮັດວຽກເບື້ອງຫຼັງໄດ້ຂັດຂ້ອງ."
+
+#: aptkit/enums.py:394
+msgid "The installation or removal of a software package failed."
+msgstr "ການຕິດຕັ້ງ ຫຼື ລຶບແພັກເກັດຊອບແວລົ້ມເຫຼວ."
+
+#: aptkit/enums.py:396
+msgid "The requested feature is not supported."
+msgstr "ຄຸນສົມບັດທີ່ຮ້ອງຂໍບໍ່ໄດ້ຮັບການຮອງຮັບ."
+
+#: aptkit/enums.py:397
+msgid ""
+"There seems to be a programming error in aptkit, the software that allows "
+"you to install/remove software and to perform other package management "
+"related tasks."
+msgstr ""
+"ເບິ່ງຄືວ່າມີຂໍ້ຜິດພາດໃນການຂຽນໂປຣແກຣມຂອງ aptkit, "
+"ເຊິ່ງເປັນຊອບແວທີ່ອະນຸຍາດໃຫ້ທ່ານຕິດຕັ້ງ/ລຶບຊອບແວ ແລະ "
+"ປະຕິບັດງານອື່ນໆທີ່ກ່ຽວຂ້ອງກັບການຈັດການແພັກເກັດ."
+
+#: aptkit/enums.py:401
+msgid ""
+"This error could be caused by required additional software packages which "
+"are missing or not installable. Furthermore there could be a conflict "
+"between software packages which are not allowed to be installed at the same "
+"time."
+msgstr ""
+"ຂໍ້ຜິດພາດນີ້ອາດເກີດຈາກແພັກເກັດຊອບແວເພີ່ມເຕີມທີ່ຈຳເປັນແຕ່ຂາດຫາຍໄປ ຫຼື "
+"ບໍ່ສາມາດຕິດຕັ້ງໄດ້. ນອກຈາກນີ້, "
+"ອາດຈະມີການຂັດກັນລະຫວ່າງແພັກເກັດຊອບແວທີ່ບໍ່ອະນຸຍາດໃຫ້ຕິດຕັ້ງພ້ອມກັນ."
+
+#: aptkit/enums.py:407
+msgid "This requires installing packages from unauthenticated sources."
+msgstr ""
+"ການດຳເນີນການນີ້ຕ້ອງການການຕິດຕັ້ງແພັກເກັດຈາກແຫຼ່ງທີ່ບໍ່ໄດ້ຮັບການຢືນຢັນ."
+
+#: aptkit/enums.py:409
+msgid ""
+"The installation could have failed because of an error in the corresponding "
+"software package or it was cancelled in an unfriendly way. You have to "
+"repair this before you can install or remove any further software."
+msgstr ""
+"ການຕິດຕັ້ງອາດລົ້ມເຫຼວຍ້ອນຂໍ້ຜິດພາດໃນແພັກເກັດຊອບແວທີ່ກ່ຽວຂ້ອງ ຫຼື "
+"ຖືກຍົກເລີກແບບກະທັນຫັນ. ທ່ານຕ້ອງສ້ອມແປງບັນຫານີ້ກ່ອນຈຶ່ງຈະສາມາດຕິດຕັ້ງ ຫຼື "
+"ລຶບຊອບແວອື່ນໆຕໍ່ໄປໄດ້."
+
+#: aptkit/enums.py:415
+msgid ""
+"Please copy the file to your local computer and check the file permissions."
+msgstr "ກະລຸນາສຳເນົາໄຟລ໌ໄປຍັງຄອມພິວເຕີຂອງທ່ານ ແລະ ກວດສອບສິດການເຂົ້າເຖິງໄຟລ໌."
+
+#: aptkit/enums.py:418
+msgid ""
+"The installation of a package which violates the quality standards isn't "
+"allowed. This could cause serious problems on your computer. Please contact "
+"the person or organisation who provided this package file and include the "
+"details beneath."
+msgstr ""
+"ບໍ່ອະນຸຍາດໃຫ້ຕິດຕັ້ງແພັກເກັດທີ່ລະເມີດມາດຕະຖານຄຸນນະພາບ. "
+"ການກະທຳນີ້ອາດກໍ່ໃຫ້ເກີດບັນຫາຮ້າຍແຮງຕໍ່ຄອມພິວເຕີຂອງທ່ານ. ກະລຸນາຕິດຕໍ່ບຸກຄົນ "
+"ຫຼື ອົງກອນທີ່ສະໜອງໄຟລ໌ແພັກເກັດນີ້ ແລະ ແຈ້ງລາຍລະອຽດຂ້າງລຸ່ມນີ້."
+
+#: aptkit/enums.py:425
+msgid ""
+"The downloaded license key which is required to run this piece of software "
+"is not valid or could not be installed correctly.\n"
+"See the details for more information."
+msgstr ""
+"ຄີໃບອະນຸຍາດທີ່ດາວໂຫຼດມາເຊິ່ງຈຳເປັນໃນການເປີດໃຊ້ຊອບແວນີ້ບໍ່ຖືກຕ້ອງ ຫຼື "
+"ບໍ່ສາມາດຕິດຕັ້ງໄດ້ຢ່າງຖືກຕ້ອງ.\n"
+"ເບິ່ງລາຍລະອຽດສຳລັບຂໍ້ມູນເພີ່ມເຕີມ."
+
+#: aptkit/enums.py:431
+msgid "All available upgrades have already been installed."
+msgstr "ການອັບເກຣດທີ່ມີທັງໝົດໄດ້ຖືກຕິດຕັ້ງແລ້ວ."
+
+#: aptkit/enums.py:433
+msgid ""
+"The license key which allows you to use this piece of software could not be "
+"downloaded. Please check your network connection."
+msgstr ""
+"ບໍ່ສາມາດດາວໂຫຼດຄີໃບອະນຸຍາດທີ່ອະນຸຍາດໃຫ້ທ່ານໃຊ້ຊອບແວນີ້ໄດ້. "
+"ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ເຄືອຂ່າຍຂອງທ່ານ."
+
+#: aptkit/enums.py:437
+msgid "You don't have the required privileges to perform this action."
+msgstr "ທ່ານບໍ່ມີສິດທີ່ຈຳເປັນເພື່ອດຳເນີນການນີ້."
+
+#: aptkit/enums.py:439
+msgid ""
+"You either provided a wrong password or cancelled the authorization.\n"
+"Furthermore there could also be a technical reason for this error if you "
+"haven't seen a password dialog: your desktop environment doesn't provide a "
+"PolicyKit session agent."
+msgstr ""
+"ທ່ານອາດຈະປ້ອນລະຫັດຜ່ານຜິດ ຫຼື ຍົກເລີກການອະນຸຍາດ.\n"
+"ນອກຈາກນີ້, ອາດມີເຫດຜົນທາງເທັກນິກສຳລັບຂໍ້ຜິດພາດນີ້ "
+"ຖ້າທ່ານບໍ່ເຫັນກ່ອງຂໍ້ຄວາມລະຫັດຜ່ານ: "
+"ສະພາບແວດລ້ອມເດັສທັອບຂອງທ່ານບໍ່ໄດ້ສະໜອງຕົວແທນ PolicyKit session."
+
+#: aptkit/enums.py:447
+msgid "Failed to download package files"
+msgstr "ດາວໂຫຼດໄຟລ໌ແພັກເກັດລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:448
+msgid "Failed to download repository information"
+msgstr "ດາວໂຫຼດຂໍ້ມູນຄັງຊອບແວລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:450
+msgid "Package dependencies cannot be resolved"
+msgstr "ບໍ່ສາມາດແກ້ໄຂສ່ວນປະກອບຂອງແພັກເກັດໄດ້"
+
+#: aptkit/enums.py:451
+msgid "The package system is broken"
+msgstr "ລະບົບແພັກເກັດເສຍຫາຍ"
+
+#: aptkit/enums.py:452
+msgid "Failed to lock the package manager"
+msgstr "ລັອກຕົວຈັດການແພັກເກັດລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:453
+msgid "Failed to load the package list"
+msgstr "ໂຫຼດລາຍການແພັກເກັດລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:454
+msgid "Package does not exist"
+msgstr "ແພັກເກັດບໍ່ມີຢູ່"
+
+#: aptkit/enums.py:455
+msgid "Package is already up to date"
+msgstr "ແພັກເກັດເປັນເວີຊັນຫຼ້າສຸດແລ້ວ"
+
+#: aptkit/enums.py:456
+msgid "Package is already installed"
+msgstr "ແພັກເກັດໄດ້ຖືກຕິດຕັ້ງແລ້ວ"
+
+#: aptkit/enums.py:457
+msgid "Package isn't installed"
+msgstr "ແພັກເກັດຍັງບໍ່ໄດ້ຖືກຕິດຕັ້ງ"
+
+#: aptkit/enums.py:458
+msgid "Failed to remove essential system package"
+msgstr "ລຶບແພັກເກັດລະບົບທີ່ສຳຄັນລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:460
+msgid "Task cannot be monitored or controlled"
+msgstr "ບໍ່ສາມາດຕິດຕາມ ຫຼື ຄວບຄຸມໜ້າວຽກໄດ້"
+
+#: aptkit/enums.py:461
+msgid "Package operation failed"
+msgstr "ການປະຕິບັດງານແພັກເກັດລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:462
+msgid "Requires installation of untrusted packages"
+msgstr "ຕ້ອງການການຕິດຕັ້ງແພັກເກັດທີ່ບໍ່ໜ້າເຊື່ອຖື"
+
+#: aptkit/enums.py:464
+msgid "Previous installation hasn't been completed"
+msgstr "ການຕິດຕັ້ງຄັ້ງກ່ອນຍັງບໍ່ສຳເລັດ"
+
+#: aptkit/enums.py:465
+msgid "The package is of bad quality"
+msgstr "ແພັກເກັດມີຄຸນນະພາບຕ່ຳ"
+
+#: aptkit/enums.py:466
+msgid "Package file could not be opened"
+msgstr "ບໍ່ສາມາດເປີດໄຟລ໌ແພັກເກັດໄດ້"
+
+#: aptkit/enums.py:467
+msgid "Not supported feature"
+msgstr "ຄຸນສົມບັດບໍ່ຮອງຮັບ"
+
+#: aptkit/enums.py:468
+msgid "Failed to download the license key"
+msgstr "ດາວໂຫຼດຄີໃບອະນຸຍາດລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:469
+msgid "Failed to install the license key"
+msgstr "ຕິດຕັ້ງຄີໃບອະນຸຍາດລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:470
+msgid "The system is already up to date"
+msgstr "ລະບົບເປັນເວີຊັນຫຼ້າສຸດແລ້ວ"
+
+#: aptkit/enums.py:471
+msgid "You could not be authorized"
+msgstr "ທ່ານບໍ່ສາມາດໄດ້ຮັບການອະນຸຍາດ"
+
+#: aptkit/enums.py:472
+msgid "You are not allowed to perform this action"
+msgstr "ທ່ານບໍ່ໄດ້ຮັບອະນຸຍາດໃຫ້ດຳເນີນການນີ້"
+
+#: aptkit/enums.py:473
+msgid "An unhandlable error occured"
+msgstr "ເກີດຂໍ້ຜິດພາດທີ່ບໍ່ສາມາດຈັດການໄດ້"
+
+#: aptkit/enums.py:476
+msgid "Waiting for service to start"
+msgstr "ກຳລັງລໍຖ້າໃຫ້ບໍລິການເລີ່ມຕົ້ນ"
+
+#: aptkit/enums.py:478
+msgid "Waiting"
+msgstr "ກຳລັງລໍຖ້າ"
+
+#: aptkit/enums.py:479
+msgid "Waiting for required medium"
+msgstr "ກຳລັງລໍຖ້າສື່ທີ່ຕ້ອງການ"
+
+#: aptkit/enums.py:480
+msgid "Waiting for other software managers to quit"
+msgstr "ກຳລັງລໍຖ້າໃຫ້ຕົວຈັດການຊອບແວອື່ນອອກກ່ອນ"
+
+#: aptkit/enums.py:481
+msgid "Waiting for configuration file prompt"
+msgstr "ກຳລັງລໍຖ້າຂໍ້ຄວາມແຈ້ງເຕືອນຂອງໄຟລ໌ຕັ້ງຄ່າ"
+
+#: aptkit/enums.py:483
+msgid "Running task"
+msgstr "ກຳລັງດຳເນີນໜ້າວຽກ"
+
+#: aptkit/enums.py:484
+msgid "Downloading"
+msgstr "ກຳລັງດາວໂຫຼດ"
+
+#: aptkit/enums.py:485
+msgid "Querying software sources"
+msgstr "ກຳລັງສອບຖາມແຫຼ່ງຊອບແວ"
+
+#: aptkit/enums.py:486
+msgid "Cleaning up"
+msgstr "ກຳລັງລ້າງຂໍ້ມູນ"
+
+#: aptkit/enums.py:487
+msgid "Resolving dependencies"
+msgstr "ກຳລັງແກ້ໄຂສ່ວນປະກອບ"
+
+#: aptkit/enums.py:489
+msgid "Finished"
+msgstr "ສຳເລັດແລ້ວ"
+
+#: aptkit/enums.py:490
+msgid "Cancelling"
+msgstr "ກຳລັງຍົກເລີກ"
+
+#: aptkit/enums.py:491
+msgid "Loading software list"
+msgstr "ກຳລັງໂຫຼດລາຍການຊອບແວ"
+
+#: aptkit/enums.py:492
+msgid "Waiting for authentication"
+msgstr "ກຳລັງລໍຖ້າການຢືນຢັນຕົວຕົນ"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:496
+#, python-format
+msgid "Installing %s"
+msgstr "ກຳລັງຕິດຕັ້ງ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:498
+#, python-format
+msgid "Configuring %s"
+msgstr "ກຳລັງຕັ້ງຄ່າ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:500
+#, python-format
+msgid "Removing %s"
+msgstr "ກຳລັງລຶບ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:502
+#, python-format
+msgid "Completely removing %s"
+msgstr "ກຳລັງລຶບ %s ອອກທັງໝົດ"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:504
+#, python-format
+msgid "Noting disappearance of %s"
+msgstr "ກຳລັງບັນທຶກການຫາຍໄປຂອງ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:506
+#, python-format
+msgid "Running post-installation trigger %s"
+msgstr "ກຳລັງແລ່ນທຣິກເກີຫຼັງຕິດຕັ້ງ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:508
+#, python-format
+msgid "Upgrading %s"
+msgstr "ກຳລັງອັບເກຣດ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:510
+#, python-format
+msgid "Unpacking %s"
+msgstr "ກຳລັງແຕກໄຟລ໌ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:512
+#, python-format
+msgid "Preparing installation of %s"
+msgstr "ກຳລັງກະກຽມຕິດຕັ້ງ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:514
+#, python-format
+msgid "Preparing configuration of %s"
+msgstr "ກຳລັງກະກຽມຕັ້ງຄ່າ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:516
+#, python-format
+msgid "Preparing removal of %s"
+msgstr "ກຳລັງກະກຽມລຶບ %s"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:518
+#, python-format
+msgid "Preparing complete removal of %s"
+msgstr "ກຳລັງກະກຽມລຶບ %s ອອກທັງໝົດ"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:520
+#, python-format
+msgid "Installed %s"
+msgstr "ຕິດຕັ້ງ %s ແລ້ວ"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:522
+#, python-format
+msgid "Completely removed %s"
+msgstr "ລຶບ %s ອອກທັງໝົດແລ້ວ"
+
+#. TRANSLATORS: %s is the name of a package
+#: aptkit/enums.py:524
+#, python-format
+msgid "Removed %s"
+msgstr "ລຶບ %s ແລ້ວ"
+
+#: aptkit/enums.py:527
+msgid "Done"
+msgstr "ສຳເລັດ"
+
+#: aptkit/enums.py:528
+msgid "Authentication failed"
+msgstr "ການຢືນຢັນຕົວຕົນລົ້ມເຫຼວ"
+
+#: aptkit/enums.py:530
+msgid "Fetching"
+msgstr "ກຳລັງດຶງຂໍ້ມູນ"
+
+#: aptkit/enums.py:531
+msgid "Idle"
+msgstr "ຢູ່ຊື່ໆ"
+
+#: aptkit/enums.py:532
+msgid "Network isn't available"
+msgstr "ເຄືອຂ່າຍບໍ່ສາມາດໃຊ້ງານໄດ້"
+
+#: aptkit/enums.py:652
+#, python-format
+msgid "Processing %s"
+msgstr "ກຳລັງປະມວນຜົນ %s"
+
+#: aptkit/gtk3widgets.py:230
+#, python-format
+msgid "Downloaded %sB of %sB at %sB/s"
+msgstr "ດາວໂຫຼດແລ້ວ %sB ຈາກ %sB ດ້ວຍຄວາມໄວ %sB/s"
+
+#: aptkit/gtk3widgets.py:235 aptkit/gtk3widgets.py:436
+#, python-format
+msgid "Downloaded %sB of %sB"
+msgstr "ດາວໂຫຼດແລ້ວ %sB ຈາກ %sB"
+
+#: aptkit/gtk3widgets.py:247
+msgid "Details"
+msgstr "ລາຍລະອຽດ"
+
+#: aptkit/gtk3widgets.py:400
+msgid "File"
+msgstr "ໄຟລ໌"
+
+#. TRANSLATORS: header of the progress download column
+#: aptkit/gtk3widgets.py:405
+msgid "%"
+msgstr "%"
+
+#: aptkit/gtk3widgets.py:441
+#, python-format
+msgid "Downloaded %sB"
+msgstr "ດາວໂຫຼດແລ້ວ %sB"
+
+#: aptkit/gtk3widgets.py:444
+msgid "Downloaded"
+msgstr "ດາວໂຫຼດແລ້ວ"
+
+#. TRANSLATORS: %s represents the name of a CD or DVD
+#: aptkit/gtk3widgets.py:787
+#, python-format
+msgid "CD/DVD '%s' is required"
+msgstr "ຕ້ອງການ CD/DVD '%s'"
+
+#. TRANSLATORS: %s is the name of the CD/DVD drive
+#: aptkit/gtk3widgets.py:789
+#, python-format
+msgid ""
+"Please insert the above CD/DVD into the drive '%s' to install software "
+"packages from it."
+msgstr ""
+"ກະລຸນາໃສ່ CD/DVD ຂ້າງເທິງເຂົ້າໃນໄດຣຟ໌ '%s' ເພື່ອຕິດຕັ້ງແພັກເກັດຊອບແວຈາກມັນ."
+
+#: aptkit/gtk3widgets.py:793 aptkit/gtk3widgets.py:815
+msgid "C_ontinue"
+msgstr "ດຳເນີນ_ຕໍ່"
+
+#: aptkit/gtk3widgets.py:866
+msgid "Install"
+msgstr "ຕິດຕັ້ງ"
+
+#: aptkit/gtk3widgets.py:867
+msgid "Reinstall"
+msgstr "ຕິດຕັ້ງໃໝ່"
+
+#: aptkit/gtk3widgets.py:868
+msgid "Remove"
+msgstr "ລຶບ"
+
+#: aptkit/gtk3widgets.py:869
+msgid "Purge"
+msgstr "ລຶບຖາວອນ"
+
+#: aptkit/gtk3widgets.py:870
+msgid "Upgrade"
+msgstr "ອັບເກຣດ"
+
+#: aptkit/gtk3widgets.py:871
+msgid "Downgrade"
+msgstr "ດາວເກຣດ"
+
+#: aptkit/gtk3widgets.py:872
+msgid "Skip upgrade"
+msgstr "ຂ້າມການອັບເກຣດ"
+
+#: aptkit/gtk3widgets.py:883
+msgid "Please take a look at the list of changes below."
+msgstr "ກະລຸນາເບິ່ງລາຍການການປ່ຽນແປງຂ້າງລຸ່ມນີ້."
+
+#: aptkit/gtk3widgets.py:891
+msgid "Additional software has to be installed"
+msgstr "ຕ້ອງຕິດຕັ້ງຊອບແວເພີ່ມເຕີມ"
+
+#: aptkit/gtk3widgets.py:893
+msgid "Additional software has to be re-installed"
+msgstr "ຕ້ອງຕິດຕັ້ງຊອບແວເພີ່ມເຕີມໃໝ່"
+
+#: aptkit/gtk3widgets.py:895
+msgid "Additional software has to be removed"
+msgstr "ຕ້ອງລຶບຊອບແວເພີ່ມເຕີມ"
+
+#: aptkit/gtk3widgets.py:897
+msgid "Additional software has to be purged"
+msgstr "ຕ້ອງລຶບຊອບແວເພີ່ມເຕີມອອກຖາວອນ"
+
+#: aptkit/gtk3widgets.py:899
+msgid "Additional software has to be upgraded"
+msgstr "ຕ້ອງອັບເກຣດຊອບແວເພີ່ມເຕີມ"
+
+#: aptkit/gtk3widgets.py:901
+msgid "Additional software has to be downgraded"
+msgstr "ຕ້ອງດາວເກຣດຊອບແວເພີ່ມເຕີມ"
+
+#: aptkit/gtk3widgets.py:903
+msgid "Updates will be skipped"
+msgstr "ການອັບເດດຈະຖືກຂ້າມໄປ"
+
+#: aptkit/gtk3widgets.py:911
+msgid "Additional changes are required"
+msgstr "ຕ້ອງການການປ່ຽນແປງເພີ່ມເຕີມ"
+
+#: aptkit/gtk3widgets.py:916
+#, python-format
+msgid "%sB will be downloaded in total."
+msgstr "ຈະດາວໂຫຼດທັງໝົດ %sB."
+
+#: aptkit/gtk3widgets.py:920
+#, python-format
+msgid "%sB of disk space will be freed."
+msgstr "ຈະມີພື້ນທີ່ຫວ່າງໃນດິສເພີ່ມຂຶ້ນ %sB."
+
+#: aptkit/gtk3widgets.py:924
+#, python-format
+msgid "%sB more disk space will be used."
+msgstr "ຈະໃຊ້ພື້ນທີ່ໃນດິສເພີ່ມຂຶ້ນ %sB."
+
+#. TRANSLATORS: %s is a file path
+#: aptkit/gtk3widgets.py:983
+#, python-format
+msgid ""
+"Replace your changes in '%s' with a later version of the configuration file?"
+msgstr "ແທນທີ່ການປ່ຽນແປງຂອງທ່ານໃນ '%s' ດ້ວຍເວີຊັນຫຼ້າສຸດຂອງໄຟລ໌ຕັ້ງຄ່າບໍ່?"
+
+#: aptkit/gtk3widgets.py:985
+msgid ""
+"If you don't know why the file is there already, it is usually safe to "
+"replace it."
+msgstr ""
+"ຖ້າທ່ານບໍ່ຮູ້ວ່າເປັນຫຍັງໄຟລ໌ຈຶ່ງຢູ່ທີ່ນັ້ນແລ້ວ, "
+"ໂດຍທົ່ວໄປແລ້ວການແທນທີ່ມັນຈະປອດໄພ."
+
+#: aptkit/gtk3widgets.py:994
+msgid "_Changes"
+msgstr "ການປ່ຽນແ_ປງ"
+
+#: aptkit/gtk3widgets.py:997
+msgid "_Keep"
+msgstr "_ເກັບໄວ້"
+
+#: aptkit/gtk3widgets.py:998
+msgid "_Replace"
+msgstr "ແ_ທນທີ່"
+
+#: aptkit/gtk3widgets.py:1101
+msgid "_Details"
+msgstr "ລາຍລະອຽ_ດ"
+
+#. TRANSLATORS: %s is the name of a package manager
+#: aptkit/lock.py:189
+#, python-format
+msgid "Waiting for %s to exit"
+msgstr "ກຳລັງລໍຖ້າໃຫ້ %s ອອກ"
+
+#. TRANSLATORS: %s is a list of package names
+#: aptkit/progress.py:168
+#, python-format
+msgid "Downloading %s"
+msgstr "ກຳລັງດາວໂຫຼດ %s"
+
+#. TRANSLATORS: the string is used as a fallback if we cannot
+#. get the URI of a local repository
+#: aptkit/progress.py:277 aptkit/progress.py:314
+msgid "local repository"
+msgstr "ຄັງພາຍໃນ"
+
+#. TRANSLATORS: %s is a list of repository names
+#: aptkit/progress.py:280
+#, python-format
+msgid "Downloading from %s"
+msgstr "ກຳລັງດາວໂຫຼດຈາກ %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: aptkit/progress.py:318
+#, python-format
+msgid "Structure of %s"
+msgstr "ໂຄງສ້າງຂອງ %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: aptkit/progress.py:321
+#, python-format
+msgid "Description of %s"
+msgstr "ຄຳອະທິບາຍຂອງ %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: aptkit/progress.py:324
+#, python-format
+msgid "Description signature of %s"
+msgstr "ລາຍເຊັນຄຳອະທິບາຍຂອງ %s"
+
+#: aptkit/progress.py:329
+#, python-format
+msgid "Available packages from %s"
+msgstr "ແພັກເກັດທີ່ມີຢູ່ຈາກ %s"
+
+#: aptkit/progress.py:333
+#, python-format
+msgid "Available sources from %s"
+msgstr "ແຫຼ່ງທີ່ມີຢູ່ຈາກ %s"
+
+#. TRANSLATORS: repo is the name of a repository
+#: aptkit/progress.py:336
+#, python-format
+msgid "Available translations from %s"
+msgstr "ຄຳແປທີ່ມີຢູ່ຈາກ %s"
+
+#: aptkit/progress.py:353
+#, python-format
+msgid "Translations for %s (%s) from %s"
+msgstr "ຄຳແປສຳລັບ %s (%s) ຈາກ %s"
+
+#. TRANSLATORS: %s is the name of a language. The second one is
+#. the name of the repository
+#: aptkit/progress.py:357
+#, python-format
+msgid "Translations for %s from %s"
+msgstr "ຄຳແປສຳລັບ %s ຈາກ %s"
+
+#. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
+#. The second one is the name of the repository
+#: aptkit/progress.py:362
+#, python-format
+msgid "Translations (%s) from %s"
+msgstr "ຄຳແປ (%s) ຈາກ %s"
+
+#: aptkit/worker/aptworker.py:372 aptkit/worker/aptworker.py:587
+#: aptkit/worker/aptworker.py:682 aptkit/worker/aptworker.py:727
+#, python-format
+msgid "Package %s isn't available"
+msgstr "ແພັກເກັດ %s ບໍ່ມີໃຫ້ໃຊ້"
+
+#: aptkit/worker/aptworker.py:377 aptkit/worker/aptworker.py:591
+#: aptkit/worker/aptworker.py:686 aptkit/worker/aptworker.py:731
+#, python-format
+msgid "Package %s isn't installed"
+msgstr "ແພັກເກັດ %s ຍັງບໍ່ໄດ້ຖືກຕິດຕັ້ງ"
+
+#: aptkit/worker/aptworker.py:381
+#, python-format
+msgid "The version %s of %s isn't installed"
+msgstr "ເວີຊັນ %s ຂອງ %s ຍັງບໍ່ໄດ້ຖືກຕິດຕັ້ງ"
+
+#: aptkit/worker/aptworker.py:396
+#, python-format
+msgid "Package %s is already installed"
+msgstr "ແພັກເກັດ %s ໄດ້ຖືກຕິດຕັ້ງແລ້ວ"
+
+#: aptkit/worker/aptworker.py:403 aptkit/worker/aptworker.py:754
+#, python-format
+msgid "The version %s of %s isn't available."
+msgstr "ເວີຊັນ %s ຂອງ %s ບໍ່ມີໃຫ້ໃຊ້."
+
+#: aptkit/worker/aptworker.py:595
+#, python-format
+msgid "Package %s cannot be removed."
+msgstr "ບໍ່ສາມາດລຶບແພັກເກັດ %s ໄດ້."
+
+#: aptkit/worker/aptworker.py:599
+#, python-format
+msgid "The version %s of %s is not installed"
+msgstr "ເວີຊັນ %s ຂອງ %s ຍັງບໍ່ໄດ້ຖືກຕິດຕັ້ງ"
+
+#: aptkit/worker/aptworker.py:694
+#, python-format
+msgid "The former version %s of %s is already installed"
+msgstr "ເວີຊັນກ່ອນໜ້າ %s ຂອງ %s ໄດ້ຖືກຕິດຕັ້ງແລ້ວ"
+
+#: aptkit/worker/aptworker.py:699 aptkit/worker/aptworker.py:747
+#, python-format
+msgid "The version %s of %s is already installed"
+msgstr "ເວີຊັນ %s ຂອງ %s ໄດ້ຖືກຕິດຕັ້ງແລ້ວ"
+
+#: aptkit/worker/aptworker.py:706
+#, python-format
+msgid "The version %s of %s isn't available"
+msgstr "ເວີຊັນ %s ຂອງ %s ບໍ່ມີໃຫ້ໃຊ້"
+
+#: aptkit/worker/aptworker.py:710
+#, python-format
+msgid "You need to specify a version to downgrade %s to"
+msgstr "ທ່ານຕ້ອງລະບຸເວີຊັນທີ່ຈະດາວເກຣດ %s ໄປຫາ"
+
+#: aptkit/worker/aptworker.py:740
+#, python-format
+msgid "The later version %s of %s is already installed"
+msgstr "ເວີຊັນຫຼ້າສຸດ %s ຂອງ %s ໄດ້ຖືກຕິດຕັ້ງແລ້ວ"
+
+#: aptkit/worker/aptworker.py:776
+#, python-format
+msgid "The package %s isn't available in the %s release."
+msgstr "ແພັກເກັດ %s ບໍ່ມີໃຫ້ໃຊ້ໃນລຸ້ນ %s."
+
+#: aptkit/worker/aptworker.py:961
+#, python-format
+msgid "Package %s cannot be removed"
+msgstr "ບໍ່ສາມາດລຶບແພັກເກັດ %s ໄດ້"
+
+#: aptkit/worker/aptworker.py:1063
+msgid ""
+"The package doesn't provide a valid Installed-Size control field. See Debian "
+"Policy 5.6.20."
+msgstr ""
+"ແພັກເກັດບໍ່ໄດ້ລະບຸຊ່ອງຄວບຄຸມ Installed-Size ທີ່ຖືກຕ້ອງ. ເບິ່ງນະໂຍບາຍ Debian "
+"5.6.20."
+
+#: aptkit/worker/aptworker.py:1202
+msgid "The license key is empty"
+msgstr "ຄີໃບອະນຸຍາດວ່າງເປົ່າ"
+
+#: aptkit/worker/aptworker.py:1218
+msgid "The license key is not allowed to contain executable code."
+msgstr "ຄີໃບອະນຸຍາດບໍ່ອະນຸຍາດໃຫ້ມີໂຄດທີ່ສາມາດປະຕິບັດໄດ້."
+
+#: aptkit/worker/aptworker.py:1227
+#, python-format
+msgid "The license key path %s is invalid"
+msgstr "ເສັ້ນທາງຄີໃບອະນຸຍາດ %s ບໍ່ຖືກຕ້ອງ"
+
+#: aptkit/worker/aptworker.py:1231
+#, python-format
+msgid "The license key already exists: %s"
+msgstr "ມີຄີໃບອະນຸຍາດຢູ່ແລ້ວ: %s"
+
+#: aptkit/worker/aptworker.py:1236
+#, python-format
+msgid ""
+"The location of the license key is unsecure since it contains symbolic "
+"links. The path %s maps to %s"
+msgstr ""
+"ທີ່ຕັ້ງຂອງຄີໃບອະນຸຍາດບໍ່ປອດໄພ ເພາະມີລິ້ງສັນຍາລັກຢູ່. ເສັ້ນທາງ %s ຊີ້ໄປຫາ %s"
+
+#: aptkit/worker/aptworker.py:1244
+#, python-format
+msgid "The directory where to install the key to doesn't exist yet: %s"
+msgstr "ໂຟນເດີທີ່ຈະຕິດຕັ້ງຄີຍັງບໍ່ມີຢູ່: %s"
+
+#: aptkit/worker/aptworker.py:1255
+#, python-format
+msgid "Failed to write key file to: %s"
+msgstr "ຂຽນໄຟລ໌ຄີໄປຍັງ %s ລົ້ມເຫຼວ"
+
+#: aptkit/worker/aptworker.py:1290
+msgid "The following packages have unmet dependencies:"
+msgstr "ແພັກເກັດຕໍ່ໄປນີ້ມີສ່ວນປະກອບທີ່ຂາດຫາຍ:"
+
+#: aptkit/worker/aptworker.py:1343
+msgid "but it is a virtual package"
+msgstr "ແຕ່ມັນເປັນແພັກເກັດສະເໝືອນ"
+
+#: aptkit/worker/aptworker.py:1346
+msgid "but it is not installed"
+msgstr "ແຕ່ມັນຍັງບໍ່ໄດ້ຖືກຕິດຕັ້ງ"
+
+#: aptkit/worker/aptworker.py:1348
+msgid "but it is not going to be installed"
+msgstr "ແຕ່ມັນຈະບໍ່ຖືກຕິດຕັ້ງ"
+
+#. TRANSLATORS: %s is a version number
+#: aptkit/worker/aptworker.py:1352
+#, python-format
+msgid "but %s is installed"
+msgstr "ແຕ່ %s ໄດ້ຖືກຕິດຕັ້ງແລ້ວ"
+
+#. TRANSLATORS: %s is a version number
+#: aptkit/worker/aptworker.py:1356
+#, python-format
+msgid "but %s is to be installed"
+msgstr "ແຕ່ %s ຈະຖືກຕິດຕັ້ງ"
