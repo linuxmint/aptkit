@@ -56,7 +56,10 @@ class SimpleAPTClient(object):
             changes = cache.get_changes()
             for pkg in changes:
                 if pkg.marked_install and pkg.name not in packages:
-                    packages.append(pkg.name)
+                    # see aptworker.py: _mark_packages_for_installation() - #auto suffix
+                    # marks this extra package as auto-installed even though we've explicitly
+                    # added it here.
+                    packages.append(pkg.name + "#auto")
 
         client = aptkit.client.AptClient()
         client.install_packages(packages, reply_handler=self._simulate_trans, error_handler=self._on_error)
