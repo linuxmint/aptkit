@@ -1,4 +1,4 @@
-project('aptkit', version : '1.1.1', meson_version : '>=0.49.0')
+project('aptkit', version : '1.1.2', meson_version : '>=0.49.0')
 
 pymod = import('python')
 python3 = pymod.find_installation('python3')
