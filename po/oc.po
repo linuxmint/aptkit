@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-20 14:47+0000\n"
-"PO-Revision-Date: 2024-09-24 04:32+0000\n"
+"PO-Revision-Date: 2025-12-12 14:18+0000\n"
 "Last-Translator: Quentin PAGÈS <Unknown>\n"
 "Language-Team: Occitan (post 1500) <oc@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
-"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
+"X-Launchpad-Export-Date: 2026-01-08 15:44+0000\n"
+"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
 "Language: \n"
 
 #: data/org.aptkit.policy.in:12
@@ -227,7 +227,7 @@ msgstr "Cambiaments aplicats"
 
 #: aptkit/enums.py:319
 msgid "Repaired incomplete installation"
-msgstr "Installacion incompleta reparada"
+msgstr "Installacion incomplèta reparada"
 
 #: aptkit/enums.py:320
 msgid "Repaired broken dependencies"
@@ -291,7 +291,7 @@ msgstr "Aplicacion dels cambiaments"
 
 #: aptkit/enums.py:340
 msgid "Repairing incomplete installation"
-msgstr "Reparacion d'una installacion incompleta"
+msgstr "Reparacion d'una installacion incomplèta"
 
 #: aptkit/enums.py:341
 msgid "Repairing installed software"
@@ -347,7 +347,7 @@ msgstr "Las modificacions logicialas an fracassat."
 
 #: aptkit/enums.py:357
 msgid "Repairing incomplete installation failed"
-msgstr "Fracàs de la reparacion d'una installacion incompleta"
+msgstr "Fracàs de la reparacion d'una installacion incomplèta"
 
 #: aptkit/enums.py:359
 msgid "Repairing broken dependencies failed"
@@ -597,7 +597,7 @@ msgstr "Requerís l'installacion de paquets pas verificats"
 
 #: aptkit/enums.py:464
 msgid "Previous installation hasn't been completed"
-msgstr "L'installacion precedenta èra incompleta"
+msgstr "L'installacion precedenta èra incomplèta"
 
 #: aptkit/enums.py:465
 msgid "The package is of bad quality"
@@ -713,7 +713,7 @@ msgstr "Supression de %s"
 #: aptkit/enums.py:502
 #, python-format
 msgid "Completely removing %s"
-msgstr "Supression completa de %s"
+msgstr "Supression complèta de %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:504
@@ -761,7 +761,7 @@ msgstr "Preparacion de la supression de %s"
 #: aptkit/enums.py:518
 #, python-format
 msgid "Preparing complete removal of %s"
-msgstr "Preparacion de la supression completa de %s"
+msgstr "Preparacion de la supression complèta de %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:520
@@ -773,7 +773,7 @@ msgstr "%s es estat installat"
 #: aptkit/enums.py:522
 #, python-format
 msgid "Completely removed %s"
-msgstr "%s es estat suprimit completament."
+msgstr "%s es estat suprimit complètament."
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:524
@@ -904,7 +904,7 @@ msgstr "De logicials suplementaris devon èsser desinstallats."
 
 #: aptkit/gtk3widgets.py:897
 msgid "Additional software has to be purged"
-msgstr "De logicials suplementaris devon èsser suprimits completament."
+msgstr "De logicials suplementaris devon èsser suprimits complètament"
 
 #: aptkit/gtk3widgets.py:899
 msgid "Additional software has to be upgraded"

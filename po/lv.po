@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-20 14:47+0000\n"
-"PO-Revision-Date: 2024-09-09 18:37+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"PO-Revision-Date: 2025-12-27 14:45+0000\n"
+"Last-Translator: Klavs Petersons <Unknown>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
-"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
+"X-Launchpad-Export-Date: 2026-01-08 15:44+0000\n"
+"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
 "Language: lv\n"
 
 #: data/org.aptkit.policy.in:12
@@ -25,17 +25,15 @@ msgstr "Uzskaitīt uzticamo piegādātāju atslēgas"
 
 #: data/org.aptkit.policy.in:15
 msgid "To view the list of trusted keys, you need to authenticate."
-msgstr ""
-"Lai skatītu uzticamo atslēgu sarakstu, jums vajadzēs autentificēties."
+msgstr "Lai skatītu uzticamo atslēgu sarakstu, tev vajadzēs autentificēties."
 
 #: data/org.aptkit.policy.in:26
 msgid "Remove downloaded package files"
-msgstr "Izņemt lejupielādēto pakotņu datnes"
+msgstr "Noņemt lejupielādētos pakotņu failus"
 
 #: data/org.aptkit.policy.in:29
 msgid "To clean downloaded package files, you need to authenticate."
-msgstr ""
-"Lai attīrītu lejupielādēto pakotņu datnes, jums vajadzēs autentificēties."
+msgstr "Lai notīrītu lejupielādēto pakotņu failus, tev ir jāautentificējas."
 
 #: data/org.aptkit.policy.in:40
 msgid "Change software configuration"
@@ -43,24 +41,24 @@ msgstr "Mainīt programmatūras konfigurāciju"
 
 #: data/org.aptkit.policy.in:43
 msgid "To change software settings, you need to authenticate."
-msgstr "Lai mainītu programmatūras iestatījumus, jums jāautentificējas."
+msgstr "Lai mainītu programmatūras iestatījumus, tev jāautentificējas."
 
 #: data/org.aptkit.policy.in:54
 msgid "Change software repository"
-msgstr "Mainīt programmatūras krātuvi"
+msgstr "Mainīt programmatūras repozitoriju"
 
 #: data/org.aptkit.policy.in:57
 msgid "To change software repository settings, you need to authenticate."
 msgstr ""
-"Lai mainītu programmatūras krātuves iestatījumus, jums jāautentificējas."
+"Lai mainītu programmatūras krātuves iestatījumus, tev jāautentificējas."
 
 #: data/org.aptkit.policy.in:68
 msgid "Install package file"
-msgstr "Instalēt pakotņu datni"
+msgstr "Instalēt pakotnes failu"
 
 #: data/org.aptkit.policy.in:71
 msgid "To install this package, you need to authenticate."
-msgstr "Lai instalētu šo pakotni, jums jāautentificējas."
+msgstr "Lai instalētu šo pakotni, tev jāautentificējas."
 
 #: data/org.aptkit.policy.in:82
 msgid "Update package information"
@@ -68,7 +66,7 @@ msgstr "Atjaunināt informāciju par pakotnēm"
 
 #: data/org.aptkit.policy.in:85
 msgid "To update the software catalog, you need to authenticate."
-msgstr "Lai atjauninātu programmatūras katalogu, jums jāautentificējas."
+msgstr "Lai atjauninātu programmatūras katalogu, tev jāautentificējas."
 
 #: data/org.aptkit.policy.in:96
 msgid "Install or remove packages"
@@ -76,7 +74,7 @@ msgstr "Instalēt vai noņemt pakotnes"
 
 #: data/org.aptkit.policy.in:99
 msgid "To install or remove software, you need to authenticate."
-msgstr "Lai instalētu vai noņemtu programmatūru, jums jāautentificējas."
+msgstr "Lai instalētu vai noņemtu programmatūru, tev jāautentificējas."
 
 #. This priviledge will be requested when installing a package
 #. from a high trusted repository that can be explicitely whitelisted.
@@ -94,7 +92,7 @@ msgstr ""
 
 #: data/org.aptkit.policy.in:123
 msgid "To install software, you need to authenticate."
-msgstr "Lai instalētu programmatūru, jums jāautentificējas."
+msgstr "Lai instalētu programmatūru, tev jāautentificējas."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -107,7 +105,7 @@ msgstr "Pievienot jaunu krātuvi un instalēt pakotnes no tās"
 
 #: data/org.aptkit.policy.in:142
 msgid "To install software from a new source, you need to authenticate."
-msgstr "Lai instalētu programmatūru no jauna avota, jums jāautentificējas."
+msgstr "Lai instalētu programmatūru no jauna avota, tev jāautentificējas."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -125,7 +123,7 @@ msgstr ""
 
 #: data/org.aptkit.policy.in:164
 msgid "To install purchased software, you need to authenticate."
-msgstr "Lai instalētu nopirktu programmatūru, jums jāautentificējas."
+msgstr "Lai instalētu nopirktu programmatūru, tev jāautentificējas."
 
 #: data/org.aptkit.policy.in:175
 msgid "Upgrade packages"
@@ -133,7 +131,7 @@ msgstr "Uzlabot pakotnes"
 
 #: data/org.aptkit.policy.in:178
 msgid "To install updated software, you need to authenticate."
-msgstr "Lai instalētu atjauninātu programmatūru, jums jāautentificējas."
+msgstr "Lai instalētu atjauninātu programmatūru, tev jāautentificējas."
 
 #: data/org.aptkit.policy.in:187
 msgid "Cancel the task of another user"
@@ -141,8 +139,7 @@ msgstr "Atcelt cita lietotāja darbību"
 
 #: data/org.aptkit.policy.in:190
 msgid "To cancel someone else's software changes, you need to authenticate."
-msgstr ""
-"Lai atceltu kāda cita programmatūras izmaiņas, jums jāautentificējas."
+msgstr "Lai atceltu kāda cita programmatūras izmaiņas, tev jāautentificējas."
 
 #: data/org.aptkit.policy.in:201
 msgid "Set a proxy for software downloads"
@@ -152,7 +149,7 @@ msgstr "Iestatīt starpnieku programmatūras lejupielādei"
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
-"Lai izmantotu starpnieka serveri programmatūras lejupielādei, jums "
+"Lai izmantotu starpnieka serveri programmatūras lejupielādei, tev "
 "jāautentificējas."
 
 #: aptkit/core.py:2030
@@ -205,15 +202,15 @@ msgstr "Meklēšana pabeigta"
 
 #: aptkit/enums.py:315
 msgid "Removed packages"
-msgstr "Izņēma pakotnes"
+msgstr "Noņemtās pakotnes"
 
 #: aptkit/enums.py:316
 msgid "Updated packages"
-msgstr "Uzlaboja pakotnes"
+msgstr "Atjaunināja pakotnes"
 
 #: aptkit/enums.py:317
 msgid "Upgraded system"
-msgstr "Uzlaboja sistēmu"
+msgstr "Atjaunināja sistēmu"
 
 #: aptkit/enums.py:318
 msgid "Applied changes"
@@ -377,34 +374,34 @@ msgid ""
 "they are a common source of problems.\n"
 "Furthermore run the following command in a Terminal: apt-get install -f"
 msgstr ""
-"Lūdzu, pārbaudiet, vai jūs izmantojat trešās puses krātuves. Ja jā, "
-"deaktivējiet tās, jo tās parasti ir problēmu cēlonis.\n"
-"Pēc tam izpildiet šādu komandu terminālī — apt-get install -f"
+"Lūdzu, pārbaudi, vai tu izmanto trešās puses krātuves. Ja jā, deaktivē tās, "
+"jo tās parasti ir problēmu cēlonis.\n"
+"Pēc tam izpildi šādu komandu terminālī: apt-get install -f"
 
 #: aptkit/enums.py:377
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
 msgstr ""
-"Pārliecinieties, ka pašlaik neesat atvēruši kādu citu programmatūras "
-"pārvaldības rīku, piemēram, Synaptic vai aptitude. Vienlaicīgi izmaiņas var "
-"veikt tikai viens rīks."
+"Pārliecinies, ka pašlaik neesi atvēris kādu citu programmatūras pārvaldības "
+"rīku, piemēram, Synaptic vai aptitude. Vienlaicīgi izmaiņas var veikt tikai "
+"viens rīks."
 
 #: aptkit/enums.py:380
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
 msgstr ""
-"Šī ir nopietna problēma. Mēģiniet vēlāk vēlreiz. Ja šī problēma parādās "
-"vēlreiz, lūdzu, ziņojiet par šo kļūdu izstrādātājiem."
+"Šī ir nopietna problēma. Mēģini vēlāk vēlreiz. Ja šī problēma parādās "
+"vēlreiz, lūdzu, ziņo par šo kļūdu izstrādātājiem."
 
 #: aptkit/enums.py:383
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
 msgstr ""
-"Pārbaudiet pakotnes pareizrakstības nosaukumu un to, ka ir aktivēta "
-"atbilstošā krātuve."
+"Pārbaudi pakotnes pareizrakstības nosaukumu un to, ka ir aktivēta atbilstošā "
+"krātuve."
 
 #: aptkit/enums.py:385
 msgid "There isn't any need for an update."
@@ -412,23 +409,23 @@ msgstr "Nav nepieciešamības uzlabot."
 
 #: aptkit/enums.py:386
 msgid "There isn't any need for an installation"
-msgstr "Nav nepieciešamības instalēt."
+msgstr "Nav nepieciešama instalēšana"
 
 #: aptkit/enums.py:388
 msgid "There isn't any need for a removal."
-msgstr "Nav nepieciešamības izņemt."
+msgstr "Nav nepieciešams noņemt."
 
 #: aptkit/enums.py:389
 msgid ""
 "You requested to remove a package which is an essential part of your system."
-msgstr "Jūs pieprasījāt izņemt pakotni, kas ir svarīga sistēmas sastāvdaļa."
+msgstr "Tu pieprasīji noņemt pakotni, kas ir būtiska tavas sistēmas daļa."
 
 #: aptkit/enums.py:392
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
 msgstr ""
-"Savienojums ar dēmonu tika zaudēts. Visticamāk, ka fona dēmons avarēja."
+"Savienojums ar dēmonu tika pārtraukts. Visticamāk, fona dēmons ir avarējis."
 
 #: aptkit/enums.py:394
 msgid "The installation or removal of a software package failed."
@@ -469,15 +466,14 @@ msgid ""
 "software package or it was cancelled in an unfriendly way. You have to "
 "repair this before you can install or remove any further software."
 msgstr ""
-"Instalēšana varētu būt neizdevusies sakarā ar kļūdu atbilstošajā "
-"programmatūras pakotnē, vai arī tā tika pārtraukta nedraudzīgā veidā. Jums "
-"šī situācija jālabo pirms jūs instalējat vai noņemot jebkuru citu "
-"programmatūru."
+"Instalācija varēja neizdoties programmatūras pakotnes kļūdas dēļ vai arī tā "
+"tika atcelta neparedzētā veidā. Tev tas jālabo, pirms vari instalēt vai "
+"noņemt jebkādu turpmāko programmatūru."
 
 #: aptkit/enums.py:415
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
-msgstr "Lūdzu, kopējiet datni uz savu datoru un pārbaudiet datnes atļaujas."
+msgstr "Lūdzu, kopē failu uz savu lokālo datoru un pārbaudi faila atļaujas."
 
 #: aptkit/enums.py:418
 msgid ""
@@ -487,9 +483,9 @@ msgid ""
 "details beneath."
 msgstr ""
 "Nav atļauts instalēt pakotni, kas pārkāpj kvalitātes standarta prasības. Tas "
-"var radīt nopietnas problēmas jūsu datoram. Lūdzu, sazinieties ar personu "
-"vai organizāciju, kas piegādāja šo pakotnes datni un iekļaujiet zemāk "
-"redzamo informāciju."
+"var radīt nopietnas problēmas tavam datoram. Lūdzu, sazinies ar personu vai "
+"organizāciju, kas piegādāja šo pakotnes datni un iekļaujiet zemāk redzamo "
+"informāciju."
 
 #: aptkit/enums.py:425
 msgid ""
@@ -499,7 +495,7 @@ msgid ""
 msgstr ""
 "Lejupielādētā licences atslēga, kas nepieciešama, lai darbinātu šo "
 "programmatūru, nav derīga vai arī nav veiksmīgi instalēta.\n"
-"Lai uzzinātu vairāk, skatieties sīkāku informāciju."
+"Lai uzzinātu vairāk, skaties sīkāku informāciju."
 
 #: aptkit/enums.py:431
 msgid "All available upgrades have already been installed."
@@ -515,7 +511,7 @@ msgstr ""
 
 #: aptkit/enums.py:437
 msgid "You don't have the required privileges to perform this action."
-msgstr "jums nav nepieciešamo tiesību, lai veiktu šo darbību."
+msgstr "Tev nav nepieciešamo privilēģiju, lai veiktu šo darbību."
 
 #: aptkit/enums.py:439
 msgid ""
@@ -524,9 +520,9 @@ msgid ""
 "haven't seen a password dialog: your desktop environment doesn't provide a "
 "PolicyKit session agent."
 msgstr ""
-"Vai nu ievadījāt nepareizo paroli, vai atcēlāt pilnvarošanu.\n"
-"Šai kļūdai varētu būt gadījies tehnisks iemesls, ja neredzējāt paroles "
-"dialoglodziņu — jūsu darbvirsmas vide nenodrošina PolicyKit sesijas aģentu."
+"Tu ievadīji nepareizu paroli vai atcēli autorizāciju.\n"
+"Turklāt šai kļūdai var būt arī tehnisks iemesls, ja neesi redzējis paroles "
+"dialoglodziņu: tava darbvirsmas vide nenodrošina PolicyKit sesijas aģentu."
 
 #: aptkit/enums.py:447
 msgid "Failed to download package files"
@@ -714,13 +710,13 @@ msgstr "Piefiksē %s pazušanu"
 #: aptkit/enums.py:506
 #, python-format
 msgid "Running post-installation trigger %s"
-msgstr "Izpilda pēcinstalēšanas trigeri %s"
+msgstr "Pēc instalēšanas aktivizēšanas izpilde %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:508
 #, python-format
 msgid "Upgrading %s"
-msgstr "Uzlabo %s"
+msgstr "Atjaunina %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:510
@@ -732,43 +728,43 @@ msgstr "Atpako %s"
 #: aptkit/enums.py:512
 #, python-format
 msgid "Preparing installation of %s"
-msgstr "Sagatavo %s instalēšanu"
+msgstr "Gatavo %s instalēšanu"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:514
 #, python-format
 msgid "Preparing configuration of %s"
-msgstr "Sagatavo %s konfigurāciju"
+msgstr "Gatavo %s konfigurāciju"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:516
 #, python-format
 msgid "Preparing removal of %s"
-msgstr "Sagatavo %s izņemšanu"
+msgstr "Gatavo %s noņemšanu"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:518
 #, python-format
 msgid "Preparing complete removal of %s"
-msgstr "Sagatavo pilnīgu %s izņemšanu"
+msgstr "Gatavojas pilnīgai %s noņemšanai"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:520
 #, python-format
 msgid "Installed %s"
-msgstr "%s ir instalēts"
+msgstr "Instalēts %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:522
 #, python-format
 msgid "Completely removed %s"
-msgstr "%s ir pilnībā izņemts"
+msgstr "Pilnībā noņemts %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:524
 #, python-format
 msgid "Removed %s"
-msgstr "%s ir izņemts"
+msgstr "Noņemts %s"
 
 #: aptkit/enums.py:527
 msgid "Done"
@@ -811,7 +807,7 @@ msgstr "Sīkāka informācija"
 
 #: aptkit/gtk3widgets.py:400
 msgid "File"
-msgstr "Datne"
+msgstr "Fails"
 
 #. TRANSLATORS: header of the progress download column
 #: aptkit/gtk3widgets.py:405
@@ -821,11 +817,11 @@ msgstr "%"
 #: aptkit/gtk3widgets.py:441
 #, python-format
 msgid "Downloaded %sB"
-msgstr "Lejupielādēti %sB"
+msgstr "Lejupielādēts %sB"
 
 #: aptkit/gtk3widgets.py:444
 msgid "Downloaded"
-msgstr "Lejupielādēti"
+msgstr "Lejupielādēts"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
 #: aptkit/gtk3widgets.py:787
@@ -840,8 +836,8 @@ msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
 "packages from it."
 msgstr ""
-"Lūdzu, ievietojiet augstāk minēto CD/DVD dzinī “%s”, lai no tā uzinstalētu "
-"programmatūras pakotnes."
+"Lūdzu, ievieto augstāk minēto CD/DVD diskdzinī '%s' lai instalētu "
+"programmatūras pakotnes no tā."
 
 #: aptkit/gtk3widgets.py:793 aptkit/gtk3widgets.py:815
 msgid "C_ontinue"
@@ -877,7 +873,7 @@ msgstr "Izlaist uzlabošanu"
 
 #: aptkit/gtk3widgets.py:883
 msgid "Please take a look at the list of changes below."
-msgstr "Lūdzu, apskatiet zemāk esošo izmaiņu sarakstu."
+msgstr "Lūdzu, apskati zemāk esošo izmaiņu sarakstu."
 
 #: aptkit/gtk3widgets.py:891
 msgid "Additional software has to be installed"
@@ -889,7 +885,7 @@ msgstr "Papildu programmatūra, kas jāpārinstalē"
 
 #: aptkit/gtk3widgets.py:895
 msgid "Additional software has to be removed"
-msgstr "Papildu programmatūra, kas jāizņem"
+msgstr "Papildu programmatūra, kas jānoņem"
 
 #: aptkit/gtk3widgets.py:897
 msgid "Additional software has to be purged"
@@ -914,17 +910,17 @@ msgstr "Nepieciešamas papildu izmaiņas"
 #: aptkit/gtk3widgets.py:916
 #, python-format
 msgid "%sB will be downloaded in total."
-msgstr "Kopā tiks lejupielādēti %sB."
+msgstr "%sB kopumā tiks lejupielādēts."
 
 #: aptkit/gtk3widgets.py:920
 #, python-format
 msgid "%sB of disk space will be freed."
-msgstr "Tiks atbrīvoti %sB."
+msgstr "%sB diska vietas tiks atbrīvota."
 
 #: aptkit/gtk3widgets.py:924
 #, python-format
 msgid "%sB more disk space will be used."
-msgstr "Tiks papildus izmantoti %sB."
+msgstr "%sB tiks izmantots vairāk diska vietas."
 
 #. TRANSLATORS: %s is a file path
 #: aptkit/gtk3widgets.py:983
@@ -932,14 +928,14 @@ msgstr "Tiks papildus izmantoti %sB."
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
 msgstr ""
-"Aizvietot savas “%s” izmaiņas ar vēlāku šī konfigurācijas datnes versiju?"
+"Aizvietot savas '%s' izmaiņas ar vēlāku šī konfigurācijas datnes versiju?"
 
 #: aptkit/gtk3widgets.py:985
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
 msgstr ""
-"Ja nezināt, kāpēc dotā datne jau ir tur, tad parasti to var droši aizvietot."
+"Ja nezini, kāpēc dotā datne jau ir tur, tad parasti to var droši aizvietot."
 
 #: aptkit/gtk3widgets.py:994
 msgid "_Changes"
@@ -1064,55 +1060,55 @@ msgstr "Versija %s programmai %s nav pieejama."
 #: aptkit/worker/aptworker.py:595
 #, python-format
 msgid "Package %s cannot be removed."
-msgstr "Nevar izņemt pakotni %s."
+msgstr "Pakotni %s nevar noņemt."
 
 #: aptkit/worker/aptworker.py:599
 #, python-format
 msgid "The version %s of %s is not installed"
-msgstr "Versija %s programmai %s nav uzinstalēta"
+msgstr "Versija %s no %s nav instalēta"
 
 #: aptkit/worker/aptworker.py:694
 #, python-format
 msgid "The former version %s of %s is already installed"
-msgstr "Iepriekšējā versija %s programmai %s jau ir uzinstalēta"
+msgstr "Iepriekšējā versija %s no %s jau ir instalēta"
 
 #: aptkit/worker/aptworker.py:699 aptkit/worker/aptworker.py:747
 #, python-format
 msgid "The version %s of %s is already installed"
-msgstr "Versija %s programmai %s jau ir uzinstalēta"
+msgstr "Versija %s no %s jau ir instalēta"
 
 #: aptkit/worker/aptworker.py:706
 #, python-format
 msgid "The version %s of %s isn't available"
-msgstr "Versija %s programmai %s nav pieejama"
+msgstr "Versija %s no %s nav pieejama"
 
 #: aptkit/worker/aptworker.py:710
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
-msgstr "Jums jānorāda versija, uz kuru pazemināt %s"
+msgstr "Tev jānorāda versija, uz kuru %s pazemināt"
 
 #: aptkit/worker/aptworker.py:740
 #, python-format
 msgid "The later version %s of %s is already installed"
-msgstr "Jaunāka versija %s programmai %s jau ir uzinstalēta"
+msgstr "Jaunākā versija %s no %s jau ir instalēta"
 
 #: aptkit/worker/aptworker.py:776
 #, python-format
 msgid "The package %s isn't available in the %s release."
-msgstr "Pakotne %s nav pieejama laidienā %s."
+msgstr "Pakotne %s nav pieejama %s izlaidumā."
 
 #: aptkit/worker/aptworker.py:961
 #, python-format
 msgid "Package %s cannot be removed"
-msgstr "Nevar izņemt pakotni %s"
+msgstr "Pakotni %s nevar noņemt"
 
 #: aptkit/worker/aptworker.py:1063
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
 msgstr ""
-"Pakotne nenorāda derīgu Installed-Size kontroles lauku. Skatiet Debian "
-"Policy 5.6.20."
+"Pakotne nenorāda derīgu Installed-Size kontroles lauku. Skati Debian Policy "
+"5.6.20."
 
 #: aptkit/worker/aptworker.py:1202
 msgid "The license key is empty"
@@ -1120,7 +1116,7 @@ msgstr "Licences atslēga ir tukša"
 
 #: aptkit/worker/aptworker.py:1218
 msgid "The license key is not allowed to contain executable code."
-msgstr "Licences atslēgai nav atļauts saturēt izpildāmu kodu"
+msgstr "Licences atslēgā nedrīkst būt izpildāms kods."
 
 #: aptkit/worker/aptworker.py:1227
 #, python-format
@@ -1130,7 +1126,7 @@ msgstr "Licences atslēgas ceļš %s ir nederīgs"
 #: aptkit/worker/aptworker.py:1231
 #, python-format
 msgid "The license key already exists: %s"
-msgstr "Tāda licence jau pastāv — %s"
+msgstr "Licences atslēga jau pastāv: %s"
 
 #: aptkit/worker/aptworker.py:1236
 #, python-format
@@ -1144,12 +1140,12 @@ msgstr ""
 #: aptkit/worker/aptworker.py:1244
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
-msgstr "Mape, kurā instalēt atslēgu, vēl neeksistē — %s"
+msgstr "Direktorija, kurā instalēt atslēgu, vēl nepastāv: %s"
 
 #: aptkit/worker/aptworker.py:1255
 #, python-format
 msgid "Failed to write key file to: %s"
-msgstr "Neizdevās saglabāt atslēgas datni — %s"
+msgstr "Neizdevās ierakstīt atslēgas failu uz: %s"
 
 #: aptkit/worker/aptworker.py:1290
 msgid "The following packages have unmet dependencies:"
