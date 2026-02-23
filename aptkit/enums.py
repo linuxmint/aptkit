@@ -368,7 +368,7 @@ _ERROR_ROLE = {
 
 _DESCS_ERROR = {
     ERROR_PACKAGE_DOWNLOAD_FAILED: _("Check your Internet connection."),
-    ERROR_REPO_DOWNLOAD_FAILED: _("Check your Internet connection."),
+    ERROR_REPO_DOWNLOAD_FAILED: _("See the error details below for more information."),
     ERROR_CACHE_BROKEN: _("Check if you are using third party "
                           "repositories. If so disable them, since "
                           "they are a common source of problems.\n"

@@ -258,6 +258,8 @@ class DaemonAcquireRepoProgress(DaemonAcquireProgress):
                                   fallback_tag="iso_639_2T_code")
         self.regions = IsoCodes("iso_3166", "alpha_2_code")
         self.progress = 101
+        self.failed_items = []
+        self.error_message = ""
 
     def start(self):
         """Callback at the beginning of the operation"""
@@ -366,6 +368,22 @@ class DaemonAcquireRepoProgress(DaemonAcquireProgress):
         self.transaction.progress_download = (
             item.uri, status, desc, total_size | item.owner.filesize,
             current_size | item.owner.partialsize, msg)
+
+    def fail(self, item):
+        """Invoked when an item could not be fetched."""
+        # Extract and format error information immediately
+        # (don't store item object as it may become invalid after cache.update())
+        try:
+            if item.owner and item.owner.error_text:
+                error_msg = f"{item.description}\n{item.owner.error_text}"
+                if error_msg not in self.failed_items:
+                    self.failed_items.append(error_msg)
+                    if self.error_message:
+                        self.error_message += "\n\n"
+                    self.error_message += error_msg
+        except (AttributeError, TypeError):
+            pass
+        self._emit_acquire_item(item)
 
 
 class DaemonForkProgress(object):

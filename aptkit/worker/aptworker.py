@@ -828,8 +828,14 @@ class AptWorker(BaseWorker):
             if trans.cancelled:
                 raise TransactionCancelled()
             else:
-                raise TransactionFailed(ERROR_REPO_DOWNLOAD_FAILED,
-                                        str(error))
+                # python-apt's FetchFailedException is often empty, so extract error details
+                # from the progress object
+                error_msg = str(error)
+                if not error_msg:
+                    error_msg = progress.error_message
+                if not error_msg:
+                    error_msg = _("Unknown repository update error")
+                raise TransactionFailed(ERROR_REPO_DOWNLOAD_FAILED, error_msg)
         except apt.cache.FetchCancelledException:
             raise TransactionCancelled()
         except apt.cache.LockFailedException:
