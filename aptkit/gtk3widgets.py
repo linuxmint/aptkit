@@ -52,6 +52,7 @@ from gi.repository import Pango
 from gi.repository import Vte
 
 from . import client
+from . import errors
 from .enums import *
 from defer import inline_callbacks
 from defer.utils import deferable
@@ -372,7 +373,15 @@ class AptCancelButton(Gtk.Button):
         self.set_sensitive(False)
 
     def _on_clicked(self, button, transaction):
-        transaction.cancel()
+        try:
+            transaction.cancel()
+        except errors.AptKitError:
+            # The daemon refused the cancel (typically the transaction has
+            # already entered a non-cancellable phase like the dpkg commit).
+            # Swallow it so the click handler doesn't crash the caller; the
+            # transaction will continue and its own finished/error signals
+            # will drive any further UI changes.
+            pass
         self.set_sensitive(False)
 
 
