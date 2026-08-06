@@ -80,6 +80,7 @@ class SimpleAPTClient(object):
         if self.progress_callback is None:
             dia = aptkit.gtk3widgets.AptProgressDialog(transaction, parent=self.parent_window)
             dia.run(close_on_finished=True, show_error=True, reply_handler=lambda: True, error_handler=self._on_error)
+            transaction.connect("progress-changed", self._on_progress)
             transaction.connect("finished", self._on_finish)
         else:
             SimpleAptKitTransaction(transaction, self.progress_callback, self.finished_callback, self.error_callback, self.parent_window)
@@ -102,6 +103,8 @@ class SimpleAPTClient(object):
             print(e)
 
     def _on_error(self, error):
+        if self.parent_window is not None:
+            XApp.set_window_progress(self.parent_window, 0)
         if isinstance(error, aptkit.errors.NotAuthorizedError):
             if self.cancelled_callback is not None:
                 self.cancelled_callback()
@@ -113,7 +116,13 @@ class SimpleAPTClient(object):
         dia.run()
         dia.hide()
 
+    def _on_progress(self, transaction, progress):
+        if self.parent_window is not None:
+            XApp.set_window_progress(self.parent_window, progress)
+
     def _on_finish(self, transaction, exit_state):
+        if self.parent_window is not None:
+            XApp.set_window_progress(self.parent_window, 0)
         if self.finished_callback is not None:
             self.finished_callback(transaction, exit_state)
 
