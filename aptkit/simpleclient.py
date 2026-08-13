@@ -44,8 +44,13 @@ class SimpleAPTClient(object):
             # Use the resolver from python-apt
             # it works better in complex scenarios
             # mark the packages as mark_install
+            # Package names may carry an explicit "#auto" suffix (see
+            # aptworker._mark_packages_for_installation()) telling the worker to
+            # record them as automatically installed rather than manual. Strip it
+            # for the cache lookups below, since apt itself doesn't know about it.
+            requested_names = [name.partition("#")[0] for name in packages]
             cache = apt.Cache()
-            for name in packages:
+            for name in requested_names:
                 try:
                     pkg = cache[name]
                     pkg.mark_install()
@@ -55,8 +60,12 @@ class SimpleAPTClient(object):
             # via cache.get_changes()
             changes = cache.get_changes()
             for pkg in changes:
-                if pkg.marked_install and pkg.name not in packages:
-                    packages.append(pkg.name)
+                if pkg.marked_install and pkg.name not in requested_names:
+                    # Not explicitly requested, just pulled in as a dependency
+                    # (e.g. a kernel image pulled in by a meta package): flag it
+                    # as automatic so it stays eligible for autoremoval, same as
+                    # a normal "apt install"/"apt upgrade" would leave it.
+                    packages.append(pkg.name + "#auto")
 
         client = aptkit.client.AptClient()
         client.install_packages(packages, reply_handler=self._simulate_trans, error_handler=self._on_error)
