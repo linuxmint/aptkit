@@ -1,3 +1,18 @@
+aptkit (1.1.3) alfa; urgency=medium
+
+  [ Michael Webster ]
+  * Add github 'build' workflow.
+  * gtk3widgets.py: Handle an error when cancel is clicked, if the operation is no longer cancellable.
+  * simpleclient.py: Use #auto tag on dependencies (#14)
+
+  [ Clement Lefebvre ]
+  * Improve error handling
+
+  [ pilatomic ]
+  * Show progress on parent window icon (#16)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 19 Aug 2026 14:57:34 +0200
+
 aptkit (1.1.2) zena; urgency=medium
 
   * l10n: Update translations
