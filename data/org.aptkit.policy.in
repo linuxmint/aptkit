@@ -9,12 +9,8 @@
   <icon_name>package-x-generic</icon_name>
 
   <action id="org.aptkit.get-trusted-vendor-keys">
-    <description>
-      List keys of trusted vendors
-    </description>
-    <message>
-      To view the list of trusted keys, you need to authenticate.
-    </message>
+    <description>List keys of trusted vendors</description>
+    <message>To view the list of trusted keys, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -23,12 +19,8 @@
   </action>
 
   <action id="org.aptkit.clean">
-    <description>
-      Remove downloaded package files
-    </description>
-    <message>
-      To clean downloaded package files, you need to authenticate.
-    </message>
+    <description>Remove downloaded package files</description>
+    <message>To clean downloaded package files, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -37,12 +29,8 @@
   </action>
 
   <action id="org.aptkit.change-config">
-    <description>
-      Change software configuration
-    </description>
-    <message>
-      To change software settings, you need to authenticate.
-    </message>
+    <description>Change software configuration</description>
+    <message>To change software settings, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -51,12 +39,8 @@
   </action>
 
   <action id="org.aptkit.change-repository">
-    <description>
-      Change software repository 
-    </description>
-    <message>
-      To change software repository settings, you need to authenticate.
-    </message>
+    <description>Change software repository</description>
+    <message>To change software repository settings, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -65,12 +49,8 @@
   </action>
 
   <action id="org.aptkit.install-file">
-    <description>
-      Install package file
-    </description>
-    <message>
-      To install this package, you need to authenticate.
-    </message>
+    <description>Install package file</description>
+    <message>To install this package, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -79,12 +59,8 @@
   </action>
 
   <action id="org.aptkit.update-cache">
-    <description>
-      Update package information
-    </description>
-    <message>
-      To update the software catalog, you need to authenticate.
-    </message>
+    <description>Update package information</description>
+    <message>To update the software catalog, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -93,12 +69,8 @@
   </action>
 
   <action id="org.aptkit.install-or-remove-packages">
-    <description>
-      Install or remove packages
-    </description>
-    <message>
-      To install or remove software, you need to authenticate.
-    </message>
+    <description>Install or remove packages</description>
+    <message>To install or remove software, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -117,12 +89,8 @@
          leightweight applications like unity-webapps or for packages
          comming from high trust repositories (like internal repositories)
     -->
-    <description>
-      Install software from a high-trust whitelisted repository.
-    </description>
-    <message>
-      To install software, you need to authenticate.
-    </message>
+    <description>Install software from a high-trust whitelisted repository.</description>
+    <message>To install software, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -136,12 +104,8 @@
 
          The client has to authenticate for this privilege before calling
 	 the aptkit methods. -->
-    <description>
-      Add a new repository and install packages from it
-    </description>
-    <message>
-      To install software from a new source, you need to authenticate.
-    </message>
+    <description>Add a new repository and install packages from it</description>
+    <message>To install software from a new source, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -158,12 +122,8 @@
 
 	 The only difference to install-packages-from-new-repo is the wording
 	 of the message. It is required by Ubuntu's Software-Center. -->
-    <description>
-      Add a new repository of purchased software and install packages from it
-    </description>
-    <message>
-      To install purchased software, you need to authenticate.
-    </message>
+    <description>Add a new repository of purchased software and install packages from it</description>
+    <message>To install purchased software, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -172,9 +132,7 @@
   </action>
 
   <action id="org.aptkit.upgrade-packages">
-    <description>
-      Upgrade packages
-    </description>
+    <description>Upgrade packages</description>
     <message>To install updated software, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
@@ -184,12 +142,8 @@
   </action>
 
   <action id="org.aptkit.cancel-foreign">
-    <description>
-      Cancel the task of another user
-    </description>
-    <message>
-      To cancel someone else's software changes, you need to authenticate.
-    </message>
+    <description>Cancel the task of another user</description>
+    <message>To cancel someone else's software changes, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
@@ -198,12 +152,8 @@
   </action>
 
   <action id="org.aptkit.set-proxy">
-    <description>
-      Set a proxy for software downloads
-    </description>
-    <message>
-      To use a proxy server for downloading software, you need to authenticate.
-    </message>
+    <description>Set a proxy for software downloads</description>
+    <message>To use a proxy server for downloading software, you need to authenticate.</message>
     <defaults>
       <allow_any>auth_admin</allow_any>
       <allow_inactive>auth_admin</allow_inactive>
