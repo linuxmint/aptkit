@@ -720,14 +720,31 @@ class AptWorker(BaseWorker):
         for sec in ("PreDepends", "Depends", "Recommends"):
             try:
                 for dep in cur.depends_list[sec]:
-                    dep_name = dep[0].target_pkg.name
-                    if dep_name not in all_deps:
-                        all_deps.add(dep_name)
-                        all_deps |= self._installed_dependencies(dep_name,
-                                                                 all_deps)
+                    for dep_name in self._installed_targets(dep):
+                        if dep_name not in all_deps:
+                            all_deps.add(dep_name)
+                            all_deps |= self._installed_dependencies(
+                                dep_name, all_deps)
             except KeyError:
                 pass
         return all_deps
+
+    @staticmethod
+    def _installed_targets(or_group):
+        """Return the names (:arch-qualified for foreign packages) of the
+        installed packages satisfying any dependency of the or-group.
+
+        The named target may only be satisfied through Provides, e.g.
+        foo:i386 depending on foo-data:i386, which only the Multi-Arch:
+        foreign foo-data:amd64 satisfies, through an implicit Provides.
+        """
+        names = set()
+        for dep in or_group:
+            for ver in dep.all_targets():
+                pkg = ver.parent_pkg
+                if pkg.current_ver and pkg.current_ver.id == ver.id:
+                    names.add(pkg.get_fullname(True))
+        return names
 
     def _mark_packages_for_downgrade(self, packages, resolver):
         """Mark packages for downgrade."""
