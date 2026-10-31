@@ -32,6 +32,8 @@ import functools
 import warnings
 from xml.etree import ElementTree
 
+import apt_pkg
+
 if sys.version >= '3':
     _gettext_method = "gettext"
 else:
@@ -126,6 +128,22 @@ def split_package_id(package):
         name = package
         version = release = None
     return name, version, release
+
+
+def use_default_solver():
+    """Select apt's 3.0 solver, as apt's command-line tools do by default
+    since 3.1 (see apt-private/private-cmndline.cc), unless APT::Solver is
+    already configured. python-apt would otherwise use the internal solver.
+    """
+    # Load the config before setting anything under APT: python-apt's
+    # apt/__init__.py skips init_config() once APT exists, and the
+    # APT::Solver check below needs the config files loaded.
+    if "APT" not in apt_pkg.config:
+        apt_pkg.init_config()
+    apt_pkg.init_system()
+    if (not apt_pkg.config.find("APT::Solver") and
+            apt_pkg.version_compare(apt_pkg.VERSION, "3.1") >= 0):
+        apt_pkg.config.set("APT::Solver", "3.0")
 
 
 # vim:ts=4:sw=4:et

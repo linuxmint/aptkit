@@ -43,6 +43,12 @@ from . import debconf
 import defer
 from defer.utils import deferable
 from .errors import convert_dbus_exception, TransactionFailed
+from .utils import use_default_solver
+
+# Set at import time, before any python-apt marking: the whole process
+# (including the caller's own python-apt use) then resolves with the same
+# solver as apt and the daemon.
+use_default_solver()
 
 __all__ = ("AptTransaction", "AptClient", "get_transaction", "get_aptkit")
 

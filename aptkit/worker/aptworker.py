@@ -57,7 +57,7 @@ from . import BaseWorker
 from ..enums import *
 from ..errors import *
 from .. import lock
-from ..utils import set_euid_egid
+from ..utils import set_euid_egid, use_default_solver
 from ..progress import (
     DaemonOpenProgress,
     DaemonInstallProgress,
@@ -324,9 +324,20 @@ class AptWorker(BaseWorker):
         try:
             resolver.resolve()
         except SystemError as excep:
-            raise TransactionFailed(
-                ERROR_DEP_RESOLUTION_FAILED,
-                self._get_resolve_failure_details(trans, excep, now=False))
+            if self._is_internal_solver():
+                details = self._get_resolve_failure_details(trans, excep,
+                                                            now=False)
+            else:
+                # Other solvers leave the depcache untouched when they fail,
+                # so the unmet dependencies would describe the state before
+                # solving, not the conflict the solver found; its error
+                # message explains that.
+                details = self._get_apt_error_text(excep)
+            raise TransactionFailed(ERROR_DEP_RESOLUTION_FAILED, details)
+
+    @staticmethod
+    def _is_internal_solver():
+        return apt_pkg.config.find("APT::Solver", "internal") == "internal"
 
     @staticmethod
     def _get_apt_error_text(excep):
@@ -646,6 +657,7 @@ class AptWorker(BaseWorker):
         if not resolver:
             resolver = apt.cache.ProblemResolver(self._cache)
         installed_deps = set()
+        obsoleted = []
         with self._cache.actiongroup():
             for pkg in self._cache.get_changes():
                 if pkg.marked_delete:
@@ -654,14 +666,44 @@ class AptWorker(BaseWorker):
             for dep_name in installed_deps:
                 if dep_name in self._cache:
                     pkg = self._cache[dep_name]
-                    if pkg.is_installed and pkg.is_auto_removable:
+                    if (pkg.is_installed and pkg.is_auto_removable and
+                            not pkg.marked_delete):
                         pkg.mark_delete(False)
+                        obsoleted.append(pkg)
+            # Removing them can break other auto-removable packages that
+            # depended on them. The internal resolver removes those, but
+            # the 3.0 solver prefers to keep them and install alternatives
+            # instead, so remove them explicitly.
+            pending = list(obsoleted)
+            while pending:
+                pkg = pending.pop()
+                for dep in pkg._pkg.rev_depends_list:
+                    rdep = self._cache._rawpkg_to_pkg(dep.parent_pkg)
+                    if (rdep.is_installed and rdep.is_auto_removable and
+                            rdep.is_inst_broken and not rdep.marked_delete):
+                        rdep.mark_delete(False)
+                        obsoleted.append(rdep)
+                        pending.append(rdep)
             # do an additional resolver run to ensure that the autoremove
             # never leaves the cache in an inconsistent state, see bug
-            # LP: #659111 for the rational, essentially this may happen
+            # LP: #659111 for the rationale, essentially this may happen
             # if a package is marked install during problem resolving but
-            # is later no longer required. the resolver deals with that
-            self._resolve_depends(trans, resolver)
+            # is later no longer required. the internal resolver deals with
+            # that
+            try:
+                self._resolve_depends(trans, resolver)
+            except TransactionFailed as error:
+                if not obsoleted or self._is_internal_solver():
+                    raise
+                # Other solvers treat marked removals as hard constraints
+                # instead of keeping a package that is still needed, so keep
+                # them all and try again.
+                log.warning("Keeping obsoleted dependencies %s: %s",
+                            ", ".join(pkg.name for pkg in obsoleted),
+                            error.details)
+                for pkg in obsoleted:
+                    pkg.mark_keep()
+                self._resolve_depends(trans, resolver)
 
     def _installed_dependencies(self, pkg_name, all_deps=None):
         """Recursively return all installed dependencies of a given package."""
@@ -948,6 +990,7 @@ class AptWorker(BaseWorker):
             status = self._status_orig
         apt_pkg.config.set("Dir::State::status", status)
         apt_pkg.init_system()
+        use_default_solver()
         progress = DaemonOpenProgress(trans, begin=begin, end=end,
                                       quiet=quiet)
         try:
