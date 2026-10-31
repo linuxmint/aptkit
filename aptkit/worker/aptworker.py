@@ -74,6 +74,10 @@ log = logging.getLogger("AptKit.Worker")
 # core.Transaction.gettext
 _ = lambda s: s
 
+# See apt-pkg/pkgcache.cc IsNegative() and IsCritical()
+_NEGATIVE_DEP_TYPES = ("Conflicts", "Breaks", "Obsoletes")
+_CRITICAL_DEP_TYPES = ("PreDepends", "Depends") + _NEGATIVE_DEP_TYPES
+
 _POPCON_PATH = "/etc/popularity-contest.conf"
 _POPCON_DEFAULT = """# Config file for Debian's popularity-contest package.
 #
@@ -312,17 +316,29 @@ class AptWorker(BaseWorker):
     def _resolve_depends(self, trans, resolver):
         """Resolve the dependencies using the given ProblemResolver."""
         self._call_plugins("modify_cache_before", resolver)
+        self._resolve(trans, resolver)
+        if self._call_plugins("modify_cache_after", resolver):
+            self._resolve(trans, resolver)
+
+    def _resolve(self, trans, resolver):
         try:
             resolver.resolve()
-        except SystemError:
-            raise TransactionFailed(ERROR_DEP_RESOLUTION_FAILED,
-                                    self._get_broken_details(trans, now=False))
-        if self._call_plugins("modify_cache_after", resolver):
-            try:
-                resolver.resolve()
-            except SystemError:
-                details = self._get_broken_details(trans, now=False)
-                raise TransactionFailed(ERROR_DEP_RESOLUTION_FAILED, details)
+        except SystemError as excep:
+            raise TransactionFailed(
+                ERROR_DEP_RESOLUTION_FAILED,
+                self._get_resolve_failure_details(trans, excep, now=False))
+
+    @staticmethod
+    def _get_apt_error_text(excep):
+        """Return the apt error messages of a python-apt SystemError without
+        the E:/W: prefixes python-apt joins them with, and without the blank
+        lines the 3.0 solver's explanations contain."""
+        text = re.sub(r"(?:^|, )[EW]:", "\n", str(excep))
+        return "\n".join(line for line in text.splitlines() if line.strip())
+
+    def _get_resolve_failure_details(self, trans, excep, now):
+        return "%s\n\n%s" % (self._get_apt_error_text(excep),
+                             self._get_broken_details(trans, now=now))
 
     def _get_high_trust_packages(self):
         """ Return a list of packages that come from a high-trust repo """
@@ -858,7 +874,8 @@ class AptWorker(BaseWorker):
         try:
             self._cache.upgrade(dist_upgrade=not safe_mode)
         except SystemError as excep:
-            raise TransactionFailed(ERROR_DEP_RESOLUTION_FAILED, str(excep))
+            raise TransactionFailed(ERROR_DEP_RESOLUTION_FAILED,
+                                    self._get_apt_error_text(excep))
         self._call_plugins("modify_cache_after")
         self._check_obsoleted_dependencies(trans)
         if not simulate:
@@ -908,9 +925,10 @@ class AptWorker(BaseWorker):
         trans.status = STATUS_RESOLVING_DEP
         try:
             self._cache._depcache.fix_broken()
-        except SystemError:
-            raise TransactionFailed(ERROR_DEP_RESOLUTION_FAILED,
-                                    self._get_broken_details(trans))
+        except SystemError as excep:
+            raise TransactionFailed(
+                ERROR_DEP_RESOLUTION_FAILED,
+                self._get_resolve_failure_details(trans, excep, now=True))
         if not simulate:
             self._apply_changes(trans)
 
@@ -1285,18 +1303,50 @@ class AptWorker(BaseWorker):
                 self._iterate_mainloop()
             yield pkg
 
+    @staticmethod
+    def _get_state_version(pkg, now):
+        """Return the version of pkg that is installed (if now) or that will
+        be installed once the marked changes are applied, or None."""
+        if now:
+            return pkg.installed
+        if pkg.marked_delete:
+            return None
+        if pkg.marked_install or pkg.marked_upgrade or pkg.marked_downgrade:
+            return pkg.candidate
+        return pkg.installed
+
+    def _is_dep_satisfied(self, base_dep, now):
+        """Return True if base_dep is met in the given state.
+
+        For negative dependencies, target_versions already leaves out the
+        package itself and Provides from its own package group.
+        """
+        negative = base_dep.rawtype in _NEGATIVE_DEP_TYPES
+        for target in base_dep.target_versions:
+            state_version = self._get_state_version(target.package, now)
+            if state_version and state_version.version == target.version:
+                return not negative
+        return negative
+
     def _get_broken_details(self, trans, now=True):
         """Return a message which provides debugging information about
         broken packages.
 
-        This method is basically a Python implementation of apt-get.cc's
-        ShowBroken.
+        This method is basically a Python implementation of apt's
+        ShowBroken (apt-private/private-output.cc).
 
         Keyword arguments:
         trans -- the corresponding transaction
-        now -- if we check currently broken dependecies or the installation
-               candidate
+        now -- if True, check the installed state, otherwise the state after
+               the marked changes are applied
         """
+        # See apt-pkg/depcache.cc IsImportantDep (minus
+        # Install-Recommends-Sections)
+        dep_types = list(_CRITICAL_DEP_TYPES)
+        if apt_pkg.config.find_b("APT::Install-Recommends", False):
+            dep_types.append("Recommends")
+        if apt_pkg.config.find_b("APT::Install-Suggests", False):
+            dep_types.append("Suggests")
         msg = trans.gettext("The following packages have unmet dependencies:")
         msg += "\n\n"
         for pkg in self._cache:
@@ -1304,55 +1354,34 @@ class AptWorker(BaseWorker):
                     (not now and pkg.is_inst_broken)):
                 continue
             msg += "%s: " % pkg.name
-            if now:
-                version = pkg.installed
-            else:
-                version = pkg.candidate
+            version = self._get_state_version(pkg, now)
+            if not version:
+                msg += "\n"
+                continue
             indent = " " * (len(pkg.name) + 2)
             dep_msg = ""
-            for dep in version.dependencies:
-                or_msg = ""
+            for dep in version.get_dependencies(*dep_types):
+                if any(self._is_dep_satisfied(base_dep, now)
+                       for base_dep in dep.or_dependencies):
+                    continue
+                or_msgs = []
                 for base_dep in dep.or_dependencies:
-                    if or_msg:
-                        or_msg += "or\n"
-                        or_msg += indent
-                    # Check if it's an important dependency
-                    # See apt-pkg/depcache.cc IsImportantDep
-                    # See apt-pkg/pkgcache.cc IsCritical()
-                    if not (base_dep.rawtype in ["Depends", "PreDepends",
-                                                 "Obsoletes", "DpkgBreaks",
-                                                 "Conflicts"] or
-                            (apt_pkg.config.find_b("APT::Install-Recommends",
-                                                   False) and
-                            base_dep.rawtype == "Recommends") or
-                            (apt_pkg.config.find_b("APT::Install-Suggests",
-                                                   False) and
-                             base_dep.rawtype == "Suggests")):
-                        continue
-                    # Get the version of the target package
-                    try:
-                        pkg_dep = self._cache[base_dep.name]
-                    except KeyError:
-                        dep_version = None
-                    else:
-                        if now:
-                            dep_version = pkg_dep.installed
-                        else:
-                            dep_version = pkg_dep.candidate
-                    # We only want to display dependencies which cannot
-                    # be satisfied
-                    if dep_version and not apt_pkg.check_dep(base_dep.version,
-                                                             base_dep.relation,
-                                                             version.version):
-                        break
-                    or_msg = "%s: %s " % (base_dep.rawtype, base_dep.name)
+                    # base_dep.name drops the architecture, so look up the
+                    # actual target (e.g. foo:i386) instead.
+                    target_rawpkg = base_dep._dep.target_pkg
+                    target = self._cache._rawpkg_to_pkg(target_rawpkg)
+                    dep_version = self._get_state_version(target, now)
+                    or_msg = "%s: %s " % (base_dep.rawtype, target.name)
                     if base_dep.version:
                         or_msg += "(%s %s) " % (base_dep.relation,
                                                 base_dep.version)
-                    if self._cache.is_virtual_package(base_dep.name):
+                    if (target_rawpkg.has_provides and
+                            not target_rawpkg.has_versions):
                         or_msg += trans.gettext("but it is a virtual package")
                     elif not dep_version:
-                        if now:
+                        if target.candidate is None:
+                            or_msg += trans.gettext("but it is not installable")
+                        elif now:
                             or_msg += trans.gettext("but it is not installed")
                         else:
                             or_msg += trans.gettext("but it is not going to "
@@ -1365,14 +1394,12 @@ class AptWorker(BaseWorker):
                         # TRANSLATORS: %s is a version number
                         or_msg += (trans.gettext("but %s is to be installed") %
                                    dep_version.version)
-                else:
-                    # Only append an or-group if at least one of the
-                    # dependencies cannot be satisfied
-                    if dep_msg:
-                        dep_msg += indent
-                    dep_msg += or_msg
-                    dep_msg += "\n"
-            msg += dep_msg
+                    or_msgs.append(or_msg)
+                if dep_msg:
+                    dep_msg += indent
+                dep_msg += (" or\n" + indent).join(or_msgs)
+                dep_msg += "\n"
+            msg += dep_msg or "\n"
         return msg
 
     def is_reboot_required(self):
