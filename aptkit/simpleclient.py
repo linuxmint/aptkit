@@ -1,3 +1,5 @@
+import traceback
+
 import gi
 gi.require_version('Gtk', '3.0')
 gi.require_version('XApp', '1.0')
@@ -41,25 +43,28 @@ class SimpleAPTClient(object):
 
     def install_packages(self, packages, use_apt_resolver=True):
         if use_apt_resolver:
-            # Use the resolver from python-apt
-            # it works better in complex scenarios
-            # mark the packages as mark_install
+            # Resolve client-side and pass the extra packages to the daemon.
             cache = apt.Cache()
-            for name in packages:
-                try:
-                    pkg = cache[name]
+            try:
+                for name in packages:
+                    try:
+                        pkg = cache[name]
+                    except KeyError:
+                        print(f"Package {name} not found in the cache!")
+                        continue
                     pkg.mark_install()
-                except:
-                    print(f"Package {name} not found in the cache!")
-            # then find out all the resulting installations
-            # via cache.get_changes()
-            changes = cache.get_changes()
-            for pkg in changes:
-                if pkg.marked_install and pkg.name not in packages:
-                    # see aptworker.py: _mark_packages_for_installation() - #auto suffix
-                    # marks this extra package as auto-installed even though we've explicitly
-                    # added it here.
-                    packages.append(pkg.name + "#auto")
+            except SystemError as e:
+                # Leave it to the daemon, which resolves all the packages at
+                # once and reports why if it fails too.
+                print(f"Client-side dependency resolution failed: {e}")
+            else:
+                changes = cache.get_changes()
+                for pkg in changes:
+                    if pkg.marked_install and pkg.name not in packages:
+                        # see aptworker.py: _mark_packages_for_installation() - #auto suffix
+                        # marks this extra package as auto-installed even though we've explicitly
+                        # added it here.
+                        packages.append(pkg.name + "#auto")
 
         client = aptkit.client.AptClient()
         client.install_packages(packages, reply_handler=self._simulate_trans, error_handler=self._on_error)
@@ -80,30 +85,46 @@ class SimpleAPTClient(object):
                                reply_handler=self._simulate_trans, error_handler=self._on_error)
 
     def _run_transaction(self, transaction):
-        if self.progress_callback is None:
-            dia = aptkit.gtk3widgets.AptProgressDialog(transaction, parent=self.parent_window)
-            dia.run(close_on_finished=True, show_error=True, reply_handler=lambda: True, error_handler=self._on_error)
-            transaction.connect("progress-changed", self._on_progress)
-            transaction.connect("finished", self._on_finish)
-        else:
-            SimpleAptKitTransaction(transaction, self.progress_callback, self.finished_callback, self.error_callback, self.parent_window)
+        try:
+            if self.progress_callback is None:
+                dia = aptkit.gtk3widgets.AptProgressDialog(transaction, parent=self.parent_window)
+                dia.run(close_on_finished=True, show_error=True,
+                        reply_handler=lambda: self._on_transaction_started(transaction),
+                        error_handler=self._on_error)
+            else:
+                SimpleAptKitTransaction(transaction, self.progress_callback, self.finished_callback, self.error_callback, self.parent_window)
+        except Exception as e:
+            self._on_exception(e)
+
+    def _on_transaction_started(self, transaction):
+        # Connected only once run() has succeeded: when it fails (e.g. the
+        # authorization is denied) the daemon also finishes the transaction
+        # with EXIT_FAILED, and _on_error has already reported that.
+        transaction.connect("progress-changed", self._on_progress)
+        transaction.connect("finished", self._on_finish)
 
     def _simulate_trans(self, trans):
         trans.simulate(reply_handler=lambda: self._confirm_deps(trans), error_handler=self._on_error)
 
     def _confirm_deps(self, trans):
         try:
+            confirmed = True
             if [pkgs for pkgs in trans.dependencies if pkgs]:
                 dia = aptkit.gtk3widgets.AptConfirmDialog(trans, parent=self.parent_window)
-                res = dia.run()
+                confirmed = dia.run() == Gtk.ResponseType.OK
                 dia.hide()
-                if res != Gtk.ResponseType.OK:
-                    if self.cancelled_callback is not None:
-                        self.cancelled_callback()
-                    return
-            self._run_transaction(trans)
         except Exception as e:
-            print(e)
+            self._on_exception(e)
+            return
+        if confirmed:
+            self._run_transaction(trans)
+        elif self.cancelled_callback is not None:
+            self.cancelled_callback()
+
+    def _on_exception(self, error):
+        if not isinstance(error, (aptkit.errors.AptKitError, aptkit.errors.PolicyKitError)):
+            traceback.print_exc()
+        self._on_error(error)
 
     def _on_error(self, error):
         if self.parent_window is not None:
@@ -118,6 +139,10 @@ class SimpleAPTClient(object):
         dia = aptkit.gtk3widgets.AptErrorDialog(error)
         dia.run()
         dia.hide()
+        if self.error_callback is not None:
+            self.error_callback(error.code, error.details)
+        elif self.finished_callback is not None:
+            self.finished_callback(None, aptkit.enums.EXIT_FAILED)
 
     def _on_progress(self, transaction, progress):
         if self.parent_window is not None:
@@ -151,6 +176,10 @@ class SimpleAptKitTransaction():
             XApp.set_window_progress(self.parent_window, progress)
 
     def on_transaction_error(self, transaction, error_code, error_details):
+        # run() raises these too, and SimpleAPTClient._run_transaction
+        # reports them as cancelled.
+        if error_code in (aptkit.enums.ERROR_NOT_AUTHORIZED, aptkit.enums.ERROR_AUTH_FAILED):
+            return
         if self.error_callback is not None:
             self.error_callback(error_code, error_details)
         if self.parent_window is not None:
