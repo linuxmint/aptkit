@@ -74,7 +74,7 @@ class SimpleAPTClient(object):
         client.remove_packages(packages, reply_handler=self._simulate_trans, error_handler=self._on_error)
 
     def purge_packages(self, packages):
-        self.commit_changes(purge=versioned_packages)
+        self.commit_changes(purge=packages)
 
     def downgrade_packages(self, versioned_packages):
         self.commit_changes(downgrade=versioned_packages)
