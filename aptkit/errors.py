@@ -209,12 +209,14 @@ def get_native_exception(error):
         return error
     dbus_name = error.get_dbus_name()
     dbus_msg = error.get_dbus_message()
+    # The message is "code: details", see AptKitError.__init__
+    code, sep, details = dbus_msg.partition(": ")
     if dbus_name == TransactionFailed._dbus_error_name:
-        return TransactionFailed(*dbus_msg.split(":", 1))
+        return TransactionFailed(code, details)
     elif dbus_name == AuthorizationFailed._dbus_error_name:
-        return AuthorizationFailed(*dbus_msg.split(":", 1))
+        return AuthorizationFailed(code, details)
     elif dbus_name == NotAuthorizedError._dbus_error_name:
-        return NotAuthorizedError(*dbus_msg.split(":", 1))
+        return NotAuthorizedError(code, details)
     for error_cls in [AptKitError, TransactionRoleAlreadySet,
                       TransactionAlreadyRunning, ForeignTransaction,
                       InvalidMetaDataError, InvalidProxyError,
