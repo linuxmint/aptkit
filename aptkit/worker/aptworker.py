@@ -432,9 +432,22 @@ class AptWorker(BaseWorker):
             elif pkg_rel:
                 self._set_candidate_release(pkg, pkg_rel)
 
-            pkg.mark_install(False, False, from_user)
-            resolver.clear(pkg)
-            resolver.protect(pkg)
+            self._mark_install(pkg, resolver, from_user)
+
+    @staticmethod
+    def _mark_install(pkg, resolver, from_user):
+        """Mark pkg for installation the way apt-get does: mark and protect
+        it first, then let MarkInstall pull in its dependencies and
+        Recommends. The internal resolver only fixes broken dependencies and
+        never adds Recommends, while the 3.0 solver ignores auto_inst and
+        handles both in resolve(). Protecting first keeps the package marked
+        if MarkInstall finds a dependency it cannot satisfy, so the resolver
+        reports the failure instead of silently dropping the request.
+        """
+        pkg.mark_install(False, False, from_user)
+        resolver.clear(pkg)
+        resolver.protect(pkg)
+        pkg.mark_install(False, True, from_user)
 
     def enable_distro_comp(self, trans, component):
         """Enable given component in the sources list.
@@ -790,10 +803,8 @@ class AptWorker(BaseWorker):
                                           "downgrade %s to"),
                                         pkg_name)
 
-            pkg.mark_install(False, False, True)
+            self._mark_install(pkg, resolver, True)
             pkg.mark_auto(auto)
-            resolver.clear(pkg)
-            resolver.protect(pkg)
 
     def _mark_packages_for_upgrade(self, packages, resolver):
         """Mark packages for upgrade."""
@@ -836,10 +847,8 @@ class AptWorker(BaseWorker):
             elif pkg_rel:
                 self._set_candidate_release(pkg, pkg_rel)
 
-            pkg.mark_install(False, False, True)
+            self._mark_install(pkg, resolver, True)
             pkg.mark_auto(auto)
-            resolver.clear(pkg)
-            resolver.protect(pkg)
 
     @staticmethod
     def _set_candidate_release(pkg, release):
