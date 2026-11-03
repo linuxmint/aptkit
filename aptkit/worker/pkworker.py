@@ -20,6 +20,7 @@ __author__ = "Sebastian Heinlein <devel@glatzor.de>"
 import datetime
 import glob
 import gzip
+from importlib import metadata
 import locale
 import logging
 import os
@@ -37,12 +38,6 @@ gi.require_version('PackageKitGlib', '1.0')
 
 from gi.repository import GObject
 from gi.repository import PackageKitGlib as pk
-
-# for optional plugin support
-try:
-    import pkg_resources
-except ImportError:
-    pkg_resources = None
 
 from ..pkutils import (bitfield_add, bitfield_remove, bitfield_summarize,
                        bitfield_contains)
@@ -1244,19 +1239,11 @@ class AptPackageKitWorker(aptworker.AptWorker):
         if self._plugins is not None:
             return
 
-        if not pkg_resources:
-            return
-
         self._plugins = {}  # plugin_name -> [plugin_fn1, ...]
 
-        # just look in standard Python paths for now
-        dists, errors = pkg_resources.working_set.find_plugins(
-            pkg_resources.Environment())
-        for dist in dists:
-            pkg_resources.working_set.add(dist)
         for plugin_name in ["what_provides"]:
-            for entry_point in pkg_resources.iter_entry_points(
-                    "packagekit.apt.plugins", plugin_name):
+            for entry_point in metadata.entry_points(
+                    group="packagekit.apt.plugins", name=plugin_name):
                 try:
                     plugin = entry_point.load()
                 except Exception as e:

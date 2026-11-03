@@ -23,7 +23,7 @@ __all__ = ("BaseWorker", "DummyWorker")
 
 import logging
 import os
-import pkg_resources
+from importlib import metadata
 import time
 import traceback
 
@@ -173,18 +173,19 @@ class BaseWorker(GObject.GObject):
     def _load_plugins(self, plugins, entry_point="aptkit.plugins"):
         """Load the plugins from setuptools' entry points."""
         plugin_dirs = [os.path.join(os.path.dirname(__file__), "plugins")]
-        env = pkg_resources.Environment(plugin_dirs)
-        dists, errors = pkg_resources.working_set.find_plugins(env)
-        for dist in dists:
-            pkg_resources.working_set.add(dist)
+        entry_points = list(metadata.entry_points(group=entry_point))
+        for dist in metadata.distributions(path=plugin_dirs):
+            entry_points.extend(ept for ept in dist.entry_points
+                                if ept.group == entry_point)
         for name in plugins:
-            for ept in pkg_resources.iter_entry_points(entry_point,
-                                                       name):
+            for ept in entry_points:
+                if ept.name != name:
+                    continue
                 try:
                     self.plugins.setdefault(name, []).append(ept.load())
-                except:
+                except Exception:
                     log.critical("Failed to load %s plugin: "
-                                 "%s" % (name, ept.dist))
+                                 "%s" % (name, ept.dist.name))
                 else:
                     log.debug("Loaded %s plugin: %s", name, ept.dist)
 
