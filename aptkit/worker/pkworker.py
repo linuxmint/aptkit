@@ -1248,10 +1248,10 @@ class AptPackageKitWorker(aptworker.AptWorker):
                     plugin = entry_point.load()
                 except Exception as e:
                     pklog.warning("Failed to load %s from plugin %s: %s" % (
-                        plugin_name, str(entry_point.dist), str(e)))
+                        plugin_name, entry_point.dist.name, str(e)))
                     continue
                 pklog.debug("Loaded %s from plugin %s" % (
-                    plugin_name, str(entry_point.dist)))
+                    plugin_name, entry_point.dist.name))
                 self._plugins.setdefault(plugin_name, []).append(plugin)
 
     def _apply_changes(self, trans, fetch_range=(15, 50),

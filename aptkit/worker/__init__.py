@@ -187,7 +187,7 @@ class BaseWorker(GObject.GObject):
                     log.critical("Failed to load %s plugin: "
                                  "%s" % (name, ept.dist.name))
                 else:
-                    log.debug("Loaded %s plugin: %s", name, ept.dist)
+                    log.debug("Loaded %s plugin: %s", name, ept.dist.name)
 
     def _simulate_transaction(self, trans):
         """This method needs to be implemented by the backends."""
