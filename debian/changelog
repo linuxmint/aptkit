@@ -1,3 +1,23 @@
+aptkit (1.1.5) adrien; urgency=medium
+
+  [ Michael Webster ]
+  * aptworker.py: Fix dependency failure reporting.
+  * Use apt's default solver.
+  * simpleclient.py: Fix error and cancel reporting.
+  * aptworker.py: Keep the architecture when collecting obsoleted dependencies.
+  * errors.py: Don't keep the separator in converted DBus error details.
+  * aptworker.py: Mark requested packages the way apt-get does.
+  * simpleclient.py: Fix NameError in purge_packages().
+  * Fix some more logging (follow-up to 35fe234650)
+
+  [ Bardia Moshiri ]
+  * migrate from pkg_resources to importlib (#22)
+
+  [ Clement Lefebvre ]
+  * l10n: Update POT
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 09 Nov 2026 09:29:53 +0000
+
 aptkit (1.1.4) adrien; urgency=medium
 
   [ Michael Webster ]
