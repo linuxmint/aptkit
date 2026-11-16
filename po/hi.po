@@ -7,72 +7,72 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-20 14:47+0000\n"
+"POT-Creation-Date: 2026-11-09 09:28+0000\n"
 "PO-Revision-Date: 2024-09-14 09:31+0000\n"
 "Last-Translator: Divya kalra <Unknown>\n"
 "Language-Team: Hindi <hi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:44+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 "Language: hi\n"
 
 #: data/org.aptkit.policy.in:12
 msgid "List keys of trusted vendors"
 msgstr "विश्वसनीय विक्रेता का कुँजी सूची"
 
-#: data/org.aptkit.policy.in:15
+#: data/org.aptkit.policy.in:13
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr ""
 "विश्वसनीय कुँजी की सूची को देखने के लिए, आपको सत्यापन की आवश्यकता है."
 
-#: data/org.aptkit.policy.in:26
+#: data/org.aptkit.policy.in:22
 msgid "Remove downloaded package files"
 msgstr "डाउनलोड पैकज संचिका हटाएँ"
 
-#: data/org.aptkit.policy.in:29
+#: data/org.aptkit.policy.in:23
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr ""
 "डाउनलोड पैकेज संचिका को साफ करने के लिए आपको प्राधिकार की आवश्यकता है"
 
-#: data/org.aptkit.policy.in:40
+#: data/org.aptkit.policy.in:32
 msgid "Change software configuration"
 msgstr "सॉफ्टवेयर विन्यास बदलें"
 
-#: data/org.aptkit.policy.in:43
+#: data/org.aptkit.policy.in:33
 msgid "To change software settings, you need to authenticate."
 msgstr "सॉफ्टवेयर विन्यास हेतु, आपको प्राधिकार की आवश्यकता है."
 
-#: data/org.aptkit.policy.in:54
+#: data/org.aptkit.policy.in:42
 msgid "Change software repository"
 msgstr "सॉफ्टवेयर भंडार बदले"
 
-#: data/org.aptkit.policy.in:57
+#: data/org.aptkit.policy.in:43
 msgid "To change software repository settings, you need to authenticate."
 msgstr "सॉफ्टवेयर भंडार विन्यास को बदलने हेतु, आपको सत्यापन की आवश्यकता है."
 
-#: data/org.aptkit.policy.in:68
+#: data/org.aptkit.policy.in:52
 msgid "Install package file"
 msgstr "पैकेज संचिका को संस्थापित करें"
 
-#: data/org.aptkit.policy.in:71
+#: data/org.aptkit.policy.in:53
 msgid "To install this package, you need to authenticate."
 msgstr "इस पैकेज को संस्थापित करने के लिए, आपको सत्यापन की आवश्यकता है."
 
-#: data/org.aptkit.policy.in:82
+#: data/org.aptkit.policy.in:62
 msgid "Update package information"
 msgstr "पैकेज सूचना को अद्यतन करें"
 
-#: data/org.aptkit.policy.in:85
+#: data/org.aptkit.policy.in:63
 msgid "To update the software catalog, you need to authenticate."
 msgstr "सॉफ्टवेयर नामावली के अद्यतन के लिए, आपको सत्यापन की आवश्यकता है."
 
-#: data/org.aptkit.policy.in:96
+#: data/org.aptkit.policy.in:72
 msgid "Install or remove packages"
 msgstr "पैकेज संस्थापित करें या हटाएँ"
 
-#: data/org.aptkit.policy.in:99
+#: data/org.aptkit.policy.in:73
 msgid "To install or remove software, you need to authenticate."
 msgstr ""
 "सॉफ्टवेयर को संस्थापित करने या हटाने के लिए आपको सत्यापन की आवश्यकता है."
@@ -86,11 +86,11 @@ msgstr ""
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
-#: data/org.aptkit.policy.in:120
+#: data/org.aptkit.policy.in:92
 msgid "Install software from a high-trust whitelisted repository."
 msgstr "उच्च-विश्वसनीय श्वेतसूची वाले रिपॉजिटरी से सॉफ़्टवेयर स्थापित करें."
 
-#: data/org.aptkit.policy.in:123
+#: data/org.aptkit.policy.in:93
 msgid "To install software, you need to authenticate."
 msgstr "सॉफ़्टवेयर स्थापित करने के लिए, आपको प्रमाणित करने की आवश्यकता है."
 
@@ -99,11 +99,11 @@ msgstr "सॉफ़्टवेयर स्थापित करने के
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: data/org.aptkit.policy.in:139
+#: data/org.aptkit.policy.in:107
 msgid "Add a new repository and install packages from it"
 msgstr "एक नया भंडार जोड़े तथा इससे पैकेज संस्थापित करें"
 
-#: data/org.aptkit.policy.in:142
+#: data/org.aptkit.policy.in:108
 msgid "To install software from a new source, you need to authenticate."
 msgstr ""
 "नए स्रोत से सॉफ्टवेयर संस्थापित करने के लिए, आपको सत्यापन की आवश्यकता है."
@@ -116,41 +116,41 @@ msgstr ""
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: data/org.aptkit.policy.in:161
+#: data/org.aptkit.policy.in:125
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
 "एक नया सॉफ्टवेयर खरीदारी का भंडार जोड़े तथा इससे पैकेज संस्थापित करें"
 
-#: data/org.aptkit.policy.in:164
+#: data/org.aptkit.policy.in:126
 msgid "To install purchased software, you need to authenticate."
 msgstr ""
 "खरीदे गए सॉफ्टवेयर को संस्थापित करने के लिए, आपको सत्यापन की आवश्यकता है."
 
-#: data/org.aptkit.policy.in:175
+#: data/org.aptkit.policy.in:135
 msgid "Upgrade packages"
 msgstr "अद्यतन पैकेज"
 
-#: data/org.aptkit.policy.in:178
+#: data/org.aptkit.policy.in:136
 msgid "To install updated software, you need to authenticate."
 msgstr ""
 "अद्यतन सॉफ्टवेयर को संस्थापित करने के लिए, आपको सत्यापन की आवश्यकता है."
 
-#: data/org.aptkit.policy.in:187
+#: data/org.aptkit.policy.in:145
 msgid "Cancel the task of another user"
 msgstr "दूसरे प्रयोक्ता के कार्य को रद्द करें"
 
-#: data/org.aptkit.policy.in:190
+#: data/org.aptkit.policy.in:146
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
 "किसी और के द्वारा सॉफ्टवयेर परिवर्तन को निरस्त करने हेतु, आपको सत्यापन की "
 "आवश्यकता है."
 
-#: data/org.aptkit.policy.in:201
+#: data/org.aptkit.policy.in:155
 msgid "Set a proxy for software downloads"
 msgstr "सॉफ्टवेयर डाउनलोड करने हेतु प्रॉक्सी नियत करें"
 
-#: data/org.aptkit.policy.in:204
+#: data/org.aptkit.policy.in:156
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
@@ -369,9 +369,13 @@ msgstr "खोज असफल हुई"
 msgid "Adding license key"
 msgstr "लाइसेंस कुंजी जोड़ना"
 
-#: aptkit/enums.py:370 aptkit/enums.py:371
+#: aptkit/enums.py:370
 msgid "Check your Internet connection."
 msgstr "अंतर्जाल संयोजन की जाँच करें।"
+
+#: aptkit/enums.py:371
+msgid "See the error details below for more information."
+msgstr ""
 
 #: aptkit/enums.py:372
 msgid ""
@@ -797,46 +801,46 @@ msgstr "संजाल उपलब्ध नहीं है"
 msgid "Processing %s"
 msgstr "%s बनाने की प्रक्रिया चल रही है"
 
-#: aptkit/gtk3widgets.py:230
+#: aptkit/gtk3widgets.py:231
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
 msgstr "%sB को %sB से %sB/s पर डाउनलोड कर रहा है"
 
-#: aptkit/gtk3widgets.py:235 aptkit/gtk3widgets.py:436
+#: aptkit/gtk3widgets.py:236 aptkit/gtk3widgets.py:446
 #, python-format
 msgid "Downloaded %sB of %sB"
 msgstr "%sB को %sB से डाउनलोड कर रहा है"
 
-#: aptkit/gtk3widgets.py:247
+#: aptkit/gtk3widgets.py:248
 msgid "Details"
 msgstr "विवरण"
 
-#: aptkit/gtk3widgets.py:400
+#: aptkit/gtk3widgets.py:410
 msgid "File"
 msgstr "संचिका"
 
 #. TRANSLATORS: header of the progress download column
-#: aptkit/gtk3widgets.py:405
+#: aptkit/gtk3widgets.py:415
 msgid "%"
 msgstr "%"
 
-#: aptkit/gtk3widgets.py:441
+#: aptkit/gtk3widgets.py:451
 #, python-format
 msgid "Downloaded %sB"
 msgstr "%sB डाउनलोड हो गया"
 
-#: aptkit/gtk3widgets.py:444
+#: aptkit/gtk3widgets.py:454
 msgid "Downloaded"
 msgstr "डाउनलोड हो गया"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: aptkit/gtk3widgets.py:787
+#: aptkit/gtk3widgets.py:797
 #, python-format
 msgid "CD/DVD '%s' is required"
 msgstr "सीडी/डिवीडी '%s' की आवश्यकता है"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: aptkit/gtk3widgets.py:789
+#: aptkit/gtk3widgets.py:799
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
@@ -845,98 +849,98 @@ msgstr ""
 "कृपया उपरोक्त सीडी/डीवीडी को '%s' ड्राइव में डाले ताकि इससे सॉफ्टवेयर पैकेज "
 "संस्थापित हो सके."
 
-#: aptkit/gtk3widgets.py:793 aptkit/gtk3widgets.py:815
+#: aptkit/gtk3widgets.py:803 aptkit/gtk3widgets.py:825
 msgid "C_ontinue"
 msgstr "जारी रखें (_C)"
 
-#: aptkit/gtk3widgets.py:866
+#: aptkit/gtk3widgets.py:876
 msgid "Install"
 msgstr "संस्थापित करें"
 
-#: aptkit/gtk3widgets.py:867
+#: aptkit/gtk3widgets.py:877
 msgid "Reinstall"
 msgstr "पुनःसंस्थापित करें"
 
-#: aptkit/gtk3widgets.py:868
+#: aptkit/gtk3widgets.py:878
 msgid "Remove"
 msgstr "हटाएँ"
 
-#: aptkit/gtk3widgets.py:869
+#: aptkit/gtk3widgets.py:879
 msgid "Purge"
 msgstr "सफाई"
 
-#: aptkit/gtk3widgets.py:870
+#: aptkit/gtk3widgets.py:880
 msgid "Upgrade"
 msgstr "उन्नयन"
 
-#: aptkit/gtk3widgets.py:871
+#: aptkit/gtk3widgets.py:881
 msgid "Downgrade"
 msgstr "अवनयन"
 
-#: aptkit/gtk3widgets.py:872
+#: aptkit/gtk3widgets.py:882
 msgid "Skip upgrade"
 msgstr "उन्नयन छोड़े"
 
-#: aptkit/gtk3widgets.py:883
+#: aptkit/gtk3widgets.py:893
 msgid "Please take a look at the list of changes below."
 msgstr "कृपया निम्न परिवर्तन सूची पर एक नजर देख ले."
 
-#: aptkit/gtk3widgets.py:891
+#: aptkit/gtk3widgets.py:901
 msgid "Additional software has to be installed"
 msgstr "अतरिक्त सॉफ्टवेयर संस्थापित होना है"
 
-#: aptkit/gtk3widgets.py:893
+#: aptkit/gtk3widgets.py:903
 msgid "Additional software has to be re-installed"
 msgstr "अतरिक्त सॉफ्टवेयर पुनःसंस्थापित होना है"
 
-#: aptkit/gtk3widgets.py:895
+#: aptkit/gtk3widgets.py:905
 msgid "Additional software has to be removed"
 msgstr "अतरिक्त सॉफ्टवेयर हटाया जाना है"
 
-#: aptkit/gtk3widgets.py:897
+#: aptkit/gtk3widgets.py:907
 msgid "Additional software has to be purged"
 msgstr "अतरिक्त सॉफ्टवेयर साफ किया जाना है"
 
-#: aptkit/gtk3widgets.py:899
+#: aptkit/gtk3widgets.py:909
 msgid "Additional software has to be upgraded"
 msgstr "अतरिक्त सॉफ्टवेयर उन्नयन होना है"
 
-#: aptkit/gtk3widgets.py:901
+#: aptkit/gtk3widgets.py:911
 msgid "Additional software has to be downgraded"
 msgstr "अतरिक्त सॉफ्टवेयर अवनयन होना है"
 
-#: aptkit/gtk3widgets.py:903
+#: aptkit/gtk3widgets.py:913
 msgid "Updates will be skipped"
 msgstr "अद्यतन छोड़ दिया जाएगा"
 
-#: aptkit/gtk3widgets.py:911
+#: aptkit/gtk3widgets.py:921
 msgid "Additional changes are required"
 msgstr "अतरिक्त परिवर्तन की आवश्यकता है"
 
-#: aptkit/gtk3widgets.py:916
+#: aptkit/gtk3widgets.py:926
 #, python-format
 msgid "%sB will be downloaded in total."
 msgstr "कुल %sB डाउनलोड किया जाएगा."
 
-#: aptkit/gtk3widgets.py:920
+#: aptkit/gtk3widgets.py:930
 #, python-format
 msgid "%sB of disk space will be freed."
 msgstr "%sB डिस्क स्थान खाली होगा."
 
-#: aptkit/gtk3widgets.py:924
+#: aptkit/gtk3widgets.py:934
 #, python-format
 msgid "%sB more disk space will be used."
 msgstr "%sB अतरिक्त डिस्क स्थान उपयोग होगा."
 
 #. TRANSLATORS: %s is a file path
-#: aptkit/gtk3widgets.py:983
+#: aptkit/gtk3widgets.py:993
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
 msgstr ""
 "विन्यास संचिका के नवीनतम संस्करण से '%s' में परिवर्तन प्रतिस्थापित करेंगे?"
 
-#: aptkit/gtk3widgets.py:985
+#: aptkit/gtk3widgets.py:995
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
@@ -944,19 +948,19 @@ msgstr ""
 "यदि आप नहीं जानते कि वहाँ पर संचिका पहले से क्यों है, तो इसे प्रतिस्थापित "
 "करना सुरक्षित है."
 
-#: aptkit/gtk3widgets.py:994
+#: aptkit/gtk3widgets.py:1004
 msgid "_Changes"
 msgstr "बदलाव (_C)"
 
-#: aptkit/gtk3widgets.py:997
+#: aptkit/gtk3widgets.py:1007
 msgid "_Keep"
 msgstr "बनाए रखें (_K)"
 
-#: aptkit/gtk3widgets.py:998
+#: aptkit/gtk3widgets.py:1008
 msgid "_Replace"
 msgstr "प्रतिस्थापित करें (_R)"
 
-#: aptkit/gtk3widgets.py:1101
+#: aptkit/gtk3widgets.py:1111
 msgid "_Details"
 msgstr "विवरण (_D)"
 
@@ -974,168 +978,172 @@ msgstr "%s डाउनलोड हो रहा है"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: aptkit/progress.py:277 aptkit/progress.py:314
+#: aptkit/progress.py:279 aptkit/progress.py:316
 msgid "local repository"
 msgstr "स्थानीय भण्डार"
 
 #. TRANSLATORS: %s is a list of repository names
-#: aptkit/progress.py:280
+#: aptkit/progress.py:282
 #, python-format
 msgid "Downloading from %s"
 msgstr "%s से डाउनलोड हो रहा है"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:318
+#: aptkit/progress.py:320
 #, python-format
 msgid "Structure of %s"
 msgstr "%s की संरचना"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:321
+#: aptkit/progress.py:323
 #, python-format
 msgid "Description of %s"
 msgstr "%s का विवरण"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:324
+#: aptkit/progress.py:326
 #, python-format
 msgid "Description signature of %s"
 msgstr "%s का वर्णन हस्ताक्षर"
 
-#: aptkit/progress.py:329
+#: aptkit/progress.py:331
 #, python-format
 msgid "Available packages from %s"
 msgstr "%s से उपलब्ध पैकेज"
 
-#: aptkit/progress.py:333
+#: aptkit/progress.py:335
 #, python-format
 msgid "Available sources from %s"
 msgstr "%s से उपलब्ध स्रोत"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:336
+#: aptkit/progress.py:338
 #, python-format
 msgid "Available translations from %s"
 msgstr "%s से उपलब्ध अनुवाद"
 
-#: aptkit/progress.py:353
+#: aptkit/progress.py:355
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr "%s से %s (%s) के लिए अनुवाद"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: aptkit/progress.py:357
+#: aptkit/progress.py:359
 #, python-format
 msgid "Translations for %s from %s"
 msgstr "%s से %s के लिए अनुवाद"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: aptkit/progress.py:362
+#: aptkit/progress.py:364
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr "%s से अनुवाद (%s)"
 
-#: aptkit/worker/aptworker.py:372 aptkit/worker/aptworker.py:587
-#: aptkit/worker/aptworker.py:682 aptkit/worker/aptworker.py:727
+#: aptkit/worker/aptworker.py:399 aptkit/worker/aptworker.py:627
+#: aptkit/worker/aptworker.py:770 aptkit/worker/aptworker.py:817
 #, python-format
 msgid "Package %s isn't available"
 msgstr "पैकेज %s उपलब्ध नहीं है"
 
-#: aptkit/worker/aptworker.py:377 aptkit/worker/aptworker.py:591
-#: aptkit/worker/aptworker.py:686 aptkit/worker/aptworker.py:731
+#: aptkit/worker/aptworker.py:404 aptkit/worker/aptworker.py:631
+#: aptkit/worker/aptworker.py:774 aptkit/worker/aptworker.py:821
 #, python-format
 msgid "Package %s isn't installed"
 msgstr "पैकेज %s संस्थापित नहीं है"
 
-#: aptkit/worker/aptworker.py:381
+#: aptkit/worker/aptworker.py:408
 #, python-format
 msgid "The version %s of %s isn't installed"
 msgstr "संस्करण %s जो %s का है संस्थापित नहीं है"
 
-#: aptkit/worker/aptworker.py:396
+#: aptkit/worker/aptworker.py:423
 #, python-format
 msgid "Package %s is already installed"
 msgstr "पैकेज %s पहले से संस्थपित है"
 
-#: aptkit/worker/aptworker.py:403 aptkit/worker/aptworker.py:754
+#: aptkit/worker/aptworker.py:430 aptkit/worker/aptworker.py:844
 #, python-format
 msgid "The version %s of %s isn't available."
 msgstr "यह संस्करण %s जो %s का है उपलब्ध नहीं है."
 
-#: aptkit/worker/aptworker.py:595
+#: aptkit/worker/aptworker.py:635
 #, python-format
 msgid "Package %s cannot be removed."
 msgstr "पैकेज %s नहीं हटाया जा सकता."
 
-#: aptkit/worker/aptworker.py:599
+#: aptkit/worker/aptworker.py:639
 #, python-format
 msgid "The version %s of %s is not installed"
 msgstr "संस्करण %s जो %s का है संस्थपित नहीं है"
 
-#: aptkit/worker/aptworker.py:694
+#: aptkit/worker/aptworker.py:784
 #, python-format
 msgid "The former version %s of %s is already installed"
 msgstr "पूर्ववर्ती संस्करण %s जो %s का है पहले से संस्थापित है"
 
-#: aptkit/worker/aptworker.py:699 aptkit/worker/aptworker.py:747
+#: aptkit/worker/aptworker.py:791 aptkit/worker/aptworker.py:837
 #, python-format
 msgid "The version %s of %s is already installed"
 msgstr "संस्करण %s जो %s का है पहले से संस्थापित है"
 
-#: aptkit/worker/aptworker.py:706
+#: aptkit/worker/aptworker.py:798
 #, python-format
 msgid "The version %s of %s isn't available"
 msgstr "यह संस्करण %s जो %s का है उपलब्ध नहीं है"
 
-#: aptkit/worker/aptworker.py:710
+#: aptkit/worker/aptworker.py:802
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
 msgstr "%s से पदावनत करने के लिए आप उस संस्करण का उल्लेख करें"
 
-#: aptkit/worker/aptworker.py:740
+#: aptkit/worker/aptworker.py:830
 #, python-format
 msgid "The later version %s of %s is already installed"
 msgstr "परवर्ती संस्करण %s जो %s का है पहले से संस्थापित है"
 
-#: aptkit/worker/aptworker.py:776
+#: aptkit/worker/aptworker.py:864
 #, python-format
 msgid "The package %s isn't available in the %s release."
 msgstr "यह पैकेज %s की उपलब्धता %s प्रकाशन में नहीं है."
 
-#: aptkit/worker/aptworker.py:961
+#: aptkit/worker/aptworker.py:921
+msgid "Unknown repository update error"
+msgstr ""
+
+#: aptkit/worker/aptworker.py:1058
 #, python-format
 msgid "Package %s cannot be removed"
 msgstr "पैकेज %s नहीं हटाया जा सकता"
 
-#: aptkit/worker/aptworker.py:1063
+#: aptkit/worker/aptworker.py:1160
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
 msgstr ""
 "यह पैकेज वैध-आकार फिल्ड नहीं प्रदान करता है. देखें डेबियन नीति 5.6.20."
 
-#: aptkit/worker/aptworker.py:1202
+#: aptkit/worker/aptworker.py:1299
 msgid "The license key is empty"
 msgstr "लायसेंस कुंजी रिक्त है"
 
-#: aptkit/worker/aptworker.py:1218
+#: aptkit/worker/aptworker.py:1315
 msgid "The license key is not allowed to contain executable code."
 msgstr ""
 "निष्पादन योग्य कोड शामिल करने के लिए लाइसेंस कुंजी की अनुमति नहीं है।"
 
-#: aptkit/worker/aptworker.py:1227
+#: aptkit/worker/aptworker.py:1324
 #, python-format
 msgid "The license key path %s is invalid"
 msgstr "लायसेंस कुंजी पथ %s अमान्य है"
 
-#: aptkit/worker/aptworker.py:1231
+#: aptkit/worker/aptworker.py:1328
 #, python-format
 msgid "The license key already exists: %s"
 msgstr "लाइसेंस कुंजी पहले से मौजूद है: %s"
 
-#: aptkit/worker/aptworker.py:1236
+#: aptkit/worker/aptworker.py:1333
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
@@ -1144,40 +1152,44 @@ msgstr ""
 "लाइसेंस कुंजी का स्थान असुरक्षित है क्योंकि इसमें प्रतीकात्मक लिंक हैं। पथ "
 "%s को %s से मैप करता है"
 
-#: aptkit/worker/aptworker.py:1244
+#: aptkit/worker/aptworker.py:1341
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
 msgstr "वह निर्देशिका जहाँ कुंजी स्थापित करनी है अभी तक मौजूद नहीं है: %s"
 
-#: aptkit/worker/aptworker.py:1255
+#: aptkit/worker/aptworker.py:1352
 #, python-format
 msgid "Failed to write key file to: %s"
 msgstr "कुंजी फ़ाइल को इस पर लिखने में विफल: %s"
 
-#: aptkit/worker/aptworker.py:1290
+#: aptkit/worker/aptworker.py:1419
 msgid "The following packages have unmet dependencies:"
 msgstr "निम्न पैकेज में सभी निर्भरता नहीं है."
 
-#: aptkit/worker/aptworker.py:1343
+#: aptkit/worker/aptworker.py:1449
 msgid "but it is a virtual package"
 msgstr "लेकिन यह एक आभासी पैकेज है"
 
-#: aptkit/worker/aptworker.py:1346
+#: aptkit/worker/aptworker.py:1452
+msgid "but it is not installable"
+msgstr ""
+
+#: aptkit/worker/aptworker.py:1454
 msgid "but it is not installed"
 msgstr "लेकिन यह संस्थापित नहीं है"
 
-#: aptkit/worker/aptworker.py:1348
+#: aptkit/worker/aptworker.py:1456
 msgid "but it is not going to be installed"
 msgstr "लेकिन यह संस्थापित नहीं होने जा रहा है"
 
 #. TRANSLATORS: %s is a version number
-#: aptkit/worker/aptworker.py:1352
+#: aptkit/worker/aptworker.py:1460
 #, python-format
 msgid "but %s is installed"
 msgstr "लेकिन %s संस्थापित है"
 
 #. TRANSLATORS: %s is a version number
-#: aptkit/worker/aptworker.py:1356
+#: aptkit/worker/aptworker.py:1464
 #, python-format
 msgid "but %s is to be installed"
 msgstr "लेकिन %s संस्थापित हो जाएगा"

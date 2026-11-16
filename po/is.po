@@ -4,75 +4,75 @@
 # This file is distributed under the same license as the aptkit package.
 #
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-# SPDX-FileCopyrightText: 2010, 2024, 2025 Sveinn í Felli <sveinki@nett.is>
+# SPDX-FileCopyrightText: 2010, 2024, 2025, 2026 Sveinn í Felli <sveinki@nett.is>
 msgid ""
 msgstr ""
 "Project-Id-Version: po_aptkit-is\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-20 14:47+0000\n"
-"PO-Revision-Date: 2025-09-05 00:12+0000\n"
+"POT-Creation-Date: 2026-11-09 09:28+0000\n"
+"PO-Revision-Date: 2026-04-30 18:36+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:44+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 "Language: is\n"
 
 #: data/org.aptkit.policy.in:12
 msgid "List keys of trusted vendors"
 msgstr "Listi yfir lykla frá treystum framleiðendum"
 
-#: data/org.aptkit.policy.in:15
+#: data/org.aptkit.policy.in:13
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr "Til að skoða lista yfir treysta lykla, þarft þú að auðkenna þig."
 
-#: data/org.aptkit.policy.in:26
+#: data/org.aptkit.policy.in:22
 msgid "Remove downloaded package files"
 msgstr "Fjarlægja pakkaskrár sem náð hefur verið í"
 
-#: data/org.aptkit.policy.in:29
+#: data/org.aptkit.policy.in:23
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr "Til að hreinsa sóttar pakkaskrár, þarft þú að auðkenna þig."
 
-#: data/org.aptkit.policy.in:40
+#: data/org.aptkit.policy.in:32
 msgid "Change software configuration"
 msgstr "Breyta stillingum hugbúnaðar"
 
-#: data/org.aptkit.policy.in:43
+#: data/org.aptkit.policy.in:33
 msgid "To change software settings, you need to authenticate."
 msgstr "Til að breyta stillingum hugbúnaðar, þarft þú að auðkenna þig."
 
-#: data/org.aptkit.policy.in:54
+#: data/org.aptkit.policy.in:42
 msgid "Change software repository"
 msgstr "Breyta hugbúnaðar uppruna"
 
-#: data/org.aptkit.policy.in:57
+#: data/org.aptkit.policy.in:43
 msgid "To change software repository settings, you need to authenticate."
 msgstr "Til að breyta stillingum hugbúnaðarsafna, þarft þú að auðkenna þig."
 
-#: data/org.aptkit.policy.in:68
+#: data/org.aptkit.policy.in:52
 msgid "Install package file"
 msgstr "Setja upp pakkaskrá"
 
-#: data/org.aptkit.policy.in:71
+#: data/org.aptkit.policy.in:53
 msgid "To install this package, you need to authenticate."
 msgstr "Til að setja upp þennan pakka, þarft þú að auðkenna þig."
 
-#: data/org.aptkit.policy.in:82
+#: data/org.aptkit.policy.in:62
 msgid "Update package information"
 msgstr "Uppfæra pakkaupplýsingar"
 
-#: data/org.aptkit.policy.in:85
+#: data/org.aptkit.policy.in:63
 msgid "To update the software catalog, you need to authenticate."
 msgstr "Til að uppfæra hugbúnaðar vörulistann, þarft þú að auðkenna þig."
 
-#: data/org.aptkit.policy.in:96
+#: data/org.aptkit.policy.in:72
 msgid "Install or remove packages"
 msgstr "Setja upp eða fjarlægja pakka"
 
-#: data/org.aptkit.policy.in:99
+#: data/org.aptkit.policy.in:73
 msgid "To install or remove software, you need to authenticate."
 msgstr "Til að setja upp eða fjarlægja pakka, þarft þú að auðkenna þig."
 
@@ -85,11 +85,11 @@ msgstr "Til að setja upp eða fjarlægja pakka, þarft þú að auðkenna þig.
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
-#: data/org.aptkit.policy.in:120
+#: data/org.aptkit.policy.in:92
 msgid "Install software from a high-trust whitelisted repository."
 msgstr "Setja inn hugbúnað frá hvítlistuðu hugbúnaðarsafni með mikið traust."
 
-#: data/org.aptkit.policy.in:123
+#: data/org.aptkit.policy.in:93
 msgid "To install software, you need to authenticate."
 msgstr "Til að setja upp hugbúnað, þarft þú að auðkenna þig."
 
@@ -98,11 +98,11 @@ msgstr "Til að setja upp hugbúnað, þarft þú að auðkenna þig."
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: data/org.aptkit.policy.in:139
+#: data/org.aptkit.policy.in:107
 msgid "Add a new repository and install packages from it"
 msgstr "Bæta við nýju hugbúnaðarsafni og setja upp pakka frá því"
 
-#: data/org.aptkit.policy.in:142
+#: data/org.aptkit.policy.in:108
 msgid "To install software from a new source, you need to authenticate."
 msgstr "Til að setja upp hugbúnað frá nýju safni, þarft þú að auðkenna þig."
 
@@ -114,40 +114,40 @@ msgstr "Til að setja upp hugbúnað frá nýju safni, þarft þú að auðkenna
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: data/org.aptkit.policy.in:161
+#: data/org.aptkit.policy.in:125
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
 "Bæta við nýju hugbúnaðarsafni með keyptum hugbúnaði og setja upp pakka frá "
 "því"
 
-#: data/org.aptkit.policy.in:164
+#: data/org.aptkit.policy.in:126
 msgid "To install purchased software, you need to authenticate."
 msgstr "Til að setja upp keyptan hugbúnað, þarft þú að auðkenna þig."
 
-#: data/org.aptkit.policy.in:175
+#: data/org.aptkit.policy.in:135
 msgid "Upgrade packages"
 msgstr "Uppfæra pakka"
 
-#: data/org.aptkit.policy.in:178
+#: data/org.aptkit.policy.in:136
 msgid "To install updated software, you need to authenticate."
 msgstr "Til að setja inn uppfærðan hugbúnað, þarft þú að auðkenna þig."
 
-#: data/org.aptkit.policy.in:187
+#: data/org.aptkit.policy.in:145
 msgid "Cancel the task of another user"
 msgstr "Hætta við aðgerð frá öðrum notanda"
 
-#: data/org.aptkit.policy.in:190
+#: data/org.aptkit.policy.in:146
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
 "Til að hætta við breytingar á hugbúnaði sem einhver annar hefur gert, þarft "
 "þú að auðkenna þig."
 
-#: data/org.aptkit.policy.in:201
+#: data/org.aptkit.policy.in:155
 msgid "Set a proxy for software downloads"
-msgstr "Setja inn milliðjón (proxy) fyrir niðurhal hugbúnaðar"
+msgstr "Setja inn milliþjón (proxy) fyrir niðurhal hugbúnaðar"
 
-#: data/org.aptkit.policy.in:204
+#: data/org.aptkit.policy.in:156
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
@@ -366,9 +366,13 @@ msgstr "Leit mistókst"
 msgid "Adding license key"
 msgstr "Bæti við leyfislykli"
 
-#: aptkit/enums.py:370 aptkit/enums.py:371
+#: aptkit/enums.py:370
 msgid "Check your Internet connection."
 msgstr "Athugaðu nettenginguna þína."
+
+#: aptkit/enums.py:371
+msgid "See the error details below for more information."
+msgstr ""
 
 #: aptkit/enums.py:372
 msgid ""
@@ -498,6 +502,8 @@ msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
 msgstr ""
+"Ekki var hægt að sækja leyfislykilinn sem gerir þér kleift að nota þennan "
+"hugbúnað. Athugaðu netsambandið þitt."
 
 #: aptkit/enums.py:437
 msgid "You don't have the required privileges to perform this action."
@@ -778,46 +784,46 @@ msgstr "Ekkert net í boði"
 msgid "Processing %s"
 msgstr "Meðhöndla %s"
 
-#: aptkit/gtk3widgets.py:230
+#: aptkit/gtk3widgets.py:231
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
-msgstr "Náði í %sB af %sB hjá %sB/s"
+msgstr "Náði í %sB af %sB með %sB/s"
 
-#: aptkit/gtk3widgets.py:235 aptkit/gtk3widgets.py:436
+#: aptkit/gtk3widgets.py:236 aptkit/gtk3widgets.py:446
 #, python-format
 msgid "Downloaded %sB of %sB"
 msgstr "Náði í %sB af %sB"
 
-#: aptkit/gtk3widgets.py:247
+#: aptkit/gtk3widgets.py:248
 msgid "Details"
 msgstr "Nánar"
 
-#: aptkit/gtk3widgets.py:400
+#: aptkit/gtk3widgets.py:410
 msgid "File"
 msgstr "Skrá"
 
 #. TRANSLATORS: header of the progress download column
-#: aptkit/gtk3widgets.py:405
+#: aptkit/gtk3widgets.py:415
 msgid "%"
 msgstr "%"
 
-#: aptkit/gtk3widgets.py:441
+#: aptkit/gtk3widgets.py:451
 #, python-format
 msgid "Downloaded %sB"
 msgstr "Náði í %sB"
 
-#: aptkit/gtk3widgets.py:444
+#: aptkit/gtk3widgets.py:454
 msgid "Downloaded"
 msgstr "Niðurhalað"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: aptkit/gtk3widgets.py:787
+#: aptkit/gtk3widgets.py:797
 #, python-format
 msgid "CD/DVD '%s' is required"
 msgstr "CD/DVD '%s' er krafist"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: aptkit/gtk3widgets.py:789
+#: aptkit/gtk3widgets.py:799
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
@@ -826,98 +832,98 @@ msgstr ""
 "Settu ofantalinn CD/DVD í drifið ‚%s‘ til að setja upp hugbúnaðarpakka af "
 "honum."
 
-#: aptkit/gtk3widgets.py:793 aptkit/gtk3widgets.py:815
+#: aptkit/gtk3widgets.py:803 aptkit/gtk3widgets.py:825
 msgid "C_ontinue"
 msgstr "_Halda áfram"
 
-#: aptkit/gtk3widgets.py:866
+#: aptkit/gtk3widgets.py:876
 msgid "Install"
 msgstr "Setja upp"
 
-#: aptkit/gtk3widgets.py:867
+#: aptkit/gtk3widgets.py:877
 msgid "Reinstall"
 msgstr "Setja upp aftur"
 
-#: aptkit/gtk3widgets.py:868
+#: aptkit/gtk3widgets.py:878
 msgid "Remove"
 msgstr "Fjarlægja"
 
-#: aptkit/gtk3widgets.py:869
+#: aptkit/gtk3widgets.py:879
 msgid "Purge"
 msgstr "Henda"
 
-#: aptkit/gtk3widgets.py:870
+#: aptkit/gtk3widgets.py:880
 msgid "Upgrade"
 msgstr "Uppfæra"
 
-#: aptkit/gtk3widgets.py:871
+#: aptkit/gtk3widgets.py:881
 msgid "Downgrade"
 msgstr "Færa niður"
 
-#: aptkit/gtk3widgets.py:872
+#: aptkit/gtk3widgets.py:882
 msgid "Skip upgrade"
 msgstr "Sleppa uppfærslu"
 
-#: aptkit/gtk3widgets.py:883
+#: aptkit/gtk3widgets.py:893
 msgid "Please take a look at the list of changes below."
 msgstr "Skoðaðu listann yfir breytingar hér fyrir neðan."
 
-#: aptkit/gtk3widgets.py:891
+#: aptkit/gtk3widgets.py:901
 msgid "Additional software has to be installed"
 msgstr "Það þarf að setja upp viðbótarhugbúnað"
 
-#: aptkit/gtk3widgets.py:893
+#: aptkit/gtk3widgets.py:903
 msgid "Additional software has to be re-installed"
 msgstr "Það þarf að endursetja upp viðbótarhugbúnað"
 
-#: aptkit/gtk3widgets.py:895
+#: aptkit/gtk3widgets.py:905
 msgid "Additional software has to be removed"
 msgstr "Það þarf að fjarlægja viðbótarhugbúnað"
 
-#: aptkit/gtk3widgets.py:897
+#: aptkit/gtk3widgets.py:907
 msgid "Additional software has to be purged"
 msgstr "Það þarf að eyða út viðbótarhugbúnaði"
 
-#: aptkit/gtk3widgets.py:899
+#: aptkit/gtk3widgets.py:909
 msgid "Additional software has to be upgraded"
 msgstr "Það þarf að uppfæra viðbótarhugbúnað"
 
-#: aptkit/gtk3widgets.py:901
+#: aptkit/gtk3widgets.py:911
 msgid "Additional software has to be downgraded"
 msgstr "Það þarf að niðurfæra viðbótarhugbúnað"
 
-#: aptkit/gtk3widgets.py:903
+#: aptkit/gtk3widgets.py:913
 msgid "Updates will be skipped"
 msgstr "Uppfærslum verður sleppt"
 
-#: aptkit/gtk3widgets.py:911
+#: aptkit/gtk3widgets.py:921
 msgid "Additional changes are required"
 msgstr "Fleiri breytinga er krafist"
 
-#: aptkit/gtk3widgets.py:916
+#: aptkit/gtk3widgets.py:926
 #, python-format
 msgid "%sB will be downloaded in total."
 msgstr "%sB verður alls hlaðið niður."
 
-#: aptkit/gtk3widgets.py:920
+#: aptkit/gtk3widgets.py:930
 #, python-format
 msgid "%sB of disk space will be freed."
 msgstr "%sB af diskplássi mun losna."
 
-#: aptkit/gtk3widgets.py:924
+#: aptkit/gtk3widgets.py:934
 #, python-format
 msgid "%sB more disk space will be used."
 msgstr "%sB meira diskpláss verður notað."
 
 #. TRANSLATORS: %s is a file path
-#: aptkit/gtk3widgets.py:983
+#: aptkit/gtk3widgets.py:993
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
 msgstr ""
 "Skipta út breytingum þínum í '%s' með síðari tíma útgáfu af stillingaskránni?"
 
-#: aptkit/gtk3widgets.py:985
+#: aptkit/gtk3widgets.py:995
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
@@ -925,19 +931,19 @@ msgstr ""
 "Ef þú veist ekki af hverju skráin er þegar til staðar þarna, þá er venjulega "
 "allt í lagi að skipta henni út."
 
-#: aptkit/gtk3widgets.py:994
+#: aptkit/gtk3widgets.py:1004
 msgid "_Changes"
 msgstr "_Breytingar"
 
-#: aptkit/gtk3widgets.py:997
+#: aptkit/gtk3widgets.py:1007
 msgid "_Keep"
 msgstr "_Halda"
 
-#: aptkit/gtk3widgets.py:998
+#: aptkit/gtk3widgets.py:1008
 msgid "_Replace"
 msgstr "_Skipta út"
 
-#: aptkit/gtk3widgets.py:1101
+#: aptkit/gtk3widgets.py:1111
 msgid "_Details"
 msgstr "_Nánar"
 
@@ -955,142 +961,146 @@ msgstr "Sæki %s"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: aptkit/progress.py:277 aptkit/progress.py:314
+#: aptkit/progress.py:279 aptkit/progress.py:316
 msgid "local repository"
 msgstr "Staðvært hugbúnaðarsafn"
 
 #. TRANSLATORS: %s is a list of repository names
-#: aptkit/progress.py:280
+#: aptkit/progress.py:282
 #, python-format
 msgid "Downloading from %s"
 msgstr "Sæki frá %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:318
+#: aptkit/progress.py:320
 #, python-format
 msgid "Structure of %s"
 msgstr "Uppbygging %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:321
+#: aptkit/progress.py:323
 #, python-format
 msgid "Description of %s"
 msgstr "Lýsing á %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:324
+#: aptkit/progress.py:326
 #, python-format
 msgid "Description signature of %s"
 msgstr "Undirritun lýsingar á %s"
 
-#: aptkit/progress.py:329
+#: aptkit/progress.py:331
 #, python-format
 msgid "Available packages from %s"
 msgstr "Tiltækir pakkar frá %s"
 
-#: aptkit/progress.py:333
+#: aptkit/progress.py:335
 #, python-format
 msgid "Available sources from %s"
 msgstr "Tiltækir grunnar frá %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:336
+#: aptkit/progress.py:338
 #, python-format
 msgid "Available translations from %s"
 msgstr "Tiltækar þýðingar frá %s"
 
-#: aptkit/progress.py:353
+#: aptkit/progress.py:355
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr "Þýðingar fyrir %s (%s) frá %s"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: aptkit/progress.py:357
+#: aptkit/progress.py:359
 #, python-format
 msgid "Translations for %s from %s"
 msgstr "Þýðingar fyrir %s frá %s"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: aptkit/progress.py:362
+#: aptkit/progress.py:364
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr "Þýðingar (%s) frá %s"
 
-#: aptkit/worker/aptworker.py:372 aptkit/worker/aptworker.py:587
-#: aptkit/worker/aptworker.py:682 aptkit/worker/aptworker.py:727
+#: aptkit/worker/aptworker.py:399 aptkit/worker/aptworker.py:627
+#: aptkit/worker/aptworker.py:770 aptkit/worker/aptworker.py:817
 #, python-format
 msgid "Package %s isn't available"
 msgstr "Pakkinn %s er ekki tiltækur"
 
-#: aptkit/worker/aptworker.py:377 aptkit/worker/aptworker.py:591
-#: aptkit/worker/aptworker.py:686 aptkit/worker/aptworker.py:731
+#: aptkit/worker/aptworker.py:404 aptkit/worker/aptworker.py:631
+#: aptkit/worker/aptworker.py:774 aptkit/worker/aptworker.py:821
 #, python-format
 msgid "Package %s isn't installed"
 msgstr "Pakkinn %s er ekki uppsettur"
 
-#: aptkit/worker/aptworker.py:381
+#: aptkit/worker/aptworker.py:408
 #, python-format
 msgid "The version %s of %s isn't installed"
 msgstr "Útgáfa %s af %s er ekki uppsett"
 
-#: aptkit/worker/aptworker.py:396
+#: aptkit/worker/aptworker.py:423
 #, python-format
 msgid "Package %s is already installed"
 msgstr "Pakkinn %s er þegar uppsettur"
 
-#: aptkit/worker/aptworker.py:403 aptkit/worker/aptworker.py:754
+#: aptkit/worker/aptworker.py:430 aptkit/worker/aptworker.py:844
 #, python-format
 msgid "The version %s of %s isn't available."
 msgstr "Útgáfa %s af %s er ekki tiltæk"
 
-#: aptkit/worker/aptworker.py:595
+#: aptkit/worker/aptworker.py:635
 #, python-format
 msgid "Package %s cannot be removed."
 msgstr "Pakkann %s er ekki hægt að fjarlægja."
 
-#: aptkit/worker/aptworker.py:599
+#: aptkit/worker/aptworker.py:639
 #, python-format
 msgid "The version %s of %s is not installed"
 msgstr "Útgáfa %s af %s er ekki uppsett"
 
-#: aptkit/worker/aptworker.py:694
+#: aptkit/worker/aptworker.py:784
 #, python-format
 msgid "The former version %s of %s is already installed"
 msgstr "Fyrri útgáfan %s af %s er þegar uppsett"
 
-#: aptkit/worker/aptworker.py:699 aptkit/worker/aptworker.py:747
+#: aptkit/worker/aptworker.py:791 aptkit/worker/aptworker.py:837
 #, python-format
 msgid "The version %s of %s is already installed"
 msgstr "Útgáfa %s af %s er þegar uppsett"
 
-#: aptkit/worker/aptworker.py:706
+#: aptkit/worker/aptworker.py:798
 #, python-format
 msgid "The version %s of %s isn't available"
 msgstr "Útgáfa %s af %s er ekki tiltæk"
 
-#: aptkit/worker/aptworker.py:710
+#: aptkit/worker/aptworker.py:802
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
 msgstr "Þú þarft að tilgreina í hvaða útgáfu eigi að niðurfæra %s"
 
-#: aptkit/worker/aptworker.py:740
+#: aptkit/worker/aptworker.py:830
 #, python-format
 msgid "The later version %s of %s is already installed"
 msgstr "Síðari útgáfan %s af %s er þegar uppsett"
 
-#: aptkit/worker/aptworker.py:776
+#: aptkit/worker/aptworker.py:864
 #, python-format
 msgid "The package %s isn't available in the %s release."
 msgstr "Pakkinn %s er ekki tiltækur í %s útgáfunni."
 
-#: aptkit/worker/aptworker.py:961
+#: aptkit/worker/aptworker.py:921
+msgid "Unknown repository update error"
+msgstr ""
+
+#: aptkit/worker/aptworker.py:1058
 #, python-format
 msgid "Package %s cannot be removed"
 msgstr "Pakkann %s er ekki hægt að fjarlægja"
 
-#: aptkit/worker/aptworker.py:1063
+#: aptkit/worker/aptworker.py:1160
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
@@ -1098,25 +1108,25 @@ msgstr ""
 "Pakkinn gefur ekki upp gilt 'Installed-Size' stýrisvið. Sjá Debian Policy "
 "5.6.20."
 
-#: aptkit/worker/aptworker.py:1202
+#: aptkit/worker/aptworker.py:1299
 msgid "The license key is empty"
 msgstr "Leyfislykillinn er tómur"
 
-#: aptkit/worker/aptworker.py:1218
+#: aptkit/worker/aptworker.py:1315
 msgid "The license key is not allowed to contain executable code."
 msgstr "Leyfislykillinn má ekki innihalda keyranlegan kóða."
 
-#: aptkit/worker/aptworker.py:1227
+#: aptkit/worker/aptworker.py:1324
 #, python-format
 msgid "The license key path %s is invalid"
 msgstr "Slóðin á leyfislykil %s er ógild"
 
-#: aptkit/worker/aptworker.py:1231
+#: aptkit/worker/aptworker.py:1328
 #, python-format
 msgid "The license key already exists: %s"
 msgstr "Leyfislykillinn er þegar til staðar: %s"
 
-#: aptkit/worker/aptworker.py:1236
+#: aptkit/worker/aptworker.py:1333
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
@@ -1125,40 +1135,44 @@ msgstr ""
 "Staðsetning leyfislykilsins er óörugg þar sem hún inniheldur tákntengi "
 "(symbolic links). Slóðin %s varpast í %s"
 
-#: aptkit/worker/aptworker.py:1244
+#: aptkit/worker/aptworker.py:1341
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
 msgstr "Mappan þar sem á að setja upp lykilinn er ekki ennþá til staðar: %s"
 
-#: aptkit/worker/aptworker.py:1255
+#: aptkit/worker/aptworker.py:1352
 #, python-format
 msgid "Failed to write key file to: %s"
 msgstr "Mistókst að skrifa lykilskrá í: %s"
 
-#: aptkit/worker/aptworker.py:1290
+#: aptkit/worker/aptworker.py:1419
 msgid "The following packages have unmet dependencies:"
 msgstr "Eftirfarandi pakkar eru með kerfiskröfur sem ekki eru uppfylltar:"
 
-#: aptkit/worker/aptworker.py:1343
+#: aptkit/worker/aptworker.py:1449
 msgid "but it is a virtual package"
 msgstr "en hann er sýndarpakki"
 
-#: aptkit/worker/aptworker.py:1346
+#: aptkit/worker/aptworker.py:1452
+msgid "but it is not installable"
+msgstr ""
+
+#: aptkit/worker/aptworker.py:1454
 msgid "but it is not installed"
 msgstr "en hann er ekki uppsettur"
 
-#: aptkit/worker/aptworker.py:1348
+#: aptkit/worker/aptworker.py:1456
 msgid "but it is not going to be installed"
 msgstr "en hann verður ekki settur upp"
 
 #. TRANSLATORS: %s is a version number
-#: aptkit/worker/aptworker.py:1352
+#: aptkit/worker/aptworker.py:1460
 #, python-format
 msgid "but %s is installed"
 msgstr "en %s er uppsettur"
 
 #. TRANSLATORS: %s is a version number
-#: aptkit/worker/aptworker.py:1356
+#: aptkit/worker/aptworker.py:1464
 #, python-format
 msgid "but %s is to be installed"
 msgstr "en %s á að setja upp"

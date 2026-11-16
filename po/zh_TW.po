@@ -7,72 +7,72 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-20 14:47+0000\n"
-"PO-Revision-Date: 2024-09-10 09:00+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"POT-Creation-Date: 2026-11-09 09:28+0000\n"
+"PO-Revision-Date: 2026-11-12 03:39+0000\n"
+"Last-Translator: Steven Liao <stevenliao0119@yahoo.com.tw>\n"
 "Language-Team: Traditional Chinese <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:44+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 "Language: \n"
 
 #: data/org.aptkit.policy.in:12
 msgid "List keys of trusted vendors"
 msgstr "列出信任廠商的金鑰"
 
-#: data/org.aptkit.policy.in:15
+#: data/org.aptkit.policy.in:13
 msgid "To view the list of trusted keys, you need to authenticate."
-msgstr "若要檢視信任金鑰清單，您需要通過認證。"
+msgstr "檢視信任金鑰清單需要驗證身分。"
 
-#: data/org.aptkit.policy.in:26
+#: data/org.aptkit.policy.in:22
 msgid "Remove downloaded package files"
-msgstr "移除已下載的套件檔案"
+msgstr "移除已下載的軟體包檔案"
 
-#: data/org.aptkit.policy.in:29
+#: data/org.aptkit.policy.in:23
 msgid "To clean downloaded package files, you need to authenticate."
-msgstr "若要清空下載的套件檔案，您需要通過認證。"
+msgstr "清理已下載的軟體包檔案需要驗證身分。"
 
-#: data/org.aptkit.policy.in:40
+#: data/org.aptkit.policy.in:32
 msgid "Change software configuration"
-msgstr "變更軟體組態"
+msgstr "變更軟體設定"
+
+#: data/org.aptkit.policy.in:33
+msgid "To change software settings, you need to authenticate."
+msgstr "變更軟體設定需要驗證身分。"
+
+#: data/org.aptkit.policy.in:42
+msgid "Change software repository"
+msgstr "變更軟體庫"
 
 #: data/org.aptkit.policy.in:43
-msgid "To change software settings, you need to authenticate."
-msgstr "若要變更軟體設定值，您需要通過認證。"
-
-#: data/org.aptkit.policy.in:54
-msgid "Change software repository"
-msgstr "變更軟體套件庫"
-
-#: data/org.aptkit.policy.in:57
 msgid "To change software repository settings, you need to authenticate."
-msgstr "若要變更軟體套件庫設定值，您需要通過認證。"
+msgstr "變更軟體庫設定需要驗證身分。"
 
-#: data/org.aptkit.policy.in:68
+#: data/org.aptkit.policy.in:52
 msgid "Install package file"
-msgstr "安裝套件檔案"
+msgstr "安裝軟體包檔案"
 
-#: data/org.aptkit.policy.in:71
+#: data/org.aptkit.policy.in:53
 msgid "To install this package, you need to authenticate."
-msgstr "若要安裝此套件，您需要通過認證。"
+msgstr "安裝此軟體包需要驗證身分。"
 
-#: data/org.aptkit.policy.in:82
+#: data/org.aptkit.policy.in:62
 msgid "Update package information"
-msgstr "更新套件資訊"
+msgstr "更新軟體包資訊"
 
-#: data/org.aptkit.policy.in:85
+#: data/org.aptkit.policy.in:63
 msgid "To update the software catalog, you need to authenticate."
-msgstr "若要更新軟體型錄，您需要通過認證。"
+msgstr "更新軟體目錄需要驗證身分。"
 
-#: data/org.aptkit.policy.in:96
+#: data/org.aptkit.policy.in:72
 msgid "Install or remove packages"
-msgstr "安裝或移除套件"
+msgstr "安裝或移除軟體包"
 
-#: data/org.aptkit.policy.in:99
+#: data/org.aptkit.policy.in:73
 msgid "To install or remove software, you need to authenticate."
-msgstr "若要安裝或移除軟體，您需要通過認證。"
+msgstr "安裝或移除軟體需要驗證身分。"
 
 #. This priviledge will be requested when installing a package
 #. from a high trusted repository that can be explicitely whitelisted.
@@ -83,26 +83,26 @@ msgstr "若要安裝或移除軟體，您需要通過認證。"
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
-#: data/org.aptkit.policy.in:120
+#: data/org.aptkit.policy.in:92
 msgid "Install software from a high-trust whitelisted repository."
-msgstr "從白名單中高度信任的套件庫安裝軟體"
+msgstr "從白名單中高度信任的軟體庫安裝軟體"
 
-#: data/org.aptkit.policy.in:123
+#: data/org.aptkit.policy.in:93
 msgid "To install software, you need to authenticate."
-msgstr "若要安裝軟體，您需要先通過身份驗證。"
+msgstr "安裝軟體需要驗證身分。"
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: data/org.aptkit.policy.in:139
+#: data/org.aptkit.policy.in:107
 msgid "Add a new repository and install packages from it"
-msgstr "加入新套件庫並且安裝它所提供的套件"
+msgstr "加入新的軟體庫並且安裝它所提供的軟體包"
 
-#: data/org.aptkit.policy.in:142
+#: data/org.aptkit.policy.in:108
 msgid "To install software from a new source, you need to authenticate."
-msgstr "若要從新來源安裝軟體，您需要通過認證。"
+msgstr "從新的來源安裝軟體需要驗證身分。"
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -112,43 +112,43 @@ msgstr "若要從新來源安裝軟體，您需要通過認證。"
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: data/org.aptkit.policy.in:161
+#: data/org.aptkit.policy.in:125
 msgid ""
 "Add a new repository of purchased software and install packages from it"
-msgstr "加入購買軟體的新套件庫並且安裝它提供的套件"
+msgstr "加入購買軟體的新軟體庫並且安裝它提供的軟體包"
 
-#: data/org.aptkit.policy.in:164
+#: data/org.aptkit.policy.in:126
 msgid "To install purchased software, you need to authenticate."
-msgstr "若要安裝購買的軟體，您需要通過認證。"
+msgstr "安裝已購買的軟體需要驗證身分。"
 
-#: data/org.aptkit.policy.in:175
+#: data/org.aptkit.policy.in:135
 msgid "Upgrade packages"
-msgstr "升級套件"
+msgstr "升級軟體包"
 
-#: data/org.aptkit.policy.in:178
+#: data/org.aptkit.policy.in:136
 msgid "To install updated software, you need to authenticate."
-msgstr "若要安裝更新版的軟體，您需要通過認證。"
+msgstr "安裝更新版的軟體需要驗證身分。"
 
-#: data/org.aptkit.policy.in:187
+#: data/org.aptkit.policy.in:145
 msgid "Cancel the task of another user"
-msgstr "取消另一位使用者的任務"
+msgstr "取消其他使用者的任務"
 
-#: data/org.aptkit.policy.in:190
+#: data/org.aptkit.policy.in:146
 msgid "To cancel someone else's software changes, you need to authenticate."
-msgstr "若要取消其它人所作出的軟體變更，您需要通過認證。"
+msgstr "取消他人對軟體所做的變更需要驗證身分。"
 
-#: data/org.aptkit.policy.in:201
+#: data/org.aptkit.policy.in:155
 msgid "Set a proxy for software downloads"
 msgstr "設定用來下載軟體的代理伺服器"
 
-#: data/org.aptkit.policy.in:204
+#: data/org.aptkit.policy.in:156
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
-msgstr "若要使用代理伺服器以下載軟體，您需要通過認證。"
+msgstr "透過代理伺服器下載軟體需要驗證身分。"
 
 #: aptkit/core.py:2030
 msgid "Do not shutdown the daemon because of inactivity"
-msgstr "請勿因背景服務無動作而關閉之"
+msgstr "請勿因閒置而關閉常駐程式"
 
 #: aptkit/core.py:2035
 msgid "Do not load any plugins"
@@ -160,7 +160,7 @@ msgstr "顯示內部處理資訊"
 
 #: aptkit/core.py:2044
 msgid "Quit and replace an already running daemon"
-msgstr "退出及替換已在執行中的背景服務"
+msgstr "退出並替換一個正在執行的常駐程式"
 
 #: aptkit/core.py:2049
 msgid "Listen on the DBus session bus (Only required for testing"
@@ -184,11 +184,11 @@ msgstr "已安裝的檔案"
 
 #: aptkit/enums.py:312
 msgid "Installed packages"
-msgstr "已安裝的套件"
+msgstr "已安裝的軟體包"
 
 #: aptkit/enums.py:313
 msgid "Updated cache"
-msgstr "更新快取"
+msgstr "已更新快取"
 
 #: aptkit/enums.py:314
 msgid "Search done"
@@ -196,11 +196,11 @@ msgstr "搜尋完成"
 
 #: aptkit/enums.py:315
 msgid "Removed packages"
-msgstr "已移除的套件"
+msgstr "已移除的軟體包"
 
 #: aptkit/enums.py:316
 msgid "Updated packages"
-msgstr "已更新的套件"
+msgstr "已更新的軟體包"
 
 #: aptkit/enums.py:317
 msgid "Upgraded system"
@@ -220,7 +220,7 @@ msgstr "已修復的不完整相依性"
 
 #: aptkit/enums.py:321
 msgid "Added software source"
-msgstr "已加入軟體來源"
+msgstr "已新增軟體來源"
 
 #: aptkit/enums.py:322
 msgid "Enabled component of the distribution"
@@ -228,11 +228,11 @@ msgstr "已啟用發行版元件"
 
 #: aptkit/enums.py:323
 msgid "Removed downloaded package files"
-msgstr "已移除下載的套件檔案"
+msgstr "已移除下載的軟體包檔案"
 
 #: aptkit/enums.py:324
 msgid "Reconfigured installed packages"
-msgstr "已重新組態已安裝套件"
+msgstr "重新設定已安裝的軟體包"
 
 #: aptkit/enums.py:328
 msgid "Successful"
@@ -252,7 +252,7 @@ msgstr "安裝檔案中"
 
 #: aptkit/enums.py:334
 msgid "Installing packages"
-msgstr "安裝套件中"
+msgstr "安裝軟體包中"
 
 #: aptkit/enums.py:335
 msgid "Updating cache"
@@ -260,11 +260,11 @@ msgstr "更新快取中"
 
 #: aptkit/enums.py:336
 msgid "Removing packages"
-msgstr "移除套件中"
+msgstr "移除軟體包中"
 
 #: aptkit/enums.py:337
 msgid "Updating packages"
-msgstr "更新套件中"
+msgstr "更新軟體包中"
 
 #: aptkit/enums.py:338
 msgid "Upgrading system"
@@ -284,7 +284,7 @@ msgstr "正在修復安裝的軟體"
 
 #: aptkit/enums.py:342
 msgid "Adding software source"
-msgstr "正在加入軟體來源"
+msgstr "新增軟體來源中"
 
 #: aptkit/enums.py:343
 msgid "Enabling component of the distribution"
@@ -292,7 +292,7 @@ msgstr "正在啟用發行版元件"
 
 #: aptkit/enums.py:344
 msgid "Removing downloaded package files"
-msgstr "正在移除已下載的套件檔案"
+msgstr "正在移除已下載的軟體包檔案"
 
 #: aptkit/enums.py:345
 msgid "Reconfiguring installed packages"
@@ -300,11 +300,11 @@ msgstr "正在重新組態已安裝的套件"
 
 #: aptkit/enums.py:346 aptkit/enums.py:477
 msgid "Searching"
-msgstr "正在搜尋"
+msgstr "搜尋中"
 
 #: aptkit/enums.py:350
 msgid "Installation of the package file failed"
-msgstr "套件檔案安裝失敗"
+msgstr "軟體包檔案安裝失敗"
 
 #: aptkit/enums.py:351
 msgid "Installation of software failed"
@@ -340,7 +340,7 @@ msgstr "損壞的相依性修復失敗"
 
 #: aptkit/enums.py:360
 msgid "Adding software source failed"
-msgstr "加入軟體來源時失敗"
+msgstr "新增軟體來源時失敗"
 
 #: aptkit/enums.py:361
 msgid "Enabling component of the distribution failed"
@@ -348,7 +348,7 @@ msgstr "啟用發行版元件時失敗"
 
 #: aptkit/enums.py:363 aptkit/enums.py:364
 msgid "Removing downloaded package files failed"
-msgstr "移除已下載的套件失敗"
+msgstr "移除已下載的軟體包失敗"
 
 #: aptkit/enums.py:365
 msgid "Search failed"
@@ -358,9 +358,13 @@ msgstr "搜尋失敗"
 msgid "Adding license key"
 msgstr "正在加入授權金鑰"
 
-#: aptkit/enums.py:370 aptkit/enums.py:371
+#: aptkit/enums.py:370
 msgid "Check your Internet connection."
-msgstr "檢查您的網際網路連線。"
+msgstr "請檢查您的網路連線。"
+
+#: aptkit/enums.py:371
+msgid "See the error details below for more information."
+msgstr "如需詳細資訊，請參閱下方的錯誤訊息。"
 
 #: aptkit/enums.py:372
 msgid ""
@@ -368,7 +372,7 @@ msgid ""
 "they are a common source of problems.\n"
 "Furthermore run the following command in a Terminal: apt-get install -f"
 msgstr ""
-"檢查您是否正在使用第三方套件庫。若有使用請關閉它們，因為它們是常見的問題來源。\n"
+"檢查您是否正在使用第三方軟體庫。若有使用請關閉它們，因為它們是常見的問題來源。\n"
 "此外在終端機中執行以下指令：apt-get install -f"
 
 #: aptkit/enums.py:377
@@ -387,7 +391,7 @@ msgstr "有一個嚴重問題。請稍候重試。若此問題再次出現，請
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
-msgstr "請檢查套件名稱的拼寫，以及是否啟用合適的套件庫。"
+msgstr "請檢查軟體包名稱的拼寫，以及是否啟用合適的軟體庫。"
 
 #: aptkit/enums.py:385
 msgid "There isn't any need for an update."
@@ -404,17 +408,17 @@ msgstr "不需要任何移除"
 #: aptkit/enums.py:389
 msgid ""
 "You requested to remove a package which is an essential part of your system."
-msgstr "您要求移除一個系統必要的套件。"
+msgstr "您要求移除一個系統必要的軟體包。"
 
 #: aptkit/enums.py:392
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
-msgstr "背景服務的連線已遺失。背景服務很有可能已當機。"
+msgstr "與常駐程式的連線已中斷。很可能是背景常駐程式當機了。"
 
 #: aptkit/enums.py:394
 msgid "The installation or removal of a software package failed."
-msgstr "安裝或移除軟體套件失敗。"
+msgstr "安裝或移除軟體包失敗。"
 
 #: aptkit/enums.py:396
 msgid "The requested feature is not supported."
@@ -425,7 +429,7 @@ msgid ""
 "There seems to be a programming error in aptkit, the software that allows "
 "you to install/remove software and to perform other package management "
 "related tasks."
-msgstr "在 aptkit 中似乎有程式上的設計錯誤。該軟體允許您安裝或移除軟體，以及執行其他與套件管理相關的事務。"
+msgstr "在 aptkit 中似乎有程式上的設計錯誤。該軟體允許您安裝或移除軟體，以及執行其他與軟體包管理相關的事務。"
 
 #: aptkit/enums.py:401
 msgid ""
@@ -433,11 +437,11 @@ msgid ""
 "are missing or not installable. Furthermore there could be a conflict "
 "between software packages which are not allowed to be installed at the same "
 "time."
-msgstr "此錯誤可能由於所需的額外軟體套件遺失或無法安裝所造成。甚至軟體套件間可能存在衝突，使得無法同時安裝。"
+msgstr "此錯誤可能由於缺少所需的額外軟體包，或該軟體包無法安裝所造成。甚至軟體包間可能有衝突，使得無法同時安裝。"
 
 #: aptkit/enums.py:407
 msgid "This requires installing packages from unauthenticated sources."
-msgstr "這需要安裝來自未受驗證來源的套件。"
+msgstr "這需要從未經驗證的來源安裝軟體包。"
 
 #: aptkit/enums.py:409
 msgid ""
@@ -445,7 +449,7 @@ msgid ""
 "software package or it was cancelled in an unfriendly way. You have to "
 "repair this before you can install or remove any further software."
 msgstr ""
-"這個安裝可能已失敗，可能起因於對應的軟體套件有錯誤，或是安裝過程被以一種不友善的方式取消。在您可以進一步安裝或移除任何軟體前，您必須修復此安裝。"
+"這個安裝可能已失敗，可能起因於對應的軟體包有錯誤，或是安裝過程被以一種不友善的方式取消。在您可以進一步安裝或移除任何軟體前，您必須修復此安裝。"
 
 #: aptkit/enums.py:415
 msgid ""
@@ -458,7 +462,7 @@ msgid ""
 "allowed. This could cause serious problems on your computer. Please contact "
 "the person or organisation who provided this package file and include the "
 "details beneath."
-msgstr "不允許安裝違反品質標準的套件。這可能對您的電腦造成嚴重傷害。請聯絡提供此套件檔案的個人或組織，並將下方的細節轉送給他們。"
+msgstr "不允許安裝違反品質標準的軟體包。這可能對您的電腦造成嚴重傷害。請聯絡提供此軟體包檔案的個人或組織，並將下方的細節轉送給他們。"
 
 #: aptkit/enums.py:425
 msgid ""
@@ -471,7 +475,7 @@ msgstr ""
 
 #: aptkit/enums.py:431
 msgid "All available upgrades have already been installed."
-msgstr "已經安裝所有可用的升級。"
+msgstr "所有可用的升級都已安裝。"
 
 #: aptkit/enums.py:433
 msgid ""
@@ -495,47 +499,47 @@ msgstr ""
 
 #: aptkit/enums.py:447
 msgid "Failed to download package files"
-msgstr "下載套件檔案失敗"
+msgstr "下載軟體包檔案失敗"
 
 #: aptkit/enums.py:448
 msgid "Failed to download repository information"
-msgstr "下載套件庫資訊失敗"
+msgstr "下載軟體庫資訊失敗"
 
 #: aptkit/enums.py:450
 msgid "Package dependencies cannot be resolved"
-msgstr "套件相依性無法解析"
+msgstr "無法解決軟體包依賴關係。"
 
 #: aptkit/enums.py:451
 msgid "The package system is broken"
-msgstr "套件系統損壞"
+msgstr "軟體包系統已損壞"
 
 #: aptkit/enums.py:452
 msgid "Failed to lock the package manager"
-msgstr "鎖定套件管理員失敗"
+msgstr "鎖定軟體包管理員失敗"
 
 #: aptkit/enums.py:453
 msgid "Failed to load the package list"
-msgstr "載入套件列表失敗"
+msgstr "載入軟體包列表失敗"
 
 #: aptkit/enums.py:454
 msgid "Package does not exist"
-msgstr "套件不存在"
+msgstr "軟體包不存在"
 
 #: aptkit/enums.py:455
 msgid "Package is already up to date"
-msgstr "套件已經是最新狀態"
+msgstr "軟體包已經是最新狀態"
 
 #: aptkit/enums.py:456
 msgid "Package is already installed"
-msgstr "套件已經安裝"
+msgstr "軟體包已安裝"
 
 #: aptkit/enums.py:457
 msgid "Package isn't installed"
-msgstr "套件未安裝"
+msgstr "軟體包未安裝"
 
 #: aptkit/enums.py:458
 msgid "Failed to remove essential system package"
-msgstr "移除必要系統套件失敗"
+msgstr "移除必要系統軟體包失敗"
 
 #: aptkit/enums.py:460
 msgid "Task cannot be monitored or controlled"
@@ -543,23 +547,23 @@ msgstr "任務無法被監控或控制"
 
 #: aptkit/enums.py:461
 msgid "Package operation failed"
-msgstr "套件作業失敗"
+msgstr "軟體包操作失敗"
 
 #: aptkit/enums.py:462
 msgid "Requires installation of untrusted packages"
-msgstr "需要安裝未受信任的套件"
+msgstr "需要安裝未受信任的軟體包"
 
 #: aptkit/enums.py:464
 msgid "Previous installation hasn't been completed"
-msgstr "上一次的安裝尚未完整"
+msgstr "先前的安裝尚未完成"
 
 #: aptkit/enums.py:465
 msgid "The package is of bad quality"
-msgstr "該套件品質不良"
+msgstr "軟體包品質很差"
 
 #: aptkit/enums.py:466
 msgid "Package file could not be opened"
-msgstr "無法開啟套件檔案"
+msgstr "無法開啟軟體包檔案"
 
 #: aptkit/enums.py:467
 msgid "Not supported feature"
@@ -627,7 +631,7 @@ msgstr "清理中"
 
 #: aptkit/enums.py:487
 msgid "Resolving dependencies"
-msgstr "解析相依性中"
+msgstr "解決依賴關係中"
 
 #: aptkit/enums.py:489
 msgid "Finished"
@@ -643,7 +647,7 @@ msgstr "載入軟體列表中"
 
 #: aptkit/enums.py:492
 msgid "Waiting for authentication"
-msgstr "正在等候認證"
+msgstr "正在等待驗證"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:496
@@ -679,7 +683,7 @@ msgstr "剛注意到 %s 消失"
 #: aptkit/enums.py:506
 #, python-format
 msgid "Running post-installation trigger %s"
-msgstr "正在執行安裝後套件後續處理程式 %s"
+msgstr "正在執行安裝後處理程式 %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:508
@@ -741,7 +745,7 @@ msgstr "完成"
 
 #: aptkit/enums.py:528
 msgid "Authentication failed"
-msgstr "認證失敗"
+msgstr "驗證失敗"
 
 #: aptkit/enums.py:530
 msgid "Fetching"
@@ -760,161 +764,161 @@ msgstr "網路不可用"
 msgid "Processing %s"
 msgstr "正在處理 %s"
 
-#: aptkit/gtk3widgets.py:230
+#: aptkit/gtk3widgets.py:231
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
 msgstr "已下載 %sB，共 %sB，速率 %sB/s"
 
-#: aptkit/gtk3widgets.py:235 aptkit/gtk3widgets.py:436
+#: aptkit/gtk3widgets.py:236 aptkit/gtk3widgets.py:446
 #, python-format
 msgid "Downloaded %sB of %sB"
 msgstr "已下載 %sB，共 %sB"
 
-#: aptkit/gtk3widgets.py:247
+#: aptkit/gtk3widgets.py:248
 msgid "Details"
 msgstr "詳細資料"
 
-#: aptkit/gtk3widgets.py:400
+#: aptkit/gtk3widgets.py:410
 msgid "File"
 msgstr "檔案"
 
 #. TRANSLATORS: header of the progress download column
-#: aptkit/gtk3widgets.py:405
+#: aptkit/gtk3widgets.py:415
 msgid "%"
 msgstr "%"
 
-#: aptkit/gtk3widgets.py:441
+#: aptkit/gtk3widgets.py:451
 #, python-format
 msgid "Downloaded %sB"
 msgstr "已下載 %sB"
 
-#: aptkit/gtk3widgets.py:444
+#: aptkit/gtk3widgets.py:454
 msgid "Downloaded"
 msgstr "已下載"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: aptkit/gtk3widgets.py:787
+#: aptkit/gtk3widgets.py:797
 #, python-format
 msgid "CD/DVD '%s' is required"
 msgstr "需要 CD/DVD 「%s」"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: aptkit/gtk3widgets.py:789
+#: aptkit/gtk3widgets.py:799
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
 "packages from it."
-msgstr "請將上述的 CD/DVD 置入光碟機「%s」以從該碟片安裝軟體套件。"
+msgstr "請將上述的 CD/DVD 置入光碟機「%s」以從該碟片安裝軟體包。"
 
-#: aptkit/gtk3widgets.py:793 aptkit/gtk3widgets.py:815
+#: aptkit/gtk3widgets.py:803 aptkit/gtk3widgets.py:825
 msgid "C_ontinue"
 msgstr "繼續(_O)"
 
-#: aptkit/gtk3widgets.py:866
+#: aptkit/gtk3widgets.py:876
 msgid "Install"
 msgstr "安裝"
 
-#: aptkit/gtk3widgets.py:867
+#: aptkit/gtk3widgets.py:877
 msgid "Reinstall"
 msgstr "重新安裝"
 
-#: aptkit/gtk3widgets.py:868
+#: aptkit/gtk3widgets.py:878
 msgid "Remove"
 msgstr "移除"
 
-#: aptkit/gtk3widgets.py:869
+#: aptkit/gtk3widgets.py:879
 msgid "Purge"
-msgstr "徹底清除"
+msgstr "清除"
 
-#: aptkit/gtk3widgets.py:870
+#: aptkit/gtk3widgets.py:880
 msgid "Upgrade"
 msgstr "升級"
 
-#: aptkit/gtk3widgets.py:871
+#: aptkit/gtk3widgets.py:881
 msgid "Downgrade"
 msgstr "降級"
 
-#: aptkit/gtk3widgets.py:872
+#: aptkit/gtk3widgets.py:882
 msgid "Skip upgrade"
 msgstr "略過升級"
 
-#: aptkit/gtk3widgets.py:883
-msgid "Please take a look at the list of changes below."
-msgstr "請查看下方的變更清單。"
-
-#: aptkit/gtk3widgets.py:891
-msgid "Additional software has to be installed"
-msgstr "必須安裝額外軟體"
-
 #: aptkit/gtk3widgets.py:893
-msgid "Additional software has to be re-installed"
-msgstr "必須重新安裝額外軟體"
-
-#: aptkit/gtk3widgets.py:895
-msgid "Additional software has to be removed"
-msgstr "必須移除額外軟體"
-
-#: aptkit/gtk3widgets.py:897
-msgid "Additional software has to be purged"
-msgstr "必須徹底移除額外軟體"
-
-#: aptkit/gtk3widgets.py:899
-msgid "Additional software has to be upgraded"
-msgstr "必須升級額外軟體"
+msgid "Please take a look at the list of changes below."
+msgstr "請查看以下變更清單。"
 
 #: aptkit/gtk3widgets.py:901
-msgid "Additional software has to be downgraded"
-msgstr "必須降級額外軟體"
+msgid "Additional software has to be installed"
+msgstr "還需要安裝其他軟體。"
 
 #: aptkit/gtk3widgets.py:903
-msgid "Updates will be skipped"
-msgstr "將略過更新"
+msgid "Additional software has to be re-installed"
+msgstr "需要重新安裝其他軟體。"
+
+#: aptkit/gtk3widgets.py:905
+msgid "Additional software has to be removed"
+msgstr "必須移除其他軟體。"
+
+#: aptkit/gtk3widgets.py:907
+msgid "Additional software has to be purged"
+msgstr "必須清除其他軟體。"
+
+#: aptkit/gtk3widgets.py:909
+msgid "Additional software has to be upgraded"
+msgstr "還需要升級其他軟體。"
 
 #: aptkit/gtk3widgets.py:911
-msgid "Additional changes are required"
-msgstr "需要額外變更"
+msgid "Additional software has to be downgraded"
+msgstr "其他軟體需要降級。"
 
-#: aptkit/gtk3widgets.py:916
+#: aptkit/gtk3widgets.py:913
+msgid "Updates will be skipped"
+msgstr "更新將被跳過"
+
+#: aptkit/gtk3widgets.py:921
+msgid "Additional changes are required"
+msgstr "需要進行其他變更"
+
+#: aptkit/gtk3widgets.py:926
 #, python-format
 msgid "%sB will be downloaded in total."
 msgstr "總共要下載 %sB。"
 
-#: aptkit/gtk3widgets.py:920
+#: aptkit/gtk3widgets.py:930
 #, python-format
 msgid "%sB of disk space will be freed."
 msgstr "將釋放 %sB 的磁碟空間。"
 
-#: aptkit/gtk3widgets.py:924
+#: aptkit/gtk3widgets.py:934
 #, python-format
 msgid "%sB more disk space will be used."
 msgstr "將使用大於 %sB 的磁碟空間。"
 
 #. TRANSLATORS: %s is a file path
-#: aptkit/gtk3widgets.py:983
+#: aptkit/gtk3widgets.py:993
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
 msgstr "在 '%s' 中以較新的設定檔版本取代您的變更？"
 
-#: aptkit/gtk3widgets.py:985
+#: aptkit/gtk3widgets.py:995
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
 msgstr "若您不清楚為何此檔案已經存在，通常取代它是安全的。"
 
-#: aptkit/gtk3widgets.py:994
+#: aptkit/gtk3widgets.py:1004
 msgid "_Changes"
 msgstr "變更(_C)"
 
-#: aptkit/gtk3widgets.py:997
+#: aptkit/gtk3widgets.py:1007
 msgid "_Keep"
 msgstr "保留(_K)"
 
-#: aptkit/gtk3widgets.py:998
+#: aptkit/gtk3widgets.py:1008
 msgid "_Replace"
 msgstr "取代(_R)"
 
-#: aptkit/gtk3widgets.py:1101
+#: aptkit/gtk3widgets.py:1111
 msgid "_Details"
 msgstr "詳細資料(_D)"
 
@@ -922,7 +926,7 @@ msgstr "詳細資料(_D)"
 #: aptkit/lock.py:189
 #, python-format
 msgid "Waiting for %s to exit"
-msgstr "正在等候 %s 結束"
+msgstr "正在等待 %s 結束"
 
 #. TRANSLATORS: %s is a list of package names
 #: aptkit/progress.py:168
@@ -932,206 +936,214 @@ msgstr "正在下載 %s"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: aptkit/progress.py:277 aptkit/progress.py:314
+#: aptkit/progress.py:279 aptkit/progress.py:316
 msgid "local repository"
-msgstr "本地端套件庫"
+msgstr "本地端軟體庫"
 
 #. TRANSLATORS: %s is a list of repository names
-#: aptkit/progress.py:280
+#: aptkit/progress.py:282
 #, python-format
 msgid "Downloading from %s"
 msgstr "正在從 %s 下載"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:318
+#: aptkit/progress.py:320
 #, python-format
 msgid "Structure of %s"
 msgstr "%s 的結構"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:321
+#: aptkit/progress.py:323
 #, python-format
 msgid "Description of %s"
 msgstr "%s 的描述"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:324
+#: aptkit/progress.py:326
 #, python-format
 msgid "Description signature of %s"
 msgstr "%s 的描述簽章"
 
-#: aptkit/progress.py:329
+#: aptkit/progress.py:331
 #, python-format
 msgid "Available packages from %s"
-msgstr "來自 %s 的可用套件"
+msgstr "來自 %s 的可用軟體包"
 
-#: aptkit/progress.py:333
+#: aptkit/progress.py:335
 #, python-format
 msgid "Available sources from %s"
 msgstr "來自 %s 的可用來源"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:336
+#: aptkit/progress.py:338
 #, python-format
 msgid "Available translations from %s"
 msgstr "來自 %s 的可用翻譯"
 
-#: aptkit/progress.py:353
+#: aptkit/progress.py:355
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr "來自 %s 的 %s (%s) 翻譯"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: aptkit/progress.py:357
+#: aptkit/progress.py:359
 #, python-format
 msgid "Translations for %s from %s"
 msgstr "來自 %s 的 %s 翻譯"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: aptkit/progress.py:362
+#: aptkit/progress.py:364
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr "翻譯 (%s) 從 %s"
 
-#: aptkit/worker/aptworker.py:372 aptkit/worker/aptworker.py:587
-#: aptkit/worker/aptworker.py:682 aptkit/worker/aptworker.py:727
+#: aptkit/worker/aptworker.py:399 aptkit/worker/aptworker.py:627
+#: aptkit/worker/aptworker.py:770 aptkit/worker/aptworker.py:817
 #, python-format
 msgid "Package %s isn't available"
-msgstr "套件 %s 無法使用"
+msgstr "軟體包 %s 不可用"
 
-#: aptkit/worker/aptworker.py:377 aptkit/worker/aptworker.py:591
-#: aptkit/worker/aptworker.py:686 aptkit/worker/aptworker.py:731
+#: aptkit/worker/aptworker.py:404 aptkit/worker/aptworker.py:631
+#: aptkit/worker/aptworker.py:774 aptkit/worker/aptworker.py:821
 #, python-format
 msgid "Package %s isn't installed"
-msgstr "套件 %s 未安裝"
+msgstr "軟體包 %s 未安裝"
 
-#: aptkit/worker/aptworker.py:381
+#: aptkit/worker/aptworker.py:408
 #, python-format
 msgid "The version %s of %s isn't installed"
 msgstr "版本 %s 的 %s 未安裝"
 
-#: aptkit/worker/aptworker.py:396
+#: aptkit/worker/aptworker.py:423
 #, python-format
 msgid "Package %s is already installed"
-msgstr "%s 套件已經安裝"
+msgstr "軟體包 %s 已安裝"
 
-#: aptkit/worker/aptworker.py:403 aptkit/worker/aptworker.py:754
+#: aptkit/worker/aptworker.py:430 aptkit/worker/aptworker.py:844
 #, python-format
 msgid "The version %s of %s isn't available."
 msgstr "%s 版本的 %s 無法使用"
 
-#: aptkit/worker/aptworker.py:595
+#: aptkit/worker/aptworker.py:635
 #, python-format
 msgid "Package %s cannot be removed."
-msgstr "%s 套件無法移除。"
+msgstr "無法移除軟體包 %s。"
 
-#: aptkit/worker/aptworker.py:599
+#: aptkit/worker/aptworker.py:639
 #, python-format
 msgid "The version %s of %s is not installed"
 msgstr "版本 %s 的 %s 未安裝"
 
-#: aptkit/worker/aptworker.py:694
+#: aptkit/worker/aptworker.py:784
 #, python-format
 msgid "The former version %s of %s is already installed"
 msgstr "較舊版本 %s 的 %s 已經安裝"
 
-#: aptkit/worker/aptworker.py:699 aptkit/worker/aptworker.py:747
+#: aptkit/worker/aptworker.py:791 aptkit/worker/aptworker.py:837
 #, python-format
 msgid "The version %s of %s is already installed"
 msgstr "版本 %s 的 %s 已經安裝"
 
-#: aptkit/worker/aptworker.py:706
+#: aptkit/worker/aptworker.py:798
 #, python-format
 msgid "The version %s of %s isn't available"
 msgstr "%s 版本的 %s 無法使用"
 
-#: aptkit/worker/aptworker.py:710
+#: aptkit/worker/aptworker.py:802
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
 msgstr "您需要指定要將 %s 降級至哪個版本"
 
-#: aptkit/worker/aptworker.py:740
+#: aptkit/worker/aptworker.py:830
 #, python-format
 msgid "The later version %s of %s is already installed"
 msgstr "較新版本 %s 的 %s 已經安裝"
 
-#: aptkit/worker/aptworker.py:776
+#: aptkit/worker/aptworker.py:864
 #, python-format
 msgid "The package %s isn't available in the %s release."
-msgstr "%s 套件在 %s 發行版本內無法使用"
+msgstr "軟體包 %s 在 %s 版本中不可用。"
 
-#: aptkit/worker/aptworker.py:961
+#: aptkit/worker/aptworker.py:921
+msgid "Unknown repository update error"
+msgstr "更新套件庫時發生未知錯誤"
+
+#: aptkit/worker/aptworker.py:1058
 #, python-format
 msgid "Package %s cannot be removed"
-msgstr "套件 %s 無法移除"
+msgstr "無法移除軟體包 %s"
 
-#: aptkit/worker/aptworker.py:1063
+#: aptkit/worker/aptworker.py:1160
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
-msgstr "套件未提供有效的已安裝大小控制欄位。請見 Debian Policy 5.6.20。"
+msgstr "軟體包未提供有效的已安裝大小控制欄位。請見 Debian Policy 5.6.20。"
 
-#: aptkit/worker/aptworker.py:1202
+#: aptkit/worker/aptworker.py:1299
 msgid "The license key is empty"
 msgstr "授權金鑰為空白"
 
-#: aptkit/worker/aptworker.py:1218
+#: aptkit/worker/aptworker.py:1315
 msgid "The license key is not allowed to contain executable code."
 msgstr "授權金鑰不可含有執行代碼。"
 
-#: aptkit/worker/aptworker.py:1227
+#: aptkit/worker/aptworker.py:1324
 #, python-format
 msgid "The license key path %s is invalid"
 msgstr "授權金鑰路徑 %s 無效"
 
-#: aptkit/worker/aptworker.py:1231
+#: aptkit/worker/aptworker.py:1328
 #, python-format
 msgid "The license key already exists: %s"
 msgstr "授權金鑰已存在：%s"
 
-#: aptkit/worker/aptworker.py:1236
+#: aptkit/worker/aptworker.py:1333
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
 "links. The path %s maps to %s"
 msgstr "授權金鑰的位置不安全，因為它包含符號連結。路徑 %s 對應至 %s"
 
-#: aptkit/worker/aptworker.py:1244
+#: aptkit/worker/aptworker.py:1341
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
 msgstr "金鑰所要安裝的目錄尚未存在：%s"
 
-#: aptkit/worker/aptworker.py:1255
+#: aptkit/worker/aptworker.py:1352
 #, python-format
 msgid "Failed to write key file to: %s"
 msgstr "無法寫入金鑰檔至：%s"
 
-#: aptkit/worker/aptworker.py:1290
+#: aptkit/worker/aptworker.py:1419
 msgid "The following packages have unmet dependencies:"
-msgstr "下列套件有無法滿足的相依關係："
+msgstr "下列軟體包有無法滿足的依賴關係："
 
-#: aptkit/worker/aptworker.py:1343
+#: aptkit/worker/aptworker.py:1449
 msgid "but it is a virtual package"
-msgstr "但它只是虛擬套件"
+msgstr "但它是一個虛擬軟體包"
 
-#: aptkit/worker/aptworker.py:1346
+#: aptkit/worker/aptworker.py:1452
+msgid "but it is not installable"
+msgstr "但其無法安裝"
+
+#: aptkit/worker/aptworker.py:1454
 msgid "but it is not installed"
-msgstr "但其尚未安裝"
+msgstr "但它卻尚未安裝"
 
-#: aptkit/worker/aptworker.py:1348
+#: aptkit/worker/aptworker.py:1456
 msgid "but it is not going to be installed"
-msgstr "但是它卻不會被安裝"
+msgstr "但它不會被安裝。"
 
 #. TRANSLATORS: %s is a version number
-#: aptkit/worker/aptworker.py:1352
+#: aptkit/worker/aptworker.py:1460
 #, python-format
 msgid "but %s is installed"
-msgstr "但是 %s 卻已經安裝"
+msgstr "但 %s 已安裝"
 
 #. TRANSLATORS: %s is a version number
-#: aptkit/worker/aptworker.py:1356
+#: aptkit/worker/aptworker.py:1464
 #, python-format
 msgid "but %s is to be installed"
-msgstr "但是 %s 卻已經安裝"
+msgstr "但 %s 將會安裝"

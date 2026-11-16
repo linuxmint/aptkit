@@ -7,76 +7,76 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2025-11-20 14:47+0000\n"
-"PO-Revision-Date: 2025-09-09 15:22+0000\n"
+"POT-Creation-Date: 2026-11-09 09:28+0000\n"
+"PO-Revision-Date: 2026-11-10 22:34+0000\n"
 "Last-Translator: AO <Unknown>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:44+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 "Language: fr\n"
 
 #: data/org.aptkit.policy.in:12
 msgid "List keys of trusted vendors"
 msgstr "Lister les clés des fournisseurs de confiance"
 
-#: data/org.aptkit.policy.in:15
+#: data/org.aptkit.policy.in:13
 msgid "To view the list of trusted keys, you need to authenticate."
 msgstr ""
 "Pour afficher la liste des clés de confiance, vous devez vous authentifier."
 
-#: data/org.aptkit.policy.in:26
+#: data/org.aptkit.policy.in:22
 msgid "Remove downloaded package files"
-msgstr "Supprimer les paquets téléchargés"
+msgstr "Supprimer les fichiers de paquets téléchargés"
 
-#: data/org.aptkit.policy.in:29
+#: data/org.aptkit.policy.in:23
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr "Vous devez vous authentifier pour supprimer les paquets téléchargés."
 
-#: data/org.aptkit.policy.in:40
+#: data/org.aptkit.policy.in:32
 msgid "Change software configuration"
-msgstr "Modifier la configuration du logiciel"
+msgstr "Changer la configuration du logiciel"
 
-#: data/org.aptkit.policy.in:43
+#: data/org.aptkit.policy.in:33
 msgid "To change software settings, you need to authenticate."
 msgstr ""
 "Vous devez vous authentifier pour modifier la configuration du logiciel."
 
-#: data/org.aptkit.policy.in:54
+#: data/org.aptkit.policy.in:42
 msgid "Change software repository"
-msgstr "Modifier le dépôt logiciel"
+msgstr "Changer le dépôt de logiciels"
 
-#: data/org.aptkit.policy.in:57
+#: data/org.aptkit.policy.in:43
 msgid "To change software repository settings, you need to authenticate."
 msgstr ""
 "Vous devez vous authentifier pour changer les paramètres des dépôts de "
 "logiciels."
 
-#: data/org.aptkit.policy.in:68
+#: data/org.aptkit.policy.in:52
 msgid "Install package file"
 msgstr "Installer un paquet"
 
-#: data/org.aptkit.policy.in:71
+#: data/org.aptkit.policy.in:53
 msgid "To install this package, you need to authenticate."
 msgstr "Vous devez vous authentifier pour installer ce paquet."
 
-#: data/org.aptkit.policy.in:82
+#: data/org.aptkit.policy.in:62
 msgid "Update package information"
-msgstr "Mettre à jour les informations sur les paquets"
+msgstr "Mettre à jour les renseignements sur les paquets"
 
-#: data/org.aptkit.policy.in:85
+#: data/org.aptkit.policy.in:63
 msgid "To update the software catalog, you need to authenticate."
 msgstr ""
 "Vous devez vous authentifier pour mettre à jour la liste des logiciels "
 "disponibles."
 
-#: data/org.aptkit.policy.in:96
+#: data/org.aptkit.policy.in:72
 msgid "Install or remove packages"
 msgstr "Installer ou supprimer des paquets"
 
-#: data/org.aptkit.policy.in:99
+#: data/org.aptkit.policy.in:73
 msgid "To install or remove software, you need to authenticate."
 msgstr ""
 "Vous devez vous authentifier pour installer ou supprimer des logiciels."
@@ -90,11 +90,13 @@ msgstr ""
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
-#: data/org.aptkit.policy.in:120
+#: data/org.aptkit.policy.in:92
 msgid "Install software from a high-trust whitelisted repository."
-msgstr "Installer le logiciel à partir d'un dépot marqué comme très fiable."
+msgstr ""
+"Installer des logiciels depuis un dépôt figurant sur la liste des dépôts "
+"autorisés et jugés très fiables."
 
-#: data/org.aptkit.policy.in:123
+#: data/org.aptkit.policy.in:93
 msgid "To install software, you need to authenticate."
 msgstr "Vous devez vous authentifier pour installer des logiciels."
 
@@ -103,11 +105,11 @@ msgstr "Vous devez vous authentifier pour installer des logiciels."
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: data/org.aptkit.policy.in:139
+#: data/org.aptkit.policy.in:107
 msgid "Add a new repository and install packages from it"
 msgstr "Ajouter un nouveau dépôt et installer des paquets depuis celui-ci"
 
-#: data/org.aptkit.policy.in:142
+#: data/org.aptkit.policy.in:108
 msgid "To install software from a new source, you need to authenticate."
 msgstr ""
 "Vous devez vous authentifier pour installer le logiciel depuis une nouvelle "
@@ -121,40 +123,40 @@ msgstr ""
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: data/org.aptkit.policy.in:161
+#: data/org.aptkit.policy.in:125
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
 "Ajouter un nouveau dépôt de logiciels à acheter et installer des paquets "
 "depuis celui-ci"
 
-#: data/org.aptkit.policy.in:164
+#: data/org.aptkit.policy.in:126
 msgid "To install purchased software, you need to authenticate."
 msgstr "Vous devez vous authentifier pour installer le logiciel acheté."
 
-#: data/org.aptkit.policy.in:175
+#: data/org.aptkit.policy.in:135
 msgid "Upgrade packages"
 msgstr "Mettre à jour les paquets"
 
-#: data/org.aptkit.policy.in:178
+#: data/org.aptkit.policy.in:136
 msgid "To install updated software, you need to authenticate."
 msgstr "Vous devez vous authentifier pour mettre à jour des logiciels."
 
-#: data/org.aptkit.policy.in:187
+#: data/org.aptkit.policy.in:145
 msgid "Cancel the task of another user"
-msgstr "Annuler la tâche d'un autre utilisateur"
+msgstr "Annuler la tâche d’un autre utilisateur"
 
-#: data/org.aptkit.policy.in:190
+#: data/org.aptkit.policy.in:146
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
 "Vous devez vous authentifier pour annuler les modifications sur les "
-"logiciels d'un autre utilisateur."
+"logiciels d’un autre utilisateur."
 
-#: data/org.aptkit.policy.in:201
+#: data/org.aptkit.policy.in:155
 msgid "Set a proxy for software downloads"
 msgstr "Définir un serveur mandataire pour le téléchargement des logiciels"
 
-#: data/org.aptkit.policy.in:204
+#: data/org.aptkit.policy.in:156
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
@@ -163,7 +165,7 @@ msgstr ""
 
 #: aptkit/core.py:2030
 msgid "Do not shutdown the daemon because of inactivity"
-msgstr "Ne pas quitter le démon s'il est inactif"
+msgstr "Ne pas quitter le démon s’il est inactif"
 
 #: aptkit/core.py:2035
 msgid "Do not load any plugins"
@@ -171,11 +173,11 @@ msgstr "Ne charger aucune extension"
 
 #: aptkit/core.py:2039
 msgid "Show internal processing information"
-msgstr "Affiche les informations de traitement interne"
+msgstr "Afficher les renseignements sur le traitement interne"
 
 #: aptkit/core.py:2044
 msgid "Quit and replace an already running daemon"
-msgstr "Quitte et relance un démon en cours d'exécution"
+msgstr "Quitte et relance un démon en cours d’exécution"
 
 #: aptkit/core.py:2049
 msgid "Listen on the DBus session bus (Only required for testing"
@@ -246,7 +248,7 @@ msgstr "Composant de la distribution activé"
 
 #: aptkit/enums.py:323
 msgid "Removed downloaded package files"
-msgstr "Paquets téléchargés supprimés"
+msgstr "Fichiers de paquets téléchargés supprimés"
 
 #: aptkit/enums.py:324
 msgid "Reconfigured installed packages"
@@ -294,7 +296,7 @@ msgstr "Application des changements"
 
 #: aptkit/enums.py:340
 msgid "Repairing incomplete installation"
-msgstr "Réparation d'une installation incomplète"
+msgstr "Réparation d’une installation incomplète"
 
 #: aptkit/enums.py:341
 msgid "Repairing installed software"
@@ -302,15 +304,15 @@ msgstr "Réparation des logiciels installés"
 
 #: aptkit/enums.py:342
 msgid "Adding software source"
-msgstr "Ajout d'une source de logiciels"
+msgstr "Ajout d’une source de logiciels"
 
 #: aptkit/enums.py:343
 msgid "Enabling component of the distribution"
-msgstr "Activation d'un composant de la distribution"
+msgstr "Activation d’un composant de la distribution"
 
 #: aptkit/enums.py:344
 msgid "Removing downloaded package files"
-msgstr "Suppression des paquets téléchargés"
+msgstr "Suppression des fichiers de paquets téléchargés"
 
 #: aptkit/enums.py:345
 msgid "Reconfiguring installed packages"
@@ -322,15 +324,15 @@ msgstr "Recherche en cours"
 
 #: aptkit/enums.py:350
 msgid "Installation of the package file failed"
-msgstr "L'installation du paquet a échoué"
+msgstr "L’installation du paquet a échoué"
 
 #: aptkit/enums.py:351
 msgid "Installation of software failed"
-msgstr "L'installation du logiciel a échoué"
+msgstr "L’installation du logiciel a échoué"
 
 #: aptkit/enums.py:352
 msgid "Refreshing the software list failed"
-msgstr "L'actualisation de la liste des logiciels a échoué"
+msgstr "L’actualisation de la liste des logiciels a échoué"
 
 #: aptkit/enums.py:353
 msgid "Removing software failed"
@@ -350,7 +352,7 @@ msgstr "La modification des logiciels a échoué"
 
 #: aptkit/enums.py:357
 msgid "Repairing incomplete installation failed"
-msgstr "La réparation d'une installation incomplète a échoué"
+msgstr "La réparation d’une installation incomplète a échoué"
 
 #: aptkit/enums.py:359
 msgid "Repairing broken dependencies failed"
@@ -358,11 +360,11 @@ msgstr "La réparation des dépendances cassées a échoué"
 
 #: aptkit/enums.py:360
 msgid "Adding software source failed"
-msgstr "L'ajout de la source de logiciels a échoué"
+msgstr "L’ajout de la source de logiciels a échoué"
 
 #: aptkit/enums.py:361
 msgid "Enabling component of the distribution failed"
-msgstr "L'activation du composant de la distribution a échoué"
+msgstr "L’activation du composant de la distribution a échoué"
 
 #: aptkit/enums.py:363 aptkit/enums.py:364
 msgid "Removing downloaded package files failed"
@@ -376,9 +378,14 @@ msgstr "La recherche a échoué"
 msgid "Adding license key"
 msgstr "Ajout de la clé de licence"
 
-#: aptkit/enums.py:370 aptkit/enums.py:371
+#: aptkit/enums.py:370
 msgid "Check your Internet connection."
-msgstr "Vérifiez votre connexion à Internet"
+msgstr "Vérifiez votre connexion à Internet."
+
+#: aptkit/enums.py:371
+msgid "See the error details below for more information."
+msgstr ""
+"Pour plus de renseignements, consultez ci-dessous les détails de l’erreur."
 
 #: aptkit/enums.py:372
 msgid ""
@@ -395,7 +402,7 @@ msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
 msgstr ""
-"Vérifiez si vous n'exécutez pas un autre gestionnaire de paquets, comme "
+"Vérifiez si vous n’exécutez pas un autre gestionnaire de paquets, comme "
 "Synaptic ou Aptitude. Un seul outil à la fois est autorisé à apporter des "
 "changements."
 
@@ -404,8 +411,8 @@ msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
 msgstr ""
-"Ceci un problème sérieux. Veuillez réessayer plus tard. Si le problème "
-"persiste, signalez-le aux développeurs."
+"Ce problème est grave. Réessayez plus tard. Si le problème persiste, "
+"signalez-le aux développeurs."
 
 #: aptkit/enums.py:383
 msgid ""
@@ -417,15 +424,15 @@ msgstr ""
 
 #: aptkit/enums.py:385
 msgid "There isn't any need for an update."
-msgstr "Aucune mise à jour n'est nécessaire."
+msgstr "Aucune mise à jour n’est nécessaire."
 
 #: aptkit/enums.py:386
 msgid "There isn't any need for an installation"
-msgstr "Aucune installation n'est nécessaire"
+msgstr "Aucune installation n’est nécessaire"
 
 #: aptkit/enums.py:388
 msgid "There isn't any need for a removal."
-msgstr "Aucune suppression n'est nécessaire."
+msgstr "Aucune suppression n’est nécessaire."
 
 #: aptkit/enums.py:389
 msgid ""
@@ -439,16 +446,16 @@ msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
 msgstr ""
-"La connexion au démon a été perdue. C'est probablement parce que le démon a "
+"La connexion au démon a été perdue. C’est probablement parce que le démon a "
 "quitté inopinément."
 
 #: aptkit/enums.py:394
 msgid "The installation or removal of a software package failed."
-msgstr "L'installation ou la suppression d'un paquet logiciel a échoué."
+msgstr "L’installation ou la suppression d’un paquet logiciel a échoué."
 
 #: aptkit/enums.py:396
 msgid "The requested feature is not supported."
-msgstr "La fonctionnalité demandée n'est pas prise en charge."
+msgstr "La fonctionnalité demandée n’est pas prise en charge."
 
 #: aptkit/enums.py:397
 msgid ""
@@ -456,8 +463,8 @@ msgid ""
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
-"Il semble qu'il y ait une erreur logicielle dans aptkit, le programme qui "
-"vous permet d'installer et supprimer des logiciels et tout autre tâche liée "
+"Il semble qu’il y ait une erreur logicielle dans aptkit, le programme qui "
+"vous permet d’installer et supprimer des logiciels et tout autre tâche liée "
 "à la gestion des paquets."
 
 #: aptkit/enums.py:401
@@ -474,7 +481,7 @@ msgstr ""
 #: aptkit/enums.py:407
 msgid "This requires installing packages from unauthenticated sources."
 msgstr ""
-"Cela nécessite l'installation de paquets depuis des sources non "
+"Cela nécessite l’installation de paquets depuis des sources non "
 "authentifiées."
 
 #: aptkit/enums.py:409
@@ -483,16 +490,14 @@ msgid ""
 "software package or it was cancelled in an unfriendly way. You have to "
 "repair this before you can install or remove any further software."
 msgstr ""
-"L'installation a pu échouer du fait d'une erreur dans le paquet ou parce "
-"qu'elle a été interrompue brutalement. Vous devez corriger ceci avant de "
-"pouvoir installer ou supprimer d'autres logiciels."
+"L’installation a pu échouer du fait d’une erreur dans le paquet ou parce "
+"qu’elle a été interrompue brutalement. Vous devez corriger ceci avant de "
+"pouvoir installer ou supprimer d’autres logiciels."
 
 #: aptkit/enums.py:415
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
-msgstr ""
-"Veuillez copier le fichier sur votre ordinateur et en vérifier les "
-"permissions."
+msgstr "Copiez le fichier sur votre ordinateur et vérifiez ses permissions."
 
 #: aptkit/enums.py:418
 msgid ""
@@ -501,10 +506,10 @@ msgid ""
 "the person or organisation who provided this package file and include the "
 "details beneath."
 msgstr ""
-"L'installation d'un paquet qui ne respecte pas les standards de qualité "
-"n'est pas autorisée. Cela pourrait engendrer de graves problèmes sur votre "
-"ordinateur. Veuillez contacter la personne ou l'organisation qui a fourni ce "
-"paquet en incluant les renseignements ci-dessous."
+"L’installation d’un paquet qui ne respecte pas les normes de qualité n’est "
+"pas autorisée. Cela pourrait causer de graves problèmes sur votre "
+"ordinateur. Contactez la personne ou l’organisme qui vous a fourni ce "
+"fichier de paquet et communiquez-lui les renseignements ci-dessous."
 
 #: aptkit/enums.py:425
 msgid ""
@@ -513,8 +518,8 @@ msgid ""
 "See the details for more information."
 msgstr ""
 "La clé de licence téléchargée qui est nécessaire pour lancer ce logiciel "
-"n'est pas valable ou n'a pas pu être installée correctement.\n"
-"Voir les détails pour plus d'informations."
+"n’est pas valable ou n’a pas pu être installée correctement.\n"
+"Voir les détails pour plus d’informations."
 
 #: aptkit/enums.py:431
 msgid "All available upgrades have already been installed."
@@ -525,12 +530,12 @@ msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
 msgstr ""
-"La clé de licence qui vous permet d'utiliser ce logiciel n'a pas pu être "
-"téléchargée. Veuillez vérifier votre connexion réseau."
+"La clé de licence permettant d’utiliser ce logiciel n’a pas pu être "
+"téléchargée. Vérifiez votre connexion réseau."
 
 #: aptkit/enums.py:437
 msgid "You don't have the required privileges to perform this action."
-msgstr "Vous n'avez pas les privilèges requis pour effectuer cette action."
+msgstr "Vous n’avez pas les privilèges requis pour effectuer cette action."
 
 #: aptkit/enums.py:439
 msgid ""
@@ -539,10 +544,10 @@ msgid ""
 "haven't seen a password dialog: your desktop environment doesn't provide a "
 "PolicyKit session agent."
 msgstr ""
-"Vous avez déjà rentré un mauvais mot de passe ou fermé l'instance "
-"d'autorisation.\n"
-"Il est également possible qu'il y ait une raison technique à cette erreur si "
-"vous n'avez pas vu de dialogue de demande de mot de passe : votre "
+"Vous avez déjà rentré un mauvais mot de passe ou fermé l’instance "
+"d’autorisation.\n"
+"Il est également possible qu’il y ait une raison technique à cette erreur si "
+"vous n’avez pas vu de dialogue de demande de mot de passe : votre "
 "environnement de bureau ne fourni pas un agent de session PolicyKit."
 
 #: aptkit/enums.py:447
@@ -551,7 +556,7 @@ msgstr "Le téléchargement des paquets a échoué"
 
 #: aptkit/enums.py:448
 msgid "Failed to download repository information"
-msgstr "Le téléchargement des informations du dépôt a échoué"
+msgstr "Le téléchargement des renseignements sur le dépôt a échoué."
 
 #: aptkit/enums.py:450
 msgid "Package dependencies cannot be resolved"
@@ -571,7 +576,7 @@ msgstr "Impossible de charger la liste des paquets"
 
 #: aptkit/enums.py:454
 msgid "Package does not exist"
-msgstr "Le paquet n'existe pas"
+msgstr "Le paquet n’existe pas"
 
 #: aptkit/enums.py:455
 msgid "Package is already up to date"
@@ -583,7 +588,7 @@ msgstr "Le paquet est déjà installé"
 
 #: aptkit/enums.py:457
 msgid "Package isn't installed"
-msgstr "Le paquet n'est pas installé"
+msgstr "Le paquet n’est pas installé"
 
 #: aptkit/enums.py:458
 msgid "Failed to remove essential system package"
@@ -599,11 +604,11 @@ msgstr "Échec du traitement du paquet"
 
 #: aptkit/enums.py:462
 msgid "Requires installation of untrusted packages"
-msgstr "Nécessite l'installation de paquets non vérifiés"
+msgstr "Nécessite l’installation de paquets non vérifiés"
 
 #: aptkit/enums.py:464
 msgid "Previous installation hasn't been completed"
-msgstr "L'installation précédente était incomplète"
+msgstr "L’installation précédente était incomplète"
 
 #: aptkit/enums.py:465
 msgid "The package is of bad quality"
@@ -611,7 +616,7 @@ msgstr "Le paquet est de mauvaise qualité"
 
 #: aptkit/enums.py:466
 msgid "Package file could not be opened"
-msgstr "Impossible d'ouvrir le paquet"
+msgstr "Impossible d’ouvrir le paquet"
 
 #: aptkit/enums.py:467
 msgid "Not supported feature"
@@ -623,7 +628,7 @@ msgstr "Échec du téléchargement de la clé de licence"
 
 #: aptkit/enums.py:469
 msgid "Failed to install the license key"
-msgstr "Échec lors de l'installation de la clé de licence"
+msgstr "Échec lors de l’installation de la clé de licence"
 
 #: aptkit/enums.py:470
 msgid "The system is already up to date"
@@ -631,11 +636,11 @@ msgstr "Le système est déjà à jour"
 
 #: aptkit/enums.py:471
 msgid "You could not be authorized"
-msgstr "Vous n'avez pas pu être autorisé"
+msgstr "Vous n’avez pas pu être autorisé"
 
 #: aptkit/enums.py:472
 msgid "You are not allowed to perform this action"
-msgstr "Vous n'êtes pas autorisé à exécuter cette action"
+msgstr "Vous n’êtes pas autorisé à exécuter cette action"
 
 #: aptkit/enums.py:473
 msgid "An unhandlable error occured"
@@ -655,15 +660,15 @@ msgstr "En attente du média requis"
 
 #: aptkit/enums.py:480
 msgid "Waiting for other software managers to quit"
-msgstr "En attente de l'arrêt d'un autre gestionnaire de paquets"
+msgstr "En attente de l’arrêt d’un autre gestionnaire de paquets"
 
 #: aptkit/enums.py:481
 msgid "Waiting for configuration file prompt"
-msgstr "En attente d'une demande de configuration"
+msgstr "En attente d’une demande de configuration"
 
 #: aptkit/enums.py:483
 msgid "Running task"
-msgstr "Tâche en cours d'exécution"
+msgstr "Tâche en cours d’exécution"
 
 #: aptkit/enums.py:484
 msgid "Downloading"
@@ -695,7 +700,7 @@ msgstr "Chargement de la liste des logiciels"
 
 #: aptkit/enums.py:492
 msgid "Waiting for authentication"
-msgstr "En attente d'authentification"
+msgstr "En attente d’authentification"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:496
@@ -749,7 +754,7 @@ msgstr "Décompression de %s"
 #: aptkit/enums.py:512
 #, python-format
 msgid "Preparing installation of %s"
-msgstr "Préparation de l'installation de %s"
+msgstr "Préparation de l’installation de %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:514
@@ -779,7 +784,7 @@ msgstr "%s a été installé"
 #: aptkit/enums.py:522
 #, python-format
 msgid "Completely removed %s"
-msgstr "%s a été comptètement supprimé"
+msgstr "%s a été complètement supprimé"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:524
@@ -793,7 +798,7 @@ msgstr "Terminé"
 
 #: aptkit/enums.py:528
 msgid "Authentication failed"
-msgstr "Échec de l'authentification"
+msgstr "Échec de l’authentification"
 
 #: aptkit/enums.py:530
 msgid "Fetching"
@@ -805,156 +810,156 @@ msgstr "Inactif"
 
 #: aptkit/enums.py:532
 msgid "Network isn't available"
-msgstr "Le réseau n'est pas disponible"
+msgstr "Le réseau n’est pas disponible"
 
 #: aptkit/enums.py:652
 #, python-format
 msgid "Processing %s"
 msgstr "Traitement de %s"
 
-#: aptkit/gtk3widgets.py:230
+#: aptkit/gtk3widgets.py:231
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
-msgstr "%s octets sur %s octets téléchargés à %s octets/s"
+msgstr "%s o sur %s o ont été téléchargés à %s o/s"
 
-#: aptkit/gtk3widgets.py:235 aptkit/gtk3widgets.py:436
+#: aptkit/gtk3widgets.py:236 aptkit/gtk3widgets.py:446
 #, python-format
 msgid "Downloaded %sB of %sB"
-msgstr "%s octets sur %s octets téléchargés"
+msgstr "%s o sur %s o ont été téléchargés"
 
-#: aptkit/gtk3widgets.py:247
+#: aptkit/gtk3widgets.py:248
 msgid "Details"
 msgstr "Détails"
 
-#: aptkit/gtk3widgets.py:400
+#: aptkit/gtk3widgets.py:410
 msgid "File"
 msgstr "Fichier"
 
 #. TRANSLATORS: header of the progress download column
-#: aptkit/gtk3widgets.py:405
+#: aptkit/gtk3widgets.py:415
 msgid "%"
 msgstr "%"
 
-#: aptkit/gtk3widgets.py:441
+#: aptkit/gtk3widgets.py:451
 #, python-format
 msgid "Downloaded %sB"
-msgstr "%s octets téléchargés"
+msgstr "%s o ont été téléchargés"
 
-#: aptkit/gtk3widgets.py:444
+#: aptkit/gtk3widgets.py:454
 msgid "Downloaded"
 msgstr "Téléchargé"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: aptkit/gtk3widgets.py:787
+#: aptkit/gtk3widgets.py:797
 #, python-format
 msgid "CD/DVD '%s' is required"
 msgstr "Le CD/DVD « %s » est requis"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: aptkit/gtk3widgets.py:789
+#: aptkit/gtk3widgets.py:799
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
 "packages from it."
 msgstr ""
-"Veuillez insérer le CD ci-dessus dans le lecteur « %s » pour installer les "
-"paquets qui s'y trouvent."
+"Insérez le CD ou le DVD ci-dessus dans le lecteur « %s » pour installer les "
+"paquets qu’il contient."
 
-#: aptkit/gtk3widgets.py:793 aptkit/gtk3widgets.py:815
+#: aptkit/gtk3widgets.py:803 aptkit/gtk3widgets.py:825
 msgid "C_ontinue"
 msgstr "C_ontinuer"
 
-#: aptkit/gtk3widgets.py:866
+#: aptkit/gtk3widgets.py:876
 msgid "Install"
 msgstr "Installer"
 
-#: aptkit/gtk3widgets.py:867
+#: aptkit/gtk3widgets.py:877
 msgid "Reinstall"
 msgstr "Réinstaller"
 
-#: aptkit/gtk3widgets.py:868
+#: aptkit/gtk3widgets.py:878
 msgid "Remove"
 msgstr "Supprimer"
 
-#: aptkit/gtk3widgets.py:869
+#: aptkit/gtk3widgets.py:879
 msgid "Purge"
 msgstr "Supprimer complètement"
 
-#: aptkit/gtk3widgets.py:870
+#: aptkit/gtk3widgets.py:880
 msgid "Upgrade"
 msgstr "Mettre à jour"
 
-#: aptkit/gtk3widgets.py:871
+#: aptkit/gtk3widgets.py:881
 msgid "Downgrade"
 msgstr "Revenir à une version antérieure"
 
-#: aptkit/gtk3widgets.py:872
+#: aptkit/gtk3widgets.py:882
 msgid "Skip upgrade"
 msgstr "Ignorer la mise à niveau"
 
-#: aptkit/gtk3widgets.py:883
+#: aptkit/gtk3widgets.py:893
 msgid "Please take a look at the list of changes below."
-msgstr "Veuillez consulter la liste des changements ci-dessous."
+msgstr "Consultez la liste des changements ci-dessous."
 
-#: aptkit/gtk3widgets.py:891
+#: aptkit/gtk3widgets.py:901
 msgid "Additional software has to be installed"
 msgstr "Des logiciels supplémentaires doivent être installés"
 
-#: aptkit/gtk3widgets.py:893
+#: aptkit/gtk3widgets.py:903
 msgid "Additional software has to be re-installed"
 msgstr "Des logiciels supplémentaires doivent être réinstallés"
 
-#: aptkit/gtk3widgets.py:895
+#: aptkit/gtk3widgets.py:905
 msgid "Additional software has to be removed"
 msgstr "Des logiciels supplémentaires doivent être désinstallés"
 
-#: aptkit/gtk3widgets.py:897
+#: aptkit/gtk3widgets.py:907
 msgid "Additional software has to be purged"
 msgstr "Des logiciels supplémentaires doivent être supprimés complètement"
 
-#: aptkit/gtk3widgets.py:899
+#: aptkit/gtk3widgets.py:909
 msgid "Additional software has to be upgraded"
 msgstr "Des logiciels supplémentaires doivent être mis à jour"
 
-#: aptkit/gtk3widgets.py:901
+#: aptkit/gtk3widgets.py:911
 msgid "Additional software has to be downgraded"
 msgstr ""
 "Des logiciels supplémentaires doivent être réinstallés dans leur version "
 "antérieure"
 
-#: aptkit/gtk3widgets.py:903
+#: aptkit/gtk3widgets.py:913
 msgid "Updates will be skipped"
 msgstr "Les mises à jour seront ignorées"
 
-#: aptkit/gtk3widgets.py:911
+#: aptkit/gtk3widgets.py:921
 msgid "Additional changes are required"
 msgstr "Des changements supplémentaires sont nécessaires"
 
-#: aptkit/gtk3widgets.py:916
+#: aptkit/gtk3widgets.py:926
 #, python-format
 msgid "%sB will be downloaded in total."
-msgstr "%s octets seront téléchargés au total."
+msgstr "Un total de %s o sera téléchargé."
 
-#: aptkit/gtk3widgets.py:920
+#: aptkit/gtk3widgets.py:930
 #, python-format
 msgid "%sB of disk space will be freed."
-msgstr "%s octets d'espace disque seront libérés."
+msgstr "Un espace disque de %s o sera libéré."
 
-#: aptkit/gtk3widgets.py:924
+#: aptkit/gtk3widgets.py:934
 #, python-format
 msgid "%sB more disk space will be used."
-msgstr "%s octets d'espace disque supplémentaire seront utilisés."
+msgstr "Un espace disque supplémentaire de %s o sera utilisé."
 
 #. TRANSLATORS: %s is a file path
-#: aptkit/gtk3widgets.py:983
+#: aptkit/gtk3widgets.py:993
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
 msgstr ""
 "Remplacer les modifications que vous aviez effectuées dans « %s » par une "
-"version plus récente du fichier de configuration ?"
+"version plus récente du fichier de configuration ?"
 
-#: aptkit/gtk3widgets.py:985
+#: aptkit/gtk3widgets.py:995
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
@@ -962,19 +967,19 @@ msgstr ""
 "Si vous ne savez pas pourquoi le fichier est déjà là, il est généralement "
 "sans danger de le remplacer."
 
-#: aptkit/gtk3widgets.py:994
+#: aptkit/gtk3widgets.py:1004
 msgid "_Changes"
 msgstr "_Changements"
 
-#: aptkit/gtk3widgets.py:997
+#: aptkit/gtk3widgets.py:1007
 msgid "_Keep"
 msgstr "_Conserver"
 
-#: aptkit/gtk3widgets.py:998
+#: aptkit/gtk3widgets.py:1008
 msgid "_Replace"
 msgstr "_Remplacer"
 
-#: aptkit/gtk3widgets.py:1101
+#: aptkit/gtk3widgets.py:1111
 msgid "_Details"
 msgstr "_Détails"
 
@@ -992,142 +997,146 @@ msgstr "Téléchargement de %s"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: aptkit/progress.py:277 aptkit/progress.py:314
+#: aptkit/progress.py:279 aptkit/progress.py:316
 msgid "local repository"
 msgstr "dépôt local"
 
 #. TRANSLATORS: %s is a list of repository names
-#: aptkit/progress.py:280
+#: aptkit/progress.py:282
 #, python-format
 msgid "Downloading from %s"
 msgstr "Téléchargement depuis %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:318
+#: aptkit/progress.py:320
 #, python-format
 msgid "Structure of %s"
 msgstr "Composition de %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:321
+#: aptkit/progress.py:323
 #, python-format
 msgid "Description of %s"
 msgstr "Description de %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:324
+#: aptkit/progress.py:326
 #, python-format
 msgid "Description signature of %s"
 msgstr "Description de la signature de %s"
 
-#: aptkit/progress.py:329
+#: aptkit/progress.py:331
 #, python-format
 msgid "Available packages from %s"
 msgstr "Paquets disponibles dans le dépôt %s"
 
-#: aptkit/progress.py:333
+#: aptkit/progress.py:335
 #, python-format
 msgid "Available sources from %s"
 msgstr "Sources disponibles dans le dépôt %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:336
+#: aptkit/progress.py:338
 #, python-format
 msgid "Available translations from %s"
 msgstr "Traductions disponibles dans le dépôt %s"
 
-#: aptkit/progress.py:353
+#: aptkit/progress.py:355
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr "Traductions en %s (%s) dans le dépôt %s"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: aptkit/progress.py:357
+#: aptkit/progress.py:359
 #, python-format
 msgid "Translations for %s from %s"
 msgstr "Traductions en %s dans le dépôt %s"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: aptkit/progress.py:362
+#: aptkit/progress.py:364
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr "Traductions (%s) dans le dépôt %s"
 
-#: aptkit/worker/aptworker.py:372 aptkit/worker/aptworker.py:587
-#: aptkit/worker/aptworker.py:682 aptkit/worker/aptworker.py:727
+#: aptkit/worker/aptworker.py:399 aptkit/worker/aptworker.py:627
+#: aptkit/worker/aptworker.py:770 aptkit/worker/aptworker.py:817
 #, python-format
 msgid "Package %s isn't available"
-msgstr "Le paquet %s n'est pas disponible"
+msgstr "Le paquet %s n’est pas disponible"
 
-#: aptkit/worker/aptworker.py:377 aptkit/worker/aptworker.py:591
-#: aptkit/worker/aptworker.py:686 aptkit/worker/aptworker.py:731
+#: aptkit/worker/aptworker.py:404 aptkit/worker/aptworker.py:631
+#: aptkit/worker/aptworker.py:774 aptkit/worker/aptworker.py:821
 #, python-format
 msgid "Package %s isn't installed"
-msgstr "Le paquet %s n'est pas installé"
+msgstr "Le paquet %s n’est pas installé"
 
-#: aptkit/worker/aptworker.py:381
+#: aptkit/worker/aptworker.py:408
 #, python-format
 msgid "The version %s of %s isn't installed"
-msgstr "La version %s de %s n'est pas installée"
+msgstr "La version %s de %s n’est pas installée"
 
-#: aptkit/worker/aptworker.py:396
+#: aptkit/worker/aptworker.py:423
 #, python-format
 msgid "Package %s is already installed"
 msgstr "Le paquet %s est déjà installé"
 
-#: aptkit/worker/aptworker.py:403 aptkit/worker/aptworker.py:754
+#: aptkit/worker/aptworker.py:430 aptkit/worker/aptworker.py:844
 #, python-format
 msgid "The version %s of %s isn't available."
-msgstr "La version %s de %s n'est pas disponible."
+msgstr "La version %s de %s n’est pas disponible."
 
-#: aptkit/worker/aptworker.py:595
+#: aptkit/worker/aptworker.py:635
 #, python-format
 msgid "Package %s cannot be removed."
 msgstr "Impossible de supprimer le paquet %s."
 
-#: aptkit/worker/aptworker.py:599
+#: aptkit/worker/aptworker.py:639
 #, python-format
 msgid "The version %s of %s is not installed"
-msgstr "La version %s de %s n'est pas installée"
+msgstr "La version %s de %s n’est pas installée"
 
-#: aptkit/worker/aptworker.py:694
+#: aptkit/worker/aptworker.py:784
 #, python-format
 msgid "The former version %s of %s is already installed"
 msgstr "Une version antérieure (%s) de %s est déjà installée"
 
-#: aptkit/worker/aptworker.py:699 aptkit/worker/aptworker.py:747
+#: aptkit/worker/aptworker.py:791 aptkit/worker/aptworker.py:837
 #, python-format
 msgid "The version %s of %s is already installed"
 msgstr "La version %s de %s est déjà installée"
 
-#: aptkit/worker/aptworker.py:706
+#: aptkit/worker/aptworker.py:798
 #, python-format
 msgid "The version %s of %s isn't available"
-msgstr "La version %s de %s n'est pas disponible"
+msgstr "La version %s de %s n’est pas disponible"
 
-#: aptkit/worker/aptworker.py:710
+#: aptkit/worker/aptworker.py:802
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
 msgstr "Vous devez spécifier la version à laquelle revenir pour %s"
 
-#: aptkit/worker/aptworker.py:740
+#: aptkit/worker/aptworker.py:830
 #, python-format
 msgid "The later version %s of %s is already installed"
 msgstr "La dernière version (%s) de %s est déjà installée"
 
-#: aptkit/worker/aptworker.py:776
+#: aptkit/worker/aptworker.py:864
 #, python-format
 msgid "The package %s isn't available in the %s release."
-msgstr "Le paquet %s n'est pas disponible dans la distribution %s."
+msgstr "Le paquet %s n’est pas disponible dans la distribution %s."
 
-#: aptkit/worker/aptworker.py:961
+#: aptkit/worker/aptworker.py:921
+msgid "Unknown repository update error"
+msgstr "Erreur inconnue de mise à jour d’un dépôt"
+
+#: aptkit/worker/aptworker.py:1058
 #, python-format
 msgid "Package %s cannot be removed"
 msgstr "Impossible de supprimer le paquet %s"
 
-#: aptkit/worker/aptworker.py:1063
+#: aptkit/worker/aptworker.py:1160
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
@@ -1135,67 +1144,71 @@ msgstr ""
 "Le paquet ne fournit pas un champ de contrôle de taille valide. Cf. "
 "politique Debian 5.6.20."
 
-#: aptkit/worker/aptworker.py:1202
+#: aptkit/worker/aptworker.py:1299
 msgid "The license key is empty"
 msgstr "La clé de licence est vide"
 
-#: aptkit/worker/aptworker.py:1218
+#: aptkit/worker/aptworker.py:1315
 msgid "The license key is not allowed to contain executable code."
 msgstr "La clé de licence ne peut pas contenir de code exécutable."
 
-#: aptkit/worker/aptworker.py:1227
+#: aptkit/worker/aptworker.py:1324
 #, python-format
 msgid "The license key path %s is invalid"
-msgstr "Le chemin de la clé de licence %s n'est pas valide"
+msgstr "Le chemin de la clé de licence %s n’est pas valide"
 
-#: aptkit/worker/aptworker.py:1231
+#: aptkit/worker/aptworker.py:1328
 #, python-format
 msgid "The license key already exists: %s"
 msgstr "La clé de licence existe déjà : %s"
 
-#: aptkit/worker/aptworker.py:1236
+#: aptkit/worker/aptworker.py:1333
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
 "links. The path %s maps to %s"
 msgstr ""
-"L'emplacement de la clé de licence n'est pas sécurisé car il contient des "
+"L’emplacement de la clé de licence n’est pas sécurisé car il contient des "
 "liens symboliques. Le chemin %s renvoie à %s"
 
-#: aptkit/worker/aptworker.py:1244
+#: aptkit/worker/aptworker.py:1341
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
-msgstr "Le dossier où installer la clé n'existe pas pour le moment : %s"
+msgstr "Le dossier où installer la clé n’existe pas pour le moment : %s"
 
-#: aptkit/worker/aptworker.py:1255
+#: aptkit/worker/aptworker.py:1352
 #, python-format
 msgid "Failed to write key file to: %s"
-msgstr "Échec lors de l'écriture du fichier clé dans : %s"
+msgstr "Échec lors de l’écriture du fichier clé dans : %s"
 
-#: aptkit/worker/aptworker.py:1290
+#: aptkit/worker/aptworker.py:1419
 msgid "The following packages have unmet dependencies:"
 msgstr "Les paquets suivants ont des dépendances non satisfaites :"
 
-#: aptkit/worker/aptworker.py:1343
+#: aptkit/worker/aptworker.py:1449
 msgid "but it is a virtual package"
-msgstr "mais c'est un paquet virtuel"
+msgstr "mais c’est un paquet virtuel"
 
-#: aptkit/worker/aptworker.py:1346
+#: aptkit/worker/aptworker.py:1452
+msgid "but it is not installable"
+msgstr "mais il n’est pas installable"
+
+#: aptkit/worker/aptworker.py:1454
 msgid "but it is not installed"
-msgstr "mais il n'est pas installé"
+msgstr "mais il n’est pas installé"
 
-#: aptkit/worker/aptworker.py:1348
+#: aptkit/worker/aptworker.py:1456
 msgid "but it is not going to be installed"
 msgstr "mais il ne va pas être installé"
 
 #. TRANSLATORS: %s is a version number
-#: aptkit/worker/aptworker.py:1352
+#: aptkit/worker/aptworker.py:1460
 #, python-format
 msgid "but %s is installed"
 msgstr "mais la version %s est installée"
 
 #. TRANSLATORS: %s is a version number
-#: aptkit/worker/aptworker.py:1356
+#: aptkit/worker/aptworker.py:1464
 #, python-format
 msgid "but %s is to be installed"
 msgstr "mais la version %s va être installée"

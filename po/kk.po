@@ -7,72 +7,80 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-20 14:47+0000\n"
-"PO-Revision-Date: 2024-09-09 17:55+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"POT-Creation-Date: 2026-11-09 09:28+0000\n"
+"PO-Revision-Date: 2026-01-24 09:48+0000\n"
+"Last-Translator: Baurzhan Muftakhidinov <Unknown>\n"
 "Language-Team: Kazakh <kk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:44+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 "Language: kk\n"
 
 #: data/org.aptkit.policy.in:12
 msgid "List keys of trusted vendors"
-msgstr "Сенімді жабдықтаушылардың кілттер тізімі"
+msgstr "Сенімді жеткізушілердің кілттер тізімі"
 
-#: data/org.aptkit.policy.in:15
+#: data/org.aptkit.policy.in:13
 msgid "To view the list of trusted keys, you need to authenticate."
-msgstr "Сенімді кілттер тізімін көру үшін, аутентификация қажет."
+msgstr "Сенімді кілттер тізімін көру үшін аутентификациядан өтуіңіз керек."
 
-#: data/org.aptkit.policy.in:26
+#: data/org.aptkit.policy.in:22
 msgid "Remove downloaded package files"
-msgstr "Жүктелген пакеттер файлдарын өшіру"
+msgstr "Жүктелген пакет файлдарын өшіру"
 
-#: data/org.aptkit.policy.in:29
+#: data/org.aptkit.policy.in:23
 msgid "To clean downloaded package files, you need to authenticate."
 msgstr ""
+"Жүктелген пакет файлдарын тазарту үшін аутентификациядан өтуіңіз керек."
 
-#: data/org.aptkit.policy.in:40
+#: data/org.aptkit.policy.in:32
 msgid "Change software configuration"
-msgstr ""
+msgstr "Бағдарламалық қамтама конфигурациясын өзгерту"
 
-#: data/org.aptkit.policy.in:43
+#: data/org.aptkit.policy.in:33
 msgid "To change software settings, you need to authenticate."
 msgstr ""
+"Бағдарламалық қамтама баптауларын өзгерту үшін аутентификациядан өтуіңіз "
+"керек."
 
-#: data/org.aptkit.policy.in:54
+#: data/org.aptkit.policy.in:42
 msgid "Change software repository"
-msgstr "Бағдарламалар қайнар көздерін өзгерту"
+msgstr "Бағдарламалық қамтама репозиторийін өзгерту"
 
-#: data/org.aptkit.policy.in:57
+#: data/org.aptkit.policy.in:43
 msgid "To change software repository settings, you need to authenticate."
 msgstr ""
+"Бағдарламалық қамтама репозиторийінің баптауларын өзгерту үшін "
+"аутентификациядан өтуіңіз керек."
 
-#: data/org.aptkit.policy.in:68
+#: data/org.aptkit.policy.in:52
 msgid "Install package file"
 msgstr "Пакет файлын орнату"
 
-#: data/org.aptkit.policy.in:71
+#: data/org.aptkit.policy.in:53
 msgid "To install this package, you need to authenticate."
-msgstr "Осы пакетті орнату үшін, аутентификация қажет."
+msgstr "Бұл пакетті орнату үшін аутентификациядан өтуіңіз керек."
 
-#: data/org.aptkit.policy.in:82
+#: data/org.aptkit.policy.in:62
 msgid "Update package information"
-msgstr "Пакет туралы ақпаратты жаңарту"
+msgstr "Пакет ақпаратын жаңарту"
 
-#: data/org.aptkit.policy.in:85
+#: data/org.aptkit.policy.in:63
 msgid "To update the software catalog, you need to authenticate."
-msgstr "Бағдарламалар тізімдемесін жаңарту үшін, аутентификация қажет."
+msgstr ""
+"Бағдарламалық қамтама каталогын жаңарту үшін аутентификациядан өтуіңіз керек."
 
-#: data/org.aptkit.policy.in:96
+#: data/org.aptkit.policy.in:72
 msgid "Install or remove packages"
-msgstr "Пакеттерді орнату немесе жою"
+msgstr "Пакеттерді орнату немесе өшіру"
 
-#: data/org.aptkit.policy.in:99
+#: data/org.aptkit.policy.in:73
 msgid "To install or remove software, you need to authenticate."
 msgstr ""
+"Бағдарламалық қамтаманы орнату немесе өшіру үшін аутентификациядан өтуіңіз "
+"керек."
 
 #. This priviledge will be requested when installing a package
 #. from a high trusted repository that can be explicitely whitelisted.
@@ -83,26 +91,29 @@ msgstr ""
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
-#: data/org.aptkit.policy.in:120
+#: data/org.aptkit.policy.in:92
 msgid "Install software from a high-trust whitelisted repository."
 msgstr ""
+"Жоғары сенімді ақ тізімдегі репозиторийден бағдарламалық қамтаманы орнату."
 
-#: data/org.aptkit.policy.in:123
+#: data/org.aptkit.policy.in:93
 msgid "To install software, you need to authenticate."
-msgstr ""
+msgstr "Бағдарламалық қамтаманы орнату үшін аутентификациядан өтуіңіз керек."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: data/org.aptkit.policy.in:139
+#: data/org.aptkit.policy.in:107
 msgid "Add a new repository and install packages from it"
-msgstr "Жаңа репозиторий қосып, оның ішінен пакеттерді орнату"
+msgstr "Жаңа репозиторий қосу және одан пакеттерді орнату"
 
-#: data/org.aptkit.policy.in:142
+#: data/org.aptkit.policy.in:108
 msgid "To install software from a new source, you need to authenticate."
 msgstr ""
+"Бағдарламалық қамтаманы жаңа дереккөзден орнату үшін аутентификациядан "
+"өтуіңіз керек."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -112,73 +123,81 @@ msgstr ""
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: data/org.aptkit.policy.in:161
+#: data/org.aptkit.policy.in:125
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
-"Ақылы бағдарламалар жаңа репозиторий қосып, оның ішінен пакеттерді орнату"
+"Сатып алынған бағдарламалық қамтаманың жаңа репозиторийін қосу және одан "
+"пакеттерді орнату"
 
-#: data/org.aptkit.policy.in:164
+#: data/org.aptkit.policy.in:126
 msgid "To install purchased software, you need to authenticate."
 msgstr ""
+"Сатып алынған бағдарламалық қамтаманы орнату үшін аутентификациядан өтуіңіз "
+"керек."
 
-#: data/org.aptkit.policy.in:175
+#: data/org.aptkit.policy.in:135
 msgid "Upgrade packages"
-msgstr "Пакетті жаңарту"
+msgstr "Пакеттер нұсқасын жаңарту"
 
-#: data/org.aptkit.policy.in:178
+#: data/org.aptkit.policy.in:136
 msgid "To install updated software, you need to authenticate."
-msgstr "Жаңартуларды орнату үшін, аутентификация қажет."
+msgstr ""
+"Жаңартылған бағдарламалық қамтаманы орнату үшін аутентификациядан өтуіңіз "
+"керек."
 
-#: data/org.aptkit.policy.in:187
+#: data/org.aptkit.policy.in:145
 msgid "Cancel the task of another user"
-msgstr "Басқа пайдаланушының пакеттерді басқару тапсырмасын аяқтау."
+msgstr "Басқа пайдаланушының тапсырмасынан бас тарту"
 
-#: data/org.aptkit.policy.in:190
+#: data/org.aptkit.policy.in:146
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
+"Басқа біреудің бағдарламалық қамтамаға енгізген өзгерістерінен бас тарту "
+"үшін аутентификациядан өтуіңіз керек."
 
-#: data/org.aptkit.policy.in:201
+#: data/org.aptkit.policy.in:155
 msgid "Set a proxy for software downloads"
-msgstr "Бағдарламаларды жүктеу үшін прокси серверді орнату"
+msgstr "Бағдарламалық қамтаманы жүктеп алу үшін прокси орнату"
 
-#: data/org.aptkit.policy.in:204
+#: data/org.aptkit.policy.in:156
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
-"Бағдарламаларды прокси сервер арқылы жүктеу үшін, аутентификация қажет."
+"Бағдарламалық қамтаманы жүктеп алу үшін прокси серверін пайдалану үшін "
+"аутентификациядан өтуіңіз керек."
 
 #: aptkit/core.py:2030
 msgid "Do not shutdown the daemon because of inactivity"
-msgstr "Белсенді болмағаны үшін қызметті өшірмеңіз"
+msgstr "Әрекетсіздік салдарынан демонды тоқтатпау"
 
 #: aptkit/core.py:2035
 msgid "Do not load any plugins"
-msgstr ""
+msgstr "Ешқандай плагиндерді жүктемеу"
 
 #: aptkit/core.py:2039
 msgid "Show internal processing information"
-msgstr "Ішкі өңдеу туралы ақпарат көрсету"
+msgstr "Ішкі өңдеу ақпаратын көрсету"
 
 #: aptkit/core.py:2044
 msgid "Quit and replace an already running daemon"
-msgstr "Шығу және жұмыс істеп тұрған қызметті алмастыру"
+msgstr "Жұмыс істеп тұрған демоннан шығу және оны алмастыру"
 
 #: aptkit/core.py:2049
 msgid "Listen on the DBus session bus (Only required for testing"
-msgstr ""
+msgstr "DBus сессия шинасында тыңдау (Тек тестілеу үшін қажет"
 
 #: aptkit/core.py:2053
 msgid "Perform operations in the given chroot"
-msgstr ""
+msgstr "Берілген chroot ішінде операцияларды орындау"
 
 #: aptkit/core.py:2058
 msgid "Store profile stats in the specified file"
-msgstr "Пайдаланушы туралы ақпарат статистикасын көрсетілген файлда сақтау"
+msgstr "Профиль статистикасын көрсетілген файлда сақтау"
 
 #: aptkit/core.py:2063
 msgid "Do not make any changes to the system (Only of use to developers)"
-msgstr "Жүйеге ешбір өзгертулерді енгізбейді (тек өндірушілер қолдану үшін)"
+msgstr "Жүйеге ешқандай өзгеріс енгізбеу (Тек әзірлеушілерге арналған)"
 
 #: aptkit/enums.py:311
 msgid "Installed file"
@@ -194,11 +213,11 @@ msgstr "Жаңартылған кэш"
 
 #: aptkit/enums.py:314
 msgid "Search done"
-msgstr ""
+msgstr "Іздеу аяқталды"
 
 #: aptkit/enums.py:315
 msgid "Removed packages"
-msgstr "Жойылған пакеттер"
+msgstr "Өшірілген пакеттер"
 
 #: aptkit/enums.py:316
 msgid "Updated packages"
@@ -206,35 +225,35 @@ msgstr "Жаңартылған пакеттер"
 
 #: aptkit/enums.py:317
 msgid "Upgraded system"
-msgstr "Жаңартылған жүйе"
+msgstr "Нұсқасы жаңартылған жүйе"
 
 #: aptkit/enums.py:318
 msgid "Applied changes"
-msgstr "Іске асқан өзгертулер"
+msgstr "Іске асырылған өзгерістер"
 
 #: aptkit/enums.py:319
 msgid "Repaired incomplete installation"
-msgstr "Жөнделінген аяқталмаған орнатылым"
+msgstr "Аяқталмаған орнату жөнделді"
 
 #: aptkit/enums.py:320
 msgid "Repaired broken dependencies"
-msgstr "Жөнделінген бұзылған тәуелділіктер"
+msgstr "Бұзылған тәуелділіктер жөнделді"
 
 #: aptkit/enums.py:321
 msgid "Added software source"
-msgstr "Бағдарлама қайнар көзі тізімге қосылды"
+msgstr "Бағдарламалық қамтама дереккөзі қосылды"
 
 #: aptkit/enums.py:322
 msgid "Enabled component of the distribution"
-msgstr "Дистрибутив құрамдас бөлігі іске қосылды"
+msgstr "Дистрибутивтің іске қосылған компоненті"
 
 #: aptkit/enums.py:323
 msgid "Removed downloaded package files"
-msgstr ""
+msgstr "Жүктелген пакет файлдары өшірілді"
 
 #: aptkit/enums.py:324
 msgid "Reconfigured installed packages"
-msgstr ""
+msgstr "Орнатылған пакеттер қайта конфигурацияланды"
 
 #: aptkit/enums.py:328
 msgid "Successful"
@@ -242,99 +261,99 @@ msgstr "Сәтті"
 
 #: aptkit/enums.py:329
 msgid "Canceled"
-msgstr "Болдырылмаған"
+msgstr "Бас тартылды"
 
 #: aptkit/enums.py:330 aptkit/enums.py:529
 msgid "Failed"
-msgstr "Сәтсіз"
+msgstr "Сәтсіз аяқталды"
 
 #: aptkit/enums.py:333
 msgid "Installing file"
-msgstr "Файлдың орнатылуы"
+msgstr "Файлды орнату"
 
 #: aptkit/enums.py:334
 msgid "Installing packages"
-msgstr "Пакеттердің орнатылуы"
+msgstr "Пакеттерді орнату"
 
 #: aptkit/enums.py:335
 msgid "Updating cache"
-msgstr "Кэштің жаңартылуы"
+msgstr "Кэшті жаңарту"
 
 #: aptkit/enums.py:336
 msgid "Removing packages"
-msgstr "Пакеттер жойылуы"
+msgstr "Пакеттерді өшіру"
 
 #: aptkit/enums.py:337
 msgid "Updating packages"
-msgstr "Пакеттердің жаңартылуы"
+msgstr "Пакеттерді жаңарту"
 
 #: aptkit/enums.py:338
 msgid "Upgrading system"
-msgstr "Жүейнің жаңартылуы"
+msgstr "Жүйені жаңарту"
 
 #: aptkit/enums.py:339 aptkit/enums.py:488
 msgid "Applying changes"
-msgstr "Өзгерістерді қолдану"
+msgstr "Өзгерістерді іске асыру"
 
 #: aptkit/enums.py:340
 msgid "Repairing incomplete installation"
-msgstr "Аяқталмаған орнатылымды жөнделуде"
+msgstr "Аяқталмаған орнатуды жөндеу"
 
 #: aptkit/enums.py:341
 msgid "Repairing installed software"
-msgstr ""
+msgstr "Орнатылған бағдарламалық қамтаманы жөндеу"
 
 #: aptkit/enums.py:342
 msgid "Adding software source"
-msgstr "Бағдарлама қайнар көзін тізімге қосу"
+msgstr "Бағдарламалық қамтама көзін қосу"
 
 #: aptkit/enums.py:343
 msgid "Enabling component of the distribution"
-msgstr "Дистрибутив құрамдас бөлігін іске қосу"
+msgstr "Дистрибутив компонентін іске қосу"
 
 #: aptkit/enums.py:344
 msgid "Removing downloaded package files"
-msgstr ""
+msgstr "Жүктелген пакет файлдарын өшіру"
 
 #: aptkit/enums.py:345
 msgid "Reconfiguring installed packages"
-msgstr ""
+msgstr "Орнатылған пакеттерді қайта баптау"
 
 #: aptkit/enums.py:346 aptkit/enums.py:477
 msgid "Searching"
-msgstr ""
+msgstr "Іздеу"
 
 #: aptkit/enums.py:350
 msgid "Installation of the package file failed"
-msgstr "Пакет файлдың орнатылымы сәтсіз"
+msgstr "Пакет файлын орнату сәтсіз аяқталды"
 
 #: aptkit/enums.py:351
 msgid "Installation of software failed"
-msgstr "Бағдарламаны орнату сәтсіз"
+msgstr "Бағдарламалық қамтаманы орнату сәтсіз аяқталды"
 
 #: aptkit/enums.py:352
 msgid "Refreshing the software list failed"
-msgstr "Бағдарламалар тізімін жаңарту сәтсіз"
+msgstr "Бағдарламалық қамтама тізімін жаңарту сәтсіз аяқталды"
 
 #: aptkit/enums.py:353
 msgid "Removing software failed"
-msgstr "Бағдарламаны жою сәтсіз"
+msgstr "Бағдарламалық қамтаманы өшіру сәтсіз аяқталды"
 
 #: aptkit/enums.py:354
 msgid "Updating software failed"
-msgstr "Бағдарламаны жаңарту сәтсіз"
+msgstr "Бағдарламалық қамтаманы жаңарту сәтсіз аяқталды"
 
 #: aptkit/enums.py:355
 msgid "Upgrading the system failed"
-msgstr "Жүйені жаңарту сәтсіз"
+msgstr "Жүйені жаңарту сәтсіз аяқталды"
 
 #: aptkit/enums.py:356
 msgid "Applying software changes failed"
-msgstr "Бағдарламадағы өзгерістерді сақтау сәтсіз"
+msgstr "Бағдарламалық қамтама өзгерістерін іске асыру сәтсіз аяқталды"
 
 #: aptkit/enums.py:357
 msgid "Repairing incomplete installation failed"
-msgstr "Аяқталмаған орнатылымды жөндеу сәтсіз аяқталды"
+msgstr "Аяқталмаған орнатуды жөндеу сәтсіз аяқталды"
 
 #: aptkit/enums.py:359
 msgid "Repairing broken dependencies failed"
@@ -342,27 +361,31 @@ msgstr "Бұзылған тәуелділіктерді жөндеу сәтсі�
 
 #: aptkit/enums.py:360
 msgid "Adding software source failed"
-msgstr "Бағдарлама қайнар көзін тізімге қосу сәтсіз аяқталды"
+msgstr "Бағдарламалық қамтама көзін қосу сәтсіз аяқталды"
 
 #: aptkit/enums.py:361
 msgid "Enabling component of the distribution failed"
-msgstr "Дистрибутив құрамдас бөлігін іске қосу сәтсіз аяқталды"
+msgstr "Дистрибутив компонентін іске қосу сәтсіз аяқталды"
 
 #: aptkit/enums.py:363 aptkit/enums.py:364
 msgid "Removing downloaded package files failed"
-msgstr ""
+msgstr "Жүктелген пакет файлдарын өшіру сәтсіз аяқталды"
 
 #: aptkit/enums.py:365
 msgid "Search failed"
-msgstr ""
+msgstr "Іздеу сәтсіз аяқталды"
 
 #: aptkit/enums.py:366
 msgid "Adding license key"
-msgstr ""
+msgstr "Лицензиялық кілтті қосу"
 
-#: aptkit/enums.py:370 aptkit/enums.py:371
+#: aptkit/enums.py:370
 msgid "Check your Internet connection."
-msgstr "Сіздің Интернетпенен қосылысты тексеру."
+msgstr "Интернет байланысын тексеріңіз."
+
+#: aptkit/enums.py:371
+msgid "See the error details below for more information."
+msgstr ""
 
 #: aptkit/enums.py:372
 msgid ""
@@ -370,61 +393,67 @@ msgid ""
 "they are a common source of problems.\n"
 "Furthermore run the following command in a Terminal: apt-get install -f"
 msgstr ""
-"Егер сіз шеттегі бағдарламалар көздерін қолданып жатсаңыз, оларды өшіріңіз, "
-"себебі, олар көптеген\n"
-"мәселелер мен қателердің көзі болады. Содан кейін терминалда apt-get install "
-"-f коммандасын орындыңыз."
+"Үшінші тарап репозиторийлерін пайдаланып жатқаныңызды тексеріңіз. Егер солай "
+"болса, оларды сөндіріңіз, өйткені олар жиі кездесетін мәселелердің көзі "
+"болып табылады.\n"
+"Сонымен қатар, терминалда келесі команданы орындаңыз: apt-get install -f"
 
 #: aptkit/enums.py:377
 msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
 msgstr ""
+"Қазіргі уақытта басқа бағдарламалық қамтаманы басқару сайманы, мысалы, "
+"Synaptic немесе aptitude іске қосылғанын тексеріңіз. Бір уақытта тек бір "
+"сайманға өзгерістер енгізуге рұқсат етіледі."
 
 #: aptkit/enums.py:380
 msgid ""
 "This is a serious problem. Try again later. If this problem appears again, "
 "please report an error to the developers."
 msgstr ""
-"Бұл ауыр мәселе. Кейінірек қайталаңыз. Мәселе тағы да қайталанса, қате "
-"туралы есепті өндірушілерге жіберіңіз."
+"Бұл күрделі мәселе. Кейінірек қайталап көріңіз. Егер бұл мәселе қайталанса, "
+"әзірлеушілерге қате туралы хабарлаңыз."
 
 #: aptkit/enums.py:383
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
 msgstr ""
+"Пакет атауының жазылуын және тиісті репозиторийдің іске қосылғанын "
+"тексеріңіз."
 
 #: aptkit/enums.py:385
 msgid "There isn't any need for an update."
-msgstr "Жаңартылу қажет емес"
+msgstr "Жаңартудың қажеті жоқ."
 
 #: aptkit/enums.py:386
 msgid "There isn't any need for an installation"
-msgstr "Орнатылым қажет емес"
+msgstr "Орнатудың қажеті жоқ"
 
 #: aptkit/enums.py:388
 msgid "There isn't any need for a removal."
-msgstr "Жойылуы қажет емес"
+msgstr "Өшірудің қажеті жоқ."
 
 #: aptkit/enums.py:389
 msgid ""
 "You requested to remove a package which is an essential part of your system."
-msgstr "Жоюға жүйенің ажырамас бөлігі болып табылатын пакет таңдалынды."
+msgstr ""
+"Сіз жүйеңіздің маңызды бөлігі болып табылатын пакетті өшіруді сұрадыңыз."
 
 #: aptkit/enums.py:392
 msgid ""
 "The connection to the daemon was lost. Most likely the background daemon "
 "crashed."
-msgstr "Демон арасында байланыс үзілді. Мүмкін оның жұмысы кенет аяқталды."
+msgstr "Демонмен байланыс үзілді. Фонодық демон істен шыққан болуы мүмкін."
 
 #: aptkit/enums.py:394
 msgid "The installation or removal of a software package failed."
-msgstr "Пакеттің орнатылуы немесе жойылуы сәтсіз болады."
+msgstr "Бағдарламалық қамтама пакетін орнату немесе өшіру сәтсіз аяқталды."
 
 #: aptkit/enums.py:396
 msgid "The requested feature is not supported."
-msgstr ""
+msgstr "Сұралған мүмкіндікке қолдау көрсетілмейді."
 
 #: aptkit/enums.py:397
 msgid ""
@@ -432,6 +461,9 @@ msgid ""
 "you to install/remove software and to perform other package management "
 "related tasks."
 msgstr ""
+"Бағдарламалық қамтаманы орнатуға/өшіруге және пакеттерді басқаруға "
+"байланысты басқа да тапсырмаларды орындауға мүмкіндік беретін aptkit "
+"бағдарламалық қамтамасында қате бар сияқты."
 
 #: aptkit/enums.py:401
 msgid ""
@@ -440,10 +472,14 @@ msgid ""
 "between software packages which are not allowed to be installed at the same "
 "time."
 msgstr ""
+"Бұл қате жетіспейтін немесе орнату мүмкін емес қажетті қосымша бағдарламалық "
+"қамтама пакеттерінен туындауы мүмкін. Сонымен қатар, бір уақытта орнатуға "
+"болмайтын бағдарламалық қамтама пакеттері арасында қайшылық болуы мүмкін."
 
 #: aptkit/enums.py:407
 msgid "This requires installing packages from unauthenticated sources."
 msgstr ""
+"Бұл аутентификацияланбаған көздерден пакеттерді орнатуды талап етеді."
 
 #: aptkit/enums.py:409
 msgid ""
@@ -451,14 +487,14 @@ msgid ""
 "software package or it was cancelled in an unfriendly way. You have to "
 "repair this before you can install or remove any further software."
 msgstr ""
-"Орнатылымның сәтсіз аяқталу, сәйкес пакеттегі қате пайда болу кесірінен "
-"немесе орнатылым дұрыс емес әдіспен үзілгенінен болуы мүмкін. Әрі қарай кез-"
-"келген бағдарламаларды орнату немесе жою үшін, осы қатені жөндеуіңіз қажет."
+"Орнату тиісті бағдарламалық қамтама пакетіндегі қатеге байланысты сәтсіз "
+"аяқталған болуы мүмкін немесе ол күштеп тоқтатылды. Кез келген басқа "
+"бағдарламалық қамтаманы орнатпас немесе өшірмес бұрын, мұны жөндеуіңіз керек."
 
 #: aptkit/enums.py:415
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
-msgstr ""
+msgstr "Файлды жергілікті компьютерге көшіріп, файл рұқсаттарын тексеріңіз."
 
 #: aptkit/enums.py:418
 msgid ""
@@ -467,6 +503,9 @@ msgid ""
 "the person or organisation who provided this package file and include the "
 "details beneath."
 msgstr ""
+"Сапа стандарттарын бұзатын пакетті орнатуға рұқсат етілмейді. Бұл "
+"компьютеріңізде күрделі мәселелерді тудыруы мүмкін. Осы пакет файлын ұсынған "
+"тұлғаға немесе ұйымға хабарласып, төмендегі мәліметтерді қоса беріңіз."
 
 #: aptkit/enums.py:425
 msgid ""
@@ -474,20 +513,25 @@ msgid ""
 "is not valid or could not be installed correctly.\n"
 "See the details for more information."
 msgstr ""
+"Осы бағдарламалық қамтаманы іске қосу үшін қажетті жүктелген лицензиялық "
+"кілт жарамсыз немесе дұрыс орнатылмады.\n"
+"Қосымша ақпаратты мәліметтерден қараңыз."
 
 #: aptkit/enums.py:431
 msgid "All available upgrades have already been installed."
-msgstr ""
+msgstr "Барлық қолжетімді жаңартулар орнатылып қойған."
 
 #: aptkit/enums.py:433
 msgid ""
 "The license key which allows you to use this piece of software could not be "
 "downloaded. Please check your network connection."
 msgstr ""
+"Осы бағдарламалық қамтаманы пайдалануға мүмкіндік беретін лицензиялық кілтті "
+"жүктеу мүмкін болмады. Желі байланысын тексеріңіз."
 
 #: aptkit/enums.py:437
 msgid "You don't have the required privileges to perform this action."
-msgstr ""
+msgstr "Бұл әрекетті орындау үшін сізде жеткілікті құқықтар жоқ."
 
 #: aptkit/enums.py:439
 msgid ""
@@ -496,30 +540,34 @@ msgid ""
 "haven't seen a password dialog: your desktop environment doesn't provide a "
 "PolicyKit session agent."
 msgstr ""
+"Сіз қате парольді енгіздіңіз немесе авторизациядан бас тарттыңыз.\n"
+"Сонымен қатар, егер сіз парольді сұрайтын сұхбат терезесін көрмесеңіз, бұл "
+"қатенің техникалық себебі болуы мүмкін: жұмыс үстелі ортаңыз PolicyKit "
+"сессия агентін ұсынбайды."
 
 #: aptkit/enums.py:447
 msgid "Failed to download package files"
-msgstr "Пакеттің файлдарын жүктеу мүмкін емес"
+msgstr "Пакет файлдарын жүктеп алу сәтсіз аяқталды"
 
 #: aptkit/enums.py:448
 msgid "Failed to download repository information"
-msgstr "Бағдарламалар көздері туралы мәліметтерді жүктеу сәтсіз"
+msgstr "Репозиторий ақпаратын жүктеп алу сәтсіз аяқталды"
 
 #: aptkit/enums.py:450
 msgid "Package dependencies cannot be resolved"
-msgstr "Пакеттің тәуелділіктері рұқсат берілу мүмкін емес"
+msgstr "Пакеттің тәуелділіктерін шешу мүмкін емес"
 
 #: aptkit/enums.py:451
 msgid "The package system is broken"
-msgstr "Пакеттер жүйесі бұзынған"
+msgstr "Пакеттер жүйесі зақымдалған"
 
 #: aptkit/enums.py:452
 msgid "Failed to lock the package manager"
-msgstr "Пакеттер менеджерін қоршау сәтсіз"
+msgstr "Пакет менеджерін құлыптау сәтсіз аяқталды"
 
 #: aptkit/enums.py:453
 msgid "Failed to load the package list"
-msgstr "Пакеттер тізімін жүктеу сәтсіз"
+msgstr "Пакеттер тізімін жүктеу сәтсіз аяқталды"
 
 #: aptkit/enums.py:454
 msgid "Package does not exist"
@@ -527,11 +575,11 @@ msgstr "Пакет жоқ"
 
 #: aptkit/enums.py:455
 msgid "Package is already up to date"
-msgstr ""
+msgstr "Пакет қазірдің өзінде жаңартылған"
 
 #: aptkit/enums.py:456
 msgid "Package is already installed"
-msgstr "Пакет орнатылып тұр"
+msgstr "Пакет қазірдің өзінде орнатылған"
 
 #: aptkit/enums.py:457
 msgid "Package isn't installed"
@@ -539,115 +587,115 @@ msgstr "Пакет орнатылмаған"
 
 #: aptkit/enums.py:458
 msgid "Failed to remove essential system package"
-msgstr "Маңызды жүйелік пакеттің жойылуы сәтсіз"
+msgstr "Маңызды жүйелік пакетті өшіру сәтсіз аяқталды"
 
 #: aptkit/enums.py:460
 msgid "Task cannot be monitored or controlled"
-msgstr "Тапсырма көріне немесе басқарылуы мүмкін емес"
+msgstr "Тапсырманы бақылау немесе басқару мүмкін емес"
 
 #: aptkit/enums.py:461
 msgid "Package operation failed"
-msgstr "Пакеттік операциясы сәтсіз"
+msgstr "Пакетпен жұмыс істеу сәтсіз аяқталды"
 
 #: aptkit/enums.py:462
 msgid "Requires installation of untrusted packages"
-msgstr "Сенімсіз пакеттік орнатылуы тиіс"
+msgstr "Сенімсіз пакеттерді орнатуды талап етеді"
 
 #: aptkit/enums.py:464
 msgid "Previous installation hasn't been completed"
-msgstr "Алдыңғы орнатылым аяқталған жоқ"
+msgstr "Алдыңғы орнату аяқталмаған"
 
 #: aptkit/enums.py:465
 msgid "The package is of bad quality"
-msgstr ""
+msgstr "Пакет сапасы нашар"
 
 #: aptkit/enums.py:466
 msgid "Package file could not be opened"
-msgstr ""
+msgstr "Пакет файлын ашу мүмкін емес"
 
 #: aptkit/enums.py:467
 msgid "Not supported feature"
-msgstr ""
+msgstr "Қолдау көрсетілмейтін мүмкіндік"
 
 #: aptkit/enums.py:468
 msgid "Failed to download the license key"
-msgstr ""
+msgstr "Лицензиялық кілтті жүктеп алу сәтсіз аяқталды"
 
 #: aptkit/enums.py:469
 msgid "Failed to install the license key"
-msgstr ""
+msgstr "Лицензиялық кілтті орнату сәтсіз аяқталды"
 
 #: aptkit/enums.py:470
 msgid "The system is already up to date"
-msgstr ""
+msgstr "Жүйе қазірдің өзінде жаңартылған"
 
 #: aptkit/enums.py:471
 msgid "You could not be authorized"
-msgstr ""
+msgstr "Авторизациялау сәтсіз аяқталды"
 
 #: aptkit/enums.py:472
 msgid "You are not allowed to perform this action"
-msgstr ""
+msgstr "Бұл әрекетті орындауға рұқсатыңыз жоқ"
 
 #: aptkit/enums.py:473
 msgid "An unhandlable error occured"
-msgstr ""
+msgstr "Өңдеуге келмейтін қате орын алды"
 
 #: aptkit/enums.py:476
 msgid "Waiting for service to start"
-msgstr "Қызметтің жүктелуін күту"
+msgstr "Қызметтің іске қосылуын күту"
 
 #: aptkit/enums.py:478
 msgid "Waiting"
-msgstr "Күтіңіз"
+msgstr "Күту"
 
 #: aptkit/enums.py:479
 msgid "Waiting for required medium"
-msgstr "Қажетті ақпарат тасымалдауышын күту"
+msgstr "Қажетті тасушыны күту"
 
 #: aptkit/enums.py:480
 msgid "Waiting for other software managers to quit"
-msgstr "Басқа бағдарламалар менеджерлер жұмысының аяқталуын күту"
+msgstr "Басқа бағдарламалық қамтама менеджерлерінің жұмысын аяқтауын күту"
 
 #: aptkit/enums.py:481
 msgid "Waiting for configuration file prompt"
-msgstr "Конфигурациялық файл сұранысын күту"
+msgstr "Конфигурациялық файл бойынша сұранымды күту"
 
 #: aptkit/enums.py:483
 msgid "Running task"
-msgstr "Орындалатын тапсырма"
+msgstr "Тапсырманы орындау"
 
 #: aptkit/enums.py:484
 msgid "Downloading"
-msgstr "Жүктелуде"
+msgstr "Жүктеп алу"
 
 #: aptkit/enums.py:485
 msgid "Querying software sources"
-msgstr ""
+msgstr "Бағдарламалық қамтама бастапқы көздерін сұрау"
 
 #: aptkit/enums.py:486
 msgid "Cleaning up"
-msgstr "Тазарту"
+msgstr "Тазалау"
 
 #: aptkit/enums.py:487
 msgid "Resolving dependencies"
-msgstr "Тәуелділіктерге рұқсат беру"
+msgstr "Тәуелділіктерді шешу"
 
 #: aptkit/enums.py:489
 msgid "Finished"
-msgstr "Бітті"
+msgstr "Аяқталды"
 
 #: aptkit/enums.py:490
 msgid "Cancelling"
-msgstr "Болдырмау"
+msgstr "Бас тарту"
 
 #: aptkit/enums.py:491
 msgid "Loading software list"
-msgstr "Бағдарламалар тізімі жүктелуде"
+msgstr "Бағдарламалық қамтама тізімін жүктеу"
 
 #: aptkit/enums.py:492
 msgid "Waiting for authentication"
-msgstr ""
+msgstr "Авторизацияны күту"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:496
@@ -659,487 +707,500 @@ msgstr "%s орнатылуда"
 #: aptkit/enums.py:498
 #, python-format
 msgid "Configuring %s"
-msgstr "%s қалыпқа келтірілуде"
+msgstr "%s бапталуда"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:500
 #, python-format
 msgid "Removing %s"
-msgstr "%s жойылуда"
+msgstr "%s өшірілуде"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:502
 #, python-format
 msgid "Completely removing %s"
-msgstr ""
+msgstr "%s толығымен өшірілуде"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:504
 #, python-format
 msgid "Noting disappearance of %s"
-msgstr ""
+msgstr "%s жоғалғанын белгілеу"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:506
 #, python-format
 msgid "Running post-installation trigger %s"
-msgstr "%s орнатылымнан кейінгі триггер орындалуда"
+msgstr "Орнатудан кейінгі %s триггерін орындау"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:508
 #, python-format
 msgid "Upgrading %s"
-msgstr "%s жаңартылуда"
+msgstr "%s жаңғыртылуда"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:510
 #, python-format
 msgid "Unpacking %s"
-msgstr ""
+msgstr "%s тарқатылуда"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:512
 #, python-format
 msgid "Preparing installation of %s"
-msgstr ""
+msgstr "%s орнатуға дайындалу"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:514
 #, python-format
 msgid "Preparing configuration of %s"
-msgstr ""
+msgstr "%s баптауға дайындалу"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:516
 #, python-format
 msgid "Preparing removal of %s"
-msgstr ""
+msgstr "%s өшіруді дайындау"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:518
 #, python-format
 msgid "Preparing complete removal of %s"
-msgstr ""
+msgstr "%s толық өшіруді дайындау"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:520
 #, python-format
 msgid "Installed %s"
-msgstr ""
+msgstr "%s орнатылды"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:522
 #, python-format
 msgid "Completely removed %s"
-msgstr ""
+msgstr "%s толығымен өшірілді"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:524
 #, python-format
 msgid "Removed %s"
-msgstr ""
+msgstr "%s өшірілді"
 
 #: aptkit/enums.py:527
 msgid "Done"
-msgstr "Орындалды"
+msgstr "Дайын"
 
 #: aptkit/enums.py:528
 msgid "Authentication failed"
-msgstr "Аутентификация сәтсіз"
+msgstr "Аутентификация сәтсіз аяқталды"
 
 #: aptkit/enums.py:530
 msgid "Fetching"
-msgstr "Жүктелу"
+msgstr "Алу"
 
 #: aptkit/enums.py:531
 msgid "Idle"
-msgstr ""
+msgstr "Бос"
 
 #: aptkit/enums.py:532
 msgid "Network isn't available"
-msgstr "Желі қол жетімсіз"
+msgstr "Желі қолжетімсіз"
 
 #: aptkit/enums.py:652
 #, python-format
 msgid "Processing %s"
-msgstr ""
+msgstr "%s өңдеу"
 
-#: aptkit/gtk3widgets.py:230
+#: aptkit/gtk3widgets.py:231
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
-msgstr "%sB/s жылдамдықта %sB-нан, %sB жүктелінді"
+msgstr "%sБ / %sБ, %sБ/с жылдамдықпен жүктелді"
 
-#: aptkit/gtk3widgets.py:235 aptkit/gtk3widgets.py:436
+#: aptkit/gtk3widgets.py:236 aptkit/gtk3widgets.py:446
 #, python-format
 msgid "Downloaded %sB of %sB"
-msgstr "%sB-нан, %sB жүктелінді"
+msgstr "%sБ / %sБ жүктелді"
 
-#: aptkit/gtk3widgets.py:247
+#: aptkit/gtk3widgets.py:248
 msgid "Details"
-msgstr "Толық ақпарат"
+msgstr "Мәліметтер"
 
-#: aptkit/gtk3widgets.py:400
+#: aptkit/gtk3widgets.py:410
 msgid "File"
 msgstr "Файл"
 
 #. TRANSLATORS: header of the progress download column
-#: aptkit/gtk3widgets.py:405
+#: aptkit/gtk3widgets.py:415
 msgid "%"
 msgstr "%"
 
-#: aptkit/gtk3widgets.py:441
+#: aptkit/gtk3widgets.py:451
 #, python-format
 msgid "Downloaded %sB"
-msgstr "Жүктелген %sB"
+msgstr "%sБ жүктелді"
 
-#: aptkit/gtk3widgets.py:444
+#: aptkit/gtk3widgets.py:454
 msgid "Downloaded"
-msgstr "Жүктелген"
+msgstr "Жүктелді"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: aptkit/gtk3widgets.py:787
+#: aptkit/gtk3widgets.py:797
 #, python-format
 msgid "CD/DVD '%s' is required"
-msgstr "\"%s\" CD/DVD қажет"
+msgstr "'%s' CD/DVD дискісі қажет"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: aptkit/gtk3widgets.py:789
+#: aptkit/gtk3widgets.py:799
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
 "packages from it."
 msgstr ""
+"Бағдарламалық қамтама пакеттерін орнату үшін жоғарыдағы CD/DVD дискісін '%s' "
+"жетегіне кірістіріңіз."
 
-#: aptkit/gtk3widgets.py:793 aptkit/gtk3widgets.py:815
+#: aptkit/gtk3widgets.py:803 aptkit/gtk3widgets.py:825
 msgid "C_ontinue"
 msgstr "_Жалғастыру"
 
-#: aptkit/gtk3widgets.py:866
+#: aptkit/gtk3widgets.py:876
 msgid "Install"
 msgstr "Орнату"
 
-#: aptkit/gtk3widgets.py:867
+#: aptkit/gtk3widgets.py:877
 msgid "Reinstall"
 msgstr "Қайта орнату"
 
-#: aptkit/gtk3widgets.py:868
+#: aptkit/gtk3widgets.py:878
 msgid "Remove"
-msgstr "Жою"
+msgstr "Өшіру"
 
-#: aptkit/gtk3widgets.py:869
+#: aptkit/gtk3widgets.py:879
 msgid "Purge"
-msgstr "Тазарту"
+msgstr "Толық өшіру"
 
-#: aptkit/gtk3widgets.py:870
+#: aptkit/gtk3widgets.py:880
 msgid "Upgrade"
-msgstr "Жаңарту"
+msgstr "Жаңғырту"
 
-#: aptkit/gtk3widgets.py:871
+#: aptkit/gtk3widgets.py:881
 msgid "Downgrade"
-msgstr "Нұсқаны төмендету"
+msgstr "Нұсқасын төмендету"
 
-#: aptkit/gtk3widgets.py:872
+#: aptkit/gtk3widgets.py:882
 msgid "Skip upgrade"
-msgstr "Жаңартуды өткізіп жіберу"
-
-#: aptkit/gtk3widgets.py:883
-msgid "Please take a look at the list of changes below."
-msgstr ""
-
-#: aptkit/gtk3widgets.py:891
-msgid "Additional software has to be installed"
-msgstr "Қосымша бағдарламалық қамтамасыздандыру орнатылуы тиіс"
+msgstr "Жаңғыртуды аттап кету"
 
 #: aptkit/gtk3widgets.py:893
-msgid "Additional software has to be re-installed"
-msgstr "Қосымша бағдарламалық қамтамасыздандыру қайта орнатылуы тиіс"
-
-#: aptkit/gtk3widgets.py:895
-msgid "Additional software has to be removed"
-msgstr ""
-
-#: aptkit/gtk3widgets.py:897
-msgid "Additional software has to be purged"
-msgstr ""
-
-#: aptkit/gtk3widgets.py:899
-msgid "Additional software has to be upgraded"
-msgstr ""
+msgid "Please take a look at the list of changes below."
+msgstr "Төмендегі өзгерістер тізіміне назар аударыңыз."
 
 #: aptkit/gtk3widgets.py:901
-msgid "Additional software has to be downgraded"
-msgstr ""
+msgid "Additional software has to be installed"
+msgstr "Қосымша бағдарламалық қамтама орнатылуы тиіс"
 
 #: aptkit/gtk3widgets.py:903
-msgid "Updates will be skipped"
-msgstr "Жаңартулар қарастырылмайтын болады"
+msgid "Additional software has to be re-installed"
+msgstr "Қосымша бағдарламалық қамтама қайта орнатылуы тиіс"
+
+#: aptkit/gtk3widgets.py:905
+msgid "Additional software has to be removed"
+msgstr "Қосымша бағдарламалық қамтама өшірілуі тиіс"
+
+#: aptkit/gtk3widgets.py:907
+msgid "Additional software has to be purged"
+msgstr "Қосымша бағдарламалық қамтама толық өшірілуі тиіс"
+
+#: aptkit/gtk3widgets.py:909
+msgid "Additional software has to be upgraded"
+msgstr "Қосымша бағдарламалық қамтама жаңғыртылуы тиіс"
 
 #: aptkit/gtk3widgets.py:911
-msgid "Additional changes are required"
-msgstr "Қосымша өзгертулер қажет"
+msgid "Additional software has to be downgraded"
+msgstr "Қосымша бағдарламалық қамтама нұсқасы төмендетілуі тиіс"
 
-#: aptkit/gtk3widgets.py:916
+#: aptkit/gtk3widgets.py:913
+msgid "Updates will be skipped"
+msgstr "Жаңартулар өткізіп жіберіледі"
+
+#: aptkit/gtk3widgets.py:921
+msgid "Additional changes are required"
+msgstr "Қосымша өзгерістер қажет"
+
+#: aptkit/gtk3widgets.py:926
 #, python-format
 msgid "%sB will be downloaded in total."
-msgstr "Толығымен %sB жүктелінетін болады."
+msgstr "Барлығы %sБ жүктеледі."
 
-#: aptkit/gtk3widgets.py:920
+#: aptkit/gtk3widgets.py:930
 #, python-format
 msgid "%sB of disk space will be freed."
-msgstr "%sБ дискілік орын босатылатын болады."
+msgstr "%sБ диск орны босатылады."
 
-#: aptkit/gtk3widgets.py:924
+#: aptkit/gtk3widgets.py:934
 #, python-format
 msgid "%sB more disk space will be used."
-msgstr "%sБ қосымша дискілік орын қолданылатын болады."
+msgstr "Тағы %sБ диск орны пайдаланылады."
 
 #. TRANSLATORS: %s is a file path
-#: aptkit/gtk3widgets.py:983
+#: aptkit/gtk3widgets.py:993
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
 msgstr ""
-"Өзіңізбен өзгертілген \"%s\" файлды, оның соңғы нұсқасымен алмастыруды "
-"қалайсыз ба?"
+"'%s' ішіндегі өзгерістеріңізді конфигурациялық файлдың кейінгі нұсқасымен "
+"алмастыру керек пе?"
 
-#: aptkit/gtk3widgets.py:985
+#: aptkit/gtk3widgets.py:995
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
 msgstr ""
-"Егер сіз, ол файлдың осы жерде қайдан пайда болғанын білмеген жағдайда, оны "
-"әдеттегідей, қауіпсіз жерге көшіріңіз."
+"Егер файлдың не үшін сонда екенін білмесеңіз, оны алмастыру әдетте қауіпсіз."
 
-#: aptkit/gtk3widgets.py:994
+#: aptkit/gtk3widgets.py:1004
 msgid "_Changes"
-msgstr "_Өзгерістер"
+msgstr "Ө_згерістер"
 
-#: aptkit/gtk3widgets.py:997
+#: aptkit/gtk3widgets.py:1007
 msgid "_Keep"
 msgstr "_Қалдыру"
 
-#: aptkit/gtk3widgets.py:998
+#: aptkit/gtk3widgets.py:1008
 msgid "_Replace"
 msgstr "_Алмастыру"
 
-#: aptkit/gtk3widgets.py:1101
+#: aptkit/gtk3widgets.py:1111
 msgid "_Details"
-msgstr "_Толық ақпарат"
+msgstr "_Мәліметтер"
 
 #. TRANSLATORS: %s is the name of a package manager
 #: aptkit/lock.py:189
 #, python-format
 msgid "Waiting for %s to exit"
-msgstr ""
+msgstr "%s шығуын күту"
 
 #. TRANSLATORS: %s is a list of package names
 #: aptkit/progress.py:168
 #, python-format
 msgid "Downloading %s"
-msgstr ""
+msgstr "%s жүктелуде"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: aptkit/progress.py:277 aptkit/progress.py:314
+#: aptkit/progress.py:279 aptkit/progress.py:316
 msgid "local repository"
-msgstr ""
+msgstr "жергілікті репозиторий"
 
 #. TRANSLATORS: %s is a list of repository names
-#: aptkit/progress.py:280
+#: aptkit/progress.py:282
 #, python-format
 msgid "Downloading from %s"
-msgstr ""
+msgstr "%s ішінен жүктелуде"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:318
+#: aptkit/progress.py:320
 #, python-format
 msgid "Structure of %s"
-msgstr ""
+msgstr "%s құрылымы"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:321
+#: aptkit/progress.py:323
 #, python-format
 msgid "Description of %s"
-msgstr ""
+msgstr "%s сипаттамасы"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:324
+#: aptkit/progress.py:326
 #, python-format
 msgid "Description signature of %s"
-msgstr ""
+msgstr "%s сипаттамасының қолтаңбасы"
 
-#: aptkit/progress.py:329
+#: aptkit/progress.py:331
 #, python-format
 msgid "Available packages from %s"
-msgstr ""
+msgstr "%s ұсынған қолжетімді дестелер"
 
-#: aptkit/progress.py:333
+#: aptkit/progress.py:335
 #, python-format
 msgid "Available sources from %s"
-msgstr ""
+msgstr "%s ұсынған қолжетімді қайнар көздер"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:336
+#: aptkit/progress.py:338
 #, python-format
 msgid "Available translations from %s"
-msgstr ""
+msgstr "%s ұсынған қолжетімді аудармалар"
 
-#: aptkit/progress.py:353
+#: aptkit/progress.py:355
 #, python-format
 msgid "Translations for %s (%s) from %s"
-msgstr ""
+msgstr "%s (%s) үшін %s ұсынған аудармалар"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: aptkit/progress.py:357
+#: aptkit/progress.py:359
 #, python-format
 msgid "Translations for %s from %s"
-msgstr ""
+msgstr "%s үшін %s ұсынған аудармалар"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: aptkit/progress.py:362
+#: aptkit/progress.py:364
 #, python-format
 msgid "Translations (%s) from %s"
-msgstr ""
+msgstr "%s ұсынған аудармалар (%s)"
 
-#: aptkit/worker/aptworker.py:372 aptkit/worker/aptworker.py:587
-#: aptkit/worker/aptworker.py:682 aptkit/worker/aptworker.py:727
+#: aptkit/worker/aptworker.py:399 aptkit/worker/aptworker.py:627
+#: aptkit/worker/aptworker.py:770 aptkit/worker/aptworker.py:817
 #, python-format
 msgid "Package %s isn't available"
-msgstr ""
+msgstr "%s дестесі қолжетімді емес"
 
-#: aptkit/worker/aptworker.py:377 aptkit/worker/aptworker.py:591
-#: aptkit/worker/aptworker.py:686 aptkit/worker/aptworker.py:731
+#: aptkit/worker/aptworker.py:404 aptkit/worker/aptworker.py:631
+#: aptkit/worker/aptworker.py:774 aptkit/worker/aptworker.py:821
 #, python-format
 msgid "Package %s isn't installed"
-msgstr ""
+msgstr "%s дестесі орнатылмаған"
 
-#: aptkit/worker/aptworker.py:381
+#: aptkit/worker/aptworker.py:408
 #, python-format
 msgid "The version %s of %s isn't installed"
-msgstr ""
+msgstr "%s нұсқасы (%s дестесі) орнатылмаған"
 
-#: aptkit/worker/aptworker.py:396
+#: aptkit/worker/aptworker.py:423
 #, python-format
 msgid "Package %s is already installed"
-msgstr ""
+msgstr "%s дестесі қазірдің өзінде орнатылған"
 
-#: aptkit/worker/aptworker.py:403 aptkit/worker/aptworker.py:754
+#: aptkit/worker/aptworker.py:430 aptkit/worker/aptworker.py:844
 #, python-format
 msgid "The version %s of %s isn't available."
-msgstr ""
+msgstr "%s нұсқасы (%s дестесі) қолжетімді емес."
 
-#: aptkit/worker/aptworker.py:595
+#: aptkit/worker/aptworker.py:635
 #, python-format
 msgid "Package %s cannot be removed."
-msgstr ""
+msgstr "%s дестесін өшіру мүмкін емес."
 
-#: aptkit/worker/aptworker.py:599
+#: aptkit/worker/aptworker.py:639
 #, python-format
 msgid "The version %s of %s is not installed"
-msgstr ""
+msgstr "%s нұсқасы (%s дестесі) орнатылмаған"
 
-#: aptkit/worker/aptworker.py:694
+#: aptkit/worker/aptworker.py:784
 #, python-format
 msgid "The former version %s of %s is already installed"
-msgstr ""
+msgstr "%s ескілеу нұсқасы (%s дестесі) орнатылмаған болып тұр"
 
-#: aptkit/worker/aptworker.py:699 aptkit/worker/aptworker.py:747
+#: aptkit/worker/aptworker.py:791 aptkit/worker/aptworker.py:837
 #, python-format
 msgid "The version %s of %s is already installed"
-msgstr ""
+msgstr "%s нұсқасы (%s дестесі) қазірдің өзінде орнатылған"
 
-#: aptkit/worker/aptworker.py:706
+#: aptkit/worker/aptworker.py:798
 #, python-format
 msgid "The version %s of %s isn't available"
-msgstr ""
+msgstr "%s нұсқасы (%s дестесі) қолжетімді емес болып тұр"
 
-#: aptkit/worker/aptworker.py:710
+#: aptkit/worker/aptworker.py:802
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
-msgstr ""
+msgstr "%s нұсқасын төмендету үшін нұсқаны көрсетуіңіз керек"
 
-#: aptkit/worker/aptworker.py:740
+#: aptkit/worker/aptworker.py:830
 #, python-format
 msgid "The later version %s of %s is already installed"
-msgstr ""
+msgstr "%s жаңалау нұсқасы (%s дестесі) орнатылмаған болып тұр"
 
-#: aptkit/worker/aptworker.py:776
+#: aptkit/worker/aptworker.py:864
 #, python-format
 msgid "The package %s isn't available in the %s release."
+msgstr "%s дестесі %s шығарылымында қолжетімді емес."
+
+#: aptkit/worker/aptworker.py:921
+msgid "Unknown repository update error"
 msgstr ""
 
-#: aptkit/worker/aptworker.py:961
+#: aptkit/worker/aptworker.py:1058
 #, python-format
 msgid "Package %s cannot be removed"
-msgstr ""
+msgstr "%s дестесін өшіру мүмкін емес"
 
-#: aptkit/worker/aptworker.py:1063
+#: aptkit/worker/aptworker.py:1160
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
 msgstr ""
+"Дестеде жарамды Installed-Size басқару өрісі жоқ. Debian Policy 5.6.20 "
+"қараңыз."
 
-#: aptkit/worker/aptworker.py:1202
+#: aptkit/worker/aptworker.py:1299
 msgid "The license key is empty"
-msgstr ""
+msgstr "Лицензия кілті бос"
 
-#: aptkit/worker/aptworker.py:1218
+#: aptkit/worker/aptworker.py:1315
 msgid "The license key is not allowed to contain executable code."
-msgstr ""
+msgstr "Лицензия кілтінде орындалатын код болмауы тиіс."
 
-#: aptkit/worker/aptworker.py:1227
+#: aptkit/worker/aptworker.py:1324
 #, python-format
 msgid "The license key path %s is invalid"
-msgstr ""
+msgstr "%s лицензия кілтінің жолы жарамсыз"
 
-#: aptkit/worker/aptworker.py:1231
+#: aptkit/worker/aptworker.py:1328
 #, python-format
 msgid "The license key already exists: %s"
-msgstr ""
+msgstr "Лицензия кілті қазірдің өзінде бар: %s"
 
-#: aptkit/worker/aptworker.py:1236
+#: aptkit/worker/aptworker.py:1333
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
 "links. The path %s maps to %s"
 msgstr ""
+"Лицензия кілтінің орналасқан жері қауіпсіз емес, өйткені онда символдық "
+"сілтемелер бар. %s жолы %s жолына нұсқайды"
 
-#: aptkit/worker/aptworker.py:1244
+#: aptkit/worker/aptworker.py:1341
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
-msgstr ""
+msgstr "Кілтті орнататын бума әлі жоқ: %s"
 
-#: aptkit/worker/aptworker.py:1255
-#, python-format
-msgid "Failed to write key file to: %s"
-msgstr ""
-
-#: aptkit/worker/aptworker.py:1290
-msgid "The following packages have unmet dependencies:"
-msgstr ""
-
-#: aptkit/worker/aptworker.py:1343
-msgid "but it is a virtual package"
-msgstr ""
-
-#: aptkit/worker/aptworker.py:1346
-msgid "but it is not installed"
-msgstr ""
-
-#: aptkit/worker/aptworker.py:1348
-msgid "but it is not going to be installed"
-msgstr ""
-
-#. TRANSLATORS: %s is a version number
 #: aptkit/worker/aptworker.py:1352
 #, python-format
-msgid "but %s is installed"
+msgid "Failed to write key file to: %s"
+msgstr "Кілт файлын мына жерге жазу сәтсіз аяқталды: %s"
+
+#: aptkit/worker/aptworker.py:1419
+msgid "The following packages have unmet dependencies:"
+msgstr "Келесі дестелердің орындалмаған тәуелділіктері бар:"
+
+#: aptkit/worker/aptworker.py:1449
+msgid "but it is a virtual package"
+msgstr "бірақ бұл виртуалды десте"
+
+#: aptkit/worker/aptworker.py:1452
+msgid "but it is not installable"
 msgstr ""
 
+#: aptkit/worker/aptworker.py:1454
+msgid "but it is not installed"
+msgstr "бірақ ол орнатылмаған"
+
+#: aptkit/worker/aptworker.py:1456
+msgid "but it is not going to be installed"
+msgstr "бірақ ол орнатылмайды"
+
 #. TRANSLATORS: %s is a version number
-#: aptkit/worker/aptworker.py:1356
+#: aptkit/worker/aptworker.py:1460
+#, python-format
+msgid "but %s is installed"
+msgstr "бірақ %s орнатылған"
+
+#. TRANSLATORS: %s is a version number
+#: aptkit/worker/aptworker.py:1464
 #, python-format
 msgid "but %s is to be installed"
-msgstr ""
+msgstr "бірақ %s орнатылуы тиіс"

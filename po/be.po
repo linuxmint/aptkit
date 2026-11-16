@@ -7,73 +7,80 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-20 14:47+0000\n"
-"PO-Revision-Date: 2024-09-09 18:34+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"POT-Creation-Date: 2026-11-09 09:28+0000\n"
+"PO-Revision-Date: 2026-05-26 16:54+0000\n"
+"Last-Translator: Anton Hryb <Unknown>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:44+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 "Language: be\n"
 
 #: data/org.aptkit.policy.in:12
 msgid "List keys of trusted vendors"
 msgstr "Спіс ключоў давераных пастаўшчыкоў"
 
-#: data/org.aptkit.policy.in:15
+#: data/org.aptkit.policy.in:13
 msgid "To view the list of trusted keys, you need to authenticate."
-msgstr "Для прагляду спісу давераных ключоў патрабуецца аўтэнтыфікацыя."
+msgstr ""
+"Вам неабходна прайсці аўтэнтыфікацыю, каб праглядаць спіс давераных ключоў."
 
-#: data/org.aptkit.policy.in:26
+#: data/org.aptkit.policy.in:22
 msgid "Remove downloaded package files"
 msgstr "Выдаліць файлы загружаных пакетаў"
 
-#: data/org.aptkit.policy.in:29
+#: data/org.aptkit.policy.in:23
 msgid "To clean downloaded package files, you need to authenticate."
-msgstr "Вам неабходна аўтарызавацца для ачысткі файлаў загружаных пакетаў."
+msgstr ""
+"Вам неабходна прайсці аўтэнтыфікацыю, каб ачысціць файлы спампаваных пакетаў."
 
-#: data/org.aptkit.policy.in:40
+#: data/org.aptkit.policy.in:32
 msgid "Change software configuration"
-msgstr "Змяніць сховішча з праграмамі"
+msgstr "Змяніць канфігурацыю праграм"
+
+#: data/org.aptkit.policy.in:33
+msgid "To change software settings, you need to authenticate."
+msgstr ""
+"Вам неабходна прайсці аўтэнтыфікацыю, каб змяніць налады праграмнага "
+"забеспячэння."
+
+#: data/org.aptkit.policy.in:42
+msgid "Change software repository"
+msgstr "Змяніць рэпазіторый праграмнага забеспячэння"
 
 #: data/org.aptkit.policy.in:43
-msgid "To change software settings, you need to authenticate."
-msgstr "Вам трэба аўтарызавацца для змены налад праграмнага забеспячэння."
-
-#: data/org.aptkit.policy.in:54
-msgid "Change software repository"
-msgstr "Змяніць сховішча праграмнага забеспячэння"
-
-#: data/org.aptkit.policy.in:57
 msgid "To change software repository settings, you need to authenticate."
-msgstr "Каб змяніць налады сховішча, вы павінны аўтарызавацца."
+msgstr "Вам неабходна прайсці аўтэнтыфікцыю, каб змяніць налады сховішча."
 
-#: data/org.aptkit.policy.in:68
+#: data/org.aptkit.policy.in:52
 msgid "Install package file"
 msgstr "Усталёўка файла пакета"
 
-#: data/org.aptkit.policy.in:71
+#: data/org.aptkit.policy.in:53
 msgid "To install this package, you need to authenticate."
-msgstr "Каб усталяваць гэты пакет, вы павінны аўтарызавацца."
+msgstr "Вам неабходна прайсці аўтэнтыфікацыю, каб усталяваць гэты пакет."
 
-#: data/org.aptkit.policy.in:82
+#: data/org.aptkit.policy.in:62
 msgid "Update package information"
 msgstr "Абнаўленне інфармацыі аб пакетах"
 
-#: data/org.aptkit.policy.in:85
+#: data/org.aptkit.policy.in:63
 msgid "To update the software catalog, you need to authenticate."
 msgstr ""
-"Для абнаўлення каталога праграмнага забеспячэння патрабуецца аўтэнтыфікацыя."
+"Вам неабходна прайсці аўтэнтыфікацыю, каб абнавіць каталог праграмнага "
+"забеспячэння."
 
-#: data/org.aptkit.policy.in:96
+#: data/org.aptkit.policy.in:72
 msgid "Install or remove packages"
 msgstr "Усталяваць ці выдаліць пакеты"
 
-#: data/org.aptkit.policy.in:99
+#: data/org.aptkit.policy.in:73
 msgid "To install or remove software, you need to authenticate."
-msgstr "Каб усталяваць ці выдаліць праграму, вы павінны аўтарызавацца."
+msgstr ""
+"Вам неабходна прайсці аўтэнтыфікацыю, каб усталёўваць або выдаляць "
+"праграмнае забеспячэнне."
 
 #. This priviledge will be requested when installing a package
 #. from a high trusted repository that can be explicitely whitelisted.
@@ -84,28 +91,32 @@ msgstr "Каб усталяваць ці выдаліць праграму, вы
 #. The admin can override them to e.g. allow passwordless installs for
 #. leightweight applications like unity-webapps or for packages
 #. comming from high trust repositories (like internal repositories)
-#: data/org.aptkit.policy.in:120
+#: data/org.aptkit.policy.in:92
 msgid "Install software from a high-trust whitelisted repository."
 msgstr ""
-"Усталёўка праграмнага забеспячэння са сховішча з высокім узроўнем даверу."
+"Усталяванне праграмнага забеспячэння з рэпазіторыя, які знаходзіцца ў белым "
+"спісе."
 
-#: data/org.aptkit.policy.in:123
+#: data/org.aptkit.policy.in:93
 msgid "To install software, you need to authenticate."
 msgstr ""
-"Для таго, каб ўсталёўваць праграмнае забеспячэнне трэба аўнтэнтыфікавацца."
+"Вам неабходна прайсці аўтэнтыфікацыю, каб усталёўваць праграмнае "
+"забеспячэнне."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
 #. 
 #. The client has to authenticate for this privilege before calling
 #. the aptkit methods.
-#: data/org.aptkit.policy.in:139
+#: data/org.aptkit.policy.in:107
 msgid "Add a new repository and install packages from it"
-msgstr "Дадаць новае сховішча і ўсталяваць пакеты з яго"
+msgstr "Дадаць новы рэпазіторый і ўсталяваць пакеты з яго"
 
-#: data/org.aptkit.policy.in:142
+#: data/org.aptkit.policy.in:108
 msgid "To install software from a new source, you need to authenticate."
-msgstr "Каб усталяваць праграмы з новай крыніцы, вы павінны аўтарызавацца."
+msgstr ""
+"Вам неабходна прайсці аўтэнтыфікацыю, каб усталёўваць праграмнае "
+"забеспячэнне з новай крыніцы."
 
 #. This privilege allows to call AddRepository, UpdateCache(Partially)
 #. and InstallPackages in a row and only authenticating once.
@@ -115,45 +126,49 @@ msgstr "Каб усталяваць праграмы з новай крыніц�
 #. 
 #. The only difference to install-packages-from-new-repo is the wording
 #. of the message. It is required by Ubuntu's Software-Center.
-#: data/org.aptkit.policy.in:161
+#: data/org.aptkit.policy.in:125
 msgid ""
 "Add a new repository of purchased software and install packages from it"
 msgstr ""
-"Дадаць новае сховішча платнага праграмнага забеспячэння і ўсталяваць пакеты "
-"з яго"
+"Дадаць новы рэпазіторый купленага праграмнага забеспячэння і ўсталяваць "
+"пакеты з яго"
 
-#: data/org.aptkit.policy.in:164
+#: data/org.aptkit.policy.in:126
 msgid "To install purchased software, you need to authenticate."
-msgstr "Каб усталяваць набытыя праграмы, вы павінны аўтарызавацца."
+msgstr ""
+"Вам неабходна прайсці аўтэнтыфікацыю, каб усталёўваць купленае праграмнае "
+"забеспячэнне."
 
-#: data/org.aptkit.policy.in:175
+#: data/org.aptkit.policy.in:135
 msgid "Upgrade packages"
 msgstr "Абнаўленне пакетаў"
 
-#: data/org.aptkit.policy.in:178
+#: data/org.aptkit.policy.in:136
 msgid "To install updated software, you need to authenticate."
-msgstr "Для ўсталёўкі абнаўленняў патрабуецца аўтэнтыфікацыя."
+msgstr ""
+"Вам неабходна прайсці аўтэнтыфікацыю, каб усталёўваць абнаўленне для "
+"праграмнага забеспячэння."
 
-#: data/org.aptkit.policy.in:187
+#: data/org.aptkit.policy.in:145
 msgid "Cancel the task of another user"
 msgstr "Адмяніць задачу іншага карыстальніка"
 
-#: data/org.aptkit.policy.in:190
+#: data/org.aptkit.policy.in:146
 msgid "To cancel someone else's software changes, you need to authenticate."
 msgstr ""
-"Для скасавання не сваіх змен у праграмным забеспячэнні патрабуецца "
-"аўтэнтыфікацыя."
+"Вам неабходна прайсці аўтэнтыфікацыю, каб скасоўваць не свае змяненні ў "
+"праграмным забеспячэнні."
 
-#: data/org.aptkit.policy.in:201
+#: data/org.aptkit.policy.in:155
 msgid "Set a proxy for software downloads"
 msgstr "Усталяваць проксі-сервер для загрузак праграм"
 
-#: data/org.aptkit.policy.in:204
+#: data/org.aptkit.policy.in:156
 msgid ""
 "To use a proxy server for downloading software, you need to authenticate."
 msgstr ""
-"Для карыстання з проксі сервера для загрузкі праграмнага забеспячэння "
-"патрабуецца аўтэнтыфікацыя."
+"Вам неабходна прайсці аўтэнтыфікацыю, каб выкарыстоўваць проксі-сервер для "
+"спампоўвання праграмнага забеспячэння."
 
 #: aptkit/core.py:2030
 msgid "Do not shutdown the daemon because of inactivity"
@@ -161,7 +176,7 @@ msgstr "Не выключайце дэман з-за яго неактыўнас
 
 #: aptkit/core.py:2035
 msgid "Do not load any plugins"
-msgstr "Не загружаць ніякія плагіны"
+msgstr "Не загружаць ніякія ўбудовы"
 
 #: aptkit/core.py:2039
 msgid "Show internal processing information"
@@ -225,23 +240,23 @@ msgstr "Выпраўлена няскончаная ўсталёўка"
 
 #: aptkit/enums.py:320
 msgid "Repaired broken dependencies"
-msgstr "Выпраўлены зламаныя залежнасці"
+msgstr "Выпраўлены пашкоджаныя залежнасці"
 
 #: aptkit/enums.py:321
 msgid "Added software source"
-msgstr "Крыніца праграм дададзеная"
+msgstr "Крыніца праграм дададзена"
 
 #: aptkit/enums.py:322
 msgid "Enabled component of the distribution"
-msgstr "Падлучаны кампанент дыстрыбутыва"
+msgstr "Уключаны кампанент дыстрыбутыва"
 
 #: aptkit/enums.py:323
 msgid "Removed downloaded package files"
-msgstr "Сцёртыя файлы загружаных пакетаў"
+msgstr "Выдаленыя файлы спампаваных пакетаў"
 
 #: aptkit/enums.py:324
 msgid "Reconfigured installed packages"
-msgstr "Нова наладжаныя пакеты"
+msgstr "Пераканфігураваныя ўсталяваныя пакеты"
 
 #: aptkit/enums.py:328
 msgid "Successful"
@@ -249,19 +264,19 @@ msgstr "Паспяхова"
 
 #: aptkit/enums.py:329
 msgid "Canceled"
-msgstr "Адменена"
+msgstr "Скасавана"
 
 #: aptkit/enums.py:330 aptkit/enums.py:529
 msgid "Failed"
-msgstr "Памылка"
+msgstr "Збой"
 
 #: aptkit/enums.py:333
 msgid "Installing file"
-msgstr "Усталёўка файла"
+msgstr "Усталяванне файла"
 
 #: aptkit/enums.py:334
 msgid "Installing packages"
-msgstr "Усталёўка пакетаў"
+msgstr "Усталяванне пакетаў"
 
 #: aptkit/enums.py:335
 msgid "Updating cache"
@@ -281,7 +296,7 @@ msgstr "Абнаўленне сістэмы"
 
 #: aptkit/enums.py:339 aptkit/enums.py:488
 msgid "Applying changes"
-msgstr "Ужыванне зменаў"
+msgstr "Ужыванне змен"
 
 #: aptkit/enums.py:340
 msgid "Repairing incomplete installation"
@@ -289,23 +304,23 @@ msgstr "Выпраўленне няскончанай ўсталёўкі"
 
 #: aptkit/enums.py:341
 msgid "Repairing installed software"
-msgstr "Аднаўленне усталяванага ПЗ"
+msgstr "Аднаўленне ўсталяванага праграмнага забеспячэння"
 
 #: aptkit/enums.py:342
 msgid "Adding software source"
-msgstr "Даданне крыніцы праграм"
+msgstr "Дадаванне крыніцы праграмнага забеспячэння"
 
 #: aptkit/enums.py:343
 msgid "Enabling component of the distribution"
-msgstr "Падлучэнне кампанента дыстрыбутыва"
+msgstr "Уключэнне кампанента дыстрыбутыва"
 
 #: aptkit/enums.py:344
 msgid "Removing downloaded package files"
-msgstr "Выдаленне файлаў загружаных пакетаў"
+msgstr "Выдаленне файлаў спампаваных пакетаў"
 
 #: aptkit/enums.py:345
 msgid "Reconfiguring installed packages"
-msgstr "Пераналадка ўсталяваных пакетаў"
+msgstr "Пераканфігураванне ўсталяваных пакетаў"
 
 #: aptkit/enums.py:346 aptkit/enums.py:477
 msgid "Searching"
@@ -313,23 +328,23 @@ msgstr "Выконваецца пошук"
 
 #: aptkit/enums.py:350
 msgid "Installation of the package file failed"
-msgstr "Не атрымалася ўсталяваць файл пакета"
+msgstr "Збой усталявання файл пакета"
 
 #: aptkit/enums.py:351
 msgid "Installation of software failed"
-msgstr "Не атрымалася ўсталяваць праграмнае забеспячэнне"
+msgstr "Збой усталявання праграмнага забеспячэння"
 
 #: aptkit/enums.py:352
 msgid "Refreshing the software list failed"
-msgstr "Не атрымалася абнавіць спіс праграм"
+msgstr "Збой абнаўлення спіса праграмнага забеспячэння"
 
 #: aptkit/enums.py:353
 msgid "Removing software failed"
-msgstr "Не атрымалася выдаліць праграмнае забеспячэнне"
+msgstr "Збой выдалення праграмнага забеспячэння"
 
 #: aptkit/enums.py:354
 msgid "Updating software failed"
-msgstr "Не атрымалася абнавіць праграмнае забеспячэнне"
+msgstr "Збой абнаўлення праграмнага забеспячэння"
 
 #: aptkit/enums.py:355
 msgid "Upgrading the system failed"
@@ -337,39 +352,43 @@ msgstr "Не атрымалася абнавіць сістэму"
 
 #: aptkit/enums.py:356
 msgid "Applying software changes failed"
-msgstr "Не атрымалася ўжыць змены ў праграмным забеспячэнні"
+msgstr "Не ўдалося ўжыць змены ў праграмным забеспячэнні"
 
 #: aptkit/enums.py:357
 msgid "Repairing incomplete installation failed"
-msgstr "Не атрымалася выпраўленне няскончанай усталёўкі"
+msgstr "Збой выпраўлення незавершанага ўсталявання"
 
 #: aptkit/enums.py:359
 msgid "Repairing broken dependencies failed"
-msgstr "Не атрымалася выправіць зламаныя залежнасці"
+msgstr "Збой выпраўлення пашкоджаных залежнасцей"
 
 #: aptkit/enums.py:360
 msgid "Adding software source failed"
-msgstr "Не атрымалася дадаць крыніцу праграм"
+msgstr "Збой дадавання крыніцы праграмнага забеспячэння"
 
 #: aptkit/enums.py:361
 msgid "Enabling component of the distribution failed"
-msgstr "Не атрымалася далучыць кампанент дыстрыбутыва"
+msgstr "Збой уключэння кампанентаў дыстрыбутыва"
 
 #: aptkit/enums.py:363 aptkit/enums.py:364
 msgid "Removing downloaded package files failed"
-msgstr "Пры выдаленні загружаных файлаў здарылася памылка"
+msgstr "Збой выдалення спампаваных файлаў пакетаў"
 
 #: aptkit/enums.py:365
 msgid "Search failed"
-msgstr "Памылка пошуку"
+msgstr "Збой пошуку"
 
 #: aptkit/enums.py:366
 msgid "Adding license key"
-msgstr "Даданне ліцэнзійнага ключа"
+msgstr "Дадаванне ліцэнзійнага ключа"
 
-#: aptkit/enums.py:370 aptkit/enums.py:371
+#: aptkit/enums.py:370
 msgid "Check your Internet connection."
-msgstr "Праверце інтэрнэт-злучэнне."
+msgstr "Праверце сваё падключэнне да інтэрнэту."
+
+#: aptkit/enums.py:371
+msgid "See the error details below for more information."
+msgstr ""
 
 #: aptkit/enums.py:372
 msgid ""
@@ -377,7 +396,7 @@ msgid ""
 "they are a common source of problems.\n"
 "Furthermore run the following command in a Terminal: apt-get install -f"
 msgstr ""
-"Калі Вы выкарыстоўваеце іншыя крыніцы праграм, адключыце іх, паколькі яны "
+"Калі вы выкарыстоўваеце іншыя крыніцы праграм, адключыце іх, паколькі яны "
 "з'яўляюцца частай\n"
 "крыніцай праблем. Пасля гэтага выканайце ў тэрмінале наступную каманду: apt-"
 "get install -f"
@@ -387,8 +406,8 @@ msgid ""
 "Check if you are currently running another software management tool, e.g. "
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
 msgstr ""
-"Праверце, ці не запушчана іншая праграма кіравання праграмамі, напрыклад "
-"Synaptic или aptitude. Толькі адна праграма можа ўносіць змены ў адзін і той "
+"Праверце, ці не запушчана іншая праграма кіравання праграмамі, напрыклад, "
+"Synaptic або aptitude. Толькі адна праграма можа ўносіць змены ў адзін і той "
 "жа час."
 
 #: aptkit/enums.py:380
@@ -397,27 +416,27 @@ msgid ""
 "please report an error to the developers."
 msgstr ""
 "Гэта сур'ёзная праблема. Паспрабуйце паўтарыць пазней. Калі праблема "
-"паўстане зноў, калі ласка, адпраўце справаздачу аб памылцы распрацоўнікам."
+"з'явіцца яшчэ раз, адпраўце справаздачу аб памылцы распрацоўшчыкам."
 
 #: aptkit/enums.py:383
 msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
 msgstr ""
-"Праверце ці правільна пазначана назва пакета і ці ўключаны адпаведны "
-"рэпазітар."
+"Праверце, ці правільна напісана назва пакета і ці ўключаны адпаведны "
+"рэпазіторый."
 
 #: aptkit/enums.py:385
 msgid "There isn't any need for an update."
-msgstr "Няма неабходнасці абнаўлення."
+msgstr "Абнаўленне не патрабуецца."
 
 #: aptkit/enums.py:386
 msgid "There isn't any need for an installation"
-msgstr "Няма неабходнасці ўсталёўкі."
+msgstr "Усталяванне не патрабуецца"
 
 #: aptkit/enums.py:388
 msgid "There isn't any need for a removal."
-msgstr "Няма неабходнасці выдалення."
+msgstr "Выдаленне не патрабуецца."
 
 #: aptkit/enums.py:389
 msgid ""
@@ -448,7 +467,7 @@ msgid ""
 "related tasks."
 msgstr ""
 "Мяркуючы па ўсім, у aptkit, праграмным забеспячэнні, якое дазваляе вам "
-"усталёўваць / выдаляць праграмы і выконваць звязаныя з пакетамі задачы, "
+"усталёўваць/выдаляць праграмы і выконваць звязаныя з пакетамі задачы, "
 "прысутнічае праграмная памылка."
 
 #: aptkit/enums.py:401
@@ -460,11 +479,11 @@ msgid ""
 msgstr ""
 "Гэтая памылка магла паўстаць з прычыны дадатковых пакетаў, якія немагчыма "
 "ўсталяваць ці якія адсутнічаюць. Да таго ж можа мець месца канфлікт паміж "
-"пакетамі, якія не могуць быць усталяваныя адначасова."
+"пакетамі, якія не могуць быць усталяваны адначасова."
 
 #: aptkit/enums.py:407
 msgid "This requires installing packages from unauthenticated sources."
-msgstr "Гэта патрабуе ўстаноўкі пакетаў з неаўтентыфікаваных крыніц."
+msgstr "Гэта патрабуе ўсталявання пакетаў з не аўтэнтыфікаваных крыніц."
 
 #: aptkit/enums.py:409
 msgid ""
@@ -479,9 +498,7 @@ msgstr ""
 #: aptkit/enums.py:415
 msgid ""
 "Please copy the file to your local computer and check the file permissions."
-msgstr ""
-"Калі ласка, скапіруйце файл на ваш лакальны кампутар і праверце правы на "
-"файл."
+msgstr "Скапіюйце файл на ваш лакальны камп'ютар і праверце правы на файл."
 
 #: aptkit/enums.py:418
 msgid ""
@@ -491,8 +508,8 @@ msgid ""
 "details beneath."
 msgstr ""
 "Усталёўка пакета, які не адпавядае стандартам, не дазволена. Гэта можа "
-"прывесці да сур'ёзных памылак на вашым кампутары. Калі ласка, звяжыцеся з "
-"тымі, хто прапанаваў дадзены пакет, зазначыўшы падрабязнасці, змешчаныя "
+"прывесці да сур'ёзных памылак на вашым камп'ютары. Калі ласка, звяжыцеся з "
+"тымі, хто прапанаваў дадзены пакет, пазначыўшы падрабязнасці, змешчаныя "
 "ніжэй."
 
 #: aptkit/enums.py:425
@@ -503,11 +520,11 @@ msgid ""
 msgstr ""
 "Атрыманы ліцэнзійны ключ, неабходны для выканання гэтага кампанента праграмы "
 "няправільны, або не можа быць усталяваны належным чынам.\n"
-"Для атрымання дадатковых звестак адчынеце падрабязнасці."
+"Для атрымання дадатковых звестак адчыніце падрабязнасці."
 
 #: aptkit/enums.py:431
 msgid "All available upgrades have already been installed."
-msgstr "Усе даступныя абнаўленні ўжо ўсталяваныя."
+msgstr "Усе даступныя абнаўленні ўжо ўсталяваны."
 
 #: aptkit/enums.py:433
 msgid ""
@@ -531,8 +548,7 @@ msgid ""
 msgstr ""
 "Прадстаўлены няправільны пароль або аўтарызацыя было адмененая.\n"
 "Таксама памылка магла адбыцца па тэхнічных прычынах, калі не з'яўлялася акно "
-"ўводу пароля: акружэнне стальніцы, якое вы выкарыстоўваеце, не аказала "
-"агента сеансу PolicyKit."
+"ўводу пароля: ваша асяроддзе працоўнага стала не мае агента сесіі PolicyKit."
 
 #: aptkit/enums.py:447
 msgid "Failed to download package files"
@@ -540,7 +556,7 @@ msgstr "Памылка загрузкі файлаў пакета"
 
 #: aptkit/enums.py:448
 msgid "Failed to download repository information"
-msgstr "Памылка пры загрузцы інфармацыі аб крыніцах праграмаў"
+msgstr "Не ўдалося спампаваць звесткі рэпазіторыя"
 
 #: aptkit/enums.py:450
 msgid "Package dependencies cannot be resolved"
@@ -552,7 +568,7 @@ msgstr "Сістэма пакетаў пашкоджана."
 
 #: aptkit/enums.py:452
 msgid "Failed to lock the package manager"
-msgstr "Немагчыма заблакаваць мэнэджар пакетаў"
+msgstr "Немагчыма заблакаваць кіраўнік пакетаў"
 
 #: aptkit/enums.py:453
 msgid "Failed to load the package list"
@@ -588,7 +604,7 @@ msgstr "Памылка пакетнай аперацыі"
 
 #: aptkit/enums.py:462
 msgid "Requires installation of untrusted packages"
-msgstr "Патрабуецца ўсталёўка нязнойдзеных пакетаў"
+msgstr "Патрабуецца ўсталёўка ненадзейных пакетаў"
 
 #: aptkit/enums.py:464
 msgid "Previous installation hasn't been completed"
@@ -608,7 +624,7 @@ msgstr "Гэтая магчымасць не падтрымліваецца"
 
 #: aptkit/enums.py:468
 msgid "Failed to download the license key"
-msgstr "Памылка атрымання ліцэнзійнага ключа"
+msgstr "Не ўдалося спампаваць ліцэнзійны ключ"
 
 #: aptkit/enums.py:469
 msgid "Failed to install the license key"
@@ -620,11 +636,11 @@ msgstr "Сістэма ў актуальным стане"
 
 #: aptkit/enums.py:471
 msgid "You could not be authorized"
-msgstr "Аўтарызацыя карыстальніка не можа быць выкананая"
+msgstr "Вы не можаце аўтарызавацца"
 
 #: aptkit/enums.py:472
 msgid "You are not allowed to perform this action"
-msgstr "Вы не можаце выконваць гэта дзеянне"
+msgstr "Вам не дазволена выконваць гэта дзеянне"
 
 #: aptkit/enums.py:473
 msgid "An unhandlable error occured"
@@ -632,7 +648,7 @@ msgstr "Здарылася непераадольная памылка"
 
 #: aptkit/enums.py:476
 msgid "Waiting for service to start"
-msgstr "Чаканне запуска службы"
+msgstr "Чаканне запуску сэрвісу"
 
 #: aptkit/enums.py:478
 msgid "Waiting"
@@ -656,7 +672,7 @@ msgstr "Запуск задачы"
 
 #: aptkit/enums.py:484
 msgid "Downloading"
-msgstr "Ідзе загрузка"
+msgstr "Спампоўванне"
 
 #: aptkit/enums.py:485
 msgid "Querying software sources"
@@ -664,33 +680,33 @@ msgstr "Запыт крыніц праграм"
 
 #: aptkit/enums.py:486
 msgid "Cleaning up"
-msgstr "Ачышчэнне"
+msgstr "Ачыстка"
 
 #: aptkit/enums.py:487
 msgid "Resolving dependencies"
-msgstr "Вырашэнне залежнасцяў"
+msgstr "Развязванне залежнасцей"
 
 #: aptkit/enums.py:489
 msgid "Finished"
-msgstr "Скончана"
+msgstr "Завершана"
 
 #: aptkit/enums.py:490
 msgid "Cancelling"
-msgstr "Скасавана"
+msgstr "Скасаванне"
 
 #: aptkit/enums.py:491
 msgid "Loading software list"
-msgstr "Загрузка спіса праграмаў"
+msgstr "Загрузка спіса праграм"
 
 #: aptkit/enums.py:492
 msgid "Waiting for authentication"
-msgstr "Чаканне на аўтэнтыфікацыю"
+msgstr "Чаканне аўтэнтыфікацыі"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:496
 #, python-format
 msgid "Installing %s"
-msgstr "Усталёўка %s"
+msgstr "Усталяванне %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:498
@@ -732,7 +748,7 @@ msgstr "Абнаўленне %s"
 #: aptkit/enums.py:510
 #, python-format
 msgid "Unpacking %s"
-msgstr "Выманне %s"
+msgstr "Распакоўка %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:512
@@ -762,7 +778,7 @@ msgstr "Падрыхтоўка да поўнага выдалення %s"
 #: aptkit/enums.py:520
 #, python-format
 msgid "Installed %s"
-msgstr "%s усталяваны"
+msgstr "Усталяваны %s"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:522
@@ -778,11 +794,11 @@ msgstr "%s выдалены"
 
 #: aptkit/enums.py:527
 msgid "Done"
-msgstr "Выканана"
+msgstr "Гатова"
 
 #: aptkit/enums.py:528
 msgid "Authentication failed"
-msgstr "Няўдалая ідэнтыфікацыя"
+msgstr "Збой аўтэнтыфікацыі"
 
 #: aptkit/enums.py:530
 msgid "Fetching"
@@ -794,53 +810,53 @@ msgstr "Чаканне"
 
 #: aptkit/enums.py:532
 msgid "Network isn't available"
-msgstr "Сетка недасяжная"
+msgstr "Сетка недаступна"
 
 #: aptkit/enums.py:652
 #, python-format
 msgid "Processing %s"
 msgstr "Апрацоўка %s"
 
-#: aptkit/gtk3widgets.py:230
+#: aptkit/gtk3widgets.py:231
 #, python-format
 msgid "Downloaded %sB of %sB at %sB/s"
-msgstr "Загружана %sB з %sB на хуткасці %sB/s"
+msgstr "Спампавана %sБ з %sБ на хуткасці %sБ/с"
 
-#: aptkit/gtk3widgets.py:235 aptkit/gtk3widgets.py:436
+#: aptkit/gtk3widgets.py:236 aptkit/gtk3widgets.py:446
 #, python-format
 msgid "Downloaded %sB of %sB"
-msgstr "Загружана %sB з %sB"
+msgstr "Спампавана %sБ з %sБ"
 
-#: aptkit/gtk3widgets.py:247
+#: aptkit/gtk3widgets.py:248
 msgid "Details"
-msgstr "Падрабязна"
+msgstr "Падрабязнасці"
 
-#: aptkit/gtk3widgets.py:400
+#: aptkit/gtk3widgets.py:410
 msgid "File"
 msgstr "Файл"
 
 #. TRANSLATORS: header of the progress download column
-#: aptkit/gtk3widgets.py:405
+#: aptkit/gtk3widgets.py:415
 msgid "%"
 msgstr "%"
 
-#: aptkit/gtk3widgets.py:441
+#: aptkit/gtk3widgets.py:451
 #, python-format
 msgid "Downloaded %sB"
-msgstr "Загружана %sB"
+msgstr "Спампавана %sB"
 
-#: aptkit/gtk3widgets.py:444
+#: aptkit/gtk3widgets.py:454
 msgid "Downloaded"
-msgstr "Загружана"
+msgstr "Спампавана"
 
 #. TRANSLATORS: %s represents the name of a CD or DVD
-#: aptkit/gtk3widgets.py:787
+#: aptkit/gtk3widgets.py:797
 #, python-format
 msgid "CD/DVD '%s' is required"
 msgstr "Патрабуецца наяўнасць CD/DVD «%s»"
 
 #. TRANSLATORS: %s is the name of the CD/DVD drive
-#: aptkit/gtk3widgets.py:789
+#: aptkit/gtk3widgets.py:799
 #, python-format
 msgid ""
 "Please insert the above CD/DVD into the drive '%s' to install software "
@@ -848,270 +864,274 @@ msgid ""
 msgstr ""
 "Устаўце паказаны вышэй CD/DVD у прывад '%s' для ўсталёўкі пакетаў з яго."
 
-#: aptkit/gtk3widgets.py:793 aptkit/gtk3widgets.py:815
+#: aptkit/gtk3widgets.py:803 aptkit/gtk3widgets.py:825
 msgid "C_ontinue"
 msgstr "Пра_цягнуць"
 
-#: aptkit/gtk3widgets.py:866
+#: aptkit/gtk3widgets.py:876
 msgid "Install"
 msgstr "Усталяваць"
 
-#: aptkit/gtk3widgets.py:867
+#: aptkit/gtk3widgets.py:877
 msgid "Reinstall"
 msgstr "Пераўсталяваць"
 
-#: aptkit/gtk3widgets.py:868
+#: aptkit/gtk3widgets.py:878
 msgid "Remove"
 msgstr "Выдаліць"
 
-#: aptkit/gtk3widgets.py:869
+#: aptkit/gtk3widgets.py:879
 msgid "Purge"
 msgstr "Ачысціць"
 
-#: aptkit/gtk3widgets.py:870
+#: aptkit/gtk3widgets.py:880
 msgid "Upgrade"
-msgstr "Абнаўленне"
+msgstr "Абнавіць"
 
-#: aptkit/gtk3widgets.py:871
+#: aptkit/gtk3widgets.py:881
 msgid "Downgrade"
 msgstr "Панізіць версію"
 
-#: aptkit/gtk3widgets.py:872
+#: aptkit/gtk3widgets.py:882
 msgid "Skip upgrade"
 msgstr "Прапусціць абнаўленне"
 
-#: aptkit/gtk3widgets.py:883
-msgid "Please take a look at the list of changes below."
-msgstr "Калі ласка, паглядзіце на спіс зменаў ніжэй."
-
-#: aptkit/gtk3widgets.py:891
-msgid "Additional software has to be installed"
-msgstr "Патрэбна ўсталёўка дадатковых праграм"
-
 #: aptkit/gtk3widgets.py:893
+msgid "Please take a look at the list of changes below."
+msgstr "Паглядзіце на спіс зменаў ніжэй."
+
+#: aptkit/gtk3widgets.py:901
+msgid "Additional software has to be installed"
+msgstr "Трэба ўсталяваць дадатковыя праграмы"
+
+#: aptkit/gtk3widgets.py:903
 msgid "Additional software has to be re-installed"
 msgstr "Патрэбна паўторная ўсталёўка дадатковых праграм"
 
-#: aptkit/gtk3widgets.py:895
+#: aptkit/gtk3widgets.py:905
 msgid "Additional software has to be removed"
 msgstr "Неабходна выдаленне дадатковых праграм"
 
-#: aptkit/gtk3widgets.py:897
+#: aptkit/gtk3widgets.py:907
 msgid "Additional software has to be purged"
 msgstr "Патрэбна ачыстка ад дадатковых праграм"
 
-#: aptkit/gtk3widgets.py:899
+#: aptkit/gtk3widgets.py:909
 msgid "Additional software has to be upgraded"
 msgstr "Неабходна абнаўленне дадатковых праграм"
 
-#: aptkit/gtk3widgets.py:901
+#: aptkit/gtk3widgets.py:911
 msgid "Additional software has to be downgraded"
 msgstr "Неабходна паніжэнне версіі дадатковых праграм"
 
-#: aptkit/gtk3widgets.py:903
+#: aptkit/gtk3widgets.py:913
 msgid "Updates will be skipped"
 msgstr "Абнаўленні будуць прапушчаны"
 
-#: aptkit/gtk3widgets.py:911
+#: aptkit/gtk3widgets.py:921
 msgid "Additional changes are required"
 msgstr "Патрабуюцца дадатковыя змены"
 
-#: aptkit/gtk3widgets.py:916
+#: aptkit/gtk3widgets.py:926
 #, python-format
 msgid "%sB will be downloaded in total."
-msgstr "%sБ усяго будзе сцягнута"
+msgstr "%sБ агулам будзе спампавана."
 
-#: aptkit/gtk3widgets.py:920
+#: aptkit/gtk3widgets.py:930
 #, python-format
 msgid "%sB of disk space will be freed."
-msgstr "%sБ месца на цвёрдым дыску будзе вызвалена."
+msgstr "%sБ месца на жорсткім дыску будзе вызвалена."
 
-#: aptkit/gtk3widgets.py:924
+#: aptkit/gtk3widgets.py:934
 #, python-format
 msgid "%sB more disk space will be used."
-msgstr "%sБ дыскавай прасторы будзе занята."
+msgstr "%sБ месца на дыску будзе выкарыстана."
 
 #. TRANSLATORS: %s is a file path
-#: aptkit/gtk3widgets.py:983
+#: aptkit/gtk3widgets.py:993
 #, python-format
 msgid ""
 "Replace your changes in '%s' with a later version of the configuration file?"
 msgstr "Замяніць файл «%s» з унесенымі Вамі зменамі больш позняй версіяй?"
 
-#: aptkit/gtk3widgets.py:985
+#: aptkit/gtk3widgets.py:995
 msgid ""
 "If you don't know why the file is there already, it is usually safe to "
 "replace it."
 msgstr ""
-"Калі Вы ня ведаеце, для чаго быў створаны гэты файл, то хутчэй за ўсё яго "
+"Калі Вы не ведаеце, для чаго быў створаны гэты файл, то хутчэй за ўсё яго "
 "можна будзе бяспечна замяніць."
 
-#: aptkit/gtk3widgets.py:994
+#: aptkit/gtk3widgets.py:1004
 msgid "_Changes"
 msgstr "_Змены"
 
-#: aptkit/gtk3widgets.py:997
+#: aptkit/gtk3widgets.py:1007
 msgid "_Keep"
-msgstr "_Пакінуць"
+msgstr "Па_кінуць"
 
-#: aptkit/gtk3widgets.py:998
+#: aptkit/gtk3widgets.py:1008
 msgid "_Replace"
-msgstr "_Замяніць"
+msgstr "За_мяніць"
 
-#: aptkit/gtk3widgets.py:1101
+#: aptkit/gtk3widgets.py:1111
 msgid "_Details"
-msgstr "_Падрабязнасці"
+msgstr "Паз_драбязнасці"
 
 #. TRANSLATORS: %s is the name of a package manager
 #: aptkit/lock.py:189
 #, python-format
 msgid "Waiting for %s to exit"
-msgstr "Чаканне на завяршэнне працы %s"
+msgstr "Чаканне завяршэння працы %s"
 
 #. TRANSLATORS: %s is a list of package names
 #: aptkit/progress.py:168
 #, python-format
 msgid "Downloading %s"
-msgstr "Сьцягваньне %s"
+msgstr "Спампоўванне %s"
 
 #. TRANSLATORS: the string is used as a fallback if we cannot
 #. get the URI of a local repository
-#: aptkit/progress.py:277 aptkit/progress.py:314
+#: aptkit/progress.py:279 aptkit/progress.py:316
 msgid "local repository"
-msgstr "лакальны рэпазітар"
+msgstr "лакальны рэпазіторый"
 
 #. TRANSLATORS: %s is a list of repository names
-#: aptkit/progress.py:280
+#: aptkit/progress.py:282
 #, python-format
 msgid "Downloading from %s"
-msgstr "Загрузка з %s"
+msgstr "Спампоўванне з %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:318
+#: aptkit/progress.py:320
 #, python-format
 msgid "Structure of %s"
 msgstr "Структура «%s»"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:321
+#: aptkit/progress.py:323
 #, python-format
 msgid "Description of %s"
 msgstr "Апісанне %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:324
+#: aptkit/progress.py:326
 #, python-format
 msgid "Description signature of %s"
 msgstr "Подпіс апісання %s"
 
-#: aptkit/progress.py:329
+#: aptkit/progress.py:331
 #, python-format
 msgid "Available packages from %s"
 msgstr "Даступныя пакеты з «%s»"
 
-#: aptkit/progress.py:333
+#: aptkit/progress.py:335
 #, python-format
 msgid "Available sources from %s"
 msgstr "Даступныя крыніцы з %s"
 
 #. TRANSLATORS: repo is the name of a repository
-#: aptkit/progress.py:336
+#: aptkit/progress.py:338
 #, python-format
 msgid "Available translations from %s"
 msgstr "Даступныя пераклады з %s"
 
-#: aptkit/progress.py:353
+#: aptkit/progress.py:355
 #, python-format
 msgid "Translations for %s (%s) from %s"
 msgstr "Пераклады на %s (%s) з %s"
 
 #. TRANSLATORS: %s is the name of a language. The second one is
 #. the name of the repository
-#: aptkit/progress.py:357
+#: aptkit/progress.py:359
 #, python-format
 msgid "Translations for %s from %s"
 msgstr "Пераклады на %s з %s"
 
 #. TRANSLATORS: %s is the code of a language, e.g. ru_RU.
 #. The second one is the name of the repository
-#: aptkit/progress.py:362
+#: aptkit/progress.py:364
 #, python-format
 msgid "Translations (%s) from %s"
 msgstr "Пераклад (%s) з %s"
 
-#: aptkit/worker/aptworker.py:372 aptkit/worker/aptworker.py:587
-#: aptkit/worker/aptworker.py:682 aptkit/worker/aptworker.py:727
+#: aptkit/worker/aptworker.py:399 aptkit/worker/aptworker.py:627
+#: aptkit/worker/aptworker.py:770 aptkit/worker/aptworker.py:817
 #, python-format
 msgid "Package %s isn't available"
 msgstr "Пакет %s не даступны"
 
-#: aptkit/worker/aptworker.py:377 aptkit/worker/aptworker.py:591
-#: aptkit/worker/aptworker.py:686 aptkit/worker/aptworker.py:731
+#: aptkit/worker/aptworker.py:404 aptkit/worker/aptworker.py:631
+#: aptkit/worker/aptworker.py:774 aptkit/worker/aptworker.py:821
 #, python-format
 msgid "Package %s isn't installed"
 msgstr "Пакет %s не ўсталяваны"
 
-#: aptkit/worker/aptworker.py:381
+#: aptkit/worker/aptworker.py:408
 #, python-format
 msgid "The version %s of %s isn't installed"
 msgstr "Версія %s пакета %s не ўсталявана"
 
-#: aptkit/worker/aptworker.py:396
+#: aptkit/worker/aptworker.py:423
 #, python-format
 msgid "Package %s is already installed"
 msgstr "Пакет %s ужо ўсталяваны"
 
-#: aptkit/worker/aptworker.py:403 aptkit/worker/aptworker.py:754
+#: aptkit/worker/aptworker.py:430 aptkit/worker/aptworker.py:844
 #, python-format
 msgid "The version %s of %s isn't available."
-msgstr "Версія %s пакета %s недаступная"
+msgstr "Версія %s пакета %s недаступна"
 
-#: aptkit/worker/aptworker.py:595
+#: aptkit/worker/aptworker.py:635
 #, python-format
 msgid "Package %s cannot be removed."
 msgstr "Пакет %s не можа быць выдалены."
 
-#: aptkit/worker/aptworker.py:599
+#: aptkit/worker/aptworker.py:639
 #, python-format
 msgid "The version %s of %s is not installed"
-msgstr "Версія %s пакета %s не ўсталяваная"
+msgstr "Версія %s пакета %s не ўсталявана"
 
-#: aptkit/worker/aptworker.py:694
+#: aptkit/worker/aptworker.py:784
 #, python-format
 msgid "The former version %s of %s is already installed"
-msgstr "Папярэдняя версія %s пакета %s ужо ўсталяваная"
+msgstr "Папярэдняя версія %s пакета %s ужо ўсталявана"
 
-#: aptkit/worker/aptworker.py:699 aptkit/worker/aptworker.py:747
+#: aptkit/worker/aptworker.py:791 aptkit/worker/aptworker.py:837
 #, python-format
 msgid "The version %s of %s is already installed"
-msgstr "Версія %s пакета %s ужо ўсталяваная"
+msgstr "Версія %s пакета %s ужо ўсталявана"
 
-#: aptkit/worker/aptworker.py:706
+#: aptkit/worker/aptworker.py:798
 #, python-format
 msgid "The version %s of %s isn't available"
-msgstr "Версія %s пакета %s недаступная"
+msgstr "Версія %s пакета %s недаступна"
 
-#: aptkit/worker/aptworker.py:710
+#: aptkit/worker/aptworker.py:802
 #, python-format
 msgid "You need to specify a version to downgrade %s to"
 msgstr "Вам неабходна пазначыць версію, каб правесці адкат %s да"
 
-#: aptkit/worker/aptworker.py:740
+#: aptkit/worker/aptworker.py:830
 #, python-format
 msgid "The later version %s of %s is already installed"
-msgstr "Больш новая версія  %s пакета %s ужо ўсталяваная"
+msgstr "Больш новая версія  %s пакета %s ужо ўсталявана"
 
-#: aptkit/worker/aptworker.py:776
+#: aptkit/worker/aptworker.py:864
 #, python-format
 msgid "The package %s isn't available in the %s release."
 msgstr "Пакет %s  недаступны ў рэлізе %s."
 
-#: aptkit/worker/aptworker.py:961
+#: aptkit/worker/aptworker.py:921
+msgid "Unknown repository update error"
+msgstr ""
+
+#: aptkit/worker/aptworker.py:1058
 #, python-format
 msgid "Package %s cannot be removed"
 msgstr "Пакет %s не можа быць выдалены"
 
-#: aptkit/worker/aptworker.py:1063
+#: aptkit/worker/aptworker.py:1160
 msgid ""
 "The package doesn't provide a valid Installed-Size control field. See Debian "
 "Policy 5.6.20."
@@ -1119,67 +1139,71 @@ msgstr ""
 "У пакеце не пазначана поле \"занятае месца пасля ўсталёўкі\".  Гл. правілы "
 "Debian Policy 5.6.20."
 
-#: aptkit/worker/aptworker.py:1202
+#: aptkit/worker/aptworker.py:1299
 msgid "The license key is empty"
 msgstr "Ліцэнзійны ключ не ўтрымлівае даных"
 
-#: aptkit/worker/aptworker.py:1218
+#: aptkit/worker/aptworker.py:1315
 msgid "The license key is not allowed to contain executable code."
-msgstr "Ліцэнзійны ключ не павінен утрымоўваць выкананы код."
+msgstr "Ліцэнзійны ключ не павінен утрымліваць выканальны код."
 
-#: aptkit/worker/aptworker.py:1227
+#: aptkit/worker/aptworker.py:1324
 #, python-format
 msgid "The license key path %s is invalid"
-msgstr "Недапушчальнае размяшчэнне ліцэнзійнага ключа %s"
+msgstr "Памылковы шлях %s ліцэнзійнага ключа"
 
-#: aptkit/worker/aptworker.py:1231
+#: aptkit/worker/aptworker.py:1328
 #, python-format
 msgid "The license key already exists: %s"
 msgstr "Ліцэнзійны ключ ужо існуе: %s"
 
-#: aptkit/worker/aptworker.py:1236
+#: aptkit/worker/aptworker.py:1333
 #, python-format
 msgid ""
 "The location of the license key is unsecure since it contains symbolic "
 "links. The path %s maps to %s"
 msgstr ""
-"Месцазнаходжанне ліцэнзійнага ключа не з'яўляецца бяспечным, так як змяшчае "
-"сімвалічныя спасылкі. Адрас %s спасылаецца на %s"
+"Месцазнаходжанне ліцэнзійнага ключа не з'яўляецца бяспечным, таму што "
+"змяшчае сімвалічныя спасылкі. Адрас %s спасылаецца на %s"
 
-#: aptkit/worker/aptworker.py:1244
+#: aptkit/worker/aptworker.py:1341
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
-msgstr "Папка у якую будзе выконвацца ўсталёўка ключа, яшчэ не існуе: %s"
+msgstr "Папка, у якую будзе выконвацца ўсталёўка ключа, яшчэ не існуе: %s"
 
-#: aptkit/worker/aptworker.py:1255
+#: aptkit/worker/aptworker.py:1352
 #, python-format
 msgid "Failed to write key file to: %s"
 msgstr "Памылка запісу файла ключа ў: %s"
 
-#: aptkit/worker/aptworker.py:1290
+#: aptkit/worker/aptworker.py:1419
 msgid "The following packages have unmet dependencies:"
-msgstr "Пакеты, маючыя нездаволеныя залежнасці:"
+msgstr "Наступныя пакеты маюць незадаволеныя залежнасці:"
 
-#: aptkit/worker/aptworker.py:1343
+#: aptkit/worker/aptworker.py:1449
 msgid "but it is a virtual package"
 msgstr "але гэта віртуальны пакет"
 
-#: aptkit/worker/aptworker.py:1346
-msgid "but it is not installed"
-msgstr "але ён не ўсталяваны"
+#: aptkit/worker/aptworker.py:1452
+msgid "but it is not installable"
+msgstr ""
 
-#: aptkit/worker/aptworker.py:1348
+#: aptkit/worker/aptworker.py:1454
+msgid "but it is not installed"
+msgstr "але яго немагчыма ўсталяваць"
+
+#: aptkit/worker/aptworker.py:1456
 msgid "but it is not going to be installed"
 msgstr "але ён не будзе ўсталяваны"
 
 #. TRANSLATORS: %s is a version number
-#: aptkit/worker/aptworker.py:1352
+#: aptkit/worker/aptworker.py:1460
 #, python-format
 msgid "but %s is installed"
-msgstr "але %s ужо ўсталяваны"
+msgstr "але %s усталяваны"
 
 #. TRANSLATORS: %s is a version number
-#: aptkit/worker/aptworker.py:1356
+#: aptkit/worker/aptworker.py:1464
 #, python-format
 msgid "but %s is to be installed"
-msgstr "але %s будзе ўсталяваны"
+msgstr "але %s павінен быць усталяваны"
