@@ -1,3 +1,9 @@
+aptkit (1.1.7) adrien; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 24 Nov 2026 15:18:28 +0000
+
 aptkit (1.1.6) adrien; urgency=medium
 
   * l10n: Update translations
