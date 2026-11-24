@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-09 09:28+0000\n"
-"PO-Revision-Date: 2026-01-24 09:48+0000\n"
+"PO-Revision-Date: 2026-11-16 16:22+0000\n"
 "Last-Translator: Baurzhan Muftakhidinov <Unknown>\n"
 "Language-Team: Kazakh <kk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
-"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
+"X-Launchpad-Export-Date: 2026-11-24 12:02+0000\n"
+"X-Generator: Launchpad (build 012091084314157d19ae714f55ef4c582ff0feb5)\n"
 "Language: kk\n"
 
 #: data/org.aptkit.policy.in:12
@@ -385,7 +385,7 @@ msgstr "Интернет байланысын тексеріңіз."
 
 #: aptkit/enums.py:371
 msgid "See the error details below for more information."
-msgstr ""
+msgstr "Көбірек ақпарат үшін төмендегі қате мәліметтерін қараңыз."
 
 #: aptkit/enums.py:372
 msgid ""
@@ -1121,7 +1121,7 @@ msgstr "%s дестесі %s шығарылымында қолжетімді е�
 
 #: aptkit/worker/aptworker.py:921
 msgid "Unknown repository update error"
-msgstr ""
+msgstr "Белгісіз репозиторийді жаңарту қатесі"
 
 #: aptkit/worker/aptworker.py:1058
 #, python-format
@@ -1183,7 +1183,7 @@ msgstr "бірақ бұл виртуалды десте"
 
 #: aptkit/worker/aptworker.py:1452
 msgid "but it is not installable"
-msgstr ""
+msgstr "бірақ оны орнату мүмкін емес"
 
 #: aptkit/worker/aptworker.py:1454
 msgid "but it is not installed"

@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: aptkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-09 09:28+0000\n"
-"PO-Revision-Date: 2026-11-13 09:57+0000\n"
+"PO-Revision-Date: 2026-11-17 10:24+0000\n"
 "Last-Translator: Pjotr12345 <Unknown>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
-"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
+"X-Launchpad-Export-Date: 2026-11-24 12:02+0000\n"
+"X-Generator: Launchpad (build 012091084314157d19ae714f55ef4c582ff0feb5)\n"
 "Language: nl\n"
 
 #: data/org.aptkit.policy.in:12
@@ -266,59 +266,59 @@ msgstr "Mislukt"
 
 #: aptkit/enums.py:333
 msgid "Installing file"
-msgstr "Bestand aan het installeren"
+msgstr "Bestand installeren..."
 
 #: aptkit/enums.py:334
 msgid "Installing packages"
-msgstr "Pakketten aan het installeren"
+msgstr "Pakketten installeren..."
 
 #: aptkit/enums.py:335
 msgid "Updating cache"
-msgstr "Tijdelijke opslag aan het bijwerken"
+msgstr "Tijdelijke opslag bijwerken..."
 
 #: aptkit/enums.py:336
 msgid "Removing packages"
-msgstr "Pakketten aan het verwijderen"
+msgstr "Pakketten verwijderen..."
 
 #: aptkit/enums.py:337
 msgid "Updating packages"
-msgstr "Pakketten aan het bijwerken"
+msgstr "Pakketten bijwerken..."
 
 #: aptkit/enums.py:338
 msgid "Upgrading system"
-msgstr "Systeem aan het opwaarderen"
+msgstr "Systeem opwaarderen..."
 
 #: aptkit/enums.py:339 aptkit/enums.py:488
 msgid "Applying changes"
-msgstr "Wijzigingen aan het toepassen"
+msgstr "Wijzigingen toepassen..."
 
 #: aptkit/enums.py:340
 msgid "Repairing incomplete installation"
-msgstr "Onvolledige installatie aan het herstellen"
+msgstr "Onvolledige installatie herstellen..."
 
 #: aptkit/enums.py:341
 msgid "Repairing installed software"
-msgstr "Geïnstalleerde programmatuur aan het herstellen"
+msgstr "Geïnstalleerde programmatuur herstellen..."
 
 #: aptkit/enums.py:342
 msgid "Adding software source"
-msgstr "Pakketbron aan het toevoegen"
+msgstr "Pakketbron toevoegen..."
 
 #: aptkit/enums.py:343
 msgid "Enabling component of the distribution"
-msgstr "Onderdeel van de distributie aan het inschakelen"
+msgstr "Onderdeel van de distributie inschakelen..."
 
 #: aptkit/enums.py:344
 msgid "Removing downloaded package files"
-msgstr "Binnengehaalde pakketbestanden aan het verwijderen"
+msgstr "Binnengehaalde pakketbestanden verwijderen..."
 
 #: aptkit/enums.py:345
 msgid "Reconfiguring installed packages"
-msgstr "Geïnstalleerde pakketten opnieuw aan het instellen"
+msgstr "Geïnstalleerde pakketten opnieuw instellen..."
 
 #: aptkit/enums.py:346 aptkit/enums.py:477
 msgid "Searching"
-msgstr "Bezig met zoeken"
+msgstr "Zoeken..."
 
 #: aptkit/enums.py:350
 msgid "Installation of the package file failed"
@@ -370,11 +370,11 @@ msgstr "Verwijderen van binnengehaalde pakketgestanden is mislukt"
 
 #: aptkit/enums.py:365
 msgid "Search failed"
-msgstr "Zoektaak is mislukt"
+msgstr "Zoeken is mislukt"
 
 #: aptkit/enums.py:366
 msgid "Adding license key"
-msgstr "Licentiesleutel aan het toevoegen"
+msgstr "Licentiesleutel toevoegen..."
 
 #: aptkit/enums.py:370
 msgid "Check your Internet connection."
@@ -401,8 +401,8 @@ msgid ""
 "Synaptic or aptitude. Only one tool is allowed to make changes at a time."
 msgstr ""
 "Kijk na of er momenteel andere pakketbeheerprogramma's actief zijn, zoals "
-"Synaptic of aptitude. Er kan altijd slechts één pakketbeheerder wijzigingen "
-"doorvoeren."
+"bijvoorbeeld Synaptic of Stuurprogrammabeheer. Er kan altijd slechts één "
+"pakketbeheerder tegelijk wijzigingen doorvoeren."
 
 #: aptkit/enums.py:380
 msgid ""
@@ -417,8 +417,8 @@ msgid ""
 "Check the spelling of the package name, and that the appropriate repository "
 "is enabled."
 msgstr ""
-"Kijk na of de pakketnaam correct gespeld is en of de juiste pakketbron "
-"ingeschakeld is."
+"Kijk na of de pakketnaam correct is gespeld en of de juiste pakketbron is "
+"ingeschakeld."
 
 #: aptkit/enums.py:385
 msgid "There isn't any need for an update."
@@ -436,7 +436,7 @@ msgstr "Er hoeft niets te worden verwijderd."
 msgid ""
 "You requested to remove a package which is an essential part of your system."
 msgstr ""
-"U hebt verzocht om een pakket verwijderen dat een essentieel onderdeel is "
+"U hebt verzocht om een pakket te verwijderen dat een essentieel onderdeel is "
 "van uw systeem."
 
 #: aptkit/enums.py:392
@@ -546,9 +546,9 @@ msgid ""
 "haven't seen a password dialog: your desktop environment doesn't provide a "
 "PolicyKit session agent."
 msgstr ""
-"U heeft of een verkeerd wachtwoord opgegeven, of de machtiging geannuleerd.\n"
-"Ook zou er een technische reden kunnen zijn voor deze fout als u geen "
-"wachtwoorddialoogvenster heeft gezien: uw werkomgeving heeft dan geen "
+"U heeft of een verkeerd wachtwoord opgegeven, of de machtiging afgebroken.\n"
+"Ook zou er een technische reden kunnen zijn voor deze fout, namelijk als u "
+"geen wachtwoorddialoogvenster heeft gezien: uw werkomgeving heeft dan geen "
 "PolicyKit-sessieagent."
 
 #: aptkit/enums.py:447
@@ -597,7 +597,7 @@ msgstr "Kon essentieel systeempakket niet verwijderen"
 
 #: aptkit/enums.py:460
 msgid "Task cannot be monitored or controlled"
-msgstr "Taak kan niet worden bijgehouden of beheerst"
+msgstr "Taak kan niet worden bewaakt of beheerst"
 
 #: aptkit/enums.py:461
 msgid "Package operation failed"
@@ -649,44 +649,43 @@ msgstr "Er is een onhandelbare fout opgetreden"
 
 #: aptkit/enums.py:476
 msgid "Waiting for service to start"
-msgstr "Aan het wachten op het starten van de dienst"
+msgstr "Wachten op het starten van de dienst..."
 
 #: aptkit/enums.py:478
 msgid "Waiting"
-msgstr "Bezig met wachten"
+msgstr "Wachten..."
 
 #: aptkit/enums.py:479
 msgid "Waiting for required medium"
-msgstr "Aan het wachten op vereist medium"
+msgstr "Wachten op vereist medium..."
 
 #: aptkit/enums.py:480
 msgid "Waiting for other software managers to quit"
-msgstr ""
-"Aan het wachten totdat andere programmatuurbeheerders zijn afgesloten"
+msgstr "Wachten totdat andere programmatuurbeheerders zijn afgesloten..."
 
 #: aptkit/enums.py:481
 msgid "Waiting for configuration file prompt"
-msgstr "Aan het wachten op de dialoog van het configuratiebestand"
+msgstr "Wachten op het dialoogvenster van het configuratiebestand..."
 
 #: aptkit/enums.py:483
 msgid "Running task"
-msgstr "Taak aan het uitvoeren"
+msgstr "Taak uitvoeren..."
 
 #: aptkit/enums.py:484
 msgid "Downloading"
-msgstr "Bezig met binnenhalen"
+msgstr "Binnenhalen..."
 
 #: aptkit/enums.py:485
 msgid "Querying software sources"
-msgstr "Pakketbronnen aan het doorzoeken"
+msgstr "Pakketbronnen doorzoeken..."
 
 #: aptkit/enums.py:486
 msgid "Cleaning up"
-msgstr "Bezig met schoonmaken"
+msgstr "Opschonen..."
 
 #: aptkit/enums.py:487
 msgid "Resolving dependencies"
-msgstr "Afhankelijkheden aan het oplossen"
+msgstr "Afhankelijkheden oplossen..."
 
 #: aptkit/enums.py:489
 msgid "Finished"
@@ -694,15 +693,15 @@ msgstr "Gereed"
 
 #: aptkit/enums.py:490
 msgid "Cancelling"
-msgstr "Bezig met afbreken"
+msgstr "Afbreken..."
 
 #: aptkit/enums.py:491
 msgid "Loading software list"
-msgstr "Programmatuurlijst aan het laden"
+msgstr "Programmatuurlijst laden..."
 
 #: aptkit/enums.py:492
 msgid "Waiting for authentication"
-msgstr "Aan het wachten op authenticatie"
+msgstr "Wachten op authenticatie..."
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:496
@@ -732,7 +731,7 @@ msgstr "%s volledig aan het verwijderen"
 #: aptkit/enums.py:504
 #, python-format
 msgid "Noting disappearance of %s"
-msgstr "De verdwijning van %s wordt genoteerd"
+msgstr "De verdwijning van %s wordt opgemerkt"
 
 #. TRANSLATORS: %s is the name of a package
 #: aptkit/enums.py:506
@@ -804,7 +803,7 @@ msgstr "Authenticatie is mislukt"
 
 #: aptkit/enums.py:530
 msgid "Fetching"
-msgstr "Bezig met ophalen"
+msgstr "Ophalen..."
 
 #: aptkit/enums.py:531
 msgid "Idle"
@@ -1125,7 +1124,7 @@ msgstr "De nieuwere versie %s van %s is al geïnstalleerd"
 #: aptkit/worker/aptworker.py:864
 #, python-format
 msgid "The package %s isn't available in the %s release."
-msgstr "Het pakket %s is niet beschikbaar in de uitgave %s."
+msgstr "Het pakket %s is niet beschikbaar in de %s uitgave."
 
 #: aptkit/worker/aptworker.py:921
 msgid "Unknown repository update error"
@@ -1142,7 +1141,7 @@ msgid ""
 "Policy 5.6.20."
 msgstr ""
 "Dit pakket bevat geen geldig 'controleveld voor geïnstalleerde grootte'. Zie "
-"Debian Policy, artikel 5.6.20."
+"Debian Policy 5.6.20."
 
 #: aptkit/worker/aptworker.py:1299
 msgid "The license key is empty"
@@ -1168,14 +1167,14 @@ msgid ""
 "The location of the license key is unsecure since it contains symbolic "
 "links. The path %s maps to %s"
 msgstr ""
-"De locatie van de licentiesleutel is onbeveiligd omdat zij symbolische "
+"De locatie van de licentiesleutel is onveilig omdat zij symbolische "
 "koppelingen bevat. Pad %s verwijst naar %s"
 
 #: aptkit/worker/aptworker.py:1341
 #, python-format
 msgid "The directory where to install the key to doesn't exist yet: %s"
 msgstr ""
-"De map waar de sleutel geïnstalleerd moet worden bestaat nog niet: %s"
+"De map waarin de sleutel geïnstalleerd moet worden bestaat nog niet: %s"
 
 #: aptkit/worker/aptworker.py:1352
 #, python-format
